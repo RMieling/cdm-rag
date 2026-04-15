@@ -1,0 +1,301 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "CustInvoiceJournalHeaderEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "CustInvoiceJournalHeaderEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "CustInvoiceJournalHeaderEntity_Resolved",
+        "definition": "resolvedFrom/CustInvoiceJournalHeaderEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "CustInvoiceJournalHeaderEntity_Resolved/attributeContext/CustInvoiceJournalHeaderEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "CustInvoiceJournalHeaderEntity_Resolved/attributeContext/CustInvoiceJournalHeaderEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "JournalName",
+            "parent": "CustInvoiceJournalHeaderEntity_Resolved/attributeContext/CustInvoiceJournalHeaderEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustInvoiceJournalHeaderEntity/hasAttributes/JournalName",
+            "contents": [
+              "CustInvoiceJournalHeaderEntity_Resolved/hasAttributes/JournalName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "JournalBatchNumber",
+            "parent": "CustInvoiceJournalHeaderEntity_Resolved/attributeContext/CustInvoiceJournalHeaderEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustInvoiceJournalHeaderEntity/hasAttributes/JournalBatchNumber",
+            "contents": [
+              "CustInvoiceJournalHeaderEntity_Resolved/hasAttributes/JournalBatchNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "CustInvoiceJournalHeaderEntity_Resolved/attributeContext/CustInvoiceJournalHeaderEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustInvoiceJournalHeaderEntity/hasAttributes/Description",
+            "contents": [
+              "CustInvoiceJournalHeaderEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "IsPosted",
+            "parent": "CustInvoiceJournalHeaderEntity_Resolved/attributeContext/CustInvoiceJournalHeaderEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustInvoiceJournalHeaderEntity/hasAttributes/IsPosted",
+            "contents": [
+              "CustInvoiceJournalHeaderEntity_Resolved/hasAttributes/IsPosted"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_LedgerJournalTableRelationship",
+            "parent": "CustInvoiceJournalHeaderEntity_Resolved/attributeContext/CustInvoiceJournalHeaderEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustInvoiceJournalHeaderEntity/hasAttributes/BackingTable_LedgerJournalTableRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "LedgerJournalTable",
+                "parent": "CustInvoiceJournalHeaderEntity_Resolved/attributeContext/CustInvoiceJournalHeaderEntity_Resolved/BackingTable_LedgerJournalTableRelationship",
+                "definition": "resolvedFrom/LedgerJournalTable",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CustInvoiceJournalHeaderEntity_Resolved/attributeContext/CustInvoiceJournalHeaderEntity_Resolved/BackingTable_LedgerJournalTableRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CustInvoiceJournalHeaderEntity_Resolved/attributeContext/CustInvoiceJournalHeaderEntity_Resolved/BackingTable_LedgerJournalTableRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CustInvoiceJournalHeaderEntity_Resolved/attributeContext/CustInvoiceJournalHeaderEntity_Resolved/BackingTable_LedgerJournalTableRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CustInvoiceJournalHeaderEntity_Resolved/hasAttributes/BackingTable_LedgerJournalTableRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "CustInvoiceJournalHeaderEntity_Resolved/attributeContext/CustInvoiceJournalHeaderEntity_Resolved",
+            "definition": "resolvedFrom/CustInvoiceJournalHeaderEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "CustInvoiceJournalHeaderEntity_Resolved/attributeContext/CustInvoiceJournalHeaderEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CustInvoiceJournalHeaderEntity_Resolved/attributeContext/CustInvoiceJournalHeaderEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CustInvoiceJournalHeaderEntity_Resolved/attributeContext/CustInvoiceJournalHeaderEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CustInvoiceJournalHeaderEntity_Resolved/attributeContext/CustInvoiceJournalHeaderEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CustInvoiceJournalHeaderEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "JournalName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustInvoiceJournalHeaderEntity_Resolved/attributeContext/CustInvoiceJournalHeaderEntity_Resolved/JournalName",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "JournalBatchNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustInvoiceJournalHeaderEntity_Resolved/attributeContext/CustInvoiceJournalHeaderEntity_Resolved/JournalBatchNumber",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustInvoiceJournalHeaderEntity_Resolved/attributeContext/CustInvoiceJournalHeaderEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "IsPosted",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustInvoiceJournalHeaderEntity_Resolved/attributeContext/CustInvoiceJournalHeaderEntity_Resolved/IsPosted",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_LedgerJournalTableRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/AccountingFoundation/WorksheetHeader/LedgerJournalTable.cdm.json/LedgerJournalTable",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CustInvoiceJournalHeaderEntity_Resolved/attributeContext/CustInvoiceJournalHeaderEntity_Resolved/BackingTable_LedgerJournalTableRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CustInvoiceJournalHeaderEntity_Resolved/attributeContext/CustInvoiceJournalHeaderEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Customer invoice journal header",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

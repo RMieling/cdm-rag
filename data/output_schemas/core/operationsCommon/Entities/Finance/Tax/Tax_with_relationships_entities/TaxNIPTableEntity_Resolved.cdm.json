@@ -1,0 +1,228 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "TaxNIPTableEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TaxNIPTableEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "TaxNIPTableEntity_Resolved",
+        "definition": "resolvedFrom/TaxNIPTableEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "TaxNIPTableEntity_Resolved/attributeContext/TaxNIPTableEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "TaxNIPTableEntity_Resolved/attributeContext/TaxNIPTableEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "AccountName",
+            "parent": "TaxNIPTableEntity_Resolved/attributeContext/TaxNIPTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxNIPTableEntity/hasAttributes/AccountName",
+            "contents": [
+              "TaxNIPTableEntity_Resolved/hasAttributes/AccountName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Addressing",
+            "parent": "TaxNIPTableEntity_Resolved/attributeContext/TaxNIPTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxNIPTableEntity/hasAttributes/Addressing",
+            "contents": [
+              "TaxNIPTableEntity_Resolved/hasAttributes/Addressing"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Code",
+            "parent": "TaxNIPTableEntity_Resolved/attributeContext/TaxNIPTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxNIPTableEntity/hasAttributes/Code",
+            "contents": [
+              "TaxNIPTableEntity_Resolved/hasAttributes/Code"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "NIPNumber",
+            "parent": "TaxNIPTableEntity_Resolved/attributeContext/TaxNIPTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxNIPTableEntity/hasAttributes/NIPNumber",
+            "contents": [
+              "TaxNIPTableEntity_Resolved/hasAttributes/NIPNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "TaxNIPTableEntity_Resolved/attributeContext/TaxNIPTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxNIPTableEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "TaxNIPTableEntity_Resolved/attributeContext/TaxNIPTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxNIPTableEntity_Resolved/attributeContext/TaxNIPTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxNIPTableEntity_Resolved/attributeContext/TaxNIPTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxNIPTableEntity_Resolved/attributeContext/TaxNIPTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxNIPTableEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "AccountName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxNIPTableEntity_Resolved/attributeContext/TaxNIPTableEntity_Resolved/AccountName",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Addressing",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxNIPTableEntity_Resolved/attributeContext/TaxNIPTableEntity_Resolved/Addressing",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Code",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxNIPTableEntity_Resolved/attributeContext/TaxNIPTableEntity_Resolved/Code",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "NIPNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxNIPTableEntity_Resolved/attributeContext/TaxNIPTableEntity_Resolved/NIPNumber",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxNIPTableEntity_Resolved/attributeContext/TaxNIPTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "NIP table",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

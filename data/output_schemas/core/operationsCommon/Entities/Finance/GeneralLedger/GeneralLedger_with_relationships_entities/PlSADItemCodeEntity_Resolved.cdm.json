@@ -1,0 +1,369 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "PlSADItemCodeEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "PlSADItemCodeEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "PlSADItemCodeEntity_Resolved",
+        "definition": "resolvedFrom/PlSADItemCodeEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "PlSADItemCodeEntity_Resolved/attributeContext/PlSADItemCodeEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "PlSADItemCodeEntity_Resolved/attributeContext/PlSADItemCodeEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "MainAccount",
+            "parent": "PlSADItemCodeEntity_Resolved/attributeContext/PlSADItemCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/PlSADItemCodeEntity/hasAttributes/MainAccount",
+            "contents": [
+              "PlSADItemCodeEntity_Resolved/hasAttributes/MainAccount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ItemCommodityCode",
+            "parent": "PlSADItemCodeEntity_Resolved/attributeContext/PlSADItemCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/PlSADItemCodeEntity/hasAttributes/ItemCommodityCode",
+            "contents": [
+              "PlSADItemCodeEntity_Resolved/hasAttributes/ItemCommodityCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ProductName",
+            "parent": "PlSADItemCodeEntity_Resolved/attributeContext/PlSADItemCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/PlSADItemCodeEntity/hasAttributes/ProductName",
+            "contents": [
+              "PlSADItemCodeEntity_Resolved/hasAttributes/ProductName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "MainAccountDisplayValue",
+            "parent": "PlSADItemCodeEntity_Resolved/attributeContext/PlSADItemCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/PlSADItemCodeEntity/hasAttributes/MainAccountDisplayValue",
+            "contents": [
+              "PlSADItemCodeEntity_Resolved/hasAttributes/MainAccountDisplayValue"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_MainAccountCombinationRelationship",
+            "parent": "PlSADItemCodeEntity_Resolved/attributeContext/PlSADItemCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/PlSADItemCodeEntity/hasAttributes/Relationship_MainAccountCombinationRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "DimensionCombinationEntity",
+                "parent": "PlSADItemCodeEntity_Resolved/attributeContext/PlSADItemCodeEntity_Resolved/Relationship_MainAccountCombinationRelationship",
+                "definition": "resolvedFrom/DimensionCombinationEntity",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "PlSADItemCodeEntity_Resolved/attributeContext/PlSADItemCodeEntity_Resolved/Relationship_MainAccountCombinationRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "PlSADItemCodeEntity_Resolved/attributeContext/PlSADItemCodeEntity_Resolved/Relationship_MainAccountCombinationRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "PlSADItemCodeEntity_Resolved/attributeContext/PlSADItemCodeEntity_Resolved/Relationship_MainAccountCombinationRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "PlSADItemCodeEntity_Resolved/hasAttributes/Relationship_MainAccountCombinationRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_PlSADItemAccountsRelationship",
+            "parent": "PlSADItemCodeEntity_Resolved/attributeContext/PlSADItemCodeEntity_Resolved",
+            "definition": "resolvedFrom/PlSADItemCodeEntity/hasAttributes/BackingTable_PlSADItemAccountsRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "PlSADItemAccounts",
+                "parent": "PlSADItemCodeEntity_Resolved/attributeContext/PlSADItemCodeEntity_Resolved/BackingTable_PlSADItemAccountsRelationship",
+                "definition": "resolvedFrom/PlSADItemAccounts",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "PlSADItemCodeEntity_Resolved/attributeContext/PlSADItemCodeEntity_Resolved/BackingTable_PlSADItemAccountsRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "PlSADItemCodeEntity_Resolved/attributeContext/PlSADItemCodeEntity_Resolved/BackingTable_PlSADItemAccountsRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "PlSADItemCodeEntity_Resolved/attributeContext/PlSADItemCodeEntity_Resolved/BackingTable_PlSADItemAccountsRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "PlSADItemCodeEntity_Resolved/hasAttributes/BackingTable_PlSADItemAccountsRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "PlSADItemCodeEntity_Resolved/attributeContext/PlSADItemCodeEntity_Resolved",
+            "definition": "resolvedFrom/PlSADItemCodeEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "PlSADItemCodeEntity_Resolved/attributeContext/PlSADItemCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "PlSADItemCodeEntity_Resolved/attributeContext/PlSADItemCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "PlSADItemCodeEntity_Resolved/attributeContext/PlSADItemCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "PlSADItemCodeEntity_Resolved/attributeContext/PlSADItemCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "PlSADItemCodeEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "MainAccount",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "PlSADItemCodeEntity_Resolved/attributeContext/PlSADItemCodeEntity_Resolved/MainAccount",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ItemCommodityCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "PlSADItemCodeEntity_Resolved/attributeContext/PlSADItemCodeEntity_Resolved/ItemCommodityCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ProductName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "PlSADItemCodeEntity_Resolved/attributeContext/PlSADItemCodeEntity_Resolved/ProductName",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "MainAccountDisplayValue",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "PlSADItemCodeEntity_Resolved/attributeContext/PlSADItemCodeEntity_Resolved/MainAccountDisplayValue",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Relationship_MainAccountCombinationRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": []
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "PlSADItemCodeEntity_Resolved/attributeContext/PlSADItemCodeEntity_Resolved/Relationship_MainAccountCombinationRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "BackingTable_PlSADItemAccountsRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/AccountsReceivable/Group/PlSADItemAccounts.cdm.json/PlSADItemAccounts",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "PlSADItemCodeEntity_Resolved/attributeContext/PlSADItemCodeEntity_Resolved/BackingTable_PlSADItemAccountsRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "PlSADItemCodeEntity_Resolved/attributeContext/PlSADItemCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "SAD item codes",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

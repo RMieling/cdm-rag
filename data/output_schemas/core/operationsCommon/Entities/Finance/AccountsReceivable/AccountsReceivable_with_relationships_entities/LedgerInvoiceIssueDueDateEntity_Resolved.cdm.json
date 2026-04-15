@@ -1,0 +1,301 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "LedgerInvoiceIssueDueDateEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "LedgerInvoiceIssueDueDateEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "LedgerInvoiceIssueDueDateEntity_Resolved",
+        "definition": "resolvedFrom/LedgerInvoiceIssueDueDateEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "LedgerInvoiceIssueDueDateEntity_Resolved/attributeContext/LedgerInvoiceIssueDueDateEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "LedgerInvoiceIssueDueDateEntity_Resolved/attributeContext/LedgerInvoiceIssueDueDateEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CountryRegionType",
+            "parent": "LedgerInvoiceIssueDueDateEntity_Resolved/attributeContext/LedgerInvoiceIssueDueDateEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerInvoiceIssueDueDateEntity/hasAttributes/CountryRegionType",
+            "contents": [
+              "LedgerInvoiceIssueDueDateEntity_Resolved/hasAttributes/CountryRegionType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DateIntervalCode",
+            "parent": "LedgerInvoiceIssueDueDateEntity_Resolved/attributeContext/LedgerInvoiceIssueDueDateEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerInvoiceIssueDueDateEntity/hasAttributes/DateIntervalCode",
+            "contents": [
+              "LedgerInvoiceIssueDueDateEntity_Resolved/hasAttributes/DateIntervalCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "StartDate",
+            "parent": "LedgerInvoiceIssueDueDateEntity_Resolved/attributeContext/LedgerInvoiceIssueDueDateEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerInvoiceIssueDueDateEntity/hasAttributes/StartDate",
+            "contents": [
+              "LedgerInvoiceIssueDueDateEntity_Resolved/hasAttributes/StartDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Company",
+            "parent": "LedgerInvoiceIssueDueDateEntity_Resolved/attributeContext/LedgerInvoiceIssueDueDateEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerInvoiceIssueDueDateEntity/hasAttributes/Company",
+            "contents": [
+              "LedgerInvoiceIssueDueDateEntity_Resolved/hasAttributes/Company"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_LedgerInvoiceIssueDueDateSetup_WRelationship",
+            "parent": "LedgerInvoiceIssueDueDateEntity_Resolved/attributeContext/LedgerInvoiceIssueDueDateEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerInvoiceIssueDueDateEntity/hasAttributes/BackingTable_LedgerInvoiceIssueDueDateSetup_WRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "LedgerInvoiceIssueDueDateSetup_W",
+                "parent": "LedgerInvoiceIssueDueDateEntity_Resolved/attributeContext/LedgerInvoiceIssueDueDateEntity_Resolved/BackingTable_LedgerInvoiceIssueDueDateSetup_WRelationship",
+                "definition": "resolvedFrom/LedgerInvoiceIssueDueDateSetup_W",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "LedgerInvoiceIssueDueDateEntity_Resolved/attributeContext/LedgerInvoiceIssueDueDateEntity_Resolved/BackingTable_LedgerInvoiceIssueDueDateSetup_WRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "LedgerInvoiceIssueDueDateEntity_Resolved/attributeContext/LedgerInvoiceIssueDueDateEntity_Resolved/BackingTable_LedgerInvoiceIssueDueDateSetup_WRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "LedgerInvoiceIssueDueDateEntity_Resolved/attributeContext/LedgerInvoiceIssueDueDateEntity_Resolved/BackingTable_LedgerInvoiceIssueDueDateSetup_WRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "LedgerInvoiceIssueDueDateEntity_Resolved/hasAttributes/BackingTable_LedgerInvoiceIssueDueDateSetup_WRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "LedgerInvoiceIssueDueDateEntity_Resolved/attributeContext/LedgerInvoiceIssueDueDateEntity_Resolved",
+            "definition": "resolvedFrom/LedgerInvoiceIssueDueDateEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "LedgerInvoiceIssueDueDateEntity_Resolved/attributeContext/LedgerInvoiceIssueDueDateEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "LedgerInvoiceIssueDueDateEntity_Resolved/attributeContext/LedgerInvoiceIssueDueDateEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "LedgerInvoiceIssueDueDateEntity_Resolved/attributeContext/LedgerInvoiceIssueDueDateEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "LedgerInvoiceIssueDueDateEntity_Resolved/attributeContext/LedgerInvoiceIssueDueDateEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "LedgerInvoiceIssueDueDateEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "CountryRegionType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerInvoiceIssueDueDateEntity_Resolved/attributeContext/LedgerInvoiceIssueDueDateEntity_Resolved/CountryRegionType",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "DateIntervalCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerInvoiceIssueDueDateEntity_Resolved/attributeContext/LedgerInvoiceIssueDueDateEntity_Resolved/DateIntervalCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "StartDate",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerInvoiceIssueDueDateEntity_Resolved/attributeContext/LedgerInvoiceIssueDueDateEntity_Resolved/StartDate",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Company",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerInvoiceIssueDueDateEntity_Resolved/attributeContext/LedgerInvoiceIssueDueDateEntity_Resolved/Company",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_LedgerInvoiceIssueDueDateSetup_WRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Parameter/LedgerInvoiceIssueDueDateSetup_W.cdm.json/LedgerInvoiceIssueDueDateSetup_W",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "LedgerInvoiceIssueDueDateEntity_Resolved/attributeContext/LedgerInvoiceIssueDueDateEntity_Resolved/BackingTable_LedgerInvoiceIssueDueDateSetup_WRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "LedgerInvoiceIssueDueDateEntity_Resolved/attributeContext/LedgerInvoiceIssueDueDateEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Set up calculation for invoice issue due date",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

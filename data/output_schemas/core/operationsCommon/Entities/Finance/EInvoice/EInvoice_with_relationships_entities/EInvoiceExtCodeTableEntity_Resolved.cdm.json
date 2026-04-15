@@ -1,0 +1,321 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "EInvoiceExtCodeTableEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "EInvoiceExtCodeTableEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "EInvoiceExtCodeTableEntity_Resolved",
+        "definition": "resolvedFrom/EInvoiceExtCodeTableEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "EInvoiceExtCodeTableEntity_Resolved/attributeContext/EInvoiceExtCodeTableEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "EInvoiceExtCodeTableEntity_Resolved/attributeContext/EInvoiceExtCodeTableEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CodeId",
+            "parent": "EInvoiceExtCodeTableEntity_Resolved/attributeContext/EInvoiceExtCodeTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EInvoiceExtCodeTableEntity/hasAttributes/CodeId",
+            "contents": [
+              "EInvoiceExtCodeTableEntity_Resolved/hasAttributes/CodeId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CodeType",
+            "parent": "EInvoiceExtCodeTableEntity_Resolved/attributeContext/EInvoiceExtCodeTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EInvoiceExtCodeTableEntity/hasAttributes/CodeType",
+            "contents": [
+              "EInvoiceExtCodeTableEntity_Resolved/hasAttributes/CodeType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "EInvoiceExtCodeTableEntity_Resolved/attributeContext/EInvoiceExtCodeTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EInvoiceExtCodeTableEntity/hasAttributes/Description",
+            "contents": [
+              "EInvoiceExtCodeTableEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ValidFrom",
+            "parent": "EInvoiceExtCodeTableEntity_Resolved/attributeContext/EInvoiceExtCodeTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EInvoiceExtCodeTableEntity/hasAttributes/ValidFrom",
+            "contents": [
+              "EInvoiceExtCodeTableEntity_Resolved/hasAttributes/ValidFrom"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Version",
+            "parent": "EInvoiceExtCodeTableEntity_Resolved/attributeContext/EInvoiceExtCodeTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EInvoiceExtCodeTableEntity/hasAttributes/Version",
+            "contents": [
+              "EInvoiceExtCodeTableEntity_Resolved/hasAttributes/Version"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_EInvoiceExtCodeTable_MXRelationship",
+            "parent": "EInvoiceExtCodeTableEntity_Resolved/attributeContext/EInvoiceExtCodeTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EInvoiceExtCodeTableEntity/hasAttributes/BackingTable_EInvoiceExtCodeTable_MXRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "EInvoiceExtCodeTable_MX",
+                "parent": "EInvoiceExtCodeTableEntity_Resolved/attributeContext/EInvoiceExtCodeTableEntity_Resolved/BackingTable_EInvoiceExtCodeTable_MXRelationship",
+                "definition": "resolvedFrom/EInvoiceExtCodeTable_MX",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "EInvoiceExtCodeTableEntity_Resolved/attributeContext/EInvoiceExtCodeTableEntity_Resolved/BackingTable_EInvoiceExtCodeTable_MXRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "EInvoiceExtCodeTableEntity_Resolved/attributeContext/EInvoiceExtCodeTableEntity_Resolved/BackingTable_EInvoiceExtCodeTable_MXRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "EInvoiceExtCodeTableEntity_Resolved/attributeContext/EInvoiceExtCodeTableEntity_Resolved/BackingTable_EInvoiceExtCodeTable_MXRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "EInvoiceExtCodeTableEntity_Resolved/hasAttributes/BackingTable_EInvoiceExtCodeTable_MXRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "EInvoiceExtCodeTableEntity_Resolved/attributeContext/EInvoiceExtCodeTableEntity_Resolved",
+            "definition": "resolvedFrom/EInvoiceExtCodeTableEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "EInvoiceExtCodeTableEntity_Resolved/attributeContext/EInvoiceExtCodeTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "EInvoiceExtCodeTableEntity_Resolved/attributeContext/EInvoiceExtCodeTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "EInvoiceExtCodeTableEntity_Resolved/attributeContext/EInvoiceExtCodeTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "EInvoiceExtCodeTableEntity_Resolved/attributeContext/EInvoiceExtCodeTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "EInvoiceExtCodeTableEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "CodeId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "EInvoiceExtCodeTableEntity_Resolved/attributeContext/EInvoiceExtCodeTableEntity_Resolved/CodeId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "CodeType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "EInvoiceExtCodeTableEntity_Resolved/attributeContext/EInvoiceExtCodeTableEntity_Resolved/CodeType",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "EInvoiceExtCodeTableEntity_Resolved/attributeContext/EInvoiceExtCodeTableEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ValidFrom",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "EInvoiceExtCodeTableEntity_Resolved/attributeContext/EInvoiceExtCodeTableEntity_Resolved/ValidFrom",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Version",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "EInvoiceExtCodeTableEntity_Resolved/attributeContext/EInvoiceExtCodeTableEntity_Resolved/Version",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_EInvoiceExtCodeTable_MXRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/EInvoice/Group/EInvoiceExtCodeTable_MX.cdm.json/EInvoiceExtCodeTable_MX",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "EInvoiceExtCodeTableEntity_Resolved/attributeContext/EInvoiceExtCodeTableEntity_Resolved/BackingTable_EInvoiceExtCodeTable_MXRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "EInvoiceExtCodeTableEntity_Resolved/attributeContext/EInvoiceExtCodeTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "External code",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

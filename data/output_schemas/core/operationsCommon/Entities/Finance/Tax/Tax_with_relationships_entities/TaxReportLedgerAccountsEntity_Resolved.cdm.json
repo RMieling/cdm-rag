@@ -1,0 +1,208 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "TaxReportLedgerAccountsEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TaxReportLedgerAccountsEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "TaxReportLedgerAccountsEntity_Resolved",
+        "definition": "resolvedFrom/TaxReportLedgerAccountsEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "TaxReportLedgerAccountsEntity_Resolved/attributeContext/TaxReportLedgerAccountsEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "TaxReportLedgerAccountsEntity_Resolved/attributeContext/TaxReportLedgerAccountsEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "LedgerAccountDisplayValue",
+            "parent": "TaxReportLedgerAccountsEntity_Resolved/attributeContext/TaxReportLedgerAccountsEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxReportLedgerAccountsEntity/hasAttributes/LedgerAccountDisplayValue",
+            "contents": [
+              "TaxReportLedgerAccountsEntity_Resolved/hasAttributes/LedgerAccountDisplayValue"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Company",
+            "parent": "TaxReportLedgerAccountsEntity_Resolved/attributeContext/TaxReportLedgerAccountsEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxReportLedgerAccountsEntity/hasAttributes/Company",
+            "contents": [
+              "TaxReportLedgerAccountsEntity_Resolved/hasAttributes/Company"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "LedgerAccount",
+            "parent": "TaxReportLedgerAccountsEntity_Resolved/attributeContext/TaxReportLedgerAccountsEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxReportLedgerAccountsEntity/hasAttributes/LedgerAccount",
+            "contents": [
+              "TaxReportLedgerAccountsEntity_Resolved/hasAttributes/LedgerAccount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_TaxReportLedgerAccountsRelationship",
+            "parent": "TaxReportLedgerAccountsEntity_Resolved/attributeContext/TaxReportLedgerAccountsEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxReportLedgerAccountsEntity/hasAttributes/BackingTable_TaxReportLedgerAccountsRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "TaxReportLedgerAccounts",
+                "parent": "TaxReportLedgerAccountsEntity_Resolved/attributeContext/TaxReportLedgerAccountsEntity_Resolved/BackingTable_TaxReportLedgerAccountsRelationship",
+                "definition": "resolvedFrom/TaxReportLedgerAccounts",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxReportLedgerAccountsEntity_Resolved/attributeContext/TaxReportLedgerAccountsEntity_Resolved/BackingTable_TaxReportLedgerAccountsRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxReportLedgerAccountsEntity_Resolved/attributeContext/TaxReportLedgerAccountsEntity_Resolved/BackingTable_TaxReportLedgerAccountsRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxReportLedgerAccountsEntity_Resolved/attributeContext/TaxReportLedgerAccountsEntity_Resolved/BackingTable_TaxReportLedgerAccountsRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxReportLedgerAccountsEntity_Resolved/hasAttributes/BackingTable_TaxReportLedgerAccountsRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "LedgerAccountDisplayValue",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxReportLedgerAccountsEntity_Resolved/attributeContext/TaxReportLedgerAccountsEntity_Resolved/LedgerAccountDisplayValue",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Company",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxReportLedgerAccountsEntity_Resolved/attributeContext/TaxReportLedgerAccountsEntity_Resolved/Company",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "LedgerAccount",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxReportLedgerAccountsEntity_Resolved/attributeContext/TaxReportLedgerAccountsEntity_Resolved/LedgerAccount",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_TaxReportLedgerAccountsRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Tax/Group/TaxReportLedgerAccounts.cdm.json/TaxReportLedgerAccounts",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxReportLedgerAccountsEntity_Resolved/attributeContext/TaxReportLedgerAccountsEntity_Resolved/BackingTable_TaxReportLedgerAccountsRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Additional BAS reconciliation account",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

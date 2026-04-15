@@ -1,0 +1,705 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "ArticleComment.cdm.json",
+      "moniker": "resolvedFrom"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "ArticleComment_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "ArticleComment_Resolved",
+        "definition": "resolvedFrom/ArticleComment",
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "ArticleComment_Resolved/attributeContext/ArticleComment_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CdmEntity",
+                "parent": "ArticleComment_Resolved/attributeContext/ArticleComment_Resolved/extends",
+                "definition": "resolvedFrom/CdmEntity"
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "attributesAddedAtThisScope",
+            "parent": "ArticleComment_Resolved/attributeContext/ArticleComment_Resolved",
+            "definition": "resolvedFrom/ArticleComment/hasAttributes/attributesAddedAtThisScope",
+            "contents": [
+              {
+                "type": "attributeGroup",
+                "name": "attributesAddedAtThisScope",
+                "parent": "ArticleComment_Resolved/attributeContext/ArticleComment_Resolved/attributesAddedAtThisScope",
+                "definition": "resolvedFrom/ArticleComment/hasAttributes/attributesAddedAtThisScope",
+                "contents": [
+                  {
+                    "type": "attributeDefinition",
+                    "name": "kbArticleCommentId",
+                    "parent": "ArticleComment_Resolved/attributeContext/ArticleComment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/ArticleComment/hasAttributes/attributesAddedAtThisScope/members/kbArticleCommentId",
+                    "contents": [
+                      "ArticleComment_Resolved/hasAttributes/kbArticleCommentId"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "kbArticle",
+                    "parent": "ArticleComment_Resolved/attributeContext/ArticleComment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/ArticleComment/hasAttributes/attributesAddedAtThisScope/members/kbArticle",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "Article",
+                        "parent": "ArticleComment_Resolved/attributeContext/ArticleComment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/kbArticle",
+                        "definition": "resolvedFrom/Article",
+                        "appliedTraits": [
+                          {
+                            "traitReference": "means.entityState",
+                            "arguments": [
+                              "resolvedFrom/Article/(resolvedAttributes)/stateCode"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "ArticleComment_Resolved/attributeContext/ArticleComment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/kbArticle",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "ArticleComment_Resolved/attributeContext/ArticleComment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/kbArticle/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "ArticleComment_Resolved/attributeContext/ArticleComment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/kbArticle/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/ArticleComment/hasAttributes/attributesAddedAtThisScope/members/kbArticle/resolutionGuidance/foreignKeyAttribute/id",
+                                "contents": [
+                                  "ArticleComment_Resolved/hasAttributes/kbArticleId"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "title",
+                    "parent": "ArticleComment_Resolved/attributeContext/ArticleComment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/ArticleComment/hasAttributes/attributesAddedAtThisScope/members/title",
+                    "contents": [
+                      "ArticleComment_Resolved/hasAttributes/title"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "commentText",
+                    "parent": "ArticleComment_Resolved/attributeContext/ArticleComment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/ArticleComment/hasAttributes/attributesAddedAtThisScope/members/commentText",
+                    "contents": [
+                      "ArticleComment_Resolved/hasAttributes/commentText"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "createdOn",
+                    "parent": "ArticleComment_Resolved/attributeContext/ArticleComment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/ArticleComment/hasAttributes/attributesAddedAtThisScope/members/createdOn",
+                    "contents": [
+                      "ArticleComment_Resolved/hasAttributes/createdOn"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "User_createdBy",
+                    "parent": "ArticleComment_Resolved/attributeContext/ArticleComment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/ArticleComment/hasAttributes/attributesAddedAtThisScope/members/User_createdBy",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "User",
+                        "parent": "ArticleComment_Resolved/attributeContext/ArticleComment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdBy",
+                        "definition": "resolvedFrom/User"
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "ArticleComment_Resolved/attributeContext/ArticleComment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdBy",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "ArticleComment_Resolved/attributeContext/ArticleComment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdBy/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "ArticleComment_Resolved/attributeContext/ArticleComment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdBy/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/ArticleComment/hasAttributes/attributesAddedAtThisScope/members/User_createdBy/resolutionGuidance/foreignKeyAttribute/createdBy",
+                                "contents": [
+                                  "ArticleComment_Resolved/hasAttributes/createdBy"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "modifiedOn",
+                    "parent": "ArticleComment_Resolved/attributeContext/ArticleComment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/ArticleComment/hasAttributes/attributesAddedAtThisScope/members/modifiedOn",
+                    "contents": [
+                      "ArticleComment_Resolved/hasAttributes/modifiedOn"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "User_modifiedBy",
+                    "parent": "ArticleComment_Resolved/attributeContext/ArticleComment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/ArticleComment/hasAttributes/attributesAddedAtThisScope/members/User_modifiedBy",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "User",
+                        "parent": "ArticleComment_Resolved/attributeContext/ArticleComment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedBy",
+                        "definition": "resolvedFrom/User"
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "ArticleComment_Resolved/attributeContext/ArticleComment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedBy",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "ArticleComment_Resolved/attributeContext/ArticleComment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedBy/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "ArticleComment_Resolved/attributeContext/ArticleComment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedBy/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/ArticleComment/hasAttributes/attributesAddedAtThisScope/members/User_modifiedBy/resolutionGuidance/foreignKeyAttribute/modifiedBy",
+                                "contents": [
+                                  "ArticleComment_Resolved/hasAttributes/modifiedBy"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "versionNumber",
+                    "parent": "ArticleComment_Resolved/attributeContext/ArticleComment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/ArticleComment/hasAttributes/attributesAddedAtThisScope/members/versionNumber",
+                    "contents": [
+                      "ArticleComment_Resolved/hasAttributes/versionNumber"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "organizationId",
+                    "parent": "ArticleComment_Resolved/attributeContext/ArticleComment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/ArticleComment/hasAttributes/attributesAddedAtThisScope/members/organizationId",
+                    "contents": [
+                      "ArticleComment_Resolved/hasAttributes/organizationId"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "User_createdOnBehalfBy",
+                    "parent": "ArticleComment_Resolved/attributeContext/ArticleComment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/ArticleComment/hasAttributes/attributesAddedAtThisScope/members/User_createdOnBehalfBy",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "User",
+                        "parent": "ArticleComment_Resolved/attributeContext/ArticleComment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdOnBehalfBy",
+                        "definition": "resolvedFrom/User"
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "ArticleComment_Resolved/attributeContext/ArticleComment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdOnBehalfBy",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "ArticleComment_Resolved/attributeContext/ArticleComment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdOnBehalfBy/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "ArticleComment_Resolved/attributeContext/ArticleComment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdOnBehalfBy/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/ArticleComment/hasAttributes/attributesAddedAtThisScope/members/User_createdOnBehalfBy/resolutionGuidance/foreignKeyAttribute/createdOnBehalfBy",
+                                "contents": [
+                                  "ArticleComment_Resolved/hasAttributes/createdOnBehalfBy"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "User_modifiedOnBehalfBy",
+                    "parent": "ArticleComment_Resolved/attributeContext/ArticleComment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/ArticleComment/hasAttributes/attributesAddedAtThisScope/members/User_modifiedOnBehalfBy",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "User",
+                        "parent": "ArticleComment_Resolved/attributeContext/ArticleComment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedOnBehalfBy",
+                        "definition": "resolvedFrom/User"
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "ArticleComment_Resolved/attributeContext/ArticleComment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedOnBehalfBy",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "ArticleComment_Resolved/attributeContext/ArticleComment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedOnBehalfBy/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "ArticleComment_Resolved/attributeContext/ArticleComment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedOnBehalfBy/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/ArticleComment/hasAttributes/attributesAddedAtThisScope/members/User_modifiedOnBehalfBy/resolutionGuidance/foreignKeyAttribute/modifiedOnBehalfBy",
+                                "contents": [
+                                  "ArticleComment_Resolved/hasAttributes/modifiedOnBehalfBy"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "kbArticleCommentId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            }
+          ],
+          "attributeContext": "ArticleComment_Resolved/attributeContext/ArticleComment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/kbArticleCommentId",
+          "isPrimaryKey": true,
+          "dataFormat": "Guid",
+          "sourceName": "kbarticlecommentid",
+          "sourceOrdering": 1,
+          "displayName": "Article Comment",
+          "description": "Unique identifier of the knowledge base article comment."
+        },
+        {
+          "name": "kbArticleId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "Article.cdm.json/Article",
+                        "kbArticleId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "ArticleComment_Resolved/attributeContext/ArticleComment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/kbArticle/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid",
+          "sourceName": "kbarticleid",
+          "sourceOrdering": 2,
+          "displayName": "KB Article",
+          "description": "Unique identifier of the knowledge base article to which the comment applies."
+        },
+        {
+          "name": "title",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "required"
+              ]
+            }
+          ],
+          "attributeContext": "ArticleComment_Resolved/attributeContext/ArticleComment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/title",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "title",
+          "sourceOrdering": 3,
+          "displayName": "Title",
+          "description": "Title of the knowledge base article comment.",
+          "maximumLength": 200
+        },
+        {
+          "name": "commentText",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "ArticleComment_Resolved/attributeContext/ArticleComment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/commentText",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "commenttext",
+          "sourceOrdering": 4,
+          "displayName": "Comment Text",
+          "description": "Comment text for the knowledge base article.",
+          "maximumLength": 100000
+        },
+        {
+          "name": "createdOn",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date",
+            "is.dataFormat.time",
+            "means.measurement.time",
+            "means.measurement.date.creation",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "ArticleComment_Resolved/attributeContext/ArticleComment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/createdOn",
+          "isNullable": true,
+          "dataFormat": "DateTime",
+          "sourceName": "createdon",
+          "sourceOrdering": 5,
+          "displayName": "Created On",
+          "description": "Date and time when the knowledge base article comment was created."
+        },
+        {
+          "name": "createdBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "User.cdm.json/User",
+                        "systemUserId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "ArticleComment_Resolved/attributeContext/ArticleComment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdBy/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "createdby",
+          "sourceOrdering": 6,
+          "displayName": "Created By",
+          "description": "Unique identifier of the user who created the knowledge base article comment."
+        },
+        {
+          "name": "modifiedOn",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date",
+            "is.dataFormat.time",
+            "means.measurement.time",
+            "means.measurement.date.modify",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "ArticleComment_Resolved/attributeContext/ArticleComment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/modifiedOn",
+          "isNullable": true,
+          "dataFormat": "DateTime",
+          "sourceName": "modifiedon",
+          "sourceOrdering": 7,
+          "displayName": "Modified On",
+          "description": "Date and time when the knowledge base article comment was last modified."
+        },
+        {
+          "name": "modifiedBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "User.cdm.json/User",
+                        "systemUserId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "ArticleComment_Resolved/attributeContext/ArticleComment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedBy/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "modifiedby",
+          "sourceOrdering": 8,
+          "displayName": "Modified By",
+          "description": "Unique identifier of the user who last modified the knowledge base article comment."
+        },
+        {
+          "name": "versionNumber",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            "is.dataFormat.big",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "ArticleComment_Resolved/attributeContext/ArticleComment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/versionNumber",
+          "isNullable": true,
+          "dataFormat": "Int64",
+          "sourceName": "versionnumber",
+          "sourceOrdering": 13
+        },
+        {
+          "name": "organizationId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            }
+          ],
+          "attributeContext": "ArticleComment_Resolved/attributeContext/ArticleComment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/organizationId",
+          "dataFormat": "Guid",
+          "sourceName": "organizationid",
+          "sourceOrdering": 14,
+          "displayName": "Organization ",
+          "description": "Unique identifier of the organization with which the article comment is associated."
+        },
+        {
+          "name": "createdOnBehalfBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "User.cdm.json/User",
+                        "systemUserId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "ArticleComment_Resolved/attributeContext/ArticleComment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdOnBehalfBy/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "createdonbehalfby",
+          "sourceOrdering": 17,
+          "displayName": "Created By (Delegate)",
+          "description": "Unique identifier of the delegate user who created the kbarticlecomment."
+        },
+        {
+          "name": "modifiedOnBehalfBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "User.cdm.json/User",
+                        "systemUserId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "ArticleComment_Resolved/attributeContext/ArticleComment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedOnBehalfBy/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "modifiedonbehalfby",
+          "sourceOrdering": 21,
+          "displayName": "Modified By (Delegate)",
+          "description": "Unique identifier of the delegate user who last modified the kbarticlecomment."
+        }
+      ],
+      "sourceName": "KbArticleComment",
+      "displayName": "Article Comment",
+      "description": "Comment on a knowledge base article.",
+      "version": "1.3",
+      "cdmSchemas": [
+        "/core/applicationCommon/ArticleComment.cdm.json/ArticleComment/hasAttributes/attributesAddedAtThisScope"
+      ]
+    }
+  ],
+  "documentVersion": "1.3"
+}

@@ -1,0 +1,155 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "VendPaymentBITransactionToAccountingExchRate.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "VendPaymentBITransactionToAccountingExchRate_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "VendPaymentBITransactionToAccountingExchRate_Resolved",
+        "definition": "resolvedFrom/VendPaymentBITransactionToAccountingExchRate",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "VendPaymentBITransactionToAccountingExchRate_Resolved/attributeContext/VendPaymentBITransactionToAccountingExchRate_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "VendPaymentBITransactionToAccountingExchRate_Resolved/attributeContext/VendPaymentBITransactionToAccountingExchRate_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CrossRate",
+            "parent": "VendPaymentBITransactionToAccountingExchRate_Resolved/attributeContext/VendPaymentBITransactionToAccountingExchRate_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendPaymentBITransactionToAccountingExchRate/hasAttributes/CrossRate",
+            "contents": [
+              "VendPaymentBITransactionToAccountingExchRate_Resolved/hasAttributes/CrossRate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "FromCurrencyCode",
+            "parent": "VendPaymentBITransactionToAccountingExchRate_Resolved/attributeContext/VendPaymentBITransactionToAccountingExchRate_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendPaymentBITransactionToAccountingExchRate/hasAttributes/FromCurrencyCode",
+            "contents": [
+              "VendPaymentBITransactionToAccountingExchRate_Resolved/hasAttributes/FromCurrencyCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Company",
+            "parent": "VendPaymentBITransactionToAccountingExchRate_Resolved/attributeContext/VendPaymentBITransactionToAccountingExchRate_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendPaymentBITransactionToAccountingExchRate/hasAttributes/Company",
+            "contents": [
+              "VendPaymentBITransactionToAccountingExchRate_Resolved/hasAttributes/Company"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ToCurrencyCode",
+            "parent": "VendPaymentBITransactionToAccountingExchRate_Resolved/attributeContext/VendPaymentBITransactionToAccountingExchRate_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendPaymentBITransactionToAccountingExchRate/hasAttributes/ToCurrencyCode",
+            "contents": [
+              "VendPaymentBITransactionToAccountingExchRate_Resolved/hasAttributes/ToCurrencyCode"
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "CrossRate",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VendPaymentBITransactionToAccountingExchRate_Resolved/attributeContext/VendPaymentBITransactionToAccountingExchRate_Resolved/CrossRate",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "FromCurrencyCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VendPaymentBITransactionToAccountingExchRate_Resolved/attributeContext/VendPaymentBITransactionToAccountingExchRate_Resolved/FromCurrencyCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Company",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VendPaymentBITransactionToAccountingExchRate_Resolved/attributeContext/VendPaymentBITransactionToAccountingExchRate_Resolved/Company",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ToCurrencyCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VendPaymentBITransactionToAccountingExchRate_Resolved/attributeContext/VendPaymentBITransactionToAccountingExchRate_Resolved/ToCurrencyCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        }
+      ],
+      "displayName": "Vendor transaction to accounting currency exchange rates",
+      "version": "1.0.1"
+    }
+  ],
+  "documentVersion": "1.0.1"
+}

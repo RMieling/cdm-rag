@@ -1,0 +1,281 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "RTSLCurrencyRuleGroupEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "RTSLCurrencyRuleGroupEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "RTSLCurrencyRuleGroupEntity_Resolved",
+        "definition": "resolvedFrom/RTSLCurrencyRuleGroupEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "RTSLCurrencyRuleGroupEntity_Resolved/attributeContext/RTSLCurrencyRuleGroupEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "RTSLCurrencyRuleGroupEntity_Resolved/attributeContext/RTSLCurrencyRuleGroupEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CurrencyRuleGroupId",
+            "parent": "RTSLCurrencyRuleGroupEntity_Resolved/attributeContext/RTSLCurrencyRuleGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RTSLCurrencyRuleGroupEntity/hasAttributes/CurrencyRuleGroupId",
+            "contents": [
+              "RTSLCurrencyRuleGroupEntity_Resolved/hasAttributes/CurrencyRuleGroupId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "RTSLCurrencyRuleGroupEntity_Resolved/attributeContext/RTSLCurrencyRuleGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RTSLCurrencyRuleGroupEntity/hasAttributes/Description",
+            "contents": [
+              "RTSLCurrencyRuleGroupEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "RuleGroupId",
+            "parent": "RTSLCurrencyRuleGroupEntity_Resolved/attributeContext/RTSLCurrencyRuleGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RTSLCurrencyRuleGroupEntity/hasAttributes/RuleGroupId",
+            "contents": [
+              "RTSLCurrencyRuleGroupEntity_Resolved/hasAttributes/RuleGroupId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_RTSLCurrencyRuleGroupRelationship",
+            "parent": "RTSLCurrencyRuleGroupEntity_Resolved/attributeContext/RTSLCurrencyRuleGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RTSLCurrencyRuleGroupEntity/hasAttributes/BackingTable_RTSLCurrencyRuleGroupRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "RTSLCurrencyRuleGroup",
+                "parent": "RTSLCurrencyRuleGroupEntity_Resolved/attributeContext/RTSLCurrencyRuleGroupEntity_Resolved/BackingTable_RTSLCurrencyRuleGroupRelationship",
+                "definition": "resolvedFrom/RTSLCurrencyRuleGroup",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "RTSLCurrencyRuleGroupEntity_Resolved/attributeContext/RTSLCurrencyRuleGroupEntity_Resolved/BackingTable_RTSLCurrencyRuleGroupRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "RTSLCurrencyRuleGroupEntity_Resolved/attributeContext/RTSLCurrencyRuleGroupEntity_Resolved/BackingTable_RTSLCurrencyRuleGroupRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "RTSLCurrencyRuleGroupEntity_Resolved/attributeContext/RTSLCurrencyRuleGroupEntity_Resolved/BackingTable_RTSLCurrencyRuleGroupRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "RTSLCurrencyRuleGroupEntity_Resolved/hasAttributes/BackingTable_RTSLCurrencyRuleGroupRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "RTSLCurrencyRuleGroupEntity_Resolved/attributeContext/RTSLCurrencyRuleGroupEntity_Resolved",
+            "definition": "resolvedFrom/RTSLCurrencyRuleGroupEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "RTSLCurrencyRuleGroupEntity_Resolved/attributeContext/RTSLCurrencyRuleGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "RTSLCurrencyRuleGroupEntity_Resolved/attributeContext/RTSLCurrencyRuleGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "RTSLCurrencyRuleGroupEntity_Resolved/attributeContext/RTSLCurrencyRuleGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "RTSLCurrencyRuleGroupEntity_Resolved/attributeContext/RTSLCurrencyRuleGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "RTSLCurrencyRuleGroupEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "CurrencyRuleGroupId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RTSLCurrencyRuleGroupEntity_Resolved/attributeContext/RTSLCurrencyRuleGroupEntity_Resolved/CurrencyRuleGroupId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RTSLCurrencyRuleGroupEntity_Resolved/attributeContext/RTSLCurrencyRuleGroupEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "RuleGroupId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RTSLCurrencyRuleGroupEntity_Resolved/attributeContext/RTSLCurrencyRuleGroupEntity_Resolved/RuleGroupId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_RTSLCurrencyRuleGroupRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Group/RTSLCurrencyRuleGroup.cdm.json/RTSLCurrencyRuleGroup",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "RTSLCurrencyRuleGroupEntity_Resolved/attributeContext/RTSLCurrencyRuleGroupEntity_Resolved/BackingTable_RTSLCurrencyRuleGroupRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "RTSLCurrencyRuleGroupEntity_Resolved/attributeContext/RTSLCurrencyRuleGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Translation currency rules groups",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

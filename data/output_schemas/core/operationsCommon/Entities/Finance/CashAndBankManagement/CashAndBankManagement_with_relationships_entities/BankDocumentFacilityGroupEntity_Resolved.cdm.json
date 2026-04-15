@@ -1,0 +1,188 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "BankDocumentFacilityGroupEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "BankDocumentFacilityGroupEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "BankDocumentFacilityGroupEntity_Resolved",
+        "definition": "resolvedFrom/BankDocumentFacilityGroupEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "BankDocumentFacilityGroupEntity_Resolved/attributeContext/BankDocumentFacilityGroupEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "BankDocumentFacilityGroupEntity_Resolved/attributeContext/BankDocumentFacilityGroupEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "FacilityGroup",
+            "parent": "BankDocumentFacilityGroupEntity_Resolved/attributeContext/BankDocumentFacilityGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BankDocumentFacilityGroupEntity/hasAttributes/FacilityGroup",
+            "contents": [
+              "BankDocumentFacilityGroupEntity_Resolved/hasAttributes/FacilityGroup"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "BankDocumentFacilityGroupEntity_Resolved/attributeContext/BankDocumentFacilityGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BankDocumentFacilityGroupEntity/hasAttributes/Description",
+            "contents": [
+              "BankDocumentFacilityGroupEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_BankDocumentFacilityGroupRelationship",
+            "parent": "BankDocumentFacilityGroupEntity_Resolved/attributeContext/BankDocumentFacilityGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BankDocumentFacilityGroupEntity/hasAttributes/BackingTable_BankDocumentFacilityGroupRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "BankDocumentFacilityGroup",
+                "parent": "BankDocumentFacilityGroupEntity_Resolved/attributeContext/BankDocumentFacilityGroupEntity_Resolved/BackingTable_BankDocumentFacilityGroupRelationship",
+                "definition": "resolvedFrom/BankDocumentFacilityGroup",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "BankDocumentFacilityGroupEntity_Resolved/attributeContext/BankDocumentFacilityGroupEntity_Resolved/BackingTable_BankDocumentFacilityGroupRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "BankDocumentFacilityGroupEntity_Resolved/attributeContext/BankDocumentFacilityGroupEntity_Resolved/BackingTable_BankDocumentFacilityGroupRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "BankDocumentFacilityGroupEntity_Resolved/attributeContext/BankDocumentFacilityGroupEntity_Resolved/BackingTable_BankDocumentFacilityGroupRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "BankDocumentFacilityGroupEntity_Resolved/hasAttributes/BackingTable_BankDocumentFacilityGroupRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "FacilityGroup",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BankDocumentFacilityGroupEntity_Resolved/attributeContext/BankDocumentFacilityGroupEntity_Resolved/FacilityGroup",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BankDocumentFacilityGroupEntity_Resolved/attributeContext/BankDocumentFacilityGroupEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_BankDocumentFacilityGroupRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Bank/Group/BankDocumentFacilityGroup.cdm.json/BankDocumentFacilityGroup",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "BankDocumentFacilityGroupEntity_Resolved/attributeContext/BankDocumentFacilityGroupEntity_Resolved/BackingTable_BankDocumentFacilityGroupRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Bank facility groups",
+      "version": "1.1.1"
+    }
+  ],
+  "documentVersion": "1.1.1"
+}

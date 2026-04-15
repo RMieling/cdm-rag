@@ -1,0 +1,261 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "TaxationCodeSetupEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TaxationCodeSetupEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "TaxationCodeSetupEntity_Resolved",
+        "definition": "resolvedFrom/TaxationCodeSetupEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "TaxationCodeSetupEntity_Resolved/attributeContext/TaxationCodeSetupEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "TaxationCodeSetupEntity_Resolved/attributeContext/TaxationCodeSetupEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "TaxType",
+            "parent": "TaxationCodeSetupEntity_Resolved/attributeContext/TaxationCodeSetupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxationCodeSetupEntity/hasAttributes/TaxType",
+            "contents": [
+              "TaxationCodeSetupEntity_Resolved/hasAttributes/TaxType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Mandatory",
+            "parent": "TaxationCodeSetupEntity_Resolved/attributeContext/TaxationCodeSetupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxationCodeSetupEntity/hasAttributes/Mandatory",
+            "contents": [
+              "TaxationCodeSetupEntity_Resolved/hasAttributes/Mandatory"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_TaxationCodeSetup_BRRelationship",
+            "parent": "TaxationCodeSetupEntity_Resolved/attributeContext/TaxationCodeSetupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxationCodeSetupEntity/hasAttributes/BackingTable_TaxationCodeSetup_BRRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "TaxationCodeSetup_BR",
+                "parent": "TaxationCodeSetupEntity_Resolved/attributeContext/TaxationCodeSetupEntity_Resolved/BackingTable_TaxationCodeSetup_BRRelationship",
+                "definition": "resolvedFrom/TaxationCodeSetup_BR",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxationCodeSetupEntity_Resolved/attributeContext/TaxationCodeSetupEntity_Resolved/BackingTable_TaxationCodeSetup_BRRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxationCodeSetupEntity_Resolved/attributeContext/TaxationCodeSetupEntity_Resolved/BackingTable_TaxationCodeSetup_BRRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxationCodeSetupEntity_Resolved/attributeContext/TaxationCodeSetupEntity_Resolved/BackingTable_TaxationCodeSetup_BRRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxationCodeSetupEntity_Resolved/hasAttributes/BackingTable_TaxationCodeSetup_BRRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "TaxationCodeSetupEntity_Resolved/attributeContext/TaxationCodeSetupEntity_Resolved",
+            "definition": "resolvedFrom/TaxationCodeSetupEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "TaxationCodeSetupEntity_Resolved/attributeContext/TaxationCodeSetupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxationCodeSetupEntity_Resolved/attributeContext/TaxationCodeSetupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxationCodeSetupEntity_Resolved/attributeContext/TaxationCodeSetupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxationCodeSetupEntity_Resolved/attributeContext/TaxationCodeSetupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxationCodeSetupEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "TaxType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxationCodeSetupEntity_Resolved/attributeContext/TaxationCodeSetupEntity_Resolved/TaxType",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Mandatory",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxationCodeSetupEntity_Resolved/attributeContext/TaxationCodeSetupEntity_Resolved/Mandatory",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_TaxationCodeSetup_BRRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Tax/Group/TaxationCodeSetup_BR.cdm.json/TaxationCodeSetup_BR",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxationCodeSetupEntity_Resolved/attributeContext/TaxationCodeSetupEntity_Resolved/BackingTable_TaxationCodeSetup_BRRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxationCodeSetupEntity_Resolved/attributeContext/TaxationCodeSetupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Taxation code setup",
+      "version": "1.1.1"
+    }
+  ],
+  "documentVersion": "1.1.1"
+}

@@ -1,0 +1,320 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "TaxReportingCodeEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TaxReportingCodeEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "TaxReportingCodeEntity_Resolved",
+        "definition": "resolvedFrom/TaxReportingCodeEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "TaxReportingCodeEntity_Resolved/attributeContext/TaxReportingCodeEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "TaxReportingCodeEntity_Resolved/attributeContext/TaxReportingCodeEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "TaxReportingCode",
+            "parent": "TaxReportingCodeEntity_Resolved/attributeContext/TaxReportingCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxReportingCodeEntity/hasAttributes/TaxReportingCode",
+            "contents": [
+              "TaxReportingCodeEntity_Resolved/hasAttributes/TaxReportingCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ReportLayout",
+            "parent": "TaxReportingCodeEntity_Resolved/attributeContext/TaxReportingCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxReportingCodeEntity/hasAttributes/ReportLayout",
+            "contents": [
+              "TaxReportingCodeEntity_Resolved/hasAttributes/ReportLayout"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ReportText",
+            "parent": "TaxReportingCodeEntity_Resolved/attributeContext/TaxReportingCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxReportingCodeEntity/hasAttributes/ReportText",
+            "contents": [
+              "TaxReportingCodeEntity_Resolved/hasAttributes/ReportText"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "TaxReportingCodeEntity_Resolved/attributeContext/TaxReportingCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxReportingCodeEntity/hasAttributes/Description",
+            "contents": [
+              "TaxReportingCodeEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "SalesTaxCorrections",
+            "parent": "TaxReportingCodeEntity_Resolved/attributeContext/TaxReportingCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxReportingCodeEntity/hasAttributes/SalesTaxCorrections",
+            "contents": [
+              "TaxReportingCodeEntity_Resolved/hasAttributes/SalesTaxCorrections"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_TaxReportCollectionRelationship",
+            "parent": "TaxReportingCodeEntity_Resolved/attributeContext/TaxReportingCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxReportingCodeEntity/hasAttributes/BackingTable_TaxReportCollectionRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "TaxReportCollection",
+                "parent": "TaxReportingCodeEntity_Resolved/attributeContext/TaxReportingCodeEntity_Resolved/BackingTable_TaxReportCollectionRelationship",
+                "definition": "resolvedFrom/TaxReportCollection",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxReportingCodeEntity_Resolved/attributeContext/TaxReportingCodeEntity_Resolved/BackingTable_TaxReportCollectionRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxReportingCodeEntity_Resolved/attributeContext/TaxReportingCodeEntity_Resolved/BackingTable_TaxReportCollectionRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxReportingCodeEntity_Resolved/attributeContext/TaxReportingCodeEntity_Resolved/BackingTable_TaxReportCollectionRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxReportingCodeEntity_Resolved/hasAttributes/BackingTable_TaxReportCollectionRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "TaxReportingCodeEntity_Resolved/attributeContext/TaxReportingCodeEntity_Resolved",
+            "definition": "resolvedFrom/TaxReportingCodeEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "TaxReportingCodeEntity_Resolved/attributeContext/TaxReportingCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxReportingCodeEntity_Resolved/attributeContext/TaxReportingCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxReportingCodeEntity_Resolved/attributeContext/TaxReportingCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxReportingCodeEntity_Resolved/attributeContext/TaxReportingCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxReportingCodeEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "TaxReportingCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxReportingCodeEntity_Resolved/attributeContext/TaxReportingCodeEntity_Resolved/TaxReportingCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ReportLayout",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxReportingCodeEntity_Resolved/attributeContext/TaxReportingCodeEntity_Resolved/ReportLayout",
+          "dataFormat": "String"
+        },
+        {
+          "name": "ReportText",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxReportingCodeEntity_Resolved/attributeContext/TaxReportingCodeEntity_Resolved/ReportText",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxReportingCodeEntity_Resolved/attributeContext/TaxReportingCodeEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "SalesTaxCorrections",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxReportingCodeEntity_Resolved/attributeContext/TaxReportingCodeEntity_Resolved/SalesTaxCorrections",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_TaxReportCollectionRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Tax/Group/TaxReportCollection.cdm.json/TaxReportCollection",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxReportingCodeEntity_Resolved/attributeContext/TaxReportingCodeEntity_Resolved/BackingTable_TaxReportCollectionRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxReportingCodeEntity_Resolved/attributeContext/TaxReportingCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Sales tax reporting codes",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

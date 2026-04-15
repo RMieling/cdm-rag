@@ -1,0 +1,262 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "AssetDiscountRateEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "AssetDiscountRateEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "AssetDiscountRateEntity_Resolved",
+        "definition": "resolvedFrom/AssetDiscountRateEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "AssetDiscountRateEntity_Resolved/attributeContext/AssetDiscountRateEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "AssetDiscountRateEntity_Resolved/attributeContext/AssetDiscountRateEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "MarketDiscountRatePercentage",
+            "parent": "AssetDiscountRateEntity_Resolved/attributeContext/AssetDiscountRateEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetDiscountRateEntity/hasAttributes/MarketDiscountRatePercentage",
+            "contents": [
+              "AssetDiscountRateEntity_Resolved/hasAttributes/MarketDiscountRatePercentage"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "StartDate",
+            "parent": "AssetDiscountRateEntity_Resolved/attributeContext/AssetDiscountRateEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetDiscountRateEntity/hasAttributes/StartDate",
+            "contents": [
+              "AssetDiscountRateEntity_Resolved/hasAttributes/StartDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_AssetDiscountRate_JPRelationship",
+            "parent": "AssetDiscountRateEntity_Resolved/attributeContext/AssetDiscountRateEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetDiscountRateEntity/hasAttributes/BackingTable_AssetDiscountRate_JPRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "AssetDiscountRate_JP",
+                "parent": "AssetDiscountRateEntity_Resolved/attributeContext/AssetDiscountRateEntity_Resolved/BackingTable_AssetDiscountRate_JPRelationship",
+                "definition": "resolvedFrom/AssetDiscountRate_JP",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "AssetDiscountRateEntity_Resolved/attributeContext/AssetDiscountRateEntity_Resolved/BackingTable_AssetDiscountRate_JPRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "AssetDiscountRateEntity_Resolved/attributeContext/AssetDiscountRateEntity_Resolved/BackingTable_AssetDiscountRate_JPRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "AssetDiscountRateEntity_Resolved/attributeContext/AssetDiscountRateEntity_Resolved/BackingTable_AssetDiscountRate_JPRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "AssetDiscountRateEntity_Resolved/hasAttributes/BackingTable_AssetDiscountRate_JPRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "AssetDiscountRateEntity_Resolved/attributeContext/AssetDiscountRateEntity_Resolved",
+            "definition": "resolvedFrom/AssetDiscountRateEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "AssetDiscountRateEntity_Resolved/attributeContext/AssetDiscountRateEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "AssetDiscountRateEntity_Resolved/attributeContext/AssetDiscountRateEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "AssetDiscountRateEntity_Resolved/attributeContext/AssetDiscountRateEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "AssetDiscountRateEntity_Resolved/attributeContext/AssetDiscountRateEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "AssetDiscountRateEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "MarketDiscountRatePercentage",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AssetDiscountRateEntity_Resolved/attributeContext/AssetDiscountRateEntity_Resolved/MarketDiscountRatePercentage",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Market discount rate percentage"
+        },
+        {
+          "name": "StartDate",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AssetDiscountRateEntity_Resolved/attributeContext/AssetDiscountRateEntity_Resolved/StartDate",
+          "dataFormat": "String",
+          "displayName": "Start date"
+        },
+        {
+          "name": "BackingTable_AssetDiscountRate_JPRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/FixedAssets/Reference/AssetDiscountRate_JP.cdm.json/AssetDiscountRate_JP",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "AssetDiscountRateEntity_Resolved/attributeContext/AssetDiscountRateEntity_Resolved/BackingTable_AssetDiscountRate_JPRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "AssetDiscountRateEntity_Resolved/attributeContext/AssetDiscountRateEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Discount rate",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

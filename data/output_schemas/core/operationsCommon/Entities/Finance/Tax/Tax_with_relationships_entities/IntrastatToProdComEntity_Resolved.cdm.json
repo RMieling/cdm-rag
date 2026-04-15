@@ -1,0 +1,361 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "IntrastatToProdComEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "IntrastatToProdComEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "IntrastatToProdComEntity_Resolved",
+        "definition": "resolvedFrom/IntrastatToProdComEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "IntrastatToProdComEntity_Resolved/attributeContext/IntrastatToProdComEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "IntrastatToProdComEntity_Resolved/attributeContext/IntrastatToProdComEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CommodityHierarchyName",
+            "parent": "IntrastatToProdComEntity_Resolved/attributeContext/IntrastatToProdComEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/IntrastatToProdComEntity/hasAttributes/CommodityHierarchyName",
+            "contents": [
+              "IntrastatToProdComEntity_Resolved/hasAttributes/CommodityHierarchyName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CommodityName",
+            "parent": "IntrastatToProdComEntity_Resolved/attributeContext/IntrastatToProdComEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/IntrastatToProdComEntity/hasAttributes/CommodityName",
+            "contents": [
+              "IntrastatToProdComEntity_Resolved/hasAttributes/CommodityName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "FromYear",
+            "parent": "IntrastatToProdComEntity_Resolved/attributeContext/IntrastatToProdComEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/IntrastatToProdComEntity/hasAttributes/FromYear",
+            "contents": [
+              "IntrastatToProdComEntity_Resolved/hasAttributes/FromYear"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ToYear",
+            "parent": "IntrastatToProdComEntity_Resolved/attributeContext/IntrastatToProdComEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/IntrastatToProdComEntity/hasAttributes/ToYear",
+            "contents": [
+              "IntrastatToProdComEntity_Resolved/hasAttributes/ToYear"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ProdComCode",
+            "parent": "IntrastatToProdComEntity_Resolved/attributeContext/IntrastatToProdComEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/IntrastatToProdComEntity/hasAttributes/ProdComCode",
+            "contents": [
+              "IntrastatToProdComEntity_Resolved/hasAttributes/ProdComCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Unit",
+            "parent": "IntrastatToProdComEntity_Resolved/attributeContext/IntrastatToProdComEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/IntrastatToProdComEntity/hasAttributes/Unit",
+            "contents": [
+              "IntrastatToProdComEntity_Resolved/hasAttributes/Unit"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Variable",
+            "parent": "IntrastatToProdComEntity_Resolved/attributeContext/IntrastatToProdComEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/IntrastatToProdComEntity/hasAttributes/Variable",
+            "contents": [
+              "IntrastatToProdComEntity_Resolved/hasAttributes/Variable"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_IntrastatToProdcomRelationship",
+            "parent": "IntrastatToProdComEntity_Resolved/attributeContext/IntrastatToProdComEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/IntrastatToProdComEntity/hasAttributes/BackingTable_IntrastatToProdcomRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "IntrastatToProdcom",
+                "parent": "IntrastatToProdComEntity_Resolved/attributeContext/IntrastatToProdComEntity_Resolved/BackingTable_IntrastatToProdcomRelationship",
+                "definition": "resolvedFrom/IntrastatToProdcom",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "IntrastatToProdComEntity_Resolved/attributeContext/IntrastatToProdComEntity_Resolved/BackingTable_IntrastatToProdcomRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "IntrastatToProdComEntity_Resolved/attributeContext/IntrastatToProdComEntity_Resolved/BackingTable_IntrastatToProdcomRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "IntrastatToProdComEntity_Resolved/attributeContext/IntrastatToProdComEntity_Resolved/BackingTable_IntrastatToProdcomRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "IntrastatToProdComEntity_Resolved/hasAttributes/BackingTable_IntrastatToProdcomRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "IntrastatToProdComEntity_Resolved/attributeContext/IntrastatToProdComEntity_Resolved",
+            "definition": "resolvedFrom/IntrastatToProdComEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "IntrastatToProdComEntity_Resolved/attributeContext/IntrastatToProdComEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "IntrastatToProdComEntity_Resolved/attributeContext/IntrastatToProdComEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "IntrastatToProdComEntity_Resolved/attributeContext/IntrastatToProdComEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "IntrastatToProdComEntity_Resolved/attributeContext/IntrastatToProdComEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "IntrastatToProdComEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "CommodityHierarchyName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "IntrastatToProdComEntity_Resolved/attributeContext/IntrastatToProdComEntity_Resolved/CommodityHierarchyName",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "CommodityName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "IntrastatToProdComEntity_Resolved/attributeContext/IntrastatToProdComEntity_Resolved/CommodityName",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "FromYear",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "IntrastatToProdComEntity_Resolved/attributeContext/IntrastatToProdComEntity_Resolved/FromYear",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ToYear",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "IntrastatToProdComEntity_Resolved/attributeContext/IntrastatToProdComEntity_Resolved/ToYear",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ProdComCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "IntrastatToProdComEntity_Resolved/attributeContext/IntrastatToProdComEntity_Resolved/ProdComCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Unit",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "IntrastatToProdComEntity_Resolved/attributeContext/IntrastatToProdComEntity_Resolved/Unit",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Variable",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "IntrastatToProdComEntity_Resolved/attributeContext/IntrastatToProdComEntity_Resolved/Variable",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_IntrastatToProdcomRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Common/Intrastat/Main/IntrastatToProdcom.cdm.json/IntrastatToProdcom",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "IntrastatToProdComEntity_Resolved/attributeContext/IntrastatToProdComEntity_Resolved/BackingTable_IntrastatToProdcomRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "IntrastatToProdComEntity_Resolved/attributeContext/IntrastatToProdComEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Intrastat to PRODCOM conversion",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

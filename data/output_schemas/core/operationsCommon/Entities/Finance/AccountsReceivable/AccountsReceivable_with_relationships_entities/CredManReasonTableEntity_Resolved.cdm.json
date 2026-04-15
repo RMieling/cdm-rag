@@ -1,0 +1,281 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "CredManReasonTableEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "CredManReasonTableEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "CredManReasonTableEntity_Resolved",
+        "definition": "resolvedFrom/CredManReasonTableEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "CredManReasonTableEntity_Resolved/attributeContext/CredManReasonTableEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "CredManReasonTableEntity_Resolved/attributeContext/CredManReasonTableEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Type",
+            "parent": "CredManReasonTableEntity_Resolved/attributeContext/CredManReasonTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CredManReasonTableEntity/hasAttributes/Type",
+            "contents": [
+              "CredManReasonTableEntity_Resolved/hasAttributes/Type"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ReasonId",
+            "parent": "CredManReasonTableEntity_Resolved/attributeContext/CredManReasonTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CredManReasonTableEntity/hasAttributes/ReasonId",
+            "contents": [
+              "CredManReasonTableEntity_Resolved/hasAttributes/ReasonId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "CredManReasonTableEntity_Resolved/attributeContext/CredManReasonTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CredManReasonTableEntity/hasAttributes/Description",
+            "contents": [
+              "CredManReasonTableEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_CredManReasonTableRelationship",
+            "parent": "CredManReasonTableEntity_Resolved/attributeContext/CredManReasonTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CredManReasonTableEntity/hasAttributes/BackingTable_CredManReasonTableRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CredManReasonTable",
+                "parent": "CredManReasonTableEntity_Resolved/attributeContext/CredManReasonTableEntity_Resolved/BackingTable_CredManReasonTableRelationship",
+                "definition": "resolvedFrom/CredManReasonTable",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CredManReasonTableEntity_Resolved/attributeContext/CredManReasonTableEntity_Resolved/BackingTable_CredManReasonTableRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CredManReasonTableEntity_Resolved/attributeContext/CredManReasonTableEntity_Resolved/BackingTable_CredManReasonTableRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CredManReasonTableEntity_Resolved/attributeContext/CredManReasonTableEntity_Resolved/BackingTable_CredManReasonTableRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CredManReasonTableEntity_Resolved/hasAttributes/BackingTable_CredManReasonTableRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "CredManReasonTableEntity_Resolved/attributeContext/CredManReasonTableEntity_Resolved",
+            "definition": "resolvedFrom/CredManReasonTableEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "CredManReasonTableEntity_Resolved/attributeContext/CredManReasonTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CredManReasonTableEntity_Resolved/attributeContext/CredManReasonTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CredManReasonTableEntity_Resolved/attributeContext/CredManReasonTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CredManReasonTableEntity_Resolved/attributeContext/CredManReasonTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CredManReasonTableEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Type",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CredManReasonTableEntity_Resolved/attributeContext/CredManReasonTableEntity_Resolved/Type",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ReasonId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CredManReasonTableEntity_Resolved/attributeContext/CredManReasonTableEntity_Resolved/ReasonId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CredManReasonTableEntity_Resolved/attributeContext/CredManReasonTableEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_CredManReasonTableRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/AccountsReceivable/Group/CredManReasonTable.cdm.json/CredManReasonTable",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CredManReasonTableEntity_Resolved/attributeContext/CredManReasonTableEntity_Resolved/BackingTable_CredManReasonTableRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CredManReasonTableEntity_Resolved/attributeContext/CredManReasonTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Reason table",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

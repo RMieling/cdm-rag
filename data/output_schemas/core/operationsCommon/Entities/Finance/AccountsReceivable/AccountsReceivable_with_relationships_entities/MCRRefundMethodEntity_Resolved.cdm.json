@@ -1,0 +1,208 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "MCRRefundMethodEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "MCRRefundMethodEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "MCRRefundMethodEntity_Resolved",
+        "definition": "resolvedFrom/MCRRefundMethodEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "MCRRefundMethodEntity_Resolved/attributeContext/MCRRefundMethodEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "MCRRefundMethodEntity_Resolved/attributeContext/MCRRefundMethodEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CurrencyCode",
+            "parent": "MCRRefundMethodEntity_Resolved/attributeContext/MCRRefundMethodEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/MCRRefundMethodEntity/hasAttributes/CurrencyCode",
+            "contents": [
+              "MCRRefundMethodEntity_Resolved/hasAttributes/CurrencyCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "PaymentMode",
+            "parent": "MCRRefundMethodEntity_Resolved/attributeContext/MCRRefundMethodEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/MCRRefundMethodEntity/hasAttributes/PaymentMode",
+            "contents": [
+              "MCRRefundMethodEntity_Resolved/hasAttributes/PaymentMode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "TenderTypeId",
+            "parent": "MCRRefundMethodEntity_Resolved/attributeContext/MCRRefundMethodEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/MCRRefundMethodEntity/hasAttributes/TenderTypeId",
+            "contents": [
+              "MCRRefundMethodEntity_Resolved/hasAttributes/TenderTypeId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "MCRRefundMethodEntity_Resolved/attributeContext/MCRRefundMethodEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/MCRRefundMethodEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "MCRRefundMethodEntity_Resolved/attributeContext/MCRRefundMethodEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "MCRRefundMethodEntity_Resolved/attributeContext/MCRRefundMethodEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "MCRRefundMethodEntity_Resolved/attributeContext/MCRRefundMethodEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "MCRRefundMethodEntity_Resolved/attributeContext/MCRRefundMethodEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "MCRRefundMethodEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "CurrencyCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "MCRRefundMethodEntity_Resolved/attributeContext/MCRRefundMethodEntity_Resolved/CurrencyCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "PaymentMode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "MCRRefundMethodEntity_Resolved/attributeContext/MCRRefundMethodEntity_Resolved/PaymentMode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "TenderTypeId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "MCRRefundMethodEntity_Resolved/attributeContext/MCRRefundMethodEntity_Resolved/TenderTypeId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "MCRRefundMethodEntity_Resolved/attributeContext/MCRRefundMethodEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Refund method setup",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

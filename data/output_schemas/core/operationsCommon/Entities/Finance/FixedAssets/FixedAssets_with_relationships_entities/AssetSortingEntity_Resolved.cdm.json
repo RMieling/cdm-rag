@@ -1,0 +1,281 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "AssetSortingEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "AssetSortingEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "AssetSortingEntity_Resolved",
+        "definition": "resolvedFrom/AssetSortingEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "AssetSortingEntity_Resolved/attributeContext/AssetSortingEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "AssetSortingEntity_Resolved/attributeContext/AssetSortingEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "AssetSortingEntity_Resolved/attributeContext/AssetSortingEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetSortingEntity/hasAttributes/Description",
+            "contents": [
+              "AssetSortingEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Sorting",
+            "parent": "AssetSortingEntity_Resolved/attributeContext/AssetSortingEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetSortingEntity/hasAttributes/Sorting",
+            "contents": [
+              "AssetSortingEntity_Resolved/hasAttributes/Sorting"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Identification",
+            "parent": "AssetSortingEntity_Resolved/attributeContext/AssetSortingEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetSortingEntity/hasAttributes/Identification",
+            "contents": [
+              "AssetSortingEntity_Resolved/hasAttributes/Identification"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_AssetSortingRelationship",
+            "parent": "AssetSortingEntity_Resolved/attributeContext/AssetSortingEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetSortingEntity/hasAttributes/BackingTable_AssetSortingRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "AssetSorting",
+                "parent": "AssetSortingEntity_Resolved/attributeContext/AssetSortingEntity_Resolved/BackingTable_AssetSortingRelationship",
+                "definition": "resolvedFrom/AssetSorting",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "AssetSortingEntity_Resolved/attributeContext/AssetSortingEntity_Resolved/BackingTable_AssetSortingRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "AssetSortingEntity_Resolved/attributeContext/AssetSortingEntity_Resolved/BackingTable_AssetSortingRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "AssetSortingEntity_Resolved/attributeContext/AssetSortingEntity_Resolved/BackingTable_AssetSortingRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "AssetSortingEntity_Resolved/hasAttributes/BackingTable_AssetSortingRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "AssetSortingEntity_Resolved/attributeContext/AssetSortingEntity_Resolved",
+            "definition": "resolvedFrom/AssetSortingEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "AssetSortingEntity_Resolved/attributeContext/AssetSortingEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "AssetSortingEntity_Resolved/attributeContext/AssetSortingEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "AssetSortingEntity_Resolved/attributeContext/AssetSortingEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "AssetSortingEntity_Resolved/attributeContext/AssetSortingEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "AssetSortingEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AssetSortingEntity_Resolved/attributeContext/AssetSortingEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Sorting",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AssetSortingEntity_Resolved/attributeContext/AssetSortingEntity_Resolved/Sorting",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Identification",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AssetSortingEntity_Resolved/attributeContext/AssetSortingEntity_Resolved/Identification",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_AssetSortingRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/FixedAssets/Parameter/AssetSorting.cdm.json/AssetSorting",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "AssetSortingEntity_Resolved/attributeContext/AssetSortingEntity_Resolved/BackingTable_AssetSortingRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "AssetSortingEntity_Resolved/attributeContext/AssetSortingEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Fixed asset properties",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

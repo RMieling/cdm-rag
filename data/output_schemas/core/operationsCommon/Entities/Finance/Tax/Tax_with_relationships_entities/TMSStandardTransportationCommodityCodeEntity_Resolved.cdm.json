@@ -1,0 +1,188 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "TMSStandardTransportationCommodityCodeEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TMSStandardTransportationCommodityCodeEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "TMSStandardTransportationCommodityCodeEntity_Resolved",
+        "definition": "resolvedFrom/TMSStandardTransportationCommodityCodeEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "TMSStandardTransportationCommodityCodeEntity_Resolved/attributeContext/TMSStandardTransportationCommodityCodeEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "TMSStandardTransportationCommodityCodeEntity_Resolved/attributeContext/TMSStandardTransportationCommodityCodeEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "StandardTransportationCommodityCodeName",
+            "parent": "TMSStandardTransportationCommodityCodeEntity_Resolved/attributeContext/TMSStandardTransportationCommodityCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TMSStandardTransportationCommodityCodeEntity/hasAttributes/StandardTransportationCommodityCodeName",
+            "contents": [
+              "TMSStandardTransportationCommodityCodeEntity_Resolved/hasAttributes/StandardTransportationCommodityCodeName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "StandardTransportationCommodityCode",
+            "parent": "TMSStandardTransportationCommodityCodeEntity_Resolved/attributeContext/TMSStandardTransportationCommodityCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TMSStandardTransportationCommodityCodeEntity/hasAttributes/StandardTransportationCommodityCode",
+            "contents": [
+              "TMSStandardTransportationCommodityCodeEntity_Resolved/hasAttributes/StandardTransportationCommodityCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_WHSSTCCRelationship",
+            "parent": "TMSStandardTransportationCommodityCodeEntity_Resolved/attributeContext/TMSStandardTransportationCommodityCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TMSStandardTransportationCommodityCodeEntity/hasAttributes/BackingTable_WHSSTCCRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "WHSSTCC",
+                "parent": "TMSStandardTransportationCommodityCodeEntity_Resolved/attributeContext/TMSStandardTransportationCommodityCodeEntity_Resolved/BackingTable_WHSSTCCRelationship",
+                "definition": "resolvedFrom/WHSSTCC",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TMSStandardTransportationCommodityCodeEntity_Resolved/attributeContext/TMSStandardTransportationCommodityCodeEntity_Resolved/BackingTable_WHSSTCCRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TMSStandardTransportationCommodityCodeEntity_Resolved/attributeContext/TMSStandardTransportationCommodityCodeEntity_Resolved/BackingTable_WHSSTCCRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TMSStandardTransportationCommodityCodeEntity_Resolved/attributeContext/TMSStandardTransportationCommodityCodeEntity_Resolved/BackingTable_WHSSTCCRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TMSStandardTransportationCommodityCodeEntity_Resolved/hasAttributes/BackingTable_WHSSTCCRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "StandardTransportationCommodityCodeName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TMSStandardTransportationCommodityCodeEntity_Resolved/attributeContext/TMSStandardTransportationCommodityCodeEntity_Resolved/StandardTransportationCommodityCodeName",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "StandardTransportationCommodityCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TMSStandardTransportationCommodityCodeEntity_Resolved/attributeContext/TMSStandardTransportationCommodityCodeEntity_Resolved/StandardTransportationCommodityCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_WHSSTCCRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/SupplyChain/Inventory/Group/WHSSTCC.cdm.json/WHSSTCC",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TMSStandardTransportationCommodityCodeEntity_Resolved/attributeContext/TMSStandardTransportationCommodityCodeEntity_Resolved/BackingTable_WHSSTCCRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Standard transportation commodity codes",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

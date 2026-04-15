@@ -1,0 +1,1486 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "SLAItem.cdm.json",
+      "moniker": "resolvedFrom"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "SLAItem_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "SLAItem_Resolved",
+        "definition": "resolvedFrom/SLAItem",
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CdmEntity",
+                "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/extends",
+                "definition": "resolvedFrom/CdmEntity"
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "attributesAddedAtThisScope",
+            "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved",
+            "definition": "resolvedFrom/SLAItem/hasAttributes/attributesAddedAtThisScope",
+            "contents": [
+              {
+                "type": "attributeGroup",
+                "name": "attributesAddedAtThisScope",
+                "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope",
+                "definition": "resolvedFrom/SLAItem/hasAttributes/attributesAddedAtThisScope",
+                "contents": [
+                  {
+                    "type": "attributeDefinition",
+                    "name": "SLAItemId",
+                    "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/SLAItem/hasAttributes/attributesAddedAtThisScope/members/SLAItemId",
+                    "contents": [
+                      "SLAItem_Resolved/hasAttributes/SLAItemId"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "name",
+                    "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/SLAItem/hasAttributes/attributesAddedAtThisScope/members/name",
+                    "contents": [
+                      "SLAItem_Resolved/hasAttributes/name"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "owningBusinessUnit",
+                    "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/SLAItem/hasAttributes/attributesAddedAtThisScope/members/owningBusinessUnit",
+                    "contents": [
+                      "SLAItem_Resolved/hasAttributes/owningBusinessUnit"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "description",
+                    "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/SLAItem/hasAttributes/attributesAddedAtThisScope/members/description",
+                    "contents": [
+                      "SLAItem_Resolved/hasAttributes/description"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "relatedField",
+                    "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/SLAItem/hasAttributes/attributesAddedAtThisScope/members/relatedField",
+                    "contents": [
+                      "SLAItem_Resolved/hasAttributes/relatedField"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "SLA",
+                    "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/SLAItem/hasAttributes/attributesAddedAtThisScope/members/SLA",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "SLA",
+                        "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/SLA",
+                        "definition": "resolvedFrom/SLA",
+                        "appliedTraits": [
+                          {
+                            "traitReference": "means.entityState",
+                            "arguments": [
+                              "resolvedFrom/SLA/(resolvedAttributes)/stateCode"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/SLA",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/SLA/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/SLA/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/SLAItem/hasAttributes/attributesAddedAtThisScope/members/SLA/resolutionGuidance/foreignKeyAttribute/id",
+                                "contents": [
+                                  "SLAItem_Resolved/hasAttributes/SLAId"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "createdOn",
+                    "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/SLAItem/hasAttributes/attributesAddedAtThisScope/members/createdOn",
+                    "contents": [
+                      "SLAItem_Resolved/hasAttributes/createdOn"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "User_createdBy",
+                    "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/SLAItem/hasAttributes/attributesAddedAtThisScope/members/User_createdBy",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "User",
+                        "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdBy",
+                        "definition": "resolvedFrom/User"
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdBy",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdBy/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdBy/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/SLAItem/hasAttributes/attributesAddedAtThisScope/members/User_createdBy/resolutionGuidance/foreignKeyAttribute/createdBy",
+                                "contents": [
+                                  "SLAItem_Resolved/hasAttributes/createdBy"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "modifiedOn",
+                    "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/SLAItem/hasAttributes/attributesAddedAtThisScope/members/modifiedOn",
+                    "contents": [
+                      "SLAItem_Resolved/hasAttributes/modifiedOn"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "User_modifiedBy",
+                    "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/SLAItem/hasAttributes/attributesAddedAtThisScope/members/User_modifiedBy",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "User",
+                        "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedBy",
+                        "definition": "resolvedFrom/User"
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedBy",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedBy/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedBy/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/SLAItem/hasAttributes/attributesAddedAtThisScope/members/User_modifiedBy/resolutionGuidance/foreignKeyAttribute/modifiedBy",
+                                "contents": [
+                                  "SLAItem_Resolved/hasAttributes/modifiedBy"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "exchangeRate",
+                    "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/SLAItem/hasAttributes/attributesAddedAtThisScope/members/exchangeRate",
+                    "contents": [
+                      "SLAItem_Resolved/hasAttributes/exchangeRate"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "versionNumber",
+                    "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/SLAItem/hasAttributes/attributesAddedAtThisScope/members/versionNumber",
+                    "contents": [
+                      "SLAItem_Resolved/hasAttributes/versionNumber"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "transactionCurrency",
+                    "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/SLAItem/hasAttributes/attributesAddedAtThisScope/members/transactionCurrency",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "Currency",
+                        "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/transactionCurrency",
+                        "definition": "resolvedFrom/Currency",
+                        "appliedTraits": [
+                          {
+                            "traitReference": "means.entityState",
+                            "arguments": [
+                              "resolvedFrom/Currency/(resolvedAttributes)/stateCode"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/transactionCurrency",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/transactionCurrency/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/transactionCurrency/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/SLAItem/hasAttributes/attributesAddedAtThisScope/members/transactionCurrency/resolutionGuidance/foreignKeyAttribute/id",
+                                "contents": [
+                                  "SLAItem_Resolved/hasAttributes/transactionCurrencyId"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "applicableWhenXml",
+                    "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/SLAItem/hasAttributes/attributesAddedAtThisScope/members/applicableWhenXml",
+                    "contents": [
+                      "SLAItem_Resolved/hasAttributes/applicableWhenXml"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "successConditionsXml",
+                    "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/SLAItem/hasAttributes/attributesAddedAtThisScope/members/successConditionsXml",
+                    "contents": [
+                      "SLAItem_Resolved/hasAttributes/successConditionsXml"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "solutionId",
+                    "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/SLAItem/hasAttributes/attributesAddedAtThisScope/members/solutionId",
+                    "contents": [
+                      "SLAItem_Resolved/hasAttributes/solutionId"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "componentState",
+                    "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/SLAItem/hasAttributes/attributesAddedAtThisScope/members/componentState",
+                    "contents": [
+                      "SLAItem_Resolved/hasAttributes/componentState",
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/componentState",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/componentState/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeSupporting",
+                                "name": "supporting_componentState",
+                                "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/componentState/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/SLAItem/hasAttributes/attributesAddedAtThisScope/members/componentState",
+                                "contents": [
+                                  "SLAItem_Resolved/hasAttributes/componentState_display"
+                                ],
+                                "lineage": [
+                                  "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/componentState"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "overwriteTime",
+                    "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/SLAItem/hasAttributes/attributesAddedAtThisScope/members/overwriteTime",
+                    "contents": [
+                      "SLAItem_Resolved/hasAttributes/overwriteTime"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "isManaged",
+                    "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/SLAItem/hasAttributes/attributesAddedAtThisScope/members/isManaged",
+                    "contents": [
+                      "SLAItem_Resolved/hasAttributes/isManaged"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "SLAItemIdUnique",
+                    "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/SLAItem/hasAttributes/attributesAddedAtThisScope/members/SLAItemIdUnique",
+                    "contents": [
+                      "SLAItem_Resolved/hasAttributes/SLAItemIdUnique"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "sequenceNumber",
+                    "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/SLAItem/hasAttributes/attributesAddedAtThisScope/members/sequenceNumber",
+                    "contents": [
+                      "SLAItem_Resolved/hasAttributes/sequenceNumber"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "failureAfter",
+                    "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/SLAItem/hasAttributes/attributesAddedAtThisScope/members/failureAfter",
+                    "contents": [
+                      "SLAItem_Resolved/hasAttributes/failureAfter"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "warnAfter",
+                    "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/SLAItem/hasAttributes/attributesAddedAtThisScope/members/warnAfter",
+                    "contents": [
+                      "SLAItem_Resolved/hasAttributes/warnAfter"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "owningUser",
+                    "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/SLAItem/hasAttributes/attributesAddedAtThisScope/members/owningUser",
+                    "contents": [
+                      "SLAItem_Resolved/hasAttributes/owningUser"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "ownerIdAttribute",
+                    "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/ownerIdAttribute",
+                    "contents": [
+                      {
+                        "type": "attributeGroup",
+                        "name": "ownerIdAttribute",
+                        "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute",
+                        "definition": "resolvedFrom/ownerIdAttribute",
+                        "contents": [
+                          {
+                            "type": "attributeDefinition",
+                            "name": "owner",
+                            "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute/ownerIdAttribute",
+                            "definition": "resolvedFrom/ownerIdAttribute/members/owner",
+                            "contents": [
+                              {
+                                "type": "entity",
+                                "name": "Owner",
+                                "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute/ownerIdAttribute/owner",
+                                "definition": "resolvedFrom/ownerIdAttribute/members/owner/entity/Owner",
+                                "contents": [
+                                  {
+                                    "type": "attributeDefinition",
+                                    "name": "userOption",
+                                    "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute/ownerIdAttribute/owner/Owner",
+                                    "definition": "resolvedFrom/ownerIdAttribute/members/owner/entity/Owner/hasAttributes/userOption",
+                                    "contents": [
+                                      {
+                                        "type": "entity",
+                                        "name": "User",
+                                        "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute/ownerIdAttribute/owner/Owner/userOption",
+                                        "definition": "resolvedFrom/User"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "type": "attributeDefinition",
+                                    "name": "teamOption",
+                                    "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute/ownerIdAttribute/owner/Owner",
+                                    "definition": "resolvedFrom/ownerIdAttribute/members/owner/entity/Owner/hasAttributes/teamOption",
+                                    "contents": [
+                                      {
+                                        "type": "entity",
+                                        "name": "Team",
+                                        "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute/ownerIdAttribute/owner/Owner/teamOption",
+                                        "definition": "resolvedFrom/Team"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "type": "generatedSet",
+                                "name": "_generatedAttributeSet",
+                                "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute/ownerIdAttribute/owner",
+                                "contents": [
+                                  {
+                                    "type": "generatedRound",
+                                    "name": "_generatedAttributeRound0",
+                                    "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute/ownerIdAttribute/owner/_generatedAttributeSet",
+                                    "contents": [
+                                      {
+                                        "type": "addedAttributeIdentity",
+                                        "name": "_foreignKey",
+                                        "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute/ownerIdAttribute/owner/_generatedAttributeSet/_generatedAttributeRound0",
+                                        "definition": "resolvedFrom/ownerIdAttribute/members/owner/resolutionGuidance/foreignKeyAttribute/ownerId",
+                                        "contents": [
+                                          "SLAItem_Resolved/hasAttributes/ownerId"
+                                        ]
+                                      },
+                                      {
+                                        "type": "addedAttributeSelectedType",
+                                        "name": "_selectedEntityName",
+                                        "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute/ownerIdAttribute/owner/_generatedAttributeSet/_generatedAttributeRound0",
+                                        "definition": "resolvedFrom/ownerIdAttribute/members/owner/resolutionGuidance/selectedTypeAttribute/ownerIdType",
+                                        "contents": [
+                                          "SLAItem_Resolved/hasAttributes/ownerIdType"
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "workflowId",
+                    "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/SLAItem/hasAttributes/attributesAddedAtThisScope/members/workflowId",
+                    "contents": [
+                      "SLAItem_Resolved/hasAttributes/workflowId"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "User_createdOnBehalfBy",
+                    "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/SLAItem/hasAttributes/attributesAddedAtThisScope/members/User_createdOnBehalfBy",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "User",
+                        "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdOnBehalfBy",
+                        "definition": "resolvedFrom/User"
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdOnBehalfBy",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdOnBehalfBy/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdOnBehalfBy/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/SLAItem/hasAttributes/attributesAddedAtThisScope/members/User_createdOnBehalfBy/resolutionGuidance/foreignKeyAttribute/createdOnBehalfBy",
+                                "contents": [
+                                  "SLAItem_Resolved/hasAttributes/createdOnBehalfBy"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "User_modifiedOnBehalfBy",
+                    "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/SLAItem/hasAttributes/attributesAddedAtThisScope/members/User_modifiedOnBehalfBy",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "User",
+                        "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedOnBehalfBy",
+                        "definition": "resolvedFrom/User"
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedOnBehalfBy",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedOnBehalfBy/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedOnBehalfBy/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/SLAItem/hasAttributes/attributesAddedAtThisScope/members/User_modifiedOnBehalfBy/resolutionGuidance/foreignKeyAttribute/modifiedOnBehalfBy",
+                                "contents": [
+                                  "SLAItem_Resolved/hasAttributes/modifiedOnBehalfBy"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "SLAItemId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            }
+          ],
+          "attributeContext": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/SLAItemId",
+          "isPrimaryKey": true,
+          "dataFormat": "Guid",
+          "sourceName": "slaitemid",
+          "sourceOrdering": 1,
+          "displayName": "SLA Item",
+          "description": "Unique identifier of the SLA Item."
+        },
+        {
+          "name": "name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.identity.name",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            }
+          ],
+          "attributeContext": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/name",
+          "dataFormat": "String",
+          "sourceName": "name",
+          "sourceOrdering": 2,
+          "displayName": "Name",
+          "description": "Type a descriptive name of the service level agreement (SLA) item.",
+          "maximumLength": 100
+        },
+        {
+          "name": "owningBusinessUnit",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/owningBusinessUnit",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "owningbusinessunit",
+          "sourceOrdering": 24,
+          "displayName": "Owning Business Unit",
+          "description": "Unique identifier for the business unit that owns the record"
+        },
+        {
+          "name": "description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/description",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "description",
+          "sourceOrdering": 26,
+          "displayName": "Description",
+          "description": "Type additional information to describe the SLA Item",
+          "maximumLength": 100
+        },
+        {
+          "name": "relatedField",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/relatedField",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "relatedfield",
+          "sourceOrdering": 35,
+          "displayName": "Related Case Field",
+          "description": "Select the service level agreement (SLA) key performance indicator (KPI) that this SLA Item is created for.",
+          "maximumLength": 100
+        },
+        {
+          "name": "SLAId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "SLA.cdm.json/SLA",
+                        "SLAId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/SLA/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "slaid",
+          "sourceOrdering": 38,
+          "displayName": "SLA",
+          "description": "Unique identifier for SLA associated with SLA Item."
+        },
+        {
+          "name": "createdOn",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date",
+            "is.dataFormat.time",
+            "means.measurement.time",
+            "means.measurement.date.creation",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/createdOn",
+          "isNullable": true,
+          "dataFormat": "DateTime",
+          "sourceName": "createdon",
+          "sourceOrdering": 51,
+          "displayName": "Created On",
+          "description": "Shows the date and time when the record was created. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 options."
+        },
+        {
+          "name": "createdBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "User.cdm.json/User",
+                        "systemUserId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdBy/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "createdby",
+          "sourceOrdering": 52,
+          "displayName": "Created By",
+          "description": "Shows who created the record."
+        },
+        {
+          "name": "modifiedOn",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date",
+            "is.dataFormat.time",
+            "means.measurement.time",
+            "means.measurement.date.modify",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/modifiedOn",
+          "isNullable": true,
+          "dataFormat": "DateTime",
+          "sourceName": "modifiedon",
+          "sourceOrdering": 53,
+          "displayName": "Modified On",
+          "description": "Shows the date and time when the record was last updated. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 options."
+        },
+        {
+          "name": "modifiedBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "User.cdm.json/User",
+                        "systemUserId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedBy/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "modifiedby",
+          "sourceOrdering": 54,
+          "displayName": "Modified By",
+          "description": "Shows who last updated the record."
+        },
+        {
+          "name": "exchangeRate",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/exchangeRate",
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "sourceName": "exchangerate",
+          "sourceOrdering": 55,
+          "displayName": "Exchange Rate",
+          "description": "Exchange rate between the currency associated with the SLA Item record and the base currency.",
+          "maximumValue": "100000000000",
+          "minimumValue": "1E-10"
+        },
+        {
+          "name": "versionNumber",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            "is.dataFormat.big",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/versionNumber",
+          "isNullable": true,
+          "dataFormat": "Int64",
+          "sourceName": "versionnumber",
+          "sourceOrdering": 56,
+          "displayName": "Version Number",
+          "description": "Version number of the SLA Item."
+        },
+        {
+          "name": "transactionCurrencyId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "Currency.cdm.json/Currency",
+                        "transactionCurrencyId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/transactionCurrency/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "transactioncurrencyid",
+          "sourceOrdering": 58,
+          "displayName": "Currency",
+          "description": "Unique identifier of the currency associated with the SLA Item record."
+        },
+        {
+          "name": "applicableWhenXml",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "required"
+              ]
+            }
+          ],
+          "attributeContext": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/applicableWhenXml",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "applicablewhenxml",
+          "sourceOrdering": 60,
+          "displayName": "ApplicableWhenXml",
+          "description": "Condition for SLA item",
+          "maximumLength": 1073741823
+        },
+        {
+          "name": "successConditionsXml",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "required"
+              ]
+            }
+          ],
+          "attributeContext": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/successConditionsXml",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "successconditionsxml",
+          "sourceOrdering": 61,
+          "displayName": "SuccessConditionsXml",
+          "description": "Condition for SLA item",
+          "maximumLength": 1073741823
+        },
+        {
+          "name": "solutionId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            }
+          ],
+          "attributeContext": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/solutionId",
+          "dataFormat": "Guid",
+          "sourceName": "solutionid",
+          "sourceOrdering": 62,
+          "displayName": "Solution",
+          "description": "Unique identifier of the associated solution."
+        },
+        {
+          "name": "componentState",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            }
+          ],
+          "attributeContext": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/componentState",
+          "dataFormat": "Int32",
+          "sourceName": "componentstate",
+          "sourceOrdering": 64,
+          "displayName": "Component State",
+          "description": "For internal use only.",
+          "valueConstrainedToList": true,
+          "defaultValue": [
+            {
+              "languageTag": "en",
+              "displayText": "Published",
+              "attributeValue": "0",
+              "displayOrder": "0"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Unpublished",
+              "attributeValue": "1",
+              "displayOrder": "1"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Deleted",
+              "attributeValue": "2",
+              "displayOrder": "2"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Deleted Unpublished",
+              "attributeValue": "3",
+              "displayOrder": "3"
+            }
+          ]
+        },
+        {
+          "name": "componentState_display",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.reference.displayText",
+            {
+              "traitReference": "is.addedInSupportOf",
+              "arguments": [
+                "componentState"
+              ]
+            }
+          ],
+          "attributeContext": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/componentState/_generatedAttributeSet/_generatedAttributeRound0/supporting_componentState",
+          "isReadOnly": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "overwriteTime",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date",
+            "is.dataFormat.time",
+            "means.measurement.time",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            }
+          ],
+          "attributeContext": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/overwriteTime",
+          "dataFormat": "DateTime",
+          "sourceName": "overwritetime",
+          "sourceOrdering": 65,
+          "displayName": "Record Overwrite Time",
+          "description": "For internal use only."
+        },
+        {
+          "name": "isManaged",
+          "appliedTraits": [
+            "is.dataFormat.boolean",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            }
+          ],
+          "attributeContext": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/isManaged",
+          "dataFormat": "Boolean",
+          "sourceName": "ismanaged",
+          "sourceOrdering": 66,
+          "displayName": "Is Managed",
+          "description": "For internal use only."
+        },
+        {
+          "name": "SLAItemIdUnique",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            }
+          ],
+          "attributeContext": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/SLAItemIdUnique",
+          "dataFormat": "Guid",
+          "sourceName": "slaitemidunique",
+          "sourceOrdering": 67,
+          "displayName": "Unique Id",
+          "description": "For internal use only."
+        },
+        {
+          "name": "sequenceNumber",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/sequenceNumber",
+          "isNullable": true,
+          "dataFormat": "Int32",
+          "sourceName": "sequencenumber",
+          "sourceOrdering": 86,
+          "displayName": "Sequence",
+          "description": "Select the time zone, or UTC offset, for this address so that other people can reference it when they contact someone at this address.",
+          "maximumValue": "1500",
+          "minimumValue": "0"
+        },
+        {
+          "name": "failureAfter",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            "means.measurement.duration",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/failureAfter",
+          "isNullable": true,
+          "dataFormat": "Int32",
+          "sourceName": "failureafter",
+          "sourceOrdering": 87,
+          "displayName": "Failure After",
+          "description": "Select how soon the success criteria must be met until the SLA item is considered failed and failure actions are initiated. The actual duration is based on the business hours as specified in the associated SLA record.",
+          "maximumValue": "2147483647",
+          "minimumValue": "0"
+        },
+        {
+          "name": "warnAfter",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            "means.measurement.duration",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/warnAfter",
+          "isNullable": true,
+          "dataFormat": "Int32",
+          "sourceName": "warnafter",
+          "sourceOrdering": 88,
+          "displayName": "Warn After",
+          "description": "Select how soon the success criteria must be met before warning actions are initiated. The actual duration is based on the business hours as specified in the associated SLA record.",
+          "maximumValue": "2147483647",
+          "minimumValue": "0"
+        },
+        {
+          "name": "owningUser",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/owningUser",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "owninguser",
+          "sourceOrdering": 118,
+          "displayName": "Owning User",
+          "description": "Unique identifier of the user who owns the SLA Item record."
+        },
+        {
+          "name": "ownerId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            "is.CDS.standard",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "User.cdm.json/User",
+                        "systemUserId"
+                      ],
+                      [
+                        "Team.cdm.json/Team",
+                        "teamId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            },
+            "is.CDS.owner"
+          ],
+          "attributeContext": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute/ownerIdAttribute/owner/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid",
+          "sourceName": "ownerid",
+          "displayName": "Owner",
+          "description": "Owner Id"
+        },
+        {
+          "name": "ownerIdType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.entityName",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            },
+            "is.linkedEntity.name",
+            "is.CDS.owner"
+          ],
+          "attributeContext": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute/ownerIdAttribute/owner/_generatedAttributeSet/_generatedAttributeRound0/_selectedEntityName",
+          "isReadOnly": true,
+          "dataFormat": "String",
+          "sourceName": "owneridtype",
+          "displayName": "Owner Type",
+          "description": "The type of owner, either User or Team."
+        },
+        {
+          "name": "workflowId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "systemrequired"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/workflowId",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "workflowid",
+          "sourceOrdering": 161,
+          "displayName": "Workflow ID",
+          "description": "Workflow associated with the SLA Item."
+        },
+        {
+          "name": "createdOnBehalfBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "User.cdm.json/User",
+                        "systemUserId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdOnBehalfBy/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "createdonbehalfby",
+          "sourceOrdering": 200,
+          "displayName": "Created By (Delegate)",
+          "description": "Shows who created the record on behalf of another user."
+        },
+        {
+          "name": "modifiedOnBehalfBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "User.cdm.json/User",
+                        "systemUserId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "SLAItem_Resolved/attributeContext/SLAItem_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedOnBehalfBy/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "modifiedonbehalfby",
+          "sourceOrdering": 204,
+          "displayName": "Modified By (Delegate)",
+          "description": "Shows who created the record on behalf of another user."
+        }
+      ],
+      "sourceName": "SLAItem",
+      "displayName": "SLA Item",
+      "description": "Contains information about a tracked support KPI for a specific customer.",
+      "version": "1.3",
+      "cdmSchemas": [
+        "/core/applicationCommon/SLAItem.cdm.json/SLAItem/hasAttributes/attributesAddedAtThisScope"
+      ]
+    }
+  ],
+  "documentVersion": "1.3"
+}

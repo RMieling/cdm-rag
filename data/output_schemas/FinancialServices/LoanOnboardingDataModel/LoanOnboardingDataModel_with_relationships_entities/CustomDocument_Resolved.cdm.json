@@ -1,0 +1,100 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "Customdocument.cdm.json",
+      "moniker": "resolvedFrom"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "CustomDocument_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "CustomDocument_Resolved",
+        "definition": "resolvedFrom/CustomDocument",
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "CustomDocument_Resolved/attributeContext/CustomDocument_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CdmEntity",
+                "parent": "CustomDocument_Resolved/attributeContext/CustomDocument_Resolved/extends",
+                "definition": "resolvedFrom/CdmEntity"
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "attributesAddedAtThisScope",
+            "parent": "CustomDocument_Resolved/attributeContext/CustomDocument_Resolved",
+            "definition": "resolvedFrom/CustomDocument/hasAttributes/attributesAddedAtThisScope",
+            "contents": [
+              {
+                "type": "attributeGroup",
+                "name": "attributesAddedAtThisScope",
+                "parent": "CustomDocument_Resolved/attributeContext/CustomDocument_Resolved/attributesAddedAtThisScope",
+                "definition": "resolvedFrom/CustomDocument/hasAttributes/attributesAddedAtThisScope",
+                "contents": [
+                  {
+                    "type": "attributeDefinition",
+                    "name": "customDocumentId",
+                    "parent": "CustomDocument_Resolved/attributeContext/CustomDocument_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/CustomDocument/hasAttributes/attributesAddedAtThisScope/members/customDocumentId",
+                    "contents": [
+                      "CustomDocument_Resolved/hasAttributes/customDocumentId"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "customDocumentId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            }
+          ],
+          "attributeContext": "CustomDocument_Resolved/attributeContext/CustomDocument_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/customDocumentId",
+          "isPrimaryKey": true,
+          "dataFormat": "Guid",
+          "sourceName": "msfsi_customdocumentid",
+          "sourceOrdering": 1,
+          "displayName": "Custom document",
+          "description": "Unique identifier for entity instances."
+        }
+      ],
+      "sourceName": "msfsi_customdocument",
+      "displayName": "Custom document",
+      "description": "Any document that is requested by or accepted by the bank, e.g. for the borrower's loan application.",
+      "version": "1.0"
+    }
+  ],
+  "documentVersion": "1.0"
+}

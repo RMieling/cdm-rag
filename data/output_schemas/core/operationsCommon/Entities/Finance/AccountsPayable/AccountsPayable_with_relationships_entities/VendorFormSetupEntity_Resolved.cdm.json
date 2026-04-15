@@ -1,0 +1,341 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "VendorFormSetupEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "VendorFormSetupEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "VendorFormSetupEntity_Resolved",
+        "definition": "resolvedFrom/VendorFormSetupEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "VendorFormSetupEntity_Resolved/attributeContext/VendorFormSetupEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "VendorFormSetupEntity_Resolved/attributeContext/VendorFormSetupEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "InventoryDimensionsForPrintingInvoice",
+            "parent": "VendorFormSetupEntity_Resolved/attributeContext/VendorFormSetupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendorFormSetupEntity/hasAttributes/InventoryDimensionsForPrintingInvoice",
+            "contents": [
+              "VendorFormSetupEntity_Resolved/hasAttributes/InventoryDimensionsForPrintingInvoice"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "PrintAmountInEuroCurrency",
+            "parent": "VendorFormSetupEntity_Resolved/attributeContext/VendorFormSetupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendorFormSetupEntity/hasAttributes/PrintAmountInEuroCurrency",
+            "contents": [
+              "VendorFormSetupEntity_Resolved/hasAttributes/PrintAmountInEuroCurrency"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "PrintTaxExemptNumberOnInvoice",
+            "parent": "VendorFormSetupEntity_Resolved/attributeContext/VendorFormSetupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendorFormSetupEntity/hasAttributes/PrintTaxExemptNumberOnInvoice",
+            "contents": [
+              "VendorFormSetupEntity_Resolved/hasAttributes/PrintTaxExemptNumberOnInvoice"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "IsSeparateTaxExemptBalanceInForms",
+            "parent": "VendorFormSetupEntity_Resolved/attributeContext/VendorFormSetupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendorFormSetupEntity/hasAttributes/IsSeparateTaxExemptBalanceInForms",
+            "contents": [
+              "VendorFormSetupEntity_Resolved/hasAttributes/IsSeparateTaxExemptBalanceInForms"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "SalesTaxSpecification",
+            "parent": "VendorFormSetupEntity_Resolved/attributeContext/VendorFormSetupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendorFormSetupEntity/hasAttributes/SalesTaxSpecification",
+            "contents": [
+              "VendorFormSetupEntity_Resolved/hasAttributes/SalesTaxSpecification"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Totals",
+            "parent": "VendorFormSetupEntity_Resolved/attributeContext/VendorFormSetupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendorFormSetupEntity/hasAttributes/Totals",
+            "contents": [
+              "VendorFormSetupEntity_Resolved/hasAttributes/Totals"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_VendFormletterParametersRelationship",
+            "parent": "VendorFormSetupEntity_Resolved/attributeContext/VendorFormSetupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendorFormSetupEntity/hasAttributes/BackingTable_VendFormletterParametersRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "VendFormletterParameters",
+                "parent": "VendorFormSetupEntity_Resolved/attributeContext/VendorFormSetupEntity_Resolved/BackingTable_VendFormletterParametersRelationship",
+                "definition": "resolvedFrom/VendFormletterParameters",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "VendorFormSetupEntity_Resolved/attributeContext/VendorFormSetupEntity_Resolved/BackingTable_VendFormletterParametersRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "VendorFormSetupEntity_Resolved/attributeContext/VendorFormSetupEntity_Resolved/BackingTable_VendFormletterParametersRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "VendorFormSetupEntity_Resolved/attributeContext/VendorFormSetupEntity_Resolved/BackingTable_VendFormletterParametersRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "VendorFormSetupEntity_Resolved/hasAttributes/BackingTable_VendFormletterParametersRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "VendorFormSetupEntity_Resolved/attributeContext/VendorFormSetupEntity_Resolved",
+            "definition": "resolvedFrom/VendorFormSetupEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "VendorFormSetupEntity_Resolved/attributeContext/VendorFormSetupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "VendorFormSetupEntity_Resolved/attributeContext/VendorFormSetupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "VendorFormSetupEntity_Resolved/attributeContext/VendorFormSetupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "VendorFormSetupEntity_Resolved/attributeContext/VendorFormSetupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "VendorFormSetupEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "InventoryDimensionsForPrintingInvoice",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VendorFormSetupEntity_Resolved/attributeContext/VendorFormSetupEntity_Resolved/InventoryDimensionsForPrintingInvoice",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "PrintAmountInEuroCurrency",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VendorFormSetupEntity_Resolved/attributeContext/VendorFormSetupEntity_Resolved/PrintAmountInEuroCurrency",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "PrintTaxExemptNumberOnInvoice",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VendorFormSetupEntity_Resolved/attributeContext/VendorFormSetupEntity_Resolved/PrintTaxExemptNumberOnInvoice",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "IsSeparateTaxExemptBalanceInForms",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VendorFormSetupEntity_Resolved/attributeContext/VendorFormSetupEntity_Resolved/IsSeparateTaxExemptBalanceInForms",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "SalesTaxSpecification",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VendorFormSetupEntity_Resolved/attributeContext/VendorFormSetupEntity_Resolved/SalesTaxSpecification",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Totals",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VendorFormSetupEntity_Resolved/attributeContext/VendorFormSetupEntity_Resolved/Totals",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_VendFormletterParametersRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/AccountsPayable/Parameter/VendFormletterParameters.cdm.json/VendFormletterParameters",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "VendorFormSetupEntity_Resolved/attributeContext/VendorFormSetupEntity_Resolved/BackingTable_VendFormletterParametersRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "VendorFormSetupEntity_Resolved/attributeContext/VendorFormSetupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Vendor, form parameters",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

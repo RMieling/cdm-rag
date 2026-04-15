@@ -1,0 +1,281 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "TrvExpenseMerchantEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TrvExpenseMerchantEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "TrvExpenseMerchantEntity_Resolved",
+        "definition": "resolvedFrom/TrvExpenseMerchantEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "TrvExpenseMerchantEntity_Resolved/attributeContext/TrvExpenseMerchantEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "TrvExpenseMerchantEntity_Resolved/attributeContext/TrvExpenseMerchantEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ExpenseType",
+            "parent": "TrvExpenseMerchantEntity_Resolved/attributeContext/TrvExpenseMerchantEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvExpenseMerchantEntity/hasAttributes/ExpenseType",
+            "contents": [
+              "TrvExpenseMerchantEntity_Resolved/hasAttributes/ExpenseType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "MerchantId",
+            "parent": "TrvExpenseMerchantEntity_Resolved/attributeContext/TrvExpenseMerchantEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvExpenseMerchantEntity/hasAttributes/MerchantId",
+            "contents": [
+              "TrvExpenseMerchantEntity_Resolved/hasAttributes/MerchantId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Preferred",
+            "parent": "TrvExpenseMerchantEntity_Resolved/attributeContext/TrvExpenseMerchantEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvExpenseMerchantEntity/hasAttributes/Preferred",
+            "contents": [
+              "TrvExpenseMerchantEntity_Resolved/hasAttributes/Preferred"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_TrvExpMerchantRelationship",
+            "parent": "TrvExpenseMerchantEntity_Resolved/attributeContext/TrvExpenseMerchantEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvExpenseMerchantEntity/hasAttributes/BackingTable_TrvExpMerchantRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "TrvExpMerchant",
+                "parent": "TrvExpenseMerchantEntity_Resolved/attributeContext/TrvExpenseMerchantEntity_Resolved/BackingTable_TrvExpMerchantRelationship",
+                "definition": "resolvedFrom/TrvExpMerchant",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TrvExpenseMerchantEntity_Resolved/attributeContext/TrvExpenseMerchantEntity_Resolved/BackingTable_TrvExpMerchantRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TrvExpenseMerchantEntity_Resolved/attributeContext/TrvExpenseMerchantEntity_Resolved/BackingTable_TrvExpMerchantRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TrvExpenseMerchantEntity_Resolved/attributeContext/TrvExpenseMerchantEntity_Resolved/BackingTable_TrvExpMerchantRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TrvExpenseMerchantEntity_Resolved/hasAttributes/BackingTable_TrvExpMerchantRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "TrvExpenseMerchantEntity_Resolved/attributeContext/TrvExpenseMerchantEntity_Resolved",
+            "definition": "resolvedFrom/TrvExpenseMerchantEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "TrvExpenseMerchantEntity_Resolved/attributeContext/TrvExpenseMerchantEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TrvExpenseMerchantEntity_Resolved/attributeContext/TrvExpenseMerchantEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TrvExpenseMerchantEntity_Resolved/attributeContext/TrvExpenseMerchantEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TrvExpenseMerchantEntity_Resolved/attributeContext/TrvExpenseMerchantEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TrvExpenseMerchantEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "ExpenseType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvExpenseMerchantEntity_Resolved/attributeContext/TrvExpenseMerchantEntity_Resolved/ExpenseType",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "MerchantId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvExpenseMerchantEntity_Resolved/attributeContext/TrvExpenseMerchantEntity_Resolved/MerchantId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Preferred",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvExpenseMerchantEntity_Resolved/attributeContext/TrvExpenseMerchantEntity_Resolved/Preferred",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_TrvExpMerchantRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Expense/Reference/TrvExpMerchant.cdm.json/TrvExpMerchant",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TrvExpenseMerchantEntity_Resolved/attributeContext/TrvExpenseMerchantEntity_Resolved/BackingTable_TrvExpMerchantRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TrvExpenseMerchantEntity_Resolved/attributeContext/TrvExpenseMerchantEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Merchant",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

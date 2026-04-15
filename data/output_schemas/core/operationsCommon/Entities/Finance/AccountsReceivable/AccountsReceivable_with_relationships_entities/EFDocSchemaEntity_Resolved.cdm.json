@@ -1,0 +1,208 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "EFDocSchemaEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "EFDocSchemaEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "EFDocSchemaEntity_Resolved",
+        "definition": "resolvedFrom/EFDocSchemaEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "EFDocSchemaEntity_Resolved/attributeContext/EFDocSchemaEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "EFDocSchemaEntity_Resolved/attributeContext/EFDocSchemaEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "SchemaType",
+            "parent": "EFDocSchemaEntity_Resolved/attributeContext/EFDocSchemaEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EFDocSchemaEntity/hasAttributes/SchemaType",
+            "contents": [
+              "EFDocSchemaEntity_Resolved/hasAttributes/SchemaType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Version",
+            "parent": "EFDocSchemaEntity_Resolved/attributeContext/EFDocSchemaEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EFDocSchemaEntity/hasAttributes/Version",
+            "contents": [
+              "EFDocSchemaEntity_Resolved/hasAttributes/Version"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "SchemaFilePath",
+            "parent": "EFDocSchemaEntity_Resolved/attributeContext/EFDocSchemaEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EFDocSchemaEntity/hasAttributes/SchemaFilePath",
+            "contents": [
+              "EFDocSchemaEntity_Resolved/hasAttributes/SchemaFilePath"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_EFDocSchema_BRRelationship",
+            "parent": "EFDocSchemaEntity_Resolved/attributeContext/EFDocSchemaEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EFDocSchemaEntity/hasAttributes/BackingTable_EFDocSchema_BRRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "EFDocSchema_BR",
+                "parent": "EFDocSchemaEntity_Resolved/attributeContext/EFDocSchemaEntity_Resolved/BackingTable_EFDocSchema_BRRelationship",
+                "definition": "resolvedFrom/EFDocSchema_BR",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "EFDocSchemaEntity_Resolved/attributeContext/EFDocSchemaEntity_Resolved/BackingTable_EFDocSchema_BRRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "EFDocSchemaEntity_Resolved/attributeContext/EFDocSchemaEntity_Resolved/BackingTable_EFDocSchema_BRRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "EFDocSchemaEntity_Resolved/attributeContext/EFDocSchemaEntity_Resolved/BackingTable_EFDocSchema_BRRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "EFDocSchemaEntity_Resolved/hasAttributes/BackingTable_EFDocSchema_BRRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "SchemaType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "EFDocSchemaEntity_Resolved/attributeContext/EFDocSchemaEntity_Resolved/SchemaType",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Version",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "EFDocSchemaEntity_Resolved/attributeContext/EFDocSchemaEntity_Resolved/Version",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "SchemaFilePath",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "EFDocSchemaEntity_Resolved/attributeContext/EFDocSchemaEntity_Resolved/SchemaFilePath",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_EFDocSchema_BRRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/FiscalBooksBrazil/Main/EFDocSchema_BR.cdm.json/EFDocSchema_BR",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "EFDocSchemaEntity_Resolved/attributeContext/EFDocSchemaEntity_Resolved/BackingTable_EFDocSchema_BRRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "NF-e schema",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

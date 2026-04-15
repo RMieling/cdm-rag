@@ -1,0 +1,341 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "AssetLocationTransferHistoryEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "AssetLocationTransferHistoryEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "AssetLocationTransferHistoryEntity_Resolved",
+        "definition": "resolvedFrom/AssetLocationTransferHistoryEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "AssetLocationTransferHistoryEntity_Resolved/attributeContext/AssetLocationTransferHistoryEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "AssetLocationTransferHistoryEntity_Resolved/attributeContext/AssetLocationTransferHistoryEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "FixedAssetNumber",
+            "parent": "AssetLocationTransferHistoryEntity_Resolved/attributeContext/AssetLocationTransferHistoryEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetLocationTransferHistoryEntity/hasAttributes/FixedAssetNumber",
+            "contents": [
+              "AssetLocationTransferHistoryEntity_Resolved/hasAttributes/FixedAssetNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "FromLocation",
+            "parent": "AssetLocationTransferHistoryEntity_Resolved/attributeContext/AssetLocationTransferHistoryEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetLocationTransferHistoryEntity/hasAttributes/FromLocation",
+            "contents": [
+              "AssetLocationTransferHistoryEntity_Resolved/hasAttributes/FromLocation"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Id",
+            "parent": "AssetLocationTransferHistoryEntity_Resolved/attributeContext/AssetLocationTransferHistoryEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetLocationTransferHistoryEntity/hasAttributes/Id",
+            "contents": [
+              "AssetLocationTransferHistoryEntity_Resolved/hasAttributes/Id"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ToLocation",
+            "parent": "AssetLocationTransferHistoryEntity_Resolved/attributeContext/AssetLocationTransferHistoryEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetLocationTransferHistoryEntity/hasAttributes/ToLocation",
+            "contents": [
+              "AssetLocationTransferHistoryEntity_Resolved/hasAttributes/ToLocation"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "TransferComments",
+            "parent": "AssetLocationTransferHistoryEntity_Resolved/attributeContext/AssetLocationTransferHistoryEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetLocationTransferHistoryEntity/hasAttributes/TransferComments",
+            "contents": [
+              "AssetLocationTransferHistoryEntity_Resolved/hasAttributes/TransferComments"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "TransferDate",
+            "parent": "AssetLocationTransferHistoryEntity_Resolved/attributeContext/AssetLocationTransferHistoryEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetLocationTransferHistoryEntity/hasAttributes/TransferDate",
+            "contents": [
+              "AssetLocationTransferHistoryEntity_Resolved/hasAttributes/TransferDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_AssetLocationTransferHistory_CNRelationship",
+            "parent": "AssetLocationTransferHistoryEntity_Resolved/attributeContext/AssetLocationTransferHistoryEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetLocationTransferHistoryEntity/hasAttributes/BackingTable_AssetLocationTransferHistory_CNRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "AssetLocationTransferHistory_CN",
+                "parent": "AssetLocationTransferHistoryEntity_Resolved/attributeContext/AssetLocationTransferHistoryEntity_Resolved/BackingTable_AssetLocationTransferHistory_CNRelationship",
+                "definition": "resolvedFrom/AssetLocationTransferHistory_CN",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "AssetLocationTransferHistoryEntity_Resolved/attributeContext/AssetLocationTransferHistoryEntity_Resolved/BackingTable_AssetLocationTransferHistory_CNRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "AssetLocationTransferHistoryEntity_Resolved/attributeContext/AssetLocationTransferHistoryEntity_Resolved/BackingTable_AssetLocationTransferHistory_CNRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "AssetLocationTransferHistoryEntity_Resolved/attributeContext/AssetLocationTransferHistoryEntity_Resolved/BackingTable_AssetLocationTransferHistory_CNRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "AssetLocationTransferHistoryEntity_Resolved/hasAttributes/BackingTable_AssetLocationTransferHistory_CNRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "AssetLocationTransferHistoryEntity_Resolved/attributeContext/AssetLocationTransferHistoryEntity_Resolved",
+            "definition": "resolvedFrom/AssetLocationTransferHistoryEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "AssetLocationTransferHistoryEntity_Resolved/attributeContext/AssetLocationTransferHistoryEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "AssetLocationTransferHistoryEntity_Resolved/attributeContext/AssetLocationTransferHistoryEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "AssetLocationTransferHistoryEntity_Resolved/attributeContext/AssetLocationTransferHistoryEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "AssetLocationTransferHistoryEntity_Resolved/attributeContext/AssetLocationTransferHistoryEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "AssetLocationTransferHistoryEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "FixedAssetNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AssetLocationTransferHistoryEntity_Resolved/attributeContext/AssetLocationTransferHistoryEntity_Resolved/FixedAssetNumber",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "FromLocation",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AssetLocationTransferHistoryEntity_Resolved/attributeContext/AssetLocationTransferHistoryEntity_Resolved/FromLocation",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Id",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AssetLocationTransferHistoryEntity_Resolved/attributeContext/AssetLocationTransferHistoryEntity_Resolved/Id",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ToLocation",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AssetLocationTransferHistoryEntity_Resolved/attributeContext/AssetLocationTransferHistoryEntity_Resolved/ToLocation",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "TransferComments",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AssetLocationTransferHistoryEntity_Resolved/attributeContext/AssetLocationTransferHistoryEntity_Resolved/TransferComments",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "TransferDate",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AssetLocationTransferHistoryEntity_Resolved/attributeContext/AssetLocationTransferHistoryEntity_Resolved/TransferDate",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_AssetLocationTransferHistory_CNRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/FixedAssets/Miscellaneous/AssetLocationTransferHistory_CN.cdm.json/AssetLocationTransferHistory_CN",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "AssetLocationTransferHistoryEntity_Resolved/attributeContext/AssetLocationTransferHistoryEntity_Resolved/BackingTable_AssetLocationTransferHistory_CNRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "AssetLocationTransferHistoryEntity_Resolved/attributeContext/AssetLocationTransferHistoryEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Fixed assets location transfer history entity",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

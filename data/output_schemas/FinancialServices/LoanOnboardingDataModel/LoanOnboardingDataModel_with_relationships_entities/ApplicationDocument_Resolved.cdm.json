@@ -1,0 +1,292 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "Applicationdocument.cdm.json",
+      "moniker": "resolvedFrom"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "ApplicationDocument_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "ApplicationDocument_Resolved",
+        "definition": "resolvedFrom/ApplicationDocument",
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "ApplicationDocument_Resolved/attributeContext/ApplicationDocument_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CdmEntity",
+                "parent": "ApplicationDocument_Resolved/attributeContext/ApplicationDocument_Resolved/extends",
+                "definition": "resolvedFrom/CdmEntity"
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "attributesAddedAtThisScope",
+            "parent": "ApplicationDocument_Resolved/attributeContext/ApplicationDocument_Resolved",
+            "definition": "resolvedFrom/ApplicationDocument/hasAttributes/attributesAddedAtThisScope",
+            "contents": [
+              {
+                "type": "attributeGroup",
+                "name": "attributesAddedAtThisScope",
+                "parent": "ApplicationDocument_Resolved/attributeContext/ApplicationDocument_Resolved/attributesAddedAtThisScope",
+                "definition": "resolvedFrom/ApplicationDocument/hasAttributes/attributesAddedAtThisScope",
+                "contents": [
+                  {
+                    "type": "attributeDefinition",
+                    "name": "applicationDocumentId",
+                    "parent": "ApplicationDocument_Resolved/attributeContext/ApplicationDocument_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/ApplicationDocument/hasAttributes/attributesAddedAtThisScope/members/applicationDocumentId",
+                    "contents": [
+                      "ApplicationDocument_Resolved/hasAttributes/applicationDocumentId"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "Application",
+                    "parent": "ApplicationDocument_Resolved/attributeContext/ApplicationDocument_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/ApplicationDocument/hasAttributes/attributesAddedAtThisScope/members/Application",
+                    "contents": [
+                      {
+                        "type": "projection",
+                        "name": "projection",
+                        "parent": "ApplicationDocument_Resolved/attributeContext/ApplicationDocument_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/Application",
+                        "contents": [
+                          {
+                            "type": "source",
+                            "name": "source",
+                            "parent": "ApplicationDocument_Resolved/attributeContext/ApplicationDocument_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/Application/projection",
+                            "contents": [
+                              {
+                                "type": "entity",
+                                "name": "LoanApplication",
+                                "parent": "ApplicationDocument_Resolved/attributeContext/ApplicationDocument_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/Application/projection/source",
+                                "definition": "resolvedFrom/LoanApplication"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "ApplicationDocument_Resolved/attributeContext/ApplicationDocument_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/Application",
+                        "contents": [
+                          {
+                            "type": "operationReplaceAsForeignKey",
+                            "name": "operation/index1/operationReplaceAsForeignKey",
+                            "parent": "ApplicationDocument_Resolved/attributeContext/ApplicationDocument_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/Application/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "ApplicationDocument_Resolved/attributeContext/ApplicationDocument_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/Application/_generatedAttributeSet/operation/index1/operationReplaceAsForeignKey",
+                                "contents": [
+                                  "ApplicationDocument_Resolved/hasAttributes/application"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "DocumentSubmitter",
+                    "parent": "ApplicationDocument_Resolved/attributeContext/ApplicationDocument_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/ApplicationDocument/hasAttributes/attributesAddedAtThisScope/members/DocumentSubmitter",
+                    "contents": [
+                      {
+                        "type": "projection",
+                        "name": "projection",
+                        "parent": "ApplicationDocument_Resolved/attributeContext/ApplicationDocument_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/DocumentSubmitter",
+                        "contents": [
+                          {
+                            "type": "source",
+                            "name": "source",
+                            "parent": "ApplicationDocument_Resolved/attributeContext/ApplicationDocument_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/DocumentSubmitter/projection",
+                            "contents": [
+                              {
+                                "type": "entity",
+                                "name": "LoanApplicationContact",
+                                "parent": "ApplicationDocument_Resolved/attributeContext/ApplicationDocument_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/DocumentSubmitter/projection/source",
+                                "definition": "resolvedFrom/LoanApplicationContact"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "ApplicationDocument_Resolved/attributeContext/ApplicationDocument_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/DocumentSubmitter",
+                        "contents": [
+                          {
+                            "type": "operationReplaceAsForeignKey",
+                            "name": "operation/index1/operationReplaceAsForeignKey",
+                            "parent": "ApplicationDocument_Resolved/attributeContext/ApplicationDocument_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/DocumentSubmitter/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "ApplicationDocument_Resolved/attributeContext/ApplicationDocument_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/DocumentSubmitter/_generatedAttributeSet/operation/index1/operationReplaceAsForeignKey",
+                                "contents": [
+                                  "ApplicationDocument_Resolved/hasAttributes/documentSubmitter"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "applicationDocumentId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            }
+          ],
+          "attributeContext": "ApplicationDocument_Resolved/attributeContext/ApplicationDocument_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/applicationDocumentId",
+          "isPrimaryKey": true,
+          "dataFormat": "Guid",
+          "sourceName": "msfsi_applicationdocumentid",
+          "sourceOrdering": 1,
+          "displayName": "Application document",
+          "description": "Unique identifier for entity instances."
+        },
+        {
+          "name": "application",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "applicationrequired"
+              ]
+            },
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entitySet",
+                    "constantValues": [
+                      [
+                        "Loanapplication.cdm.json/LoanApplication",
+                        "loanApplicationId",
+                        "Application_LoanApplication"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "ApplicationDocument_Resolved/attributeContext/ApplicationDocument_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/Application/_generatedAttributeSet/operation/index1/operationReplaceAsForeignKey/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "msfsi_application",
+          "sourceOrdering": 42,
+          "displayName": "Application",
+          "description": "The Loan application the current application document is associated with."
+        },
+        {
+          "name": "documentSubmitter",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "applicationrequired"
+              ]
+            },
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entitySet",
+                    "constantValues": [
+                      [
+                        "Loanapplicationcontact.cdm.json/LoanApplicationContact",
+                        "loanApplicationContactId",
+                        "DocumentSubmitter_LoanApplicationContact"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "ApplicationDocument_Resolved/attributeContext/ApplicationDocument_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/DocumentSubmitter/_generatedAttributeSet/operation/index1/operationReplaceAsForeignKey/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "msfsi_DocumentSubmitter",
+          "sourceOrdering": 43,
+          "displayName": "Document submitter",
+          "description": "The application contact associated with the Application Document."
+        }
+      ],
+      "sourceName": "msfsi_applicationdocument",
+      "displayName": "Application document",
+      "description": "Document filled out by a potential borrower to apply for a loan; provides financial and other information to the lender.",
+      "version": "1.1"
+    }
+  ],
+  "documentVersion": "1.1"
+}

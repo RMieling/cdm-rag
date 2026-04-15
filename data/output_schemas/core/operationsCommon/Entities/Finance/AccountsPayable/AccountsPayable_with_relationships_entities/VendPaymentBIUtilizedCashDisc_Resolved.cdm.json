@@ -1,0 +1,261 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "VendPaymentBIUtilizedCashDisc.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "VendPaymentBIUtilizedCashDisc_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "VendPaymentBIUtilizedCashDisc_Resolved",
+        "definition": "resolvedFrom/VendPaymentBIUtilizedCashDisc",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "VendPaymentBIUtilizedCashDisc_Resolved/attributeContext/VendPaymentBIUtilizedCashDisc_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "VendPaymentBIUtilizedCashDisc_Resolved/attributeContext/VendPaymentBIUtilizedCashDisc_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "TransRecId",
+            "parent": "VendPaymentBIUtilizedCashDisc_Resolved/attributeContext/VendPaymentBIUtilizedCashDisc_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendPaymentBIUtilizedCashDisc/hasAttributes/TransRecId",
+            "contents": [
+              "VendPaymentBIUtilizedCashDisc_Resolved/hasAttributes/TransRecId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "UtilizedCashDisc",
+            "parent": "VendPaymentBIUtilizedCashDisc_Resolved/attributeContext/VendPaymentBIUtilizedCashDisc_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendPaymentBIUtilizedCashDisc/hasAttributes/UtilizedCashDisc",
+            "contents": [
+              "VendPaymentBIUtilizedCashDisc_Resolved/hasAttributes/UtilizedCashDisc"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_VendSettlementRelationship",
+            "parent": "VendPaymentBIUtilizedCashDisc_Resolved/attributeContext/VendPaymentBIUtilizedCashDisc_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendPaymentBIUtilizedCashDisc/hasAttributes/BackingTable_VendSettlementRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "VendSettlement",
+                "parent": "VendPaymentBIUtilizedCashDisc_Resolved/attributeContext/VendPaymentBIUtilizedCashDisc_Resolved/BackingTable_VendSettlementRelationship",
+                "definition": "resolvedFrom/VendSettlement",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "VendPaymentBIUtilizedCashDisc_Resolved/attributeContext/VendPaymentBIUtilizedCashDisc_Resolved/BackingTable_VendSettlementRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "VendPaymentBIUtilizedCashDisc_Resolved/attributeContext/VendPaymentBIUtilizedCashDisc_Resolved/BackingTable_VendSettlementRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "VendPaymentBIUtilizedCashDisc_Resolved/attributeContext/VendPaymentBIUtilizedCashDisc_Resolved/BackingTable_VendSettlementRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "VendPaymentBIUtilizedCashDisc_Resolved/hasAttributes/BackingTable_VendSettlementRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "VendPaymentBIUtilizedCashDisc_Resolved/attributeContext/VendPaymentBIUtilizedCashDisc_Resolved",
+            "definition": "resolvedFrom/VendPaymentBIUtilizedCashDisc/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "VendPaymentBIUtilizedCashDisc_Resolved/attributeContext/VendPaymentBIUtilizedCashDisc_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "VendPaymentBIUtilizedCashDisc_Resolved/attributeContext/VendPaymentBIUtilizedCashDisc_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "VendPaymentBIUtilizedCashDisc_Resolved/attributeContext/VendPaymentBIUtilizedCashDisc_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "VendPaymentBIUtilizedCashDisc_Resolved/attributeContext/VendPaymentBIUtilizedCashDisc_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "VendPaymentBIUtilizedCashDisc_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "TransRecId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VendPaymentBIUtilizedCashDisc_Resolved/attributeContext/VendPaymentBIUtilizedCashDisc_Resolved/TransRecId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "UtilizedCashDisc",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VendPaymentBIUtilizedCashDisc_Resolved/attributeContext/VendPaymentBIUtilizedCashDisc_Resolved/UtilizedCashDisc",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_VendSettlementRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Bank/Transaction/VendSettlement.cdm.json/VendSettlement",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "VendPaymentBIUtilizedCashDisc_Resolved/attributeContext/VendPaymentBIUtilizedCashDisc_Resolved/BackingTable_VendSettlementRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "VendPaymentBIUtilizedCashDisc_Resolved/attributeContext/VendPaymentBIUtilizedCashDisc_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Vendor utilized cash discounts",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

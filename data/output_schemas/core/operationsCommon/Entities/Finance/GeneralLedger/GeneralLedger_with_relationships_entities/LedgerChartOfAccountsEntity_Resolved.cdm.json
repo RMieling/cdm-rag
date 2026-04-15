@@ -1,0 +1,228 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "LedgerChartOfAccountsEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "LedgerChartOfAccountsEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "LedgerChartOfAccountsEntity_Resolved",
+        "definition": "resolvedFrom/LedgerChartOfAccountsEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "LedgerChartOfAccountsEntity_Resolved/attributeContext/LedgerChartOfAccountsEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "LedgerChartOfAccountsEntity_Resolved/attributeContext/LedgerChartOfAccountsEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "LedgerChartOfAccountsEntity_Resolved/attributeContext/LedgerChartOfAccountsEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerChartOfAccountsEntity/hasAttributes/Description",
+            "contents": [
+              "LedgerChartOfAccountsEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "MainAccountMask",
+            "parent": "LedgerChartOfAccountsEntity_Resolved/attributeContext/LedgerChartOfAccountsEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerChartOfAccountsEntity/hasAttributes/MainAccountMask",
+            "contents": [
+              "LedgerChartOfAccountsEntity_Resolved/hasAttributes/MainAccountMask"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ChartOfAccounts",
+            "parent": "LedgerChartOfAccountsEntity_Resolved/attributeContext/LedgerChartOfAccountsEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerChartOfAccountsEntity/hasAttributes/ChartOfAccounts",
+            "contents": [
+              "LedgerChartOfAccountsEntity_Resolved/hasAttributes/ChartOfAccounts"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ChartOfAccountsRecId",
+            "parent": "LedgerChartOfAccountsEntity_Resolved/attributeContext/LedgerChartOfAccountsEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerChartOfAccountsEntity/hasAttributes/ChartOfAccountsRecId",
+            "contents": [
+              "LedgerChartOfAccountsEntity_Resolved/hasAttributes/ChartOfAccountsRecId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_LedgerChartOfAccountsRelationship",
+            "parent": "LedgerChartOfAccountsEntity_Resolved/attributeContext/LedgerChartOfAccountsEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerChartOfAccountsEntity/hasAttributes/BackingTable_LedgerChartOfAccountsRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "LedgerChartOfAccounts",
+                "parent": "LedgerChartOfAccountsEntity_Resolved/attributeContext/LedgerChartOfAccountsEntity_Resolved/BackingTable_LedgerChartOfAccountsRelationship",
+                "definition": "resolvedFrom/LedgerChartOfAccounts",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "LedgerChartOfAccountsEntity_Resolved/attributeContext/LedgerChartOfAccountsEntity_Resolved/BackingTable_LedgerChartOfAccountsRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "LedgerChartOfAccountsEntity_Resolved/attributeContext/LedgerChartOfAccountsEntity_Resolved/BackingTable_LedgerChartOfAccountsRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "LedgerChartOfAccountsEntity_Resolved/attributeContext/LedgerChartOfAccountsEntity_Resolved/BackingTable_LedgerChartOfAccountsRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "LedgerChartOfAccountsEntity_Resolved/hasAttributes/BackingTable_LedgerChartOfAccountsRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerChartOfAccountsEntity_Resolved/attributeContext/LedgerChartOfAccountsEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "MainAccountMask",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerChartOfAccountsEntity_Resolved/attributeContext/LedgerChartOfAccountsEntity_Resolved/MainAccountMask",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ChartOfAccounts",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerChartOfAccountsEntity_Resolved/attributeContext/LedgerChartOfAccountsEntity_Resolved/ChartOfAccounts",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ChartOfAccountsRecId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerChartOfAccountsEntity_Resolved/attributeContext/LedgerChartOfAccountsEntity_Resolved/ChartOfAccountsRecId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_LedgerChartOfAccountsRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/LedgerChartOfAccounts.cdm.json/LedgerChartOfAccounts",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "LedgerChartOfAccountsEntity_Resolved/attributeContext/LedgerChartOfAccountsEntity_Resolved/BackingTable_LedgerChartOfAccountsRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Chart of accounts",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

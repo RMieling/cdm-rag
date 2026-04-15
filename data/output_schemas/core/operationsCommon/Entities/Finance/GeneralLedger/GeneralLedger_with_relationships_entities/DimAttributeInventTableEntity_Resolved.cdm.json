@@ -1,0 +1,261 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "DimAttributeInventTableEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "DimAttributeInventTableEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "DimAttributeInventTableEntity_Resolved",
+        "definition": "resolvedFrom/DimAttributeInventTableEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "DimAttributeInventTableEntity_Resolved/attributeContext/DimAttributeInventTableEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "DimAttributeInventTableEntity_Resolved/attributeContext/DimAttributeInventTableEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Value",
+            "parent": "DimAttributeInventTableEntity_Resolved/attributeContext/DimAttributeInventTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimAttributeInventTableEntity/hasAttributes/Value",
+            "contents": [
+              "DimAttributeInventTableEntity_Resolved/hasAttributes/Value"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "DimAttributeInventTableEntity_Resolved/attributeContext/DimAttributeInventTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimAttributeInventTableEntity/hasAttributes/Name",
+            "contents": [
+              "DimAttributeInventTableEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_InventTableRelationship",
+            "parent": "DimAttributeInventTableEntity_Resolved/attributeContext/DimAttributeInventTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimAttributeInventTableEntity/hasAttributes/BackingTable_InventTableRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "InventTable",
+                "parent": "DimAttributeInventTableEntity_Resolved/attributeContext/DimAttributeInventTableEntity_Resolved/BackingTable_InventTableRelationship",
+                "definition": "resolvedFrom/InventTable",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "DimAttributeInventTableEntity_Resolved/attributeContext/DimAttributeInventTableEntity_Resolved/BackingTable_InventTableRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "DimAttributeInventTableEntity_Resolved/attributeContext/DimAttributeInventTableEntity_Resolved/BackingTable_InventTableRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "DimAttributeInventTableEntity_Resolved/attributeContext/DimAttributeInventTableEntity_Resolved/BackingTable_InventTableRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "DimAttributeInventTableEntity_Resolved/hasAttributes/BackingTable_InventTableRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "DimAttributeInventTableEntity_Resolved/attributeContext/DimAttributeInventTableEntity_Resolved",
+            "definition": "resolvedFrom/DimAttributeInventTableEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "DimAttributeInventTableEntity_Resolved/attributeContext/DimAttributeInventTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "DimAttributeInventTableEntity_Resolved/attributeContext/DimAttributeInventTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "DimAttributeInventTableEntity_Resolved/attributeContext/DimAttributeInventTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "DimAttributeInventTableEntity_Resolved/attributeContext/DimAttributeInventTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "DimAttributeInventTableEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Value",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DimAttributeInventTableEntity_Resolved/attributeContext/DimAttributeInventTableEntity_Resolved/Value",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DimAttributeInventTableEntity_Resolved/attributeContext/DimAttributeInventTableEntity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_InventTableRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/SupplyChain/ProductInformationManagement/Main/InventTable.cdm.json/InventTable",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "DimAttributeInventTableEntity_Resolved/attributeContext/DimAttributeInventTableEntity_Resolved/BackingTable_InventTableRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "DimAttributeInventTableEntity_Resolved/attributeContext/DimAttributeInventTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Items",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

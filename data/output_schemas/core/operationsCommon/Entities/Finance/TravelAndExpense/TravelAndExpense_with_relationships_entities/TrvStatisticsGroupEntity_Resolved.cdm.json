@@ -1,0 +1,261 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "TrvStatisticsGroupEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TrvStatisticsGroupEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "TrvStatisticsGroupEntity_Resolved",
+        "definition": "resolvedFrom/TrvStatisticsGroupEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "TrvStatisticsGroupEntity_Resolved/attributeContext/TrvStatisticsGroupEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "TrvStatisticsGroupEntity_Resolved/attributeContext/TrvStatisticsGroupEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "TrvStatisticsGroupEntity_Resolved/attributeContext/TrvStatisticsGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvStatisticsGroupEntity/hasAttributes/Description",
+            "contents": [
+              "TrvStatisticsGroupEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "StatisticsGroup",
+            "parent": "TrvStatisticsGroupEntity_Resolved/attributeContext/TrvStatisticsGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvStatisticsGroupEntity/hasAttributes/StatisticsGroup",
+            "contents": [
+              "TrvStatisticsGroupEntity_Resolved/hasAttributes/StatisticsGroup"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_TrvCostTypeStatisticsRelationship",
+            "parent": "TrvStatisticsGroupEntity_Resolved/attributeContext/TrvStatisticsGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvStatisticsGroupEntity/hasAttributes/BackingTable_TrvCostTypeStatisticsRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "TrvCostTypeStatistics",
+                "parent": "TrvStatisticsGroupEntity_Resolved/attributeContext/TrvStatisticsGroupEntity_Resolved/BackingTable_TrvCostTypeStatisticsRelationship",
+                "definition": "resolvedFrom/TrvCostTypeStatistics",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TrvStatisticsGroupEntity_Resolved/attributeContext/TrvStatisticsGroupEntity_Resolved/BackingTable_TrvCostTypeStatisticsRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TrvStatisticsGroupEntity_Resolved/attributeContext/TrvStatisticsGroupEntity_Resolved/BackingTable_TrvCostTypeStatisticsRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TrvStatisticsGroupEntity_Resolved/attributeContext/TrvStatisticsGroupEntity_Resolved/BackingTable_TrvCostTypeStatisticsRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TrvStatisticsGroupEntity_Resolved/hasAttributes/BackingTable_TrvCostTypeStatisticsRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "TrvStatisticsGroupEntity_Resolved/attributeContext/TrvStatisticsGroupEntity_Resolved",
+            "definition": "resolvedFrom/TrvStatisticsGroupEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "TrvStatisticsGroupEntity_Resolved/attributeContext/TrvStatisticsGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TrvStatisticsGroupEntity_Resolved/attributeContext/TrvStatisticsGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TrvStatisticsGroupEntity_Resolved/attributeContext/TrvStatisticsGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TrvStatisticsGroupEntity_Resolved/attributeContext/TrvStatisticsGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TrvStatisticsGroupEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvStatisticsGroupEntity_Resolved/attributeContext/TrvStatisticsGroupEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "StatisticsGroup",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvStatisticsGroupEntity_Resolved/attributeContext/TrvStatisticsGroupEntity_Resolved/StatisticsGroup",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_TrvCostTypeStatisticsRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Expense/Group/TrvCostTypeStatistics.cdm.json/TrvCostTypeStatistics",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TrvStatisticsGroupEntity_Resolved/attributeContext/TrvStatisticsGroupEntity_Resolved/BackingTable_TrvCostTypeStatisticsRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TrvStatisticsGroupEntity_Resolved/attributeContext/TrvStatisticsGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Statistics groups",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

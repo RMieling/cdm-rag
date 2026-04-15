@@ -1,0 +1,391 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "TaxCodeLimitEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TaxCodeLimitEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "TaxCodeLimitEntity_Resolved",
+        "definition": "resolvedFrom/TaxCodeLimitEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "TaxCodeLimitEntity_Resolved/attributeContext/TaxCodeLimitEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "TaxCodeLimitEntity_Resolved/attributeContext/TaxCodeLimitEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "TaxCodeId",
+            "parent": "TaxCodeLimitEntity_Resolved/attributeContext/TaxCodeLimitEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxCodeLimitEntity/hasAttributes/TaxCodeId",
+            "contents": [
+              "TaxCodeLimitEntity_Resolved/hasAttributes/TaxCodeId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "FromDate",
+            "parent": "TaxCodeLimitEntity_Resolved/attributeContext/TaxCodeLimitEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxCodeLimitEntity/hasAttributes/FromDate",
+            "contents": [
+              "TaxCodeLimitEntity_Resolved/hasAttributes/FromDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "MaximumSalesTax",
+            "parent": "TaxCodeLimitEntity_Resolved/attributeContext/TaxCodeLimitEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxCodeLimitEntity/hasAttributes/MaximumSalesTax",
+            "contents": [
+              "TaxCodeLimitEntity_Resolved/hasAttributes/MaximumSalesTax"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "MinimumSalesTax",
+            "parent": "TaxCodeLimitEntity_Resolved/attributeContext/TaxCodeLimitEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxCodeLimitEntity/hasAttributes/MinimumSalesTax",
+            "contents": [
+              "TaxCodeLimitEntity_Resolved/hasAttributes/MinimumSalesTax"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ToDate",
+            "parent": "TaxCodeLimitEntity_Resolved/attributeContext/TaxCodeLimitEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxCodeLimitEntity/hasAttributes/ToDate",
+            "contents": [
+              "TaxCodeLimitEntity_Resolved/hasAttributes/ToDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_TaxCodeIdRelationship",
+            "parent": "TaxCodeLimitEntity_Resolved/attributeContext/TaxCodeLimitEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxCodeLimitEntity/hasAttributes/Relationship_TaxCodeIdRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "TaxCodeEntity",
+                "parent": "TaxCodeLimitEntity_Resolved/attributeContext/TaxCodeLimitEntity_Resolved/Relationship_TaxCodeIdRelationship",
+                "definition": "resolvedFrom/TaxCodeEntity",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxCodeLimitEntity_Resolved/attributeContext/TaxCodeLimitEntity_Resolved/Relationship_TaxCodeIdRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxCodeLimitEntity_Resolved/attributeContext/TaxCodeLimitEntity_Resolved/Relationship_TaxCodeIdRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxCodeLimitEntity_Resolved/attributeContext/TaxCodeLimitEntity_Resolved/Relationship_TaxCodeIdRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxCodeLimitEntity_Resolved/hasAttributes/Relationship_TaxCodeIdRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_TaxCollectLimitRelationship",
+            "parent": "TaxCodeLimitEntity_Resolved/attributeContext/TaxCodeLimitEntity_Resolved",
+            "definition": "resolvedFrom/TaxCodeLimitEntity/hasAttributes/BackingTable_TaxCollectLimitRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "TaxCollectLimit",
+                "parent": "TaxCodeLimitEntity_Resolved/attributeContext/TaxCodeLimitEntity_Resolved/BackingTable_TaxCollectLimitRelationship",
+                "definition": "resolvedFrom/TaxCollectLimit",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxCodeLimitEntity_Resolved/attributeContext/TaxCodeLimitEntity_Resolved/BackingTable_TaxCollectLimitRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxCodeLimitEntity_Resolved/attributeContext/TaxCodeLimitEntity_Resolved/BackingTable_TaxCollectLimitRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxCodeLimitEntity_Resolved/attributeContext/TaxCodeLimitEntity_Resolved/BackingTable_TaxCollectLimitRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxCodeLimitEntity_Resolved/hasAttributes/BackingTable_TaxCollectLimitRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "TaxCodeLimitEntity_Resolved/attributeContext/TaxCodeLimitEntity_Resolved",
+            "definition": "resolvedFrom/TaxCodeLimitEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "TaxCodeLimitEntity_Resolved/attributeContext/TaxCodeLimitEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxCodeLimitEntity_Resolved/attributeContext/TaxCodeLimitEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxCodeLimitEntity_Resolved/attributeContext/TaxCodeLimitEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxCodeLimitEntity_Resolved/attributeContext/TaxCodeLimitEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxCodeLimitEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "TaxCodeId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxCodeLimitEntity_Resolved/attributeContext/TaxCodeLimitEntity_Resolved/TaxCodeId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "FromDate",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxCodeLimitEntity_Resolved/attributeContext/TaxCodeLimitEntity_Resolved/FromDate",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "From date"
+        },
+        {
+          "name": "MaximumSalesTax",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxCodeLimitEntity_Resolved/attributeContext/TaxCodeLimitEntity_Resolved/MaximumSalesTax",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "MinimumSalesTax",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxCodeLimitEntity_Resolved/attributeContext/TaxCodeLimitEntity_Resolved/MinimumSalesTax",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ToDate",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxCodeLimitEntity_Resolved/attributeContext/TaxCodeLimitEntity_Resolved/ToDate",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "To date"
+        },
+        {
+          "name": "Relationship_TaxCodeIdRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": []
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxCodeLimitEntity_Resolved/attributeContext/TaxCodeLimitEntity_Resolved/Relationship_TaxCodeIdRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "BackingTable_TaxCollectLimitRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Tax/Group/TaxCollectLimit.cdm.json/TaxCollectLimit",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxCodeLimitEntity_Resolved/attributeContext/TaxCodeLimitEntity_Resolved/BackingTable_TaxCollectLimitRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxCodeLimitEntity_Resolved/attributeContext/TaxCodeLimitEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Sales tax code limits",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

@@ -1,0 +1,363 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "TaxServiceCodeByLocationEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TaxServiceCodeByLocationEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "TaxServiceCodeByLocationEntity_Resolved",
+        "definition": "resolvedFrom/TaxServiceCodeByLocationEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "TaxServiceCodeByLocationEntity_Resolved/attributeContext/TaxServiceCodeByLocationEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "TaxServiceCodeByLocationEntity_Resolved/attributeContext/TaxServiceCodeByLocationEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ParentServiceCode",
+            "parent": "TaxServiceCodeByLocationEntity_Resolved/attributeContext/TaxServiceCodeByLocationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxServiceCodeByLocationEntity/hasAttributes/ParentServiceCode",
+            "contents": [
+              "TaxServiceCodeByLocationEntity_Resolved/hasAttributes/ParentServiceCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CountryRegion",
+            "parent": "TaxServiceCodeByLocationEntity_Resolved/attributeContext/TaxServiceCodeByLocationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxServiceCodeByLocationEntity/hasAttributes/CountryRegion",
+            "contents": [
+              "TaxServiceCodeByLocationEntity_Resolved/hasAttributes/CountryRegion"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "State",
+            "parent": "TaxServiceCodeByLocationEntity_Resolved/attributeContext/TaxServiceCodeByLocationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxServiceCodeByLocationEntity/hasAttributes/State",
+            "contents": [
+              "TaxServiceCodeByLocationEntity_Resolved/hasAttributes/State"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "City",
+            "parent": "TaxServiceCodeByLocationEntity_Resolved/attributeContext/TaxServiceCodeByLocationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxServiceCodeByLocationEntity/hasAttributes/City",
+            "contents": [
+              "TaxServiceCodeByLocationEntity_Resolved/hasAttributes/City"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ServiceCode",
+            "parent": "TaxServiceCodeByLocationEntity_Resolved/attributeContext/TaxServiceCodeByLocationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxServiceCodeByLocationEntity/hasAttributes/ServiceCode",
+            "contents": [
+              "TaxServiceCodeByLocationEntity_Resolved/hasAttributes/ServiceCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "TaxServiceCodeByLocationEntity_Resolved/attributeContext/TaxServiceCodeByLocationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxServiceCodeByLocationEntity/hasAttributes/Name",
+            "contents": [
+              "TaxServiceCodeByLocationEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ServiceCodeDescription",
+            "parent": "TaxServiceCodeByLocationEntity_Resolved/attributeContext/TaxServiceCodeByLocationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxServiceCodeByLocationEntity/hasAttributes/ServiceCodeDescription",
+            "contents": [
+              "TaxServiceCodeByLocationEntity_Resolved/hasAttributes/ServiceCodeDescription"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_TaxServiceCode_BRRelationship",
+            "parent": "TaxServiceCodeByLocationEntity_Resolved/attributeContext/TaxServiceCodeByLocationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxServiceCodeByLocationEntity/hasAttributes/BackingTable_TaxServiceCode_BRRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "TaxServiceCode_BR",
+                "parent": "TaxServiceCodeByLocationEntity_Resolved/attributeContext/TaxServiceCodeByLocationEntity_Resolved/BackingTable_TaxServiceCode_BRRelationship",
+                "definition": "resolvedFrom/TaxServiceCode_BR",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxServiceCodeByLocationEntity_Resolved/attributeContext/TaxServiceCodeByLocationEntity_Resolved/BackingTable_TaxServiceCode_BRRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxServiceCodeByLocationEntity_Resolved/attributeContext/TaxServiceCodeByLocationEntity_Resolved/BackingTable_TaxServiceCode_BRRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxServiceCodeByLocationEntity_Resolved/attributeContext/TaxServiceCodeByLocationEntity_Resolved/BackingTable_TaxServiceCode_BRRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxServiceCodeByLocationEntity_Resolved/hasAttributes/BackingTable_TaxServiceCode_BRRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "TaxServiceCodeByLocationEntity_Resolved/attributeContext/TaxServiceCodeByLocationEntity_Resolved",
+            "definition": "resolvedFrom/TaxServiceCodeByLocationEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "TaxServiceCodeByLocationEntity_Resolved/attributeContext/TaxServiceCodeByLocationEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxServiceCodeByLocationEntity_Resolved/attributeContext/TaxServiceCodeByLocationEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxServiceCodeByLocationEntity_Resolved/attributeContext/TaxServiceCodeByLocationEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxServiceCodeByLocationEntity_Resolved/attributeContext/TaxServiceCodeByLocationEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxServiceCodeByLocationEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "ParentServiceCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxServiceCodeByLocationEntity_Resolved/attributeContext/TaxServiceCodeByLocationEntity_Resolved/ParentServiceCode",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Parent service code"
+        },
+        {
+          "name": "CountryRegion",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxServiceCodeByLocationEntity_Resolved/attributeContext/TaxServiceCodeByLocationEntity_Resolved/CountryRegion",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "State",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxServiceCodeByLocationEntity_Resolved/attributeContext/TaxServiceCodeByLocationEntity_Resolved/State",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "City",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxServiceCodeByLocationEntity_Resolved/attributeContext/TaxServiceCodeByLocationEntity_Resolved/City",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ServiceCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxServiceCodeByLocationEntity_Resolved/attributeContext/TaxServiceCodeByLocationEntity_Resolved/ServiceCode",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Service code"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxServiceCodeByLocationEntity_Resolved/attributeContext/TaxServiceCodeByLocationEntity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ServiceCodeDescription",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxServiceCodeByLocationEntity_Resolved/attributeContext/TaxServiceCodeByLocationEntity_Resolved/ServiceCodeDescription",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_TaxServiceCode_BRRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Tax/Group/TaxServiceCode_BR.cdm.json/TaxServiceCode_BR",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxServiceCodeByLocationEntity_Resolved/attributeContext/TaxServiceCodeByLocationEntity_Resolved/BackingTable_TaxServiceCode_BRRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxServiceCodeByLocationEntity_Resolved/attributeContext/TaxServiceCodeByLocationEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Service code by location",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

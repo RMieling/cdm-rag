@@ -1,0 +1,321 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "CashBalancesEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "CashBalancesEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "CashBalancesEntity_Resolved",
+        "definition": "resolvedFrom/CashBalancesEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "CashBalancesEntity_Resolved/attributeContext/CashBalancesEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "CashBalancesEntity_Resolved/attributeContext/CashBalancesEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Cash",
+            "parent": "CashBalancesEntity_Resolved/attributeContext/CashBalancesEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CashBalancesEntity/hasAttributes/Cash",
+            "contents": [
+              "CashBalancesEntity_Resolved/hasAttributes/Cash"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "AmountInTransactionCurrency",
+            "parent": "CashBalancesEntity_Resolved/attributeContext/CashBalancesEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CashBalancesEntity/hasAttributes/AmountInTransactionCurrency",
+            "contents": [
+              "CashBalancesEntity_Resolved/hasAttributes/AmountInTransactionCurrency"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Amount",
+            "parent": "CashBalancesEntity_Resolved/attributeContext/CashBalancesEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CashBalancesEntity/hasAttributes/Amount",
+            "contents": [
+              "CashBalancesEntity_Resolved/hasAttributes/Amount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Currency",
+            "parent": "CashBalancesEntity_Resolved/attributeContext/CashBalancesEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CashBalancesEntity/hasAttributes/Currency",
+            "contents": [
+              "CashBalancesEntity_Resolved/hasAttributes/Currency"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ExchangeRateAdjustmentAmount",
+            "parent": "CashBalancesEntity_Resolved/attributeContext/CashBalancesEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CashBalancesEntity/hasAttributes/ExchangeRateAdjustmentAmount",
+            "contents": [
+              "CashBalancesEntity_Resolved/hasAttributes/ExchangeRateAdjustmentAmount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_RCashBalancesRelationship",
+            "parent": "CashBalancesEntity_Resolved/attributeContext/CashBalancesEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CashBalancesEntity/hasAttributes/BackingTable_RCashBalancesRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "RCashBalances",
+                "parent": "CashBalancesEntity_Resolved/attributeContext/CashBalancesEntity_Resolved/BackingTable_RCashBalancesRelationship",
+                "definition": "resolvedFrom/RCashBalances",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CashBalancesEntity_Resolved/attributeContext/CashBalancesEntity_Resolved/BackingTable_RCashBalancesRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CashBalancesEntity_Resolved/attributeContext/CashBalancesEntity_Resolved/BackingTable_RCashBalancesRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CashBalancesEntity_Resolved/attributeContext/CashBalancesEntity_Resolved/BackingTable_RCashBalancesRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CashBalancesEntity_Resolved/hasAttributes/BackingTable_RCashBalancesRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "CashBalancesEntity_Resolved/attributeContext/CashBalancesEntity_Resolved",
+            "definition": "resolvedFrom/CashBalancesEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "CashBalancesEntity_Resolved/attributeContext/CashBalancesEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CashBalancesEntity_Resolved/attributeContext/CashBalancesEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CashBalancesEntity_Resolved/attributeContext/CashBalancesEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CashBalancesEntity_Resolved/attributeContext/CashBalancesEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CashBalancesEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Cash",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CashBalancesEntity_Resolved/attributeContext/CashBalancesEntity_Resolved/Cash",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "AmountInTransactionCurrency",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CashBalancesEntity_Resolved/attributeContext/CashBalancesEntity_Resolved/AmountInTransactionCurrency",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Amount",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CashBalancesEntity_Resolved/attributeContext/CashBalancesEntity_Resolved/Amount",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Currency",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CashBalancesEntity_Resolved/attributeContext/CashBalancesEntity_Resolved/Currency",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ExchangeRateAdjustmentAmount",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CashBalancesEntity_Resolved/attributeContext/CashBalancesEntity_Resolved/ExchangeRateAdjustmentAmount",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_RCashBalancesRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/RCash/Transaction/RCashBalances.cdm.json/RCashBalances",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CashBalancesEntity_Resolved/attributeContext/CashBalancesEntity_Resolved/BackingTable_RCashBalancesRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CashBalancesEntity_Resolved/attributeContext/CashBalancesEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Cash balance",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

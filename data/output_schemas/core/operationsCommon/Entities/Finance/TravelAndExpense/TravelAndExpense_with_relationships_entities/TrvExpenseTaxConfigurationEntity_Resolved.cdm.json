@@ -1,0 +1,281 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "TrvExpenseTaxConfigurationEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TrvExpenseTaxConfigurationEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "TrvExpenseTaxConfigurationEntity_Resolved",
+        "definition": "resolvedFrom/TrvExpenseTaxConfigurationEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "TrvExpenseTaxConfigurationEntity_Resolved/attributeContext/TrvExpenseTaxConfigurationEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "TrvExpenseTaxConfigurationEntity_Resolved/attributeContext/TrvExpenseTaxConfigurationEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CountryRegionId",
+            "parent": "TrvExpenseTaxConfigurationEntity_Resolved/attributeContext/TrvExpenseTaxConfigurationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvExpenseTaxConfigurationEntity/hasAttributes/CountryRegionId",
+            "contents": [
+              "TrvExpenseTaxConfigurationEntity_Resolved/hasAttributes/CountryRegionId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Instructions",
+            "parent": "TrvExpenseTaxConfigurationEntity_Resolved/attributeContext/TrvExpenseTaxConfigurationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvExpenseTaxConfigurationEntity/hasAttributes/Instructions",
+            "contents": [
+              "TrvExpenseTaxConfigurationEntity_Resolved/hasAttributes/Instructions"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "TaxGroup",
+            "parent": "TrvExpenseTaxConfigurationEntity_Resolved/attributeContext/TrvExpenseTaxConfigurationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvExpenseTaxConfigurationEntity/hasAttributes/TaxGroup",
+            "contents": [
+              "TrvExpenseTaxConfigurationEntity_Resolved/hasAttributes/TaxGroup"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_TrvExpenseTaxConfigurationRelationship",
+            "parent": "TrvExpenseTaxConfigurationEntity_Resolved/attributeContext/TrvExpenseTaxConfigurationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvExpenseTaxConfigurationEntity/hasAttributes/BackingTable_TrvExpenseTaxConfigurationRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "TrvExpenseTaxConfiguration",
+                "parent": "TrvExpenseTaxConfigurationEntity_Resolved/attributeContext/TrvExpenseTaxConfigurationEntity_Resolved/BackingTable_TrvExpenseTaxConfigurationRelationship",
+                "definition": "resolvedFrom/TrvExpenseTaxConfiguration",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TrvExpenseTaxConfigurationEntity_Resolved/attributeContext/TrvExpenseTaxConfigurationEntity_Resolved/BackingTable_TrvExpenseTaxConfigurationRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TrvExpenseTaxConfigurationEntity_Resolved/attributeContext/TrvExpenseTaxConfigurationEntity_Resolved/BackingTable_TrvExpenseTaxConfigurationRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TrvExpenseTaxConfigurationEntity_Resolved/attributeContext/TrvExpenseTaxConfigurationEntity_Resolved/BackingTable_TrvExpenseTaxConfigurationRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TrvExpenseTaxConfigurationEntity_Resolved/hasAttributes/BackingTable_TrvExpenseTaxConfigurationRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "TrvExpenseTaxConfigurationEntity_Resolved/attributeContext/TrvExpenseTaxConfigurationEntity_Resolved",
+            "definition": "resolvedFrom/TrvExpenseTaxConfigurationEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "TrvExpenseTaxConfigurationEntity_Resolved/attributeContext/TrvExpenseTaxConfigurationEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TrvExpenseTaxConfigurationEntity_Resolved/attributeContext/TrvExpenseTaxConfigurationEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TrvExpenseTaxConfigurationEntity_Resolved/attributeContext/TrvExpenseTaxConfigurationEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TrvExpenseTaxConfigurationEntity_Resolved/attributeContext/TrvExpenseTaxConfigurationEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TrvExpenseTaxConfigurationEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "CountryRegionId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvExpenseTaxConfigurationEntity_Resolved/attributeContext/TrvExpenseTaxConfigurationEntity_Resolved/CountryRegionId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Instructions",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvExpenseTaxConfigurationEntity_Resolved/attributeContext/TrvExpenseTaxConfigurationEntity_Resolved/Instructions",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "TaxGroup",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvExpenseTaxConfigurationEntity_Resolved/attributeContext/TrvExpenseTaxConfigurationEntity_Resolved/TaxGroup",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_TrvExpenseTaxConfigurationRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Expense/Reference/TrvExpenseTaxConfiguration.cdm.json/TrvExpenseTaxConfiguration",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TrvExpenseTaxConfigurationEntity_Resolved/attributeContext/TrvExpenseTaxConfigurationEntity_Resolved/BackingTable_TrvExpenseTaxConfigurationRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TrvExpenseTaxConfigurationEntity_Resolved/attributeContext/TrvExpenseTaxConfigurationEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Expense tax recovery configuration",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

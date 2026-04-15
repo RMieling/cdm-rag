@@ -1,0 +1,261 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "TrvExpensePurposeEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TrvExpensePurposeEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "TrvExpensePurposeEntity_Resolved",
+        "definition": "resolvedFrom/TrvExpensePurposeEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "TrvExpensePurposeEntity_Resolved/attributeContext/TrvExpensePurposeEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "TrvExpensePurposeEntity_Resolved/attributeContext/TrvExpensePurposeEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BusinessPurpose",
+            "parent": "TrvExpensePurposeEntity_Resolved/attributeContext/TrvExpensePurposeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvExpensePurposeEntity/hasAttributes/BusinessPurpose",
+            "contents": [
+              "TrvExpensePurposeEntity_Resolved/hasAttributes/BusinessPurpose"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ExpenseType",
+            "parent": "TrvExpensePurposeEntity_Resolved/attributeContext/TrvExpensePurposeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvExpensePurposeEntity/hasAttributes/ExpenseType",
+            "contents": [
+              "TrvExpensePurposeEntity_Resolved/hasAttributes/ExpenseType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_TrvLinePurposeRelationship",
+            "parent": "TrvExpensePurposeEntity_Resolved/attributeContext/TrvExpensePurposeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvExpensePurposeEntity/hasAttributes/BackingTable_TrvLinePurposeRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "TrvLinePurpose",
+                "parent": "TrvExpensePurposeEntity_Resolved/attributeContext/TrvExpensePurposeEntity_Resolved/BackingTable_TrvLinePurposeRelationship",
+                "definition": "resolvedFrom/TrvLinePurpose",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TrvExpensePurposeEntity_Resolved/attributeContext/TrvExpensePurposeEntity_Resolved/BackingTable_TrvLinePurposeRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TrvExpensePurposeEntity_Resolved/attributeContext/TrvExpensePurposeEntity_Resolved/BackingTable_TrvLinePurposeRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TrvExpensePurposeEntity_Resolved/attributeContext/TrvExpensePurposeEntity_Resolved/BackingTable_TrvLinePurposeRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TrvExpensePurposeEntity_Resolved/hasAttributes/BackingTable_TrvLinePurposeRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "TrvExpensePurposeEntity_Resolved/attributeContext/TrvExpensePurposeEntity_Resolved",
+            "definition": "resolvedFrom/TrvExpensePurposeEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "TrvExpensePurposeEntity_Resolved/attributeContext/TrvExpensePurposeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TrvExpensePurposeEntity_Resolved/attributeContext/TrvExpensePurposeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TrvExpensePurposeEntity_Resolved/attributeContext/TrvExpensePurposeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TrvExpensePurposeEntity_Resolved/attributeContext/TrvExpensePurposeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TrvExpensePurposeEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "BusinessPurpose",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvExpensePurposeEntity_Resolved/attributeContext/TrvExpensePurposeEntity_Resolved/BusinessPurpose",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ExpenseType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvExpensePurposeEntity_Resolved/attributeContext/TrvExpensePurposeEntity_Resolved/ExpenseType",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_TrvLinePurposeRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Expense/Reference/TrvLinePurpose.cdm.json/TrvLinePurpose",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TrvExpensePurposeEntity_Resolved/attributeContext/TrvExpensePurposeEntity_Resolved/BackingTable_TrvLinePurposeRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TrvExpensePurposeEntity_Resolved/attributeContext/TrvExpensePurposeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Expense purpose for transactions",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

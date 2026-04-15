@@ -1,0 +1,341 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "RAssetLocationEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "RAssetLocationEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "RAssetLocationEntity_Resolved",
+        "definition": "resolvedFrom/RAssetLocationEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "RAssetLocationEntity_Resolved/attributeContext/RAssetLocationEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "RAssetLocationEntity_Resolved/attributeContext/RAssetLocationEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Location",
+            "parent": "RAssetLocationEntity_Resolved/attributeContext/RAssetLocationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RAssetLocationEntity/hasAttributes/Location",
+            "contents": [
+              "RAssetLocationEntity_Resolved/hasAttributes/Location"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "RAssetLocationEntity_Resolved/attributeContext/RAssetLocationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RAssetLocationEntity/hasAttributes/Name",
+            "contents": [
+              "RAssetLocationEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Type",
+            "parent": "RAssetLocationEntity_Resolved/attributeContext/RAssetLocationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RAssetLocationEntity/hasAttributes/Type",
+            "contents": [
+              "RAssetLocationEntity_Resolved/hasAttributes/Type"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "SeparateDivisionID",
+            "parent": "RAssetLocationEntity_Resolved/attributeContext/RAssetLocationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RAssetLocationEntity/hasAttributes/SeparateDivisionID",
+            "contents": [
+              "RAssetLocationEntity_Resolved/hasAttributes/SeparateDivisionID"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "RCOAD",
+            "parent": "RAssetLocationEntity_Resolved/attributeContext/RAssetLocationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RAssetLocationEntity/hasAttributes/RCOAD",
+            "contents": [
+              "RAssetLocationEntity_Resolved/hasAttributes/RCOAD"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "SalesTaxCode",
+            "parent": "RAssetLocationEntity_Resolved/attributeContext/RAssetLocationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RAssetLocationEntity/hasAttributes/SalesTaxCode",
+            "contents": [
+              "RAssetLocationEntity_Resolved/hasAttributes/SalesTaxCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_RAssetLocationRelationship",
+            "parent": "RAssetLocationEntity_Resolved/attributeContext/RAssetLocationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RAssetLocationEntity/hasAttributes/BackingTable_RAssetLocationRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "RAssetLocation",
+                "parent": "RAssetLocationEntity_Resolved/attributeContext/RAssetLocationEntity_Resolved/BackingTable_RAssetLocationRelationship",
+                "definition": "resolvedFrom/RAssetLocation",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "RAssetLocationEntity_Resolved/attributeContext/RAssetLocationEntity_Resolved/BackingTable_RAssetLocationRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "RAssetLocationEntity_Resolved/attributeContext/RAssetLocationEntity_Resolved/BackingTable_RAssetLocationRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "RAssetLocationEntity_Resolved/attributeContext/RAssetLocationEntity_Resolved/BackingTable_RAssetLocationRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "RAssetLocationEntity_Resolved/hasAttributes/BackingTable_RAssetLocationRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "RAssetLocationEntity_Resolved/attributeContext/RAssetLocationEntity_Resolved",
+            "definition": "resolvedFrom/RAssetLocationEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "RAssetLocationEntity_Resolved/attributeContext/RAssetLocationEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "RAssetLocationEntity_Resolved/attributeContext/RAssetLocationEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "RAssetLocationEntity_Resolved/attributeContext/RAssetLocationEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "RAssetLocationEntity_Resolved/attributeContext/RAssetLocationEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "RAssetLocationEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Location",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RAssetLocationEntity_Resolved/attributeContext/RAssetLocationEntity_Resolved/Location",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RAssetLocationEntity_Resolved/attributeContext/RAssetLocationEntity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Type",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RAssetLocationEntity_Resolved/attributeContext/RAssetLocationEntity_Resolved/Type",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "SeparateDivisionID",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RAssetLocationEntity_Resolved/attributeContext/RAssetLocationEntity_Resolved/SeparateDivisionID",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "RCOAD",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RAssetLocationEntity_Resolved/attributeContext/RAssetLocationEntity_Resolved/RCOAD",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "SalesTaxCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RAssetLocationEntity_Resolved/attributeContext/RAssetLocationEntity_Resolved/SalesTaxCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_RAssetLocationRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/RAsset/Group/RAssetLocation.cdm.json/RAssetLocation",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "RAssetLocationEntity_Resolved/attributeContext/RAssetLocationEntity_Resolved/BackingTable_RAssetLocationRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "RAssetLocationEntity_Resolved/attributeContext/RAssetLocationEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "FA location",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

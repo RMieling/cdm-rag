@@ -1,0 +1,247 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "PaymentCalendarExceptionEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "PaymentCalendarExceptionEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "PaymentCalendarExceptionEntity_Resolved",
+        "definition": "resolvedFrom/PaymentCalendarExceptionEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "PaymentCalendarExceptionEntity_Resolved/attributeContext/PaymentCalendarExceptionEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "PaymentCalendarExceptionEntity_Resolved/attributeContext/PaymentCalendarExceptionEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "PaymentCalendar",
+            "parent": "PaymentCalendarExceptionEntity_Resolved/attributeContext/PaymentCalendarExceptionEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/PaymentCalendarExceptionEntity/hasAttributes/PaymentCalendar",
+            "contents": [
+              "PaymentCalendarExceptionEntity_Resolved/hasAttributes/PaymentCalendar"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "PaymentCalendarName",
+            "parent": "PaymentCalendarExceptionEntity_Resolved/attributeContext/PaymentCalendarExceptionEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/PaymentCalendarExceptionEntity/hasAttributes/PaymentCalendarName",
+            "contents": [
+              "PaymentCalendarExceptionEntity_Resolved/hasAttributes/PaymentCalendarName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "PaymentCalendarExceptionEntity_Resolved/attributeContext/PaymentCalendarExceptionEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/PaymentCalendarExceptionEntity/hasAttributes/Description",
+            "contents": [
+              "PaymentCalendarExceptionEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ExceptionDate",
+            "parent": "PaymentCalendarExceptionEntity_Resolved/attributeContext/PaymentCalendarExceptionEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/PaymentCalendarExceptionEntity/hasAttributes/ExceptionDate",
+            "contents": [
+              "PaymentCalendarExceptionEntity_Resolved/hasAttributes/ExceptionDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ExceptionType",
+            "parent": "PaymentCalendarExceptionEntity_Resolved/attributeContext/PaymentCalendarExceptionEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/PaymentCalendarExceptionEntity/hasAttributes/ExceptionType",
+            "contents": [
+              "PaymentCalendarExceptionEntity_Resolved/hasAttributes/ExceptionType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_PaymCalendarExceptionRelationship",
+            "parent": "PaymentCalendarExceptionEntity_Resolved/attributeContext/PaymentCalendarExceptionEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/PaymentCalendarExceptionEntity/hasAttributes/BackingTable_PaymCalendarExceptionRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "PaymCalendarException",
+                "parent": "PaymentCalendarExceptionEntity_Resolved/attributeContext/PaymentCalendarExceptionEntity_Resolved/BackingTable_PaymCalendarExceptionRelationship",
+                "definition": "resolvedFrom/PaymCalendarException",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "PaymentCalendarExceptionEntity_Resolved/attributeContext/PaymentCalendarExceptionEntity_Resolved/BackingTable_PaymCalendarExceptionRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "PaymentCalendarExceptionEntity_Resolved/attributeContext/PaymentCalendarExceptionEntity_Resolved/BackingTable_PaymCalendarExceptionRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "PaymentCalendarExceptionEntity_Resolved/attributeContext/PaymentCalendarExceptionEntity_Resolved/BackingTable_PaymCalendarExceptionRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "PaymentCalendarExceptionEntity_Resolved/hasAttributes/BackingTable_PaymCalendarExceptionRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "PaymentCalendar",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "PaymentCalendarExceptionEntity_Resolved/attributeContext/PaymentCalendarExceptionEntity_Resolved/PaymentCalendar",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "PaymentCalendarName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "PaymentCalendarExceptionEntity_Resolved/attributeContext/PaymentCalendarExceptionEntity_Resolved/PaymentCalendarName",
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "PaymentCalendarExceptionEntity_Resolved/attributeContext/PaymentCalendarExceptionEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ExceptionDate",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "PaymentCalendarExceptionEntity_Resolved/attributeContext/PaymentCalendarExceptionEntity_Resolved/ExceptionDate",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ExceptionType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "PaymentCalendarExceptionEntity_Resolved/attributeContext/PaymentCalendarExceptionEntity_Resolved/ExceptionType",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_PaymCalendarExceptionRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Bank/Reference/PaymCalendarException.cdm.json/PaymCalendarException",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "PaymentCalendarExceptionEntity_Resolved/attributeContext/PaymentCalendarExceptionEntity_Resolved/BackingTable_PaymCalendarExceptionRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Payment calendar exception",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

@@ -1,0 +1,188 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "DimensionParametersEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "DimensionParametersEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "DimensionParametersEntity_Resolved",
+        "definition": "resolvedFrom/DimensionParametersEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "DimensionParametersEntity_Resolved/attributeContext/DimensionParametersEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "DimensionParametersEntity_Resolved/attributeContext/DimensionParametersEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DimensionSegmentDelimiter",
+            "parent": "DimensionParametersEntity_Resolved/attributeContext/DimensionParametersEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimensionParametersEntity/hasAttributes/DimensionSegmentDelimiter",
+            "contents": [
+              "DimensionParametersEntity_Resolved/hasAttributes/DimensionSegmentDelimiter"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Key",
+            "parent": "DimensionParametersEntity_Resolved/attributeContext/DimensionParametersEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimensionParametersEntity/hasAttributes/Key",
+            "contents": [
+              "DimensionParametersEntity_Resolved/hasAttributes/Key"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_DimensionParametersRelationship",
+            "parent": "DimensionParametersEntity_Resolved/attributeContext/DimensionParametersEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimensionParametersEntity/hasAttributes/BackingTable_DimensionParametersRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "DimensionParameters",
+                "parent": "DimensionParametersEntity_Resolved/attributeContext/DimensionParametersEntity_Resolved/BackingTable_DimensionParametersRelationship",
+                "definition": "resolvedFrom/DimensionParameters",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "DimensionParametersEntity_Resolved/attributeContext/DimensionParametersEntity_Resolved/BackingTable_DimensionParametersRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "DimensionParametersEntity_Resolved/attributeContext/DimensionParametersEntity_Resolved/BackingTable_DimensionParametersRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "DimensionParametersEntity_Resolved/attributeContext/DimensionParametersEntity_Resolved/BackingTable_DimensionParametersRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "DimensionParametersEntity_Resolved/hasAttributes/BackingTable_DimensionParametersRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "DimensionSegmentDelimiter",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DimensionParametersEntity_Resolved/attributeContext/DimensionParametersEntity_Resolved/DimensionSegmentDelimiter",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Key",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DimensionParametersEntity_Resolved/attributeContext/DimensionParametersEntity_Resolved/Key",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_DimensionParametersRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/FinancialDimensions/Parameter/DimensionParameters.cdm.json/DimensionParameters",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "DimensionParametersEntity_Resolved/attributeContext/DimensionParametersEntity_Resolved/BackingTable_DimensionParametersRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Dimension parameters",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

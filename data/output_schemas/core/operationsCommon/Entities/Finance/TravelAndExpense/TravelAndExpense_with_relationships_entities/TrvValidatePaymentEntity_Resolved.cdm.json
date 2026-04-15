@@ -1,0 +1,261 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "TrvValidatePaymentEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TrvValidatePaymentEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "TrvValidatePaymentEntity_Resolved",
+        "definition": "resolvedFrom/TrvValidatePaymentEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "TrvValidatePaymentEntity_Resolved/attributeContext/TrvValidatePaymentEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "TrvValidatePaymentEntity_Resolved/attributeContext/TrvValidatePaymentEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ExpenseCategory",
+            "parent": "TrvValidatePaymentEntity_Resolved/attributeContext/TrvValidatePaymentEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvValidatePaymentEntity/hasAttributes/ExpenseCategory",
+            "contents": [
+              "TrvValidatePaymentEntity_Resolved/hasAttributes/ExpenseCategory"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "PaymentMethod",
+            "parent": "TrvValidatePaymentEntity_Resolved/attributeContext/TrvValidatePaymentEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvValidatePaymentEntity/hasAttributes/PaymentMethod",
+            "contents": [
+              "TrvValidatePaymentEntity_Resolved/hasAttributes/PaymentMethod"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_TrvValidatePaymentRelationship",
+            "parent": "TrvValidatePaymentEntity_Resolved/attributeContext/TrvValidatePaymentEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvValidatePaymentEntity/hasAttributes/BackingTable_TrvValidatePaymentRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "TrvValidatePayment",
+                "parent": "TrvValidatePaymentEntity_Resolved/attributeContext/TrvValidatePaymentEntity_Resolved/BackingTable_TrvValidatePaymentRelationship",
+                "definition": "resolvedFrom/TrvValidatePayment",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TrvValidatePaymentEntity_Resolved/attributeContext/TrvValidatePaymentEntity_Resolved/BackingTable_TrvValidatePaymentRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TrvValidatePaymentEntity_Resolved/attributeContext/TrvValidatePaymentEntity_Resolved/BackingTable_TrvValidatePaymentRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TrvValidatePaymentEntity_Resolved/attributeContext/TrvValidatePaymentEntity_Resolved/BackingTable_TrvValidatePaymentRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TrvValidatePaymentEntity_Resolved/hasAttributes/BackingTable_TrvValidatePaymentRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "TrvValidatePaymentEntity_Resolved/attributeContext/TrvValidatePaymentEntity_Resolved",
+            "definition": "resolvedFrom/TrvValidatePaymentEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "TrvValidatePaymentEntity_Resolved/attributeContext/TrvValidatePaymentEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TrvValidatePaymentEntity_Resolved/attributeContext/TrvValidatePaymentEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TrvValidatePaymentEntity_Resolved/attributeContext/TrvValidatePaymentEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TrvValidatePaymentEntity_Resolved/attributeContext/TrvValidatePaymentEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TrvValidatePaymentEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "ExpenseCategory",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvValidatePaymentEntity_Resolved/attributeContext/TrvValidatePaymentEntity_Resolved/ExpenseCategory",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "PaymentMethod",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvValidatePaymentEntity_Resolved/attributeContext/TrvValidatePaymentEntity_Resolved/PaymentMethod",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_TrvValidatePaymentRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Expense/Reference/TrvValidatePayment.cdm.json/TrvValidatePayment",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TrvValidatePaymentEntity_Resolved/attributeContext/TrvValidatePaymentEntity_Resolved/BackingTable_TrvValidatePaymentRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TrvValidatePaymentEntity_Resolved/attributeContext/TrvValidatePaymentEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Expense valid payment methods",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

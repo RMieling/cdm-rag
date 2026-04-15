@@ -1,0 +1,301 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "IntrastatPortEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "IntrastatPortEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "IntrastatPortEntity_Resolved",
+        "definition": "resolvedFrom/IntrastatPortEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "IntrastatPortEntity_Resolved/attributeContext/IntrastatPortEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "IntrastatPortEntity_Resolved/attributeContext/IntrastatPortEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "PortId",
+            "parent": "IntrastatPortEntity_Resolved/attributeContext/IntrastatPortEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/IntrastatPortEntity/hasAttributes/PortId",
+            "contents": [
+              "IntrastatPortEntity_Resolved/hasAttributes/PortId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DescribePort",
+            "parent": "IntrastatPortEntity_Resolved/attributeContext/IntrastatPortEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/IntrastatPortEntity/hasAttributes/DescribePort",
+            "contents": [
+              "IntrastatPortEntity_Resolved/hasAttributes/DescribePort"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CountryRegionId",
+            "parent": "IntrastatPortEntity_Resolved/attributeContext/IntrastatPortEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/IntrastatPortEntity/hasAttributes/CountryRegionId",
+            "contents": [
+              "IntrastatPortEntity_Resolved/hasAttributes/CountryRegionId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "PortState",
+            "parent": "IntrastatPortEntity_Resolved/attributeContext/IntrastatPortEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/IntrastatPortEntity/hasAttributes/PortState",
+            "contents": [
+              "IntrastatPortEntity_Resolved/hasAttributes/PortState"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_IntrastatPortRelationship",
+            "parent": "IntrastatPortEntity_Resolved/attributeContext/IntrastatPortEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/IntrastatPortEntity/hasAttributes/BackingTable_IntrastatPortRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "IntrastatPort",
+                "parent": "IntrastatPortEntity_Resolved/attributeContext/IntrastatPortEntity_Resolved/BackingTable_IntrastatPortRelationship",
+                "definition": "resolvedFrom/IntrastatPort",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "IntrastatPortEntity_Resolved/attributeContext/IntrastatPortEntity_Resolved/BackingTable_IntrastatPortRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "IntrastatPortEntity_Resolved/attributeContext/IntrastatPortEntity_Resolved/BackingTable_IntrastatPortRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "IntrastatPortEntity_Resolved/attributeContext/IntrastatPortEntity_Resolved/BackingTable_IntrastatPortRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "IntrastatPortEntity_Resolved/hasAttributes/BackingTable_IntrastatPortRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "IntrastatPortEntity_Resolved/attributeContext/IntrastatPortEntity_Resolved",
+            "definition": "resolvedFrom/IntrastatPortEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "IntrastatPortEntity_Resolved/attributeContext/IntrastatPortEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "IntrastatPortEntity_Resolved/attributeContext/IntrastatPortEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "IntrastatPortEntity_Resolved/attributeContext/IntrastatPortEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "IntrastatPortEntity_Resolved/attributeContext/IntrastatPortEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "IntrastatPortEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "PortId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "IntrastatPortEntity_Resolved/attributeContext/IntrastatPortEntity_Resolved/PortId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "DescribePort",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "IntrastatPortEntity_Resolved/attributeContext/IntrastatPortEntity_Resolved/DescribePort",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "CountryRegionId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "IntrastatPortEntity_Resolved/attributeContext/IntrastatPortEntity_Resolved/CountryRegionId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "PortState",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "IntrastatPortEntity_Resolved/attributeContext/IntrastatPortEntity_Resolved/PortState",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_IntrastatPortRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Common/Intrastat/Group/IntrastatPort.cdm.json/IntrastatPort",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "IntrastatPortEntity_Resolved/attributeContext/IntrastatPortEntity_Resolved/BackingTable_IntrastatPortRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "IntrastatPortEntity_Resolved/attributeContext/IntrastatPortEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Port",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

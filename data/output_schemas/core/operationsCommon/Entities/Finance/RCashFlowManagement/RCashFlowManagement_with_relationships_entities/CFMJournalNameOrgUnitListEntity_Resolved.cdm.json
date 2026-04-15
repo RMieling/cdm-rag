@@ -1,0 +1,186 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "CFMJournalNameOrgUnitListEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "CFMJournalNameOrgUnitListEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "CFMJournalNameOrgUnitListEntity_Resolved",
+        "definition": "resolvedFrom/CFMJournalNameOrgUnitListEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "CFMJournalNameOrgUnitListEntity_Resolved/attributeContext/CFMJournalNameOrgUnitListEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "CFMJournalNameOrgUnitListEntity_Resolved/attributeContext/CFMJournalNameOrgUnitListEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "CFMJournalNameOrgUnitListEntity_Resolved/attributeContext/CFMJournalNameOrgUnitListEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CFMJournalNameOrgUnitListEntity/hasAttributes/Name",
+            "contents": [
+              "CFMJournalNameOrgUnitListEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DataArea",
+            "parent": "CFMJournalNameOrgUnitListEntity_Resolved/attributeContext/CFMJournalNameOrgUnitListEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CFMJournalNameOrgUnitListEntity/hasAttributes/DataArea",
+            "contents": [
+              "CFMJournalNameOrgUnitListEntity_Resolved/hasAttributes/DataArea"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_CFMJournalOrgUnitListRelationship",
+            "parent": "CFMJournalNameOrgUnitListEntity_Resolved/attributeContext/CFMJournalNameOrgUnitListEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CFMJournalNameOrgUnitListEntity/hasAttributes/BackingTable_CFMJournalOrgUnitListRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CFMJournalOrgUnitList",
+                "parent": "CFMJournalNameOrgUnitListEntity_Resolved/attributeContext/CFMJournalNameOrgUnitListEntity_Resolved/BackingTable_CFMJournalOrgUnitListRelationship",
+                "definition": "resolvedFrom/CFMJournalOrgUnitList",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CFMJournalNameOrgUnitListEntity_Resolved/attributeContext/CFMJournalNameOrgUnitListEntity_Resolved/BackingTable_CFMJournalOrgUnitListRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CFMJournalNameOrgUnitListEntity_Resolved/attributeContext/CFMJournalNameOrgUnitListEntity_Resolved/BackingTable_CFMJournalOrgUnitListRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CFMJournalNameOrgUnitListEntity_Resolved/attributeContext/CFMJournalNameOrgUnitListEntity_Resolved/BackingTable_CFMJournalOrgUnitListRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CFMJournalNameOrgUnitListEntity_Resolved/hasAttributes/BackingTable_CFMJournalOrgUnitListRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CFMJournalNameOrgUnitListEntity_Resolved/attributeContext/CFMJournalNameOrgUnitListEntity_Resolved/Name",
+          "dataFormat": "String"
+        },
+        {
+          "name": "DataArea",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CFMJournalNameOrgUnitListEntity_Resolved/attributeContext/CFMJournalNameOrgUnitListEntity_Resolved/DataArea",
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_CFMJournalOrgUnitListRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/RCashFlowManagement/Group/CFMJournalOrgUnitList.cdm.json/CFMJournalOrgUnitList",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CFMJournalNameOrgUnitListEntity_Resolved/attributeContext/CFMJournalNameOrgUnitListEntity_Resolved/BackingTable_CFMJournalOrgUnitListRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Legal entities for payment schedule journals",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

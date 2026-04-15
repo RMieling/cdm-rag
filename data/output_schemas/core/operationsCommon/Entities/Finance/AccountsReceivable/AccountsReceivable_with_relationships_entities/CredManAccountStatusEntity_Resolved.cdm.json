@@ -1,0 +1,281 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "CredManAccountStatusEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "CredManAccountStatusEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "CredManAccountStatusEntity_Resolved",
+        "definition": "resolvedFrom/CredManAccountStatusEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "CredManAccountStatusEntity_Resolved/attributeContext/CredManAccountStatusEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "CredManAccountStatusEntity_Resolved/attributeContext/CredManAccountStatusEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CustAccountStatusDescription",
+            "parent": "CredManAccountStatusEntity_Resolved/attributeContext/CredManAccountStatusEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CredManAccountStatusEntity/hasAttributes/CustAccountStatusDescription",
+            "contents": [
+              "CredManAccountStatusEntity_Resolved/hasAttributes/CustAccountStatusDescription"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CustAccountStatusId",
+            "parent": "CredManAccountStatusEntity_Resolved/attributeContext/CredManAccountStatusEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CredManAccountStatusEntity/hasAttributes/CustAccountStatusId",
+            "contents": [
+              "CredManAccountStatusEntity_Resolved/hasAttributes/CustAccountStatusId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CustBlocked",
+            "parent": "CredManAccountStatusEntity_Resolved/attributeContext/CredManAccountStatusEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CredManAccountStatusEntity/hasAttributes/CustBlocked",
+            "contents": [
+              "CredManAccountStatusEntity_Resolved/hasAttributes/CustBlocked"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_CredManAccountStatusTableRelationship",
+            "parent": "CredManAccountStatusEntity_Resolved/attributeContext/CredManAccountStatusEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CredManAccountStatusEntity/hasAttributes/BackingTable_CredManAccountStatusTableRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CredManAccountStatusTable",
+                "parent": "CredManAccountStatusEntity_Resolved/attributeContext/CredManAccountStatusEntity_Resolved/BackingTable_CredManAccountStatusTableRelationship",
+                "definition": "resolvedFrom/CredManAccountStatusTable",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CredManAccountStatusEntity_Resolved/attributeContext/CredManAccountStatusEntity_Resolved/BackingTable_CredManAccountStatusTableRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CredManAccountStatusEntity_Resolved/attributeContext/CredManAccountStatusEntity_Resolved/BackingTable_CredManAccountStatusTableRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CredManAccountStatusEntity_Resolved/attributeContext/CredManAccountStatusEntity_Resolved/BackingTable_CredManAccountStatusTableRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CredManAccountStatusEntity_Resolved/hasAttributes/BackingTable_CredManAccountStatusTableRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "CredManAccountStatusEntity_Resolved/attributeContext/CredManAccountStatusEntity_Resolved",
+            "definition": "resolvedFrom/CredManAccountStatusEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "CredManAccountStatusEntity_Resolved/attributeContext/CredManAccountStatusEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CredManAccountStatusEntity_Resolved/attributeContext/CredManAccountStatusEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CredManAccountStatusEntity_Resolved/attributeContext/CredManAccountStatusEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CredManAccountStatusEntity_Resolved/attributeContext/CredManAccountStatusEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CredManAccountStatusEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "CustAccountStatusDescription",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CredManAccountStatusEntity_Resolved/attributeContext/CredManAccountStatusEntity_Resolved/CustAccountStatusDescription",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "CustAccountStatusId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CredManAccountStatusEntity_Resolved/attributeContext/CredManAccountStatusEntity_Resolved/CustAccountStatusId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "CustBlocked",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CredManAccountStatusEntity_Resolved/attributeContext/CredManAccountStatusEntity_Resolved/CustBlocked",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_CredManAccountStatusTableRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/AccountsReceivable/Group/CredManAccountStatusTable.cdm.json/CredManAccountStatusTable",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CredManAccountStatusEntity_Resolved/attributeContext/CredManAccountStatusEntity_Resolved/BackingTable_CredManAccountStatusTableRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CredManAccountStatusEntity_Resolved/attributeContext/CredManAccountStatusEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Account statuses",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

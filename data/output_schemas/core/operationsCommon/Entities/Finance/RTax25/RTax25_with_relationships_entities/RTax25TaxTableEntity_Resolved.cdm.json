@@ -1,0 +1,408 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "RTax25TaxTableEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "RTax25TaxTableEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "RTax25TaxTableEntity_Resolved",
+        "definition": "resolvedFrom/RTax25TaxTableEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "RTax25TaxTableEntity_Resolved/attributeContext/RTax25TaxTableEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "RTax25TaxTableEntity_Resolved/attributeContext/RTax25TaxTableEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "MainAccount",
+            "parent": "RTax25TaxTableEntity_Resolved/attributeContext/RTax25TaxTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RTax25TaxTableEntity/hasAttributes/MainAccount",
+            "contents": [
+              "RTax25TaxTableEntity_Resolved/hasAttributes/MainAccount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "TypeOfTax",
+            "parent": "RTax25TaxTableEntity_Resolved/attributeContext/RTax25TaxTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RTax25TaxTableEntity/hasAttributes/TypeOfTax",
+            "contents": [
+              "RTax25TaxTableEntity_Resolved/hasAttributes/TypeOfTax"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Code",
+            "parent": "RTax25TaxTableEntity_Resolved/attributeContext/RTax25TaxTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RTax25TaxTableEntity/hasAttributes/Code",
+            "contents": [
+              "RTax25TaxTableEntity_Resolved/hasAttributes/Code"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Module",
+            "parent": "RTax25TaxTableEntity_Resolved/attributeContext/RTax25TaxTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RTax25TaxTableEntity/hasAttributes/Module",
+            "contents": [
+              "RTax25TaxTableEntity_Resolved/hasAttributes/Module"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ExpenseCode",
+            "parent": "RTax25TaxTableEntity_Resolved/attributeContext/RTax25TaxTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RTax25TaxTableEntity/hasAttributes/ExpenseCode",
+            "contents": [
+              "RTax25TaxTableEntity_Resolved/hasAttributes/ExpenseCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "MainAccountDisplayValue",
+            "parent": "RTax25TaxTableEntity_Resolved/attributeContext/RTax25TaxTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RTax25TaxTableEntity/hasAttributes/MainAccountDisplayValue",
+            "contents": [
+              "RTax25TaxTableEntity_Resolved/hasAttributes/MainAccountDisplayValue"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_MainAccountCombinationRelationship",
+            "parent": "RTax25TaxTableEntity_Resolved/attributeContext/RTax25TaxTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RTax25TaxTableEntity/hasAttributes/Relationship_MainAccountCombinationRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "DimensionCombinationEntity",
+                "parent": "RTax25TaxTableEntity_Resolved/attributeContext/RTax25TaxTableEntity_Resolved/Relationship_MainAccountCombinationRelationship",
+                "definition": "resolvedFrom/DimensionCombinationEntity",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "RTax25TaxTableEntity_Resolved/attributeContext/RTax25TaxTableEntity_Resolved/Relationship_MainAccountCombinationRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "RTax25TaxTableEntity_Resolved/attributeContext/RTax25TaxTableEntity_Resolved/Relationship_MainAccountCombinationRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "RTax25TaxTableEntity_Resolved/attributeContext/RTax25TaxTableEntity_Resolved/Relationship_MainAccountCombinationRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "RTax25TaxTableEntity_Resolved/hasAttributes/Relationship_MainAccountCombinationRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_RTax25TaxTableRelationship",
+            "parent": "RTax25TaxTableEntity_Resolved/attributeContext/RTax25TaxTableEntity_Resolved",
+            "definition": "resolvedFrom/RTax25TaxTableEntity/hasAttributes/BackingTable_RTax25TaxTableRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "RTax25TaxTable",
+                "parent": "RTax25TaxTableEntity_Resolved/attributeContext/RTax25TaxTableEntity_Resolved/BackingTable_RTax25TaxTableRelationship",
+                "definition": "resolvedFrom/RTax25TaxTable",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "RTax25TaxTableEntity_Resolved/attributeContext/RTax25TaxTableEntity_Resolved/BackingTable_RTax25TaxTableRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "RTax25TaxTableEntity_Resolved/attributeContext/RTax25TaxTableEntity_Resolved/BackingTable_RTax25TaxTableRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "RTax25TaxTableEntity_Resolved/attributeContext/RTax25TaxTableEntity_Resolved/BackingTable_RTax25TaxTableRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "RTax25TaxTableEntity_Resolved/hasAttributes/BackingTable_RTax25TaxTableRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "RTax25TaxTableEntity_Resolved/attributeContext/RTax25TaxTableEntity_Resolved",
+            "definition": "resolvedFrom/RTax25TaxTableEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "RTax25TaxTableEntity_Resolved/attributeContext/RTax25TaxTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "RTax25TaxTableEntity_Resolved/attributeContext/RTax25TaxTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "RTax25TaxTableEntity_Resolved/attributeContext/RTax25TaxTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "RTax25TaxTableEntity_Resolved/attributeContext/RTax25TaxTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "RTax25TaxTableEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "MainAccount",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RTax25TaxTableEntity_Resolved/attributeContext/RTax25TaxTableEntity_Resolved/MainAccount",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "TypeOfTax",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RTax25TaxTableEntity_Resolved/attributeContext/RTax25TaxTableEntity_Resolved/TypeOfTax",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Code",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RTax25TaxTableEntity_Resolved/attributeContext/RTax25TaxTableEntity_Resolved/Code",
+          "dataFormat": "String"
+        },
+        {
+          "name": "Module",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RTax25TaxTableEntity_Resolved/attributeContext/RTax25TaxTableEntity_Resolved/Module",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ExpenseCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RTax25TaxTableEntity_Resolved/attributeContext/RTax25TaxTableEntity_Resolved/ExpenseCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "MainAccountDisplayValue",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RTax25TaxTableEntity_Resolved/attributeContext/RTax25TaxTableEntity_Resolved/MainAccountDisplayValue",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Relationship_MainAccountCombinationRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": []
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "RTax25TaxTableEntity_Resolved/attributeContext/RTax25TaxTableEntity_Resolved/Relationship_MainAccountCombinationRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "BackingTable_RTax25TaxTableRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/RTax25/Group/RTax25TaxTable.cdm.json/RTax25TaxTable",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "RTax25TaxTableEntity_Resolved/attributeContext/RTax25TaxTableEntity_Resolved/BackingTable_RTax25TaxTableRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "RTax25TaxTableEntity_Resolved/attributeContext/RTax25TaxTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Sales tax relations",
+      "version": "1.1.1"
+    }
+  ],
+  "documentVersion": "1.1.1"
+}

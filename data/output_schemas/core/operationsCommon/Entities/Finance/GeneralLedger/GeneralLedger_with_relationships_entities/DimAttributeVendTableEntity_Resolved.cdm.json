@@ -1,0 +1,261 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "DimAttributeVendTableEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "DimAttributeVendTableEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "DimAttributeVendTableEntity_Resolved",
+        "definition": "resolvedFrom/DimAttributeVendTableEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "DimAttributeVendTableEntity_Resolved/attributeContext/DimAttributeVendTableEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "DimAttributeVendTableEntity_Resolved/attributeContext/DimAttributeVendTableEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Value",
+            "parent": "DimAttributeVendTableEntity_Resolved/attributeContext/DimAttributeVendTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimAttributeVendTableEntity/hasAttributes/Value",
+            "contents": [
+              "DimAttributeVendTableEntity_Resolved/hasAttributes/Value"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "DimAttributeVendTableEntity_Resolved/attributeContext/DimAttributeVendTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimAttributeVendTableEntity/hasAttributes/Name",
+            "contents": [
+              "DimAttributeVendTableEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_VendTableRelationship",
+            "parent": "DimAttributeVendTableEntity_Resolved/attributeContext/DimAttributeVendTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimAttributeVendTableEntity/hasAttributes/BackingTable_VendTableRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "VendTable",
+                "parent": "DimAttributeVendTableEntity_Resolved/attributeContext/DimAttributeVendTableEntity_Resolved/BackingTable_VendTableRelationship",
+                "definition": "resolvedFrom/VendTable",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "DimAttributeVendTableEntity_Resolved/attributeContext/DimAttributeVendTableEntity_Resolved/BackingTable_VendTableRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "DimAttributeVendTableEntity_Resolved/attributeContext/DimAttributeVendTableEntity_Resolved/BackingTable_VendTableRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "DimAttributeVendTableEntity_Resolved/attributeContext/DimAttributeVendTableEntity_Resolved/BackingTable_VendTableRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "DimAttributeVendTableEntity_Resolved/hasAttributes/BackingTable_VendTableRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "DimAttributeVendTableEntity_Resolved/attributeContext/DimAttributeVendTableEntity_Resolved",
+            "definition": "resolvedFrom/DimAttributeVendTableEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "DimAttributeVendTableEntity_Resolved/attributeContext/DimAttributeVendTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "DimAttributeVendTableEntity_Resolved/attributeContext/DimAttributeVendTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "DimAttributeVendTableEntity_Resolved/attributeContext/DimAttributeVendTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "DimAttributeVendTableEntity_Resolved/attributeContext/DimAttributeVendTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "DimAttributeVendTableEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Value",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DimAttributeVendTableEntity_Resolved/attributeContext/DimAttributeVendTableEntity_Resolved/Value",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DimAttributeVendTableEntity_Resolved/attributeContext/DimAttributeVendTableEntity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_VendTableRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/SupplyChain/Vendor/Main/VendTable.cdm.json/VendTable",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "DimAttributeVendTableEntity_Resolved/attributeContext/DimAttributeVendTableEntity_Resolved/BackingTable_VendTableRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "DimAttributeVendTableEntity_Resolved/attributeContext/DimAttributeVendTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Vendors",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

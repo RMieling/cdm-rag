@@ -1,0 +1,280 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "FiasStructureStatusEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "FiasStructureStatusEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "FiasStructureStatusEntity_Resolved",
+        "definition": "resolvedFrom/FiasStructureStatusEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "FiasStructureStatusEntity_Resolved/attributeContext/FiasStructureStatusEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "FiasStructureStatusEntity_Resolved/attributeContext/FiasStructureStatusEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "StrStatId",
+            "parent": "FiasStructureStatusEntity_Resolved/attributeContext/FiasStructureStatusEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/FiasStructureStatusEntity/hasAttributes/StrStatId",
+            "contents": [
+              "FiasStructureStatusEntity_Resolved/hasAttributes/StrStatId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "FiasStructureStatusEntity_Resolved/attributeContext/FiasStructureStatusEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/FiasStructureStatusEntity/hasAttributes/Name",
+            "contents": [
+              "FiasStructureStatusEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ShortName",
+            "parent": "FiasStructureStatusEntity_Resolved/attributeContext/FiasStructureStatusEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/FiasStructureStatusEntity/hasAttributes/ShortName",
+            "contents": [
+              "FiasStructureStatusEntity_Resolved/hasAttributes/ShortName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_FiasStructureStatusRelationship",
+            "parent": "FiasStructureStatusEntity_Resolved/attributeContext/FiasStructureStatusEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/FiasStructureStatusEntity/hasAttributes/BackingTable_FiasStructureStatusRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "FiasStructureStatus",
+                "parent": "FiasStructureStatusEntity_Resolved/attributeContext/FiasStructureStatusEntity_Resolved/BackingTable_FiasStructureStatusRelationship",
+                "definition": "resolvedFrom/FiasStructureStatus",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "FiasStructureStatusEntity_Resolved/attributeContext/FiasStructureStatusEntity_Resolved/BackingTable_FiasStructureStatusRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "FiasStructureStatusEntity_Resolved/attributeContext/FiasStructureStatusEntity_Resolved/BackingTable_FiasStructureStatusRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "FiasStructureStatusEntity_Resolved/attributeContext/FiasStructureStatusEntity_Resolved/BackingTable_FiasStructureStatusRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "FiasStructureStatusEntity_Resolved/hasAttributes/BackingTable_FiasStructureStatusRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "FiasStructureStatusEntity_Resolved/attributeContext/FiasStructureStatusEntity_Resolved",
+            "definition": "resolvedFrom/FiasStructureStatusEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "FiasStructureStatusEntity_Resolved/attributeContext/FiasStructureStatusEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "FiasStructureStatusEntity_Resolved/attributeContext/FiasStructureStatusEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "FiasStructureStatusEntity_Resolved/attributeContext/FiasStructureStatusEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "FiasStructureStatusEntity_Resolved/attributeContext/FiasStructureStatusEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "FiasStructureStatusEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "StrStatId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "FiasStructureStatusEntity_Resolved/attributeContext/FiasStructureStatusEntity_Resolved/StrStatId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "FiasStructureStatusEntity_Resolved/attributeContext/FiasStructureStatusEntity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ShortName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "FiasStructureStatusEntity_Resolved/attributeContext/FiasStructureStatusEntity_Resolved/ShortName",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_FiasStructureStatusRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Common/GAB/Miscellaneous/FiasStructureStatus.cdm.json/FiasStructureStatus",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "FiasStructureStatusEntity_Resolved/attributeContext/FiasStructureStatusEntity_Resolved/BackingTable_FiasStructureStatusRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "FiasStructureStatusEntity_Resolved/attributeContext/FiasStructureStatusEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

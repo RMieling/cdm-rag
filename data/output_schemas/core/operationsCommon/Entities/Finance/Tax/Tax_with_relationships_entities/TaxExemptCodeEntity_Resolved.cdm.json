@@ -1,0 +1,300 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "TaxExemptCodeEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TaxExemptCodeEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "TaxExemptCodeEntity_Resolved",
+        "definition": "resolvedFrom/TaxExemptCodeEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "TaxExemptCodeEntity_Resolved/attributeContext/TaxExemptCodeEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "TaxExemptCodeEntity_Resolved/attributeContext/TaxExemptCodeEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "TaxExemptCode",
+            "parent": "TaxExemptCodeEntity_Resolved/attributeContext/TaxExemptCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxExemptCodeEntity/hasAttributes/TaxExemptCode",
+            "contents": [
+              "TaxExemptCodeEntity_Resolved/hasAttributes/TaxExemptCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "TaxExemptCodeEntity_Resolved/attributeContext/TaxExemptCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxExemptCodeEntity/hasAttributes/Description",
+            "contents": [
+              "TaxExemptCodeEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Language",
+            "parent": "TaxExemptCodeEntity_Resolved/attributeContext/TaxExemptCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxExemptCodeEntity/hasAttributes/Language",
+            "contents": [
+              "TaxExemptCodeEntity_Resolved/hasAttributes/Language"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Text",
+            "parent": "TaxExemptCodeEntity_Resolved/attributeContext/TaxExemptCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxExemptCodeEntity/hasAttributes/Text",
+            "contents": [
+              "TaxExemptCodeEntity_Resolved/hasAttributes/Text"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_TaxExemptCodeTableRelationship",
+            "parent": "TaxExemptCodeEntity_Resolved/attributeContext/TaxExemptCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxExemptCodeEntity/hasAttributes/BackingTable_TaxExemptCodeTableRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "TaxExemptCodeTable",
+                "parent": "TaxExemptCodeEntity_Resolved/attributeContext/TaxExemptCodeEntity_Resolved/BackingTable_TaxExemptCodeTableRelationship",
+                "definition": "resolvedFrom/TaxExemptCodeTable",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxExemptCodeEntity_Resolved/attributeContext/TaxExemptCodeEntity_Resolved/BackingTable_TaxExemptCodeTableRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxExemptCodeEntity_Resolved/attributeContext/TaxExemptCodeEntity_Resolved/BackingTable_TaxExemptCodeTableRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxExemptCodeEntity_Resolved/attributeContext/TaxExemptCodeEntity_Resolved/BackingTable_TaxExemptCodeTableRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxExemptCodeEntity_Resolved/hasAttributes/BackingTable_TaxExemptCodeTableRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "TaxExemptCodeEntity_Resolved/attributeContext/TaxExemptCodeEntity_Resolved",
+            "definition": "resolvedFrom/TaxExemptCodeEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "TaxExemptCodeEntity_Resolved/attributeContext/TaxExemptCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxExemptCodeEntity_Resolved/attributeContext/TaxExemptCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxExemptCodeEntity_Resolved/attributeContext/TaxExemptCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxExemptCodeEntity_Resolved/attributeContext/TaxExemptCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxExemptCodeEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "TaxExemptCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxExemptCodeEntity_Resolved/attributeContext/TaxExemptCodeEntity_Resolved/TaxExemptCode",
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxExemptCodeEntity_Resolved/attributeContext/TaxExemptCodeEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Language",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxExemptCodeEntity_Resolved/attributeContext/TaxExemptCodeEntity_Resolved/Language",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Text",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxExemptCodeEntity_Resolved/attributeContext/TaxExemptCodeEntity_Resolved/Text",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_TaxExemptCodeTableRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Tax/Group/TaxExemptCodeTable.cdm.json/TaxExemptCodeTable",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxExemptCodeEntity_Resolved/attributeContext/TaxExemptCodeEntity_Resolved/BackingTable_TaxExemptCodeTableRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxExemptCodeEntity_Resolved/attributeContext/TaxExemptCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Sales tax exempt code",
+      "version": "1.1.1"
+    }
+  ],
+  "documentVersion": "1.1.1"
+}

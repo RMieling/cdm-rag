@@ -1,0 +1,261 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "CommissionCustomerGroupEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "CommissionCustomerGroupEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "CommissionCustomerGroupEntity_Resolved",
+        "definition": "resolvedFrom/CommissionCustomerGroupEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "CommissionCustomerGroupEntity_Resolved/attributeContext/CommissionCustomerGroupEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "CommissionCustomerGroupEntity_Resolved/attributeContext/CommissionCustomerGroupEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "GroupId",
+            "parent": "CommissionCustomerGroupEntity_Resolved/attributeContext/CommissionCustomerGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CommissionCustomerGroupEntity/hasAttributes/GroupId",
+            "contents": [
+              "CommissionCustomerGroupEntity_Resolved/hasAttributes/GroupId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "GroupName",
+            "parent": "CommissionCustomerGroupEntity_Resolved/attributeContext/CommissionCustomerGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CommissionCustomerGroupEntity/hasAttributes/GroupName",
+            "contents": [
+              "CommissionCustomerGroupEntity_Resolved/hasAttributes/GroupName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_CommissionCustomerGroupRelationship",
+            "parent": "CommissionCustomerGroupEntity_Resolved/attributeContext/CommissionCustomerGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CommissionCustomerGroupEntity/hasAttributes/BackingTable_CommissionCustomerGroupRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CommissionCustomerGroup",
+                "parent": "CommissionCustomerGroupEntity_Resolved/attributeContext/CommissionCustomerGroupEntity_Resolved/BackingTable_CommissionCustomerGroupRelationship",
+                "definition": "resolvedFrom/CommissionCustomerGroup",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CommissionCustomerGroupEntity_Resolved/attributeContext/CommissionCustomerGroupEntity_Resolved/BackingTable_CommissionCustomerGroupRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CommissionCustomerGroupEntity_Resolved/attributeContext/CommissionCustomerGroupEntity_Resolved/BackingTable_CommissionCustomerGroupRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CommissionCustomerGroupEntity_Resolved/attributeContext/CommissionCustomerGroupEntity_Resolved/BackingTable_CommissionCustomerGroupRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CommissionCustomerGroupEntity_Resolved/hasAttributes/BackingTable_CommissionCustomerGroupRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "CommissionCustomerGroupEntity_Resolved/attributeContext/CommissionCustomerGroupEntity_Resolved",
+            "definition": "resolvedFrom/CommissionCustomerGroupEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "CommissionCustomerGroupEntity_Resolved/attributeContext/CommissionCustomerGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CommissionCustomerGroupEntity_Resolved/attributeContext/CommissionCustomerGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CommissionCustomerGroupEntity_Resolved/attributeContext/CommissionCustomerGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CommissionCustomerGroupEntity_Resolved/attributeContext/CommissionCustomerGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CommissionCustomerGroupEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "GroupId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CommissionCustomerGroupEntity_Resolved/attributeContext/CommissionCustomerGroupEntity_Resolved/GroupId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "GroupName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CommissionCustomerGroupEntity_Resolved/attributeContext/CommissionCustomerGroupEntity_Resolved/GroupName",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_CommissionCustomerGroupRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/SupplyChain/SalesAndMarketing/Group/CommissionCustomerGroup.cdm.json/CommissionCustomerGroup",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CommissionCustomerGroupEntity_Resolved/attributeContext/CommissionCustomerGroupEntity_Resolved/BackingTable_CommissionCustomerGroupRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CommissionCustomerGroupEntity_Resolved/attributeContext/CommissionCustomerGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Commission customer group",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

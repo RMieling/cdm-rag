@@ -1,0 +1,388 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "PaymentDayLineCdsV2Entity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "PaymentDayLineCdsV2Entity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "PaymentDayLineCdsV2Entity_Resolved",
+        "definition": "resolvedFrom/PaymentDayLineCdsV2Entity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "PaymentDayLineCdsV2Entity_Resolved/attributeContext/PaymentDayLineCdsV2Entity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "PaymentDayLineCdsV2Entity_Resolved/attributeContext/PaymentDayLineCdsV2Entity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "PaymentDayLineCdsV2Entity_Resolved/attributeContext/PaymentDayLineCdsV2Entity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/PaymentDayLineCdsV2Entity/hasAttributes/Name",
+            "contents": [
+              "PaymentDayLineCdsV2Entity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "LineNumber",
+            "parent": "PaymentDayLineCdsV2Entity_Resolved/attributeContext/PaymentDayLineCdsV2Entity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/PaymentDayLineCdsV2Entity/hasAttributes/LineNumber",
+            "contents": [
+              "PaymentDayLineCdsV2Entity_Resolved/hasAttributes/LineNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Frequency",
+            "parent": "PaymentDayLineCdsV2Entity_Resolved/attributeContext/PaymentDayLineCdsV2Entity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/PaymentDayLineCdsV2Entity/hasAttributes/Frequency",
+            "contents": [
+              "PaymentDayLineCdsV2Entity_Resolved/hasAttributes/Frequency"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DayOfMonth",
+            "parent": "PaymentDayLineCdsV2Entity_Resolved/attributeContext/PaymentDayLineCdsV2Entity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/PaymentDayLineCdsV2Entity/hasAttributes/DayOfMonth",
+            "contents": [
+              "PaymentDayLineCdsV2Entity_Resolved/hasAttributes/DayOfMonth"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DayOfWeek",
+            "parent": "PaymentDayLineCdsV2Entity_Resolved/attributeContext/PaymentDayLineCdsV2Entity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/PaymentDayLineCdsV2Entity/hasAttributes/DayOfWeek",
+            "contents": [
+              "PaymentDayLineCdsV2Entity_Resolved/hasAttributes/DayOfWeek"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PaymentDayCdsEntityRelationship",
+            "parent": "PaymentDayLineCdsV2Entity_Resolved/attributeContext/PaymentDayLineCdsV2Entity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/PaymentDayLineCdsV2Entity/hasAttributes/Relationship_PaymentDayCdsEntityRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "PaymentDayCdsEntity",
+                "parent": "PaymentDayLineCdsV2Entity_Resolved/attributeContext/PaymentDayLineCdsV2Entity_Resolved/Relationship_PaymentDayCdsEntityRelationship",
+                "definition": "resolvedFrom/PaymentDayCdsEntity",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "PaymentDayLineCdsV2Entity_Resolved/attributeContext/PaymentDayLineCdsV2Entity_Resolved/Relationship_PaymentDayCdsEntityRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "PaymentDayLineCdsV2Entity_Resolved/attributeContext/PaymentDayLineCdsV2Entity_Resolved/Relationship_PaymentDayCdsEntityRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "PaymentDayLineCdsV2Entity_Resolved/attributeContext/PaymentDayLineCdsV2Entity_Resolved/Relationship_PaymentDayCdsEntityRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "PaymentDayLineCdsV2Entity_Resolved/hasAttributes/Relationship_PaymentDayCdsEntityRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_PaymDayLineRelationship",
+            "parent": "PaymentDayLineCdsV2Entity_Resolved/attributeContext/PaymentDayLineCdsV2Entity_Resolved",
+            "definition": "resolvedFrom/PaymentDayLineCdsV2Entity/hasAttributes/BackingTable_PaymDayLineRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "PaymDayLine",
+                "parent": "PaymentDayLineCdsV2Entity_Resolved/attributeContext/PaymentDayLineCdsV2Entity_Resolved/BackingTable_PaymDayLineRelationship",
+                "definition": "resolvedFrom/PaymDayLine",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "PaymentDayLineCdsV2Entity_Resolved/attributeContext/PaymentDayLineCdsV2Entity_Resolved/BackingTable_PaymDayLineRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "PaymentDayLineCdsV2Entity_Resolved/attributeContext/PaymentDayLineCdsV2Entity_Resolved/BackingTable_PaymDayLineRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "PaymentDayLineCdsV2Entity_Resolved/attributeContext/PaymentDayLineCdsV2Entity_Resolved/BackingTable_PaymDayLineRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "PaymentDayLineCdsV2Entity_Resolved/hasAttributes/BackingTable_PaymDayLineRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "PaymentDayLineCdsV2Entity_Resolved/attributeContext/PaymentDayLineCdsV2Entity_Resolved",
+            "definition": "resolvedFrom/PaymentDayLineCdsV2Entity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "PaymentDayLineCdsV2Entity_Resolved/attributeContext/PaymentDayLineCdsV2Entity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "PaymentDayLineCdsV2Entity_Resolved/attributeContext/PaymentDayLineCdsV2Entity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "PaymentDayLineCdsV2Entity_Resolved/attributeContext/PaymentDayLineCdsV2Entity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "PaymentDayLineCdsV2Entity_Resolved/attributeContext/PaymentDayLineCdsV2Entity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "PaymentDayLineCdsV2Entity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "PaymentDayLineCdsV2Entity_Resolved/attributeContext/PaymentDayLineCdsV2Entity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "LineNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "PaymentDayLineCdsV2Entity_Resolved/attributeContext/PaymentDayLineCdsV2Entity_Resolved/LineNumber",
+          "dataFormat": "String"
+        },
+        {
+          "name": "Frequency",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "PaymentDayLineCdsV2Entity_Resolved/attributeContext/PaymentDayLineCdsV2Entity_Resolved/Frequency",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "DayOfMonth",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "PaymentDayLineCdsV2Entity_Resolved/attributeContext/PaymentDayLineCdsV2Entity_Resolved/DayOfMonth",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "DayOfWeek",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "PaymentDayLineCdsV2Entity_Resolved/attributeContext/PaymentDayLineCdsV2Entity_Resolved/DayOfWeek",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Relationship_PaymentDayCdsEntityRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": []
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "PaymentDayLineCdsV2Entity_Resolved/attributeContext/PaymentDayLineCdsV2Entity_Resolved/Relationship_PaymentDayCdsEntityRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "BackingTable_PaymDayLineRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Bank/Group/PaymDayLine.cdm.json/PaymDayLine",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "PaymentDayLineCdsV2Entity_Resolved/attributeContext/PaymentDayLineCdsV2Entity_Resolved/BackingTable_PaymDayLineRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "PaymentDayLineCdsV2Entity_Resolved/attributeContext/PaymentDayLineCdsV2Entity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Payment day lines CDS V2",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

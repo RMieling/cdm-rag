@@ -1,0 +1,341 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "ProdComParametersEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "ProdComParametersEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "ProdComParametersEntity_Resolved",
+        "definition": "resolvedFrom/ProdComParametersEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "ProdComParametersEntity_Resolved/attributeContext/ProdComParametersEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "ProdComParametersEntity_Resolved/attributeContext/ProdComParametersEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "AutomaticRecalculation",
+            "parent": "ProdComParametersEntity_Resolved/attributeContext/ProdComParametersEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/ProdComParametersEntity/hasAttributes/AutomaticRecalculation",
+            "contents": [
+              "ProdComParametersEntity_Resolved/hasAttributes/AutomaticRecalculation"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BranchNumber",
+            "parent": "ProdComParametersEntity_Resolved/attributeContext/ProdComParametersEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/ProdComParametersEntity/hasAttributes/BranchNumber",
+            "contents": [
+              "ProdComParametersEntity_Resolved/hasAttributes/BranchNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "PrimaryContactID",
+            "parent": "ProdComParametersEntity_Resolved/attributeContext/ProdComParametersEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/ProdComParametersEntity/hasAttributes/PrimaryContactID",
+            "contents": [
+              "ProdComParametersEntity_Resolved/hasAttributes/PrimaryContactID"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ExternalContactID",
+            "parent": "ProdComParametersEntity_Resolved/attributeContext/ProdComParametersEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/ProdComParametersEntity/hasAttributes/ExternalContactID",
+            "contents": [
+              "ProdComParametersEntity_Resolved/hasAttributes/ExternalContactID"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ID",
+            "parent": "ProdComParametersEntity_Resolved/attributeContext/ProdComParametersEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/ProdComParametersEntity/hasAttributes/ID",
+            "contents": [
+              "ProdComParametersEntity_Resolved/hasAttributes/ID"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Company",
+            "parent": "ProdComParametersEntity_Resolved/attributeContext/ProdComParametersEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/ProdComParametersEntity/hasAttributes/Company",
+            "contents": [
+              "ProdComParametersEntity_Resolved/hasAttributes/Company"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_InventProdComParametersRelationship",
+            "parent": "ProdComParametersEntity_Resolved/attributeContext/ProdComParametersEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/ProdComParametersEntity/hasAttributes/BackingTable_InventProdComParametersRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "InventProdComParameters",
+                "parent": "ProdComParametersEntity_Resolved/attributeContext/ProdComParametersEntity_Resolved/BackingTable_InventProdComParametersRelationship",
+                "definition": "resolvedFrom/InventProdComParameters",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "ProdComParametersEntity_Resolved/attributeContext/ProdComParametersEntity_Resolved/BackingTable_InventProdComParametersRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "ProdComParametersEntity_Resolved/attributeContext/ProdComParametersEntity_Resolved/BackingTable_InventProdComParametersRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "ProdComParametersEntity_Resolved/attributeContext/ProdComParametersEntity_Resolved/BackingTable_InventProdComParametersRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "ProdComParametersEntity_Resolved/hasAttributes/BackingTable_InventProdComParametersRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "ProdComParametersEntity_Resolved/attributeContext/ProdComParametersEntity_Resolved",
+            "definition": "resolvedFrom/ProdComParametersEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "ProdComParametersEntity_Resolved/attributeContext/ProdComParametersEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "ProdComParametersEntity_Resolved/attributeContext/ProdComParametersEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "ProdComParametersEntity_Resolved/attributeContext/ProdComParametersEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "ProdComParametersEntity_Resolved/attributeContext/ProdComParametersEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "ProdComParametersEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "AutomaticRecalculation",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "ProdComParametersEntity_Resolved/attributeContext/ProdComParametersEntity_Resolved/AutomaticRecalculation",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BranchNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "ProdComParametersEntity_Resolved/attributeContext/ProdComParametersEntity_Resolved/BranchNumber",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "PrimaryContactID",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "ProdComParametersEntity_Resolved/attributeContext/ProdComParametersEntity_Resolved/PrimaryContactID",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ExternalContactID",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "ProdComParametersEntity_Resolved/attributeContext/ProdComParametersEntity_Resolved/ExternalContactID",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ID",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "ProdComParametersEntity_Resolved/attributeContext/ProdComParametersEntity_Resolved/ID",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Company",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "ProdComParametersEntity_Resolved/attributeContext/ProdComParametersEntity_Resolved/Company",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_InventProdComParametersRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/SupplyChain/Inventory/Parameter/InventProdComParameters.cdm.json/InventProdComParameters",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "ProdComParametersEntity_Resolved/attributeContext/ProdComParametersEntity_Resolved/BackingTable_InventProdComParametersRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "ProdComParametersEntity_Resolved/attributeContext/ProdComParametersEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "PRODCOM parameters",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

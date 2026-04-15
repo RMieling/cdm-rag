@@ -1,0 +1,288 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "CustCollectionsBIAgedBalances.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "CustCollectionsBIAgedBalances_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "CustCollectionsBIAgedBalances_Resolved",
+        "definition": "resolvedFrom/CustCollectionsBIAgedBalances",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "CustCollectionsBIAgedBalances_Resolved/attributeContext/CustCollectionsBIAgedBalances_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "CustCollectionsBIAgedBalances_Resolved/attributeContext/CustCollectionsBIAgedBalances_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "AmountDueMst",
+            "parent": "CustCollectionsBIAgedBalances_Resolved/attributeContext/CustCollectionsBIAgedBalances_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCollectionsBIAgedBalances/hasAttributes/AmountDueMst",
+            "contents": [
+              "CustCollectionsBIAgedBalances_Resolved/hasAttributes/AmountDueMst"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "AccountNum",
+            "parent": "CustCollectionsBIAgedBalances_Resolved/attributeContext/CustCollectionsBIAgedBalances_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCollectionsBIAgedBalances/hasAttributes/AccountNum",
+            "contents": [
+              "CustCollectionsBIAgedBalances_Resolved/hasAttributes/AccountNum"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Heading",
+            "parent": "CustCollectionsBIAgedBalances_Resolved/attributeContext/CustCollectionsBIAgedBalances_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCollectionsBIAgedBalances/hasAttributes/Heading",
+            "contents": [
+              "CustCollectionsBIAgedBalances_Resolved/hasAttributes/Heading"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "OpenBalanceMst",
+            "parent": "CustCollectionsBIAgedBalances_Resolved/attributeContext/CustCollectionsBIAgedBalances_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCollectionsBIAgedBalances/hasAttributes/OpenBalanceMst",
+            "contents": [
+              "CustCollectionsBIAgedBalances_Resolved/hasAttributes/OpenBalanceMst"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "CustCollectionsBIAgedBalances_Resolved/attributeContext/CustCollectionsBIAgedBalances_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCollectionsBIAgedBalances/hasAttributes/Name",
+            "contents": [
+              "CustCollectionsBIAgedBalances_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "AgingName",
+            "parent": "CustCollectionsBIAgedBalances_Resolved/attributeContext/CustCollectionsBIAgedBalances_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCollectionsBIAgedBalances/hasAttributes/AgingName",
+            "contents": [
+              "CustCollectionsBIAgedBalances_Resolved/hasAttributes/AgingName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "SystemCurrencyBalance",
+            "parent": "CustCollectionsBIAgedBalances_Resolved/attributeContext/CustCollectionsBIAgedBalances_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCollectionsBIAgedBalances/hasAttributes/SystemCurrencyBalance",
+            "contents": [
+              "CustCollectionsBIAgedBalances_Resolved/hasAttributes/SystemCurrencyBalance"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "CustCollectionsBIAgedBalances_Resolved/attributeContext/CustCollectionsBIAgedBalances_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCollectionsBIAgedBalances/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "CustCollectionsBIAgedBalances_Resolved/attributeContext/CustCollectionsBIAgedBalances_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CustCollectionsBIAgedBalances_Resolved/attributeContext/CustCollectionsBIAgedBalances_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CustCollectionsBIAgedBalances_Resolved/attributeContext/CustCollectionsBIAgedBalances_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CustCollectionsBIAgedBalances_Resolved/attributeContext/CustCollectionsBIAgedBalances_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CustCollectionsBIAgedBalances_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "AmountDueMst",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustCollectionsBIAgedBalances_Resolved/attributeContext/CustCollectionsBIAgedBalances_Resolved/AmountDueMst",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "AccountNum",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustCollectionsBIAgedBalances_Resolved/attributeContext/CustCollectionsBIAgedBalances_Resolved/AccountNum",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Heading",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustCollectionsBIAgedBalances_Resolved/attributeContext/CustCollectionsBIAgedBalances_Resolved/Heading",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "OpenBalanceMst",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustCollectionsBIAgedBalances_Resolved/attributeContext/CustCollectionsBIAgedBalances_Resolved/OpenBalanceMst",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustCollectionsBIAgedBalances_Resolved/attributeContext/CustCollectionsBIAgedBalances_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "AgingName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustCollectionsBIAgedBalances_Resolved/attributeContext/CustCollectionsBIAgedBalances_Resolved/AgingName",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "SystemCurrencyBalance",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustCollectionsBIAgedBalances_Resolved/attributeContext/CustCollectionsBIAgedBalances_Resolved/SystemCurrencyBalance",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CustCollectionsBIAgedBalances_Resolved/attributeContext/CustCollectionsBIAgedBalances_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Aged balances for customers",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

@@ -1,0 +1,281 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "LedgerRRGOffsetAccountInterval_RUEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "LedgerRRGOffsetAccountInterval_RUEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "LedgerRRGOffsetAccountInterval_RUEntity_Resolved",
+        "definition": "resolvedFrom/LedgerRRGOffsetAccountInterval_RUEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "LedgerRRGOffsetAccountInterval_RUEntity_Resolved/attributeContext/LedgerRRGOffsetAccountInterval_RUEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "LedgerRRGOffsetAccountInterval_RUEntity_Resolved/attributeContext/LedgerRRGOffsetAccountInterval_RUEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "FromLedgerDimensionDisplayValue",
+            "parent": "LedgerRRGOffsetAccountInterval_RUEntity_Resolved/attributeContext/LedgerRRGOffsetAccountInterval_RUEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerRRGOffsetAccountInterval_RUEntity/hasAttributes/FromLedgerDimensionDisplayValue",
+            "contents": [
+              "LedgerRRGOffsetAccountInterval_RUEntity_Resolved/hasAttributes/FromLedgerDimensionDisplayValue"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ToLedgerDimensionDisplayValue",
+            "parent": "LedgerRRGOffsetAccountInterval_RUEntity_Resolved/attributeContext/LedgerRRGOffsetAccountInterval_RUEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerRRGOffsetAccountInterval_RUEntity/hasAttributes/ToLedgerDimensionDisplayValue",
+            "contents": [
+              "LedgerRRGOffsetAccountInterval_RUEntity_Resolved/hasAttributes/ToLedgerDimensionDisplayValue"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "OperationLineId",
+            "parent": "LedgerRRGOffsetAccountInterval_RUEntity_Resolved/attributeContext/LedgerRRGOffsetAccountInterval_RUEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerRRGOffsetAccountInterval_RUEntity/hasAttributes/OperationLineId",
+            "contents": [
+              "LedgerRRGOffsetAccountInterval_RUEntity_Resolved/hasAttributes/OperationLineId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_LedgerRRGOffsetAccountInterval_RURelationship",
+            "parent": "LedgerRRGOffsetAccountInterval_RUEntity_Resolved/attributeContext/LedgerRRGOffsetAccountInterval_RUEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerRRGOffsetAccountInterval_RUEntity/hasAttributes/BackingTable_LedgerRRGOffsetAccountInterval_RURelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "LedgerRRGOffsetAccountInterval_RU",
+                "parent": "LedgerRRGOffsetAccountInterval_RUEntity_Resolved/attributeContext/LedgerRRGOffsetAccountInterval_RUEntity_Resolved/BackingTable_LedgerRRGOffsetAccountInterval_RURelationship",
+                "definition": "resolvedFrom/LedgerRRGOffsetAccountInterval_RU",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "LedgerRRGOffsetAccountInterval_RUEntity_Resolved/attributeContext/LedgerRRGOffsetAccountInterval_RUEntity_Resolved/BackingTable_LedgerRRGOffsetAccountInterval_RURelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "LedgerRRGOffsetAccountInterval_RUEntity_Resolved/attributeContext/LedgerRRGOffsetAccountInterval_RUEntity_Resolved/BackingTable_LedgerRRGOffsetAccountInterval_RURelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "LedgerRRGOffsetAccountInterval_RUEntity_Resolved/attributeContext/LedgerRRGOffsetAccountInterval_RUEntity_Resolved/BackingTable_LedgerRRGOffsetAccountInterval_RURelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "LedgerRRGOffsetAccountInterval_RUEntity_Resolved/hasAttributes/BackingTable_LedgerRRGOffsetAccountInterval_RURelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "LedgerRRGOffsetAccountInterval_RUEntity_Resolved/attributeContext/LedgerRRGOffsetAccountInterval_RUEntity_Resolved",
+            "definition": "resolvedFrom/LedgerRRGOffsetAccountInterval_RUEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "LedgerRRGOffsetAccountInterval_RUEntity_Resolved/attributeContext/LedgerRRGOffsetAccountInterval_RUEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "LedgerRRGOffsetAccountInterval_RUEntity_Resolved/attributeContext/LedgerRRGOffsetAccountInterval_RUEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "LedgerRRGOffsetAccountInterval_RUEntity_Resolved/attributeContext/LedgerRRGOffsetAccountInterval_RUEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "LedgerRRGOffsetAccountInterval_RUEntity_Resolved/attributeContext/LedgerRRGOffsetAccountInterval_RUEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "LedgerRRGOffsetAccountInterval_RUEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "FromLedgerDimensionDisplayValue",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerRRGOffsetAccountInterval_RUEntity_Resolved/attributeContext/LedgerRRGOffsetAccountInterval_RUEntity_Resolved/FromLedgerDimensionDisplayValue",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ToLedgerDimensionDisplayValue",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerRRGOffsetAccountInterval_RUEntity_Resolved/attributeContext/LedgerRRGOffsetAccountInterval_RUEntity_Resolved/ToLedgerDimensionDisplayValue",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "OperationLineId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerRRGOffsetAccountInterval_RUEntity_Resolved/attributeContext/LedgerRRGOffsetAccountInterval_RUEntity_Resolved/OperationLineId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_LedgerRRGOffsetAccountInterval_RURelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/WorksheetLine/LedgerRRGOffsetAccountInterval_RU.cdm.json/LedgerRRGOffsetAccountInterval_RU",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "LedgerRRGOffsetAccountInterval_RUEntity_Resolved/attributeContext/LedgerRRGOffsetAccountInterval_RUEntity_Resolved/BackingTable_LedgerRRGOffsetAccountInterval_RURelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "LedgerRRGOffsetAccountInterval_RUEntity_Resolved/attributeContext/LedgerRRGOffsetAccountInterval_RUEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Financial reports offset account interval in operation",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

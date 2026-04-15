@@ -1,0 +1,321 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "PaymentSurveyCodeEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "PaymentSurveyCodeEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "PaymentSurveyCodeEntity_Resolved",
+        "definition": "resolvedFrom/PaymentSurveyCodeEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "PaymentSurveyCodeEntity_Resolved/attributeContext/PaymentSurveyCodeEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "PaymentSurveyCodeEntity_Resolved/attributeContext/PaymentSurveyCodeEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CountryRegionSummary",
+            "parent": "PaymentSurveyCodeEntity_Resolved/attributeContext/PaymentSurveyCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/PaymentSurveyCodeEntity/hasAttributes/CountryRegionSummary",
+            "contents": [
+              "PaymentSurveyCodeEntity_Resolved/hasAttributes/CountryRegionSummary"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "SurveyCode",
+            "parent": "PaymentSurveyCodeEntity_Resolved/attributeContext/PaymentSurveyCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/PaymentSurveyCodeEntity/hasAttributes/SurveyCode",
+            "contents": [
+              "PaymentSurveyCodeEntity_Resolved/hasAttributes/SurveyCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "PaymentSurveyCodeEntity_Resolved/attributeContext/PaymentSurveyCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/PaymentSurveyCodeEntity/hasAttributes/Description",
+            "contents": [
+              "PaymentSurveyCodeEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Company",
+            "parent": "PaymentSurveyCodeEntity_Resolved/attributeContext/PaymentSurveyCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/PaymentSurveyCodeEntity/hasAttributes/Company",
+            "contents": [
+              "PaymentSurveyCodeEntity_Resolved/hasAttributes/Company"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CentralBankPurposeCode",
+            "parent": "PaymentSurveyCodeEntity_Resolved/attributeContext/PaymentSurveyCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/PaymentSurveyCodeEntity/hasAttributes/CentralBankPurposeCode",
+            "contents": [
+              "PaymentSurveyCodeEntity_Resolved/hasAttributes/CentralBankPurposeCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_BankPaymBalanceSurveyRelationship",
+            "parent": "PaymentSurveyCodeEntity_Resolved/attributeContext/PaymentSurveyCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/PaymentSurveyCodeEntity/hasAttributes/BackingTable_BankPaymBalanceSurveyRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "BankPaymBalanceSurvey",
+                "parent": "PaymentSurveyCodeEntity_Resolved/attributeContext/PaymentSurveyCodeEntity_Resolved/BackingTable_BankPaymBalanceSurveyRelationship",
+                "definition": "resolvedFrom/BankPaymBalanceSurvey",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "PaymentSurveyCodeEntity_Resolved/attributeContext/PaymentSurveyCodeEntity_Resolved/BackingTable_BankPaymBalanceSurveyRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "PaymentSurveyCodeEntity_Resolved/attributeContext/PaymentSurveyCodeEntity_Resolved/BackingTable_BankPaymBalanceSurveyRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "PaymentSurveyCodeEntity_Resolved/attributeContext/PaymentSurveyCodeEntity_Resolved/BackingTable_BankPaymBalanceSurveyRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "PaymentSurveyCodeEntity_Resolved/hasAttributes/BackingTable_BankPaymBalanceSurveyRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "PaymentSurveyCodeEntity_Resolved/attributeContext/PaymentSurveyCodeEntity_Resolved",
+            "definition": "resolvedFrom/PaymentSurveyCodeEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "PaymentSurveyCodeEntity_Resolved/attributeContext/PaymentSurveyCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "PaymentSurveyCodeEntity_Resolved/attributeContext/PaymentSurveyCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "PaymentSurveyCodeEntity_Resolved/attributeContext/PaymentSurveyCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "PaymentSurveyCodeEntity_Resolved/attributeContext/PaymentSurveyCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "PaymentSurveyCodeEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "CountryRegionSummary",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "PaymentSurveyCodeEntity_Resolved/attributeContext/PaymentSurveyCodeEntity_Resolved/CountryRegionSummary",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "SurveyCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "PaymentSurveyCodeEntity_Resolved/attributeContext/PaymentSurveyCodeEntity_Resolved/SurveyCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "PaymentSurveyCodeEntity_Resolved/attributeContext/PaymentSurveyCodeEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Company",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "PaymentSurveyCodeEntity_Resolved/attributeContext/PaymentSurveyCodeEntity_Resolved/Company",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "CentralBankPurposeCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "PaymentSurveyCodeEntity_Resolved/attributeContext/PaymentSurveyCodeEntity_Resolved/CentralBankPurposeCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_BankPaymBalanceSurveyRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Bank/Group/BankPaymBalanceSurvey.cdm.json/BankPaymBalanceSurvey",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "PaymentSurveyCodeEntity_Resolved/attributeContext/PaymentSurveyCodeEntity_Resolved/BackingTable_BankPaymBalanceSurveyRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "PaymentSurveyCodeEntity_Resolved/attributeContext/PaymentSurveyCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Survey code",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

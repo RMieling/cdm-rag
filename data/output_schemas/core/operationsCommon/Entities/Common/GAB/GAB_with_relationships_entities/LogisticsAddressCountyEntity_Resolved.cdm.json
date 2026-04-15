@@ -1,0 +1,404 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "LogisticsAddressCountyEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "LogisticsAddressCountyEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "LogisticsAddressCountyEntity_Resolved",
+        "definition": "resolvedFrom/LogisticsAddressCountyEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "LogisticsAddressCountyEntity_Resolved/attributeContext/LogisticsAddressCountyEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "LogisticsAddressCountyEntity_Resolved/attributeContext/LogisticsAddressCountyEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CountryRegionId",
+            "parent": "LogisticsAddressCountyEntity_Resolved/attributeContext/LogisticsAddressCountyEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LogisticsAddressCountyEntity/hasAttributes/CountryRegionId",
+            "contents": [
+              "LogisticsAddressCountyEntity_Resolved/hasAttributes/CountryRegionId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "StateId",
+            "parent": "LogisticsAddressCountyEntity_Resolved/attributeContext/LogisticsAddressCountyEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LogisticsAddressCountyEntity/hasAttributes/StateId",
+            "contents": [
+              "LogisticsAddressCountyEntity_Resolved/hasAttributes/StateId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "LogisticsAddressCountyEntity_Resolved/attributeContext/LogisticsAddressCountyEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LogisticsAddressCountyEntity/hasAttributes/Description",
+            "contents": [
+              "LogisticsAddressCountyEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CountyId",
+            "parent": "LogisticsAddressCountyEntity_Resolved/attributeContext/LogisticsAddressCountyEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LogisticsAddressCountyEntity/hasAttributes/CountyId",
+            "contents": [
+              "LogisticsAddressCountyEntity_Resolved/hasAttributes/CountyId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ESCountryCode",
+            "parent": "LogisticsAddressCountyEntity_Resolved/attributeContext/LogisticsAddressCountyEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LogisticsAddressCountyEntity/hasAttributes/ESCountryCode",
+            "contents": [
+              "LogisticsAddressCountyEntity_Resolved/hasAttributes/ESCountryCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ITCountyCode",
+            "parent": "LogisticsAddressCountyEntity_Resolved/attributeContext/LogisticsAddressCountyEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LogisticsAddressCountyEntity/hasAttributes/ITCountyCode",
+            "contents": [
+              "LogisticsAddressCountyEntity_Resolved/hasAttributes/ITCountyCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_CountryRegionRelationship",
+            "parent": "LogisticsAddressCountyEntity_Resolved/attributeContext/LogisticsAddressCountyEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LogisticsAddressCountyEntity/hasAttributes/Relationship_CountryRegionRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "LogisticsAddressCountryRegionEntity",
+                "parent": "LogisticsAddressCountyEntity_Resolved/attributeContext/LogisticsAddressCountyEntity_Resolved/Relationship_CountryRegionRelationship",
+                "definition": "resolvedFrom/LogisticsAddressCountryRegionEntity",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "LogisticsAddressCountyEntity_Resolved/attributeContext/LogisticsAddressCountyEntity_Resolved/Relationship_CountryRegionRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "LogisticsAddressCountyEntity_Resolved/attributeContext/LogisticsAddressCountyEntity_Resolved/Relationship_CountryRegionRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "LogisticsAddressCountyEntity_Resolved/attributeContext/LogisticsAddressCountyEntity_Resolved/Relationship_CountryRegionRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "LogisticsAddressCountyEntity_Resolved/hasAttributes/Relationship_CountryRegionRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_StateRelationship",
+            "parent": "LogisticsAddressCountyEntity_Resolved/attributeContext/LogisticsAddressCountyEntity_Resolved",
+            "definition": "resolvedFrom/LogisticsAddressCountyEntity/hasAttributes/Relationship_StateRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "LogisticsAddressStateEntity",
+                "parent": "LogisticsAddressCountyEntity_Resolved/attributeContext/LogisticsAddressCountyEntity_Resolved/Relationship_StateRelationship",
+                "definition": "resolvedFrom/LogisticsAddressStateEntity",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "LogisticsAddressCountyEntity_Resolved/attributeContext/LogisticsAddressCountyEntity_Resolved/Relationship_StateRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "LogisticsAddressCountyEntity_Resolved/attributeContext/LogisticsAddressCountyEntity_Resolved/Relationship_StateRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "LogisticsAddressCountyEntity_Resolved/attributeContext/LogisticsAddressCountyEntity_Resolved/Relationship_StateRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "LogisticsAddressCountyEntity_Resolved/hasAttributes/Relationship_StateRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_LogisticsAddressCountyRelationship",
+            "parent": "LogisticsAddressCountyEntity_Resolved/attributeContext/LogisticsAddressCountyEntity_Resolved",
+            "definition": "resolvedFrom/LogisticsAddressCountyEntity/hasAttributes/BackingTable_LogisticsAddressCountyRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "LogisticsAddressCounty",
+                "parent": "LogisticsAddressCountyEntity_Resolved/attributeContext/LogisticsAddressCountyEntity_Resolved/BackingTable_LogisticsAddressCountyRelationship",
+                "definition": "resolvedFrom/LogisticsAddressCounty",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "LogisticsAddressCountyEntity_Resolved/attributeContext/LogisticsAddressCountyEntity_Resolved/BackingTable_LogisticsAddressCountyRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "LogisticsAddressCountyEntity_Resolved/attributeContext/LogisticsAddressCountyEntity_Resolved/BackingTable_LogisticsAddressCountyRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "LogisticsAddressCountyEntity_Resolved/attributeContext/LogisticsAddressCountyEntity_Resolved/BackingTable_LogisticsAddressCountyRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "LogisticsAddressCountyEntity_Resolved/hasAttributes/BackingTable_LogisticsAddressCountyRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "CountryRegionId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LogisticsAddressCountyEntity_Resolved/attributeContext/LogisticsAddressCountyEntity_Resolved/CountryRegionId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "StateId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LogisticsAddressCountyEntity_Resolved/attributeContext/LogisticsAddressCountyEntity_Resolved/StateId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LogisticsAddressCountyEntity_Resolved/attributeContext/LogisticsAddressCountyEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "CountyId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LogisticsAddressCountyEntity_Resolved/attributeContext/LogisticsAddressCountyEntity_Resolved/CountyId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ESCountryCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LogisticsAddressCountyEntity_Resolved/attributeContext/LogisticsAddressCountyEntity_Resolved/ESCountryCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ITCountyCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LogisticsAddressCountyEntity_Resolved/attributeContext/LogisticsAddressCountyEntity_Resolved/ITCountyCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Relationship_CountryRegionRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": []
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "LogisticsAddressCountyEntity_Resolved/attributeContext/LogisticsAddressCountyEntity_Resolved/Relationship_CountryRegionRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_StateRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": []
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "LogisticsAddressCountyEntity_Resolved/attributeContext/LogisticsAddressCountyEntity_Resolved/Relationship_StateRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "BackingTable_LogisticsAddressCountyRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Common/GAB/Group/LogisticsAddressCounty.cdm.json/LogisticsAddressCounty",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "LogisticsAddressCountyEntity_Resolved/attributeContext/LogisticsAddressCountyEntity_Resolved/BackingTable_LogisticsAddressCountyRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Counties",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

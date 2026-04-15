@@ -1,0 +1,321 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "TaxGSTReportConfigurationEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TaxGSTReportConfigurationEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "TaxGSTReportConfigurationEntity_Resolved",
+        "definition": "resolvedFrom/TaxGSTReportConfigurationEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "TaxGSTReportConfigurationEntity_Resolved/attributeContext/TaxGSTReportConfigurationEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "TaxGSTReportConfigurationEntity_Resolved/attributeContext/TaxGSTReportConfigurationEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ReportingCodesForGSTAmount",
+            "parent": "TaxGSTReportConfigurationEntity_Resolved/attributeContext/TaxGSTReportConfigurationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxGSTReportConfigurationEntity/hasAttributes/ReportingCodesForGSTAmount",
+            "contents": [
+              "TaxGSTReportConfigurationEntity_Resolved/hasAttributes/ReportingCodesForGSTAmount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ReportingCodesForTransactionAmount",
+            "parent": "TaxGSTReportConfigurationEntity_Resolved/attributeContext/TaxGSTReportConfigurationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxGSTReportConfigurationEntity/hasAttributes/ReportingCodesForTransactionAmount",
+            "contents": [
+              "TaxGSTReportConfigurationEntity_Resolved/hasAttributes/ReportingCodesForTransactionAmount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "TypeOfTransaction",
+            "parent": "TaxGSTReportConfigurationEntity_Resolved/attributeContext/TaxGSTReportConfigurationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxGSTReportConfigurationEntity/hasAttributes/TypeOfTransaction",
+            "contents": [
+              "TaxGSTReportConfigurationEntity_Resolved/hasAttributes/TypeOfTransaction"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ReportConfigurationName",
+            "parent": "TaxGSTReportConfigurationEntity_Resolved/attributeContext/TaxGSTReportConfigurationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxGSTReportConfigurationEntity/hasAttributes/ReportConfigurationName",
+            "contents": [
+              "TaxGSTReportConfigurationEntity_Resolved/hasAttributes/ReportConfigurationName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ReportConfigurationDescription",
+            "parent": "TaxGSTReportConfigurationEntity_Resolved/attributeContext/TaxGSTReportConfigurationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxGSTReportConfigurationEntity/hasAttributes/ReportConfigurationDescription",
+            "contents": [
+              "TaxGSTReportConfigurationEntity_Resolved/hasAttributes/ReportConfigurationDescription"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_TaxGSTReportConfigurationLine_MYRelationship",
+            "parent": "TaxGSTReportConfigurationEntity_Resolved/attributeContext/TaxGSTReportConfigurationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxGSTReportConfigurationEntity/hasAttributes/BackingTable_TaxGSTReportConfigurationLine_MYRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "TaxGSTReportConfigurationLine_MY",
+                "parent": "TaxGSTReportConfigurationEntity_Resolved/attributeContext/TaxGSTReportConfigurationEntity_Resolved/BackingTable_TaxGSTReportConfigurationLine_MYRelationship",
+                "definition": "resolvedFrom/TaxGSTReportConfigurationLine_MY",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxGSTReportConfigurationEntity_Resolved/attributeContext/TaxGSTReportConfigurationEntity_Resolved/BackingTable_TaxGSTReportConfigurationLine_MYRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxGSTReportConfigurationEntity_Resolved/attributeContext/TaxGSTReportConfigurationEntity_Resolved/BackingTable_TaxGSTReportConfigurationLine_MYRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxGSTReportConfigurationEntity_Resolved/attributeContext/TaxGSTReportConfigurationEntity_Resolved/BackingTable_TaxGSTReportConfigurationLine_MYRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxGSTReportConfigurationEntity_Resolved/hasAttributes/BackingTable_TaxGSTReportConfigurationLine_MYRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "TaxGSTReportConfigurationEntity_Resolved/attributeContext/TaxGSTReportConfigurationEntity_Resolved",
+            "definition": "resolvedFrom/TaxGSTReportConfigurationEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "TaxGSTReportConfigurationEntity_Resolved/attributeContext/TaxGSTReportConfigurationEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxGSTReportConfigurationEntity_Resolved/attributeContext/TaxGSTReportConfigurationEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxGSTReportConfigurationEntity_Resolved/attributeContext/TaxGSTReportConfigurationEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxGSTReportConfigurationEntity_Resolved/attributeContext/TaxGSTReportConfigurationEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxGSTReportConfigurationEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "ReportingCodesForGSTAmount",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxGSTReportConfigurationEntity_Resolved/attributeContext/TaxGSTReportConfigurationEntity_Resolved/ReportingCodesForGSTAmount",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ReportingCodesForTransactionAmount",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxGSTReportConfigurationEntity_Resolved/attributeContext/TaxGSTReportConfigurationEntity_Resolved/ReportingCodesForTransactionAmount",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "TypeOfTransaction",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxGSTReportConfigurationEntity_Resolved/attributeContext/TaxGSTReportConfigurationEntity_Resolved/TypeOfTransaction",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ReportConfigurationName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxGSTReportConfigurationEntity_Resolved/attributeContext/TaxGSTReportConfigurationEntity_Resolved/ReportConfigurationName",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ReportConfigurationDescription",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxGSTReportConfigurationEntity_Resolved/attributeContext/TaxGSTReportConfigurationEntity_Resolved/ReportConfigurationDescription",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_TaxGSTReportConfigurationLine_MYRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Tax/Miscellaneous/TaxGSTReportConfigurationLine_MY.cdm.json/TaxGSTReportConfigurationLine_MY",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxGSTReportConfigurationEntity_Resolved/attributeContext/TaxGSTReportConfigurationEntity_Resolved/BackingTable_TaxGSTReportConfigurationLine_MYRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxGSTReportConfigurationEntity_Resolved/attributeContext/TaxGSTReportConfigurationEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "GST report configuration lines",
+      "version": "1.1.1"
+    }
+  ],
+  "documentVersion": "1.1.1"
+}

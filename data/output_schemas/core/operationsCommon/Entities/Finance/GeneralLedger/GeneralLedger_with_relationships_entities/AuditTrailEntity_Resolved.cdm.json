@@ -1,0 +1,321 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "AuditTrailEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "AuditTrailEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "AuditTrailEntity_Resolved",
+        "definition": "resolvedFrom/AuditTrailEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "AuditTrailEntity_Resolved/attributeContext/AuditTrailEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "AuditTrailEntity_Resolved/attributeContext/AuditTrailEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "TransactionId",
+            "parent": "AuditTrailEntity_Resolved/attributeContext/AuditTrailEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AuditTrailEntity/hasAttributes/TransactionId",
+            "contents": [
+              "AuditTrailEntity_Resolved/hasAttributes/TransactionId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "TransactionType",
+            "parent": "AuditTrailEntity_Resolved/attributeContext/AuditTrailEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AuditTrailEntity/hasAttributes/TransactionType",
+            "contents": [
+              "AuditTrailEntity_Resolved/hasAttributes/TransactionType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "AuditTrailEntity_Resolved/attributeContext/AuditTrailEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AuditTrailEntity/hasAttributes/Description",
+            "contents": [
+              "AuditTrailEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CreatedByUser",
+            "parent": "AuditTrailEntity_Resolved/attributeContext/AuditTrailEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AuditTrailEntity/hasAttributes/CreatedByUser",
+            "contents": [
+              "AuditTrailEntity_Resolved/hasAttributes/CreatedByUser"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CreatedTransactionDateTime",
+            "parent": "AuditTrailEntity_Resolved/attributeContext/AuditTrailEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AuditTrailEntity/hasAttributes/CreatedTransactionDateTime",
+            "contents": [
+              "AuditTrailEntity_Resolved/hasAttributes/CreatedTransactionDateTime"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_TransactionLogRelationship",
+            "parent": "AuditTrailEntity_Resolved/attributeContext/AuditTrailEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AuditTrailEntity/hasAttributes/BackingTable_TransactionLogRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "TransactionLog",
+                "parent": "AuditTrailEntity_Resolved/attributeContext/AuditTrailEntity_Resolved/BackingTable_TransactionLogRelationship",
+                "definition": "resolvedFrom/TransactionLog",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "AuditTrailEntity_Resolved/attributeContext/AuditTrailEntity_Resolved/BackingTable_TransactionLogRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "AuditTrailEntity_Resolved/attributeContext/AuditTrailEntity_Resolved/BackingTable_TransactionLogRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "AuditTrailEntity_Resolved/attributeContext/AuditTrailEntity_Resolved/BackingTable_TransactionLogRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "AuditTrailEntity_Resolved/hasAttributes/BackingTable_TransactionLogRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "AuditTrailEntity_Resolved/attributeContext/AuditTrailEntity_Resolved",
+            "definition": "resolvedFrom/AuditTrailEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "AuditTrailEntity_Resolved/attributeContext/AuditTrailEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "AuditTrailEntity_Resolved/attributeContext/AuditTrailEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "AuditTrailEntity_Resolved/attributeContext/AuditTrailEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "AuditTrailEntity_Resolved/attributeContext/AuditTrailEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "AuditTrailEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "TransactionId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AuditTrailEntity_Resolved/attributeContext/AuditTrailEntity_Resolved/TransactionId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "TransactionType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AuditTrailEntity_Resolved/attributeContext/AuditTrailEntity_Resolved/TransactionType",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AuditTrailEntity_Resolved/attributeContext/AuditTrailEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "CreatedByUser",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AuditTrailEntity_Resolved/attributeContext/AuditTrailEntity_Resolved/CreatedByUser",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "CreatedTransactionDateTime",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AuditTrailEntity_Resolved/attributeContext/AuditTrailEntity_Resolved/CreatedTransactionDateTime",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_TransactionLogRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Transaction/TransactionLog.cdm.json/TransactionLog",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "AuditTrailEntity_Resolved/attributeContext/AuditTrailEntity_Resolved/BackingTable_TransactionLogRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "AuditTrailEntity_Resolved/attributeContext/AuditTrailEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Audit trail",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

@@ -1,0 +1,613 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "AssetStatementRowEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "AssetStatementRowEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "AssetStatementRowEntity_Resolved",
+        "definition": "resolvedFrom/AssetStatementRowEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "AssetStatementRowEntity_Resolved/attributeContext/AssetStatementRowEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "AssetStatementRowEntity_Resolved/attributeContext/AssetStatementRowEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "LineNumber",
+            "parent": "AssetStatementRowEntity_Resolved/attributeContext/AssetStatementRowEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetStatementRowEntity/hasAttributes/LineNumber",
+            "contents": [
+              "AssetStatementRowEntity_Resolved/hasAttributes/LineNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "RowName",
+            "parent": "AssetStatementRowEntity_Resolved/attributeContext/AssetStatementRowEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetStatementRowEntity/hasAttributes/RowName",
+            "contents": [
+              "AssetStatementRowEntity_Resolved/hasAttributes/RowName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "RowType",
+            "parent": "AssetStatementRowEntity_Resolved/attributeContext/AssetStatementRowEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetStatementRowEntity/hasAttributes/RowType",
+            "contents": [
+              "AssetStatementRowEntity_Resolved/hasAttributes/RowType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "AssetIntervalRelation",
+            "parent": "AssetStatementRowEntity_Resolved/attributeContext/AssetStatementRowEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetStatementRowEntity/hasAttributes/AssetIntervalRelation",
+            "contents": [
+              "AssetStatementRowEntity_Resolved/hasAttributes/AssetIntervalRelation"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "FromFixedAssetNumber",
+            "parent": "AssetStatementRowEntity_Resolved/attributeContext/AssetStatementRowEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetStatementRowEntity/hasAttributes/FromFixedAssetNumber",
+            "contents": [
+              "AssetStatementRowEntity_Resolved/hasAttributes/FromFixedAssetNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ToFixedAssetNumber",
+            "parent": "AssetStatementRowEntity_Resolved/attributeContext/AssetStatementRowEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetStatementRowEntity/hasAttributes/ToFixedAssetNumber",
+            "contents": [
+              "AssetStatementRowEntity_Resolved/hasAttributes/ToFixedAssetNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_FromAssetRelationship",
+            "parent": "AssetStatementRowEntity_Resolved/attributeContext/AssetStatementRowEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetStatementRowEntity/hasAttributes/Relationship_FromAssetRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "AssetFixedAssetEntity",
+                "parent": "AssetStatementRowEntity_Resolved/attributeContext/AssetStatementRowEntity_Resolved/Relationship_FromAssetRelationship",
+                "definition": "resolvedFrom/AssetFixedAssetEntity",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "AssetStatementRowEntity_Resolved/attributeContext/AssetStatementRowEntity_Resolved/Relationship_FromAssetRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "AssetStatementRowEntity_Resolved/attributeContext/AssetStatementRowEntity_Resolved/Relationship_FromAssetRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "AssetStatementRowEntity_Resolved/attributeContext/AssetStatementRowEntity_Resolved/Relationship_FromAssetRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "AssetStatementRowEntity_Resolved/hasAttributes/Relationship_FromAssetRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_ToAssetRelationship",
+            "parent": "AssetStatementRowEntity_Resolved/attributeContext/AssetStatementRowEntity_Resolved",
+            "definition": "resolvedFrom/AssetStatementRowEntity/hasAttributes/Relationship_ToAssetRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "AssetFixedAssetEntity",
+                "parent": "AssetStatementRowEntity_Resolved/attributeContext/AssetStatementRowEntity_Resolved/Relationship_ToAssetRelationship",
+                "definition": "resolvedFrom/AssetFixedAssetEntity",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "AssetStatementRowEntity_Resolved/attributeContext/AssetStatementRowEntity_Resolved/Relationship_ToAssetRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "AssetStatementRowEntity_Resolved/attributeContext/AssetStatementRowEntity_Resolved/Relationship_ToAssetRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "AssetStatementRowEntity_Resolved/attributeContext/AssetStatementRowEntity_Resolved/Relationship_ToAssetRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "AssetStatementRowEntity_Resolved/hasAttributes/Relationship_ToAssetRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_FromAssetGroupRelationship",
+            "parent": "AssetStatementRowEntity_Resolved/attributeContext/AssetStatementRowEntity_Resolved",
+            "definition": "resolvedFrom/AssetStatementRowEntity/hasAttributes/Relationship_FromAssetGroupRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "AssetGroupEntity",
+                "parent": "AssetStatementRowEntity_Resolved/attributeContext/AssetStatementRowEntity_Resolved/Relationship_FromAssetGroupRelationship",
+                "definition": "resolvedFrom/AssetGroupEntity",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "AssetStatementRowEntity_Resolved/attributeContext/AssetStatementRowEntity_Resolved/Relationship_FromAssetGroupRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "AssetStatementRowEntity_Resolved/attributeContext/AssetStatementRowEntity_Resolved/Relationship_FromAssetGroupRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "AssetStatementRowEntity_Resolved/attributeContext/AssetStatementRowEntity_Resolved/Relationship_FromAssetGroupRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "AssetStatementRowEntity_Resolved/hasAttributes/Relationship_FromAssetGroupRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_ToAssetGroupRelationship",
+            "parent": "AssetStatementRowEntity_Resolved/attributeContext/AssetStatementRowEntity_Resolved",
+            "definition": "resolvedFrom/AssetStatementRowEntity/hasAttributes/Relationship_ToAssetGroupRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "AssetGroupEntity",
+                "parent": "AssetStatementRowEntity_Resolved/attributeContext/AssetStatementRowEntity_Resolved/Relationship_ToAssetGroupRelationship",
+                "definition": "resolvedFrom/AssetGroupEntity",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "AssetStatementRowEntity_Resolved/attributeContext/AssetStatementRowEntity_Resolved/Relationship_ToAssetGroupRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "AssetStatementRowEntity_Resolved/attributeContext/AssetStatementRowEntity_Resolved/Relationship_ToAssetGroupRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "AssetStatementRowEntity_Resolved/attributeContext/AssetStatementRowEntity_Resolved/Relationship_ToAssetGroupRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "AssetStatementRowEntity_Resolved/hasAttributes/Relationship_ToAssetGroupRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_AssetStatementRowRelationship",
+            "parent": "AssetStatementRowEntity_Resolved/attributeContext/AssetStatementRowEntity_Resolved",
+            "definition": "resolvedFrom/AssetStatementRowEntity/hasAttributes/BackingTable_AssetStatementRowRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "AssetStatementRow",
+                "parent": "AssetStatementRowEntity_Resolved/attributeContext/AssetStatementRowEntity_Resolved/BackingTable_AssetStatementRowRelationship",
+                "definition": "resolvedFrom/AssetStatementRow",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "AssetStatementRowEntity_Resolved/attributeContext/AssetStatementRowEntity_Resolved/BackingTable_AssetStatementRowRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "AssetStatementRowEntity_Resolved/attributeContext/AssetStatementRowEntity_Resolved/BackingTable_AssetStatementRowRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "AssetStatementRowEntity_Resolved/attributeContext/AssetStatementRowEntity_Resolved/BackingTable_AssetStatementRowRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "AssetStatementRowEntity_Resolved/hasAttributes/BackingTable_AssetStatementRowRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "AssetStatementRowEntity_Resolved/attributeContext/AssetStatementRowEntity_Resolved",
+            "definition": "resolvedFrom/AssetStatementRowEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "AssetStatementRowEntity_Resolved/attributeContext/AssetStatementRowEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "AssetStatementRowEntity_Resolved/attributeContext/AssetStatementRowEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "AssetStatementRowEntity_Resolved/attributeContext/AssetStatementRowEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "AssetStatementRowEntity_Resolved/attributeContext/AssetStatementRowEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "AssetStatementRowEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "LineNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AssetStatementRowEntity_Resolved/attributeContext/AssetStatementRowEntity_Resolved/LineNumber",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "RowName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AssetStatementRowEntity_Resolved/attributeContext/AssetStatementRowEntity_Resolved/RowName",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "RowType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AssetStatementRowEntity_Resolved/attributeContext/AssetStatementRowEntity_Resolved/RowType",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "AssetIntervalRelation",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AssetStatementRowEntity_Resolved/attributeContext/AssetStatementRowEntity_Resolved/AssetIntervalRelation",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "FromFixedAssetNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AssetStatementRowEntity_Resolved/attributeContext/AssetStatementRowEntity_Resolved/FromFixedAssetNumber",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ToFixedAssetNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AssetStatementRowEntity_Resolved/attributeContext/AssetStatementRowEntity_Resolved/ToFixedAssetNumber",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Relationship_FromAssetRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": []
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "AssetStatementRowEntity_Resolved/attributeContext/AssetStatementRowEntity_Resolved/Relationship_FromAssetRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_ToAssetRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": []
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "AssetStatementRowEntity_Resolved/attributeContext/AssetStatementRowEntity_Resolved/Relationship_ToAssetRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_FromAssetGroupRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": []
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "AssetStatementRowEntity_Resolved/attributeContext/AssetStatementRowEntity_Resolved/Relationship_FromAssetGroupRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_ToAssetGroupRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": []
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "AssetStatementRowEntity_Resolved/attributeContext/AssetStatementRowEntity_Resolved/Relationship_ToAssetGroupRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "BackingTable_AssetStatementRowRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/FixedAssets/Group/AssetStatementRow.cdm.json/AssetStatementRow",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "AssetStatementRowEntity_Resolved/attributeContext/AssetStatementRowEntity_Resolved/BackingTable_AssetStatementRowRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "AssetStatementRowEntity_Resolved/attributeContext/AssetStatementRowEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Fixed asset statement rows",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

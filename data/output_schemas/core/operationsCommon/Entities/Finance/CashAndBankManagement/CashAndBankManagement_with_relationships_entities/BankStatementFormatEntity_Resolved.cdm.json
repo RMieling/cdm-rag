@@ -1,0 +1,288 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "BankStatementFormatEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "BankStatementFormatEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "BankStatementFormatEntity_Resolved",
+        "definition": "resolvedFrom/BankStatementFormatEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "BankStatementFormatEntity_Resolved/attributeContext/BankStatementFormatEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "BankStatementFormatEntity_Resolved/attributeContext/BankStatementFormatEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "FileType",
+            "parent": "BankStatementFormatEntity_Resolved/attributeContext/BankStatementFormatEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BankStatementFormatEntity/hasAttributes/FileType",
+            "contents": [
+              "BankStatementFormatEntity_Resolved/hasAttributes/FileType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "FromatId",
+            "parent": "BankStatementFormatEntity_Resolved/attributeContext/BankStatementFormatEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BankStatementFormatEntity/hasAttributes/FromatId",
+            "contents": [
+              "BankStatementFormatEntity_Resolved/hasAttributes/FromatId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "XMLFile",
+            "parent": "BankStatementFormatEntity_Resolved/attributeContext/BankStatementFormatEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BankStatementFormatEntity/hasAttributes/XMLFile",
+            "contents": [
+              "BankStatementFormatEntity_Resolved/hasAttributes/XMLFile"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "BankStatementFormatEntity_Resolved/attributeContext/BankStatementFormatEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BankStatementFormatEntity/hasAttributes/Name",
+            "contents": [
+              "BankStatementFormatEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DMFDefinitionGroupName",
+            "parent": "BankStatementFormatEntity_Resolved/attributeContext/BankStatementFormatEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BankStatementFormatEntity/hasAttributes/DMFDefinitionGroupName",
+            "contents": [
+              "BankStatementFormatEntity_Resolved/hasAttributes/DMFDefinitionGroupName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "UseGERConfiguration",
+            "parent": "BankStatementFormatEntity_Resolved/attributeContext/BankStatementFormatEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BankStatementFormatEntity/hasAttributes/UseGERConfiguration",
+            "contents": [
+              "BankStatementFormatEntity_Resolved/hasAttributes/UseGERConfiguration"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ERModelMappingTable",
+            "parent": "BankStatementFormatEntity_Resolved/attributeContext/BankStatementFormatEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BankStatementFormatEntity/hasAttributes/ERModelMappingTable",
+            "contents": [
+              "BankStatementFormatEntity_Resolved/hasAttributes/ERModelMappingTable"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_BankStatementFormatRelationship",
+            "parent": "BankStatementFormatEntity_Resolved/attributeContext/BankStatementFormatEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BankStatementFormatEntity/hasAttributes/BackingTable_BankStatementFormatRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "BankStatementFormat",
+                "parent": "BankStatementFormatEntity_Resolved/attributeContext/BankStatementFormatEntity_Resolved/BackingTable_BankStatementFormatRelationship",
+                "definition": "resolvedFrom/BankStatementFormat",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "BankStatementFormatEntity_Resolved/attributeContext/BankStatementFormatEntity_Resolved/BackingTable_BankStatementFormatRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "BankStatementFormatEntity_Resolved/attributeContext/BankStatementFormatEntity_Resolved/BackingTable_BankStatementFormatRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "BankStatementFormatEntity_Resolved/attributeContext/BankStatementFormatEntity_Resolved/BackingTable_BankStatementFormatRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "BankStatementFormatEntity_Resolved/hasAttributes/BackingTable_BankStatementFormatRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "FileType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BankStatementFormatEntity_Resolved/attributeContext/BankStatementFormatEntity_Resolved/FileType",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "FromatId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BankStatementFormatEntity_Resolved/attributeContext/BankStatementFormatEntity_Resolved/FromatId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "XMLFile",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BankStatementFormatEntity_Resolved/attributeContext/BankStatementFormatEntity_Resolved/XMLFile",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BankStatementFormatEntity_Resolved/attributeContext/BankStatementFormatEntity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "DMFDefinitionGroupName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BankStatementFormatEntity_Resolved/attributeContext/BankStatementFormatEntity_Resolved/DMFDefinitionGroupName",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "UseGERConfiguration",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BankStatementFormatEntity_Resolved/attributeContext/BankStatementFormatEntity_Resolved/UseGERConfiguration",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ERModelMappingTable",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BankStatementFormatEntity_Resolved/attributeContext/BankStatementFormatEntity_Resolved/ERModelMappingTable",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_BankStatementFormatRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Bank/Reference/BankStatementFormat.cdm.json/BankStatementFormat",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "BankStatementFormatEntity_Resolved/attributeContext/BankStatementFormatEntity_Resolved/BackingTable_BankStatementFormatRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Bank statement format",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

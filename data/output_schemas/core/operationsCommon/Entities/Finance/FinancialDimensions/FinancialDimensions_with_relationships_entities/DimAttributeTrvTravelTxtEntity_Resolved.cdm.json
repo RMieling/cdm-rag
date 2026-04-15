@@ -1,0 +1,260 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "DimAttributeTrvTravelTxtEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "DimAttributeTrvTravelTxtEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "DimAttributeTrvTravelTxtEntity_Resolved",
+        "definition": "resolvedFrom/DimAttributeTrvTravelTxtEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "DimAttributeTrvTravelTxtEntity_Resolved/attributeContext/DimAttributeTrvTravelTxtEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "DimAttributeTrvTravelTxtEntity_Resolved/attributeContext/DimAttributeTrvTravelTxtEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Value",
+            "parent": "DimAttributeTrvTravelTxtEntity_Resolved/attributeContext/DimAttributeTrvTravelTxtEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimAttributeTrvTravelTxtEntity/hasAttributes/Value",
+            "contents": [
+              "DimAttributeTrvTravelTxtEntity_Resolved/hasAttributes/Value"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "DimAttributeTrvTravelTxtEntity_Resolved/attributeContext/DimAttributeTrvTravelTxtEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimAttributeTrvTravelTxtEntity/hasAttributes/Name",
+            "contents": [
+              "DimAttributeTrvTravelTxtEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_TrvTravelTxtRelationship",
+            "parent": "DimAttributeTrvTravelTxtEntity_Resolved/attributeContext/DimAttributeTrvTravelTxtEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimAttributeTrvTravelTxtEntity/hasAttributes/BackingTable_TrvTravelTxtRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "TrvTravelTxt",
+                "parent": "DimAttributeTrvTravelTxtEntity_Resolved/attributeContext/DimAttributeTrvTravelTxtEntity_Resolved/BackingTable_TrvTravelTxtRelationship",
+                "definition": "resolvedFrom/TrvTravelTxt",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "DimAttributeTrvTravelTxtEntity_Resolved/attributeContext/DimAttributeTrvTravelTxtEntity_Resolved/BackingTable_TrvTravelTxtRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "DimAttributeTrvTravelTxtEntity_Resolved/attributeContext/DimAttributeTrvTravelTxtEntity_Resolved/BackingTable_TrvTravelTxtRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "DimAttributeTrvTravelTxtEntity_Resolved/attributeContext/DimAttributeTrvTravelTxtEntity_Resolved/BackingTable_TrvTravelTxtRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "DimAttributeTrvTravelTxtEntity_Resolved/hasAttributes/BackingTable_TrvTravelTxtRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "DimAttributeTrvTravelTxtEntity_Resolved/attributeContext/DimAttributeTrvTravelTxtEntity_Resolved",
+            "definition": "resolvedFrom/DimAttributeTrvTravelTxtEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "DimAttributeTrvTravelTxtEntity_Resolved/attributeContext/DimAttributeTrvTravelTxtEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "DimAttributeTrvTravelTxtEntity_Resolved/attributeContext/DimAttributeTrvTravelTxtEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "DimAttributeTrvTravelTxtEntity_Resolved/attributeContext/DimAttributeTrvTravelTxtEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "DimAttributeTrvTravelTxtEntity_Resolved/attributeContext/DimAttributeTrvTravelTxtEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "DimAttributeTrvTravelTxtEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Value",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DimAttributeTrvTravelTxtEntity_Resolved/attributeContext/DimAttributeTrvTravelTxtEntity_Resolved/Value",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DimAttributeTrvTravelTxtEntity_Resolved/attributeContext/DimAttributeTrvTravelTxtEntity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_TrvTravelTxtRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Expense/Reference/TrvTravelTxt.cdm.json/TrvTravelTxt",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "DimAttributeTrvTravelTxtEntity_Resolved/attributeContext/DimAttributeTrvTravelTxtEntity_Resolved/BackingTable_TrvTravelTxtRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "DimAttributeTrvTravelTxtEntity_Resolved/attributeContext/DimAttributeTrvTravelTxtEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

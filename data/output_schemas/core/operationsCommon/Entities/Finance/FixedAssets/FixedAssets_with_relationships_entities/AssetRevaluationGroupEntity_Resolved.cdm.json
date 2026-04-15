@@ -1,0 +1,301 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "AssetRevaluationGroupEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "AssetRevaluationGroupEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "AssetRevaluationGroupEntity_Resolved",
+        "definition": "resolvedFrom/AssetRevaluationGroupEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "AssetRevaluationGroupEntity_Resolved/attributeContext/AssetRevaluationGroupEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "AssetRevaluationGroupEntity_Resolved/attributeContext/AssetRevaluationGroupEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Id",
+            "parent": "AssetRevaluationGroupEntity_Resolved/attributeContext/AssetRevaluationGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetRevaluationGroupEntity/hasAttributes/Id",
+            "contents": [
+              "AssetRevaluationGroupEntity_Resolved/hasAttributes/Id"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "AssetRevaluationGroupEntity_Resolved/attributeContext/AssetRevaluationGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetRevaluationGroupEntity/hasAttributes/Description",
+            "contents": [
+              "AssetRevaluationGroupEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Factor",
+            "parent": "AssetRevaluationGroupEntity_Resolved/attributeContext/AssetRevaluationGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetRevaluationGroupEntity/hasAttributes/Factor",
+            "contents": [
+              "AssetRevaluationGroupEntity_Resolved/hasAttributes/Factor"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "TransDate",
+            "parent": "AssetRevaluationGroupEntity_Resolved/attributeContext/AssetRevaluationGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetRevaluationGroupEntity/hasAttributes/TransDate",
+            "contents": [
+              "AssetRevaluationGroupEntity_Resolved/hasAttributes/TransDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_AssetRevaluationGroupRelationship",
+            "parent": "AssetRevaluationGroupEntity_Resolved/attributeContext/AssetRevaluationGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetRevaluationGroupEntity/hasAttributes/BackingTable_AssetRevaluationGroupRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "AssetRevaluationGroup",
+                "parent": "AssetRevaluationGroupEntity_Resolved/attributeContext/AssetRevaluationGroupEntity_Resolved/BackingTable_AssetRevaluationGroupRelationship",
+                "definition": "resolvedFrom/AssetRevaluationGroup",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "AssetRevaluationGroupEntity_Resolved/attributeContext/AssetRevaluationGroupEntity_Resolved/BackingTable_AssetRevaluationGroupRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "AssetRevaluationGroupEntity_Resolved/attributeContext/AssetRevaluationGroupEntity_Resolved/BackingTable_AssetRevaluationGroupRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "AssetRevaluationGroupEntity_Resolved/attributeContext/AssetRevaluationGroupEntity_Resolved/BackingTable_AssetRevaluationGroupRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "AssetRevaluationGroupEntity_Resolved/hasAttributes/BackingTable_AssetRevaluationGroupRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "AssetRevaluationGroupEntity_Resolved/attributeContext/AssetRevaluationGroupEntity_Resolved",
+            "definition": "resolvedFrom/AssetRevaluationGroupEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "AssetRevaluationGroupEntity_Resolved/attributeContext/AssetRevaluationGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "AssetRevaluationGroupEntity_Resolved/attributeContext/AssetRevaluationGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "AssetRevaluationGroupEntity_Resolved/attributeContext/AssetRevaluationGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "AssetRevaluationGroupEntity_Resolved/attributeContext/AssetRevaluationGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "AssetRevaluationGroupEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Id",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AssetRevaluationGroupEntity_Resolved/attributeContext/AssetRevaluationGroupEntity_Resolved/Id",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AssetRevaluationGroupEntity_Resolved/attributeContext/AssetRevaluationGroupEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Factor",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AssetRevaluationGroupEntity_Resolved/attributeContext/AssetRevaluationGroupEntity_Resolved/Factor",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "TransDate",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AssetRevaluationGroupEntity_Resolved/attributeContext/AssetRevaluationGroupEntity_Resolved/TransDate",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_AssetRevaluationGroupRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/FixedAssets/Group/AssetRevaluationGroup.cdm.json/AssetRevaluationGroup",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "AssetRevaluationGroupEntity_Resolved/attributeContext/AssetRevaluationGroupEntity_Resolved/BackingTable_AssetRevaluationGroupRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "AssetRevaluationGroupEntity_Resolved/attributeContext/AssetRevaluationGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Revaluation groups for fixed assets",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

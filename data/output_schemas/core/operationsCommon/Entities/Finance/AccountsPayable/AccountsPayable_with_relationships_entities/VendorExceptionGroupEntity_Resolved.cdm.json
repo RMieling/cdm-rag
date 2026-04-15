@@ -1,0 +1,261 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "VendorExceptionGroupEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "VendorExceptionGroupEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "VendorExceptionGroupEntity_Resolved",
+        "definition": "resolvedFrom/VendorExceptionGroupEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "VendorExceptionGroupEntity_Resolved/attributeContext/VendorExceptionGroupEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "VendorExceptionGroupEntity_Resolved/attributeContext/VendorExceptionGroupEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "VendorExceptionGroupEntity_Resolved/attributeContext/VendorExceptionGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendorExceptionGroupEntity/hasAttributes/Description",
+            "contents": [
+              "VendorExceptionGroupEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "GroupId",
+            "parent": "VendorExceptionGroupEntity_Resolved/attributeContext/VendorExceptionGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendorExceptionGroupEntity/hasAttributes/GroupId",
+            "contents": [
+              "VendorExceptionGroupEntity_Resolved/hasAttributes/GroupId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_VendExceptionGroupRelationship",
+            "parent": "VendorExceptionGroupEntity_Resolved/attributeContext/VendorExceptionGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendorExceptionGroupEntity/hasAttributes/BackingTable_VendExceptionGroupRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "VendExceptionGroup",
+                "parent": "VendorExceptionGroupEntity_Resolved/attributeContext/VendorExceptionGroupEntity_Resolved/BackingTable_VendExceptionGroupRelationship",
+                "definition": "resolvedFrom/VendExceptionGroup",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "VendorExceptionGroupEntity_Resolved/attributeContext/VendorExceptionGroupEntity_Resolved/BackingTable_VendExceptionGroupRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "VendorExceptionGroupEntity_Resolved/attributeContext/VendorExceptionGroupEntity_Resolved/BackingTable_VendExceptionGroupRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "VendorExceptionGroupEntity_Resolved/attributeContext/VendorExceptionGroupEntity_Resolved/BackingTable_VendExceptionGroupRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "VendorExceptionGroupEntity_Resolved/hasAttributes/BackingTable_VendExceptionGroupRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "VendorExceptionGroupEntity_Resolved/attributeContext/VendorExceptionGroupEntity_Resolved",
+            "definition": "resolvedFrom/VendorExceptionGroupEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "VendorExceptionGroupEntity_Resolved/attributeContext/VendorExceptionGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "VendorExceptionGroupEntity_Resolved/attributeContext/VendorExceptionGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "VendorExceptionGroupEntity_Resolved/attributeContext/VendorExceptionGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "VendorExceptionGroupEntity_Resolved/attributeContext/VendorExceptionGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "VendorExceptionGroupEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VendorExceptionGroupEntity_Resolved/attributeContext/VendorExceptionGroupEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "GroupId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VendorExceptionGroupEntity_Resolved/attributeContext/VendorExceptionGroupEntity_Resolved/GroupId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_VendExceptionGroupRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/AccountsPayable/Group/VendExceptionGroup.cdm.json/VendExceptionGroup",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "VendorExceptionGroupEntity_Resolved/attributeContext/VendorExceptionGroupEntity_Resolved/BackingTable_VendExceptionGroupRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "VendorExceptionGroupEntity_Resolved/attributeContext/VendorExceptionGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Vendor exception groups",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

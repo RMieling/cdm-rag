@@ -1,0 +1,281 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "BankState11Entity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "BankState11Entity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "BankState11Entity_Resolved",
+        "definition": "resolvedFrom/BankState11Entity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "BankState11Entity_Resolved/attributeContext/BankState11Entity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "BankState11Entity_Resolved/attributeContext/BankState11Entity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BankAccount",
+            "parent": "BankState11Entity_Resolved/attributeContext/BankState11Entity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BankState11Entity/hasAttributes/BankAccount",
+            "contents": [
+              "BankState11Entity_Resolved/hasAttributes/BankAccount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "SequenceNumber",
+            "parent": "BankState11Entity_Resolved/attributeContext/BankState11Entity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BankState11Entity/hasAttributes/SequenceNumber",
+            "contents": [
+              "BankState11Entity_Resolved/hasAttributes/SequenceNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ReportOnState11",
+            "parent": "BankState11Entity_Resolved/attributeContext/BankState11Entity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BankState11Entity/hasAttributes/ReportOnState11",
+            "contents": [
+              "BankState11Entity_Resolved/hasAttributes/ReportOnState11"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_BankState11Relationship",
+            "parent": "BankState11Entity_Resolved/attributeContext/BankState11Entity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BankState11Entity/hasAttributes/BackingTable_BankState11Relationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "BankState11",
+                "parent": "BankState11Entity_Resolved/attributeContext/BankState11Entity_Resolved/BackingTable_BankState11Relationship",
+                "definition": "resolvedFrom/BankState11",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "BankState11Entity_Resolved/attributeContext/BankState11Entity_Resolved/BackingTable_BankState11Relationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "BankState11Entity_Resolved/attributeContext/BankState11Entity_Resolved/BackingTable_BankState11Relationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "BankState11Entity_Resolved/attributeContext/BankState11Entity_Resolved/BackingTable_BankState11Relationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "BankState11Entity_Resolved/hasAttributes/BackingTable_BankState11RelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "BankState11Entity_Resolved/attributeContext/BankState11Entity_Resolved",
+            "definition": "resolvedFrom/BankState11Entity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "BankState11Entity_Resolved/attributeContext/BankState11Entity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "BankState11Entity_Resolved/attributeContext/BankState11Entity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "BankState11Entity_Resolved/attributeContext/BankState11Entity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "BankState11Entity_Resolved/attributeContext/BankState11Entity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "BankState11Entity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "BankAccount",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BankState11Entity_Resolved/attributeContext/BankState11Entity_Resolved/BankAccount",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "SequenceNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BankState11Entity_Resolved/attributeContext/BankState11Entity_Resolved/SequenceNumber",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ReportOnState11",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BankState11Entity_Resolved/attributeContext/BankState11Entity_Resolved/ReportOnState11",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_BankState11RelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Bank/Parameter/BankState11.cdm.json/BankState11",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "BankState11Entity_Resolved/attributeContext/BankState11Entity_Resolved/BackingTable_BankState11Relationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "BankState11Entity_Resolved/attributeContext/BankState11Entity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "State 11",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

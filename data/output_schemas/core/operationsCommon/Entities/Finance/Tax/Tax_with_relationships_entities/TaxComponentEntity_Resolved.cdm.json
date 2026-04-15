@@ -1,0 +1,301 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "TaxComponentEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TaxComponentEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "TaxComponentEntity_Resolved",
+        "definition": "resolvedFrom/TaxComponentEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "TaxComponentEntity_Resolved/attributeContext/TaxComponentEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "TaxComponentEntity_Resolved/attributeContext/TaxComponentEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ApplyExcise",
+            "parent": "TaxComponentEntity_Resolved/attributeContext/TaxComponentEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxComponentEntity/hasAttributes/ApplyExcise",
+            "contents": [
+              "TaxComponentEntity_Resolved/hasAttributes/ApplyExcise"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "TaxComponent",
+            "parent": "TaxComponentEntity_Resolved/attributeContext/TaxComponentEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxComponentEntity/hasAttributes/TaxComponent",
+            "contents": [
+              "TaxComponentEntity_Resolved/hasAttributes/TaxComponent"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "TaxComponentEntity_Resolved/attributeContext/TaxComponentEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxComponentEntity/hasAttributes/Description",
+            "contents": [
+              "TaxComponentEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "TaxType",
+            "parent": "TaxComponentEntity_Resolved/attributeContext/TaxComponentEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxComponentEntity/hasAttributes/TaxType",
+            "contents": [
+              "TaxComponentEntity_Resolved/hasAttributes/TaxType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_TaxComponentTable_INRelationship",
+            "parent": "TaxComponentEntity_Resolved/attributeContext/TaxComponentEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxComponentEntity/hasAttributes/BackingTable_TaxComponentTable_INRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "TaxComponentTable_IN",
+                "parent": "TaxComponentEntity_Resolved/attributeContext/TaxComponentEntity_Resolved/BackingTable_TaxComponentTable_INRelationship",
+                "definition": "resolvedFrom/TaxComponentTable_IN",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxComponentEntity_Resolved/attributeContext/TaxComponentEntity_Resolved/BackingTable_TaxComponentTable_INRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxComponentEntity_Resolved/attributeContext/TaxComponentEntity_Resolved/BackingTable_TaxComponentTable_INRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxComponentEntity_Resolved/attributeContext/TaxComponentEntity_Resolved/BackingTable_TaxComponentTable_INRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxComponentEntity_Resolved/hasAttributes/BackingTable_TaxComponentTable_INRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "TaxComponentEntity_Resolved/attributeContext/TaxComponentEntity_Resolved",
+            "definition": "resolvedFrom/TaxComponentEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "TaxComponentEntity_Resolved/attributeContext/TaxComponentEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxComponentEntity_Resolved/attributeContext/TaxComponentEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxComponentEntity_Resolved/attributeContext/TaxComponentEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxComponentEntity_Resolved/attributeContext/TaxComponentEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxComponentEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "ApplyExcise",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxComponentEntity_Resolved/attributeContext/TaxComponentEntity_Resolved/ApplyExcise",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "TaxComponent",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxComponentEntity_Resolved/attributeContext/TaxComponentEntity_Resolved/TaxComponent",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxComponentEntity_Resolved/attributeContext/TaxComponentEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "TaxType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxComponentEntity_Resolved/attributeContext/TaxComponentEntity_Resolved/TaxType",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_TaxComponentTable_INRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Tax/Main/TaxComponentTable_IN.cdm.json/TaxComponentTable_IN",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxComponentEntity_Resolved/attributeContext/TaxComponentEntity_Resolved/BackingTable_TaxComponentTable_INRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxComponentEntity_Resolved/attributeContext/TaxComponentEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Tax components",
+      "version": "1.1.1"
+    }
+  ],
+  "documentVersion": "1.1.1"
+}

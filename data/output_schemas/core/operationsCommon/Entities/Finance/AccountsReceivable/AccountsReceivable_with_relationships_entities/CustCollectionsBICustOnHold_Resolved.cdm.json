@@ -1,0 +1,296 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "CustCollectionsBICustOnHold.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "CustCollectionsBICustOnHold_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "CustCollectionsBICustOnHold_Resolved",
+        "definition": "resolvedFrom/CustCollectionsBICustOnHold",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "CustCollectionsBICustOnHold_Resolved/attributeContext/CustCollectionsBICustOnHold_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "CustCollectionsBICustOnHold_Resolved/attributeContext/CustCollectionsBICustOnHold_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "AccountNum",
+            "parent": "CustCollectionsBICustOnHold_Resolved/attributeContext/CustCollectionsBICustOnHold_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCollectionsBICustOnHold/hasAttributes/AccountNum",
+            "contents": [
+              "CustCollectionsBICustOnHold_Resolved/hasAttributes/AccountNum"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Blocked",
+            "parent": "CustCollectionsBICustOnHold_Resolved/attributeContext/CustCollectionsBICustOnHold_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCollectionsBICustOnHold/hasAttributes/Blocked",
+            "contents": [
+              "CustCollectionsBICustOnHold_Resolved/hasAttributes/Blocked"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "CustCollectionsBICustOnHold_Resolved/attributeContext/CustCollectionsBICustOnHold_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCollectionsBICustOnHold/hasAttributes/Name",
+            "contents": [
+              "CustCollectionsBICustOnHold_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BlockStatus",
+            "parent": "CustCollectionsBICustOnHold_Resolved/attributeContext/CustCollectionsBICustOnHold_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCollectionsBICustOnHold/hasAttributes/BlockStatus",
+            "contents": [
+              "CustCollectionsBICustOnHold_Resolved/hasAttributes/BlockStatus"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_CustCollectionsBICustTableRelationship",
+            "parent": "CustCollectionsBICustOnHold_Resolved/attributeContext/CustCollectionsBICustOnHold_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCollectionsBICustOnHold/hasAttributes/BackingTable_CustCollectionsBICustTableRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CustCollectionsBICustTable",
+                "parent": "CustCollectionsBICustOnHold_Resolved/attributeContext/CustCollectionsBICustOnHold_Resolved/BackingTable_CustCollectionsBICustTableRelationship",
+                "definition": "resolvedFrom/CustCollectionsBICustTable",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CustCollectionsBICustOnHold_Resolved/attributeContext/CustCollectionsBICustOnHold_Resolved/BackingTable_CustCollectionsBICustTableRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CustCollectionsBICustOnHold_Resolved/attributeContext/CustCollectionsBICustOnHold_Resolved/BackingTable_CustCollectionsBICustTableRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CustCollectionsBICustOnHold_Resolved/attributeContext/CustCollectionsBICustOnHold_Resolved/BackingTable_CustCollectionsBICustTableRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CustCollectionsBICustOnHold_Resolved/hasAttributes/BackingTable_CustCollectionsBICustTableRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "CustCollectionsBICustOnHold_Resolved/attributeContext/CustCollectionsBICustOnHold_Resolved",
+            "definition": "resolvedFrom/CustCollectionsBICustOnHold/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "CustCollectionsBICustOnHold_Resolved/attributeContext/CustCollectionsBICustOnHold_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CustCollectionsBICustOnHold_Resolved/attributeContext/CustCollectionsBICustOnHold_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CustCollectionsBICustOnHold_Resolved/attributeContext/CustCollectionsBICustOnHold_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CustCollectionsBICustOnHold_Resolved/attributeContext/CustCollectionsBICustOnHold_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CustCollectionsBICustOnHold_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "AccountNum",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustCollectionsBICustOnHold_Resolved/attributeContext/CustCollectionsBICustOnHold_Resolved/AccountNum",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Blocked",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustCollectionsBICustOnHold_Resolved/attributeContext/CustCollectionsBICustOnHold_Resolved/Blocked",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustCollectionsBICustOnHold_Resolved/attributeContext/CustCollectionsBICustOnHold_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BlockStatus",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustCollectionsBICustOnHold_Resolved/attributeContext/CustCollectionsBICustOnHold_Resolved/BlockStatus",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_CustCollectionsBICustTableRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": []
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CustCollectionsBICustOnHold_Resolved/attributeContext/CustCollectionsBICustOnHold_Resolved/BackingTable_CustCollectionsBICustTableRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CustCollectionsBICustOnHold_Resolved/attributeContext/CustCollectionsBICustOnHold_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Customers currently on hold",
+      "version": "1.1.1"
+    }
+  ],
+  "documentVersion": "1.1.1"
+}

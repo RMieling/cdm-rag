@@ -1,0 +1,261 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "TaxServiceTariffNumberEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TaxServiceTariffNumberEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "TaxServiceTariffNumberEntity_Resolved",
+        "definition": "resolvedFrom/TaxServiceTariffNumberEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "TaxServiceTariffNumberEntity_Resolved/attributeContext/TaxServiceTariffNumberEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "TaxServiceTariffNumberEntity_Resolved/attributeContext/TaxServiceTariffNumberEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ServiceTariffNumber",
+            "parent": "TaxServiceTariffNumberEntity_Resolved/attributeContext/TaxServiceTariffNumberEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxServiceTariffNumberEntity/hasAttributes/ServiceTariffNumber",
+            "contents": [
+              "TaxServiceTariffNumberEntity_Resolved/hasAttributes/ServiceTariffNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ServiceTariffDescription",
+            "parent": "TaxServiceTariffNumberEntity_Resolved/attributeContext/TaxServiceTariffNumberEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxServiceTariffNumberEntity/hasAttributes/ServiceTariffDescription",
+            "contents": [
+              "TaxServiceTariffNumberEntity_Resolved/hasAttributes/ServiceTariffDescription"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_ServiceTariffNumber_PLRelationship",
+            "parent": "TaxServiceTariffNumberEntity_Resolved/attributeContext/TaxServiceTariffNumberEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxServiceTariffNumberEntity/hasAttributes/BackingTable_ServiceTariffNumber_PLRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "ServiceTariffNumber_PL",
+                "parent": "TaxServiceTariffNumberEntity_Resolved/attributeContext/TaxServiceTariffNumberEntity_Resolved/BackingTable_ServiceTariffNumber_PLRelationship",
+                "definition": "resolvedFrom/ServiceTariffNumber_PL",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxServiceTariffNumberEntity_Resolved/attributeContext/TaxServiceTariffNumberEntity_Resolved/BackingTable_ServiceTariffNumber_PLRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxServiceTariffNumberEntity_Resolved/attributeContext/TaxServiceTariffNumberEntity_Resolved/BackingTable_ServiceTariffNumber_PLRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxServiceTariffNumberEntity_Resolved/attributeContext/TaxServiceTariffNumberEntity_Resolved/BackingTable_ServiceTariffNumber_PLRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxServiceTariffNumberEntity_Resolved/hasAttributes/BackingTable_ServiceTariffNumber_PLRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "TaxServiceTariffNumberEntity_Resolved/attributeContext/TaxServiceTariffNumberEntity_Resolved",
+            "definition": "resolvedFrom/TaxServiceTariffNumberEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "TaxServiceTariffNumberEntity_Resolved/attributeContext/TaxServiceTariffNumberEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxServiceTariffNumberEntity_Resolved/attributeContext/TaxServiceTariffNumberEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxServiceTariffNumberEntity_Resolved/attributeContext/TaxServiceTariffNumberEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxServiceTariffNumberEntity_Resolved/attributeContext/TaxServiceTariffNumberEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxServiceTariffNumberEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "ServiceTariffNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxServiceTariffNumberEntity_Resolved/attributeContext/TaxServiceTariffNumberEntity_Resolved/ServiceTariffNumber",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ServiceTariffDescription",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxServiceTariffNumberEntity_Resolved/attributeContext/TaxServiceTariffNumberEntity_Resolved/ServiceTariffDescription",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_ServiceTariffNumber_PLRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/APARShared/Miscellaneous/ServiceTariffNumber_PL.cdm.json/ServiceTariffNumber_PL",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxServiceTariffNumberEntity_Resolved/attributeContext/TaxServiceTariffNumberEntity_Resolved/BackingTable_ServiceTariffNumber_PLRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxServiceTariffNumberEntity_Resolved/attributeContext/TaxServiceTariffNumberEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Service tariff numbers",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

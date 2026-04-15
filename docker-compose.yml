@@ -1,0 +1,86 @@
+services:
+
+  # Ollama Server (if using Ollama as LLM provider)
+  ollama:
+    build:
+      context: .
+      dockerfile: ollama/Dockerfile
+    profiles:
+      - "ollama"
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_models:/root/.ollama
+    environment:
+      - OLLAMA_EMBED_MODEL=${OLLAMA_EMBED_MODEL}
+      - OLLAMA_LLM_MODEL=${OLLAMA_LLM_MODEL}
+      # - OLLAMA_DEBUG=1 # Enable debug logging for Ollama during development
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
+  neo4j:
+    image: neo4j:latest
+    container_name: cdm-graph-db
+    restart: unless-stopped
+    ports:
+      - "7474:7474" # HTTP web interface
+      - "7687:7687" # Bolt protocol
+    environment:
+      - NEO4J_AUTH=${NEO4J_USERNAME}/${NEO4J_PASSWORD}
+    volumes:
+      - neo4j_data:/data
+      - neo4j_logs:/logs
+
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q --spider http://localhost:7474 || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+
+  # FastAPI Backend
+  api:
+    image: cdm-rag-api:latest-${ENVIRONMENT}
+    build:
+      context: .
+      dockerfile: api/Dockerfile
+    ports:
+      - "8000:8000"
+    # Bind host folders to the container so data and logs persist
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+    user: "${UID:-1000}:${GID:-1000}"
+    # Pass dotenv for local development
+    env_file:
+      - .env
+    depends_on:
+      neo4j:
+        condition: service_healthy
+
+  # Streamlit Frontend
+  frontend:
+    image: cdm-rag-frontend:latest-${ENVIRONMENT}
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./logs:/app/logs
+      - ./credentials.yaml:/app/credentials.yaml:ro
+    environment:
+      - API_URL=http://api:8000/api
+      - LOG_DIR=${LOG_DIR:-./logs}
+    depends_on:
+      - api
+
+volumes:
+  ollama_models:
+  neo4j_data:
+  neo4j_logs:

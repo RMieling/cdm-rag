@@ -1,0 +1,321 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "CustCollectionsBIInterestNotes.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "CustCollectionsBIInterestNotes_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "CustCollectionsBIInterestNotes_Resolved",
+        "definition": "resolvedFrom/CustCollectionsBIInterestNotes",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "CustCollectionsBIInterestNotes_Resolved/attributeContext/CustCollectionsBIInterestNotes_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "CustCollectionsBIInterestNotes_Resolved/attributeContext/CustCollectionsBIInterestNotes_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "AccountNum",
+            "parent": "CustCollectionsBIInterestNotes_Resolved/attributeContext/CustCollectionsBIInterestNotes_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCollectionsBIInterestNotes/hasAttributes/AccountNum",
+            "contents": [
+              "CustCollectionsBIInterestNotes_Resolved/hasAttributes/AccountNum"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "InterestNote",
+            "parent": "CustCollectionsBIInterestNotes_Resolved/attributeContext/CustCollectionsBIInterestNotes_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCollectionsBIInterestNotes/hasAttributes/InterestNote",
+            "contents": [
+              "CustCollectionsBIInterestNotes_Resolved/hasAttributes/InterestNote"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "CustCollectionsBIInterestNotes_Resolved/attributeContext/CustCollectionsBIInterestNotes_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCollectionsBIInterestNotes/hasAttributes/Name",
+            "contents": [
+              "CustCollectionsBIInterestNotes_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "FromDate",
+            "parent": "CustCollectionsBIInterestNotes_Resolved/attributeContext/CustCollectionsBIInterestNotes_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCollectionsBIInterestNotes/hasAttributes/FromDate",
+            "contents": [
+              "CustCollectionsBIInterestNotes_Resolved/hasAttributes/FromDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ToDate",
+            "parent": "CustCollectionsBIInterestNotes_Resolved/attributeContext/CustCollectionsBIInterestNotes_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCollectionsBIInterestNotes/hasAttributes/ToDate",
+            "contents": [
+              "CustCollectionsBIInterestNotes_Resolved/hasAttributes/ToDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_CustInterestJourRelationship",
+            "parent": "CustCollectionsBIInterestNotes_Resolved/attributeContext/CustCollectionsBIInterestNotes_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCollectionsBIInterestNotes/hasAttributes/BackingTable_CustInterestJourRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CustInterestJour",
+                "parent": "CustCollectionsBIInterestNotes_Resolved/attributeContext/CustCollectionsBIInterestNotes_Resolved/BackingTable_CustInterestJourRelationship",
+                "definition": "resolvedFrom/CustInterestJour",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CustCollectionsBIInterestNotes_Resolved/attributeContext/CustCollectionsBIInterestNotes_Resolved/BackingTable_CustInterestJourRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CustCollectionsBIInterestNotes_Resolved/attributeContext/CustCollectionsBIInterestNotes_Resolved/BackingTable_CustInterestJourRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CustCollectionsBIInterestNotes_Resolved/attributeContext/CustCollectionsBIInterestNotes_Resolved/BackingTable_CustInterestJourRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CustCollectionsBIInterestNotes_Resolved/hasAttributes/BackingTable_CustInterestJourRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "CustCollectionsBIInterestNotes_Resolved/attributeContext/CustCollectionsBIInterestNotes_Resolved",
+            "definition": "resolvedFrom/CustCollectionsBIInterestNotes/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "CustCollectionsBIInterestNotes_Resolved/attributeContext/CustCollectionsBIInterestNotes_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CustCollectionsBIInterestNotes_Resolved/attributeContext/CustCollectionsBIInterestNotes_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CustCollectionsBIInterestNotes_Resolved/attributeContext/CustCollectionsBIInterestNotes_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CustCollectionsBIInterestNotes_Resolved/attributeContext/CustCollectionsBIInterestNotes_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CustCollectionsBIInterestNotes_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "AccountNum",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustCollectionsBIInterestNotes_Resolved/attributeContext/CustCollectionsBIInterestNotes_Resolved/AccountNum",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "InterestNote",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustCollectionsBIInterestNotes_Resolved/attributeContext/CustCollectionsBIInterestNotes_Resolved/InterestNote",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustCollectionsBIInterestNotes_Resolved/attributeContext/CustCollectionsBIInterestNotes_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "FromDate",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustCollectionsBIInterestNotes_Resolved/attributeContext/CustCollectionsBIInterestNotes_Resolved/FromDate",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ToDate",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustCollectionsBIInterestNotes_Resolved/attributeContext/CustCollectionsBIInterestNotes_Resolved/ToDate",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_CustInterestJourRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/AccountsReceivable/Transaction/CustInterestJour.cdm.json/CustInterestJour",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CustCollectionsBIInterestNotes_Resolved/attributeContext/CustCollectionsBIInterestNotes_Resolved/BackingTable_CustInterestJourRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CustCollectionsBIInterestNotes_Resolved/attributeContext/CustCollectionsBIInterestNotes_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Interest notes generated for customers",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

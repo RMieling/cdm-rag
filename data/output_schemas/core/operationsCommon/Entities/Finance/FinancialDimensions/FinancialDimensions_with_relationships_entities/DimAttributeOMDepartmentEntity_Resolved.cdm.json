@@ -1,0 +1,188 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "DimAttributeOMDepartmentEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "DimAttributeOMDepartmentEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "DimAttributeOMDepartmentEntity_Resolved",
+        "definition": "resolvedFrom/DimAttributeOMDepartmentEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "DimAttributeOMDepartmentEntity_Resolved/attributeContext/DimAttributeOMDepartmentEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "DimAttributeOMDepartmentEntity_Resolved/attributeContext/DimAttributeOMDepartmentEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Value",
+            "parent": "DimAttributeOMDepartmentEntity_Resolved/attributeContext/DimAttributeOMDepartmentEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimAttributeOMDepartmentEntity/hasAttributes/Value",
+            "contents": [
+              "DimAttributeOMDepartmentEntity_Resolved/hasAttributes/Value"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "DimAttributeOMDepartmentEntity_Resolved/attributeContext/DimAttributeOMDepartmentEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimAttributeOMDepartmentEntity/hasAttributes/Name",
+            "contents": [
+              "DimAttributeOMDepartmentEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_OMOperatingUnitRelationship",
+            "parent": "DimAttributeOMDepartmentEntity_Resolved/attributeContext/DimAttributeOMDepartmentEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimAttributeOMDepartmentEntity/hasAttributes/BackingTable_OMOperatingUnitRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "OMOperatingUnit",
+                "parent": "DimAttributeOMDepartmentEntity_Resolved/attributeContext/DimAttributeOMDepartmentEntity_Resolved/BackingTable_OMOperatingUnitRelationship",
+                "definition": "resolvedFrom/OMOperatingUnit",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "DimAttributeOMDepartmentEntity_Resolved/attributeContext/DimAttributeOMDepartmentEntity_Resolved/BackingTable_OMOperatingUnitRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "DimAttributeOMDepartmentEntity_Resolved/attributeContext/DimAttributeOMDepartmentEntity_Resolved/BackingTable_OMOperatingUnitRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "DimAttributeOMDepartmentEntity_Resolved/attributeContext/DimAttributeOMDepartmentEntity_Resolved/BackingTable_OMOperatingUnitRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "DimAttributeOMDepartmentEntity_Resolved/hasAttributes/BackingTable_OMOperatingUnitRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Value",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DimAttributeOMDepartmentEntity_Resolved/attributeContext/DimAttributeOMDepartmentEntity_Resolved/Value",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DimAttributeOMDepartmentEntity_Resolved/attributeContext/DimAttributeOMDepartmentEntity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_OMOperatingUnitRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Common/GAB/Main/OMOperatingUnit.cdm.json/OMOperatingUnit",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "DimAttributeOMDepartmentEntity_Resolved/attributeContext/DimAttributeOMDepartmentEntity_Resolved/BackingTable_OMOperatingUnitRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Departments",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

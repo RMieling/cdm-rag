@@ -1,0 +1,188 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "DimAttributeCompanyInfoEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "DimAttributeCompanyInfoEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "DimAttributeCompanyInfoEntity_Resolved",
+        "definition": "resolvedFrom/DimAttributeCompanyInfoEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "DimAttributeCompanyInfoEntity_Resolved/attributeContext/DimAttributeCompanyInfoEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "DimAttributeCompanyInfoEntity_Resolved/attributeContext/DimAttributeCompanyInfoEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Value",
+            "parent": "DimAttributeCompanyInfoEntity_Resolved/attributeContext/DimAttributeCompanyInfoEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimAttributeCompanyInfoEntity/hasAttributes/Value",
+            "contents": [
+              "DimAttributeCompanyInfoEntity_Resolved/hasAttributes/Value"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "DimAttributeCompanyInfoEntity_Resolved/attributeContext/DimAttributeCompanyInfoEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimAttributeCompanyInfoEntity/hasAttributes/Name",
+            "contents": [
+              "DimAttributeCompanyInfoEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_CompanyInfoRelationship",
+            "parent": "DimAttributeCompanyInfoEntity_Resolved/attributeContext/DimAttributeCompanyInfoEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimAttributeCompanyInfoEntity/hasAttributes/BackingTable_CompanyInfoRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "DimAttributeCompanyInfoEntity_Resolved/attributeContext/DimAttributeCompanyInfoEntity_Resolved/BackingTable_CompanyInfoRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "DimAttributeCompanyInfoEntity_Resolved/attributeContext/DimAttributeCompanyInfoEntity_Resolved/BackingTable_CompanyInfoRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "DimAttributeCompanyInfoEntity_Resolved/attributeContext/DimAttributeCompanyInfoEntity_Resolved/BackingTable_CompanyInfoRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "DimAttributeCompanyInfoEntity_Resolved/attributeContext/DimAttributeCompanyInfoEntity_Resolved/BackingTable_CompanyInfoRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "DimAttributeCompanyInfoEntity_Resolved/hasAttributes/BackingTable_CompanyInfoRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Value",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DimAttributeCompanyInfoEntity_Resolved/attributeContext/DimAttributeCompanyInfoEntity_Resolved/Value",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DimAttributeCompanyInfoEntity_Resolved/attributeContext/DimAttributeCompanyInfoEntity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_CompanyInfoRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "DimAttributeCompanyInfoEntity_Resolved/attributeContext/DimAttributeCompanyInfoEntity_Resolved/BackingTable_CompanyInfoRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Legal entities",
+      "version": "1.1.1"
+    }
+  ],
+  "documentVersion": "1.1.1"
+}

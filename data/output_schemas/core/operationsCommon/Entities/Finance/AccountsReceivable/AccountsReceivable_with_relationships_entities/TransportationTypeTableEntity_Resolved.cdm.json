@@ -1,0 +1,261 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "TransportationTypeTableEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TransportationTypeTableEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "TransportationTypeTableEntity_Resolved",
+        "definition": "resolvedFrom/TransportationTypeTableEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "TransportationTypeTableEntity_Resolved/attributeContext/TransportationTypeTableEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "TransportationTypeTableEntity_Resolved/attributeContext/TransportationTypeTableEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "TransportationTypeTableEntity_Resolved/attributeContext/TransportationTypeTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TransportationTypeTableEntity/hasAttributes/Description",
+            "contents": [
+              "TransportationTypeTableEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Type",
+            "parent": "TransportationTypeTableEntity_Resolved/attributeContext/TransportationTypeTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TransportationTypeTableEntity/hasAttributes/Type",
+            "contents": [
+              "TransportationTypeTableEntity_Resolved/hasAttributes/Type"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_TransportationTypeTable_RURelationship",
+            "parent": "TransportationTypeTableEntity_Resolved/attributeContext/TransportationTypeTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TransportationTypeTableEntity/hasAttributes/BackingTable_TransportationTypeTable_RURelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "TransportationTypeTable_RU",
+                "parent": "TransportationTypeTableEntity_Resolved/attributeContext/TransportationTypeTableEntity_Resolved/BackingTable_TransportationTypeTable_RURelationship",
+                "definition": "resolvedFrom/TransportationTypeTable_RU",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TransportationTypeTableEntity_Resolved/attributeContext/TransportationTypeTableEntity_Resolved/BackingTable_TransportationTypeTable_RURelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TransportationTypeTableEntity_Resolved/attributeContext/TransportationTypeTableEntity_Resolved/BackingTable_TransportationTypeTable_RURelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TransportationTypeTableEntity_Resolved/attributeContext/TransportationTypeTableEntity_Resolved/BackingTable_TransportationTypeTable_RURelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TransportationTypeTableEntity_Resolved/hasAttributes/BackingTable_TransportationTypeTable_RURelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "TransportationTypeTableEntity_Resolved/attributeContext/TransportationTypeTableEntity_Resolved",
+            "definition": "resolvedFrom/TransportationTypeTableEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "TransportationTypeTableEntity_Resolved/attributeContext/TransportationTypeTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TransportationTypeTableEntity_Resolved/attributeContext/TransportationTypeTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TransportationTypeTableEntity_Resolved/attributeContext/TransportationTypeTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TransportationTypeTableEntity_Resolved/attributeContext/TransportationTypeTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TransportationTypeTableEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TransportationTypeTableEntity_Resolved/attributeContext/TransportationTypeTableEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Type",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TransportationTypeTableEntity_Resolved/attributeContext/TransportationTypeTableEntity_Resolved/Type",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_TransportationTypeTable_RURelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/AccountsReceivable/Main/TransportationTypeTable_RU.cdm.json/TransportationTypeTable_RU",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TransportationTypeTableEntity_Resolved/attributeContext/TransportationTypeTableEntity_Resolved/BackingTable_TransportationTypeTable_RURelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TransportationTypeTableEntity_Resolved/attributeContext/TransportationTypeTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Transportation types",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

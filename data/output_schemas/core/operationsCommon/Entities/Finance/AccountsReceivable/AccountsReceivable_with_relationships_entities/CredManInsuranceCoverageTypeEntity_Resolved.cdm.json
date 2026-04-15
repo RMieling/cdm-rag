@@ -1,0 +1,261 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "CredManInsuranceCoverageTypeEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "CredManInsuranceCoverageTypeEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "CredManInsuranceCoverageTypeEntity_Resolved",
+        "definition": "resolvedFrom/CredManInsuranceCoverageTypeEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "CredManInsuranceCoverageTypeEntity_Resolved/attributeContext/CredManInsuranceCoverageTypeEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "CredManInsuranceCoverageTypeEntity_Resolved/attributeContext/CredManInsuranceCoverageTypeEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "CredManInsuranceCoverageTypeEntity_Resolved/attributeContext/CredManInsuranceCoverageTypeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CredManInsuranceCoverageTypeEntity/hasAttributes/Description",
+            "contents": [
+              "CredManInsuranceCoverageTypeEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Type",
+            "parent": "CredManInsuranceCoverageTypeEntity_Resolved/attributeContext/CredManInsuranceCoverageTypeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CredManInsuranceCoverageTypeEntity/hasAttributes/Type",
+            "contents": [
+              "CredManInsuranceCoverageTypeEntity_Resolved/hasAttributes/Type"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_CredManInsuranceCoverageTypeRelationship",
+            "parent": "CredManInsuranceCoverageTypeEntity_Resolved/attributeContext/CredManInsuranceCoverageTypeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CredManInsuranceCoverageTypeEntity/hasAttributes/BackingTable_CredManInsuranceCoverageTypeRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CredManInsuranceCoverageType",
+                "parent": "CredManInsuranceCoverageTypeEntity_Resolved/attributeContext/CredManInsuranceCoverageTypeEntity_Resolved/BackingTable_CredManInsuranceCoverageTypeRelationship",
+                "definition": "resolvedFrom/CredManInsuranceCoverageType",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CredManInsuranceCoverageTypeEntity_Resolved/attributeContext/CredManInsuranceCoverageTypeEntity_Resolved/BackingTable_CredManInsuranceCoverageTypeRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CredManInsuranceCoverageTypeEntity_Resolved/attributeContext/CredManInsuranceCoverageTypeEntity_Resolved/BackingTable_CredManInsuranceCoverageTypeRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CredManInsuranceCoverageTypeEntity_Resolved/attributeContext/CredManInsuranceCoverageTypeEntity_Resolved/BackingTable_CredManInsuranceCoverageTypeRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CredManInsuranceCoverageTypeEntity_Resolved/hasAttributes/BackingTable_CredManInsuranceCoverageTypeRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "CredManInsuranceCoverageTypeEntity_Resolved/attributeContext/CredManInsuranceCoverageTypeEntity_Resolved",
+            "definition": "resolvedFrom/CredManInsuranceCoverageTypeEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "CredManInsuranceCoverageTypeEntity_Resolved/attributeContext/CredManInsuranceCoverageTypeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CredManInsuranceCoverageTypeEntity_Resolved/attributeContext/CredManInsuranceCoverageTypeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CredManInsuranceCoverageTypeEntity_Resolved/attributeContext/CredManInsuranceCoverageTypeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CredManInsuranceCoverageTypeEntity_Resolved/attributeContext/CredManInsuranceCoverageTypeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CredManInsuranceCoverageTypeEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CredManInsuranceCoverageTypeEntity_Resolved/attributeContext/CredManInsuranceCoverageTypeEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Type",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CredManInsuranceCoverageTypeEntity_Resolved/attributeContext/CredManInsuranceCoverageTypeEntity_Resolved/Type",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_CredManInsuranceCoverageTypeRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/AccountsReceivable/Group/CredManInsuranceCoverageType.cdm.json/CredManInsuranceCoverageType",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CredManInsuranceCoverageTypeEntity_Resolved/attributeContext/CredManInsuranceCoverageTypeEntity_Resolved/BackingTable_CredManInsuranceCoverageTypeRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CredManInsuranceCoverageTypeEntity_Resolved/attributeContext/CredManInsuranceCoverageTypeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Coverage types",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

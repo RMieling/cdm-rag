@@ -1,0 +1,281 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "BankStatementTransactionTypeEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "BankStatementTransactionTypeEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "BankStatementTransactionTypeEntity_Resolved",
+        "definition": "resolvedFrom/BankStatementTransactionTypeEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "BankStatementTransactionTypeEntity_Resolved/attributeContext/BankStatementTransactionTypeEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "BankStatementTransactionTypeEntity_Resolved/attributeContext/BankStatementTransactionTypeEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BankAccountID",
+            "parent": "BankStatementTransactionTypeEntity_Resolved/attributeContext/BankStatementTransactionTypeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BankStatementTransactionTypeEntity/hasAttributes/BankAccountID",
+            "contents": [
+              "BankStatementTransactionTypeEntity_Resolved/hasAttributes/BankAccountID"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BankTransType",
+            "parent": "BankStatementTransactionTypeEntity_Resolved/attributeContext/BankStatementTransactionTypeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BankStatementTransactionTypeEntity/hasAttributes/BankTransType",
+            "contents": [
+              "BankStatementTransactionTypeEntity_Resolved/hasAttributes/BankTransType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "StatementTransactionCode",
+            "parent": "BankStatementTransactionTypeEntity_Resolved/attributeContext/BankStatementTransactionTypeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BankStatementTransactionTypeEntity/hasAttributes/StatementTransactionCode",
+            "contents": [
+              "BankStatementTransactionTypeEntity_Resolved/hasAttributes/StatementTransactionCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_BankStatementTransactionTypeHeaderRelationship",
+            "parent": "BankStatementTransactionTypeEntity_Resolved/attributeContext/BankStatementTransactionTypeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BankStatementTransactionTypeEntity/hasAttributes/BackingTable_BankStatementTransactionTypeHeaderRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "BankStatementTransactionTypeHeader",
+                "parent": "BankStatementTransactionTypeEntity_Resolved/attributeContext/BankStatementTransactionTypeEntity_Resolved/BackingTable_BankStatementTransactionTypeHeaderRelationship",
+                "definition": "resolvedFrom/BankStatementTransactionTypeHeader",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "BankStatementTransactionTypeEntity_Resolved/attributeContext/BankStatementTransactionTypeEntity_Resolved/BackingTable_BankStatementTransactionTypeHeaderRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "BankStatementTransactionTypeEntity_Resolved/attributeContext/BankStatementTransactionTypeEntity_Resolved/BackingTable_BankStatementTransactionTypeHeaderRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "BankStatementTransactionTypeEntity_Resolved/attributeContext/BankStatementTransactionTypeEntity_Resolved/BackingTable_BankStatementTransactionTypeHeaderRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "BankStatementTransactionTypeEntity_Resolved/hasAttributes/BackingTable_BankStatementTransactionTypeHeaderRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "BankStatementTransactionTypeEntity_Resolved/attributeContext/BankStatementTransactionTypeEntity_Resolved",
+            "definition": "resolvedFrom/BankStatementTransactionTypeEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "BankStatementTransactionTypeEntity_Resolved/attributeContext/BankStatementTransactionTypeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "BankStatementTransactionTypeEntity_Resolved/attributeContext/BankStatementTransactionTypeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "BankStatementTransactionTypeEntity_Resolved/attributeContext/BankStatementTransactionTypeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "BankStatementTransactionTypeEntity_Resolved/attributeContext/BankStatementTransactionTypeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "BankStatementTransactionTypeEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "BankAccountID",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BankStatementTransactionTypeEntity_Resolved/attributeContext/BankStatementTransactionTypeEntity_Resolved/BankAccountID",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BankTransType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BankStatementTransactionTypeEntity_Resolved/attributeContext/BankStatementTransactionTypeEntity_Resolved/BankTransType",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "StatementTransactionCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BankStatementTransactionTypeEntity_Resolved/attributeContext/BankStatementTransactionTypeEntity_Resolved/StatementTransactionCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_BankStatementTransactionTypeHeaderRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Bank/Group/BankStatementTransactionTypeHeader.cdm.json/BankStatementTransactionTypeHeader",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "BankStatementTransactionTypeEntity_Resolved/attributeContext/BankStatementTransactionTypeEntity_Resolved/BackingTable_BankStatementTransactionTypeHeaderRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "BankStatementTransactionTypeEntity_Resolved/attributeContext/BankStatementTransactionTypeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Transaction code mapping",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

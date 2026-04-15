@@ -1,0 +1,361 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "RDeferralsProfileEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "RDeferralsProfileEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "RDeferralsProfileEntity_Resolved",
+        "definition": "resolvedFrom/RDeferralsProfileEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "RDeferralsProfileEntity_Resolved/attributeContext/RDeferralsProfileEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "RDeferralsProfileEntity_Resolved/attributeContext/RDeferralsProfileEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CalculationPeriod",
+            "parent": "RDeferralsProfileEntity_Resolved/attributeContext/RDeferralsProfileEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RDeferralsProfileEntity/hasAttributes/CalculationPeriod",
+            "contents": [
+              "RDeferralsProfileEntity_Resolved/hasAttributes/CalculationPeriod"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "WritingOffPeriod",
+            "parent": "RDeferralsProfileEntity_Resolved/attributeContext/RDeferralsProfileEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RDeferralsProfileEntity/hasAttributes/WritingOffPeriod",
+            "contents": [
+              "RDeferralsProfileEntity_Resolved/hasAttributes/WritingOffPeriod"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "WritingOffMethod",
+            "parent": "RDeferralsProfileEntity_Resolved/attributeContext/RDeferralsProfileEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RDeferralsProfileEntity/hasAttributes/WritingOffMethod",
+            "contents": [
+              "RDeferralsProfileEntity_Resolved/hasAttributes/WritingOffMethod"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "WritingOffProfile",
+            "parent": "RDeferralsProfileEntity_Resolved/attributeContext/RDeferralsProfileEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RDeferralsProfileEntity/hasAttributes/WritingOffProfile",
+            "contents": [
+              "RDeferralsProfileEntity_Resolved/hasAttributes/WritingOffProfile"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CalculationType",
+            "parent": "RDeferralsProfileEntity_Resolved/attributeContext/RDeferralsProfileEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RDeferralsProfileEntity/hasAttributes/CalculationType",
+            "contents": [
+              "RDeferralsProfileEntity_Resolved/hasAttributes/CalculationType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "RDeferralsProfileEntity_Resolved/attributeContext/RDeferralsProfileEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RDeferralsProfileEntity/hasAttributes/Name",
+            "contents": [
+              "RDeferralsProfileEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "RoundOffOperation",
+            "parent": "RDeferralsProfileEntity_Resolved/attributeContext/RDeferralsProfileEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RDeferralsProfileEntity/hasAttributes/RoundOffOperation",
+            "contents": [
+              "RDeferralsProfileEntity_Resolved/hasAttributes/RoundOffOperation"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_RDeferralsProfileRelationship",
+            "parent": "RDeferralsProfileEntity_Resolved/attributeContext/RDeferralsProfileEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RDeferralsProfileEntity/hasAttributes/BackingTable_RDeferralsProfileRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "RDeferralsProfile",
+                "parent": "RDeferralsProfileEntity_Resolved/attributeContext/RDeferralsProfileEntity_Resolved/BackingTable_RDeferralsProfileRelationship",
+                "definition": "resolvedFrom/RDeferralsProfile",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "RDeferralsProfileEntity_Resolved/attributeContext/RDeferralsProfileEntity_Resolved/BackingTable_RDeferralsProfileRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "RDeferralsProfileEntity_Resolved/attributeContext/RDeferralsProfileEntity_Resolved/BackingTable_RDeferralsProfileRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "RDeferralsProfileEntity_Resolved/attributeContext/RDeferralsProfileEntity_Resolved/BackingTable_RDeferralsProfileRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "RDeferralsProfileEntity_Resolved/hasAttributes/BackingTable_RDeferralsProfileRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "RDeferralsProfileEntity_Resolved/attributeContext/RDeferralsProfileEntity_Resolved",
+            "definition": "resolvedFrom/RDeferralsProfileEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "RDeferralsProfileEntity_Resolved/attributeContext/RDeferralsProfileEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "RDeferralsProfileEntity_Resolved/attributeContext/RDeferralsProfileEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "RDeferralsProfileEntity_Resolved/attributeContext/RDeferralsProfileEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "RDeferralsProfileEntity_Resolved/attributeContext/RDeferralsProfileEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "RDeferralsProfileEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "CalculationPeriod",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RDeferralsProfileEntity_Resolved/attributeContext/RDeferralsProfileEntity_Resolved/CalculationPeriod",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "WritingOffPeriod",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RDeferralsProfileEntity_Resolved/attributeContext/RDeferralsProfileEntity_Resolved/WritingOffPeriod",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "WritingOffMethod",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RDeferralsProfileEntity_Resolved/attributeContext/RDeferralsProfileEntity_Resolved/WritingOffMethod",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "WritingOffProfile",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RDeferralsProfileEntity_Resolved/attributeContext/RDeferralsProfileEntity_Resolved/WritingOffProfile",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "CalculationType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RDeferralsProfileEntity_Resolved/attributeContext/RDeferralsProfileEntity_Resolved/CalculationType",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RDeferralsProfileEntity_Resolved/attributeContext/RDeferralsProfileEntity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "RoundOffOperation",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RDeferralsProfileEntity_Resolved/attributeContext/RDeferralsProfileEntity_Resolved/RoundOffOperation",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_RDeferralsProfileRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/RDeferrals/Parameter/RDeferralsProfile.cdm.json/RDeferralsProfile",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "RDeferralsProfileEntity_Resolved/attributeContext/RDeferralsProfileEntity_Resolved/BackingTable_RDeferralsProfileRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "RDeferralsProfileEntity_Resolved/attributeContext/RDeferralsProfileEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Deferrals calculation methods",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

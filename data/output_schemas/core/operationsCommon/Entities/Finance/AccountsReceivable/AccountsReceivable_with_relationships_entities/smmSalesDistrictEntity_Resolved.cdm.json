@@ -1,0 +1,261 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "smmSalesDistrictEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "smmSalesDistrictEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "smmSalesDistrictEntity_Resolved",
+        "definition": "resolvedFrom/smmSalesDistrictEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "smmSalesDistrictEntity_Resolved/attributeContext/smmSalesDistrictEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "smmSalesDistrictEntity_Resolved/attributeContext/smmSalesDistrictEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DistrictDescription",
+            "parent": "smmSalesDistrictEntity_Resolved/attributeContext/smmSalesDistrictEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/smmSalesDistrictEntity/hasAttributes/DistrictDescription",
+            "contents": [
+              "smmSalesDistrictEntity_Resolved/hasAttributes/DistrictDescription"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DistrictId",
+            "parent": "smmSalesDistrictEntity_Resolved/attributeContext/smmSalesDistrictEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/smmSalesDistrictEntity/hasAttributes/DistrictId",
+            "contents": [
+              "smmSalesDistrictEntity_Resolved/hasAttributes/DistrictId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_smmBusRelSalesDistrictGroupRelationship",
+            "parent": "smmSalesDistrictEntity_Resolved/attributeContext/smmSalesDistrictEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/smmSalesDistrictEntity/hasAttributes/BackingTable_smmBusRelSalesDistrictGroupRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "smmBusRelSalesDistrictGroup",
+                "parent": "smmSalesDistrictEntity_Resolved/attributeContext/smmSalesDistrictEntity_Resolved/BackingTable_smmBusRelSalesDistrictGroupRelationship",
+                "definition": "resolvedFrom/smmBusRelSalesDistrictGroup",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "smmSalesDistrictEntity_Resolved/attributeContext/smmSalesDistrictEntity_Resolved/BackingTable_smmBusRelSalesDistrictGroupRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "smmSalesDistrictEntity_Resolved/attributeContext/smmSalesDistrictEntity_Resolved/BackingTable_smmBusRelSalesDistrictGroupRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "smmSalesDistrictEntity_Resolved/attributeContext/smmSalesDistrictEntity_Resolved/BackingTable_smmBusRelSalesDistrictGroupRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "smmSalesDistrictEntity_Resolved/hasAttributes/BackingTable_smmBusRelSalesDistrictGroupRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "smmSalesDistrictEntity_Resolved/attributeContext/smmSalesDistrictEntity_Resolved",
+            "definition": "resolvedFrom/smmSalesDistrictEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "smmSalesDistrictEntity_Resolved/attributeContext/smmSalesDistrictEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "smmSalesDistrictEntity_Resolved/attributeContext/smmSalesDistrictEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "smmSalesDistrictEntity_Resolved/attributeContext/smmSalesDistrictEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "smmSalesDistrictEntity_Resolved/attributeContext/smmSalesDistrictEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "smmSalesDistrictEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "DistrictDescription",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "smmSalesDistrictEntity_Resolved/attributeContext/smmSalesDistrictEntity_Resolved/DistrictDescription",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "DistrictId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "smmSalesDistrictEntity_Resolved/attributeContext/smmSalesDistrictEntity_Resolved/DistrictId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_smmBusRelSalesDistrictGroupRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/SupplyChain/SalesAndMarketing/Group/smmBusRelSalesDistrictGroup.cdm.json/smmBusRelSalesDistrictGroup",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "smmSalesDistrictEntity_Resolved/attributeContext/smmSalesDistrictEntity_Resolved/BackingTable_smmBusRelSalesDistrictGroupRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "smmSalesDistrictEntity_Resolved/attributeContext/smmSalesDistrictEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Sales districts",
+      "version": "1.1.1"
+    }
+  ],
+  "documentVersion": "1.1.1"
+}

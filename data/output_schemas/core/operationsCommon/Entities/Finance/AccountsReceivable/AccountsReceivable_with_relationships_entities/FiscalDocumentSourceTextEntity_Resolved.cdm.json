@@ -1,0 +1,321 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "FiscalDocumentSourceTextEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "FiscalDocumentSourceTextEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "FiscalDocumentSourceTextEntity_Resolved",
+        "definition": "resolvedFrom/FiscalDocumentSourceTextEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "FiscalDocumentSourceTextEntity_Resolved/attributeContext/FiscalDocumentSourceTextEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "FiscalDocumentSourceTextEntity_Resolved/attributeContext/FiscalDocumentSourceTextEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "FiscalInformation",
+            "parent": "FiscalDocumentSourceTextEntity_Resolved/attributeContext/FiscalDocumentSourceTextEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/FiscalDocumentSourceTextEntity/hasAttributes/FiscalInformation",
+            "contents": [
+              "FiscalDocumentSourceTextEntity_Resolved/hasAttributes/FiscalInformation"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "FiscalDocumentSourceTextEntity_Resolved/attributeContext/FiscalDocumentSourceTextEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/FiscalDocumentSourceTextEntity/hasAttributes/Description",
+            "contents": [
+              "FiscalDocumentSourceTextEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Text",
+            "parent": "FiscalDocumentSourceTextEntity_Resolved/attributeContext/FiscalDocumentSourceTextEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/FiscalDocumentSourceTextEntity/hasAttributes/Text",
+            "contents": [
+              "FiscalDocumentSourceTextEntity_Resolved/hasAttributes/Text"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Restriction",
+            "parent": "FiscalDocumentSourceTextEntity_Resolved/attributeContext/FiscalDocumentSourceTextEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/FiscalDocumentSourceTextEntity/hasAttributes/Restriction",
+            "contents": [
+              "FiscalDocumentSourceTextEntity_Resolved/hasAttributes/Restriction"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "FiscalDocumentText",
+            "parent": "FiscalDocumentSourceTextEntity_Resolved/attributeContext/FiscalDocumentSourceTextEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/FiscalDocumentSourceTextEntity/hasAttributes/FiscalDocumentText",
+            "contents": [
+              "FiscalDocumentSourceTextEntity_Resolved/hasAttributes/FiscalDocumentText"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_FiscalDocumentSourceText_BRRelationship",
+            "parent": "FiscalDocumentSourceTextEntity_Resolved/attributeContext/FiscalDocumentSourceTextEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/FiscalDocumentSourceTextEntity/hasAttributes/BackingTable_FiscalDocumentSourceText_BRRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "FiscalDocumentSourceText_BR",
+                "parent": "FiscalDocumentSourceTextEntity_Resolved/attributeContext/FiscalDocumentSourceTextEntity_Resolved/BackingTable_FiscalDocumentSourceText_BRRelationship",
+                "definition": "resolvedFrom/FiscalDocumentSourceText_BR",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "FiscalDocumentSourceTextEntity_Resolved/attributeContext/FiscalDocumentSourceTextEntity_Resolved/BackingTable_FiscalDocumentSourceText_BRRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "FiscalDocumentSourceTextEntity_Resolved/attributeContext/FiscalDocumentSourceTextEntity_Resolved/BackingTable_FiscalDocumentSourceText_BRRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "FiscalDocumentSourceTextEntity_Resolved/attributeContext/FiscalDocumentSourceTextEntity_Resolved/BackingTable_FiscalDocumentSourceText_BRRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "FiscalDocumentSourceTextEntity_Resolved/hasAttributes/BackingTable_FiscalDocumentSourceText_BRRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "FiscalDocumentSourceTextEntity_Resolved/attributeContext/FiscalDocumentSourceTextEntity_Resolved",
+            "definition": "resolvedFrom/FiscalDocumentSourceTextEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "FiscalDocumentSourceTextEntity_Resolved/attributeContext/FiscalDocumentSourceTextEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "FiscalDocumentSourceTextEntity_Resolved/attributeContext/FiscalDocumentSourceTextEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "FiscalDocumentSourceTextEntity_Resolved/attributeContext/FiscalDocumentSourceTextEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "FiscalDocumentSourceTextEntity_Resolved/attributeContext/FiscalDocumentSourceTextEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "FiscalDocumentSourceTextEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "FiscalInformation",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "FiscalDocumentSourceTextEntity_Resolved/attributeContext/FiscalDocumentSourceTextEntity_Resolved/FiscalInformation",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "FiscalDocumentSourceTextEntity_Resolved/attributeContext/FiscalDocumentSourceTextEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Text",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "FiscalDocumentSourceTextEntity_Resolved/attributeContext/FiscalDocumentSourceTextEntity_Resolved/Text",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Restriction",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "FiscalDocumentSourceTextEntity_Resolved/attributeContext/FiscalDocumentSourceTextEntity_Resolved/Restriction",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "FiscalDocumentText",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "FiscalDocumentSourceTextEntity_Resolved/attributeContext/FiscalDocumentSourceTextEntity_Resolved/FiscalDocumentText",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_FiscalDocumentSourceText_BRRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/FiscalBooksBrazil/Main/FiscalDocumentSourceText_BR.cdm.json/FiscalDocumentSourceText_BR",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "FiscalDocumentSourceTextEntity_Resolved/attributeContext/FiscalDocumentSourceTextEntity_Resolved/BackingTable_FiscalDocumentSourceText_BRRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "FiscalDocumentSourceTextEntity_Resolved/attributeContext/FiscalDocumentSourceTextEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Fiscal document source texts",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

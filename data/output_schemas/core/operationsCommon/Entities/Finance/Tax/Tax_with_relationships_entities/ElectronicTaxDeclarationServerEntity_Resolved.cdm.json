@@ -1,0 +1,260 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "ElectronicTaxDeclarationServerEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "ElectronicTaxDeclarationServerEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "ElectronicTaxDeclarationServerEntity_Resolved",
+        "definition": "resolvedFrom/ElectronicTaxDeclarationServerEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "ElectronicTaxDeclarationServerEntity_Resolved/attributeContext/ElectronicTaxDeclarationServerEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "ElectronicTaxDeclarationServerEntity_Resolved/attributeContext/ElectronicTaxDeclarationServerEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "InternetAddress",
+            "parent": "ElectronicTaxDeclarationServerEntity_Resolved/attributeContext/ElectronicTaxDeclarationServerEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/ElectronicTaxDeclarationServerEntity/hasAttributes/InternetAddress",
+            "contents": [
+              "ElectronicTaxDeclarationServerEntity_Resolved/hasAttributes/InternetAddress"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Company",
+            "parent": "ElectronicTaxDeclarationServerEntity_Resolved/attributeContext/ElectronicTaxDeclarationServerEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/ElectronicTaxDeclarationServerEntity/hasAttributes/Company",
+            "contents": [
+              "ElectronicTaxDeclarationServerEntity_Resolved/hasAttributes/Company"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_TaxElectronicHTTPServerTableRelationship",
+            "parent": "ElectronicTaxDeclarationServerEntity_Resolved/attributeContext/ElectronicTaxDeclarationServerEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/ElectronicTaxDeclarationServerEntity/hasAttributes/BackingTable_TaxElectronicHTTPServerTableRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "TaxElectronicHTTPServerTable",
+                "parent": "ElectronicTaxDeclarationServerEntity_Resolved/attributeContext/ElectronicTaxDeclarationServerEntity_Resolved/BackingTable_TaxElectronicHTTPServerTableRelationship",
+                "definition": "resolvedFrom/TaxElectronicHTTPServerTable",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "ElectronicTaxDeclarationServerEntity_Resolved/attributeContext/ElectronicTaxDeclarationServerEntity_Resolved/BackingTable_TaxElectronicHTTPServerTableRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "ElectronicTaxDeclarationServerEntity_Resolved/attributeContext/ElectronicTaxDeclarationServerEntity_Resolved/BackingTable_TaxElectronicHTTPServerTableRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "ElectronicTaxDeclarationServerEntity_Resolved/attributeContext/ElectronicTaxDeclarationServerEntity_Resolved/BackingTable_TaxElectronicHTTPServerTableRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "ElectronicTaxDeclarationServerEntity_Resolved/hasAttributes/BackingTable_TaxElectronicHTTPServerTableRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "ElectronicTaxDeclarationServerEntity_Resolved/attributeContext/ElectronicTaxDeclarationServerEntity_Resolved",
+            "definition": "resolvedFrom/ElectronicTaxDeclarationServerEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "ElectronicTaxDeclarationServerEntity_Resolved/attributeContext/ElectronicTaxDeclarationServerEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "ElectronicTaxDeclarationServerEntity_Resolved/attributeContext/ElectronicTaxDeclarationServerEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "ElectronicTaxDeclarationServerEntity_Resolved/attributeContext/ElectronicTaxDeclarationServerEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "ElectronicTaxDeclarationServerEntity_Resolved/attributeContext/ElectronicTaxDeclarationServerEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "ElectronicTaxDeclarationServerEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "InternetAddress",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "ElectronicTaxDeclarationServerEntity_Resolved/attributeContext/ElectronicTaxDeclarationServerEntity_Resolved/InternetAddress",
+          "dataFormat": "String"
+        },
+        {
+          "name": "Company",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "ElectronicTaxDeclarationServerEntity_Resolved/attributeContext/ElectronicTaxDeclarationServerEntity_Resolved/Company",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_TaxElectronicHTTPServerTableRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Tax/Main/TaxElectronicHTTPServerTable.cdm.json/TaxElectronicHTTPServerTable",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "ElectronicTaxDeclarationServerEntity_Resolved/attributeContext/ElectronicTaxDeclarationServerEntity_Resolved/BackingTable_TaxElectronicHTTPServerTableRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "ElectronicTaxDeclarationServerEntity_Resolved/attributeContext/ElectronicTaxDeclarationServerEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Electronic tax declaration servers",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

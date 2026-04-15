@@ -1,0 +1,228 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "DimAttributeMainAccountEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "DimAttributeMainAccountEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "DimAttributeMainAccountEntity_Resolved",
+        "definition": "resolvedFrom/DimAttributeMainAccountEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "DimAttributeMainAccountEntity_Resolved/attributeContext/DimAttributeMainAccountEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "DimAttributeMainAccountEntity_Resolved/attributeContext/DimAttributeMainAccountEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Value",
+            "parent": "DimAttributeMainAccountEntity_Resolved/attributeContext/DimAttributeMainAccountEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimAttributeMainAccountEntity/hasAttributes/Value",
+            "contents": [
+              "DimAttributeMainAccountEntity_Resolved/hasAttributes/Value"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "DimAttributeMainAccountEntity_Resolved/attributeContext/DimAttributeMainAccountEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimAttributeMainAccountEntity/hasAttributes/Name",
+            "contents": [
+              "DimAttributeMainAccountEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Category",
+            "parent": "DimAttributeMainAccountEntity_Resolved/attributeContext/DimAttributeMainAccountEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimAttributeMainAccountEntity/hasAttributes/Category",
+            "contents": [
+              "DimAttributeMainAccountEntity_Resolved/hasAttributes/Category"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Type",
+            "parent": "DimAttributeMainAccountEntity_Resolved/attributeContext/DimAttributeMainAccountEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimAttributeMainAccountEntity/hasAttributes/Type",
+            "contents": [
+              "DimAttributeMainAccountEntity_Resolved/hasAttributes/Type"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_MainAccountRelationship",
+            "parent": "DimAttributeMainAccountEntity_Resolved/attributeContext/DimAttributeMainAccountEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimAttributeMainAccountEntity/hasAttributes/BackingTable_MainAccountRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "MainAccount",
+                "parent": "DimAttributeMainAccountEntity_Resolved/attributeContext/DimAttributeMainAccountEntity_Resolved/BackingTable_MainAccountRelationship",
+                "definition": "resolvedFrom/MainAccount",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "DimAttributeMainAccountEntity_Resolved/attributeContext/DimAttributeMainAccountEntity_Resolved/BackingTable_MainAccountRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "DimAttributeMainAccountEntity_Resolved/attributeContext/DimAttributeMainAccountEntity_Resolved/BackingTable_MainAccountRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "DimAttributeMainAccountEntity_Resolved/attributeContext/DimAttributeMainAccountEntity_Resolved/BackingTable_MainAccountRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "DimAttributeMainAccountEntity_Resolved/hasAttributes/BackingTable_MainAccountRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Value",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DimAttributeMainAccountEntity_Resolved/attributeContext/DimAttributeMainAccountEntity_Resolved/Value",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DimAttributeMainAccountEntity_Resolved/attributeContext/DimAttributeMainAccountEntity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Category",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DimAttributeMainAccountEntity_Resolved/attributeContext/DimAttributeMainAccountEntity_Resolved/Category",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Type",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DimAttributeMainAccountEntity_Resolved/attributeContext/DimAttributeMainAccountEntity_Resolved/Type",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_MainAccountRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/FinancialDimensions/Main/MainAccount.cdm.json/MainAccount",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "DimAttributeMainAccountEntity_Resolved/attributeContext/DimAttributeMainAccountEntity_Resolved/BackingTable_MainAccountRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Main accounts",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

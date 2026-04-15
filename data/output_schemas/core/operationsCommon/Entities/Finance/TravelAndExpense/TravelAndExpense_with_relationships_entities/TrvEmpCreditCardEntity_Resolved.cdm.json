@@ -1,0 +1,473 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "TrvEmpCreditCardEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TrvEmpCreditCardEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "TrvEmpCreditCardEntity_Resolved",
+        "definition": "resolvedFrom/TrvEmpCreditCardEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "TrvEmpCreditCardEntity_Resolved/attributeContext/TrvEmpCreditCardEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "TrvEmpCreditCardEntity_Resolved/attributeContext/TrvEmpCreditCardEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "PaymentMethod",
+            "parent": "TrvEmpCreditCardEntity_Resolved/attributeContext/TrvEmpCreditCardEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvEmpCreditCardEntity/hasAttributes/PaymentMethod",
+            "contents": [
+              "TrvEmpCreditCardEntity_Resolved/hasAttributes/PaymentMethod"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CardType",
+            "parent": "TrvEmpCreditCardEntity_Resolved/attributeContext/TrvEmpCreditCardEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvEmpCreditCardEntity/hasAttributes/CardType",
+            "contents": [
+              "TrvEmpCreditCardEntity_Resolved/hasAttributes/CardType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "TrvEmpCreditCardEntity_Resolved/attributeContext/TrvEmpCreditCardEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvEmpCreditCardEntity/hasAttributes/Description",
+            "contents": [
+              "TrvEmpCreditCardEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Employee",
+            "parent": "TrvEmpCreditCardEntity_Resolved/attributeContext/TrvEmpCreditCardEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvEmpCreditCardEntity/hasAttributes/Employee",
+            "contents": [
+              "TrvEmpCreditCardEntity_Resolved/hasAttributes/Employee"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CardId",
+            "parent": "TrvEmpCreditCardEntity_Resolved/attributeContext/TrvEmpCreditCardEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvEmpCreditCardEntity/hasAttributes/CardId",
+            "contents": [
+              "TrvEmpCreditCardEntity_Resolved/hasAttributes/CardId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "PersonnelNumber",
+            "parent": "TrvEmpCreditCardEntity_Resolved/attributeContext/TrvEmpCreditCardEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvEmpCreditCardEntity/hasAttributes/PersonnelNumber",
+            "contents": [
+              "TrvEmpCreditCardEntity_Resolved/hasAttributes/PersonnelNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_EmpCardTypeRelationship",
+            "parent": "TrvEmpCreditCardEntity_Resolved/attributeContext/TrvEmpCreditCardEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvEmpCreditCardEntity/hasAttributes/Relationship_EmpCardTypeRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "TrvCardTypesEntity",
+                "parent": "TrvEmpCreditCardEntity_Resolved/attributeContext/TrvEmpCreditCardEntity_Resolved/Relationship_EmpCardTypeRelationship",
+                "definition": "resolvedFrom/TrvCardTypesEntity",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TrvEmpCreditCardEntity_Resolved/attributeContext/TrvEmpCreditCardEntity_Resolved/Relationship_EmpCardTypeRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TrvEmpCreditCardEntity_Resolved/attributeContext/TrvEmpCreditCardEntity_Resolved/Relationship_EmpCardTypeRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TrvEmpCreditCardEntity_Resolved/attributeContext/TrvEmpCreditCardEntity_Resolved/Relationship_EmpCardTypeRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TrvEmpCreditCardEntity_Resolved/hasAttributes/Relationship_EmpCardTypeRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_WorkerRelationship",
+            "parent": "TrvEmpCreditCardEntity_Resolved/attributeContext/TrvEmpCreditCardEntity_Resolved",
+            "definition": "resolvedFrom/TrvEmpCreditCardEntity/hasAttributes/Relationship_WorkerRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "HcmWorkerEntity",
+                "parent": "TrvEmpCreditCardEntity_Resolved/attributeContext/TrvEmpCreditCardEntity_Resolved/Relationship_WorkerRelationship",
+                "definition": "resolvedFrom/HcmWorkerEntity",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TrvEmpCreditCardEntity_Resolved/attributeContext/TrvEmpCreditCardEntity_Resolved/Relationship_WorkerRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TrvEmpCreditCardEntity_Resolved/attributeContext/TrvEmpCreditCardEntity_Resolved/Relationship_WorkerRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TrvEmpCreditCardEntity_Resolved/attributeContext/TrvEmpCreditCardEntity_Resolved/Relationship_WorkerRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TrvEmpCreditCardEntity_Resolved/hasAttributes/Relationship_WorkerRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_TrvEmpPaymethodRelationship",
+            "parent": "TrvEmpCreditCardEntity_Resolved/attributeContext/TrvEmpCreditCardEntity_Resolved",
+            "definition": "resolvedFrom/TrvEmpCreditCardEntity/hasAttributes/BackingTable_TrvEmpPaymethodRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "TrvEmpPaymethod",
+                "parent": "TrvEmpCreditCardEntity_Resolved/attributeContext/TrvEmpCreditCardEntity_Resolved/BackingTable_TrvEmpPaymethodRelationship",
+                "definition": "resolvedFrom/TrvEmpPaymethod",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TrvEmpCreditCardEntity_Resolved/attributeContext/TrvEmpCreditCardEntity_Resolved/BackingTable_TrvEmpPaymethodRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TrvEmpCreditCardEntity_Resolved/attributeContext/TrvEmpCreditCardEntity_Resolved/BackingTable_TrvEmpPaymethodRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TrvEmpCreditCardEntity_Resolved/attributeContext/TrvEmpCreditCardEntity_Resolved/BackingTable_TrvEmpPaymethodRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TrvEmpCreditCardEntity_Resolved/hasAttributes/BackingTable_TrvEmpPaymethodRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "TrvEmpCreditCardEntity_Resolved/attributeContext/TrvEmpCreditCardEntity_Resolved",
+            "definition": "resolvedFrom/TrvEmpCreditCardEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "TrvEmpCreditCardEntity_Resolved/attributeContext/TrvEmpCreditCardEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TrvEmpCreditCardEntity_Resolved/attributeContext/TrvEmpCreditCardEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TrvEmpCreditCardEntity_Resolved/attributeContext/TrvEmpCreditCardEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TrvEmpCreditCardEntity_Resolved/attributeContext/TrvEmpCreditCardEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TrvEmpCreditCardEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "PaymentMethod",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvEmpCreditCardEntity_Resolved/attributeContext/TrvEmpCreditCardEntity_Resolved/PaymentMethod",
+          "dataFormat": "String"
+        },
+        {
+          "name": "CardType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvEmpCreditCardEntity_Resolved/attributeContext/TrvEmpCreditCardEntity_Resolved/CardType",
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvEmpCreditCardEntity_Resolved/attributeContext/TrvEmpCreditCardEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Employee",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvEmpCreditCardEntity_Resolved/attributeContext/TrvEmpCreditCardEntity_Resolved/Employee",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "CardId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvEmpCreditCardEntity_Resolved/attributeContext/TrvEmpCreditCardEntity_Resolved/CardId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "PersonnelNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvEmpCreditCardEntity_Resolved/attributeContext/TrvEmpCreditCardEntity_Resolved/PersonnelNumber",
+          "dataFormat": "String"
+        },
+        {
+          "name": "Relationship_EmpCardTypeRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": []
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TrvEmpCreditCardEntity_Resolved/attributeContext/TrvEmpCreditCardEntity_Resolved/Relationship_EmpCardTypeRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_WorkerRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": []
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TrvEmpCreditCardEntity_Resolved/attributeContext/TrvEmpCreditCardEntity_Resolved/Relationship_WorkerRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "BackingTable_TrvEmpPaymethodRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Expense/Reference/TrvEmpPaymethod.cdm.json/TrvEmpPaymethod",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TrvEmpCreditCardEntity_Resolved/attributeContext/TrvEmpCreditCardEntity_Resolved/BackingTable_TrvEmpPaymethodRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TrvEmpCreditCardEntity_Resolved/attributeContext/TrvEmpCreditCardEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Employee credit cards",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

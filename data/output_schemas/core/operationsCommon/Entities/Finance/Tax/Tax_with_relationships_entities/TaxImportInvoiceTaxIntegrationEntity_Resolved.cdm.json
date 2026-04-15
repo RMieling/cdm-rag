@@ -1,0 +1,261 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "TaxImportInvoiceTaxIntegrationEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TaxImportInvoiceTaxIntegrationEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "TaxImportInvoiceTaxIntegrationEntity_Resolved",
+        "definition": "resolvedFrom/TaxImportInvoiceTaxIntegrationEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "TaxImportInvoiceTaxIntegrationEntity_Resolved/attributeContext/TaxImportInvoiceTaxIntegrationEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "TaxImportInvoiceTaxIntegrationEntity_Resolved/attributeContext/TaxImportInvoiceTaxIntegrationEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ExternalInvoiceId",
+            "parent": "TaxImportInvoiceTaxIntegrationEntity_Resolved/attributeContext/TaxImportInvoiceTaxIntegrationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxImportInvoiceTaxIntegrationEntity/hasAttributes/ExternalInvoiceId",
+            "contents": [
+              "TaxImportInvoiceTaxIntegrationEntity_Resolved/hasAttributes/ExternalInvoiceId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Id",
+            "parent": "TaxImportInvoiceTaxIntegrationEntity_Resolved/attributeContext/TaxImportInvoiceTaxIntegrationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxImportInvoiceTaxIntegrationEntity/hasAttributes/Id",
+            "contents": [
+              "TaxImportInvoiceTaxIntegrationEntity_Resolved/hasAttributes/Id"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_TaxIntgrExportDocument_CNRelationship",
+            "parent": "TaxImportInvoiceTaxIntegrationEntity_Resolved/attributeContext/TaxImportInvoiceTaxIntegrationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxImportInvoiceTaxIntegrationEntity/hasAttributes/BackingTable_TaxIntgrExportDocument_CNRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "TaxIntgrExportDocument_CN",
+                "parent": "TaxImportInvoiceTaxIntegrationEntity_Resolved/attributeContext/TaxImportInvoiceTaxIntegrationEntity_Resolved/BackingTable_TaxIntgrExportDocument_CNRelationship",
+                "definition": "resolvedFrom/TaxIntgrExportDocument_CN",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxImportInvoiceTaxIntegrationEntity_Resolved/attributeContext/TaxImportInvoiceTaxIntegrationEntity_Resolved/BackingTable_TaxIntgrExportDocument_CNRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxImportInvoiceTaxIntegrationEntity_Resolved/attributeContext/TaxImportInvoiceTaxIntegrationEntity_Resolved/BackingTable_TaxIntgrExportDocument_CNRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxImportInvoiceTaxIntegrationEntity_Resolved/attributeContext/TaxImportInvoiceTaxIntegrationEntity_Resolved/BackingTable_TaxIntgrExportDocument_CNRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxImportInvoiceTaxIntegrationEntity_Resolved/hasAttributes/BackingTable_TaxIntgrExportDocument_CNRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "TaxImportInvoiceTaxIntegrationEntity_Resolved/attributeContext/TaxImportInvoiceTaxIntegrationEntity_Resolved",
+            "definition": "resolvedFrom/TaxImportInvoiceTaxIntegrationEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "TaxImportInvoiceTaxIntegrationEntity_Resolved/attributeContext/TaxImportInvoiceTaxIntegrationEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxImportInvoiceTaxIntegrationEntity_Resolved/attributeContext/TaxImportInvoiceTaxIntegrationEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxImportInvoiceTaxIntegrationEntity_Resolved/attributeContext/TaxImportInvoiceTaxIntegrationEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxImportInvoiceTaxIntegrationEntity_Resolved/attributeContext/TaxImportInvoiceTaxIntegrationEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxImportInvoiceTaxIntegrationEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "ExternalInvoiceId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxImportInvoiceTaxIntegrationEntity_Resolved/attributeContext/TaxImportInvoiceTaxIntegrationEntity_Resolved/ExternalInvoiceId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Id",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxImportInvoiceTaxIntegrationEntity_Resolved/attributeContext/TaxImportInvoiceTaxIntegrationEntity_Resolved/Id",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_TaxIntgrExportDocument_CNRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Tax/Transaction/TaxIntgrExportDocument_CN.cdm.json/TaxIntgrExportDocument_CN",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxImportInvoiceTaxIntegrationEntity_Resolved/attributeContext/TaxImportInvoiceTaxIntegrationEntity_Resolved/BackingTable_TaxIntgrExportDocument_CNRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxImportInvoiceTaxIntegrationEntity_Resolved/attributeContext/TaxImportInvoiceTaxIntegrationEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Tax integration import",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

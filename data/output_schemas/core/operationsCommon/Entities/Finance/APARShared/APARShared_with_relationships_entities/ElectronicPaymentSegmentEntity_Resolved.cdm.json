@@ -1,0 +1,301 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "ElectronicPaymentSegmentEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "ElectronicPaymentSegmentEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "ElectronicPaymentSegmentEntity_Resolved",
+        "definition": "resolvedFrom/ElectronicPaymentSegmentEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "ElectronicPaymentSegmentEntity_Resolved/attributeContext/ElectronicPaymentSegmentEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "ElectronicPaymentSegmentEntity_Resolved/attributeContext/ElectronicPaymentSegmentEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Segment",
+            "parent": "ElectronicPaymentSegmentEntity_Resolved/attributeContext/ElectronicPaymentSegmentEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/ElectronicPaymentSegmentEntity/hasAttributes/Segment",
+            "contents": [
+              "ElectronicPaymentSegmentEntity_Resolved/hasAttributes/Segment"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "ElectronicPaymentSegmentEntity_Resolved/attributeContext/ElectronicPaymentSegmentEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/ElectronicPaymentSegmentEntity/hasAttributes/Description",
+            "contents": [
+              "ElectronicPaymentSegmentEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Mandatory",
+            "parent": "ElectronicPaymentSegmentEntity_Resolved/attributeContext/ElectronicPaymentSegmentEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/ElectronicPaymentSegmentEntity/hasAttributes/Mandatory",
+            "contents": [
+              "ElectronicPaymentSegmentEntity_Resolved/hasAttributes/Mandatory"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Nextsegment",
+            "parent": "ElectronicPaymentSegmentEntity_Resolved/attributeContext/ElectronicPaymentSegmentEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/ElectronicPaymentSegmentEntity/hasAttributes/Nextsegment",
+            "contents": [
+              "ElectronicPaymentSegmentEntity_Resolved/hasAttributes/Nextsegment"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_EPSegmentTable_BRRelationship",
+            "parent": "ElectronicPaymentSegmentEntity_Resolved/attributeContext/ElectronicPaymentSegmentEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/ElectronicPaymentSegmentEntity/hasAttributes/BackingTable_EPSegmentTable_BRRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "EPSegmentTable_BR",
+                "parent": "ElectronicPaymentSegmentEntity_Resolved/attributeContext/ElectronicPaymentSegmentEntity_Resolved/BackingTable_EPSegmentTable_BRRelationship",
+                "definition": "resolvedFrom/EPSegmentTable_BR",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "ElectronicPaymentSegmentEntity_Resolved/attributeContext/ElectronicPaymentSegmentEntity_Resolved/BackingTable_EPSegmentTable_BRRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "ElectronicPaymentSegmentEntity_Resolved/attributeContext/ElectronicPaymentSegmentEntity_Resolved/BackingTable_EPSegmentTable_BRRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "ElectronicPaymentSegmentEntity_Resolved/attributeContext/ElectronicPaymentSegmentEntity_Resolved/BackingTable_EPSegmentTable_BRRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "ElectronicPaymentSegmentEntity_Resolved/hasAttributes/BackingTable_EPSegmentTable_BRRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "ElectronicPaymentSegmentEntity_Resolved/attributeContext/ElectronicPaymentSegmentEntity_Resolved",
+            "definition": "resolvedFrom/ElectronicPaymentSegmentEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "ElectronicPaymentSegmentEntity_Resolved/attributeContext/ElectronicPaymentSegmentEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "ElectronicPaymentSegmentEntity_Resolved/attributeContext/ElectronicPaymentSegmentEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "ElectronicPaymentSegmentEntity_Resolved/attributeContext/ElectronicPaymentSegmentEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "ElectronicPaymentSegmentEntity_Resolved/attributeContext/ElectronicPaymentSegmentEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "ElectronicPaymentSegmentEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Segment",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "ElectronicPaymentSegmentEntity_Resolved/attributeContext/ElectronicPaymentSegmentEntity_Resolved/Segment",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "ElectronicPaymentSegmentEntity_Resolved/attributeContext/ElectronicPaymentSegmentEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Mandatory",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "ElectronicPaymentSegmentEntity_Resolved/attributeContext/ElectronicPaymentSegmentEntity_Resolved/Mandatory",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Nextsegment",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "ElectronicPaymentSegmentEntity_Resolved/attributeContext/ElectronicPaymentSegmentEntity_Resolved/Nextsegment",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_EPSegmentTable_BRRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Bank/Group/EPSegmentTable_BR.cdm.json/EPSegmentTable_BR",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "ElectronicPaymentSegmentEntity_Resolved/attributeContext/ElectronicPaymentSegmentEntity_Resolved/BackingTable_EPSegmentTable_BRRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "ElectronicPaymentSegmentEntity_Resolved/attributeContext/ElectronicPaymentSegmentEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Segments",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

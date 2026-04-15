@@ -1,0 +1,261 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "AssetAcquisitionMethodEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "AssetAcquisitionMethodEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "AssetAcquisitionMethodEntity_Resolved",
+        "definition": "resolvedFrom/AssetAcquisitionMethodEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "AssetAcquisitionMethodEntity_Resolved/attributeContext/AssetAcquisitionMethodEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "AssetAcquisitionMethodEntity_Resolved/attributeContext/AssetAcquisitionMethodEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "AcquisitionMethod",
+            "parent": "AssetAcquisitionMethodEntity_Resolved/attributeContext/AssetAcquisitionMethodEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetAcquisitionMethodEntity/hasAttributes/AcquisitionMethod",
+            "contents": [
+              "AssetAcquisitionMethodEntity_Resolved/hasAttributes/AcquisitionMethod"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "AssetAcquisitionMethodEntity_Resolved/attributeContext/AssetAcquisitionMethodEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetAcquisitionMethodEntity/hasAttributes/Description",
+            "contents": [
+              "AssetAcquisitionMethodEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_AssetAcquisitionMethodRelationship",
+            "parent": "AssetAcquisitionMethodEntity_Resolved/attributeContext/AssetAcquisitionMethodEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetAcquisitionMethodEntity/hasAttributes/BackingTable_AssetAcquisitionMethodRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "AssetAcquisitionMethod",
+                "parent": "AssetAcquisitionMethodEntity_Resolved/attributeContext/AssetAcquisitionMethodEntity_Resolved/BackingTable_AssetAcquisitionMethodRelationship",
+                "definition": "resolvedFrom/AssetAcquisitionMethod",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "AssetAcquisitionMethodEntity_Resolved/attributeContext/AssetAcquisitionMethodEntity_Resolved/BackingTable_AssetAcquisitionMethodRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "AssetAcquisitionMethodEntity_Resolved/attributeContext/AssetAcquisitionMethodEntity_Resolved/BackingTable_AssetAcquisitionMethodRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "AssetAcquisitionMethodEntity_Resolved/attributeContext/AssetAcquisitionMethodEntity_Resolved/BackingTable_AssetAcquisitionMethodRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "AssetAcquisitionMethodEntity_Resolved/hasAttributes/BackingTable_AssetAcquisitionMethodRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "AssetAcquisitionMethodEntity_Resolved/attributeContext/AssetAcquisitionMethodEntity_Resolved",
+            "definition": "resolvedFrom/AssetAcquisitionMethodEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "AssetAcquisitionMethodEntity_Resolved/attributeContext/AssetAcquisitionMethodEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "AssetAcquisitionMethodEntity_Resolved/attributeContext/AssetAcquisitionMethodEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "AssetAcquisitionMethodEntity_Resolved/attributeContext/AssetAcquisitionMethodEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "AssetAcquisitionMethodEntity_Resolved/attributeContext/AssetAcquisitionMethodEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "AssetAcquisitionMethodEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "AcquisitionMethod",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AssetAcquisitionMethodEntity_Resolved/attributeContext/AssetAcquisitionMethodEntity_Resolved/AcquisitionMethod",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AssetAcquisitionMethodEntity_Resolved/attributeContext/AssetAcquisitionMethodEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_AssetAcquisitionMethodRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/FixedAssets/Main/AssetAcquisitionMethod.cdm.json/AssetAcquisitionMethod",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "AssetAcquisitionMethodEntity_Resolved/attributeContext/AssetAcquisitionMethodEntity_Resolved/BackingTable_AssetAcquisitionMethodRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "AssetAcquisitionMethodEntity_Resolved/attributeContext/AssetAcquisitionMethodEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Fixed asset acquisition method",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

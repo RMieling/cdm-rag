@@ -1,0 +1,281 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "ElectronicPaymentDocumentTypeEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "ElectronicPaymentDocumentTypeEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "ElectronicPaymentDocumentTypeEntity_Resolved",
+        "definition": "resolvedFrom/ElectronicPaymentDocumentTypeEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "ElectronicPaymentDocumentTypeEntity_Resolved/attributeContext/ElectronicPaymentDocumentTypeEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "ElectronicPaymentDocumentTypeEntity_Resolved/attributeContext/ElectronicPaymentDocumentTypeEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "LayoutGroupId",
+            "parent": "ElectronicPaymentDocumentTypeEntity_Resolved/attributeContext/ElectronicPaymentDocumentTypeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/ElectronicPaymentDocumentTypeEntity/hasAttributes/LayoutGroupId",
+            "contents": [
+              "ElectronicPaymentDocumentTypeEntity_Resolved/hasAttributes/LayoutGroupId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DocumentType",
+            "parent": "ElectronicPaymentDocumentTypeEntity_Resolved/attributeContext/ElectronicPaymentDocumentTypeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/ElectronicPaymentDocumentTypeEntity/hasAttributes/DocumentType",
+            "contents": [
+              "ElectronicPaymentDocumentTypeEntity_Resolved/hasAttributes/DocumentType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "ElectronicPaymentDocumentTypeEntity_Resolved/attributeContext/ElectronicPaymentDocumentTypeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/ElectronicPaymentDocumentTypeEntity/hasAttributes/Description",
+            "contents": [
+              "ElectronicPaymentDocumentTypeEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_EPDocumentTypes_BRRelationship",
+            "parent": "ElectronicPaymentDocumentTypeEntity_Resolved/attributeContext/ElectronicPaymentDocumentTypeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/ElectronicPaymentDocumentTypeEntity/hasAttributes/BackingTable_EPDocumentTypes_BRRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "EPDocumentTypes_BR",
+                "parent": "ElectronicPaymentDocumentTypeEntity_Resolved/attributeContext/ElectronicPaymentDocumentTypeEntity_Resolved/BackingTable_EPDocumentTypes_BRRelationship",
+                "definition": "resolvedFrom/EPDocumentTypes_BR",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "ElectronicPaymentDocumentTypeEntity_Resolved/attributeContext/ElectronicPaymentDocumentTypeEntity_Resolved/BackingTable_EPDocumentTypes_BRRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "ElectronicPaymentDocumentTypeEntity_Resolved/attributeContext/ElectronicPaymentDocumentTypeEntity_Resolved/BackingTable_EPDocumentTypes_BRRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "ElectronicPaymentDocumentTypeEntity_Resolved/attributeContext/ElectronicPaymentDocumentTypeEntity_Resolved/BackingTable_EPDocumentTypes_BRRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "ElectronicPaymentDocumentTypeEntity_Resolved/hasAttributes/BackingTable_EPDocumentTypes_BRRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "ElectronicPaymentDocumentTypeEntity_Resolved/attributeContext/ElectronicPaymentDocumentTypeEntity_Resolved",
+            "definition": "resolvedFrom/ElectronicPaymentDocumentTypeEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "ElectronicPaymentDocumentTypeEntity_Resolved/attributeContext/ElectronicPaymentDocumentTypeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "ElectronicPaymentDocumentTypeEntity_Resolved/attributeContext/ElectronicPaymentDocumentTypeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "ElectronicPaymentDocumentTypeEntity_Resolved/attributeContext/ElectronicPaymentDocumentTypeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "ElectronicPaymentDocumentTypeEntity_Resolved/attributeContext/ElectronicPaymentDocumentTypeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "ElectronicPaymentDocumentTypeEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "LayoutGroupId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "ElectronicPaymentDocumentTypeEntity_Resolved/attributeContext/ElectronicPaymentDocumentTypeEntity_Resolved/LayoutGroupId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "DocumentType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "ElectronicPaymentDocumentTypeEntity_Resolved/attributeContext/ElectronicPaymentDocumentTypeEntity_Resolved/DocumentType",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "ElectronicPaymentDocumentTypeEntity_Resolved/attributeContext/ElectronicPaymentDocumentTypeEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_EPDocumentTypes_BRRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Bank/Miscellaneous/EPDocumentTypes_BR.cdm.json/EPDocumentTypes_BR",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "ElectronicPaymentDocumentTypeEntity_Resolved/attributeContext/ElectronicPaymentDocumentTypeEntity_Resolved/BackingTable_EPDocumentTypes_BRRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "ElectronicPaymentDocumentTypeEntity_Resolved/attributeContext/ElectronicPaymentDocumentTypeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Payment document types",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

@@ -1,0 +1,319 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "DimensionCombinationEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "DimensionCombinationEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "DimensionCombinationEntity_Resolved",
+        "definition": "resolvedFrom/DimensionCombinationEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "DimensionCombinationEntity_Resolved/attributeContext/DimensionCombinationEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "DimensionCombinationEntity_Resolved/attributeContext/DimensionCombinationEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DisplayValue",
+            "parent": "DimensionCombinationEntity_Resolved/attributeContext/DimensionCombinationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimensionCombinationEntity/hasAttributes/DisplayValue",
+            "contents": [
+              "DimensionCombinationEntity_Resolved/hasAttributes/DisplayValue"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "AccountStructure",
+            "parent": "DimensionCombinationEntity_Resolved/attributeContext/DimensionCombinationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimensionCombinationEntity/hasAttributes/AccountStructure",
+            "contents": [
+              "DimensionCombinationEntity_Resolved/hasAttributes/AccountStructure"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "RecordId",
+            "parent": "DimensionCombinationEntity_Resolved/attributeContext/DimensionCombinationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimensionCombinationEntity/hasAttributes/RecordId",
+            "contents": [
+              "DimensionCombinationEntity_Resolved/hasAttributes/RecordId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "AccountValue",
+            "parent": "DimensionCombinationEntity_Resolved/attributeContext/DimensionCombinationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimensionCombinationEntity/hasAttributes/AccountValue",
+            "contents": [
+              "DimensionCombinationEntity_Resolved/hasAttributes/AccountValue"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "MainAccount",
+            "parent": "DimensionCombinationEntity_Resolved/attributeContext/DimensionCombinationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimensionCombinationEntity/hasAttributes/MainAccount",
+            "contents": [
+              "DimensionCombinationEntity_Resolved/hasAttributes/MainAccount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_MainAcountRelationship",
+            "parent": "DimensionCombinationEntity_Resolved/attributeContext/DimensionCombinationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimensionCombinationEntity/hasAttributes/Relationship_MainAcountRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "DimAttributeMainAccountEntity",
+                "parent": "DimensionCombinationEntity_Resolved/attributeContext/DimensionCombinationEntity_Resolved/Relationship_MainAcountRelationship",
+                "definition": "resolvedFrom/DimAttributeMainAccountEntity",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "DimensionCombinationEntity_Resolved/attributeContext/DimensionCombinationEntity_Resolved/Relationship_MainAcountRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "DimensionCombinationEntity_Resolved/attributeContext/DimensionCombinationEntity_Resolved/Relationship_MainAcountRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "DimensionCombinationEntity_Resolved/attributeContext/DimensionCombinationEntity_Resolved/Relationship_MainAcountRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "DimensionCombinationEntity_Resolved/hasAttributes/Relationship_MainAcountRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_DimensionAttributeValueCombinationRelationship",
+            "parent": "DimensionCombinationEntity_Resolved/attributeContext/DimensionCombinationEntity_Resolved",
+            "definition": "resolvedFrom/DimensionCombinationEntity/hasAttributes/BackingTable_DimensionAttributeValueCombinationRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "DimensionAttributeValueCombination",
+                "parent": "DimensionCombinationEntity_Resolved/attributeContext/DimensionCombinationEntity_Resolved/BackingTable_DimensionAttributeValueCombinationRelationship",
+                "definition": "resolvedFrom/DimensionAttributeValueCombination",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "DimensionCombinationEntity_Resolved/attributeContext/DimensionCombinationEntity_Resolved/BackingTable_DimensionAttributeValueCombinationRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "DimensionCombinationEntity_Resolved/attributeContext/DimensionCombinationEntity_Resolved/BackingTable_DimensionAttributeValueCombinationRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "DimensionCombinationEntity_Resolved/attributeContext/DimensionCombinationEntity_Resolved/BackingTable_DimensionAttributeValueCombinationRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "DimensionCombinationEntity_Resolved/hasAttributes/BackingTable_DimensionAttributeValueCombinationRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "DisplayValue",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DimensionCombinationEntity_Resolved/attributeContext/DimensionCombinationEntity_Resolved/DisplayValue",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Dimension combination display value"
+        },
+        {
+          "name": "AccountStructure",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DimensionCombinationEntity_Resolved/attributeContext/DimensionCombinationEntity_Resolved/AccountStructure",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "RecordId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DimensionCombinationEntity_Resolved/attributeContext/DimensionCombinationEntity_Resolved/RecordId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "AccountValue",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DimensionCombinationEntity_Resolved/attributeContext/DimensionCombinationEntity_Resolved/AccountValue",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "AccountValue"
+        },
+        {
+          "name": "MainAccount",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DimensionCombinationEntity_Resolved/attributeContext/DimensionCombinationEntity_Resolved/MainAccount",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "MainAccount"
+        },
+        {
+          "name": "Relationship_MainAcountRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": []
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "DimensionCombinationEntity_Resolved/attributeContext/DimensionCombinationEntity_Resolved/Relationship_MainAcountRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "BackingTable_DimensionAttributeValueCombinationRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/FinancialDimensions/Main/DimensionAttributeValueCombination.cdm.json/DimensionAttributeValueCombination",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "DimensionCombinationEntity_Resolved/attributeContext/DimensionCombinationEntity_Resolved/BackingTable_DimensionAttributeValueCombinationRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Dimension code combination",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

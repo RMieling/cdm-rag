@@ -1,0 +1,189 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "BudgetPlanProposedProjectEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "BudgetPlanProposedProjectEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "BudgetPlanProposedProjectEntity_Resolved",
+        "definition": "resolvedFrom/BudgetPlanProposedProjectEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "BudgetPlanProposedProjectEntity_Resolved/attributeContext/BudgetPlanProposedProjectEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "BudgetPlanProposedProjectEntity_Resolved/attributeContext/BudgetPlanProposedProjectEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "BudgetPlanProposedProjectEntity_Resolved/attributeContext/BudgetPlanProposedProjectEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetPlanProposedProjectEntity/hasAttributes/Description",
+            "contents": [
+              "BudgetPlanProposedProjectEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "BudgetPlanProposedProjectEntity_Resolved/attributeContext/BudgetPlanProposedProjectEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetPlanProposedProjectEntity/hasAttributes/Name",
+            "contents": [
+              "BudgetPlanProposedProjectEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_BudgetPlanProposedProjectRelationship",
+            "parent": "BudgetPlanProposedProjectEntity_Resolved/attributeContext/BudgetPlanProposedProjectEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetPlanProposedProjectEntity/hasAttributes/BackingTable_BudgetPlanProposedProjectRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "BudgetPlanProposedProject",
+                "parent": "BudgetPlanProposedProjectEntity_Resolved/attributeContext/BudgetPlanProposedProjectEntity_Resolved/BackingTable_BudgetPlanProposedProjectRelationship",
+                "definition": "resolvedFrom/BudgetPlanProposedProject",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "BudgetPlanProposedProjectEntity_Resolved/attributeContext/BudgetPlanProposedProjectEntity_Resolved/BackingTable_BudgetPlanProposedProjectRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "BudgetPlanProposedProjectEntity_Resolved/attributeContext/BudgetPlanProposedProjectEntity_Resolved/BackingTable_BudgetPlanProposedProjectRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "BudgetPlanProposedProjectEntity_Resolved/attributeContext/BudgetPlanProposedProjectEntity_Resolved/BackingTable_BudgetPlanProposedProjectRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "BudgetPlanProposedProjectEntity_Resolved/hasAttributes/BackingTable_BudgetPlanProposedProjectRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetPlanProposedProjectEntity_Resolved/attributeContext/BudgetPlanProposedProjectEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetPlanProposedProjectEntity_Resolved/attributeContext/BudgetPlanProposedProjectEntity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Proposed project"
+        },
+        {
+          "name": "BackingTable_BudgetPlanProposedProjectRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Budget/Group/BudgetPlanProposedProject.cdm.json/BudgetPlanProposedProject",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "BudgetPlanProposedProjectEntity_Resolved/attributeContext/BudgetPlanProposedProjectEntity_Resolved/BackingTable_BudgetPlanProposedProjectRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Budget plan proposed project",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

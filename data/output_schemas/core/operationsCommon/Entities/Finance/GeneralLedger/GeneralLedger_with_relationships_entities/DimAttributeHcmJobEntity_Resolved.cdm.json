@@ -1,0 +1,115 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "DimAttributeHcmJobEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "DimAttributeHcmJobEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "DimAttributeHcmJobEntity_Resolved",
+        "definition": "resolvedFrom/DimAttributeHcmJobEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "DimAttributeHcmJobEntity_Resolved/attributeContext/DimAttributeHcmJobEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "DimAttributeHcmJobEntity_Resolved/attributeContext/DimAttributeHcmJobEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Value",
+            "parent": "DimAttributeHcmJobEntity_Resolved/attributeContext/DimAttributeHcmJobEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimAttributeHcmJobEntity/hasAttributes/Value",
+            "contents": [
+              "DimAttributeHcmJobEntity_Resolved/hasAttributes/Value"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "DimAttributeHcmJobEntity_Resolved/attributeContext/DimAttributeHcmJobEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimAttributeHcmJobEntity/hasAttributes/Name",
+            "contents": [
+              "DimAttributeHcmJobEntity_Resolved/hasAttributes/Name"
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Value",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DimAttributeHcmJobEntity_Resolved/attributeContext/DimAttributeHcmJobEntity_Resolved/Value",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DimAttributeHcmJobEntity_Resolved/attributeContext/DimAttributeHcmJobEntity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        }
+      ],
+      "displayName": "Jobs",
+      "version": "1.0.1"
+    }
+  ],
+  "documentVersion": "1.0.1"
+}

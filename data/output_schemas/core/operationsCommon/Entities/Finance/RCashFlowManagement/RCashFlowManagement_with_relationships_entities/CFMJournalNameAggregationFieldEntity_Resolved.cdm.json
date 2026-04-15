@@ -1,0 +1,300 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "CFMJournalNameAggregationFieldEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "CFMJournalNameAggregationFieldEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "CFMJournalNameAggregationFieldEntity_Resolved",
+        "definition": "resolvedFrom/CFMJournalNameAggregationFieldEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "CFMJournalNameAggregationFieldEntity_Resolved/attributeContext/CFMJournalNameAggregationFieldEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "CFMJournalNameAggregationFieldEntity_Resolved/attributeContext/CFMJournalNameAggregationFieldEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "CFMJournalNameAggregationFieldEntity_Resolved/attributeContext/CFMJournalNameAggregationFieldEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CFMJournalNameAggregationFieldEntity/hasAttributes/Name",
+            "contents": [
+              "CFMJournalNameAggregationFieldEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Dimension",
+            "parent": "CFMJournalNameAggregationFieldEntity_Resolved/attributeContext/CFMJournalNameAggregationFieldEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CFMJournalNameAggregationFieldEntity/hasAttributes/Dimension",
+            "contents": [
+              "CFMJournalNameAggregationFieldEntity_Resolved/hasAttributes/Dimension"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DimensionAttributeName",
+            "parent": "CFMJournalNameAggregationFieldEntity_Resolved/attributeContext/CFMJournalNameAggregationFieldEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CFMJournalNameAggregationFieldEntity/hasAttributes/DimensionAttributeName",
+            "contents": [
+              "CFMJournalNameAggregationFieldEntity_Resolved/hasAttributes/DimensionAttributeName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DimensionAttribute",
+            "parent": "CFMJournalNameAggregationFieldEntity_Resolved/attributeContext/CFMJournalNameAggregationFieldEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CFMJournalNameAggregationFieldEntity/hasAttributes/DimensionAttribute",
+            "contents": [
+              "CFMJournalNameAggregationFieldEntity_Resolved/hasAttributes/DimensionAttribute"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_CFMJournalAggregationFieldRelationship",
+            "parent": "CFMJournalNameAggregationFieldEntity_Resolved/attributeContext/CFMJournalNameAggregationFieldEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CFMJournalNameAggregationFieldEntity/hasAttributes/BackingTable_CFMJournalAggregationFieldRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CFMJournalAggregationField",
+                "parent": "CFMJournalNameAggregationFieldEntity_Resolved/attributeContext/CFMJournalNameAggregationFieldEntity_Resolved/BackingTable_CFMJournalAggregationFieldRelationship",
+                "definition": "resolvedFrom/CFMJournalAggregationField",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CFMJournalNameAggregationFieldEntity_Resolved/attributeContext/CFMJournalNameAggregationFieldEntity_Resolved/BackingTable_CFMJournalAggregationFieldRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CFMJournalNameAggregationFieldEntity_Resolved/attributeContext/CFMJournalNameAggregationFieldEntity_Resolved/BackingTable_CFMJournalAggregationFieldRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CFMJournalNameAggregationFieldEntity_Resolved/attributeContext/CFMJournalNameAggregationFieldEntity_Resolved/BackingTable_CFMJournalAggregationFieldRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CFMJournalNameAggregationFieldEntity_Resolved/hasAttributes/BackingTable_CFMJournalAggregationFieldRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "CFMJournalNameAggregationFieldEntity_Resolved/attributeContext/CFMJournalNameAggregationFieldEntity_Resolved",
+            "definition": "resolvedFrom/CFMJournalNameAggregationFieldEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "CFMJournalNameAggregationFieldEntity_Resolved/attributeContext/CFMJournalNameAggregationFieldEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CFMJournalNameAggregationFieldEntity_Resolved/attributeContext/CFMJournalNameAggregationFieldEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CFMJournalNameAggregationFieldEntity_Resolved/attributeContext/CFMJournalNameAggregationFieldEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CFMJournalNameAggregationFieldEntity_Resolved/attributeContext/CFMJournalNameAggregationFieldEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CFMJournalNameAggregationFieldEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CFMJournalNameAggregationFieldEntity_Resolved/attributeContext/CFMJournalNameAggregationFieldEntity_Resolved/Name",
+          "dataFormat": "String"
+        },
+        {
+          "name": "Dimension",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CFMJournalNameAggregationFieldEntity_Resolved/attributeContext/CFMJournalNameAggregationFieldEntity_Resolved/Dimension",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "DimensionAttributeName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CFMJournalNameAggregationFieldEntity_Resolved/attributeContext/CFMJournalNameAggregationFieldEntity_Resolved/DimensionAttributeName",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "DimensionAttribute",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CFMJournalNameAggregationFieldEntity_Resolved/attributeContext/CFMJournalNameAggregationFieldEntity_Resolved/DimensionAttribute",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_CFMJournalAggregationFieldRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/RCashFlowManagement/Miscellaneous/CFMJournalAggregationField.cdm.json/CFMJournalAggregationField",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CFMJournalNameAggregationFieldEntity_Resolved/attributeContext/CFMJournalNameAggregationFieldEntity_Resolved/BackingTable_CFMJournalAggregationFieldRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CFMJournalNameAggregationFieldEntity_Resolved/attributeContext/CFMJournalNameAggregationFieldEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Aggregation parameters of payment schedule journals",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

@@ -1,0 +1,341 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "CashAccountsEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "CashAccountsEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "CashAccountsEntity_Resolved",
+        "definition": "resolvedFrom/CashAccountsEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "CashAccountsEntity_Resolved/attributeContext/CashAccountsEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "CashAccountsEntity_Resolved/attributeContext/CashAccountsEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Cash",
+            "parent": "CashAccountsEntity_Resolved/attributeContext/CashAccountsEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CashAccountsEntity/hasAttributes/Cash",
+            "contents": [
+              "CashAccountsEntity_Resolved/hasAttributes/Cash"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Currency",
+            "parent": "CashAccountsEntity_Resolved/attributeContext/CashAccountsEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CashAccountsEntity/hasAttributes/Currency",
+            "contents": [
+              "CashAccountsEntity_Resolved/hasAttributes/Currency"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "MoreCurrencies",
+            "parent": "CashAccountsEntity_Resolved/attributeContext/CashAccountsEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CashAccountsEntity/hasAttributes/MoreCurrencies",
+            "contents": [
+              "CashAccountsEntity_Resolved/hasAttributes/MoreCurrencies"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "CashAccountsEntity_Resolved/attributeContext/CashAccountsEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CashAccountsEntity/hasAttributes/Name",
+            "contents": [
+              "CashAccountsEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "NegativeCash",
+            "parent": "CashAccountsEntity_Resolved/attributeContext/CashAccountsEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CashAccountsEntity/hasAttributes/NegativeCash",
+            "contents": [
+              "CashAccountsEntity_Resolved/hasAttributes/NegativeCash"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "NumberSequenceGroup",
+            "parent": "CashAccountsEntity_Resolved/attributeContext/CashAccountsEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CashAccountsEntity/hasAttributes/NumberSequenceGroup",
+            "contents": [
+              "CashAccountsEntity_Resolved/hasAttributes/NumberSequenceGroup"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_RCashTableRelationship",
+            "parent": "CashAccountsEntity_Resolved/attributeContext/CashAccountsEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CashAccountsEntity/hasAttributes/BackingTable_RCashTableRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "RCashTable",
+                "parent": "CashAccountsEntity_Resolved/attributeContext/CashAccountsEntity_Resolved/BackingTable_RCashTableRelationship",
+                "definition": "resolvedFrom/RCashTable",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CashAccountsEntity_Resolved/attributeContext/CashAccountsEntity_Resolved/BackingTable_RCashTableRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CashAccountsEntity_Resolved/attributeContext/CashAccountsEntity_Resolved/BackingTable_RCashTableRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CashAccountsEntity_Resolved/attributeContext/CashAccountsEntity_Resolved/BackingTable_RCashTableRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CashAccountsEntity_Resolved/hasAttributes/BackingTable_RCashTableRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "CashAccountsEntity_Resolved/attributeContext/CashAccountsEntity_Resolved",
+            "definition": "resolvedFrom/CashAccountsEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "CashAccountsEntity_Resolved/attributeContext/CashAccountsEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CashAccountsEntity_Resolved/attributeContext/CashAccountsEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CashAccountsEntity_Resolved/attributeContext/CashAccountsEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CashAccountsEntity_Resolved/attributeContext/CashAccountsEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CashAccountsEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Cash",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CashAccountsEntity_Resolved/attributeContext/CashAccountsEntity_Resolved/Cash",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Currency",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CashAccountsEntity_Resolved/attributeContext/CashAccountsEntity_Resolved/Currency",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "MoreCurrencies",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CashAccountsEntity_Resolved/attributeContext/CashAccountsEntity_Resolved/MoreCurrencies",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CashAccountsEntity_Resolved/attributeContext/CashAccountsEntity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "NegativeCash",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CashAccountsEntity_Resolved/attributeContext/CashAccountsEntity_Resolved/NegativeCash",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "NumberSequenceGroup",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CashAccountsEntity_Resolved/attributeContext/CashAccountsEntity_Resolved/NumberSequenceGroup",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_RCashTableRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/RCash/Main/RCashTable.cdm.json/RCashTable",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CashAccountsEntity_Resolved/attributeContext/CashAccountsEntity_Resolved/BackingTable_RCashTableRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CashAccountsEntity_Resolved/attributeContext/CashAccountsEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Cash accounts",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

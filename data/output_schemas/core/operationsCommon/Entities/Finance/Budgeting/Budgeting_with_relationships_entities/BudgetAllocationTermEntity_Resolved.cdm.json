@@ -1,0 +1,410 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "BudgetAllocationTermEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "BudgetAllocationTermEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "BudgetAllocationTermEntity_Resolved",
+        "definition": "resolvedFrom/BudgetAllocationTermEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "BudgetAllocationTermEntity_Resolved/attributeContext/BudgetAllocationTermEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "BudgetAllocationTermEntity_Resolved/attributeContext/BudgetAllocationTermEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DefaultDimension",
+            "parent": "BudgetAllocationTermEntity_Resolved/attributeContext/BudgetAllocationTermEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetAllocationTermEntity/hasAttributes/DefaultDimension",
+            "contents": [
+              "BudgetAllocationTermEntity_Resolved/hasAttributes/DefaultDimension"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "LineNumber",
+            "parent": "BudgetAllocationTermEntity_Resolved/attributeContext/BudgetAllocationTermEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetAllocationTermEntity/hasAttributes/LineNumber",
+            "contents": [
+              "BudgetAllocationTermEntity_Resolved/hasAttributes/LineNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Percent",
+            "parent": "BudgetAllocationTermEntity_Resolved/attributeContext/BudgetAllocationTermEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetAllocationTermEntity/hasAttributes/Percent",
+            "contents": [
+              "BudgetAllocationTermEntity_Resolved/hasAttributes/Percent"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BudgetAllocationTerm",
+            "parent": "BudgetAllocationTermEntity_Resolved/attributeContext/BudgetAllocationTermEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetAllocationTermEntity/hasAttributes/BudgetAllocationTerm",
+            "contents": [
+              "BudgetAllocationTermEntity_Resolved/hasAttributes/BudgetAllocationTerm"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DefaultDimensionDisplayValue",
+            "parent": "BudgetAllocationTermEntity_Resolved/attributeContext/BudgetAllocationTermEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetAllocationTermEntity/hasAttributes/DefaultDimensionDisplayValue",
+            "contents": [
+              "BudgetAllocationTermEntity_Resolved/hasAttributes/DefaultDimensionDisplayValue"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "BudgetAllocationTermEntity_Resolved/attributeContext/BudgetAllocationTermEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetAllocationTermEntity/hasAttributes/Description",
+            "contents": [
+              "BudgetAllocationTermEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_DefaultDimensionDAVSRelationship",
+            "parent": "BudgetAllocationTermEntity_Resolved/attributeContext/BudgetAllocationTermEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetAllocationTermEntity/hasAttributes/Relationship_DefaultDimensionDAVSRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "DimensionSetEntity",
+                "parent": "BudgetAllocationTermEntity_Resolved/attributeContext/BudgetAllocationTermEntity_Resolved/Relationship_DefaultDimensionDAVSRelationship",
+                "definition": "resolvedFrom/DimensionSetEntity",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "BudgetAllocationTermEntity_Resolved/attributeContext/BudgetAllocationTermEntity_Resolved/Relationship_DefaultDimensionDAVSRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "BudgetAllocationTermEntity_Resolved/attributeContext/BudgetAllocationTermEntity_Resolved/Relationship_DefaultDimensionDAVSRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "BudgetAllocationTermEntity_Resolved/attributeContext/BudgetAllocationTermEntity_Resolved/Relationship_DefaultDimensionDAVSRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "BudgetAllocationTermEntity_Resolved/hasAttributes/Relationship_DefaultDimensionDAVSRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_BudgetAllocationTermRelationship",
+            "parent": "BudgetAllocationTermEntity_Resolved/attributeContext/BudgetAllocationTermEntity_Resolved",
+            "definition": "resolvedFrom/BudgetAllocationTermEntity/hasAttributes/BackingTable_BudgetAllocationTermRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "BudgetAllocationTerm",
+                "parent": "BudgetAllocationTermEntity_Resolved/attributeContext/BudgetAllocationTermEntity_Resolved/BackingTable_BudgetAllocationTermRelationship",
+                "definition": "resolvedFrom/BudgetAllocationTerm",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "BudgetAllocationTermEntity_Resolved/attributeContext/BudgetAllocationTermEntity_Resolved/BackingTable_BudgetAllocationTermRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "BudgetAllocationTermEntity_Resolved/attributeContext/BudgetAllocationTermEntity_Resolved/BackingTable_BudgetAllocationTermRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "BudgetAllocationTermEntity_Resolved/attributeContext/BudgetAllocationTermEntity_Resolved/BackingTable_BudgetAllocationTermRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "BudgetAllocationTermEntity_Resolved/hasAttributes/BackingTable_BudgetAllocationTermRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "BudgetAllocationTermEntity_Resolved/attributeContext/BudgetAllocationTermEntity_Resolved",
+            "definition": "resolvedFrom/BudgetAllocationTermEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "BudgetAllocationTermEntity_Resolved/attributeContext/BudgetAllocationTermEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "BudgetAllocationTermEntity_Resolved/attributeContext/BudgetAllocationTermEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "BudgetAllocationTermEntity_Resolved/attributeContext/BudgetAllocationTermEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "BudgetAllocationTermEntity_Resolved/attributeContext/BudgetAllocationTermEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "BudgetAllocationTermEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "DefaultDimension",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetAllocationTermEntity_Resolved/attributeContext/BudgetAllocationTermEntity_Resolved/DefaultDimension",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "LineNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetAllocationTermEntity_Resolved/attributeContext/BudgetAllocationTermEntity_Resolved/LineNumber",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Percent",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetAllocationTermEntity_Resolved/attributeContext/BudgetAllocationTermEntity_Resolved/Percent",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BudgetAllocationTerm",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetAllocationTermEntity_Resolved/attributeContext/BudgetAllocationTermEntity_Resolved/BudgetAllocationTerm",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "DefaultDimensionDisplayValue",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetAllocationTermEntity_Resolved/attributeContext/BudgetAllocationTermEntity_Resolved/DefaultDimensionDisplayValue",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Default dimension display value"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetAllocationTermEntity_Resolved/attributeContext/BudgetAllocationTermEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Relationship_DefaultDimensionDAVSRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": []
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "BudgetAllocationTermEntity_Resolved/attributeContext/BudgetAllocationTermEntity_Resolved/Relationship_DefaultDimensionDAVSRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "BackingTable_BudgetAllocationTermRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Budget/Group/BudgetAllocationTerm.cdm.json/BudgetAllocationTerm",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "BudgetAllocationTermEntity_Resolved/attributeContext/BudgetAllocationTermEntity_Resolved/BackingTable_BudgetAllocationTermRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "BudgetAllocationTermEntity_Resolved/attributeContext/BudgetAllocationTermEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Budget allocation term",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

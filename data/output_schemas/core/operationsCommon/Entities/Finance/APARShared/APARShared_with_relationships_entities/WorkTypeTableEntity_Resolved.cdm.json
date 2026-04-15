@@ -1,0 +1,261 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "WorkTypeTableEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "WorkTypeTableEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "WorkTypeTableEntity_Resolved",
+        "definition": "resolvedFrom/WorkTypeTableEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "WorkTypeTableEntity_Resolved/attributeContext/WorkTypeTableEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "WorkTypeTableEntity_Resolved/attributeContext/WorkTypeTableEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "TypeOfWorks",
+            "parent": "WorkTypeTableEntity_Resolved/attributeContext/WorkTypeTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/WorkTypeTableEntity/hasAttributes/TypeOfWorks",
+            "contents": [
+              "WorkTypeTableEntity_Resolved/hasAttributes/TypeOfWorks"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "WorkTypeTableEntity_Resolved/attributeContext/WorkTypeTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/WorkTypeTableEntity/hasAttributes/Name",
+            "contents": [
+              "WorkTypeTableEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_WorkTypeTable_WRelationship",
+            "parent": "WorkTypeTableEntity_Resolved/attributeContext/WorkTypeTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/WorkTypeTableEntity/hasAttributes/BackingTable_WorkTypeTable_WRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "WorkTypeTable_W",
+                "parent": "WorkTypeTableEntity_Resolved/attributeContext/WorkTypeTableEntity_Resolved/BackingTable_WorkTypeTable_WRelationship",
+                "definition": "resolvedFrom/WorkTypeTable_W",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "WorkTypeTableEntity_Resolved/attributeContext/WorkTypeTableEntity_Resolved/BackingTable_WorkTypeTable_WRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "WorkTypeTableEntity_Resolved/attributeContext/WorkTypeTableEntity_Resolved/BackingTable_WorkTypeTable_WRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "WorkTypeTableEntity_Resolved/attributeContext/WorkTypeTableEntity_Resolved/BackingTable_WorkTypeTable_WRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "WorkTypeTableEntity_Resolved/hasAttributes/BackingTable_WorkTypeTable_WRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "WorkTypeTableEntity_Resolved/attributeContext/WorkTypeTableEntity_Resolved",
+            "definition": "resolvedFrom/WorkTypeTableEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "WorkTypeTableEntity_Resolved/attributeContext/WorkTypeTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "WorkTypeTableEntity_Resolved/attributeContext/WorkTypeTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "WorkTypeTableEntity_Resolved/attributeContext/WorkTypeTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "WorkTypeTableEntity_Resolved/attributeContext/WorkTypeTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "WorkTypeTableEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "TypeOfWorks",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "WorkTypeTableEntity_Resolved/attributeContext/WorkTypeTableEntity_Resolved/TypeOfWorks",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "WorkTypeTableEntity_Resolved/attributeContext/WorkTypeTableEntity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_WorkTypeTable_WRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/APARShared/Main/WorkTypeTable_W.cdm.json/WorkTypeTable_W",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "WorkTypeTableEntity_Resolved/attributeContext/WorkTypeTableEntity_Resolved/BackingTable_WorkTypeTable_WRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "WorkTypeTableEntity_Resolved/attributeContext/WorkTypeTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Types of works",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

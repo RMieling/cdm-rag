@@ -1,0 +1,261 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "CustCollectionLetterCourseCdsEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "CustCollectionLetterCourseCdsEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "CustCollectionLetterCourseCdsEntity_Resolved",
+        "definition": "resolvedFrom/CustCollectionLetterCourseCdsEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "CustCollectionLetterCourseCdsEntity_Resolved/attributeContext/CustCollectionLetterCourseCdsEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "CustCollectionLetterCourseCdsEntity_Resolved/attributeContext/CustCollectionLetterCourseCdsEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CollectionLetterCourse",
+            "parent": "CustCollectionLetterCourseCdsEntity_Resolved/attributeContext/CustCollectionLetterCourseCdsEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCollectionLetterCourseCdsEntity/hasAttributes/CollectionLetterCourse",
+            "contents": [
+              "CustCollectionLetterCourseCdsEntity_Resolved/hasAttributes/CollectionLetterCourse"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "CustCollectionLetterCourseCdsEntity_Resolved/attributeContext/CustCollectionLetterCourseCdsEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCollectionLetterCourseCdsEntity/hasAttributes/Description",
+            "contents": [
+              "CustCollectionLetterCourseCdsEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_CustCollectionLetterTableRelationship",
+            "parent": "CustCollectionLetterCourseCdsEntity_Resolved/attributeContext/CustCollectionLetterCourseCdsEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCollectionLetterCourseCdsEntity/hasAttributes/BackingTable_CustCollectionLetterTableRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CustCollectionLetterTable",
+                "parent": "CustCollectionLetterCourseCdsEntity_Resolved/attributeContext/CustCollectionLetterCourseCdsEntity_Resolved/BackingTable_CustCollectionLetterTableRelationship",
+                "definition": "resolvedFrom/CustCollectionLetterTable",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CustCollectionLetterCourseCdsEntity_Resolved/attributeContext/CustCollectionLetterCourseCdsEntity_Resolved/BackingTable_CustCollectionLetterTableRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CustCollectionLetterCourseCdsEntity_Resolved/attributeContext/CustCollectionLetterCourseCdsEntity_Resolved/BackingTable_CustCollectionLetterTableRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CustCollectionLetterCourseCdsEntity_Resolved/attributeContext/CustCollectionLetterCourseCdsEntity_Resolved/BackingTable_CustCollectionLetterTableRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CustCollectionLetterCourseCdsEntity_Resolved/hasAttributes/BackingTable_CustCollectionLetterTableRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "CustCollectionLetterCourseCdsEntity_Resolved/attributeContext/CustCollectionLetterCourseCdsEntity_Resolved",
+            "definition": "resolvedFrom/CustCollectionLetterCourseCdsEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "CustCollectionLetterCourseCdsEntity_Resolved/attributeContext/CustCollectionLetterCourseCdsEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CustCollectionLetterCourseCdsEntity_Resolved/attributeContext/CustCollectionLetterCourseCdsEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CustCollectionLetterCourseCdsEntity_Resolved/attributeContext/CustCollectionLetterCourseCdsEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CustCollectionLetterCourseCdsEntity_Resolved/attributeContext/CustCollectionLetterCourseCdsEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CustCollectionLetterCourseCdsEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "CollectionLetterCourse",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustCollectionLetterCourseCdsEntity_Resolved/attributeContext/CustCollectionLetterCourseCdsEntity_Resolved/CollectionLetterCourse",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustCollectionLetterCourseCdsEntity_Resolved/attributeContext/CustCollectionLetterCourseCdsEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_CustCollectionLetterTableRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/AccountsReceivable/Group/CustCollectionLetterTable.cdm.json/CustCollectionLetterTable",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CustCollectionLetterCourseCdsEntity_Resolved/attributeContext/CustCollectionLetterCourseCdsEntity_Resolved/BackingTable_CustCollectionLetterTableRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CustCollectionLetterCourseCdsEntity_Resolved/attributeContext/CustCollectionLetterCourseCdsEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Customer collection letter setup for CDS integration.",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

@@ -1,0 +1,229 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "FiscalOrganizationRelatedSCPEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "FiscalOrganizationRelatedSCPEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "FiscalOrganizationRelatedSCPEntity_Resolved",
+        "definition": "resolvedFrom/FiscalOrganizationRelatedSCPEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "FiscalOrganizationRelatedSCPEntity_Resolved/attributeContext/FiscalOrganizationRelatedSCPEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "FiscalOrganizationRelatedSCPEntity_Resolved/attributeContext/FiscalOrganizationRelatedSCPEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "RootFiscalEstablishmentDataArea",
+            "parent": "FiscalOrganizationRelatedSCPEntity_Resolved/attributeContext/FiscalOrganizationRelatedSCPEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/FiscalOrganizationRelatedSCPEntity/hasAttributes/RootFiscalEstablishmentDataArea",
+            "contents": [
+              "FiscalOrganizationRelatedSCPEntity_Resolved/hasAttributes/RootFiscalEstablishmentDataArea"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "RootFiscalEstablishment",
+            "parent": "FiscalOrganizationRelatedSCPEntity_Resolved/attributeContext/FiscalOrganizationRelatedSCPEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/FiscalOrganizationRelatedSCPEntity/hasAttributes/RootFiscalEstablishment",
+            "contents": [
+              "FiscalOrganizationRelatedSCPEntity_Resolved/hasAttributes/RootFiscalEstablishment"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Code",
+            "parent": "FiscalOrganizationRelatedSCPEntity_Resolved/attributeContext/FiscalOrganizationRelatedSCPEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/FiscalOrganizationRelatedSCPEntity/hasAttributes/Code",
+            "contents": [
+              "FiscalOrganizationRelatedSCPEntity_Resolved/hasAttributes/Code"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "FiscalOrganizationRelatedSCPEntity_Resolved/attributeContext/FiscalOrganizationRelatedSCPEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/FiscalOrganizationRelatedSCPEntity/hasAttributes/Name",
+            "contents": [
+              "FiscalOrganizationRelatedSCPEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_FBRelatedSCP_BRRelationship",
+            "parent": "FiscalOrganizationRelatedSCPEntity_Resolved/attributeContext/FiscalOrganizationRelatedSCPEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/FiscalOrganizationRelatedSCPEntity/hasAttributes/BackingTable_FBRelatedSCP_BRRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "FBRelatedSCP_BR",
+                "parent": "FiscalOrganizationRelatedSCPEntity_Resolved/attributeContext/FiscalOrganizationRelatedSCPEntity_Resolved/BackingTable_FBRelatedSCP_BRRelationship",
+                "definition": "resolvedFrom/FBRelatedSCP_BR",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "FiscalOrganizationRelatedSCPEntity_Resolved/attributeContext/FiscalOrganizationRelatedSCPEntity_Resolved/BackingTable_FBRelatedSCP_BRRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "FiscalOrganizationRelatedSCPEntity_Resolved/attributeContext/FiscalOrganizationRelatedSCPEntity_Resolved/BackingTable_FBRelatedSCP_BRRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "FiscalOrganizationRelatedSCPEntity_Resolved/attributeContext/FiscalOrganizationRelatedSCPEntity_Resolved/BackingTable_FBRelatedSCP_BRRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "FiscalOrganizationRelatedSCPEntity_Resolved/hasAttributes/BackingTable_FBRelatedSCP_BRRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "RootFiscalEstablishmentDataArea",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "FiscalOrganizationRelatedSCPEntity_Resolved/attributeContext/FiscalOrganizationRelatedSCPEntity_Resolved/RootFiscalEstablishmentDataArea",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Root company"
+        },
+        {
+          "name": "RootFiscalEstablishment",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "FiscalOrganizationRelatedSCPEntity_Resolved/attributeContext/FiscalOrganizationRelatedSCPEntity_Resolved/RootFiscalEstablishment",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Code",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "FiscalOrganizationRelatedSCPEntity_Resolved/attributeContext/FiscalOrganizationRelatedSCPEntity_Resolved/Code",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "FiscalOrganizationRelatedSCPEntity_Resolved/attributeContext/FiscalOrganizationRelatedSCPEntity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_FBRelatedSCP_BRRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/FiscalBooksBrazil/Main/FBRelatedSCP_BR.cdm.json/FBRelatedSCP_BR",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "FiscalOrganizationRelatedSCPEntity_Resolved/attributeContext/FiscalOrganizationRelatedSCPEntity_Resolved/BackingTable_FBRelatedSCP_BRRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Related SCP entity",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

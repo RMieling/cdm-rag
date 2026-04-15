@@ -1,0 +1,301 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "BankCodaAccountTableEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "BankCodaAccountTableEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "BankCodaAccountTableEntity_Resolved",
+        "definition": "resolvedFrom/BankCodaAccountTableEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "BankCodaAccountTableEntity_Resolved/attributeContext/BankCodaAccountTableEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "BankCodaAccountTableEntity_Resolved/attributeContext/BankCodaAccountTableEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "AccountID",
+            "parent": "BankCodaAccountTableEntity_Resolved/attributeContext/BankCodaAccountTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BankCodaAccountTableEntity/hasAttributes/AccountID",
+            "contents": [
+              "BankCodaAccountTableEntity_Resolved/hasAttributes/AccountID"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CodaJournalName",
+            "parent": "BankCodaAccountTableEntity_Resolved/attributeContext/BankCodaAccountTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BankCodaAccountTableEntity/hasAttributes/CodaJournalName",
+            "contents": [
+              "BankCodaAccountTableEntity_Resolved/hasAttributes/CodaJournalName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CodaProtocol",
+            "parent": "BankCodaAccountTableEntity_Resolved/attributeContext/BankCodaAccountTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BankCodaAccountTableEntity/hasAttributes/CodaProtocol",
+            "contents": [
+              "BankCodaAccountTableEntity_Resolved/hasAttributes/CodaProtocol"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CodaVersion",
+            "parent": "BankCodaAccountTableEntity_Resolved/attributeContext/BankCodaAccountTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BankCodaAccountTableEntity/hasAttributes/CodaVersion",
+            "contents": [
+              "BankCodaAccountTableEntity_Resolved/hasAttributes/CodaVersion"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_BankCodaAccountTableRelationship",
+            "parent": "BankCodaAccountTableEntity_Resolved/attributeContext/BankCodaAccountTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BankCodaAccountTableEntity/hasAttributes/BackingTable_BankCodaAccountTableRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "BankCodaAccountTable",
+                "parent": "BankCodaAccountTableEntity_Resolved/attributeContext/BankCodaAccountTableEntity_Resolved/BackingTable_BankCodaAccountTableRelationship",
+                "definition": "resolvedFrom/BankCodaAccountTable",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "BankCodaAccountTableEntity_Resolved/attributeContext/BankCodaAccountTableEntity_Resolved/BackingTable_BankCodaAccountTableRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "BankCodaAccountTableEntity_Resolved/attributeContext/BankCodaAccountTableEntity_Resolved/BackingTable_BankCodaAccountTableRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "BankCodaAccountTableEntity_Resolved/attributeContext/BankCodaAccountTableEntity_Resolved/BackingTable_BankCodaAccountTableRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "BankCodaAccountTableEntity_Resolved/hasAttributes/BackingTable_BankCodaAccountTableRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "BankCodaAccountTableEntity_Resolved/attributeContext/BankCodaAccountTableEntity_Resolved",
+            "definition": "resolvedFrom/BankCodaAccountTableEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "BankCodaAccountTableEntity_Resolved/attributeContext/BankCodaAccountTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "BankCodaAccountTableEntity_Resolved/attributeContext/BankCodaAccountTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "BankCodaAccountTableEntity_Resolved/attributeContext/BankCodaAccountTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "BankCodaAccountTableEntity_Resolved/attributeContext/BankCodaAccountTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "BankCodaAccountTableEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "AccountID",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BankCodaAccountTableEntity_Resolved/attributeContext/BankCodaAccountTableEntity_Resolved/AccountID",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "CodaJournalName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BankCodaAccountTableEntity_Resolved/attributeContext/BankCodaAccountTableEntity_Resolved/CodaJournalName",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "CodaProtocol",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BankCodaAccountTableEntity_Resolved/attributeContext/BankCodaAccountTableEntity_Resolved/CodaProtocol",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "CodaVersion",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BankCodaAccountTableEntity_Resolved/attributeContext/BankCodaAccountTableEntity_Resolved/CodaVersion",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_BankCodaAccountTableRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Bank/Group/BankCodaAccountTable.cdm.json/BankCodaAccountTable",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "BankCodaAccountTableEntity_Resolved/attributeContext/BankCodaAccountTableEntity_Resolved/BackingTable_BankCodaAccountTableRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "BankCodaAccountTableEntity_Resolved/attributeContext/BankCodaAccountTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "CODA - bank accounts",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

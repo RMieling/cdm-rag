@@ -1,0 +1,301 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "CustomerPaymentFormatEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "CustomerPaymentFormatEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "CustomerPaymentFormatEntity_Resolved",
+        "definition": "resolvedFrom/CustomerPaymentFormatEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "CustomerPaymentFormatEntity_Resolved/attributeContext/CustomerPaymentFormatEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "CustomerPaymentFormatEntity_Resolved/attributeContext/CustomerPaymentFormatEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Type",
+            "parent": "CustomerPaymentFormatEntity_Resolved/attributeContext/CustomerPaymentFormatEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustomerPaymentFormatEntity/hasAttributes/Type",
+            "contents": [
+              "CustomerPaymentFormatEntity_Resolved/hasAttributes/Type"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ClassId",
+            "parent": "CustomerPaymentFormatEntity_Resolved/attributeContext/CustomerPaymentFormatEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustomerPaymentFormatEntity/hasAttributes/ClassId",
+            "contents": [
+              "CustomerPaymentFormatEntity_Resolved/hasAttributes/ClassId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ClassName",
+            "parent": "CustomerPaymentFormatEntity_Resolved/attributeContext/CustomerPaymentFormatEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustomerPaymentFormatEntity/hasAttributes/ClassName",
+            "contents": [
+              "CustomerPaymentFormatEntity_Resolved/hasAttributes/ClassName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "CustomerPaymentFormatEntity_Resolved/attributeContext/CustomerPaymentFormatEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustomerPaymentFormatEntity/hasAttributes/Name",
+            "contents": [
+              "CustomerPaymentFormatEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_CustPaymFormatRelationship",
+            "parent": "CustomerPaymentFormatEntity_Resolved/attributeContext/CustomerPaymentFormatEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustomerPaymentFormatEntity/hasAttributes/BackingTable_CustPaymFormatRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CustPaymFormat",
+                "parent": "CustomerPaymentFormatEntity_Resolved/attributeContext/CustomerPaymentFormatEntity_Resolved/BackingTable_CustPaymFormatRelationship",
+                "definition": "resolvedFrom/CustPaymFormat",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CustomerPaymentFormatEntity_Resolved/attributeContext/CustomerPaymentFormatEntity_Resolved/BackingTable_CustPaymFormatRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CustomerPaymentFormatEntity_Resolved/attributeContext/CustomerPaymentFormatEntity_Resolved/BackingTable_CustPaymFormatRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CustomerPaymentFormatEntity_Resolved/attributeContext/CustomerPaymentFormatEntity_Resolved/BackingTable_CustPaymFormatRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CustomerPaymentFormatEntity_Resolved/hasAttributes/BackingTable_CustPaymFormatRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "CustomerPaymentFormatEntity_Resolved/attributeContext/CustomerPaymentFormatEntity_Resolved",
+            "definition": "resolvedFrom/CustomerPaymentFormatEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "CustomerPaymentFormatEntity_Resolved/attributeContext/CustomerPaymentFormatEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CustomerPaymentFormatEntity_Resolved/attributeContext/CustomerPaymentFormatEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CustomerPaymentFormatEntity_Resolved/attributeContext/CustomerPaymentFormatEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CustomerPaymentFormatEntity_Resolved/attributeContext/CustomerPaymentFormatEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CustomerPaymentFormatEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Type",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustomerPaymentFormatEntity_Resolved/attributeContext/CustomerPaymentFormatEntity_Resolved/Type",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ClassId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustomerPaymentFormatEntity_Resolved/attributeContext/CustomerPaymentFormatEntity_Resolved/ClassId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ClassName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustomerPaymentFormatEntity_Resolved/attributeContext/CustomerPaymentFormatEntity_Resolved/ClassName",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustomerPaymentFormatEntity_Resolved/attributeContext/CustomerPaymentFormatEntity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_CustPaymFormatRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Bank/Reference/CustPaymFormat.cdm.json/CustPaymFormat",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CustomerPaymentFormatEntity_Resolved/attributeContext/CustomerPaymentFormatEntity_Resolved/BackingTable_CustPaymFormatRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CustomerPaymentFormatEntity_Resolved/attributeContext/CustomerPaymentFormatEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Customer payment format",
+      "version": "1.1.1"
+    }
+  ],
+  "documentVersion": "1.1.1"
+}

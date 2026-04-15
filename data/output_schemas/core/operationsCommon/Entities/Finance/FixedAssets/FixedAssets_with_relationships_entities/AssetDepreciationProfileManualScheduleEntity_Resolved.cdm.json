@@ -1,0 +1,349 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "AssetDepreciationProfileManualScheduleEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "AssetDepreciationProfileManualScheduleEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "AssetDepreciationProfileManualScheduleEntity_Resolved",
+        "definition": "resolvedFrom/AssetDepreciationProfileManualScheduleEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "AssetDepreciationProfileManualScheduleEntity_Resolved/attributeContext/AssetDepreciationProfileManualScheduleEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "AssetDepreciationProfileManualScheduleEntity_Resolved/attributeContext/AssetDepreciationProfileManualScheduleEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "IntervalNumber",
+            "parent": "AssetDepreciationProfileManualScheduleEntity_Resolved/attributeContext/AssetDepreciationProfileManualScheduleEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetDepreciationProfileManualScheduleEntity/hasAttributes/IntervalNumber",
+            "contents": [
+              "AssetDepreciationProfileManualScheduleEntity_Resolved/hasAttributes/IntervalNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Percentage",
+            "parent": "AssetDepreciationProfileManualScheduleEntity_Resolved/attributeContext/AssetDepreciationProfileManualScheduleEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetDepreciationProfileManualScheduleEntity/hasAttributes/Percentage",
+            "contents": [
+              "AssetDepreciationProfileManualScheduleEntity_Resolved/hasAttributes/Percentage"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ProfileId",
+            "parent": "AssetDepreciationProfileManualScheduleEntity_Resolved/attributeContext/AssetDepreciationProfileManualScheduleEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetDepreciationProfileManualScheduleEntity/hasAttributes/ProfileId",
+            "contents": [
+              "AssetDepreciationProfileManualScheduleEntity_Resolved/hasAttributes/ProfileId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_AssetDepreciationProfileEntityRelationship",
+            "parent": "AssetDepreciationProfileManualScheduleEntity_Resolved/attributeContext/AssetDepreciationProfileManualScheduleEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetDepreciationProfileManualScheduleEntity/hasAttributes/Relationship_AssetDepreciationProfileEntityRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "AssetDepreciationProfileEntity",
+                "parent": "AssetDepreciationProfileManualScheduleEntity_Resolved/attributeContext/AssetDepreciationProfileManualScheduleEntity_Resolved/Relationship_AssetDepreciationProfileEntityRelationship",
+                "definition": "resolvedFrom/AssetDepreciationProfileEntity",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "AssetDepreciationProfileManualScheduleEntity_Resolved/attributeContext/AssetDepreciationProfileManualScheduleEntity_Resolved/Relationship_AssetDepreciationProfileEntityRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "AssetDepreciationProfileManualScheduleEntity_Resolved/attributeContext/AssetDepreciationProfileManualScheduleEntity_Resolved/Relationship_AssetDepreciationProfileEntityRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "AssetDepreciationProfileManualScheduleEntity_Resolved/attributeContext/AssetDepreciationProfileManualScheduleEntity_Resolved/Relationship_AssetDepreciationProfileEntityRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "AssetDepreciationProfileManualScheduleEntity_Resolved/hasAttributes/Relationship_AssetDepreciationProfileEntityRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_AssetDepreciationProfileSpecRelationship",
+            "parent": "AssetDepreciationProfileManualScheduleEntity_Resolved/attributeContext/AssetDepreciationProfileManualScheduleEntity_Resolved",
+            "definition": "resolvedFrom/AssetDepreciationProfileManualScheduleEntity/hasAttributes/BackingTable_AssetDepreciationProfileSpecRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "AssetDepreciationProfileSpec",
+                "parent": "AssetDepreciationProfileManualScheduleEntity_Resolved/attributeContext/AssetDepreciationProfileManualScheduleEntity_Resolved/BackingTable_AssetDepreciationProfileSpecRelationship",
+                "definition": "resolvedFrom/AssetDepreciationProfileSpec",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "AssetDepreciationProfileManualScheduleEntity_Resolved/attributeContext/AssetDepreciationProfileManualScheduleEntity_Resolved/BackingTable_AssetDepreciationProfileSpecRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "AssetDepreciationProfileManualScheduleEntity_Resolved/attributeContext/AssetDepreciationProfileManualScheduleEntity_Resolved/BackingTable_AssetDepreciationProfileSpecRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "AssetDepreciationProfileManualScheduleEntity_Resolved/attributeContext/AssetDepreciationProfileManualScheduleEntity_Resolved/BackingTable_AssetDepreciationProfileSpecRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "AssetDepreciationProfileManualScheduleEntity_Resolved/hasAttributes/BackingTable_AssetDepreciationProfileSpecRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "AssetDepreciationProfileManualScheduleEntity_Resolved/attributeContext/AssetDepreciationProfileManualScheduleEntity_Resolved",
+            "definition": "resolvedFrom/AssetDepreciationProfileManualScheduleEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "AssetDepreciationProfileManualScheduleEntity_Resolved/attributeContext/AssetDepreciationProfileManualScheduleEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "AssetDepreciationProfileManualScheduleEntity_Resolved/attributeContext/AssetDepreciationProfileManualScheduleEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "AssetDepreciationProfileManualScheduleEntity_Resolved/attributeContext/AssetDepreciationProfileManualScheduleEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "AssetDepreciationProfileManualScheduleEntity_Resolved/attributeContext/AssetDepreciationProfileManualScheduleEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "AssetDepreciationProfileManualScheduleEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "IntervalNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AssetDepreciationProfileManualScheduleEntity_Resolved/attributeContext/AssetDepreciationProfileManualScheduleEntity_Resolved/IntervalNumber",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Percentage",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AssetDepreciationProfileManualScheduleEntity_Resolved/attributeContext/AssetDepreciationProfileManualScheduleEntity_Resolved/Percentage",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ProfileId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AssetDepreciationProfileManualScheduleEntity_Resolved/attributeContext/AssetDepreciationProfileManualScheduleEntity_Resolved/ProfileId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Relationship_AssetDepreciationProfileEntityRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": []
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "AssetDepreciationProfileManualScheduleEntity_Resolved/attributeContext/AssetDepreciationProfileManualScheduleEntity_Resolved/Relationship_AssetDepreciationProfileEntityRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "BackingTable_AssetDepreciationProfileSpecRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/FixedAssets/Parameter/AssetDepreciationProfileSpec.cdm.json/AssetDepreciationProfileSpec",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "AssetDepreciationProfileManualScheduleEntity_Resolved/attributeContext/AssetDepreciationProfileManualScheduleEntity_Resolved/BackingTable_AssetDepreciationProfileSpecRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "AssetDepreciationProfileManualScheduleEntity_Resolved/attributeContext/AssetDepreciationProfileManualScheduleEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Fixed asset depreciation profile manual schedules",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

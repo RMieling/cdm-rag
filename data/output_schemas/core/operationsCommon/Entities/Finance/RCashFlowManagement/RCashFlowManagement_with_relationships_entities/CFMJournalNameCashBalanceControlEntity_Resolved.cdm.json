@@ -1,0 +1,206 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "CFMJournalNameCashBalanceControlEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "CFMJournalNameCashBalanceControlEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "CFMJournalNameCashBalanceControlEntity_Resolved",
+        "definition": "resolvedFrom/CFMJournalNameCashBalanceControlEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "CFMJournalNameCashBalanceControlEntity_Resolved/attributeContext/CFMJournalNameCashBalanceControlEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "CFMJournalNameCashBalanceControlEntity_Resolved/attributeContext/CFMJournalNameCashBalanceControlEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "CFMJournalNameCashBalanceControlEntity_Resolved/attributeContext/CFMJournalNameCashBalanceControlEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CFMJournalNameCashBalanceControlEntity/hasAttributes/Name",
+            "contents": [
+              "CFMJournalNameCashBalanceControlEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "MinimumCashBalance",
+            "parent": "CFMJournalNameCashBalanceControlEntity_Resolved/attributeContext/CFMJournalNameCashBalanceControlEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CFMJournalNameCashBalanceControlEntity/hasAttributes/MinimumCashBalance",
+            "contents": [
+              "CFMJournalNameCashBalanceControlEntity_Resolved/hasAttributes/MinimumCashBalance"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Currency",
+            "parent": "CFMJournalNameCashBalanceControlEntity_Resolved/attributeContext/CFMJournalNameCashBalanceControlEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CFMJournalNameCashBalanceControlEntity/hasAttributes/Currency",
+            "contents": [
+              "CFMJournalNameCashBalanceControlEntity_Resolved/hasAttributes/Currency"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_CFMCashBalanceControlTableRelationship",
+            "parent": "CFMJournalNameCashBalanceControlEntity_Resolved/attributeContext/CFMJournalNameCashBalanceControlEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CFMJournalNameCashBalanceControlEntity/hasAttributes/BackingTable_CFMCashBalanceControlTableRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CFMCashBalanceControlTable",
+                "parent": "CFMJournalNameCashBalanceControlEntity_Resolved/attributeContext/CFMJournalNameCashBalanceControlEntity_Resolved/BackingTable_CFMCashBalanceControlTableRelationship",
+                "definition": "resolvedFrom/CFMCashBalanceControlTable",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CFMJournalNameCashBalanceControlEntity_Resolved/attributeContext/CFMJournalNameCashBalanceControlEntity_Resolved/BackingTable_CFMCashBalanceControlTableRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CFMJournalNameCashBalanceControlEntity_Resolved/attributeContext/CFMJournalNameCashBalanceControlEntity_Resolved/BackingTable_CFMCashBalanceControlTableRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CFMJournalNameCashBalanceControlEntity_Resolved/attributeContext/CFMJournalNameCashBalanceControlEntity_Resolved/BackingTable_CFMCashBalanceControlTableRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CFMJournalNameCashBalanceControlEntity_Resolved/hasAttributes/BackingTable_CFMCashBalanceControlTableRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CFMJournalNameCashBalanceControlEntity_Resolved/attributeContext/CFMJournalNameCashBalanceControlEntity_Resolved/Name",
+          "dataFormat": "String"
+        },
+        {
+          "name": "MinimumCashBalance",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CFMJournalNameCashBalanceControlEntity_Resolved/attributeContext/CFMJournalNameCashBalanceControlEntity_Resolved/MinimumCashBalance",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Currency",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CFMJournalNameCashBalanceControlEntity_Resolved/attributeContext/CFMJournalNameCashBalanceControlEntity_Resolved/Currency",
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_CFMCashBalanceControlTableRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/RCashFlowManagement/Group/CFMCashBalanceControlTable.cdm.json/CFMCashBalanceControlTable",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CFMJournalNameCashBalanceControlEntity_Resolved/attributeContext/CFMJournalNameCashBalanceControlEntity_Resolved/BackingTable_CFMCashBalanceControlTableRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Cash balance control for cash flow management journal name.",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

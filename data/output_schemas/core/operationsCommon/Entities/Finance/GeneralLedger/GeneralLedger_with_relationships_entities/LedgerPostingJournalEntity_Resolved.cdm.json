@@ -1,0 +1,340 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "LedgerPostingJournalEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "LedgerPostingJournalEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "LedgerPostingJournalEntity_Resolved",
+        "definition": "resolvedFrom/LedgerPostingJournalEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "LedgerPostingJournalEntity_Resolved/attributeContext/LedgerPostingJournalEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "LedgerPostingJournalEntity_Resolved/attributeContext/LedgerPostingJournalEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Journal",
+            "parent": "LedgerPostingJournalEntity_Resolved/attributeContext/LedgerPostingJournalEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerPostingJournalEntity/hasAttributes/Journal",
+            "contents": [
+              "LedgerPostingJournalEntity_Resolved/hasAttributes/Journal"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "LedgerPostingJournalEntity_Resolved/attributeContext/LedgerPostingJournalEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerPostingJournalEntity/hasAttributes/Name",
+            "contents": [
+              "LedgerPostingJournalEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "FromDate",
+            "parent": "LedgerPostingJournalEntity_Resolved/attributeContext/LedgerPostingJournalEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerPostingJournalEntity/hasAttributes/FromDate",
+            "contents": [
+              "LedgerPostingJournalEntity_Resolved/hasAttributes/FromDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ToDate",
+            "parent": "LedgerPostingJournalEntity_Resolved/attributeContext/LedgerPostingJournalEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerPostingJournalEntity/hasAttributes/ToDate",
+            "contents": [
+              "LedgerPostingJournalEntity_Resolved/hasAttributes/ToDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "NumberSequenceCode",
+            "parent": "LedgerPostingJournalEntity_Resolved/attributeContext/LedgerPostingJournalEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerPostingJournalEntity/hasAttributes/NumberSequenceCode",
+            "contents": [
+              "LedgerPostingJournalEntity_Resolved/hasAttributes/NumberSequenceCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "JournalType",
+            "parent": "LedgerPostingJournalEntity_Resolved/attributeContext/LedgerPostingJournalEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerPostingJournalEntity/hasAttributes/JournalType",
+            "contents": [
+              "LedgerPostingJournalEntity_Resolved/hasAttributes/JournalType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_LedgerPostingJournalRelationship",
+            "parent": "LedgerPostingJournalEntity_Resolved/attributeContext/LedgerPostingJournalEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerPostingJournalEntity/hasAttributes/BackingTable_LedgerPostingJournalRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "LedgerPostingJournal",
+                "parent": "LedgerPostingJournalEntity_Resolved/attributeContext/LedgerPostingJournalEntity_Resolved/BackingTable_LedgerPostingJournalRelationship",
+                "definition": "resolvedFrom/LedgerPostingJournal",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "LedgerPostingJournalEntity_Resolved/attributeContext/LedgerPostingJournalEntity_Resolved/BackingTable_LedgerPostingJournalRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "LedgerPostingJournalEntity_Resolved/attributeContext/LedgerPostingJournalEntity_Resolved/BackingTable_LedgerPostingJournalRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "LedgerPostingJournalEntity_Resolved/attributeContext/LedgerPostingJournalEntity_Resolved/BackingTable_LedgerPostingJournalRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "LedgerPostingJournalEntity_Resolved/hasAttributes/BackingTable_LedgerPostingJournalRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "LedgerPostingJournalEntity_Resolved/attributeContext/LedgerPostingJournalEntity_Resolved",
+            "definition": "resolvedFrom/LedgerPostingJournalEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "LedgerPostingJournalEntity_Resolved/attributeContext/LedgerPostingJournalEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "LedgerPostingJournalEntity_Resolved/attributeContext/LedgerPostingJournalEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "LedgerPostingJournalEntity_Resolved/attributeContext/LedgerPostingJournalEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "LedgerPostingJournalEntity_Resolved/attributeContext/LedgerPostingJournalEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "LedgerPostingJournalEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Journal",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerPostingJournalEntity_Resolved/attributeContext/LedgerPostingJournalEntity_Resolved/Journal",
+          "dataFormat": "String"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerPostingJournalEntity_Resolved/attributeContext/LedgerPostingJournalEntity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "FromDate",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerPostingJournalEntity_Resolved/attributeContext/LedgerPostingJournalEntity_Resolved/FromDate",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ToDate",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerPostingJournalEntity_Resolved/attributeContext/LedgerPostingJournalEntity_Resolved/ToDate",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "NumberSequenceCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerPostingJournalEntity_Resolved/attributeContext/LedgerPostingJournalEntity_Resolved/NumberSequenceCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "JournalType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerPostingJournalEntity_Resolved/attributeContext/LedgerPostingJournalEntity_Resolved/JournalType",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_LedgerPostingJournalRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Group/LedgerPostingJournal.cdm.json/LedgerPostingJournal",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "LedgerPostingJournalEntity_Resolved/attributeContext/LedgerPostingJournalEntity_Resolved/BackingTable_LedgerPostingJournalRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "LedgerPostingJournalEntity_Resolved/attributeContext/LedgerPostingJournalEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Posting journals",
+      "version": "1.1.1"
+    }
+  ],
+  "documentVersion": "1.1.1"
+}

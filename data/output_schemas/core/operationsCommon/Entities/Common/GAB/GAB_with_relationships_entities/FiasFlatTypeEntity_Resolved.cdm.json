@@ -1,0 +1,280 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "FiasFlatTypeEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "FiasFlatTypeEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "FiasFlatTypeEntity_Resolved",
+        "definition": "resolvedFrom/FiasFlatTypeEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "FiasFlatTypeEntity_Resolved/attributeContext/FiasFlatTypeEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "FiasFlatTypeEntity_Resolved/attributeContext/FiasFlatTypeEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "FlTypeId",
+            "parent": "FiasFlatTypeEntity_Resolved/attributeContext/FiasFlatTypeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/FiasFlatTypeEntity/hasAttributes/FlTypeId",
+            "contents": [
+              "FiasFlatTypeEntity_Resolved/hasAttributes/FlTypeId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "FiasFlatTypeEntity_Resolved/attributeContext/FiasFlatTypeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/FiasFlatTypeEntity/hasAttributes/Name",
+            "contents": [
+              "FiasFlatTypeEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ShortName",
+            "parent": "FiasFlatTypeEntity_Resolved/attributeContext/FiasFlatTypeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/FiasFlatTypeEntity/hasAttributes/ShortName",
+            "contents": [
+              "FiasFlatTypeEntity_Resolved/hasAttributes/ShortName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_FiasFlatTypeRelationship",
+            "parent": "FiasFlatTypeEntity_Resolved/attributeContext/FiasFlatTypeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/FiasFlatTypeEntity/hasAttributes/BackingTable_FiasFlatTypeRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "FiasFlatType",
+                "parent": "FiasFlatTypeEntity_Resolved/attributeContext/FiasFlatTypeEntity_Resolved/BackingTable_FiasFlatTypeRelationship",
+                "definition": "resolvedFrom/FiasFlatType",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "FiasFlatTypeEntity_Resolved/attributeContext/FiasFlatTypeEntity_Resolved/BackingTable_FiasFlatTypeRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "FiasFlatTypeEntity_Resolved/attributeContext/FiasFlatTypeEntity_Resolved/BackingTable_FiasFlatTypeRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "FiasFlatTypeEntity_Resolved/attributeContext/FiasFlatTypeEntity_Resolved/BackingTable_FiasFlatTypeRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "FiasFlatTypeEntity_Resolved/hasAttributes/BackingTable_FiasFlatTypeRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "FiasFlatTypeEntity_Resolved/attributeContext/FiasFlatTypeEntity_Resolved",
+            "definition": "resolvedFrom/FiasFlatTypeEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "FiasFlatTypeEntity_Resolved/attributeContext/FiasFlatTypeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "FiasFlatTypeEntity_Resolved/attributeContext/FiasFlatTypeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "FiasFlatTypeEntity_Resolved/attributeContext/FiasFlatTypeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "FiasFlatTypeEntity_Resolved/attributeContext/FiasFlatTypeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "FiasFlatTypeEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "FlTypeId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "FiasFlatTypeEntity_Resolved/attributeContext/FiasFlatTypeEntity_Resolved/FlTypeId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "FiasFlatTypeEntity_Resolved/attributeContext/FiasFlatTypeEntity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ShortName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "FiasFlatTypeEntity_Resolved/attributeContext/FiasFlatTypeEntity_Resolved/ShortName",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_FiasFlatTypeRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Common/GAB/Miscellaneous/FiasFlatType.cdm.json/FiasFlatType",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "FiasFlatTypeEntity_Resolved/attributeContext/FiasFlatTypeEntity_Resolved/BackingTable_FiasFlatTypeRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "FiasFlatTypeEntity_Resolved/attributeContext/FiasFlatTypeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

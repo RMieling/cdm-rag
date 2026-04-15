@@ -1,0 +1,379 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "RAssetLifeHistEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "RAssetLifeHistEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "RAssetLifeHistEntity_Resolved",
+        "definition": "resolvedFrom/RAssetLifeHistEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "RAssetLifeHistEntity_Resolved/attributeContext/RAssetLifeHistEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "RAssetLifeHistEntity_Resolved/attributeContext/RAssetLifeHistEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "FAInventoryNumber",
+            "parent": "RAssetLifeHistEntity_Resolved/attributeContext/RAssetLifeHistEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RAssetLifeHistEntity/hasAttributes/FAInventoryNumber",
+            "contents": [
+              "RAssetLifeHistEntity_Resolved/hasAttributes/FAInventoryNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ValueModel",
+            "parent": "RAssetLifeHistEntity_Resolved/attributeContext/RAssetLifeHistEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RAssetLifeHistEntity/hasAttributes/ValueModel",
+            "contents": [
+              "RAssetLifeHistEntity_Resolved/hasAttributes/ValueModel"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Date",
+            "parent": "RAssetLifeHistEntity_Resolved/attributeContext/RAssetLifeHistEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RAssetLifeHistEntity/hasAttributes/Date",
+            "contents": [
+              "RAssetLifeHistEntity_Resolved/hasAttributes/Date"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "NewFactor",
+            "parent": "RAssetLifeHistEntity_Resolved/attributeContext/RAssetLifeHistEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RAssetLifeHistEntity/hasAttributes/NewFactor",
+            "contents": [
+              "RAssetLifeHistEntity_Resolved/hasAttributes/NewFactor"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "NewLifetime",
+            "parent": "RAssetLifeHistEntity_Resolved/attributeContext/RAssetLifeHistEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RAssetLifeHistEntity/hasAttributes/NewLifetime",
+            "contents": [
+              "RAssetLifeHistEntity_Resolved/hasAttributes/NewLifetime"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ReasonCode",
+            "parent": "RAssetLifeHistEntity_Resolved/attributeContext/RAssetLifeHistEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RAssetLifeHistEntity/hasAttributes/ReasonCode",
+            "contents": [
+              "RAssetLifeHistEntity_Resolved/hasAttributes/ReasonCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DepreciationMethod",
+            "parent": "RAssetLifeHistEntity_Resolved/attributeContext/RAssetLifeHistEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RAssetLifeHistEntity/hasAttributes/DepreciationMethod",
+            "contents": [
+              "RAssetLifeHistEntity_Resolved/hasAttributes/DepreciationMethod"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ReasonComment",
+            "parent": "RAssetLifeHistEntity_Resolved/attributeContext/RAssetLifeHistEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RAssetLifeHistEntity/hasAttributes/ReasonComment",
+            "contents": [
+              "RAssetLifeHistEntity_Resolved/hasAttributes/ReasonComment"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_RAssetLifeHistRelationship",
+            "parent": "RAssetLifeHistEntity_Resolved/attributeContext/RAssetLifeHistEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RAssetLifeHistEntity/hasAttributes/BackingTable_RAssetLifeHistRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "RAssetLifeHist",
+                "parent": "RAssetLifeHistEntity_Resolved/attributeContext/RAssetLifeHistEntity_Resolved/BackingTable_RAssetLifeHistRelationship",
+                "definition": "resolvedFrom/RAssetLifeHist",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "RAssetLifeHistEntity_Resolved/attributeContext/RAssetLifeHistEntity_Resolved/BackingTable_RAssetLifeHistRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "RAssetLifeHistEntity_Resolved/attributeContext/RAssetLifeHistEntity_Resolved/BackingTable_RAssetLifeHistRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "RAssetLifeHistEntity_Resolved/attributeContext/RAssetLifeHistEntity_Resolved/BackingTable_RAssetLifeHistRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "RAssetLifeHistEntity_Resolved/hasAttributes/BackingTable_RAssetLifeHistRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "RAssetLifeHistEntity_Resolved/attributeContext/RAssetLifeHistEntity_Resolved",
+            "definition": "resolvedFrom/RAssetLifeHistEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "RAssetLifeHistEntity_Resolved/attributeContext/RAssetLifeHistEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "RAssetLifeHistEntity_Resolved/attributeContext/RAssetLifeHistEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "RAssetLifeHistEntity_Resolved/attributeContext/RAssetLifeHistEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "RAssetLifeHistEntity_Resolved/attributeContext/RAssetLifeHistEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "RAssetLifeHistEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "FAInventoryNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RAssetLifeHistEntity_Resolved/attributeContext/RAssetLifeHistEntity_Resolved/FAInventoryNumber",
+          "dataFormat": "String"
+        },
+        {
+          "name": "ValueModel",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RAssetLifeHistEntity_Resolved/attributeContext/RAssetLifeHistEntity_Resolved/ValueModel",
+          "dataFormat": "String"
+        },
+        {
+          "name": "Date",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RAssetLifeHistEntity_Resolved/attributeContext/RAssetLifeHistEntity_Resolved/Date",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "NewFactor",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RAssetLifeHistEntity_Resolved/attributeContext/RAssetLifeHistEntity_Resolved/NewFactor",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "NewLifetime",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RAssetLifeHistEntity_Resolved/attributeContext/RAssetLifeHistEntity_Resolved/NewLifetime",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ReasonCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RAssetLifeHistEntity_Resolved/attributeContext/RAssetLifeHistEntity_Resolved/ReasonCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "DepreciationMethod",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RAssetLifeHistEntity_Resolved/attributeContext/RAssetLifeHistEntity_Resolved/DepreciationMethod",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ReasonComment",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RAssetLifeHistEntity_Resolved/attributeContext/RAssetLifeHistEntity_Resolved/ReasonComment",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_RAssetLifeHistRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/RAsset/Transaction/RAssetLifeHist.cdm.json/RAssetLifeHist",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "RAssetLifeHistEntity_Resolved/attributeContext/RAssetLifeHistEntity_Resolved/BackingTable_RAssetLifeHistRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "RAssetLifeHistEntity_Resolved/attributeContext/RAssetLifeHistEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "FA lifetime history",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

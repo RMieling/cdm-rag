@@ -1,0 +1,301 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "PaymentPurposeCodeEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "PaymentPurposeCodeEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "PaymentPurposeCodeEntity_Resolved",
+        "definition": "resolvedFrom/PaymentPurposeCodeEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "PaymentPurposeCodeEntity_Resolved/attributeContext/PaymentPurposeCodeEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "PaymentPurposeCodeEntity_Resolved/attributeContext/PaymentPurposeCodeEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CodeId",
+            "parent": "PaymentPurposeCodeEntity_Resolved/attributeContext/PaymentPurposeCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/PaymentPurposeCodeEntity/hasAttributes/CodeId",
+            "contents": [
+              "PaymentPurposeCodeEntity_Resolved/hasAttributes/CodeId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "PaymentPurposeCodeEntity_Resolved/attributeContext/PaymentPurposeCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/PaymentPurposeCodeEntity/hasAttributes/Name",
+            "contents": [
+              "PaymentPurposeCodeEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Text",
+            "parent": "PaymentPurposeCodeEntity_Resolved/attributeContext/PaymentPurposeCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/PaymentPurposeCodeEntity/hasAttributes/Text",
+            "contents": [
+              "PaymentPurposeCodeEntity_Resolved/hasAttributes/Text"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DescriptionText",
+            "parent": "PaymentPurposeCodeEntity_Resolved/attributeContext/PaymentPurposeCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/PaymentPurposeCodeEntity/hasAttributes/DescriptionText",
+            "contents": [
+              "PaymentPurposeCodeEntity_Resolved/hasAttributes/DescriptionText"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_BankCentralBankPurposeRelationship",
+            "parent": "PaymentPurposeCodeEntity_Resolved/attributeContext/PaymentPurposeCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/PaymentPurposeCodeEntity/hasAttributes/BackingTable_BankCentralBankPurposeRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "BankCentralBankPurpose",
+                "parent": "PaymentPurposeCodeEntity_Resolved/attributeContext/PaymentPurposeCodeEntity_Resolved/BackingTable_BankCentralBankPurposeRelationship",
+                "definition": "resolvedFrom/BankCentralBankPurpose",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "PaymentPurposeCodeEntity_Resolved/attributeContext/PaymentPurposeCodeEntity_Resolved/BackingTable_BankCentralBankPurposeRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "PaymentPurposeCodeEntity_Resolved/attributeContext/PaymentPurposeCodeEntity_Resolved/BackingTable_BankCentralBankPurposeRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "PaymentPurposeCodeEntity_Resolved/attributeContext/PaymentPurposeCodeEntity_Resolved/BackingTable_BankCentralBankPurposeRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "PaymentPurposeCodeEntity_Resolved/hasAttributes/BackingTable_BankCentralBankPurposeRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "PaymentPurposeCodeEntity_Resolved/attributeContext/PaymentPurposeCodeEntity_Resolved",
+            "definition": "resolvedFrom/PaymentPurposeCodeEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "PaymentPurposeCodeEntity_Resolved/attributeContext/PaymentPurposeCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "PaymentPurposeCodeEntity_Resolved/attributeContext/PaymentPurposeCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "PaymentPurposeCodeEntity_Resolved/attributeContext/PaymentPurposeCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "PaymentPurposeCodeEntity_Resolved/attributeContext/PaymentPurposeCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "PaymentPurposeCodeEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "CodeId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "PaymentPurposeCodeEntity_Resolved/attributeContext/PaymentPurposeCodeEntity_Resolved/CodeId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "PaymentPurposeCodeEntity_Resolved/attributeContext/PaymentPurposeCodeEntity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Text",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "PaymentPurposeCodeEntity_Resolved/attributeContext/PaymentPurposeCodeEntity_Resolved/Text",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "DescriptionText",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "PaymentPurposeCodeEntity_Resolved/attributeContext/PaymentPurposeCodeEntity_Resolved/DescriptionText",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_BankCentralBankPurposeRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Bank/Group/BankCentralBankPurpose.cdm.json/BankCentralBankPurpose",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "PaymentPurposeCodeEntity_Resolved/attributeContext/PaymentPurposeCodeEntity_Resolved/BackingTable_BankCentralBankPurposeRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "PaymentPurposeCodeEntity_Resolved/attributeContext/PaymentPurposeCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Payment purpose codes",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

@@ -1,0 +1,228 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "EInvoicePropertyTypeApplicabilitySetupEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "EInvoicePropertyTypeApplicabilitySetupEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "EInvoicePropertyTypeApplicabilitySetupEntity_Resolved",
+        "definition": "resolvedFrom/EInvoicePropertyTypeApplicabilitySetupEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "EInvoicePropertyTypeApplicabilitySetupEntity_Resolved/attributeContext/EInvoicePropertyTypeApplicabilitySetupEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "EInvoicePropertyTypeApplicabilitySetupEntity_Resolved/attributeContext/EInvoicePropertyTypeApplicabilitySetupEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "RefTableId",
+            "parent": "EInvoicePropertyTypeApplicabilitySetupEntity_Resolved/attributeContext/EInvoicePropertyTypeApplicabilitySetupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EInvoicePropertyTypeApplicabilitySetupEntity/hasAttributes/RefTableId",
+            "contents": [
+              "EInvoicePropertyTypeApplicabilitySetupEntity_Resolved/hasAttributes/RefTableId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "TypeId",
+            "parent": "EInvoicePropertyTypeApplicabilitySetupEntity_Resolved/attributeContext/EInvoicePropertyTypeApplicabilitySetupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EInvoicePropertyTypeApplicabilitySetupEntity/hasAttributes/TypeId",
+            "contents": [
+              "EInvoicePropertyTypeApplicabilitySetupEntity_Resolved/hasAttributes/TypeId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "PropertyType",
+            "parent": "EInvoicePropertyTypeApplicabilitySetupEntity_Resolved/attributeContext/EInvoicePropertyTypeApplicabilitySetupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EInvoicePropertyTypeApplicabilitySetupEntity/hasAttributes/PropertyType",
+            "contents": [
+              "EInvoicePropertyTypeApplicabilitySetupEntity_Resolved/hasAttributes/PropertyType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "TableName",
+            "parent": "EInvoicePropertyTypeApplicabilitySetupEntity_Resolved/attributeContext/EInvoicePropertyTypeApplicabilitySetupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EInvoicePropertyTypeApplicabilitySetupEntity/hasAttributes/TableName",
+            "contents": [
+              "EInvoicePropertyTypeApplicabilitySetupEntity_Resolved/hasAttributes/TableName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_EInvoicePropertyTypeApplicabilitySetupRelationship",
+            "parent": "EInvoicePropertyTypeApplicabilitySetupEntity_Resolved/attributeContext/EInvoicePropertyTypeApplicabilitySetupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EInvoicePropertyTypeApplicabilitySetupEntity/hasAttributes/BackingTable_EInvoicePropertyTypeApplicabilitySetupRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "EInvoicePropertyTypeApplicabilitySetup",
+                "parent": "EInvoicePropertyTypeApplicabilitySetupEntity_Resolved/attributeContext/EInvoicePropertyTypeApplicabilitySetupEntity_Resolved/BackingTable_EInvoicePropertyTypeApplicabilitySetupRelationship",
+                "definition": "resolvedFrom/EInvoicePropertyTypeApplicabilitySetup",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "EInvoicePropertyTypeApplicabilitySetupEntity_Resolved/attributeContext/EInvoicePropertyTypeApplicabilitySetupEntity_Resolved/BackingTable_EInvoicePropertyTypeApplicabilitySetupRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "EInvoicePropertyTypeApplicabilitySetupEntity_Resolved/attributeContext/EInvoicePropertyTypeApplicabilitySetupEntity_Resolved/BackingTable_EInvoicePropertyTypeApplicabilitySetupRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "EInvoicePropertyTypeApplicabilitySetupEntity_Resolved/attributeContext/EInvoicePropertyTypeApplicabilitySetupEntity_Resolved/BackingTable_EInvoicePropertyTypeApplicabilitySetupRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "EInvoicePropertyTypeApplicabilitySetupEntity_Resolved/hasAttributes/BackingTable_EInvoicePropertyTypeApplicabilitySetupRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "RefTableId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "EInvoicePropertyTypeApplicabilitySetupEntity_Resolved/attributeContext/EInvoicePropertyTypeApplicabilitySetupEntity_Resolved/RefTableId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "TypeId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "EInvoicePropertyTypeApplicabilitySetupEntity_Resolved/attributeContext/EInvoicePropertyTypeApplicabilitySetupEntity_Resolved/TypeId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "PropertyType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "EInvoicePropertyTypeApplicabilitySetupEntity_Resolved/attributeContext/EInvoicePropertyTypeApplicabilitySetupEntity_Resolved/PropertyType",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "TableName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "EInvoicePropertyTypeApplicabilitySetupEntity_Resolved/attributeContext/EInvoicePropertyTypeApplicabilitySetupEntity_Resolved/TableName",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_EInvoicePropertyTypeApplicabilitySetupRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/EInvoice/Main/EInvoicePropertyTypeApplicabilitySetup.cdm.json/EInvoicePropertyTypeApplicabilitySetup",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "EInvoicePropertyTypeApplicabilitySetupEntity_Resolved/attributeContext/EInvoicePropertyTypeApplicabilitySetupEntity_Resolved/BackingTable_EInvoicePropertyTypeApplicabilitySetupRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Electronic document property type applicability setup",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

@@ -1,0 +1,381 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "ISRConceptEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "ISRConceptEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "ISRConceptEntity_Resolved",
+        "definition": "resolvedFrom/ISRConceptEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "ISRConceptEntity_Resolved/attributeContext/ISRConceptEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "ISRConceptEntity_Resolved/attributeContext/ISRConceptEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DebitCreditIndicator",
+            "parent": "ISRConceptEntity_Resolved/attributeContext/ISRConceptEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/ISRConceptEntity/hasAttributes/DebitCreditIndicator",
+            "contents": [
+              "ISRConceptEntity_Resolved/hasAttributes/DebitCreditIndicator"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Concept",
+            "parent": "ISRConceptEntity_Resolved/attributeContext/ISRConceptEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/ISRConceptEntity/hasAttributes/Concept",
+            "contents": [
+              "ISRConceptEntity_Resolved/hasAttributes/Concept"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "MainAccount",
+            "parent": "ISRConceptEntity_Resolved/attributeContext/ISRConceptEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/ISRConceptEntity/hasAttributes/MainAccount",
+            "contents": [
+              "ISRConceptEntity_Resolved/hasAttributes/MainAccount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ConceptId",
+            "parent": "ISRConceptEntity_Resolved/attributeContext/ISRConceptEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/ISRConceptEntity/hasAttributes/ConceptId",
+            "contents": [
+              "ISRConceptEntity_Resolved/hasAttributes/ConceptId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "ISRConceptEntity_Resolved/attributeContext/ISRConceptEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/ISRConceptEntity/hasAttributes/Description",
+            "contents": [
+              "ISRConceptEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "LedgerChartOfAccounts",
+            "parent": "ISRConceptEntity_Resolved/attributeContext/ISRConceptEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/ISRConceptEntity/hasAttributes/LedgerChartOfAccounts",
+            "contents": [
+              "ISRConceptEntity_Resolved/hasAttributes/LedgerChartOfAccounts"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "MainAccountId",
+            "parent": "ISRConceptEntity_Resolved/attributeContext/ISRConceptEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/ISRConceptEntity/hasAttributes/MainAccountId",
+            "contents": [
+              "ISRConceptEntity_Resolved/hasAttributes/MainAccountId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ChartOfAccountsName",
+            "parent": "ISRConceptEntity_Resolved/attributeContext/ISRConceptEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/ISRConceptEntity/hasAttributes/ChartOfAccountsName",
+            "contents": [
+              "ISRConceptEntity_Resolved/hasAttributes/ChartOfAccountsName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_ISRConceptMainAccount_MXRelationship",
+            "parent": "ISRConceptEntity_Resolved/attributeContext/ISRConceptEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/ISRConceptEntity/hasAttributes/BackingTable_ISRConceptMainAccount_MXRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "ISRConceptMainAccount_MX",
+                "parent": "ISRConceptEntity_Resolved/attributeContext/ISRConceptEntity_Resolved/BackingTable_ISRConceptMainAccount_MXRelationship",
+                "definition": "resolvedFrom/ISRConceptMainAccount_MX",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "ISRConceptEntity_Resolved/attributeContext/ISRConceptEntity_Resolved/BackingTable_ISRConceptMainAccount_MXRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "ISRConceptEntity_Resolved/attributeContext/ISRConceptEntity_Resolved/BackingTable_ISRConceptMainAccount_MXRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "ISRConceptEntity_Resolved/attributeContext/ISRConceptEntity_Resolved/BackingTable_ISRConceptMainAccount_MXRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "ISRConceptEntity_Resolved/hasAttributes/BackingTable_ISRConceptMainAccount_MXRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "ISRConceptEntity_Resolved/attributeContext/ISRConceptEntity_Resolved",
+            "definition": "resolvedFrom/ISRConceptEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "ISRConceptEntity_Resolved/attributeContext/ISRConceptEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "ISRConceptEntity_Resolved/attributeContext/ISRConceptEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "ISRConceptEntity_Resolved/attributeContext/ISRConceptEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "ISRConceptEntity_Resolved/attributeContext/ISRConceptEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "ISRConceptEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "DebitCreditIndicator",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "ISRConceptEntity_Resolved/attributeContext/ISRConceptEntity_Resolved/DebitCreditIndicator",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Concept",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "ISRConceptEntity_Resolved/attributeContext/ISRConceptEntity_Resolved/Concept",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Concept category"
+        },
+        {
+          "name": "MainAccount",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "ISRConceptEntity_Resolved/attributeContext/ISRConceptEntity_Resolved/MainAccount",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Main account"
+        },
+        {
+          "name": "ConceptId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "ISRConceptEntity_Resolved/attributeContext/ISRConceptEntity_Resolved/ConceptId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "ISRConceptEntity_Resolved/attributeContext/ISRConceptEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "LedgerChartOfAccounts",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "ISRConceptEntity_Resolved/attributeContext/ISRConceptEntity_Resolved/LedgerChartOfAccounts",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "MainAccountId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "ISRConceptEntity_Resolved/attributeContext/ISRConceptEntity_Resolved/MainAccountId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "ChartOfAccountsName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "ISRConceptEntity_Resolved/attributeContext/ISRConceptEntity_Resolved/ChartOfAccountsName",
+          "dataFormat": "String",
+          "displayName": "Chart of accounts"
+        },
+        {
+          "name": "BackingTable_ISRConceptMainAccount_MXRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Group/ISRConceptMainAccount_MX.cdm.json/ISRConceptMainAccount_MX",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "ISRConceptEntity_Resolved/attributeContext/ISRConceptEntity_Resolved/BackingTable_ISRConceptMainAccount_MXRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "ISRConceptEntity_Resolved/attributeContext/ISRConceptEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "ISR Concepts setup",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

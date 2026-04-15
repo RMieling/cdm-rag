@@ -1,0 +1,320 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "RAssetUseEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "RAssetUseEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "RAssetUseEntity_Resolved",
+        "definition": "resolvedFrom/RAssetUseEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "RAssetUseEntity_Resolved/attributeContext/RAssetUseEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "RAssetUseEntity_Resolved/attributeContext/RAssetUseEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "FAInventoryNumber",
+            "parent": "RAssetUseEntity_Resolved/attributeContext/RAssetUseEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RAssetUseEntity/hasAttributes/FAInventoryNumber",
+            "contents": [
+              "RAssetUseEntity_Resolved/hasAttributes/FAInventoryNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Period",
+            "parent": "RAssetUseEntity_Resolved/attributeContext/RAssetUseEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RAssetUseEntity/hasAttributes/Period",
+            "contents": [
+              "RAssetUseEntity_Resolved/hasAttributes/Period"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "OutputMileage",
+            "parent": "RAssetUseEntity_Resolved/attributeContext/RAssetUseEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RAssetUseEntity/hasAttributes/OutputMileage",
+            "contents": [
+              "RAssetUseEntity_Resolved/hasAttributes/OutputMileage"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "OutputRunExport",
+            "parent": "RAssetUseEntity_Resolved/attributeContext/RAssetUseEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RAssetUseEntity/hasAttributes/OutputRunExport",
+            "contents": [
+              "RAssetUseEntity_Resolved/hasAttributes/OutputRunExport"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "OutputRunNontaxable",
+            "parent": "RAssetUseEntity_Resolved/attributeContext/RAssetUseEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RAssetUseEntity/hasAttributes/OutputRunNontaxable",
+            "contents": [
+              "RAssetUseEntity_Resolved/hasAttributes/OutputRunNontaxable"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_RAssetUseRelationship",
+            "parent": "RAssetUseEntity_Resolved/attributeContext/RAssetUseEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RAssetUseEntity/hasAttributes/BackingTable_RAssetUseRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "RAssetUse",
+                "parent": "RAssetUseEntity_Resolved/attributeContext/RAssetUseEntity_Resolved/BackingTable_RAssetUseRelationship",
+                "definition": "resolvedFrom/RAssetUse",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "RAssetUseEntity_Resolved/attributeContext/RAssetUseEntity_Resolved/BackingTable_RAssetUseRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "RAssetUseEntity_Resolved/attributeContext/RAssetUseEntity_Resolved/BackingTable_RAssetUseRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "RAssetUseEntity_Resolved/attributeContext/RAssetUseEntity_Resolved/BackingTable_RAssetUseRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "RAssetUseEntity_Resolved/hasAttributes/BackingTable_RAssetUseRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "RAssetUseEntity_Resolved/attributeContext/RAssetUseEntity_Resolved",
+            "definition": "resolvedFrom/RAssetUseEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "RAssetUseEntity_Resolved/attributeContext/RAssetUseEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "RAssetUseEntity_Resolved/attributeContext/RAssetUseEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "RAssetUseEntity_Resolved/attributeContext/RAssetUseEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "RAssetUseEntity_Resolved/attributeContext/RAssetUseEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "RAssetUseEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "FAInventoryNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RAssetUseEntity_Resolved/attributeContext/RAssetUseEntity_Resolved/FAInventoryNumber",
+          "dataFormat": "String"
+        },
+        {
+          "name": "Period",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RAssetUseEntity_Resolved/attributeContext/RAssetUseEntity_Resolved/Period",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "OutputMileage",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RAssetUseEntity_Resolved/attributeContext/RAssetUseEntity_Resolved/OutputMileage",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "OutputRunExport",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RAssetUseEntity_Resolved/attributeContext/RAssetUseEntity_Resolved/OutputRunExport",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "OutputRunNontaxable",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RAssetUseEntity_Resolved/attributeContext/RAssetUseEntity_Resolved/OutputRunNontaxable",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_RAssetUseRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/RAsset/WorksheetLine/RAssetUse.cdm.json/RAssetUse",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "RAssetUseEntity_Resolved/attributeContext/RAssetUseEntity_Resolved/BackingTable_RAssetUseRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "RAssetUseEntity_Resolved/attributeContext/RAssetUseEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Product output/mileage",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

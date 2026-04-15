@@ -1,0 +1,424 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "MainAccountTranslationEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "MainAccountTranslationEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "MainAccountTranslationEntity_Resolved",
+        "definition": "resolvedFrom/MainAccountTranslationEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "MainAccountTranslationEntity_Resolved/attributeContext/MainAccountTranslationEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "MainAccountTranslationEntity_Resolved/attributeContext/MainAccountTranslationEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "MainAccount",
+            "parent": "MainAccountTranslationEntity_Resolved/attributeContext/MainAccountTranslationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/MainAccountTranslationEntity/hasAttributes/MainAccount",
+            "contents": [
+              "MainAccountTranslationEntity_Resolved/hasAttributes/MainAccount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "OriginalText",
+            "parent": "MainAccountTranslationEntity_Resolved/attributeContext/MainAccountTranslationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/MainAccountTranslationEntity/hasAttributes/OriginalText",
+            "contents": [
+              "MainAccountTranslationEntity_Resolved/hasAttributes/OriginalText"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Language",
+            "parent": "MainAccountTranslationEntity_Resolved/attributeContext/MainAccountTranslationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/MainAccountTranslationEntity/hasAttributes/Language",
+            "contents": [
+              "MainAccountTranslationEntity_Resolved/hasAttributes/Language"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "TranslatedText",
+            "parent": "MainAccountTranslationEntity_Resolved/attributeContext/MainAccountTranslationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/MainAccountTranslationEntity/hasAttributes/TranslatedText",
+            "contents": [
+              "MainAccountTranslationEntity_Resolved/hasAttributes/TranslatedText"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ChartOfAccounts",
+            "parent": "MainAccountTranslationEntity_Resolved/attributeContext/MainAccountTranslationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/MainAccountTranslationEntity/hasAttributes/ChartOfAccounts",
+            "contents": [
+              "MainAccountTranslationEntity_Resolved/hasAttributes/ChartOfAccounts"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "MainAccountRecId",
+            "parent": "MainAccountTranslationEntity_Resolved/attributeContext/MainAccountTranslationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/MainAccountTranslationEntity/hasAttributes/MainAccountRecId",
+            "contents": [
+              "MainAccountTranslationEntity_Resolved/hasAttributes/MainAccountRecId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ChartOfAccountsRecId",
+            "parent": "MainAccountTranslationEntity_Resolved/attributeContext/MainAccountTranslationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/MainAccountTranslationEntity/hasAttributes/ChartOfAccountsRecId",
+            "contents": [
+              "MainAccountTranslationEntity_Resolved/hasAttributes/ChartOfAccountsRecId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_MainAccountRelationship",
+            "parent": "MainAccountTranslationEntity_Resolved/attributeContext/MainAccountTranslationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/MainAccountTranslationEntity/hasAttributes/Relationship_MainAccountRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "MainAccountEntity",
+                "parent": "MainAccountTranslationEntity_Resolved/attributeContext/MainAccountTranslationEntity_Resolved/Relationship_MainAccountRelationship",
+                "definition": "resolvedFrom/MainAccountEntity",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "MainAccountTranslationEntity_Resolved/attributeContext/MainAccountTranslationEntity_Resolved/Relationship_MainAccountRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "MainAccountTranslationEntity_Resolved/attributeContext/MainAccountTranslationEntity_Resolved/Relationship_MainAccountRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "MainAccountTranslationEntity_Resolved/attributeContext/MainAccountTranslationEntity_Resolved/Relationship_MainAccountRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "MainAccountTranslationEntity_Resolved/hasAttributes/Relationship_MainAccountRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_LedgerChartOfAccountsRelationship",
+            "parent": "MainAccountTranslationEntity_Resolved/attributeContext/MainAccountTranslationEntity_Resolved",
+            "definition": "resolvedFrom/MainAccountTranslationEntity/hasAttributes/Relationship_LedgerChartOfAccountsRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "LedgerChartOfAccountsEntity",
+                "parent": "MainAccountTranslationEntity_Resolved/attributeContext/MainAccountTranslationEntity_Resolved/Relationship_LedgerChartOfAccountsRelationship",
+                "definition": "resolvedFrom/LedgerChartOfAccountsEntity",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "MainAccountTranslationEntity_Resolved/attributeContext/MainAccountTranslationEntity_Resolved/Relationship_LedgerChartOfAccountsRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "MainAccountTranslationEntity_Resolved/attributeContext/MainAccountTranslationEntity_Resolved/Relationship_LedgerChartOfAccountsRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "MainAccountTranslationEntity_Resolved/attributeContext/MainAccountTranslationEntity_Resolved/Relationship_LedgerChartOfAccountsRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "MainAccountTranslationEntity_Resolved/hasAttributes/Relationship_LedgerChartOfAccountsRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_MainAccountTranslationRelationship",
+            "parent": "MainAccountTranslationEntity_Resolved/attributeContext/MainAccountTranslationEntity_Resolved",
+            "definition": "resolvedFrom/MainAccountTranslationEntity/hasAttributes/BackingTable_MainAccountTranslationRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "MainAccountTranslation",
+                "parent": "MainAccountTranslationEntity_Resolved/attributeContext/MainAccountTranslationEntity_Resolved/BackingTable_MainAccountTranslationRelationship",
+                "definition": "resolvedFrom/MainAccountTranslation",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "MainAccountTranslationEntity_Resolved/attributeContext/MainAccountTranslationEntity_Resolved/BackingTable_MainAccountTranslationRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "MainAccountTranslationEntity_Resolved/attributeContext/MainAccountTranslationEntity_Resolved/BackingTable_MainAccountTranslationRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "MainAccountTranslationEntity_Resolved/attributeContext/MainAccountTranslationEntity_Resolved/BackingTable_MainAccountTranslationRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "MainAccountTranslationEntity_Resolved/hasAttributes/BackingTable_MainAccountTranslationRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "MainAccount",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "MainAccountTranslationEntity_Resolved/attributeContext/MainAccountTranslationEntity_Resolved/MainAccount",
+          "dataFormat": "String"
+        },
+        {
+          "name": "OriginalText",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "MainAccountTranslationEntity_Resolved/attributeContext/MainAccountTranslationEntity_Resolved/OriginalText",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Original text"
+        },
+        {
+          "name": "Language",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "MainAccountTranslationEntity_Resolved/attributeContext/MainAccountTranslationEntity_Resolved/Language",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "TranslatedText",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "MainAccountTranslationEntity_Resolved/attributeContext/MainAccountTranslationEntity_Resolved/TranslatedText",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Translated text"
+        },
+        {
+          "name": "ChartOfAccounts",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "MainAccountTranslationEntity_Resolved/attributeContext/MainAccountTranslationEntity_Resolved/ChartOfAccounts",
+          "dataFormat": "String"
+        },
+        {
+          "name": "MainAccountRecId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "MainAccountTranslationEntity_Resolved/attributeContext/MainAccountTranslationEntity_Resolved/MainAccountRecId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ChartOfAccountsRecId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "MainAccountTranslationEntity_Resolved/attributeContext/MainAccountTranslationEntity_Resolved/ChartOfAccountsRecId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Relationship_MainAccountRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": []
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "MainAccountTranslationEntity_Resolved/attributeContext/MainAccountTranslationEntity_Resolved/Relationship_MainAccountRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_LedgerChartOfAccountsRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": []
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "MainAccountTranslationEntity_Resolved/attributeContext/MainAccountTranslationEntity_Resolved/Relationship_LedgerChartOfAccountsRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "BackingTable_MainAccountTranslationRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/FinancialDimensions/Main/MainAccountTranslation.cdm.json/MainAccountTranslation",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "MainAccountTranslationEntity_Resolved/attributeContext/MainAccountTranslationEntity_Resolved/BackingTable_MainAccountTranslationRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Main account translation",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

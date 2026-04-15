@@ -1,0 +1,281 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "AssetMajorTypeEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "AssetMajorTypeEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "AssetMajorTypeEntity_Resolved",
+        "definition": "resolvedFrom/AssetMajorTypeEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "AssetMajorTypeEntity_Resolved/attributeContext/AssetMajorTypeEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "AssetMajorTypeEntity_Resolved/attributeContext/AssetMajorTypeEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "AssetType_JP",
+            "parent": "AssetMajorTypeEntity_Resolved/attributeContext/AssetMajorTypeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetMajorTypeEntity/hasAttributes/AssetType_JP",
+            "contents": [
+              "AssetMajorTypeEntity_Resolved/hasAttributes/AssetType_JP"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "AssetMajorTypeEntity_Resolved/attributeContext/AssetMajorTypeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetMajorTypeEntity/hasAttributes/Description",
+            "contents": [
+              "AssetMajorTypeEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "MajorTypeId",
+            "parent": "AssetMajorTypeEntity_Resolved/attributeContext/AssetMajorTypeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetMajorTypeEntity/hasAttributes/MajorTypeId",
+            "contents": [
+              "AssetMajorTypeEntity_Resolved/hasAttributes/MajorTypeId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_AssetMajorTypeRelationship",
+            "parent": "AssetMajorTypeEntity_Resolved/attributeContext/AssetMajorTypeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetMajorTypeEntity/hasAttributes/BackingTable_AssetMajorTypeRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "AssetMajorType",
+                "parent": "AssetMajorTypeEntity_Resolved/attributeContext/AssetMajorTypeEntity_Resolved/BackingTable_AssetMajorTypeRelationship",
+                "definition": "resolvedFrom/AssetMajorType",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "AssetMajorTypeEntity_Resolved/attributeContext/AssetMajorTypeEntity_Resolved/BackingTable_AssetMajorTypeRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "AssetMajorTypeEntity_Resolved/attributeContext/AssetMajorTypeEntity_Resolved/BackingTable_AssetMajorTypeRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "AssetMajorTypeEntity_Resolved/attributeContext/AssetMajorTypeEntity_Resolved/BackingTable_AssetMajorTypeRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "AssetMajorTypeEntity_Resolved/hasAttributes/BackingTable_AssetMajorTypeRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "AssetMajorTypeEntity_Resolved/attributeContext/AssetMajorTypeEntity_Resolved",
+            "definition": "resolvedFrom/AssetMajorTypeEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "AssetMajorTypeEntity_Resolved/attributeContext/AssetMajorTypeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "AssetMajorTypeEntity_Resolved/attributeContext/AssetMajorTypeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "AssetMajorTypeEntity_Resolved/attributeContext/AssetMajorTypeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "AssetMajorTypeEntity_Resolved/attributeContext/AssetMajorTypeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "AssetMajorTypeEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "AssetType_JP",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AssetMajorTypeEntity_Resolved/attributeContext/AssetMajorTypeEntity_Resolved/AssetType_JP",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AssetMajorTypeEntity_Resolved/attributeContext/AssetMajorTypeEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "MajorTypeId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AssetMajorTypeEntity_Resolved/attributeContext/AssetMajorTypeEntity_Resolved/MajorTypeId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_AssetMajorTypeRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/FixedAssets/Main/AssetMajorType.cdm.json/AssetMajorType",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "AssetMajorTypeEntity_Resolved/attributeContext/AssetMajorTypeEntity_Resolved/BackingTable_AssetMajorTypeRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "AssetMajorTypeEntity_Resolved/attributeContext/AssetMajorTypeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Fixed asset major type",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

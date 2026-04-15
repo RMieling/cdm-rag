@@ -1,0 +1,100 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "Branch.cdm.json",
+      "moniker": "resolvedFrom"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "Branch_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "Branch_Resolved",
+        "definition": "resolvedFrom/Branch",
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "Branch_Resolved/attributeContext/Branch_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CdmEntity",
+                "parent": "Branch_Resolved/attributeContext/Branch_Resolved/extends",
+                "definition": "resolvedFrom/CdmEntity"
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "attributesAddedAtThisScope",
+            "parent": "Branch_Resolved/attributeContext/Branch_Resolved",
+            "definition": "resolvedFrom/Branch/hasAttributes/attributesAddedAtThisScope",
+            "contents": [
+              {
+                "type": "attributeGroup",
+                "name": "attributesAddedAtThisScope",
+                "parent": "Branch_Resolved/attributeContext/Branch_Resolved/attributesAddedAtThisScope",
+                "definition": "resolvedFrom/Branch/hasAttributes/attributesAddedAtThisScope",
+                "contents": [
+                  {
+                    "type": "attributeDefinition",
+                    "name": "branchId",
+                    "parent": "Branch_Resolved/attributeContext/Branch_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Branch/hasAttributes/attributesAddedAtThisScope/members/branchId",
+                    "contents": [
+                      "Branch_Resolved/hasAttributes/branchId"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "branchId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            }
+          ],
+          "attributeContext": "Branch_Resolved/attributeContext/Branch_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/branchId",
+          "isPrimaryKey": true,
+          "dataFormat": "Guid",
+          "sourceName": "msfsi_branchid",
+          "sourceOrdering": 1,
+          "displayName": "Branch",
+          "description": "Unique identifier for entity instances."
+        }
+      ],
+      "sourceName": "msfsi_branch",
+      "displayName": "Branch",
+      "description": "The branch of the main bank, when borrower applies for a loan at a branch.",
+      "version": "1.0"
+    }
+  ],
+  "documentVersion": "1.0"
+}

@@ -1,0 +1,302 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "BranchEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "BranchEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "BranchEntity_Resolved",
+        "definition": "resolvedFrom/BranchEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "BranchEntity_Resolved/attributeContext/BranchEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "BranchEntity_Resolved/attributeContext/BranchEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "VendorAccount",
+            "parent": "BranchEntity_Resolved/attributeContext/BranchEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BranchEntity/hasAttributes/VendorAccount",
+            "contents": [
+              "BranchEntity_Resolved/hasAttributes/VendorAccount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "AlcoholRegulationAuthority",
+            "parent": "BranchEntity_Resolved/attributeContext/BranchEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BranchEntity/hasAttributes/AlcoholRegulationAuthority",
+            "contents": [
+              "BranchEntity_Resolved/hasAttributes/AlcoholRegulationAuthority"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "SeparateDivisionID",
+            "parent": "BranchEntity_Resolved/attributeContext/BranchEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BranchEntity/hasAttributes/SeparateDivisionID",
+            "contents": [
+              "BranchEntity_Resolved/hasAttributes/SeparateDivisionID"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Independent",
+            "parent": "BranchEntity_Resolved/attributeContext/BranchEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BranchEntity/hasAttributes/Independent",
+            "contents": [
+              "BranchEntity_Resolved/hasAttributes/Independent"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_Branches_RURelationship",
+            "parent": "BranchEntity_Resolved/attributeContext/BranchEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BranchEntity/hasAttributes/BackingTable_Branches_RURelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "Branches_RU",
+                "parent": "BranchEntity_Resolved/attributeContext/BranchEntity_Resolved/BackingTable_Branches_RURelationship",
+                "definition": "resolvedFrom/Branches_RU",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "BranchEntity_Resolved/attributeContext/BranchEntity_Resolved/BackingTable_Branches_RURelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "BranchEntity_Resolved/attributeContext/BranchEntity_Resolved/BackingTable_Branches_RURelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "BranchEntity_Resolved/attributeContext/BranchEntity_Resolved/BackingTable_Branches_RURelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "BranchEntity_Resolved/hasAttributes/BackingTable_Branches_RURelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "BranchEntity_Resolved/attributeContext/BranchEntity_Resolved",
+            "definition": "resolvedFrom/BranchEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "BranchEntity_Resolved/attributeContext/BranchEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "BranchEntity_Resolved/attributeContext/BranchEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "BranchEntity_Resolved/attributeContext/BranchEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "BranchEntity_Resolved/attributeContext/BranchEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "BranchEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "VendorAccount",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BranchEntity_Resolved/attributeContext/BranchEntity_Resolved/VendorAccount",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "AlcoholRegulationAuthority",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BranchEntity_Resolved/attributeContext/BranchEntity_Resolved/AlcoholRegulationAuthority",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Alcohol regulation authority"
+        },
+        {
+          "name": "SeparateDivisionID",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BranchEntity_Resolved/attributeContext/BranchEntity_Resolved/SeparateDivisionID",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Independent",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BranchEntity_Resolved/attributeContext/BranchEntity_Resolved/Independent",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_Branches_RURelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/APARShared/Group/Branches_RU.cdm.json/Branches_RU",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "BranchEntity_Resolved/attributeContext/BranchEntity_Resolved/BackingTable_Branches_RURelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "BranchEntity_Resolved/attributeContext/BranchEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Separate divisions",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

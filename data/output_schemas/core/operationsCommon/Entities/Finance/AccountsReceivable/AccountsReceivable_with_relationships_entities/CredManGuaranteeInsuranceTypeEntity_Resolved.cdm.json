@@ -1,0 +1,261 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "CredManGuaranteeInsuranceTypeEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "CredManGuaranteeInsuranceTypeEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "CredManGuaranteeInsuranceTypeEntity_Resolved",
+        "definition": "resolvedFrom/CredManGuaranteeInsuranceTypeEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "CredManGuaranteeInsuranceTypeEntity_Resolved/attributeContext/CredManGuaranteeInsuranceTypeEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "CredManGuaranteeInsuranceTypeEntity_Resolved/attributeContext/CredManGuaranteeInsuranceTypeEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "CredManGuaranteeInsuranceTypeEntity_Resolved/attributeContext/CredManGuaranteeInsuranceTypeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CredManGuaranteeInsuranceTypeEntity/hasAttributes/Description",
+            "contents": [
+              "CredManGuaranteeInsuranceTypeEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Type",
+            "parent": "CredManGuaranteeInsuranceTypeEntity_Resolved/attributeContext/CredManGuaranteeInsuranceTypeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CredManGuaranteeInsuranceTypeEntity/hasAttributes/Type",
+            "contents": [
+              "CredManGuaranteeInsuranceTypeEntity_Resolved/hasAttributes/Type"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_CredManGuaranteeInsuranceTypeRelationship",
+            "parent": "CredManGuaranteeInsuranceTypeEntity_Resolved/attributeContext/CredManGuaranteeInsuranceTypeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CredManGuaranteeInsuranceTypeEntity/hasAttributes/BackingTable_CredManGuaranteeInsuranceTypeRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CredManGuaranteeInsuranceType",
+                "parent": "CredManGuaranteeInsuranceTypeEntity_Resolved/attributeContext/CredManGuaranteeInsuranceTypeEntity_Resolved/BackingTable_CredManGuaranteeInsuranceTypeRelationship",
+                "definition": "resolvedFrom/CredManGuaranteeInsuranceType",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CredManGuaranteeInsuranceTypeEntity_Resolved/attributeContext/CredManGuaranteeInsuranceTypeEntity_Resolved/BackingTable_CredManGuaranteeInsuranceTypeRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CredManGuaranteeInsuranceTypeEntity_Resolved/attributeContext/CredManGuaranteeInsuranceTypeEntity_Resolved/BackingTable_CredManGuaranteeInsuranceTypeRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CredManGuaranteeInsuranceTypeEntity_Resolved/attributeContext/CredManGuaranteeInsuranceTypeEntity_Resolved/BackingTable_CredManGuaranteeInsuranceTypeRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CredManGuaranteeInsuranceTypeEntity_Resolved/hasAttributes/BackingTable_CredManGuaranteeInsuranceTypeRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "CredManGuaranteeInsuranceTypeEntity_Resolved/attributeContext/CredManGuaranteeInsuranceTypeEntity_Resolved",
+            "definition": "resolvedFrom/CredManGuaranteeInsuranceTypeEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "CredManGuaranteeInsuranceTypeEntity_Resolved/attributeContext/CredManGuaranteeInsuranceTypeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CredManGuaranteeInsuranceTypeEntity_Resolved/attributeContext/CredManGuaranteeInsuranceTypeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CredManGuaranteeInsuranceTypeEntity_Resolved/attributeContext/CredManGuaranteeInsuranceTypeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CredManGuaranteeInsuranceTypeEntity_Resolved/attributeContext/CredManGuaranteeInsuranceTypeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CredManGuaranteeInsuranceTypeEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CredManGuaranteeInsuranceTypeEntity_Resolved/attributeContext/CredManGuaranteeInsuranceTypeEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Type",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CredManGuaranteeInsuranceTypeEntity_Resolved/attributeContext/CredManGuaranteeInsuranceTypeEntity_Resolved/Type",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_CredManGuaranteeInsuranceTypeRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/AccountsReceivable/Group/CredManGuaranteeInsuranceType.cdm.json/CredManGuaranteeInsuranceType",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CredManGuaranteeInsuranceTypeEntity_Resolved/attributeContext/CredManGuaranteeInsuranceTypeEntity_Resolved/BackingTable_CredManGuaranteeInsuranceTypeRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CredManGuaranteeInsuranceTypeEntity_Resolved/attributeContext/CredManGuaranteeInsuranceTypeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Insurance and guarantee types",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

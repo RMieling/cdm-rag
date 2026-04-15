@@ -1,0 +1,228 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "EFDocReturnCodeEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "EFDocReturnCodeEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "EFDocReturnCodeEntity_Resolved",
+        "definition": "resolvedFrom/EFDocReturnCodeEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "EFDocReturnCodeEntity_Resolved/attributeContext/EFDocReturnCodeEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "EFDocReturnCodeEntity_Resolved/attributeContext/EFDocReturnCodeEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "EFDocReturnCodeEntity_Resolved/attributeContext/EFDocReturnCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EFDocReturnCodeEntity/hasAttributes/Description",
+            "contents": [
+              "EFDocReturnCodeEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "MessageType",
+            "parent": "EFDocReturnCodeEntity_Resolved/attributeContext/EFDocReturnCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EFDocReturnCodeEntity/hasAttributes/MessageType",
+            "contents": [
+              "EFDocReturnCodeEntity_Resolved/hasAttributes/MessageType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ReturnCode",
+            "parent": "EFDocReturnCodeEntity_Resolved/attributeContext/EFDocReturnCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EFDocReturnCodeEntity/hasAttributes/ReturnCode",
+            "contents": [
+              "EFDocReturnCodeEntity_Resolved/hasAttributes/ReturnCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "FiscalDocumentStatus",
+            "parent": "EFDocReturnCodeEntity_Resolved/attributeContext/EFDocReturnCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EFDocReturnCodeEntity/hasAttributes/FiscalDocumentStatus",
+            "contents": [
+              "EFDocReturnCodeEntity_Resolved/hasAttributes/FiscalDocumentStatus"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_EFDReturnCode_BRRelationship",
+            "parent": "EFDocReturnCodeEntity_Resolved/attributeContext/EFDocReturnCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EFDocReturnCodeEntity/hasAttributes/BackingTable_EFDReturnCode_BRRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "EFDReturnCode_BR",
+                "parent": "EFDocReturnCodeEntity_Resolved/attributeContext/EFDocReturnCodeEntity_Resolved/BackingTable_EFDReturnCode_BRRelationship",
+                "definition": "resolvedFrom/EFDReturnCode_BR",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "EFDocReturnCodeEntity_Resolved/attributeContext/EFDocReturnCodeEntity_Resolved/BackingTable_EFDReturnCode_BRRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "EFDocReturnCodeEntity_Resolved/attributeContext/EFDocReturnCodeEntity_Resolved/BackingTable_EFDReturnCode_BRRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "EFDocReturnCodeEntity_Resolved/attributeContext/EFDocReturnCodeEntity_Resolved/BackingTable_EFDReturnCode_BRRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "EFDocReturnCodeEntity_Resolved/hasAttributes/BackingTable_EFDReturnCode_BRRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "EFDocReturnCodeEntity_Resolved/attributeContext/EFDocReturnCodeEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "MessageType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "EFDocReturnCodeEntity_Resolved/attributeContext/EFDocReturnCodeEntity_Resolved/MessageType",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ReturnCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "EFDocReturnCodeEntity_Resolved/attributeContext/EFDocReturnCodeEntity_Resolved/ReturnCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "FiscalDocumentStatus",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "EFDocReturnCodeEntity_Resolved/attributeContext/EFDocReturnCodeEntity_Resolved/FiscalDocumentStatus",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_EFDReturnCode_BRRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/FiscalBooksBrazil/Miscellaneous/EFDReturnCode_BR.cdm.json/EFDReturnCode_BR",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "EFDocReturnCodeEntity_Resolved/attributeContext/EFDocReturnCodeEntity_Resolved/BackingTable_EFDReturnCode_BRRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "NF-e rejection code",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

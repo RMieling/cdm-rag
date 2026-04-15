@@ -1,0 +1,115 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "DimAttributeHcmWorkerEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "DimAttributeHcmWorkerEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "DimAttributeHcmWorkerEntity_Resolved",
+        "definition": "resolvedFrom/DimAttributeHcmWorkerEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "DimAttributeHcmWorkerEntity_Resolved/attributeContext/DimAttributeHcmWorkerEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "DimAttributeHcmWorkerEntity_Resolved/attributeContext/DimAttributeHcmWorkerEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Value",
+            "parent": "DimAttributeHcmWorkerEntity_Resolved/attributeContext/DimAttributeHcmWorkerEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimAttributeHcmWorkerEntity/hasAttributes/Value",
+            "contents": [
+              "DimAttributeHcmWorkerEntity_Resolved/hasAttributes/Value"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "DimAttributeHcmWorkerEntity_Resolved/attributeContext/DimAttributeHcmWorkerEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimAttributeHcmWorkerEntity/hasAttributes/Name",
+            "contents": [
+              "DimAttributeHcmWorkerEntity_Resolved/hasAttributes/Name"
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Value",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DimAttributeHcmWorkerEntity_Resolved/attributeContext/DimAttributeHcmWorkerEntity_Resolved/Value",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DimAttributeHcmWorkerEntity_Resolved/attributeContext/DimAttributeHcmWorkerEntity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        }
+      ],
+      "displayName": "Workers",
+      "version": "1.0.1"
+    }
+  ],
+  "documentVersion": "1.0.1"
+}

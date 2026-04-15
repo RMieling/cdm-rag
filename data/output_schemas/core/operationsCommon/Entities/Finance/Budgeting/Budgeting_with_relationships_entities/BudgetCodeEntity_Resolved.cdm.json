@@ -1,0 +1,409 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "BudgetCodeEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "BudgetCodeEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "BudgetCodeEntity_Resolved",
+        "definition": "resolvedFrom/BudgetCodeEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "BudgetCodeEntity_Resolved/attributeContext/BudgetCodeEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "BudgetCodeEntity_Resolved/attributeContext/BudgetCodeEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BudgetCode",
+            "parent": "BudgetCodeEntity_Resolved/attributeContext/BudgetCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetCodeEntity/hasAttributes/BudgetCode",
+            "contents": [
+              "BudgetCodeEntity_Resolved/hasAttributes/BudgetCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BudgetType",
+            "parent": "BudgetCodeEntity_Resolved/attributeContext/BudgetCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetCodeEntity/hasAttributes/BudgetType",
+            "contents": [
+              "BudgetCodeEntity_Resolved/hasAttributes/BudgetType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "BudgetCodeEntity_Resolved/attributeContext/BudgetCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetCodeEntity/hasAttributes/Description",
+            "contents": [
+              "BudgetCodeEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "IsDefaultCode",
+            "parent": "BudgetCodeEntity_Resolved/attributeContext/BudgetCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetCodeEntity/hasAttributes/IsDefaultCode",
+            "contents": [
+              "BudgetCodeEntity_Resolved/hasAttributes/IsDefaultCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ReasonCode",
+            "parent": "BudgetCodeEntity_Resolved/attributeContext/BudgetCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetCodeEntity/hasAttributes/ReasonCode",
+            "contents": [
+              "BudgetCodeEntity_Resolved/hasAttributes/ReasonCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "WorkflowId",
+            "parent": "BudgetCodeEntity_Resolved/attributeContext/BudgetCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetCodeEntity/hasAttributes/WorkflowId",
+            "contents": [
+              "BudgetCodeEntity_Resolved/hasAttributes/WorkflowId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_LedgerFinancialReasonEntityRelationship",
+            "parent": "BudgetCodeEntity_Resolved/attributeContext/BudgetCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetCodeEntity/hasAttributes/Relationship_LedgerFinancialReasonEntityRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "LedgerFinancialReasonEntity",
+                "parent": "BudgetCodeEntity_Resolved/attributeContext/BudgetCodeEntity_Resolved/Relationship_LedgerFinancialReasonEntityRelationship",
+                "definition": "resolvedFrom/LedgerFinancialReasonEntity",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "BudgetCodeEntity_Resolved/attributeContext/BudgetCodeEntity_Resolved/Relationship_LedgerFinancialReasonEntityRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "BudgetCodeEntity_Resolved/attributeContext/BudgetCodeEntity_Resolved/Relationship_LedgerFinancialReasonEntityRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "BudgetCodeEntity_Resolved/attributeContext/BudgetCodeEntity_Resolved/Relationship_LedgerFinancialReasonEntityRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "BudgetCodeEntity_Resolved/hasAttributes/Relationship_LedgerFinancialReasonEntityRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_BudgetTransactionCodeRelationship",
+            "parent": "BudgetCodeEntity_Resolved/attributeContext/BudgetCodeEntity_Resolved",
+            "definition": "resolvedFrom/BudgetCodeEntity/hasAttributes/BackingTable_BudgetTransactionCodeRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "BudgetTransactionCode",
+                "parent": "BudgetCodeEntity_Resolved/attributeContext/BudgetCodeEntity_Resolved/BackingTable_BudgetTransactionCodeRelationship",
+                "definition": "resolvedFrom/BudgetTransactionCode",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "BudgetCodeEntity_Resolved/attributeContext/BudgetCodeEntity_Resolved/BackingTable_BudgetTransactionCodeRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "BudgetCodeEntity_Resolved/attributeContext/BudgetCodeEntity_Resolved/BackingTable_BudgetTransactionCodeRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "BudgetCodeEntity_Resolved/attributeContext/BudgetCodeEntity_Resolved/BackingTable_BudgetTransactionCodeRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "BudgetCodeEntity_Resolved/hasAttributes/BackingTable_BudgetTransactionCodeRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "BudgetCodeEntity_Resolved/attributeContext/BudgetCodeEntity_Resolved",
+            "definition": "resolvedFrom/BudgetCodeEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "BudgetCodeEntity_Resolved/attributeContext/BudgetCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "BudgetCodeEntity_Resolved/attributeContext/BudgetCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "BudgetCodeEntity_Resolved/attributeContext/BudgetCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "BudgetCodeEntity_Resolved/attributeContext/BudgetCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "BudgetCodeEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "BudgetCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetCodeEntity_Resolved/attributeContext/BudgetCodeEntity_Resolved/BudgetCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BudgetType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetCodeEntity_Resolved/attributeContext/BudgetCodeEntity_Resolved/BudgetType",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetCodeEntity_Resolved/attributeContext/BudgetCodeEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "IsDefaultCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetCodeEntity_Resolved/attributeContext/BudgetCodeEntity_Resolved/IsDefaultCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ReasonCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetCodeEntity_Resolved/attributeContext/BudgetCodeEntity_Resolved/ReasonCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "WorkflowId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetCodeEntity_Resolved/attributeContext/BudgetCodeEntity_Resolved/WorkflowId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Relationship_LedgerFinancialReasonEntityRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": []
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "BudgetCodeEntity_Resolved/attributeContext/BudgetCodeEntity_Resolved/Relationship_LedgerFinancialReasonEntityRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "BackingTable_BudgetTransactionCodeRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Budget/Group/BudgetTransactionCode.cdm.json/BudgetTransactionCode",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "BudgetCodeEntity_Resolved/attributeContext/BudgetCodeEntity_Resolved/BackingTable_BudgetTransactionCodeRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "BudgetCodeEntity_Resolved/attributeContext/BudgetCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Budget codes",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

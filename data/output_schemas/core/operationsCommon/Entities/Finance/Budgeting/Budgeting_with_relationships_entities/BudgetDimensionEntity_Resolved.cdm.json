@@ -1,0 +1,437 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "BudgetDimensionEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "BudgetDimensionEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "BudgetDimensionEntity_Resolved",
+        "definition": "resolvedFrom/BudgetDimensionEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "BudgetDimensionEntity_Resolved/attributeContext/BudgetDimensionEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "BudgetDimensionEntity_Resolved/attributeContext/BudgetDimensionEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DimensionAttribute",
+            "parent": "BudgetDimensionEntity_Resolved/attributeContext/BudgetDimensionEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetDimensionEntity/hasAttributes/DimensionAttribute",
+            "contents": [
+              "BudgetDimensionEntity_Resolved/hasAttributes/DimensionAttribute"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "PrimaryLedger",
+            "parent": "BudgetDimensionEntity_Resolved/attributeContext/BudgetDimensionEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetDimensionEntity/hasAttributes/PrimaryLedger",
+            "contents": [
+              "BudgetDimensionEntity_Resolved/hasAttributes/PrimaryLedger"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DimensionAttributeId",
+            "parent": "BudgetDimensionEntity_Resolved/attributeContext/BudgetDimensionEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetDimensionEntity/hasAttributes/DimensionAttributeId",
+            "contents": [
+              "BudgetDimensionEntity_Resolved/hasAttributes/DimensionAttributeId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "LegalEntityId",
+            "parent": "BudgetDimensionEntity_Resolved/attributeContext/BudgetDimensionEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetDimensionEntity/hasAttributes/LegalEntityId",
+            "contents": [
+              "BudgetDimensionEntity_Resolved/hasAttributes/LegalEntityId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_DimensionAttributeRelationship",
+            "parent": "BudgetDimensionEntity_Resolved/attributeContext/BudgetDimensionEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetDimensionEntity/hasAttributes/Relationship_DimensionAttributeRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "DimensionAttributeEntity",
+                "parent": "BudgetDimensionEntity_Resolved/attributeContext/BudgetDimensionEntity_Resolved/Relationship_DimensionAttributeRelationship",
+                "definition": "resolvedFrom/DimensionAttributeEntity",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "BudgetDimensionEntity_Resolved/attributeContext/BudgetDimensionEntity_Resolved/Relationship_DimensionAttributeRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "BudgetDimensionEntity_Resolved/attributeContext/BudgetDimensionEntity_Resolved/Relationship_DimensionAttributeRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "BudgetDimensionEntity_Resolved/attributeContext/BudgetDimensionEntity_Resolved/Relationship_DimensionAttributeRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "BudgetDimensionEntity_Resolved/hasAttributes/Relationship_DimensionAttributeRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryLedgerRelationship",
+            "parent": "BudgetDimensionEntity_Resolved/attributeContext/BudgetDimensionEntity_Resolved",
+            "definition": "resolvedFrom/BudgetDimensionEntity/hasAttributes/Relationship_PrimaryLedgerRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "LedgerEntity",
+                "parent": "BudgetDimensionEntity_Resolved/attributeContext/BudgetDimensionEntity_Resolved/Relationship_PrimaryLedgerRelationship",
+                "definition": "resolvedFrom/LedgerEntity",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "BudgetDimensionEntity_Resolved/attributeContext/BudgetDimensionEntity_Resolved/Relationship_PrimaryLedgerRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "BudgetDimensionEntity_Resolved/attributeContext/BudgetDimensionEntity_Resolved/Relationship_PrimaryLedgerRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "BudgetDimensionEntity_Resolved/attributeContext/BudgetDimensionEntity_Resolved/Relationship_PrimaryLedgerRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "BudgetDimensionEntity_Resolved/hasAttributes/Relationship_PrimaryLedgerRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_BudgetPrimaryLedgerDimensionAttributeRelationship",
+            "parent": "BudgetDimensionEntity_Resolved/attributeContext/BudgetDimensionEntity_Resolved",
+            "definition": "resolvedFrom/BudgetDimensionEntity/hasAttributes/BackingTable_BudgetPrimaryLedgerDimensionAttributeRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "BudgetPrimaryLedgerDimensionAttribute",
+                "parent": "BudgetDimensionEntity_Resolved/attributeContext/BudgetDimensionEntity_Resolved/BackingTable_BudgetPrimaryLedgerDimensionAttributeRelationship",
+                "definition": "resolvedFrom/BudgetPrimaryLedgerDimensionAttribute",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "BudgetDimensionEntity_Resolved/attributeContext/BudgetDimensionEntity_Resolved/BackingTable_BudgetPrimaryLedgerDimensionAttributeRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "BudgetDimensionEntity_Resolved/attributeContext/BudgetDimensionEntity_Resolved/BackingTable_BudgetPrimaryLedgerDimensionAttributeRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "BudgetDimensionEntity_Resolved/attributeContext/BudgetDimensionEntity_Resolved/BackingTable_BudgetPrimaryLedgerDimensionAttributeRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "BudgetDimensionEntity_Resolved/hasAttributes/BackingTable_BudgetPrimaryLedgerDimensionAttributeRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "BudgetDimensionEntity_Resolved/attributeContext/BudgetDimensionEntity_Resolved",
+            "definition": "resolvedFrom/BudgetDimensionEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "BudgetDimensionEntity_Resolved/attributeContext/BudgetDimensionEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "BudgetDimensionEntity_Resolved/attributeContext/BudgetDimensionEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "BudgetDimensionEntity_Resolved/attributeContext/BudgetDimensionEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "BudgetDimensionEntity_Resolved/attributeContext/BudgetDimensionEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "BudgetDimensionEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "DimensionAttribute",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetDimensionEntity_Resolved/attributeContext/BudgetDimensionEntity_Resolved/DimensionAttribute",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "PrimaryLedger",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetDimensionEntity_Resolved/attributeContext/BudgetDimensionEntity_Resolved/PrimaryLedger",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "DimensionAttributeId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetDimensionEntity_Resolved/attributeContext/BudgetDimensionEntity_Resolved/DimensionAttributeId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "LegalEntityId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetDimensionEntity_Resolved/attributeContext/BudgetDimensionEntity_Resolved/LegalEntityId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Relationship_DimensionAttributeRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": []
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "BudgetDimensionEntity_Resolved/attributeContext/BudgetDimensionEntity_Resolved/Relationship_DimensionAttributeRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryLedgerRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": []
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "BudgetDimensionEntity_Resolved/attributeContext/BudgetDimensionEntity_Resolved/Relationship_PrimaryLedgerRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "BackingTable_BudgetPrimaryLedgerDimensionAttributeRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Budget/Group/BudgetPrimaryLedgerDimensionAttribute.cdm.json/BudgetPrimaryLedgerDimensionAttribute",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "BudgetDimensionEntity_Resolved/attributeContext/BudgetDimensionEntity_Resolved/BackingTable_BudgetPrimaryLedgerDimensionAttributeRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "BudgetDimensionEntity_Resolved/attributeContext/BudgetDimensionEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Budget dimensions",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

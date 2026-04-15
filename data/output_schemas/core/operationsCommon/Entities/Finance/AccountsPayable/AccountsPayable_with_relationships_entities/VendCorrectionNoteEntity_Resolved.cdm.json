@@ -1,0 +1,381 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "VendCorrectionNoteEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "VendCorrectionNoteEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "VendCorrectionNoteEntity_Resolved",
+        "definition": "resolvedFrom/VendCorrectionNoteEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "VendCorrectionNoteEntity_Resolved/attributeContext/VendCorrectionNoteEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "VendCorrectionNoteEntity_Resolved/attributeContext/VendCorrectionNoteEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Invoice",
+            "parent": "VendCorrectionNoteEntity_Resolved/attributeContext/VendCorrectionNoteEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendCorrectionNoteEntity/hasAttributes/Invoice",
+            "contents": [
+              "VendCorrectionNoteEntity_Resolved/hasAttributes/Invoice"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "InvoiceAccount",
+            "parent": "VendCorrectionNoteEntity_Resolved/attributeContext/VendCorrectionNoteEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendCorrectionNoteEntity/hasAttributes/InvoiceAccount",
+            "contents": [
+              "VendCorrectionNoteEntity_Resolved/hasAttributes/InvoiceAccount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Date",
+            "parent": "VendCorrectionNoteEntity_Resolved/attributeContext/VendCorrectionNoteEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendCorrectionNoteEntity/hasAttributes/Date",
+            "contents": [
+              "VendCorrectionNoteEntity_Resolved/hasAttributes/Date"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CorrectionNote",
+            "parent": "VendCorrectionNoteEntity_Resolved/attributeContext/VendCorrectionNoteEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendCorrectionNoteEntity/hasAttributes/CorrectionNote",
+            "contents": [
+              "VendCorrectionNoteEntity_Resolved/hasAttributes/CorrectionNote"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DocumentDate",
+            "parent": "VendCorrectionNoteEntity_Resolved/attributeContext/VendCorrectionNoteEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendCorrectionNoteEntity/hasAttributes/DocumentDate",
+            "contents": [
+              "VendCorrectionNoteEntity_Resolved/hasAttributes/DocumentDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "OriginalText",
+            "parent": "VendCorrectionNoteEntity_Resolved/attributeContext/VendCorrectionNoteEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendCorrectionNoteEntity/hasAttributes/OriginalText",
+            "contents": [
+              "VendCorrectionNoteEntity_Resolved/hasAttributes/OriginalText"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CorrectedText",
+            "parent": "VendCorrectionNoteEntity_Resolved/attributeContext/VendCorrectionNoteEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendCorrectionNoteEntity/hasAttributes/CorrectedText",
+            "contents": [
+              "VendCorrectionNoteEntity_Resolved/hasAttributes/CorrectedText"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Posted",
+            "parent": "VendCorrectionNoteEntity_Resolved/attributeContext/VendCorrectionNoteEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendCorrectionNoteEntity/hasAttributes/Posted",
+            "contents": [
+              "VendCorrectionNoteEntity_Resolved/hasAttributes/Posted"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_PlVendCorrectJourRelationship",
+            "parent": "VendCorrectionNoteEntity_Resolved/attributeContext/VendCorrectionNoteEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendCorrectionNoteEntity/hasAttributes/BackingTable_PlVendCorrectJourRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "PlVendCorrectJour",
+                "parent": "VendCorrectionNoteEntity_Resolved/attributeContext/VendCorrectionNoteEntity_Resolved/BackingTable_PlVendCorrectJourRelationship",
+                "definition": "resolvedFrom/PlVendCorrectJour",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "VendCorrectionNoteEntity_Resolved/attributeContext/VendCorrectionNoteEntity_Resolved/BackingTable_PlVendCorrectJourRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "VendCorrectionNoteEntity_Resolved/attributeContext/VendCorrectionNoteEntity_Resolved/BackingTable_PlVendCorrectJourRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "VendCorrectionNoteEntity_Resolved/attributeContext/VendCorrectionNoteEntity_Resolved/BackingTable_PlVendCorrectJourRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "VendCorrectionNoteEntity_Resolved/hasAttributes/BackingTable_PlVendCorrectJourRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "VendCorrectionNoteEntity_Resolved/attributeContext/VendCorrectionNoteEntity_Resolved",
+            "definition": "resolvedFrom/VendCorrectionNoteEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "VendCorrectionNoteEntity_Resolved/attributeContext/VendCorrectionNoteEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "VendCorrectionNoteEntity_Resolved/attributeContext/VendCorrectionNoteEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "VendCorrectionNoteEntity_Resolved/attributeContext/VendCorrectionNoteEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "VendCorrectionNoteEntity_Resolved/attributeContext/VendCorrectionNoteEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "VendCorrectionNoteEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Invoice",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VendCorrectionNoteEntity_Resolved/attributeContext/VendCorrectionNoteEntity_Resolved/Invoice",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "InvoiceAccount",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VendCorrectionNoteEntity_Resolved/attributeContext/VendCorrectionNoteEntity_Resolved/InvoiceAccount",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Date",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VendCorrectionNoteEntity_Resolved/attributeContext/VendCorrectionNoteEntity_Resolved/Date",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "CorrectionNote",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VendCorrectionNoteEntity_Resolved/attributeContext/VendCorrectionNoteEntity_Resolved/CorrectionNote",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "DocumentDate",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VendCorrectionNoteEntity_Resolved/attributeContext/VendCorrectionNoteEntity_Resolved/DocumentDate",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "OriginalText",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VendCorrectionNoteEntity_Resolved/attributeContext/VendCorrectionNoteEntity_Resolved/OriginalText",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "CorrectedText",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VendCorrectionNoteEntity_Resolved/attributeContext/VendCorrectionNoteEntity_Resolved/CorrectedText",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Posted",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VendCorrectionNoteEntity_Resolved/attributeContext/VendCorrectionNoteEntity_Resolved/Posted",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_PlVendCorrectJourRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/AccountsPayable/WorksheetHeader/PlVendCorrectJour.cdm.json/PlVendCorrectJour",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "VendCorrectionNoteEntity_Resolved/attributeContext/VendCorrectionNoteEntity_Resolved/BackingTable_PlVendCorrectJourRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "VendCorrectionNoteEntity_Resolved/attributeContext/VendCorrectionNoteEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Correction notes",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

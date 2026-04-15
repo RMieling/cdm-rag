@@ -1,0 +1,231 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "LogisticsAddressParametersEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "LogisticsAddressParametersEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "LogisticsAddressParametersEntity_Resolved",
+        "definition": "resolvedFrom/LogisticsAddressParametersEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "LogisticsAddressParametersEntity_Resolved/attributeContext/LogisticsAddressParametersEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "LogisticsAddressParametersEntity_Resolved/attributeContext/LogisticsAddressParametersEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Key",
+            "parent": "LogisticsAddressParametersEntity_Resolved/attributeContext/LogisticsAddressParametersEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LogisticsAddressParametersEntity/hasAttributes/Key",
+            "contents": [
+              "LogisticsAddressParametersEntity_Resolved/hasAttributes/Key"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ValidateCity",
+            "parent": "LogisticsAddressParametersEntity_Resolved/attributeContext/LogisticsAddressParametersEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LogisticsAddressParametersEntity/hasAttributes/ValidateCity",
+            "contents": [
+              "LogisticsAddressParametersEntity_Resolved/hasAttributes/ValidateCity"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ValidateDistrict",
+            "parent": "LogisticsAddressParametersEntity_Resolved/attributeContext/LogisticsAddressParametersEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LogisticsAddressParametersEntity/hasAttributes/ValidateDistrict",
+            "contents": [
+              "LogisticsAddressParametersEntity_Resolved/hasAttributes/ValidateDistrict"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ValidateZipCode",
+            "parent": "LogisticsAddressParametersEntity_Resolved/attributeContext/LogisticsAddressParametersEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LogisticsAddressParametersEntity/hasAttributes/ValidateZipCode",
+            "contents": [
+              "LogisticsAddressParametersEntity_Resolved/hasAttributes/ValidateZipCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_LogisticsAddressParametersRelationship",
+            "parent": "LogisticsAddressParametersEntity_Resolved/attributeContext/LogisticsAddressParametersEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LogisticsAddressParametersEntity/hasAttributes/BackingTable_LogisticsAddressParametersRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "LogisticsAddressParameters",
+                "parent": "LogisticsAddressParametersEntity_Resolved/attributeContext/LogisticsAddressParametersEntity_Resolved/BackingTable_LogisticsAddressParametersRelationship",
+                "definition": "resolvedFrom/LogisticsAddressParameters",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "LogisticsAddressParametersEntity_Resolved/attributeContext/LogisticsAddressParametersEntity_Resolved/BackingTable_LogisticsAddressParametersRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "LogisticsAddressParametersEntity_Resolved/attributeContext/LogisticsAddressParametersEntity_Resolved/BackingTable_LogisticsAddressParametersRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "LogisticsAddressParametersEntity_Resolved/attributeContext/LogisticsAddressParametersEntity_Resolved/BackingTable_LogisticsAddressParametersRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "LogisticsAddressParametersEntity_Resolved/hasAttributes/BackingTable_LogisticsAddressParametersRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Key",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LogisticsAddressParametersEntity_Resolved/attributeContext/LogisticsAddressParametersEntity_Resolved/Key",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ValidateCity",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LogisticsAddressParametersEntity_Resolved/attributeContext/LogisticsAddressParametersEntity_Resolved/ValidateCity",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "City"
+        },
+        {
+          "name": "ValidateDistrict",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LogisticsAddressParametersEntity_Resolved/attributeContext/LogisticsAddressParametersEntity_Resolved/ValidateDistrict",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "District"
+        },
+        {
+          "name": "ValidateZipCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LogisticsAddressParametersEntity_Resolved/attributeContext/LogisticsAddressParametersEntity_Resolved/ValidateZipCode",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "ZIP/postal code"
+        },
+        {
+          "name": "BackingTable_LogisticsAddressParametersRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Common/GAB/Parameter/LogisticsAddressParameters.cdm.json/LogisticsAddressParameters",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "LogisticsAddressParametersEntity_Resolved/attributeContext/LogisticsAddressParametersEntity_Resolved/BackingTable_LogisticsAddressParametersRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Address parameters",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

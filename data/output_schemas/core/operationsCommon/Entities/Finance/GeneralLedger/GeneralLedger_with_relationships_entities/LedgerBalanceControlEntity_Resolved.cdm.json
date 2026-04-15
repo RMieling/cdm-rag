@@ -1,0 +1,389 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "LedgerBalanceControlEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "LedgerBalanceControlEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "LedgerBalanceControlEntity_Resolved",
+        "definition": "resolvedFrom/LedgerBalanceControlEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "LedgerBalanceControlEntity_Resolved/attributeContext/LedgerBalanceControlEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "LedgerBalanceControlEntity_Resolved/attributeContext/LedgerBalanceControlEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "MainAccountRecId",
+            "parent": "LedgerBalanceControlEntity_Resolved/attributeContext/LedgerBalanceControlEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerBalanceControlEntity/hasAttributes/MainAccountRecId",
+            "contents": [
+              "LedgerBalanceControlEntity_Resolved/hasAttributes/MainAccountRecId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ChartOfAccounts",
+            "parent": "LedgerBalanceControlEntity_Resolved/attributeContext/LedgerBalanceControlEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerBalanceControlEntity/hasAttributes/ChartOfAccounts",
+            "contents": [
+              "LedgerBalanceControlEntity_Resolved/hasAttributes/ChartOfAccounts"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ChartOfAccountsRecId",
+            "parent": "LedgerBalanceControlEntity_Resolved/attributeContext/LedgerBalanceControlEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerBalanceControlEntity/hasAttributes/ChartOfAccountsRecId",
+            "contents": [
+              "LedgerBalanceControlEntity_Resolved/hasAttributes/ChartOfAccountsRecId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "MainAccountId",
+            "parent": "LedgerBalanceControlEntity_Resolved/attributeContext/LedgerBalanceControlEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerBalanceControlEntity/hasAttributes/MainAccountId",
+            "contents": [
+              "LedgerBalanceControlEntity_Resolved/hasAttributes/MainAccountId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "MainAccountName",
+            "parent": "LedgerBalanceControlEntity_Resolved/attributeContext/LedgerBalanceControlEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerBalanceControlEntity/hasAttributes/MainAccountName",
+            "contents": [
+              "LedgerBalanceControlEntity_Resolved/hasAttributes/MainAccountName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_MainAccountRelationship",
+            "parent": "LedgerBalanceControlEntity_Resolved/attributeContext/LedgerBalanceControlEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerBalanceControlEntity/hasAttributes/Relationship_MainAccountRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "MainAccountEntity",
+                "parent": "LedgerBalanceControlEntity_Resolved/attributeContext/LedgerBalanceControlEntity_Resolved/Relationship_MainAccountRelationship",
+                "definition": "resolvedFrom/MainAccountEntity",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "LedgerBalanceControlEntity_Resolved/attributeContext/LedgerBalanceControlEntity_Resolved/Relationship_MainAccountRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "LedgerBalanceControlEntity_Resolved/attributeContext/LedgerBalanceControlEntity_Resolved/Relationship_MainAccountRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "LedgerBalanceControlEntity_Resolved/attributeContext/LedgerBalanceControlEntity_Resolved/Relationship_MainAccountRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "LedgerBalanceControlEntity_Resolved/hasAttributes/Relationship_MainAccountRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_LedgerBalanceControlRelationship",
+            "parent": "LedgerBalanceControlEntity_Resolved/attributeContext/LedgerBalanceControlEntity_Resolved",
+            "definition": "resolvedFrom/LedgerBalanceControlEntity/hasAttributes/BackingTable_LedgerBalanceControlRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "LedgerBalanceControl",
+                "parent": "LedgerBalanceControlEntity_Resolved/attributeContext/LedgerBalanceControlEntity_Resolved/BackingTable_LedgerBalanceControlRelationship",
+                "definition": "resolvedFrom/LedgerBalanceControl",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "LedgerBalanceControlEntity_Resolved/attributeContext/LedgerBalanceControlEntity_Resolved/BackingTable_LedgerBalanceControlRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "LedgerBalanceControlEntity_Resolved/attributeContext/LedgerBalanceControlEntity_Resolved/BackingTable_LedgerBalanceControlRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "LedgerBalanceControlEntity_Resolved/attributeContext/LedgerBalanceControlEntity_Resolved/BackingTable_LedgerBalanceControlRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "LedgerBalanceControlEntity_Resolved/hasAttributes/BackingTable_LedgerBalanceControlRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "LedgerBalanceControlEntity_Resolved/attributeContext/LedgerBalanceControlEntity_Resolved",
+            "definition": "resolvedFrom/LedgerBalanceControlEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "LedgerBalanceControlEntity_Resolved/attributeContext/LedgerBalanceControlEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "LedgerBalanceControlEntity_Resolved/attributeContext/LedgerBalanceControlEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "LedgerBalanceControlEntity_Resolved/attributeContext/LedgerBalanceControlEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "LedgerBalanceControlEntity_Resolved/attributeContext/LedgerBalanceControlEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "LedgerBalanceControlEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "MainAccountRecId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerBalanceControlEntity_Resolved/attributeContext/LedgerBalanceControlEntity_Resolved/MainAccountRecId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ChartOfAccounts",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerBalanceControlEntity_Resolved/attributeContext/LedgerBalanceControlEntity_Resolved/ChartOfAccounts",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ChartOfAccountsRecId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerBalanceControlEntity_Resolved/attributeContext/LedgerBalanceControlEntity_Resolved/ChartOfAccountsRecId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "MainAccountId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerBalanceControlEntity_Resolved/attributeContext/LedgerBalanceControlEntity_Resolved/MainAccountId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "MainAccountName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerBalanceControlEntity_Resolved/attributeContext/LedgerBalanceControlEntity_Resolved/MainAccountName",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Relationship_MainAccountRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": []
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "LedgerBalanceControlEntity_Resolved/attributeContext/LedgerBalanceControlEntity_Resolved/Relationship_MainAccountRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "BackingTable_LedgerBalanceControlRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Group/LedgerBalanceControl.cdm.json/LedgerBalanceControl",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "LedgerBalanceControlEntity_Resolved/attributeContext/LedgerBalanceControlEntity_Resolved/BackingTable_LedgerBalanceControlRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "LedgerBalanceControlEntity_Resolved/attributeContext/LedgerBalanceControlEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Balance control accounts",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

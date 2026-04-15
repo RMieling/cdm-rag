@@ -1,0 +1,100 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "Contact.cdm.json",
+      "moniker": "resolvedFrom"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "Contact_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "Contact_Resolved",
+        "definition": "resolvedFrom/Contact",
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "Contact_Resolved/attributeContext/Contact_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CdmEntity",
+                "parent": "Contact_Resolved/attributeContext/Contact_Resolved/extends",
+                "definition": "resolvedFrom/CdmEntity"
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "attributesAddedAtThisScope",
+            "parent": "Contact_Resolved/attributeContext/Contact_Resolved",
+            "definition": "resolvedFrom/Contact/hasAttributes/attributesAddedAtThisScope",
+            "contents": [
+              {
+                "type": "attributeGroup",
+                "name": "attributesAddedAtThisScope",
+                "parent": "Contact_Resolved/attributeContext/Contact_Resolved/attributesAddedAtThisScope",
+                "definition": "resolvedFrom/Contact/hasAttributes/attributesAddedAtThisScope",
+                "contents": [
+                  {
+                    "type": "attributeDefinition",
+                    "name": "contactId",
+                    "parent": "Contact_Resolved/attributeContext/Contact_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Contact/hasAttributes/attributesAddedAtThisScope/members/contactId",
+                    "contents": [
+                      "Contact_Resolved/hasAttributes/contactId"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "contactId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            }
+          ],
+          "attributeContext": "Contact_Resolved/attributeContext/Contact_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/contactId",
+          "isPrimaryKey": true,
+          "dataFormat": "Guid",
+          "sourceName": "contactid",
+          "sourceOrdering": 1,
+          "displayName": "Contact",
+          "description": "Unique identifier of the contact."
+        }
+      ],
+      "sourceName": "contact",
+      "displayName": "Contact",
+      "description": "Person with whom a business unit has a relationship, such as customer, supplier, and colleague.",
+      "version": "1.0"
+    }
+  ],
+  "documentVersion": "1.0"
+}

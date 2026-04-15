@@ -1,0 +1,381 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "TrvMileageRateEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TrvMileageRateEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "TrvMileageRateEntity_Resolved",
+        "definition": "resolvedFrom/TrvMileageRateEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "TrvMileageRateEntity_Resolved/attributeContext/TrvMileageRateEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "TrvMileageRateEntity_Resolved/attributeContext/TrvMileageRateEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Rate",
+            "parent": "TrvMileageRateEntity_Resolved/attributeContext/TrvMileageRateEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvMileageRateEntity/hasAttributes/Rate",
+            "contents": [
+              "TrvMileageRateEntity_Resolved/hasAttributes/Rate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ExpenseCategory",
+            "parent": "TrvMileageRateEntity_Resolved/attributeContext/TrvMileageRateEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvMileageRateEntity/hasAttributes/ExpenseCategory",
+            "contents": [
+              "TrvMileageRateEntity_Resolved/hasAttributes/ExpenseCategory"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "TrvMileageRateEntity_Resolved/attributeContext/TrvMileageRateEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvMileageRateEntity/hasAttributes/Description",
+            "contents": [
+              "TrvMileageRateEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "FromDate",
+            "parent": "TrvMileageRateEntity_Resolved/attributeContext/TrvMileageRateEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvMileageRateEntity/hasAttributes/FromDate",
+            "contents": [
+              "TrvMileageRateEntity_Resolved/hasAttributes/FromDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Quantity",
+            "parent": "TrvMileageRateEntity_Resolved/attributeContext/TrvMileageRateEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvMileageRateEntity/hasAttributes/Quantity",
+            "contents": [
+              "TrvMileageRateEntity_Resolved/hasAttributes/Quantity"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "RateType",
+            "parent": "TrvMileageRateEntity_Resolved/attributeContext/TrvMileageRateEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvMileageRateEntity/hasAttributes/RateType",
+            "contents": [
+              "TrvMileageRateEntity_Resolved/hasAttributes/RateType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ToDate",
+            "parent": "TrvMileageRateEntity_Resolved/attributeContext/TrvMileageRateEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvMileageRateEntity/hasAttributes/ToDate",
+            "contents": [
+              "TrvMileageRateEntity_Resolved/hasAttributes/ToDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "VehicleType",
+            "parent": "TrvMileageRateEntity_Resolved/attributeContext/TrvMileageRateEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvMileageRateEntity/hasAttributes/VehicleType",
+            "contents": [
+              "TrvMileageRateEntity_Resolved/hasAttributes/VehicleType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_TrvCostTypeRatesRelationship",
+            "parent": "TrvMileageRateEntity_Resolved/attributeContext/TrvMileageRateEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvMileageRateEntity/hasAttributes/BackingTable_TrvCostTypeRatesRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "TrvCostTypeRates",
+                "parent": "TrvMileageRateEntity_Resolved/attributeContext/TrvMileageRateEntity_Resolved/BackingTable_TrvCostTypeRatesRelationship",
+                "definition": "resolvedFrom/TrvCostTypeRates",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TrvMileageRateEntity_Resolved/attributeContext/TrvMileageRateEntity_Resolved/BackingTable_TrvCostTypeRatesRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TrvMileageRateEntity_Resolved/attributeContext/TrvMileageRateEntity_Resolved/BackingTable_TrvCostTypeRatesRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TrvMileageRateEntity_Resolved/attributeContext/TrvMileageRateEntity_Resolved/BackingTable_TrvCostTypeRatesRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TrvMileageRateEntity_Resolved/hasAttributes/BackingTable_TrvCostTypeRatesRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "TrvMileageRateEntity_Resolved/attributeContext/TrvMileageRateEntity_Resolved",
+            "definition": "resolvedFrom/TrvMileageRateEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "TrvMileageRateEntity_Resolved/attributeContext/TrvMileageRateEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TrvMileageRateEntity_Resolved/attributeContext/TrvMileageRateEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TrvMileageRateEntity_Resolved/attributeContext/TrvMileageRateEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TrvMileageRateEntity_Resolved/attributeContext/TrvMileageRateEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TrvMileageRateEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Rate",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvMileageRateEntity_Resolved/attributeContext/TrvMileageRateEntity_Resolved/Rate",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ExpenseCategory",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvMileageRateEntity_Resolved/attributeContext/TrvMileageRateEntity_Resolved/ExpenseCategory",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvMileageRateEntity_Resolved/attributeContext/TrvMileageRateEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "FromDate",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvMileageRateEntity_Resolved/attributeContext/TrvMileageRateEntity_Resolved/FromDate",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Quantity",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvMileageRateEntity_Resolved/attributeContext/TrvMileageRateEntity_Resolved/Quantity",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "RateType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvMileageRateEntity_Resolved/attributeContext/TrvMileageRateEntity_Resolved/RateType",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ToDate",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvMileageRateEntity_Resolved/attributeContext/TrvMileageRateEntity_Resolved/ToDate",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "VehicleType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvMileageRateEntity_Resolved/attributeContext/TrvMileageRateEntity_Resolved/VehicleType",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_TrvCostTypeRatesRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Expense/Reference/TrvCostTypeRates.cdm.json/TrvCostTypeRates",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TrvMileageRateEntity_Resolved/attributeContext/TrvMileageRateEntity_Resolved/BackingTable_TrvCostTypeRatesRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TrvMileageRateEntity_Resolved/attributeContext/TrvMileageRateEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Mileage rate tiers",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

@@ -1,0 +1,207 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "CFMJournalNamePaymAccountListEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "CFMJournalNamePaymAccountListEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "CFMJournalNamePaymAccountListEntity_Resolved",
+        "definition": "resolvedFrom/CFMJournalNamePaymAccountListEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "CFMJournalNamePaymAccountListEntity_Resolved/attributeContext/CFMJournalNamePaymAccountListEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "CFMJournalNamePaymAccountListEntity_Resolved/attributeContext/CFMJournalNamePaymAccountListEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "CFMJournalNamePaymAccountListEntity_Resolved/attributeContext/CFMJournalNamePaymAccountListEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CFMJournalNamePaymAccountListEntity/hasAttributes/Name",
+            "contents": [
+              "CFMJournalNamePaymAccountListEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "AccountNumber",
+            "parent": "CFMJournalNamePaymAccountListEntity_Resolved/attributeContext/CFMJournalNamePaymAccountListEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CFMJournalNamePaymAccountListEntity/hasAttributes/AccountNumber",
+            "contents": [
+              "CFMJournalNamePaymAccountListEntity_Resolved/hasAttributes/AccountNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "PaymentAccountType",
+            "parent": "CFMJournalNamePaymAccountListEntity_Resolved/attributeContext/CFMJournalNamePaymAccountListEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CFMJournalNamePaymAccountListEntity/hasAttributes/PaymentAccountType",
+            "contents": [
+              "CFMJournalNamePaymAccountListEntity_Resolved/hasAttributes/PaymentAccountType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_CFMJournalPaymAccountListRelationship",
+            "parent": "CFMJournalNamePaymAccountListEntity_Resolved/attributeContext/CFMJournalNamePaymAccountListEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CFMJournalNamePaymAccountListEntity/hasAttributes/BackingTable_CFMJournalPaymAccountListRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CFMJournalPaymAccountList",
+                "parent": "CFMJournalNamePaymAccountListEntity_Resolved/attributeContext/CFMJournalNamePaymAccountListEntity_Resolved/BackingTable_CFMJournalPaymAccountListRelationship",
+                "definition": "resolvedFrom/CFMJournalPaymAccountList",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CFMJournalNamePaymAccountListEntity_Resolved/attributeContext/CFMJournalNamePaymAccountListEntity_Resolved/BackingTable_CFMJournalPaymAccountListRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CFMJournalNamePaymAccountListEntity_Resolved/attributeContext/CFMJournalNamePaymAccountListEntity_Resolved/BackingTable_CFMJournalPaymAccountListRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CFMJournalNamePaymAccountListEntity_Resolved/attributeContext/CFMJournalNamePaymAccountListEntity_Resolved/BackingTable_CFMJournalPaymAccountListRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CFMJournalNamePaymAccountListEntity_Resolved/hasAttributes/BackingTable_CFMJournalPaymAccountListRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CFMJournalNamePaymAccountListEntity_Resolved/attributeContext/CFMJournalNamePaymAccountListEntity_Resolved/Name",
+          "dataFormat": "String"
+        },
+        {
+          "name": "AccountNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CFMJournalNamePaymAccountListEntity_Resolved/attributeContext/CFMJournalNamePaymAccountListEntity_Resolved/AccountNumber",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "PaymentAccountType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CFMJournalNamePaymAccountListEntity_Resolved/attributeContext/CFMJournalNamePaymAccountListEntity_Resolved/PaymentAccountType",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_CFMJournalPaymAccountListRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/RCashFlowManagement/Group/CFMJournalPaymAccountList.cdm.json/CFMJournalPaymAccountList",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CFMJournalNamePaymAccountListEntity_Resolved/attributeContext/CFMJournalNamePaymAccountListEntity_Resolved/BackingTable_CFMJournalPaymAccountListRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Payments accounts of payment schedule journals",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

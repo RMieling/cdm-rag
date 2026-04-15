@@ -1,0 +1,320 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "VendInvoiceRegisterHeaderEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "VendInvoiceRegisterHeaderEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "VendInvoiceRegisterHeaderEntity_Resolved",
+        "definition": "resolvedFrom/VendInvoiceRegisterHeaderEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "VendInvoiceRegisterHeaderEntity_Resolved/attributeContext/VendInvoiceRegisterHeaderEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "VendInvoiceRegisterHeaderEntity_Resolved/attributeContext/VendInvoiceRegisterHeaderEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "JournalName",
+            "parent": "VendInvoiceRegisterHeaderEntity_Resolved/attributeContext/VendInvoiceRegisterHeaderEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendInvoiceRegisterHeaderEntity/hasAttributes/JournalName",
+            "contents": [
+              "VendInvoiceRegisterHeaderEntity_Resolved/hasAttributes/JournalName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "JournalBatchNumber",
+            "parent": "VendInvoiceRegisterHeaderEntity_Resolved/attributeContext/VendInvoiceRegisterHeaderEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendInvoiceRegisterHeaderEntity/hasAttributes/JournalBatchNumber",
+            "contents": [
+              "VendInvoiceRegisterHeaderEntity_Resolved/hasAttributes/JournalBatchNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "SalesTaxIncluded",
+            "parent": "VendInvoiceRegisterHeaderEntity_Resolved/attributeContext/VendInvoiceRegisterHeaderEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendInvoiceRegisterHeaderEntity/hasAttributes/SalesTaxIncluded",
+            "contents": [
+              "VendInvoiceRegisterHeaderEntity_Resolved/hasAttributes/SalesTaxIncluded"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "VendInvoiceRegisterHeaderEntity_Resolved/attributeContext/VendInvoiceRegisterHeaderEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendInvoiceRegisterHeaderEntity/hasAttributes/Description",
+            "contents": [
+              "VendInvoiceRegisterHeaderEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Posted",
+            "parent": "VendInvoiceRegisterHeaderEntity_Resolved/attributeContext/VendInvoiceRegisterHeaderEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendInvoiceRegisterHeaderEntity/hasAttributes/Posted",
+            "contents": [
+              "VendInvoiceRegisterHeaderEntity_Resolved/hasAttributes/Posted"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_LedgerJournalTableRelationship",
+            "parent": "VendInvoiceRegisterHeaderEntity_Resolved/attributeContext/VendInvoiceRegisterHeaderEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendInvoiceRegisterHeaderEntity/hasAttributes/BackingTable_LedgerJournalTableRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "LedgerJournalTable",
+                "parent": "VendInvoiceRegisterHeaderEntity_Resolved/attributeContext/VendInvoiceRegisterHeaderEntity_Resolved/BackingTable_LedgerJournalTableRelationship",
+                "definition": "resolvedFrom/LedgerJournalTable",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "VendInvoiceRegisterHeaderEntity_Resolved/attributeContext/VendInvoiceRegisterHeaderEntity_Resolved/BackingTable_LedgerJournalTableRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "VendInvoiceRegisterHeaderEntity_Resolved/attributeContext/VendInvoiceRegisterHeaderEntity_Resolved/BackingTable_LedgerJournalTableRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "VendInvoiceRegisterHeaderEntity_Resolved/attributeContext/VendInvoiceRegisterHeaderEntity_Resolved/BackingTable_LedgerJournalTableRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "VendInvoiceRegisterHeaderEntity_Resolved/hasAttributes/BackingTable_LedgerJournalTableRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "VendInvoiceRegisterHeaderEntity_Resolved/attributeContext/VendInvoiceRegisterHeaderEntity_Resolved",
+            "definition": "resolvedFrom/VendInvoiceRegisterHeaderEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "VendInvoiceRegisterHeaderEntity_Resolved/attributeContext/VendInvoiceRegisterHeaderEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "VendInvoiceRegisterHeaderEntity_Resolved/attributeContext/VendInvoiceRegisterHeaderEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "VendInvoiceRegisterHeaderEntity_Resolved/attributeContext/VendInvoiceRegisterHeaderEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "VendInvoiceRegisterHeaderEntity_Resolved/attributeContext/VendInvoiceRegisterHeaderEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "VendInvoiceRegisterHeaderEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "JournalName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VendInvoiceRegisterHeaderEntity_Resolved/attributeContext/VendInvoiceRegisterHeaderEntity_Resolved/JournalName",
+          "dataFormat": "String"
+        },
+        {
+          "name": "JournalBatchNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VendInvoiceRegisterHeaderEntity_Resolved/attributeContext/VendInvoiceRegisterHeaderEntity_Resolved/JournalBatchNumber",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "SalesTaxIncluded",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VendInvoiceRegisterHeaderEntity_Resolved/attributeContext/VendInvoiceRegisterHeaderEntity_Resolved/SalesTaxIncluded",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VendInvoiceRegisterHeaderEntity_Resolved/attributeContext/VendInvoiceRegisterHeaderEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Posted",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VendInvoiceRegisterHeaderEntity_Resolved/attributeContext/VendInvoiceRegisterHeaderEntity_Resolved/Posted",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_LedgerJournalTableRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/AccountingFoundation/WorksheetHeader/LedgerJournalTable.cdm.json/LedgerJournalTable",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "VendInvoiceRegisterHeaderEntity_Resolved/attributeContext/VendInvoiceRegisterHeaderEntity_Resolved/BackingTable_LedgerJournalTableRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "VendInvoiceRegisterHeaderEntity_Resolved/attributeContext/VendInvoiceRegisterHeaderEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Vendor invoice register header",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

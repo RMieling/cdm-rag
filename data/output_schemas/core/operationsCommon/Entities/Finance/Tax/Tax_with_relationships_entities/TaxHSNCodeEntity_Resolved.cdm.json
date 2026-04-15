@@ -1,0 +1,361 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "TaxHSNCodeEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TaxHSNCodeEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "TaxHSNCodeEntity_Resolved",
+        "definition": "resolvedFrom/TaxHSNCodeEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "TaxHSNCodeEntity_Resolved/attributeContext/TaxHSNCodeEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "TaxHSNCodeEntity_Resolved/attributeContext/TaxHSNCodeEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Chapter",
+            "parent": "TaxHSNCodeEntity_Resolved/attributeContext/TaxHSNCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxHSNCodeEntity/hasAttributes/Chapter",
+            "contents": [
+              "TaxHSNCodeEntity_Resolved/hasAttributes/Chapter"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Code",
+            "parent": "TaxHSNCodeEntity_Resolved/attributeContext/TaxHSNCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxHSNCodeEntity/hasAttributes/Code",
+            "contents": [
+              "TaxHSNCodeEntity_Resolved/hasAttributes/Code"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CountryExtension",
+            "parent": "TaxHSNCodeEntity_Resolved/attributeContext/TaxHSNCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxHSNCodeEntity/hasAttributes/CountryExtension",
+            "contents": [
+              "TaxHSNCodeEntity_Resolved/hasAttributes/CountryExtension"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Heading",
+            "parent": "TaxHSNCodeEntity_Resolved/attributeContext/TaxHSNCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxHSNCodeEntity/hasAttributes/Heading",
+            "contents": [
+              "TaxHSNCodeEntity_Resolved/hasAttributes/Heading"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "StatisticalSuffix",
+            "parent": "TaxHSNCodeEntity_Resolved/attributeContext/TaxHSNCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxHSNCodeEntity/hasAttributes/StatisticalSuffix",
+            "contents": [
+              "TaxHSNCodeEntity_Resolved/hasAttributes/StatisticalSuffix"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Subheading",
+            "parent": "TaxHSNCodeEntity_Resolved/attributeContext/TaxHSNCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxHSNCodeEntity/hasAttributes/Subheading",
+            "contents": [
+              "TaxHSNCodeEntity_Resolved/hasAttributes/Subheading"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "TaxHSNCodeEntity_Resolved/attributeContext/TaxHSNCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxHSNCodeEntity/hasAttributes/Description",
+            "contents": [
+              "TaxHSNCodeEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_HSNCodeTable_INRelationship",
+            "parent": "TaxHSNCodeEntity_Resolved/attributeContext/TaxHSNCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxHSNCodeEntity/hasAttributes/BackingTable_HSNCodeTable_INRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "HSNCodeTable_IN",
+                "parent": "TaxHSNCodeEntity_Resolved/attributeContext/TaxHSNCodeEntity_Resolved/BackingTable_HSNCodeTable_INRelationship",
+                "definition": "resolvedFrom/HSNCodeTable_IN",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxHSNCodeEntity_Resolved/attributeContext/TaxHSNCodeEntity_Resolved/BackingTable_HSNCodeTable_INRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxHSNCodeEntity_Resolved/attributeContext/TaxHSNCodeEntity_Resolved/BackingTable_HSNCodeTable_INRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxHSNCodeEntity_Resolved/attributeContext/TaxHSNCodeEntity_Resolved/BackingTable_HSNCodeTable_INRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxHSNCodeEntity_Resolved/hasAttributes/BackingTable_HSNCodeTable_INRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "TaxHSNCodeEntity_Resolved/attributeContext/TaxHSNCodeEntity_Resolved",
+            "definition": "resolvedFrom/TaxHSNCodeEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "TaxHSNCodeEntity_Resolved/attributeContext/TaxHSNCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxHSNCodeEntity_Resolved/attributeContext/TaxHSNCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxHSNCodeEntity_Resolved/attributeContext/TaxHSNCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxHSNCodeEntity_Resolved/attributeContext/TaxHSNCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxHSNCodeEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Chapter",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxHSNCodeEntity_Resolved/attributeContext/TaxHSNCodeEntity_Resolved/Chapter",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Code",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxHSNCodeEntity_Resolved/attributeContext/TaxHSNCodeEntity_Resolved/Code",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "CountryExtension",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxHSNCodeEntity_Resolved/attributeContext/TaxHSNCodeEntity_Resolved/CountryExtension",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Heading",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxHSNCodeEntity_Resolved/attributeContext/TaxHSNCodeEntity_Resolved/Heading",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "StatisticalSuffix",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxHSNCodeEntity_Resolved/attributeContext/TaxHSNCodeEntity_Resolved/StatisticalSuffix",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Subheading",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxHSNCodeEntity_Resolved/attributeContext/TaxHSNCodeEntity_Resolved/Subheading",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxHSNCodeEntity_Resolved/attributeContext/TaxHSNCodeEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_HSNCodeTable_INRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Tax/Main/HSNCodeTable_IN.cdm.json/HSNCodeTable_IN",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxHSNCodeEntity_Resolved/attributeContext/TaxHSNCodeEntity_Resolved/BackingTable_HSNCodeTable_INRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxHSNCodeEntity_Resolved/attributeContext/TaxHSNCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "HSN codes",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

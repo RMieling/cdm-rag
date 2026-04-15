@@ -1,0 +1,261 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "TaxFringeVariationEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TaxFringeVariationEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "TaxFringeVariationEntity_Resolved",
+        "definition": "resolvedFrom/TaxFringeVariationEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "TaxFringeVariationEntity_Resolved/attributeContext/TaxFringeVariationEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "TaxFringeVariationEntity_Resolved/attributeContext/TaxFringeVariationEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "TaxFringeVariationEntity_Resolved/attributeContext/TaxFringeVariationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxFringeVariationEntity/hasAttributes/Description",
+            "contents": [
+              "TaxFringeVariationEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ReasonCode",
+            "parent": "TaxFringeVariationEntity_Resolved/attributeContext/TaxFringeVariationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxFringeVariationEntity/hasAttributes/ReasonCode",
+            "contents": [
+              "TaxFringeVariationEntity_Resolved/hasAttributes/ReasonCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_TaxFringeVariationTableRelationship",
+            "parent": "TaxFringeVariationEntity_Resolved/attributeContext/TaxFringeVariationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxFringeVariationEntity/hasAttributes/BackingTable_TaxFringeVariationTableRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "TaxFringeVariationTable",
+                "parent": "TaxFringeVariationEntity_Resolved/attributeContext/TaxFringeVariationEntity_Resolved/BackingTable_TaxFringeVariationTableRelationship",
+                "definition": "resolvedFrom/TaxFringeVariationTable",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxFringeVariationEntity_Resolved/attributeContext/TaxFringeVariationEntity_Resolved/BackingTable_TaxFringeVariationTableRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxFringeVariationEntity_Resolved/attributeContext/TaxFringeVariationEntity_Resolved/BackingTable_TaxFringeVariationTableRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxFringeVariationEntity_Resolved/attributeContext/TaxFringeVariationEntity_Resolved/BackingTable_TaxFringeVariationTableRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxFringeVariationEntity_Resolved/hasAttributes/BackingTable_TaxFringeVariationTableRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "TaxFringeVariationEntity_Resolved/attributeContext/TaxFringeVariationEntity_Resolved",
+            "definition": "resolvedFrom/TaxFringeVariationEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "TaxFringeVariationEntity_Resolved/attributeContext/TaxFringeVariationEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxFringeVariationEntity_Resolved/attributeContext/TaxFringeVariationEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxFringeVariationEntity_Resolved/attributeContext/TaxFringeVariationEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxFringeVariationEntity_Resolved/attributeContext/TaxFringeVariationEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxFringeVariationEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxFringeVariationEntity_Resolved/attributeContext/TaxFringeVariationEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ReasonCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxFringeVariationEntity_Resolved/attributeContext/TaxFringeVariationEntity_Resolved/ReasonCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_TaxFringeVariationTableRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Tax/Main/TaxFringeVariationTable.cdm.json/TaxFringeVariationTable",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxFringeVariationEntity_Resolved/attributeContext/TaxFringeVariationEntity_Resolved/BackingTable_TaxFringeVariationTableRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxFringeVariationEntity_Resolved/attributeContext/TaxFringeVariationEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "BAS fringe benefit reason codes",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

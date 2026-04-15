@@ -1,0 +1,261 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "LineOfBusinessEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "LineOfBusinessEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "LineOfBusinessEntity_Resolved",
+        "definition": "resolvedFrom/LineOfBusinessEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "LineOfBusinessEntity_Resolved/attributeContext/LineOfBusinessEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "LineOfBusinessEntity_Resolved/attributeContext/LineOfBusinessEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "LineOfBusinessEntity_Resolved/attributeContext/LineOfBusinessEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LineOfBusinessEntity/hasAttributes/Description",
+            "contents": [
+              "LineOfBusinessEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "LineOfBusiness",
+            "parent": "LineOfBusinessEntity_Resolved/attributeContext/LineOfBusinessEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LineOfBusinessEntity/hasAttributes/LineOfBusiness",
+            "contents": [
+              "LineOfBusinessEntity_Resolved/hasAttributes/LineOfBusiness"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_LineOfBusinessRelationship",
+            "parent": "LineOfBusinessEntity_Resolved/attributeContext/LineOfBusinessEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LineOfBusinessEntity/hasAttributes/BackingTable_LineOfBusinessRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "LineOfBusiness",
+                "parent": "LineOfBusinessEntity_Resolved/attributeContext/LineOfBusinessEntity_Resolved/BackingTable_LineOfBusinessRelationship",
+                "definition": "resolvedFrom/LineOfBusiness",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "LineOfBusinessEntity_Resolved/attributeContext/LineOfBusinessEntity_Resolved/BackingTable_LineOfBusinessRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "LineOfBusinessEntity_Resolved/attributeContext/LineOfBusinessEntity_Resolved/BackingTable_LineOfBusinessRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "LineOfBusinessEntity_Resolved/attributeContext/LineOfBusinessEntity_Resolved/BackingTable_LineOfBusinessRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "LineOfBusinessEntity_Resolved/hasAttributes/BackingTable_LineOfBusinessRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "LineOfBusinessEntity_Resolved/attributeContext/LineOfBusinessEntity_Resolved",
+            "definition": "resolvedFrom/LineOfBusinessEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "LineOfBusinessEntity_Resolved/attributeContext/LineOfBusinessEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "LineOfBusinessEntity_Resolved/attributeContext/LineOfBusinessEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "LineOfBusinessEntity_Resolved/attributeContext/LineOfBusinessEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "LineOfBusinessEntity_Resolved/attributeContext/LineOfBusinessEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "LineOfBusinessEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LineOfBusinessEntity_Resolved/attributeContext/LineOfBusinessEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "LineOfBusiness",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LineOfBusinessEntity_Resolved/attributeContext/LineOfBusinessEntity_Resolved/LineOfBusiness",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_LineOfBusinessRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/AccountsPayable/Group/LineOfBusiness.cdm.json/LineOfBusiness",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "LineOfBusinessEntity_Resolved/attributeContext/LineOfBusinessEntity_Resolved/BackingTable_LineOfBusinessRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "LineOfBusinessEntity_Resolved/attributeContext/LineOfBusinessEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Line of business",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

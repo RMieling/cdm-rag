@@ -1,0 +1,364 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "TrvPayMethodEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TrvPayMethodEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "TrvPayMethodEntity_Resolved",
+        "definition": "resolvedFrom/TrvPayMethodEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "TrvPayMethodEntity_Resolved/attributeContext/TrvPayMethodEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "TrvPayMethodEntity_Resolved/attributeContext/TrvPayMethodEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "AutomaticPayment",
+            "parent": "TrvPayMethodEntity_Resolved/attributeContext/TrvPayMethodEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvPayMethodEntity/hasAttributes/AutomaticPayment",
+            "contents": [
+              "TrvPayMethodEntity_Resolved/hasAttributes/AutomaticPayment"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CostOwner",
+            "parent": "TrvPayMethodEntity_Resolved/attributeContext/TrvPayMethodEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvPayMethodEntity/hasAttributes/CostOwner",
+            "contents": [
+              "TrvPayMethodEntity_Resolved/hasAttributes/CostOwner"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "OffsetLedgerDimension",
+            "parent": "TrvPayMethodEntity_Resolved/attributeContext/TrvPayMethodEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvPayMethodEntity/hasAttributes/OffsetLedgerDimension",
+            "contents": [
+              "TrvPayMethodEntity_Resolved/hasAttributes/OffsetLedgerDimension"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "PayedByTxt",
+            "parent": "TrvPayMethodEntity_Resolved/attributeContext/TrvPayMethodEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvPayMethodEntity/hasAttributes/PayedByTxt",
+            "contents": [
+              "TrvPayMethodEntity_Resolved/hasAttributes/PayedByTxt"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "PayMethod",
+            "parent": "TrvPayMethodEntity_Resolved/attributeContext/TrvPayMethodEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvPayMethodEntity/hasAttributes/PayMethod",
+            "contents": [
+              "TrvPayMethodEntity_Resolved/hasAttributes/PayMethod"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "PostMethod",
+            "parent": "TrvPayMethodEntity_Resolved/attributeContext/TrvPayMethodEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvPayMethodEntity/hasAttributes/PostMethod",
+            "contents": [
+              "TrvPayMethodEntity_Resolved/hasAttributes/PostMethod"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "OffsetLedgerDimensionDisplayValue",
+            "parent": "TrvPayMethodEntity_Resolved/attributeContext/TrvPayMethodEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvPayMethodEntity/hasAttributes/OffsetLedgerDimensionDisplayValue",
+            "contents": [
+              "TrvPayMethodEntity_Resolved/hasAttributes/OffsetLedgerDimensionDisplayValue"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_TrvPayMethodRelationship",
+            "parent": "TrvPayMethodEntity_Resolved/attributeContext/TrvPayMethodEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvPayMethodEntity/hasAttributes/BackingTable_TrvPayMethodRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "TrvPayMethod",
+                "parent": "TrvPayMethodEntity_Resolved/attributeContext/TrvPayMethodEntity_Resolved/BackingTable_TrvPayMethodRelationship",
+                "definition": "resolvedFrom/TrvPayMethod",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TrvPayMethodEntity_Resolved/attributeContext/TrvPayMethodEntity_Resolved/BackingTable_TrvPayMethodRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TrvPayMethodEntity_Resolved/attributeContext/TrvPayMethodEntity_Resolved/BackingTable_TrvPayMethodRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TrvPayMethodEntity_Resolved/attributeContext/TrvPayMethodEntity_Resolved/BackingTable_TrvPayMethodRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TrvPayMethodEntity_Resolved/hasAttributes/BackingTable_TrvPayMethodRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "TrvPayMethodEntity_Resolved/attributeContext/TrvPayMethodEntity_Resolved",
+            "definition": "resolvedFrom/TrvPayMethodEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "TrvPayMethodEntity_Resolved/attributeContext/TrvPayMethodEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TrvPayMethodEntity_Resolved/attributeContext/TrvPayMethodEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TrvPayMethodEntity_Resolved/attributeContext/TrvPayMethodEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TrvPayMethodEntity_Resolved/attributeContext/TrvPayMethodEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TrvPayMethodEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "AutomaticPayment",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvPayMethodEntity_Resolved/attributeContext/TrvPayMethodEntity_Resolved/AutomaticPayment",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Import only"
+        },
+        {
+          "name": "CostOwner",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvPayMethodEntity_Resolved/attributeContext/TrvPayMethodEntity_Resolved/CostOwner",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "OffsetLedgerDimension",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvPayMethodEntity_Resolved/attributeContext/TrvPayMethodEntity_Resolved/OffsetLedgerDimension",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Offset account"
+        },
+        {
+          "name": "PayedByTxt",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvPayMethodEntity_Resolved/attributeContext/TrvPayMethodEntity_Resolved/PayedByTxt",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "PayMethod",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvPayMethodEntity_Resolved/attributeContext/TrvPayMethodEntity_Resolved/PayMethod",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "PostMethod",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvPayMethodEntity_Resolved/attributeContext/TrvPayMethodEntity_Resolved/PostMethod",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "OffsetLedgerDimensionDisplayValue",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvPayMethodEntity_Resolved/attributeContext/TrvPayMethodEntity_Resolved/OffsetLedgerDimensionDisplayValue",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Combination display"
+        },
+        {
+          "name": "BackingTable_TrvPayMethodRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Expense/Reference/TrvPayMethod.cdm.json/TrvPayMethod",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TrvPayMethodEntity_Resolved/attributeContext/TrvPayMethodEntity_Resolved/BackingTable_TrvPayMethodRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TrvPayMethodEntity_Resolved/attributeContext/TrvPayMethodEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Expense payment method",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

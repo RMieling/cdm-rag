@@ -1,0 +1,359 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "EinvoicePACEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "EinvoicePACEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "EinvoicePACEntity_Resolved",
+        "definition": "resolvedFrom/EinvoicePACEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "EinvoicePACEntity_Resolved/attributeContext/EinvoicePACEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "EinvoicePACEntity_Resolved/attributeContext/EinvoicePACEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "PACAccountId",
+            "parent": "EinvoicePACEntity_Resolved/attributeContext/EinvoicePACEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EinvoicePACEntity/hasAttributes/PACAccountId",
+            "contents": [
+              "EinvoicePACEntity_Resolved/hasAttributes/PACAccountId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "PACAccountName",
+            "parent": "EinvoicePACEntity_Resolved/attributeContext/EinvoicePACEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EinvoicePACEntity/hasAttributes/PACAccountName",
+            "contents": [
+              "EinvoicePACEntity_Resolved/hasAttributes/PACAccountName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "RFCNumber",
+            "parent": "EinvoicePACEntity_Resolved/attributeContext/EinvoicePACEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EinvoicePACEntity/hasAttributes/RFCNumber",
+            "contents": [
+              "EinvoicePACEntity_Resolved/hasAttributes/RFCNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Environment",
+            "parent": "EinvoicePACEntity_Resolved/attributeContext/EinvoicePACEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EinvoicePACEntity/hasAttributes/Environment",
+            "contents": [
+              "EinvoicePACEntity_Resolved/hasAttributes/Environment"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "URL",
+            "parent": "EinvoicePACEntity_Resolved/attributeContext/EinvoicePACEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EinvoicePACEntity/hasAttributes/URL",
+            "contents": [
+              "EinvoicePACEntity_Resolved/hasAttributes/URL"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "WebService",
+            "parent": "EinvoicePACEntity_Resolved/attributeContext/EinvoicePACEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EinvoicePACEntity/hasAttributes/WebService",
+            "contents": [
+              "EinvoicePACEntity_Resolved/hasAttributes/WebService"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "WebServiceMethod",
+            "parent": "EinvoicePACEntity_Resolved/attributeContext/EinvoicePACEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EinvoicePACEntity/hasAttributes/WebServiceMethod",
+            "contents": [
+              "EinvoicePACEntity_Resolved/hasAttributes/WebServiceMethod"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_EInvoiceCFDIPACTable_MXRelationship",
+            "parent": "EinvoicePACEntity_Resolved/attributeContext/EinvoicePACEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EinvoicePACEntity/hasAttributes/BackingTable_EInvoiceCFDIPACTable_MXRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "EInvoiceCFDIPACTable_MX",
+                "parent": "EinvoicePACEntity_Resolved/attributeContext/EinvoicePACEntity_Resolved/BackingTable_EInvoiceCFDIPACTable_MXRelationship",
+                "definition": "resolvedFrom/EInvoiceCFDIPACTable_MX",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "EinvoicePACEntity_Resolved/attributeContext/EinvoicePACEntity_Resolved/BackingTable_EInvoiceCFDIPACTable_MXRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "EinvoicePACEntity_Resolved/attributeContext/EinvoicePACEntity_Resolved/BackingTable_EInvoiceCFDIPACTable_MXRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "EinvoicePACEntity_Resolved/attributeContext/EinvoicePACEntity_Resolved/BackingTable_EInvoiceCFDIPACTable_MXRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "EinvoicePACEntity_Resolved/hasAttributes/BackingTable_EInvoiceCFDIPACTable_MXRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "EinvoicePACEntity_Resolved/attributeContext/EinvoicePACEntity_Resolved",
+            "definition": "resolvedFrom/EinvoicePACEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "EinvoicePACEntity_Resolved/attributeContext/EinvoicePACEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "EinvoicePACEntity_Resolved/attributeContext/EinvoicePACEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "EinvoicePACEntity_Resolved/attributeContext/EinvoicePACEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "EinvoicePACEntity_Resolved/attributeContext/EinvoicePACEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "EinvoicePACEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "PACAccountId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "EinvoicePACEntity_Resolved/attributeContext/EinvoicePACEntity_Resolved/PACAccountId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "PACAccountName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "EinvoicePACEntity_Resolved/attributeContext/EinvoicePACEntity_Resolved/PACAccountName",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "PAC account name"
+        },
+        {
+          "name": "RFCNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "EinvoicePACEntity_Resolved/attributeContext/EinvoicePACEntity_Resolved/RFCNumber",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Environment",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "EinvoicePACEntity_Resolved/attributeContext/EinvoicePACEntity_Resolved/Environment",
+          "dataFormat": "String"
+        },
+        {
+          "name": "URL",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "EinvoicePACEntity_Resolved/attributeContext/EinvoicePACEntity_Resolved/URL",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "WebService",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "EinvoicePACEntity_Resolved/attributeContext/EinvoicePACEntity_Resolved/WebService",
+          "dataFormat": "String"
+        },
+        {
+          "name": "WebServiceMethod",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "EinvoicePACEntity_Resolved/attributeContext/EinvoicePACEntity_Resolved/WebServiceMethod",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_EInvoiceCFDIPACTable_MXRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/EInvoice/Miscellaneous/EInvoiceCFDIPACTable_MX.cdm.json/EInvoiceCFDIPACTable_MX",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "EinvoicePACEntity_Resolved/attributeContext/EinvoicePACEntity_Resolved/BackingTable_EInvoiceCFDIPACTable_MXRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "EinvoicePACEntity_Resolved/attributeContext/EinvoicePACEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "PAC",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

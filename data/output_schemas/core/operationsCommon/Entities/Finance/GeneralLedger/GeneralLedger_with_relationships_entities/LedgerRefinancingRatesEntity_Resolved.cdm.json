@@ -1,0 +1,281 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "LedgerRefinancingRatesEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "LedgerRefinancingRatesEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "LedgerRefinancingRatesEntity_Resolved",
+        "definition": "resolvedFrom/LedgerRefinancingRatesEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "LedgerRefinancingRatesEntity_Resolved/attributeContext/LedgerRefinancingRatesEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "LedgerRefinancingRatesEntity_Resolved/attributeContext/LedgerRefinancingRatesEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "FromDate",
+            "parent": "LedgerRefinancingRatesEntity_Resolved/attributeContext/LedgerRefinancingRatesEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerRefinancingRatesEntity/hasAttributes/FromDate",
+            "contents": [
+              "LedgerRefinancingRatesEntity_Resolved/hasAttributes/FromDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Percent",
+            "parent": "LedgerRefinancingRatesEntity_Resolved/attributeContext/LedgerRefinancingRatesEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerRefinancingRatesEntity/hasAttributes/Percent",
+            "contents": [
+              "LedgerRefinancingRatesEntity_Resolved/hasAttributes/Percent"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Factor",
+            "parent": "LedgerRefinancingRatesEntity_Resolved/attributeContext/LedgerRefinancingRatesEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerRefinancingRatesEntity/hasAttributes/Factor",
+            "contents": [
+              "LedgerRefinancingRatesEntity_Resolved/hasAttributes/Factor"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_LedgerRefinancingRates_RURelationship",
+            "parent": "LedgerRefinancingRatesEntity_Resolved/attributeContext/LedgerRefinancingRatesEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerRefinancingRatesEntity/hasAttributes/BackingTable_LedgerRefinancingRates_RURelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "LedgerRefinancingRates_RU",
+                "parent": "LedgerRefinancingRatesEntity_Resolved/attributeContext/LedgerRefinancingRatesEntity_Resolved/BackingTable_LedgerRefinancingRates_RURelationship",
+                "definition": "resolvedFrom/LedgerRefinancingRates_RU",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "LedgerRefinancingRatesEntity_Resolved/attributeContext/LedgerRefinancingRatesEntity_Resolved/BackingTable_LedgerRefinancingRates_RURelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "LedgerRefinancingRatesEntity_Resolved/attributeContext/LedgerRefinancingRatesEntity_Resolved/BackingTable_LedgerRefinancingRates_RURelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "LedgerRefinancingRatesEntity_Resolved/attributeContext/LedgerRefinancingRatesEntity_Resolved/BackingTable_LedgerRefinancingRates_RURelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "LedgerRefinancingRatesEntity_Resolved/hasAttributes/BackingTable_LedgerRefinancingRates_RURelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "LedgerRefinancingRatesEntity_Resolved/attributeContext/LedgerRefinancingRatesEntity_Resolved",
+            "definition": "resolvedFrom/LedgerRefinancingRatesEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "LedgerRefinancingRatesEntity_Resolved/attributeContext/LedgerRefinancingRatesEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "LedgerRefinancingRatesEntity_Resolved/attributeContext/LedgerRefinancingRatesEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "LedgerRefinancingRatesEntity_Resolved/attributeContext/LedgerRefinancingRatesEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "LedgerRefinancingRatesEntity_Resolved/attributeContext/LedgerRefinancingRatesEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "LedgerRefinancingRatesEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "FromDate",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerRefinancingRatesEntity_Resolved/attributeContext/LedgerRefinancingRatesEntity_Resolved/FromDate",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Percent",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerRefinancingRatesEntity_Resolved/attributeContext/LedgerRefinancingRatesEntity_Resolved/Percent",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Factor",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerRefinancingRatesEntity_Resolved/attributeContext/LedgerRefinancingRatesEntity_Resolved/Factor",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_LedgerRefinancingRates_RURelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Group/LedgerRefinancingRates_RU.cdm.json/LedgerRefinancingRates_RU",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "LedgerRefinancingRatesEntity_Resolved/attributeContext/LedgerRefinancingRatesEntity_Resolved/BackingTable_LedgerRefinancingRates_RURelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "LedgerRefinancingRatesEntity_Resolved/attributeContext/LedgerRefinancingRatesEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Refinancing rate",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

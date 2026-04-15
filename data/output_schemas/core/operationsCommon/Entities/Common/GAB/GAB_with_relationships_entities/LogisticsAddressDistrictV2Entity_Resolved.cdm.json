@@ -1,0 +1,560 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "LogisticsAddressDistrictV2Entity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "LogisticsAddressDistrictV2Entity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "LogisticsAddressDistrictV2Entity_Resolved",
+        "definition": "resolvedFrom/LogisticsAddressDistrictV2Entity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "LogisticsAddressDistrictV2Entity_Resolved/attributeContext/LogisticsAddressDistrictV2Entity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "LogisticsAddressDistrictV2Entity_Resolved/attributeContext/LogisticsAddressDistrictV2Entity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "City",
+            "parent": "LogisticsAddressDistrictV2Entity_Resolved/attributeContext/LogisticsAddressDistrictV2Entity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LogisticsAddressDistrictV2Entity/hasAttributes/City",
+            "contents": [
+              "LogisticsAddressDistrictV2Entity_Resolved/hasAttributes/City"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CityKey",
+            "parent": "LogisticsAddressDistrictV2Entity_Resolved/attributeContext/LogisticsAddressDistrictV2Entity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LogisticsAddressDistrictV2Entity/hasAttributes/CityKey",
+            "contents": [
+              "LogisticsAddressDistrictV2Entity_Resolved/hasAttributes/CityKey"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "District",
+            "parent": "LogisticsAddressDistrictV2Entity_Resolved/attributeContext/LogisticsAddressDistrictV2Entity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LogisticsAddressDistrictV2Entity/hasAttributes/District",
+            "contents": [
+              "LogisticsAddressDistrictV2Entity_Resolved/hasAttributes/District"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "LogisticsAddressDistrictV2Entity_Resolved/attributeContext/LogisticsAddressDistrictV2Entity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LogisticsAddressDistrictV2Entity/hasAttributes/Description",
+            "contents": [
+              "LogisticsAddressDistrictV2Entity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CountryRegionId",
+            "parent": "LogisticsAddressDistrictV2Entity_Resolved/attributeContext/LogisticsAddressDistrictV2Entity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LogisticsAddressDistrictV2Entity/hasAttributes/CountryRegionId",
+            "contents": [
+              "LogisticsAddressDistrictV2Entity_Resolved/hasAttributes/CountryRegionId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CountyId",
+            "parent": "LogisticsAddressDistrictV2Entity_Resolved/attributeContext/LogisticsAddressDistrictV2Entity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LogisticsAddressDistrictV2Entity/hasAttributes/CountyId",
+            "contents": [
+              "LogisticsAddressDistrictV2Entity_Resolved/hasAttributes/CountyId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "StateId",
+            "parent": "LogisticsAddressDistrictV2Entity_Resolved/attributeContext/LogisticsAddressDistrictV2Entity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LogisticsAddressDistrictV2Entity/hasAttributes/StateId",
+            "contents": [
+              "LogisticsAddressDistrictV2Entity_Resolved/hasAttributes/StateId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_CountryRegionRelationship",
+            "parent": "LogisticsAddressDistrictV2Entity_Resolved/attributeContext/LogisticsAddressDistrictV2Entity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LogisticsAddressDistrictV2Entity/hasAttributes/Relationship_CountryRegionRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "LogisticsAddressCountryRegionEntity",
+                "parent": "LogisticsAddressDistrictV2Entity_Resolved/attributeContext/LogisticsAddressDistrictV2Entity_Resolved/Relationship_CountryRegionRelationship",
+                "definition": "resolvedFrom/LogisticsAddressCountryRegionEntity",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "LogisticsAddressDistrictV2Entity_Resolved/attributeContext/LogisticsAddressDistrictV2Entity_Resolved/Relationship_CountryRegionRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "LogisticsAddressDistrictV2Entity_Resolved/attributeContext/LogisticsAddressDistrictV2Entity_Resolved/Relationship_CountryRegionRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "LogisticsAddressDistrictV2Entity_Resolved/attributeContext/LogisticsAddressDistrictV2Entity_Resolved/Relationship_CountryRegionRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "LogisticsAddressDistrictV2Entity_Resolved/hasAttributes/Relationship_CountryRegionRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_StateRelationship",
+            "parent": "LogisticsAddressDistrictV2Entity_Resolved/attributeContext/LogisticsAddressDistrictV2Entity_Resolved",
+            "definition": "resolvedFrom/LogisticsAddressDistrictV2Entity/hasAttributes/Relationship_StateRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "LogisticsAddressStateEntity",
+                "parent": "LogisticsAddressDistrictV2Entity_Resolved/attributeContext/LogisticsAddressDistrictV2Entity_Resolved/Relationship_StateRelationship",
+                "definition": "resolvedFrom/LogisticsAddressStateEntity",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "LogisticsAddressDistrictV2Entity_Resolved/attributeContext/LogisticsAddressDistrictV2Entity_Resolved/Relationship_StateRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "LogisticsAddressDistrictV2Entity_Resolved/attributeContext/LogisticsAddressDistrictV2Entity_Resolved/Relationship_StateRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "LogisticsAddressDistrictV2Entity_Resolved/attributeContext/LogisticsAddressDistrictV2Entity_Resolved/Relationship_StateRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "LogisticsAddressDistrictV2Entity_Resolved/hasAttributes/Relationship_StateRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_CountyRelationship",
+            "parent": "LogisticsAddressDistrictV2Entity_Resolved/attributeContext/LogisticsAddressDistrictV2Entity_Resolved",
+            "definition": "resolvedFrom/LogisticsAddressDistrictV2Entity/hasAttributes/Relationship_CountyRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "LogisticsAddressCountyEntity",
+                "parent": "LogisticsAddressDistrictV2Entity_Resolved/attributeContext/LogisticsAddressDistrictV2Entity_Resolved/Relationship_CountyRelationship",
+                "definition": "resolvedFrom/LogisticsAddressCountyEntity",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "LogisticsAddressDistrictV2Entity_Resolved/attributeContext/LogisticsAddressDistrictV2Entity_Resolved/Relationship_CountyRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "LogisticsAddressDistrictV2Entity_Resolved/attributeContext/LogisticsAddressDistrictV2Entity_Resolved/Relationship_CountyRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "LogisticsAddressDistrictV2Entity_Resolved/attributeContext/LogisticsAddressDistrictV2Entity_Resolved/Relationship_CountyRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "LogisticsAddressDistrictV2Entity_Resolved/hasAttributes/Relationship_CountyRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_CityRelationship",
+            "parent": "LogisticsAddressDistrictV2Entity_Resolved/attributeContext/LogisticsAddressDistrictV2Entity_Resolved",
+            "definition": "resolvedFrom/LogisticsAddressDistrictV2Entity/hasAttributes/Relationship_CityRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "LogisticsAddressCityEntity",
+                "parent": "LogisticsAddressDistrictV2Entity_Resolved/attributeContext/LogisticsAddressDistrictV2Entity_Resolved/Relationship_CityRelationship",
+                "definition": "resolvedFrom/LogisticsAddressCityEntity",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "LogisticsAddressDistrictV2Entity_Resolved/attributeContext/LogisticsAddressDistrictV2Entity_Resolved/Relationship_CityRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "LogisticsAddressDistrictV2Entity_Resolved/attributeContext/LogisticsAddressDistrictV2Entity_Resolved/Relationship_CityRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "LogisticsAddressDistrictV2Entity_Resolved/attributeContext/LogisticsAddressDistrictV2Entity_Resolved/Relationship_CityRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "LogisticsAddressDistrictV2Entity_Resolved/hasAttributes/Relationship_CityRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_LogisticsAddressDistrictRelationship",
+            "parent": "LogisticsAddressDistrictV2Entity_Resolved/attributeContext/LogisticsAddressDistrictV2Entity_Resolved",
+            "definition": "resolvedFrom/LogisticsAddressDistrictV2Entity/hasAttributes/BackingTable_LogisticsAddressDistrictRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "LogisticsAddressDistrict",
+                "parent": "LogisticsAddressDistrictV2Entity_Resolved/attributeContext/LogisticsAddressDistrictV2Entity_Resolved/BackingTable_LogisticsAddressDistrictRelationship",
+                "definition": "resolvedFrom/LogisticsAddressDistrict",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "LogisticsAddressDistrictV2Entity_Resolved/attributeContext/LogisticsAddressDistrictV2Entity_Resolved/BackingTable_LogisticsAddressDistrictRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "LogisticsAddressDistrictV2Entity_Resolved/attributeContext/LogisticsAddressDistrictV2Entity_Resolved/BackingTable_LogisticsAddressDistrictRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "LogisticsAddressDistrictV2Entity_Resolved/attributeContext/LogisticsAddressDistrictV2Entity_Resolved/BackingTable_LogisticsAddressDistrictRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "LogisticsAddressDistrictV2Entity_Resolved/hasAttributes/BackingTable_LogisticsAddressDistrictRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "City",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LogisticsAddressDistrictV2Entity_Resolved/attributeContext/LogisticsAddressDistrictV2Entity_Resolved/City",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "CityKey",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LogisticsAddressDistrictV2Entity_Resolved/attributeContext/LogisticsAddressDistrictV2Entity_Resolved/CityKey",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "District",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LogisticsAddressDistrictV2Entity_Resolved/attributeContext/LogisticsAddressDistrictV2Entity_Resolved/District",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LogisticsAddressDistrictV2Entity_Resolved/attributeContext/LogisticsAddressDistrictV2Entity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "CountryRegionId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LogisticsAddressDistrictV2Entity_Resolved/attributeContext/LogisticsAddressDistrictV2Entity_Resolved/CountryRegionId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "CountyId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LogisticsAddressDistrictV2Entity_Resolved/attributeContext/LogisticsAddressDistrictV2Entity_Resolved/CountyId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "StateId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LogisticsAddressDistrictV2Entity_Resolved/attributeContext/LogisticsAddressDistrictV2Entity_Resolved/StateId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Relationship_CountryRegionRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": []
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "LogisticsAddressDistrictV2Entity_Resolved/attributeContext/LogisticsAddressDistrictV2Entity_Resolved/Relationship_CountryRegionRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_StateRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": []
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "LogisticsAddressDistrictV2Entity_Resolved/attributeContext/LogisticsAddressDistrictV2Entity_Resolved/Relationship_StateRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_CountyRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": []
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "LogisticsAddressDistrictV2Entity_Resolved/attributeContext/LogisticsAddressDistrictV2Entity_Resolved/Relationship_CountyRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_CityRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": []
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "LogisticsAddressDistrictV2Entity_Resolved/attributeContext/LogisticsAddressDistrictV2Entity_Resolved/Relationship_CityRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "BackingTable_LogisticsAddressDistrictRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Common/GAB/Group/LogisticsAddressDistrict.cdm.json/LogisticsAddressDistrict",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "LogisticsAddressDistrictV2Entity_Resolved/attributeContext/LogisticsAddressDistrictV2Entity_Resolved/BackingTable_LogisticsAddressDistrictRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Districts V2",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

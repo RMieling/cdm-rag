@@ -1,0 +1,248 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "CompanyInfoEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "CompanyInfoEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "CompanyInfoEntity_Resolved",
+        "definition": "resolvedFrom/CompanyInfoEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "CompanyInfoEntity_Resolved/attributeContext/CompanyInfoEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "CompanyInfoEntity_Resolved/attributeContext/CompanyInfoEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "KnownAs",
+            "parent": "CompanyInfoEntity_Resolved/attributeContext/CompanyInfoEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CompanyInfoEntity/hasAttributes/KnownAs",
+            "contents": [
+              "CompanyInfoEntity_Resolved/hasAttributes/KnownAs"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "LanguageId",
+            "parent": "CompanyInfoEntity_Resolved/attributeContext/CompanyInfoEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CompanyInfoEntity/hasAttributes/LanguageId",
+            "contents": [
+              "CompanyInfoEntity_Resolved/hasAttributes/LanguageId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "CompanyInfoEntity_Resolved/attributeContext/CompanyInfoEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CompanyInfoEntity/hasAttributes/Name",
+            "contents": [
+              "CompanyInfoEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "PartyNumber",
+            "parent": "CompanyInfoEntity_Resolved/attributeContext/CompanyInfoEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CompanyInfoEntity/hasAttributes/PartyNumber",
+            "contents": [
+              "CompanyInfoEntity_Resolved/hasAttributes/PartyNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DataArea",
+            "parent": "CompanyInfoEntity_Resolved/attributeContext/CompanyInfoEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CompanyInfoEntity/hasAttributes/DataArea",
+            "contents": [
+              "CompanyInfoEntity_Resolved/hasAttributes/DataArea"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_CompanyInfoRelationship",
+            "parent": "CompanyInfoEntity_Resolved/attributeContext/CompanyInfoEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CompanyInfoEntity/hasAttributes/BackingTable_CompanyInfoRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "CompanyInfoEntity_Resolved/attributeContext/CompanyInfoEntity_Resolved/BackingTable_CompanyInfoRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CompanyInfoEntity_Resolved/attributeContext/CompanyInfoEntity_Resolved/BackingTable_CompanyInfoRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CompanyInfoEntity_Resolved/attributeContext/CompanyInfoEntity_Resolved/BackingTable_CompanyInfoRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CompanyInfoEntity_Resolved/attributeContext/CompanyInfoEntity_Resolved/BackingTable_CompanyInfoRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CompanyInfoEntity_Resolved/hasAttributes/BackingTable_CompanyInfoRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "KnownAs",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CompanyInfoEntity_Resolved/attributeContext/CompanyInfoEntity_Resolved/KnownAs",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "LanguageId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CompanyInfoEntity_Resolved/attributeContext/CompanyInfoEntity_Resolved/LanguageId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CompanyInfoEntity_Resolved/attributeContext/CompanyInfoEntity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "PartyNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CompanyInfoEntity_Resolved/attributeContext/CompanyInfoEntity_Resolved/PartyNumber",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "DataArea",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CompanyInfoEntity_Resolved/attributeContext/CompanyInfoEntity_Resolved/DataArea",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_CompanyInfoRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CompanyInfoEntity_Resolved/attributeContext/CompanyInfoEntity_Resolved/BackingTable_CompanyInfoRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "View companies",
+      "version": "1.1.1"
+    }
+  ],
+  "documentVersion": "1.1.1"
+}

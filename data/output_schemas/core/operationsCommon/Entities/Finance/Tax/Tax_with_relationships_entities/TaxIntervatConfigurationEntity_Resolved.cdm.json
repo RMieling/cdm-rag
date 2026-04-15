@@ -1,0 +1,281 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "TaxIntervatConfigurationEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TaxIntervatConfigurationEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "TaxIntervatConfigurationEntity_Resolved",
+        "definition": "resolvedFrom/TaxIntervatConfigurationEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "TaxIntervatConfigurationEntity_Resolved/attributeContext/TaxIntervatConfigurationEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "TaxIntervatConfigurationEntity_Resolved/attributeContext/TaxIntervatConfigurationEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Language",
+            "parent": "TaxIntervatConfigurationEntity_Resolved/attributeContext/TaxIntervatConfigurationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxIntervatConfigurationEntity/hasAttributes/Language",
+            "contents": [
+              "TaxIntervatConfigurationEntity_Resolved/hasAttributes/Language"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Value",
+            "parent": "TaxIntervatConfigurationEntity_Resolved/attributeContext/TaxIntervatConfigurationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxIntervatConfigurationEntity/hasAttributes/Value",
+            "contents": [
+              "TaxIntervatConfigurationEntity_Resolved/hasAttributes/Value"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "TaxIntervatConfigurationEntity_Resolved/attributeContext/TaxIntervatConfigurationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxIntervatConfigurationEntity/hasAttributes/Description",
+            "contents": [
+              "TaxIntervatConfigurationEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_TaxIntervatConfigurationRelationship",
+            "parent": "TaxIntervatConfigurationEntity_Resolved/attributeContext/TaxIntervatConfigurationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxIntervatConfigurationEntity/hasAttributes/BackingTable_TaxIntervatConfigurationRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "TaxIntervatConfiguration",
+                "parent": "TaxIntervatConfigurationEntity_Resolved/attributeContext/TaxIntervatConfigurationEntity_Resolved/BackingTable_TaxIntervatConfigurationRelationship",
+                "definition": "resolvedFrom/TaxIntervatConfiguration",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxIntervatConfigurationEntity_Resolved/attributeContext/TaxIntervatConfigurationEntity_Resolved/BackingTable_TaxIntervatConfigurationRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxIntervatConfigurationEntity_Resolved/attributeContext/TaxIntervatConfigurationEntity_Resolved/BackingTable_TaxIntervatConfigurationRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxIntervatConfigurationEntity_Resolved/attributeContext/TaxIntervatConfigurationEntity_Resolved/BackingTable_TaxIntervatConfigurationRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxIntervatConfigurationEntity_Resolved/hasAttributes/BackingTable_TaxIntervatConfigurationRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "TaxIntervatConfigurationEntity_Resolved/attributeContext/TaxIntervatConfigurationEntity_Resolved",
+            "definition": "resolvedFrom/TaxIntervatConfigurationEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "TaxIntervatConfigurationEntity_Resolved/attributeContext/TaxIntervatConfigurationEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxIntervatConfigurationEntity_Resolved/attributeContext/TaxIntervatConfigurationEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxIntervatConfigurationEntity_Resolved/attributeContext/TaxIntervatConfigurationEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxIntervatConfigurationEntity_Resolved/attributeContext/TaxIntervatConfigurationEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxIntervatConfigurationEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Language",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxIntervatConfigurationEntity_Resolved/attributeContext/TaxIntervatConfigurationEntity_Resolved/Language",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Value",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxIntervatConfigurationEntity_Resolved/attributeContext/TaxIntervatConfigurationEntity_Resolved/Value",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxIntervatConfigurationEntity_Resolved/attributeContext/TaxIntervatConfigurationEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_TaxIntervatConfigurationRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Tax/Main/TaxIntervatConfiguration.cdm.json/TaxIntervatConfiguration",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxIntervatConfigurationEntity_Resolved/attributeContext/TaxIntervatConfigurationEntity_Resolved/BackingTable_TaxIntervatConfigurationRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxIntervatConfigurationEntity_Resolved/attributeContext/TaxIntervatConfigurationEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "INTERVAT setup",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

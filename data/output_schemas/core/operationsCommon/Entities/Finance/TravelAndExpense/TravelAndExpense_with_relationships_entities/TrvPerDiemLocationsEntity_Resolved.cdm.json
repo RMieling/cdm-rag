@@ -1,0 +1,281 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "TrvPerDiemLocationsEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TrvPerDiemLocationsEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "TrvPerDiemLocationsEntity_Resolved",
+        "definition": "resolvedFrom/TrvPerDiemLocationsEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "TrvPerDiemLocationsEntity_Resolved/attributeContext/TrvPerDiemLocationsEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "TrvPerDiemLocationsEntity_Resolved/attributeContext/TrvPerDiemLocationsEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Location",
+            "parent": "TrvPerDiemLocationsEntity_Resolved/attributeContext/TrvPerDiemLocationsEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvPerDiemLocationsEntity/hasAttributes/Location",
+            "contents": [
+              "TrvPerDiemLocationsEntity_Resolved/hasAttributes/Location"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "StateId",
+            "parent": "TrvPerDiemLocationsEntity_Resolved/attributeContext/TrvPerDiemLocationsEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvPerDiemLocationsEntity/hasAttributes/StateId",
+            "contents": [
+              "TrvPerDiemLocationsEntity_Resolved/hasAttributes/StateId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CountryRegionId",
+            "parent": "TrvPerDiemLocationsEntity_Resolved/attributeContext/TrvPerDiemLocationsEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvPerDiemLocationsEntity/hasAttributes/CountryRegionId",
+            "contents": [
+              "TrvPerDiemLocationsEntity_Resolved/hasAttributes/CountryRegionId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_TrvLocationsRelationship",
+            "parent": "TrvPerDiemLocationsEntity_Resolved/attributeContext/TrvPerDiemLocationsEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvPerDiemLocationsEntity/hasAttributes/BackingTable_TrvLocationsRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "TrvLocations",
+                "parent": "TrvPerDiemLocationsEntity_Resolved/attributeContext/TrvPerDiemLocationsEntity_Resolved/BackingTable_TrvLocationsRelationship",
+                "definition": "resolvedFrom/TrvLocations",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TrvPerDiemLocationsEntity_Resolved/attributeContext/TrvPerDiemLocationsEntity_Resolved/BackingTable_TrvLocationsRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TrvPerDiemLocationsEntity_Resolved/attributeContext/TrvPerDiemLocationsEntity_Resolved/BackingTable_TrvLocationsRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TrvPerDiemLocationsEntity_Resolved/attributeContext/TrvPerDiemLocationsEntity_Resolved/BackingTable_TrvLocationsRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TrvPerDiemLocationsEntity_Resolved/hasAttributes/BackingTable_TrvLocationsRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "TrvPerDiemLocationsEntity_Resolved/attributeContext/TrvPerDiemLocationsEntity_Resolved",
+            "definition": "resolvedFrom/TrvPerDiemLocationsEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "TrvPerDiemLocationsEntity_Resolved/attributeContext/TrvPerDiemLocationsEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TrvPerDiemLocationsEntity_Resolved/attributeContext/TrvPerDiemLocationsEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TrvPerDiemLocationsEntity_Resolved/attributeContext/TrvPerDiemLocationsEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TrvPerDiemLocationsEntity_Resolved/attributeContext/TrvPerDiemLocationsEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TrvPerDiemLocationsEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Location",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvPerDiemLocationsEntity_Resolved/attributeContext/TrvPerDiemLocationsEntity_Resolved/Location",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "StateId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvPerDiemLocationsEntity_Resolved/attributeContext/TrvPerDiemLocationsEntity_Resolved/StateId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "CountryRegionId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvPerDiemLocationsEntity_Resolved/attributeContext/TrvPerDiemLocationsEntity_Resolved/CountryRegionId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_TrvLocationsRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Expense/Reference/TrvLocations.cdm.json/TrvLocations",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TrvPerDiemLocationsEntity_Resolved/attributeContext/TrvPerDiemLocationsEntity_Resolved/BackingTable_TrvLocationsRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TrvPerDiemLocationsEntity_Resolved/attributeContext/TrvPerDiemLocationsEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Per diem locations",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

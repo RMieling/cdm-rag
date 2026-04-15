@@ -1,0 +1,2987 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "BusinessUnit.cdm.json",
+      "moniker": "resolvedFrom"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "BusinessUnit_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "BusinessUnit_Resolved",
+        "definition": "resolvedFrom/BusinessUnit",
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CdmEntity",
+                "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/extends",
+                "definition": "resolvedFrom/CdmEntity"
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "attributesAddedAtThisScope",
+            "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved",
+            "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope",
+            "contents": [
+              {
+                "type": "attributeGroup",
+                "name": "attributesAddedAtThisScope",
+                "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope",
+                "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope",
+                "contents": [
+                  {
+                    "type": "attributeDefinition",
+                    "name": "businessUnitId",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/businessUnitId",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/businessUnitId"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "organization",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/organization",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "Organization",
+                        "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/organization",
+                        "definition": "resolvedFrom/Organization"
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/organization",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/organization/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/organization/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/organization/resolutionGuidance/foreignKeyAttribute/id",
+                                "contents": [
+                                  "BusinessUnit_Resolved/hasAttributes/organizationId"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "name",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/name",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/name"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "description",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/description",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/description"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "divisionName",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/divisionName",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/divisionName"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "fileAsName",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/fileAsName",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/fileAsName"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "tickerSymbol",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/tickerSymbol",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/tickerSymbol"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "stockExchange",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/stockExchange",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/stockExchange"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "UTCOffset",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/UTCOffset",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/UTCOffset"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "createdOn",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/createdOn",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/createdOn"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "modifiedOn",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/modifiedOn",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/modifiedOn"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "creditLimit",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/creditLimit",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/creditLimit"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "costCenter",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/costCenter",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/costCenter"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "webSiteUrl",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/webSiteUrl",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/webSiteUrl"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "ftpSiteUrl",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/ftpSiteUrl",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/ftpSiteUrl"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "emailAddress",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/emailAddress",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/emailAddress"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "inheritanceMask",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/inheritanceMask",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/inheritanceMask"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "User_createdBy",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/User_createdBy",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "User",
+                        "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdBy",
+                        "definition": "resolvedFrom/User"
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdBy",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdBy/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdBy/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/User_createdBy/resolutionGuidance/foreignKeyAttribute/createdBy",
+                                "contents": [
+                                  "BusinessUnit_Resolved/hasAttributes/createdBy"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "User_modifiedBy",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/User_modifiedBy",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "User",
+                        "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedBy",
+                        "definition": "resolvedFrom/User"
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedBy",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedBy/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedBy/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/User_modifiedBy/resolutionGuidance/foreignKeyAttribute/modifiedBy",
+                                "contents": [
+                                  "BusinessUnit_Resolved/hasAttributes/modifiedBy"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "workflowSuspended",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/workflowSuspended",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/workflowSuspended"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "parentBusinessUnit",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/parentBusinessUnit",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "BusinessUnit",
+                        "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/parentBusinessUnit",
+                        "definition": "resolvedFrom/BusinessUnit"
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/parentBusinessUnit",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/parentBusinessUnit/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/parentBusinessUnit/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/parentBusinessUnit/resolutionGuidance/foreignKeyAttribute/id",
+                                "contents": [
+                                  "BusinessUnit_Resolved/hasAttributes/parentBusinessUnitId"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "isDisabled",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/isDisabled",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/isDisabled"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "disabledReason",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/disabledReason",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/disabledReason"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "versionNumber",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/versionNumber",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/versionNumber"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "address1AddressId",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/address1AddressId",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/address1AddressId"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "address1AddressTypeCode",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/address1AddressTypeCode",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/address1AddressTypeCode",
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address1AddressTypeCode",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address1AddressTypeCode/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeSupporting",
+                                "name": "supporting_address1AddressTypeCode",
+                                "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address1AddressTypeCode/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/address1AddressTypeCode",
+                                "contents": [
+                                  "BusinessUnit_Resolved/hasAttributes/address1AddressTypeCode_display"
+                                ],
+                                "lineage": [
+                                  "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address1AddressTypeCode"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "address1Name",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/address1Name",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/address1Name"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "address1Line1",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/address1Line1",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/address1Line1"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "address1Line2",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/address1Line2",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/address1Line2"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "address1Line3",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/address1Line3",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/address1Line3"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "address1City",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/address1City",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/address1City"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "address1StateOrProvince",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/address1StateOrProvince",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/address1StateOrProvince"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "address1County",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/address1County",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/address1County"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "address1Country",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/address1Country",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/address1Country"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "address1PostOfficeBox",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/address1PostOfficeBox",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/address1PostOfficeBox"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "address1PostalCode",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/address1PostalCode",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/address1PostalCode"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "address1UTCOffset",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/address1UTCOffset",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/address1UTCOffset"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "address1UPSZone",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/address1UPSZone",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/address1UPSZone"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "address1Latitude",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/address1Latitude",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/address1Latitude"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "address1Telephone1",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/address1Telephone1",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/address1Telephone1"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "address1Longitude",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/address1Longitude",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/address1Longitude"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "address1ShippingMethodCode",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/address1ShippingMethodCode",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/address1ShippingMethodCode",
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address1ShippingMethodCode",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address1ShippingMethodCode/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeSupporting",
+                                "name": "supporting_address1ShippingMethodCode",
+                                "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address1ShippingMethodCode/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/address1ShippingMethodCode",
+                                "contents": [
+                                  "BusinessUnit_Resolved/hasAttributes/address1ShippingMethodCode_display"
+                                ],
+                                "lineage": [
+                                  "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address1ShippingMethodCode"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "address1Telephone2",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/address1Telephone2",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/address1Telephone2"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "address1Telephone3",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/address1Telephone3",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/address1Telephone3"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "address1Fax",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/address1Fax",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/address1Fax"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "address2AddressId",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/address2AddressId",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/address2AddressId"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "address2AddressTypeCode",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/address2AddressTypeCode",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/address2AddressTypeCode",
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address2AddressTypeCode",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address2AddressTypeCode/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeSupporting",
+                                "name": "supporting_address2AddressTypeCode",
+                                "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address2AddressTypeCode/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/address2AddressTypeCode",
+                                "contents": [
+                                  "BusinessUnit_Resolved/hasAttributes/address2AddressTypeCode_display"
+                                ],
+                                "lineage": [
+                                  "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address2AddressTypeCode"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "address2Name",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/address2Name",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/address2Name"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "address2Line1",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/address2Line1",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/address2Line1"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "address2Line2",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/address2Line2",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/address2Line2"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "address2Line3",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/address2Line3",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/address2Line3"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "address2City",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/address2City",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/address2City"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "address2StateOrProvince",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/address2StateOrProvince",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/address2StateOrProvince"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "address2County",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/address2County",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/address2County"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "address2Country",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/address2Country",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/address2Country"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "address2PostOfficeBox",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/address2PostOfficeBox",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/address2PostOfficeBox"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "address2PostalCode",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/address2PostalCode",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/address2PostalCode"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "address2UTCOffset",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/address2UTCOffset",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/address2UTCOffset"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "address2UPSZone",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/address2UPSZone",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/address2UPSZone"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "address2Latitude",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/address2Latitude",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/address2Latitude"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "address2Telephone1",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/address2Telephone1",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/address2Telephone1"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "address2Longitude",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/address2Longitude",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/address2Longitude"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "address2ShippingMethodCode",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/address2ShippingMethodCode",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/address2ShippingMethodCode",
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address2ShippingMethodCode",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address2ShippingMethodCode/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeSupporting",
+                                "name": "supporting_address2ShippingMethodCode",
+                                "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address2ShippingMethodCode/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/address2ShippingMethodCode",
+                                "contents": [
+                                  "BusinessUnit_Resolved/hasAttributes/address2ShippingMethodCode_display"
+                                ],
+                                "lineage": [
+                                  "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address2ShippingMethodCode"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "address2Telephone2",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/address2Telephone2",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/address2Telephone2"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "address2Telephone3",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/address2Telephone3",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/address2Telephone3"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "address2Fax",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/address2Fax",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/address2Fax"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "picture",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/picture",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/picture"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "calendarId",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/calendarId",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/calendarId"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "overriddenCreatedOn",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/overriddenCreatedOn",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/overriddenCreatedOn"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "importSequenceNumber",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/importSequenceNumber",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/importSequenceNumber"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "User_createdOnBehalfBy",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/User_createdOnBehalfBy",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "User",
+                        "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdOnBehalfBy",
+                        "definition": "resolvedFrom/User"
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdOnBehalfBy",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdOnBehalfBy/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdOnBehalfBy/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/User_createdOnBehalfBy/resolutionGuidance/foreignKeyAttribute/createdOnBehalfBy",
+                                "contents": [
+                                  "BusinessUnit_Resolved/hasAttributes/createdOnBehalfBy"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "User_modifiedOnBehalfBy",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/User_modifiedOnBehalfBy",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "User",
+                        "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedOnBehalfBy",
+                        "definition": "resolvedFrom/User"
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedOnBehalfBy",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedOnBehalfBy/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedOnBehalfBy/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/User_modifiedOnBehalfBy/resolutionGuidance/foreignKeyAttribute/modifiedOnBehalfBy",
+                                "contents": [
+                                  "BusinessUnit_Resolved/hasAttributes/modifiedOnBehalfBy"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "transactionCurrency",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/transactionCurrency",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "Currency",
+                        "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/transactionCurrency",
+                        "definition": "resolvedFrom/Currency",
+                        "appliedTraits": [
+                          {
+                            "traitReference": "means.entityState",
+                            "arguments": [
+                              "resolvedFrom/Currency/(resolvedAttributes)/stateCode"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/transactionCurrency",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/transactionCurrency/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/transactionCurrency/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/transactionCurrency/resolutionGuidance/foreignKeyAttribute/id",
+                                "contents": [
+                                  "BusinessUnit_Resolved/hasAttributes/transactionCurrencyId"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "exchangeRate",
+                    "parent": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/BusinessUnit/hasAttributes/attributesAddedAtThisScope/members/exchangeRate",
+                    "contents": [
+                      "BusinessUnit_Resolved/hasAttributes/exchangeRate"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "businessUnitId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/businessUnitId",
+          "isPrimaryKey": true,
+          "dataFormat": "Guid",
+          "sourceName": "businessunitid",
+          "sourceOrdering": 1,
+          "displayName": "Business Unit",
+          "description": "Unique identifier of the business unit."
+        },
+        {
+          "name": "organizationId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "Organization.cdm.json/Organization",
+                        "organizationId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/organization/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid",
+          "sourceName": "organizationid",
+          "sourceOrdering": 3,
+          "displayName": "Organization",
+          "description": "Unique identifier of the organization associated with the business unit."
+        },
+        {
+          "name": "name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.identity.name",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/name",
+          "dataFormat": "String",
+          "sourceName": "name",
+          "sourceOrdering": 5,
+          "displayName": "Name",
+          "description": "Name of the business unit.",
+          "maximumLength": 160
+        },
+        {
+          "name": "description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/description",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "description",
+          "sourceOrdering": 6,
+          "displayName": "Description",
+          "description": "Description of the business unit.",
+          "maximumLength": 2000
+        },
+        {
+          "name": "divisionName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.identity.name",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/divisionName",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "divisionname",
+          "sourceOrdering": 7,
+          "displayName": "Division",
+          "description": "Name of the division to which the business unit belongs.",
+          "maximumLength": 100
+        },
+        {
+          "name": "fileAsName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.identity.name",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/fileAsName",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "fileasname",
+          "sourceOrdering": 8,
+          "displayName": "File as Name",
+          "description": "Alternative name under which the business unit can be filed.",
+          "maximumLength": 100
+        },
+        {
+          "name": "tickerSymbol",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.identity.tickerSymbol",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/tickerSymbol",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "tickersymbol",
+          "sourceOrdering": 9,
+          "displayName": "Ticker Symbol",
+          "description": "Stock exchange ticker symbol for the business unit.",
+          "maximumLength": 10
+        },
+        {
+          "name": "stockExchange",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/stockExchange",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "stockexchange",
+          "sourceOrdering": 10,
+          "displayName": "Stock Exchange",
+          "description": "Stock exchange on which the business is listed.",
+          "maximumLength": 20
+        },
+        {
+          "name": "UTCOffset",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.location.timezone",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/UTCOffset",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "utcoffset",
+          "sourceOrdering": 11,
+          "displayName": "UTC Offset",
+          "description": "UTC offset for the business unit. This is the difference between local time and standard Coordinated Universal Time.",
+          "maximumValue": "1500",
+          "minimumValue": "-1500"
+        },
+        {
+          "name": "createdOn",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date",
+            "is.dataFormat.time",
+            "means.measurement.time",
+            "means.measurement.date.creation",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/createdOn",
+          "isNullable": true,
+          "dataFormat": "DateTime",
+          "sourceName": "createdon",
+          "sourceOrdering": 12,
+          "displayName": "Created On",
+          "description": "Date and time when the business unit was created."
+        },
+        {
+          "name": "modifiedOn",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date",
+            "is.dataFormat.time",
+            "means.measurement.time",
+            "means.measurement.date.modify",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/modifiedOn",
+          "isNullable": true,
+          "dataFormat": "DateTime",
+          "sourceName": "modifiedon",
+          "sourceOrdering": 13,
+          "displayName": "Modified On",
+          "description": "Date and time when the business unit was last modified."
+        },
+        {
+          "name": "creditLimit",
+          "appliedTraits": [
+            "is.dataFormat.floatingPoint",
+            "is.dataFormat.big",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/creditLimit",
+          "isNullable": true,
+          "dataFormat": "Double",
+          "sourceName": "creditlimit",
+          "sourceOrdering": 15,
+          "displayName": "Credit Limit",
+          "description": "Credit limit for the business unit.",
+          "maximumValue": "1000000000",
+          "minimumValue": "0"
+        },
+        {
+          "name": "costCenter",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/costCenter",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "costcenter",
+          "sourceOrdering": 16,
+          "displayName": "Cost Center",
+          "description": "Name of the business unit cost center.",
+          "maximumLength": 100
+        },
+        {
+          "name": "webSiteUrl",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.reference.URL",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/webSiteUrl",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "websiteurl",
+          "sourceOrdering": 17,
+          "displayName": "Website",
+          "description": "Website URL for the business unit.",
+          "maximumLength": 200
+        },
+        {
+          "name": "ftpSiteUrl",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.reference.URL",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ftpSiteUrl",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "ftpsiteurl",
+          "sourceOrdering": 18,
+          "displayName": "FTP Site",
+          "description": "FTP site URL for the business unit.",
+          "maximumLength": 200
+        },
+        {
+          "name": "emailAddress",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.identity.service.email",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/emailAddress",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "emailaddress",
+          "sourceOrdering": 19,
+          "displayName": "Email",
+          "description": "Email address for the business unit.",
+          "maximumLength": 100
+        },
+        {
+          "name": "inheritanceMask",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/inheritanceMask",
+          "isNullable": true,
+          "dataFormat": "Int32",
+          "sourceName": "inheritancemask",
+          "sourceOrdering": 20,
+          "displayName": "Inheritance Mask",
+          "description": "Inheritance mask for the business unit.",
+          "maximumValue": "1000000000",
+          "minimumValue": "0"
+        },
+        {
+          "name": "createdBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "User.cdm.json/User",
+                        "systemUserId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdBy/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "createdby",
+          "sourceOrdering": 21,
+          "displayName": "Created By",
+          "description": "Unique identifier of the user who created the business unit."
+        },
+        {
+          "name": "modifiedBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "User.cdm.json/User",
+                        "systemUserId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedBy/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "modifiedby",
+          "sourceOrdering": 22,
+          "displayName": "Modified By",
+          "description": "Unique identifier of the user who last modified the business unit."
+        },
+        {
+          "name": "workflowSuspended",
+          "appliedTraits": [
+            "is.dataFormat.boolean",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/workflowSuspended",
+          "isNullable": true,
+          "dataFormat": "Boolean",
+          "sourceName": "workflowsuspended",
+          "sourceOrdering": 23,
+          "displayName": "Workflow Suspended",
+          "description": "Information about whether workflow or sales process rules have been suspended."
+        },
+        {
+          "name": "parentBusinessUnitId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "required"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "BusinessUnit.cdm.json/BusinessUnit",
+                        "businessUnitId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/parentBusinessUnit/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "parentbusinessunitid",
+          "sourceOrdering": 24,
+          "displayName": "Parent Business",
+          "description": "Unique identifier for the parent business unit."
+        },
+        {
+          "name": "isDisabled",
+          "appliedTraits": [
+            "is.dataFormat.boolean",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/isDisabled",
+          "isNullable": true,
+          "dataFormat": "Boolean",
+          "sourceName": "isdisabled",
+          "sourceOrdering": 25,
+          "displayName": "Is Disabled",
+          "description": "Information about whether the business unit is enabled or disabled."
+        },
+        {
+          "name": "disabledReason",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/disabledReason",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "disabledreason",
+          "sourceOrdering": 26,
+          "displayName": "Disable Reason",
+          "description": "Reason for disabling the business unit.",
+          "maximumLength": 500
+        },
+        {
+          "name": "versionNumber",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            "is.dataFormat.big",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/versionNumber",
+          "isNullable": true,
+          "dataFormat": "Int64",
+          "sourceName": "versionnumber",
+          "sourceOrdering": 27,
+          "displayName": "Version number",
+          "description": "Version number of the business unit."
+        },
+        {
+          "name": "address1AddressId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address1AddressId",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "address1_addressid",
+          "sourceOrdering": 30,
+          "displayName": "Address 1: ID",
+          "description": "Unique identifier for address 1."
+        },
+        {
+          "name": "address1AddressTypeCode",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address1AddressTypeCode",
+          "isNullable": true,
+          "dataFormat": "Int32",
+          "sourceName": "address1_addresstypecode",
+          "sourceOrdering": 31,
+          "displayName": "Address 1: Address Type",
+          "description": "Type of address for address 1, such as billing, shipping, or primary address.",
+          "valueConstrainedToList": true,
+          "defaultValue": [
+            {
+              "languageTag": "en",
+              "displayText": "Default Value",
+              "attributeValue": "1",
+              "displayOrder": "0"
+            }
+          ]
+        },
+        {
+          "name": "address1AddressTypeCode_display",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.reference.displayText",
+            {
+              "traitReference": "is.addedInSupportOf",
+              "arguments": [
+                "address1AddressTypeCode"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address1AddressTypeCode/_generatedAttributeSet/_generatedAttributeRound0/supporting_address1AddressTypeCode",
+          "isReadOnly": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "address1Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.identity.name",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address1Name",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "address1_name",
+          "sourceOrdering": 32,
+          "displayName": "Address 1: Name",
+          "description": "Name to enter for address 1.",
+          "maximumLength": 100
+        },
+        {
+          "name": "address1Line1",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.location.address",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address1Line1",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "address1_line1",
+          "sourceOrdering": 33,
+          "displayName": "Bill To Street 1",
+          "description": "First line for entering address 1 information.",
+          "maximumLength": 250
+        },
+        {
+          "name": "address1Line2",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.location.address",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address1Line2",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "address1_line2",
+          "sourceOrdering": 34,
+          "displayName": "Bill To Street 2",
+          "description": "Second line for entering address 1 information.",
+          "maximumLength": 250
+        },
+        {
+          "name": "address1Line3",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.location.address",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address1Line3",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "address1_line3",
+          "sourceOrdering": 35,
+          "displayName": "Bill To Street 3",
+          "description": "Third line for entering address 1 information.",
+          "maximumLength": 250
+        },
+        {
+          "name": "address1City",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.location.city",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address1City",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "address1_city",
+          "sourceOrdering": 36,
+          "displayName": "Bill To City",
+          "description": "City name for address 1.",
+          "maximumLength": 80
+        },
+        {
+          "name": "address1StateOrProvince",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.location.stateOrProvince",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address1StateOrProvince",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "address1_stateorprovince",
+          "sourceOrdering": 37,
+          "displayName": "Bill To State/Province",
+          "description": "State or province for address 1.",
+          "maximumLength": 50
+        },
+        {
+          "name": "address1County",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.location.county",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address1County",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "address1_county",
+          "sourceOrdering": 38,
+          "displayName": "Address 1: County",
+          "description": "County name for address 1.",
+          "maximumLength": 50
+        },
+        {
+          "name": "address1Country",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.location.country",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address1Country",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "address1_country",
+          "sourceOrdering": 39,
+          "displayName": "Bill To Country/Region",
+          "description": "Country/region name for address 1.",
+          "maximumLength": 80
+        },
+        {
+          "name": "address1PostOfficeBox",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address1PostOfficeBox",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "address1_postofficebox",
+          "sourceOrdering": 40,
+          "displayName": "Address 1: Post Office Box",
+          "description": "Post office box number for address 1.",
+          "maximumLength": 20
+        },
+        {
+          "name": "address1PostalCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.location.postalCode",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address1PostalCode",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "address1_postalcode",
+          "sourceOrdering": 41,
+          "displayName": "Bill To ZIP/Postal Code",
+          "description": "ZIP Code or postal code for address 1.",
+          "maximumLength": 20
+        },
+        {
+          "name": "address1UTCOffset",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.location.timezone",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address1UTCOffset",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "address1_utcoffset",
+          "sourceOrdering": 42,
+          "displayName": "Address 1: UTC Offset",
+          "description": "UTC offset for address 1. This is the difference between local time and standard Coordinated Universal Time.",
+          "maximumValue": "1500",
+          "minimumValue": "-1500"
+        },
+        {
+          "name": "address1UPSZone",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address1UPSZone",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "address1_upszone",
+          "sourceOrdering": 43,
+          "displayName": "Address 1: UPS Zone",
+          "description": "United Parcel Service (UPS) zone for address 1.",
+          "maximumLength": 4
+        },
+        {
+          "name": "address1Latitude",
+          "appliedTraits": [
+            "is.dataFormat.floatingPoint",
+            "is.dataFormat.big",
+            "means.location.latitude",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address1Latitude",
+          "isNullable": true,
+          "dataFormat": "Double",
+          "sourceName": "address1_latitude",
+          "sourceOrdering": 44,
+          "displayName": "Address 1: Latitude",
+          "description": "Latitude for address 1.",
+          "maximumValue": "90",
+          "minimumValue": "-90"
+        },
+        {
+          "name": "address1Telephone1",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.identity.service.phone",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address1Telephone1",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "address1_telephone1",
+          "sourceOrdering": 45,
+          "displayName": "Main Phone",
+          "description": "First telephone number associated with address 1.",
+          "maximumLength": 50
+        },
+        {
+          "name": "address1Longitude",
+          "appliedTraits": [
+            "is.dataFormat.floatingPoint",
+            "is.dataFormat.big",
+            "means.location.longitude",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address1Longitude",
+          "isNullable": true,
+          "dataFormat": "Double",
+          "sourceName": "address1_longitude",
+          "sourceOrdering": 46,
+          "displayName": "Address 1: Longitude",
+          "description": "Longitude for address 1.",
+          "maximumValue": "180",
+          "minimumValue": "-180"
+        },
+        {
+          "name": "address1ShippingMethodCode",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address1ShippingMethodCode",
+          "isNullable": true,
+          "dataFormat": "Int32",
+          "sourceName": "address1_shippingmethodcode",
+          "sourceOrdering": 47,
+          "displayName": "Address 1: Shipping Method",
+          "description": "Method of shipment for address 1.",
+          "valueConstrainedToList": true,
+          "defaultValue": [
+            {
+              "languageTag": "en",
+              "displayText": "Default Value",
+              "attributeValue": "1",
+              "displayOrder": "0"
+            }
+          ]
+        },
+        {
+          "name": "address1ShippingMethodCode_display",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.reference.displayText",
+            {
+              "traitReference": "is.addedInSupportOf",
+              "arguments": [
+                "address1ShippingMethodCode"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address1ShippingMethodCode/_generatedAttributeSet/_generatedAttributeRound0/supporting_address1ShippingMethodCode",
+          "isReadOnly": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "address1Telephone2",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.identity.service.phone",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address1Telephone2",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "address1_telephone2",
+          "sourceOrdering": 48,
+          "displayName": "Other Phone",
+          "description": "Second telephone number associated with address 1.",
+          "maximumLength": 50
+        },
+        {
+          "name": "address1Telephone3",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.identity.service.phone",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address1Telephone3",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "address1_telephone3",
+          "sourceOrdering": 49,
+          "displayName": "Address 1: Telephone 3",
+          "description": "Third telephone number associated with address 1.",
+          "maximumLength": 50
+        },
+        {
+          "name": "address1Fax",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address1Fax",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "address1_fax",
+          "sourceOrdering": 50,
+          "displayName": "Address 1: Fax",
+          "description": "Fax number for address 1.",
+          "maximumLength": 50
+        },
+        {
+          "name": "address2AddressId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address2AddressId",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "address2_addressid",
+          "sourceOrdering": 51,
+          "displayName": "Address 2: ID",
+          "description": "Unique identifier for address 2."
+        },
+        {
+          "name": "address2AddressTypeCode",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address2AddressTypeCode",
+          "isNullable": true,
+          "dataFormat": "Int32",
+          "sourceName": "address2_addresstypecode",
+          "sourceOrdering": 52,
+          "displayName": "Address 2: Address Type",
+          "description": "Type of address for address 2, such as billing, shipping, or primary address.",
+          "valueConstrainedToList": true,
+          "defaultValue": [
+            {
+              "languageTag": "en",
+              "displayText": "Default Value",
+              "attributeValue": "1",
+              "displayOrder": "0"
+            }
+          ]
+        },
+        {
+          "name": "address2AddressTypeCode_display",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.reference.displayText",
+            {
+              "traitReference": "is.addedInSupportOf",
+              "arguments": [
+                "address2AddressTypeCode"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address2AddressTypeCode/_generatedAttributeSet/_generatedAttributeRound0/supporting_address2AddressTypeCode",
+          "isReadOnly": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "address2Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.identity.name",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address2Name",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "address2_name",
+          "sourceOrdering": 53,
+          "displayName": "Address 2: Name",
+          "description": "Name to enter for address 2.",
+          "maximumLength": 100
+        },
+        {
+          "name": "address2Line1",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.location.address",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address2Line1",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "address2_line1",
+          "sourceOrdering": 54,
+          "displayName": "Ship To Street 1",
+          "description": "First line for entering address 2 information.",
+          "maximumLength": 250
+        },
+        {
+          "name": "address2Line2",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.location.address",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address2Line2",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "address2_line2",
+          "sourceOrdering": 55,
+          "displayName": "Ship To Street 2",
+          "description": "Second line for entering address 2 information.",
+          "maximumLength": 250
+        },
+        {
+          "name": "address2Line3",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.location.address",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address2Line3",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "address2_line3",
+          "sourceOrdering": 56,
+          "displayName": "Ship To Street 3",
+          "description": "Third line for entering address 2 information.",
+          "maximumLength": 250
+        },
+        {
+          "name": "address2City",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.location.city",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address2City",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "address2_city",
+          "sourceOrdering": 57,
+          "displayName": "Ship To City",
+          "description": "City name for address 2.",
+          "maximumLength": 80
+        },
+        {
+          "name": "address2StateOrProvince",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.location.stateOrProvince",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address2StateOrProvince",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "address2_stateorprovince",
+          "sourceOrdering": 58,
+          "displayName": "Ship To State/Province",
+          "description": "State or province for address 2.",
+          "maximumLength": 50
+        },
+        {
+          "name": "address2County",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.location.county",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address2County",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "address2_county",
+          "sourceOrdering": 59,
+          "displayName": "Address 2: County",
+          "description": "County name for address 2.",
+          "maximumLength": 50
+        },
+        {
+          "name": "address2Country",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.location.country",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address2Country",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "address2_country",
+          "sourceOrdering": 60,
+          "displayName": "Ship To Country/Region",
+          "description": "Country/region name for address 2.",
+          "maximumLength": 80
+        },
+        {
+          "name": "address2PostOfficeBox",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address2PostOfficeBox",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "address2_postofficebox",
+          "sourceOrdering": 61,
+          "displayName": "Address 2: Post Office Box",
+          "description": "Post office box number for address 2.",
+          "maximumLength": 20
+        },
+        {
+          "name": "address2PostalCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.location.postalCode",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address2PostalCode",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "address2_postalcode",
+          "sourceOrdering": 62,
+          "displayName": "Ship To ZIP/Postal Code",
+          "description": "ZIP Code or postal code for address 2.",
+          "maximumLength": 20
+        },
+        {
+          "name": "address2UTCOffset",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.location.timezone",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address2UTCOffset",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "address2_utcoffset",
+          "sourceOrdering": 63,
+          "displayName": "Address 2: UTC Offset",
+          "description": "UTC offset for address 2. This is the difference between local time and standard Coordinated Universal Time.",
+          "maximumValue": "1500",
+          "minimumValue": "-1500"
+        },
+        {
+          "name": "address2UPSZone",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address2UPSZone",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "address2_upszone",
+          "sourceOrdering": 64,
+          "displayName": "Address 2: UPS Zone",
+          "description": "United Parcel Service (UPS) zone for address 2.",
+          "maximumLength": 4
+        },
+        {
+          "name": "address2Latitude",
+          "appliedTraits": [
+            "is.dataFormat.floatingPoint",
+            "is.dataFormat.big",
+            "means.location.latitude",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address2Latitude",
+          "isNullable": true,
+          "dataFormat": "Double",
+          "sourceName": "address2_latitude",
+          "sourceOrdering": 65,
+          "displayName": "Address 2: Latitude",
+          "description": "Latitude for address 2.",
+          "maximumValue": "90",
+          "minimumValue": "-90"
+        },
+        {
+          "name": "address2Telephone1",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.identity.service.phone",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address2Telephone1",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "address2_telephone1",
+          "sourceOrdering": 66,
+          "displayName": "Address 2: Telephone 1",
+          "description": "First telephone number associated with address 2.",
+          "maximumLength": 50
+        },
+        {
+          "name": "address2Longitude",
+          "appliedTraits": [
+            "is.dataFormat.floatingPoint",
+            "is.dataFormat.big",
+            "means.location.longitude",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address2Longitude",
+          "isNullable": true,
+          "dataFormat": "Double",
+          "sourceName": "address2_longitude",
+          "sourceOrdering": 67,
+          "displayName": "Address 2: Longitude",
+          "description": "Longitude for address 2.",
+          "maximumValue": "180",
+          "minimumValue": "-180"
+        },
+        {
+          "name": "address2ShippingMethodCode",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address2ShippingMethodCode",
+          "isNullable": true,
+          "dataFormat": "Int32",
+          "sourceName": "address2_shippingmethodcode",
+          "sourceOrdering": 68,
+          "displayName": "Address 2: Shipping Method",
+          "description": "Method of shipment for address 2.",
+          "valueConstrainedToList": true,
+          "defaultValue": [
+            {
+              "languageTag": "en",
+              "displayText": "Default Value",
+              "attributeValue": "1",
+              "displayOrder": "0"
+            }
+          ]
+        },
+        {
+          "name": "address2ShippingMethodCode_display",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.reference.displayText",
+            {
+              "traitReference": "is.addedInSupportOf",
+              "arguments": [
+                "address2ShippingMethodCode"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address2ShippingMethodCode/_generatedAttributeSet/_generatedAttributeRound0/supporting_address2ShippingMethodCode",
+          "isReadOnly": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "address2Telephone2",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.identity.service.phone",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address2Telephone2",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "address2_telephone2",
+          "sourceOrdering": 69,
+          "displayName": "Address 2: Telephone 2",
+          "description": "Second telephone number associated with address 2.",
+          "maximumLength": 50
+        },
+        {
+          "name": "address2Telephone3",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.identity.service.phone",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address2Telephone3",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "address2_telephone3",
+          "sourceOrdering": 70,
+          "displayName": "Address 2: Telephone 3",
+          "description": "Third telephone number associated with address 2.",
+          "maximumLength": 50
+        },
+        {
+          "name": "address2Fax",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/address2Fax",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "address2_fax",
+          "sourceOrdering": 71,
+          "displayName": "Address 2: Fax",
+          "description": "Fax number for address 2.",
+          "maximumLength": 50
+        },
+        {
+          "name": "picture",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/picture",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "picture",
+          "sourceOrdering": 84,
+          "displayName": "Picture",
+          "description": "Picture or diagram of the business unit.",
+          "maximumLength": 1073741823
+        },
+        {
+          "name": "calendarId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/calendarId",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "calendarid",
+          "sourceOrdering": 85,
+          "displayName": "Calendar",
+          "description": "Fiscal calendar associated with the business unit."
+        },
+        {
+          "name": "overriddenCreatedOn",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date",
+            "is.dataFormat.time",
+            "means.measurement.time",
+            "means.measurement.date.creation",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/overriddenCreatedOn",
+          "isNullable": true,
+          "dataFormat": "DateTime",
+          "sourceName": "overriddencreatedon",
+          "sourceOrdering": 86,
+          "displayName": "Record Created On",
+          "description": "Date and time that the record was migrated."
+        },
+        {
+          "name": "importSequenceNumber",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/importSequenceNumber",
+          "isNullable": true,
+          "dataFormat": "Int32",
+          "sourceName": "importsequencenumber",
+          "sourceOrdering": 87,
+          "displayName": "Import Sequence Number",
+          "description": "Unique identifier of the data import or data migration that created this record.",
+          "maximumValue": "2147483647",
+          "minimumValue": "-2147483648"
+        },
+        {
+          "name": "createdOnBehalfBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "User.cdm.json/User",
+                        "systemUserId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdOnBehalfBy/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "createdonbehalfby",
+          "sourceOrdering": 90,
+          "displayName": "Created By (Delegate)",
+          "description": "Unique identifier of the delegate user who created the businessunit."
+        },
+        {
+          "name": "modifiedOnBehalfBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "User.cdm.json/User",
+                        "systemUserId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedOnBehalfBy/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "modifiedonbehalfby",
+          "sourceOrdering": 94,
+          "displayName": "Modified By (Delegate)",
+          "description": "Unique identifier of the delegate user who last modified the businessunit."
+        },
+        {
+          "name": "transactionCurrencyId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "Currency.cdm.json/Currency",
+                        "transactionCurrencyId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/transactionCurrency/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "transactioncurrencyid",
+          "sourceOrdering": 98,
+          "displayName": "Currency",
+          "description": "Unique identifier of the currency associated with the businessunit."
+        },
+        {
+          "name": "exchangeRate",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "BusinessUnit_Resolved/attributeContext/BusinessUnit_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/exchangeRate",
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "sourceName": "exchangerate",
+          "sourceOrdering": 100,
+          "displayName": "Exchange Rate",
+          "description": "Exchange rate for the currency associated with the businessunit with respect to the base currency.",
+          "maximumValue": "100000000000",
+          "minimumValue": "1E-10"
+        }
+      ],
+      "sourceName": "BusinessUnit",
+      "displayName": "Business Unit",
+      "description": "Business, division, or department in the Microsoft Dynamics 365 database.",
+      "version": "1.3",
+      "cdmSchemas": [
+        "/core/applicationCommon/BusinessUnit.cdm.json/BusinessUnit/hasAttributes/attributesAddedAtThisScope"
+      ]
+    }
+  ],
+  "documentVersion": "1.3"
+}

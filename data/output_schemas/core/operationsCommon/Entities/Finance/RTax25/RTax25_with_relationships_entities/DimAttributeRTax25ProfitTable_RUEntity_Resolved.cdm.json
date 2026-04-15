@@ -1,0 +1,261 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "DimAttributeRTax25ProfitTable_RUEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "DimAttributeRTax25ProfitTable_RUEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "DimAttributeRTax25ProfitTable_RUEntity_Resolved",
+        "definition": "resolvedFrom/DimAttributeRTax25ProfitTable_RUEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "DimAttributeRTax25ProfitTable_RUEntity_Resolved/attributeContext/DimAttributeRTax25ProfitTable_RUEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "DimAttributeRTax25ProfitTable_RUEntity_Resolved/attributeContext/DimAttributeRTax25ProfitTable_RUEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Value",
+            "parent": "DimAttributeRTax25ProfitTable_RUEntity_Resolved/attributeContext/DimAttributeRTax25ProfitTable_RUEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimAttributeRTax25ProfitTable_RUEntity/hasAttributes/Value",
+            "contents": [
+              "DimAttributeRTax25ProfitTable_RUEntity_Resolved/hasAttributes/Value"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "DimAttributeRTax25ProfitTable_RUEntity_Resolved/attributeContext/DimAttributeRTax25ProfitTable_RUEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimAttributeRTax25ProfitTable_RUEntity/hasAttributes/Name",
+            "contents": [
+              "DimAttributeRTax25ProfitTable_RUEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_RTax25ProfitTableRelationship",
+            "parent": "DimAttributeRTax25ProfitTable_RUEntity_Resolved/attributeContext/DimAttributeRTax25ProfitTable_RUEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimAttributeRTax25ProfitTable_RUEntity/hasAttributes/BackingTable_RTax25ProfitTableRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "RTax25ProfitTable",
+                "parent": "DimAttributeRTax25ProfitTable_RUEntity_Resolved/attributeContext/DimAttributeRTax25ProfitTable_RUEntity_Resolved/BackingTable_RTax25ProfitTableRelationship",
+                "definition": "resolvedFrom/RTax25ProfitTable",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "DimAttributeRTax25ProfitTable_RUEntity_Resolved/attributeContext/DimAttributeRTax25ProfitTable_RUEntity_Resolved/BackingTable_RTax25ProfitTableRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "DimAttributeRTax25ProfitTable_RUEntity_Resolved/attributeContext/DimAttributeRTax25ProfitTable_RUEntity_Resolved/BackingTable_RTax25ProfitTableRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "DimAttributeRTax25ProfitTable_RUEntity_Resolved/attributeContext/DimAttributeRTax25ProfitTable_RUEntity_Resolved/BackingTable_RTax25ProfitTableRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "DimAttributeRTax25ProfitTable_RUEntity_Resolved/hasAttributes/BackingTable_RTax25ProfitTableRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "DimAttributeRTax25ProfitTable_RUEntity_Resolved/attributeContext/DimAttributeRTax25ProfitTable_RUEntity_Resolved",
+            "definition": "resolvedFrom/DimAttributeRTax25ProfitTable_RUEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "DimAttributeRTax25ProfitTable_RUEntity_Resolved/attributeContext/DimAttributeRTax25ProfitTable_RUEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "DimAttributeRTax25ProfitTable_RUEntity_Resolved/attributeContext/DimAttributeRTax25ProfitTable_RUEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "DimAttributeRTax25ProfitTable_RUEntity_Resolved/attributeContext/DimAttributeRTax25ProfitTable_RUEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "DimAttributeRTax25ProfitTable_RUEntity_Resolved/attributeContext/DimAttributeRTax25ProfitTable_RUEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "DimAttributeRTax25ProfitTable_RUEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Value",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DimAttributeRTax25ProfitTable_RUEntity_Resolved/attributeContext/DimAttributeRTax25ProfitTable_RUEntity_Resolved/Value",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DimAttributeRTax25ProfitTable_RUEntity_Resolved/attributeContext/DimAttributeRTax25ProfitTable_RUEntity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_RTax25ProfitTableRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/RTax25/Group/RTax25ProfitTable.cdm.json/RTax25ProfitTable",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "DimAttributeRTax25ProfitTable_RUEntity_Resolved/attributeContext/DimAttributeRTax25ProfitTable_RUEntity_Resolved/BackingTable_RTax25ProfitTableRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "DimAttributeRTax25ProfitTable_RUEntity_Resolved/attributeContext/DimAttributeRTax25ProfitTable_RUEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Expense and income codes",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

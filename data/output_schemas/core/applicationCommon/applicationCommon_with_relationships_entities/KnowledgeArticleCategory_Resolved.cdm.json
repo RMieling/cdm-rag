@@ -1,0 +1,239 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "KnowledgeArticleCategory.cdm.json",
+      "moniker": "resolvedFrom"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "KnowledgeArticleCategory_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "KnowledgeArticleCategory_Resolved",
+        "definition": "resolvedFrom/KnowledgeArticleCategory",
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "KnowledgeArticleCategory_Resolved/attributeContext/KnowledgeArticleCategory_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CdmEntity",
+                "parent": "KnowledgeArticleCategory_Resolved/attributeContext/KnowledgeArticleCategory_Resolved/extends",
+                "definition": "resolvedFrom/CdmEntity"
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "attributesAddedAtThisScope",
+            "parent": "KnowledgeArticleCategory_Resolved/attributeContext/KnowledgeArticleCategory_Resolved",
+            "definition": "resolvedFrom/KnowledgeArticleCategory/hasAttributes/attributesAddedAtThisScope",
+            "contents": [
+              {
+                "type": "attributeGroup",
+                "name": "attributesAddedAtThisScope",
+                "parent": "KnowledgeArticleCategory_Resolved/attributeContext/KnowledgeArticleCategory_Resolved/attributesAddedAtThisScope",
+                "definition": "resolvedFrom/KnowledgeArticleCategory/hasAttributes/attributesAddedAtThisScope",
+                "contents": [
+                  {
+                    "type": "attributeDefinition",
+                    "name": "knowledgeArticle",
+                    "parent": "KnowledgeArticleCategory_Resolved/attributeContext/KnowledgeArticleCategory_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/KnowledgeArticleCategory/hasAttributes/attributesAddedAtThisScope/members/knowledgeArticle",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "KnowledgeArticle",
+                        "parent": "KnowledgeArticleCategory_Resolved/attributeContext/KnowledgeArticleCategory_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/knowledgeArticle",
+                        "definition": "resolvedFrom/KnowledgeArticle",
+                        "appliedTraits": [
+                          {
+                            "traitReference": "means.entityState",
+                            "arguments": [
+                              "resolvedFrom/KnowledgeArticle/(resolvedAttributes)/stateCode"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "KnowledgeArticleCategory_Resolved/attributeContext/KnowledgeArticleCategory_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/knowledgeArticle",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "KnowledgeArticleCategory_Resolved/attributeContext/KnowledgeArticleCategory_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/knowledgeArticle/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "KnowledgeArticleCategory_Resolved/attributeContext/KnowledgeArticleCategory_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/knowledgeArticle/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/KnowledgeArticleCategory/hasAttributes/attributesAddedAtThisScope/members/knowledgeArticle/resolutionGuidance/foreignKeyAttribute/id",
+                                "contents": [
+                                  "KnowledgeArticleCategory_Resolved/hasAttributes/knowledgeArticleId"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "categoryId",
+                    "parent": "KnowledgeArticleCategory_Resolved/attributeContext/KnowledgeArticleCategory_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/KnowledgeArticleCategory/hasAttributes/attributesAddedAtThisScope/members/categoryId",
+                    "contents": [
+                      "KnowledgeArticleCategory_Resolved/hasAttributes/categoryId"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "knowledgeArticleCategoryId",
+                    "parent": "KnowledgeArticleCategory_Resolved/attributeContext/KnowledgeArticleCategory_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/KnowledgeArticleCategory/hasAttributes/attributesAddedAtThisScope/members/knowledgeArticleCategoryId",
+                    "contents": [
+                      "KnowledgeArticleCategory_Resolved/hasAttributes/knowledgeArticleCategoryId"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "versionNumber",
+                    "parent": "KnowledgeArticleCategory_Resolved/attributeContext/KnowledgeArticleCategory_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/KnowledgeArticleCategory/hasAttributes/attributesAddedAtThisScope/members/versionNumber",
+                    "contents": [
+                      "KnowledgeArticleCategory_Resolved/hasAttributes/versionNumber"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "knowledgeArticleId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "KnowledgeArticle.cdm.json/KnowledgeArticle",
+                        "knowledgearticleId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "KnowledgeArticleCategory_Resolved/attributeContext/KnowledgeArticleCategory_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/knowledgeArticle/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid",
+          "sourceName": "knowledgearticleid",
+          "sourceOrdering": 1
+        },
+        {
+          "name": "categoryId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            }
+          ],
+          "attributeContext": "KnowledgeArticleCategory_Resolved/attributeContext/KnowledgeArticleCategory_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/categoryId",
+          "dataFormat": "Guid",
+          "sourceName": "categoryid",
+          "sourceOrdering": 2
+        },
+        {
+          "name": "knowledgeArticleCategoryId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            }
+          ],
+          "attributeContext": "KnowledgeArticleCategory_Resolved/attributeContext/KnowledgeArticleCategory_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/knowledgeArticleCategoryId",
+          "isPrimaryKey": true,
+          "dataFormat": "Guid",
+          "sourceName": "knowledgearticlecategoryid",
+          "sourceOrdering": 3,
+          "description": "Unique identifier of the Category for the knowledge article."
+        },
+        {
+          "name": "versionNumber",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            "is.dataFormat.big",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "KnowledgeArticleCategory_Resolved/attributeContext/KnowledgeArticleCategory_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/versionNumber",
+          "isNullable": true,
+          "dataFormat": "Int64",
+          "sourceName": "versionnumber",
+          "sourceOrdering": 4
+        }
+      ],
+      "sourceName": "KnowledgeArticlesCategories",
+      "displayName": "Knowledge Article Category",
+      "description": "Category for a Knowledge Article.",
+      "version": "1.3",
+      "cdmSchemas": [
+        "/core/applicationCommon/KnowledgeArticleCategory.cdm.json/KnowledgeArticleCategory/hasAttributes/attributesAddedAtThisScope"
+      ]
+    }
+  ],
+  "documentVersion": "1.3"
+}

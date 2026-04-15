@@ -1,0 +1,281 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "RTSLDimensionRuleGoupEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "RTSLDimensionRuleGoupEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "RTSLDimensionRuleGoupEntity_Resolved",
+        "definition": "resolvedFrom/RTSLDimensionRuleGoupEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "RTSLDimensionRuleGoupEntity_Resolved/attributeContext/RTSLDimensionRuleGoupEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "RTSLDimensionRuleGoupEntity_Resolved/attributeContext/RTSLDimensionRuleGoupEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "RTSLDimensionRuleGoupEntity_Resolved/attributeContext/RTSLDimensionRuleGoupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RTSLDimensionRuleGoupEntity/hasAttributes/Description",
+            "contents": [
+              "RTSLDimensionRuleGoupEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DimesionRuleGroupId",
+            "parent": "RTSLDimensionRuleGoupEntity_Resolved/attributeContext/RTSLDimensionRuleGoupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RTSLDimensionRuleGoupEntity/hasAttributes/DimesionRuleGroupId",
+            "contents": [
+              "RTSLDimensionRuleGoupEntity_Resolved/hasAttributes/DimesionRuleGroupId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "RuleGroupId",
+            "parent": "RTSLDimensionRuleGoupEntity_Resolved/attributeContext/RTSLDimensionRuleGoupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RTSLDimensionRuleGoupEntity/hasAttributes/RuleGroupId",
+            "contents": [
+              "RTSLDimensionRuleGoupEntity_Resolved/hasAttributes/RuleGroupId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_RTSLDimensionRuleGroupRelationship",
+            "parent": "RTSLDimensionRuleGoupEntity_Resolved/attributeContext/RTSLDimensionRuleGoupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RTSLDimensionRuleGoupEntity/hasAttributes/BackingTable_RTSLDimensionRuleGroupRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "RTSLDimensionRuleGroup",
+                "parent": "RTSLDimensionRuleGoupEntity_Resolved/attributeContext/RTSLDimensionRuleGoupEntity_Resolved/BackingTable_RTSLDimensionRuleGroupRelationship",
+                "definition": "resolvedFrom/RTSLDimensionRuleGroup",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "RTSLDimensionRuleGoupEntity_Resolved/attributeContext/RTSLDimensionRuleGoupEntity_Resolved/BackingTable_RTSLDimensionRuleGroupRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "RTSLDimensionRuleGoupEntity_Resolved/attributeContext/RTSLDimensionRuleGoupEntity_Resolved/BackingTable_RTSLDimensionRuleGroupRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "RTSLDimensionRuleGoupEntity_Resolved/attributeContext/RTSLDimensionRuleGoupEntity_Resolved/BackingTable_RTSLDimensionRuleGroupRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "RTSLDimensionRuleGoupEntity_Resolved/hasAttributes/BackingTable_RTSLDimensionRuleGroupRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "RTSLDimensionRuleGoupEntity_Resolved/attributeContext/RTSLDimensionRuleGoupEntity_Resolved",
+            "definition": "resolvedFrom/RTSLDimensionRuleGoupEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "RTSLDimensionRuleGoupEntity_Resolved/attributeContext/RTSLDimensionRuleGoupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "RTSLDimensionRuleGoupEntity_Resolved/attributeContext/RTSLDimensionRuleGoupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "RTSLDimensionRuleGoupEntity_Resolved/attributeContext/RTSLDimensionRuleGoupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "RTSLDimensionRuleGoupEntity_Resolved/attributeContext/RTSLDimensionRuleGoupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "RTSLDimensionRuleGoupEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RTSLDimensionRuleGoupEntity_Resolved/attributeContext/RTSLDimensionRuleGoupEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "DimesionRuleGroupId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RTSLDimensionRuleGoupEntity_Resolved/attributeContext/RTSLDimensionRuleGoupEntity_Resolved/DimesionRuleGroupId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "RuleGroupId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RTSLDimensionRuleGoupEntity_Resolved/attributeContext/RTSLDimensionRuleGoupEntity_Resolved/RuleGroupId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_RTSLDimensionRuleGroupRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Group/RTSLDimensionRuleGroup.cdm.json/RTSLDimensionRuleGroup",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "RTSLDimensionRuleGoupEntity_Resolved/attributeContext/RTSLDimensionRuleGoupEntity_Resolved/BackingTable_RTSLDimensionRuleGroupRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "RTSLDimensionRuleGoupEntity_Resolved/attributeContext/RTSLDimensionRuleGoupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Translation dimension rule groups",
+      "version": "1.1.1"
+    }
+  ],
+  "documentVersion": "1.1.1"
+}

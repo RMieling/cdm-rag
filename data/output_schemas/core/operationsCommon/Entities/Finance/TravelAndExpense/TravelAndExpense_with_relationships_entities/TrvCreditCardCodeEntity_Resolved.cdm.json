@@ -1,0 +1,302 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "TrvCreditCardCodeEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TrvCreditCardCodeEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "TrvCreditCardCodeEntity_Resolved",
+        "definition": "resolvedFrom/TrvCreditCardCodeEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "TrvCreditCardCodeEntity_Resolved/attributeContext/TrvCreditCardCodeEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "TrvCreditCardCodeEntity_Resolved/attributeContext/TrvCreditCardCodeEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CardType",
+            "parent": "TrvCreditCardCodeEntity_Resolved/attributeContext/TrvCreditCardCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvCreditCardCodeEntity/hasAttributes/CardType",
+            "contents": [
+              "TrvCreditCardCodeEntity_Resolved/hasAttributes/CardType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Category",
+            "parent": "TrvCreditCardCodeEntity_Resolved/attributeContext/TrvCreditCardCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvCreditCardCodeEntity/hasAttributes/Category",
+            "contents": [
+              "TrvCreditCardCodeEntity_Resolved/hasAttributes/Category"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "TrvCreditCardCodeEntity_Resolved/attributeContext/TrvCreditCardCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvCreditCardCodeEntity/hasAttributes/Description",
+            "contents": [
+              "TrvCreditCardCodeEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ExpenseCategory",
+            "parent": "TrvCreditCardCodeEntity_Resolved/attributeContext/TrvCreditCardCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvCreditCardCodeEntity/hasAttributes/ExpenseCategory",
+            "contents": [
+              "TrvCreditCardCodeEntity_Resolved/hasAttributes/ExpenseCategory"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_TrvPBSCatCodesRelationship",
+            "parent": "TrvCreditCardCodeEntity_Resolved/attributeContext/TrvCreditCardCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvCreditCardCodeEntity/hasAttributes/BackingTable_TrvPBSCatCodesRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "TrvPBSCatCodes",
+                "parent": "TrvCreditCardCodeEntity_Resolved/attributeContext/TrvCreditCardCodeEntity_Resolved/BackingTable_TrvPBSCatCodesRelationship",
+                "definition": "resolvedFrom/TrvPBSCatCodes",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TrvCreditCardCodeEntity_Resolved/attributeContext/TrvCreditCardCodeEntity_Resolved/BackingTable_TrvPBSCatCodesRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TrvCreditCardCodeEntity_Resolved/attributeContext/TrvCreditCardCodeEntity_Resolved/BackingTable_TrvPBSCatCodesRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TrvCreditCardCodeEntity_Resolved/attributeContext/TrvCreditCardCodeEntity_Resolved/BackingTable_TrvPBSCatCodesRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TrvCreditCardCodeEntity_Resolved/hasAttributes/BackingTable_TrvPBSCatCodesRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "TrvCreditCardCodeEntity_Resolved/attributeContext/TrvCreditCardCodeEntity_Resolved",
+            "definition": "resolvedFrom/TrvCreditCardCodeEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "TrvCreditCardCodeEntity_Resolved/attributeContext/TrvCreditCardCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TrvCreditCardCodeEntity_Resolved/attributeContext/TrvCreditCardCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TrvCreditCardCodeEntity_Resolved/attributeContext/TrvCreditCardCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TrvCreditCardCodeEntity_Resolved/attributeContext/TrvCreditCardCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TrvCreditCardCodeEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "CardType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvCreditCardCodeEntity_Resolved/attributeContext/TrvCreditCardCodeEntity_Resolved/CardType",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Category",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvCreditCardCodeEntity_Resolved/attributeContext/TrvCreditCardCodeEntity_Resolved/Category",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvCreditCardCodeEntity_Resolved/attributeContext/TrvCreditCardCodeEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Description"
+        },
+        {
+          "name": "ExpenseCategory",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvCreditCardCodeEntity_Resolved/attributeContext/TrvCreditCardCodeEntity_Resolved/ExpenseCategory",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_TrvPBSCatCodesRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Expense/Reference/TrvPBSCatCodes.cdm.json/TrvPBSCatCodes",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TrvCreditCardCodeEntity_Resolved/attributeContext/TrvCreditCardCodeEntity_Resolved/BackingTable_TrvPBSCatCodesRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TrvCreditCardCodeEntity_Resolved/attributeContext/TrvCreditCardCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Credit card category codes",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

@@ -1,0 +1,261 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "TaxExciseTariffCodeEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TaxExciseTariffCodeEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "TaxExciseTariffCodeEntity_Resolved",
+        "definition": "resolvedFrom/TaxExciseTariffCodeEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "TaxExciseTariffCodeEntity_Resolved/attributeContext/TaxExciseTariffCodeEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "TaxExciseTariffCodeEntity_Resolved/attributeContext/TaxExciseTariffCodeEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "TaxExciseTariffCodeEntity_Resolved/attributeContext/TaxExciseTariffCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxExciseTariffCodeEntity/hasAttributes/Description",
+            "contents": [
+              "TaxExciseTariffCodeEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "TariffCode",
+            "parent": "TaxExciseTariffCodeEntity_Resolved/attributeContext/TaxExciseTariffCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxExciseTariffCodeEntity/hasAttributes/TariffCode",
+            "contents": [
+              "TaxExciseTariffCodeEntity_Resolved/hasAttributes/TariffCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_ExciseTariffCodes_INRelationship",
+            "parent": "TaxExciseTariffCodeEntity_Resolved/attributeContext/TaxExciseTariffCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxExciseTariffCodeEntity/hasAttributes/BackingTable_ExciseTariffCodes_INRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "ExciseTariffCodes_IN",
+                "parent": "TaxExciseTariffCodeEntity_Resolved/attributeContext/TaxExciseTariffCodeEntity_Resolved/BackingTable_ExciseTariffCodes_INRelationship",
+                "definition": "resolvedFrom/ExciseTariffCodes_IN",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxExciseTariffCodeEntity_Resolved/attributeContext/TaxExciseTariffCodeEntity_Resolved/BackingTable_ExciseTariffCodes_INRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxExciseTariffCodeEntity_Resolved/attributeContext/TaxExciseTariffCodeEntity_Resolved/BackingTable_ExciseTariffCodes_INRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxExciseTariffCodeEntity_Resolved/attributeContext/TaxExciseTariffCodeEntity_Resolved/BackingTable_ExciseTariffCodes_INRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxExciseTariffCodeEntity_Resolved/hasAttributes/BackingTable_ExciseTariffCodes_INRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "TaxExciseTariffCodeEntity_Resolved/attributeContext/TaxExciseTariffCodeEntity_Resolved",
+            "definition": "resolvedFrom/TaxExciseTariffCodeEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "TaxExciseTariffCodeEntity_Resolved/attributeContext/TaxExciseTariffCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxExciseTariffCodeEntity_Resolved/attributeContext/TaxExciseTariffCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxExciseTariffCodeEntity_Resolved/attributeContext/TaxExciseTariffCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxExciseTariffCodeEntity_Resolved/attributeContext/TaxExciseTariffCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxExciseTariffCodeEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxExciseTariffCodeEntity_Resolved/attributeContext/TaxExciseTariffCodeEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "TariffCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxExciseTariffCodeEntity_Resolved/attributeContext/TaxExciseTariffCodeEntity_Resolved/TariffCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_ExciseTariffCodes_INRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/APARShared/Main/ExciseTariffCodes_IN.cdm.json/ExciseTariffCodes_IN",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxExciseTariffCodeEntity_Resolved/attributeContext/TaxExciseTariffCodeEntity_Resolved/BackingTable_ExciseTariffCodes_INRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxExciseTariffCodeEntity_Resolved/attributeContext/TaxExciseTariffCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Excise tariff codes",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

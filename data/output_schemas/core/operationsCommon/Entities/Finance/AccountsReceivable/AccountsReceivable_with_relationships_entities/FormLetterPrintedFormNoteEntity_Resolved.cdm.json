@@ -1,0 +1,281 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "FormLetterPrintedFormNoteEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "FormLetterPrintedFormNoteEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "FormLetterPrintedFormNoteEntity_Resolved",
+        "definition": "resolvedFrom/FormLetterPrintedFormNoteEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "FormLetterPrintedFormNoteEntity_Resolved/attributeContext/FormLetterPrintedFormNoteEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "FormLetterPrintedFormNoteEntity_Resolved/attributeContext/FormLetterPrintedFormNoteEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "FormLetterType",
+            "parent": "FormLetterPrintedFormNoteEntity_Resolved/attributeContext/FormLetterPrintedFormNoteEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/FormLetterPrintedFormNoteEntity/hasAttributes/FormLetterType",
+            "contents": [
+              "FormLetterPrintedFormNoteEntity_Resolved/hasAttributes/FormLetterType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "LanguageId",
+            "parent": "FormLetterPrintedFormNoteEntity_Resolved/attributeContext/FormLetterPrintedFormNoteEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/FormLetterPrintedFormNoteEntity/hasAttributes/LanguageId",
+            "contents": [
+              "FormLetterPrintedFormNoteEntity_Resolved/hasAttributes/LanguageId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "FormNote",
+            "parent": "FormLetterPrintedFormNoteEntity_Resolved/attributeContext/FormLetterPrintedFormNoteEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/FormLetterPrintedFormNoteEntity/hasAttributes/FormNote",
+            "contents": [
+              "FormLetterPrintedFormNoteEntity_Resolved/hasAttributes/FormNote"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_FormLetterRemarksRelationship",
+            "parent": "FormLetterPrintedFormNoteEntity_Resolved/attributeContext/FormLetterPrintedFormNoteEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/FormLetterPrintedFormNoteEntity/hasAttributes/BackingTable_FormLetterRemarksRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "FormLetterRemarks",
+                "parent": "FormLetterPrintedFormNoteEntity_Resolved/attributeContext/FormLetterPrintedFormNoteEntity_Resolved/BackingTable_FormLetterRemarksRelationship",
+                "definition": "resolvedFrom/FormLetterRemarks",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "FormLetterPrintedFormNoteEntity_Resolved/attributeContext/FormLetterPrintedFormNoteEntity_Resolved/BackingTable_FormLetterRemarksRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "FormLetterPrintedFormNoteEntity_Resolved/attributeContext/FormLetterPrintedFormNoteEntity_Resolved/BackingTable_FormLetterRemarksRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "FormLetterPrintedFormNoteEntity_Resolved/attributeContext/FormLetterPrintedFormNoteEntity_Resolved/BackingTable_FormLetterRemarksRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "FormLetterPrintedFormNoteEntity_Resolved/hasAttributes/BackingTable_FormLetterRemarksRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "FormLetterPrintedFormNoteEntity_Resolved/attributeContext/FormLetterPrintedFormNoteEntity_Resolved",
+            "definition": "resolvedFrom/FormLetterPrintedFormNoteEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "FormLetterPrintedFormNoteEntity_Resolved/attributeContext/FormLetterPrintedFormNoteEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "FormLetterPrintedFormNoteEntity_Resolved/attributeContext/FormLetterPrintedFormNoteEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "FormLetterPrintedFormNoteEntity_Resolved/attributeContext/FormLetterPrintedFormNoteEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "FormLetterPrintedFormNoteEntity_Resolved/attributeContext/FormLetterPrintedFormNoteEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "FormLetterPrintedFormNoteEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "FormLetterType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "FormLetterPrintedFormNoteEntity_Resolved/attributeContext/FormLetterPrintedFormNoteEntity_Resolved/FormLetterType",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "LanguageId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "FormLetterPrintedFormNoteEntity_Resolved/attributeContext/FormLetterPrintedFormNoteEntity_Resolved/LanguageId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "FormNote",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "FormLetterPrintedFormNoteEntity_Resolved/attributeContext/FormLetterPrintedFormNoteEntity_Resolved/FormNote",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_FormLetterRemarksRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/SupplyChain/SalesAndMarketing/Reference/FormLetterRemarks.cdm.json/FormLetterRemarks",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "FormLetterPrintedFormNoteEntity_Resolved/attributeContext/FormLetterPrintedFormNoteEntity_Resolved/BackingTable_FormLetterRemarksRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "FormLetterPrintedFormNoteEntity_Resolved/attributeContext/FormLetterPrintedFormNoteEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Printed form notes",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

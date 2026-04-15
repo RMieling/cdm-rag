@@ -1,0 +1,1154 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "GoalMetric.cdm.json",
+      "moniker": "resolvedFrom"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "GoalMetric_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "means.entityState",
+          "arguments": [
+            "GoalMetric_Resolved/(resolvedAttributes)/stateCode"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "GoalMetric_Resolved",
+        "definition": "resolvedFrom/GoalMetric",
+        "appliedTraits": [
+          {
+            "traitReference": "means.entityState",
+            "arguments": [
+              "GoalMetric_Resolved/(resolvedAttributes)/stateCode"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CdmEntity",
+                "parent": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/extends",
+                "definition": "resolvedFrom/CdmEntity"
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "attributesAddedAtThisScope",
+            "parent": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved",
+            "definition": "resolvedFrom/GoalMetric/hasAttributes/attributesAddedAtThisScope",
+            "contents": [
+              {
+                "type": "attributeGroup",
+                "name": "attributesAddedAtThisScope",
+                "parent": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope",
+                "definition": "resolvedFrom/GoalMetric/hasAttributes/attributesAddedAtThisScope",
+                "contents": [
+                  {
+                    "type": "attributeDefinition",
+                    "name": "metricId",
+                    "parent": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/GoalMetric/hasAttributes/attributesAddedAtThisScope/members/metricId",
+                    "contents": [
+                      "GoalMetric_Resolved/hasAttributes/metricId"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "createdOn",
+                    "parent": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/GoalMetric/hasAttributes/attributesAddedAtThisScope/members/createdOn",
+                    "contents": [
+                      "GoalMetric_Resolved/hasAttributes/createdOn"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "User_createdBy",
+                    "parent": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/GoalMetric/hasAttributes/attributesAddedAtThisScope/members/User_createdBy",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "User",
+                        "parent": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdBy",
+                        "definition": "resolvedFrom/User"
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdBy",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdBy/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdBy/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/GoalMetric/hasAttributes/attributesAddedAtThisScope/members/User_createdBy/resolutionGuidance/foreignKeyAttribute/createdBy",
+                                "contents": [
+                                  "GoalMetric_Resolved/hasAttributes/createdBy"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "modifiedOn",
+                    "parent": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/GoalMetric/hasAttributes/attributesAddedAtThisScope/members/modifiedOn",
+                    "contents": [
+                      "GoalMetric_Resolved/hasAttributes/modifiedOn"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "User_modifiedBy",
+                    "parent": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/GoalMetric/hasAttributes/attributesAddedAtThisScope/members/User_modifiedBy",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "User",
+                        "parent": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedBy",
+                        "definition": "resolvedFrom/User"
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedBy",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedBy/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedBy/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/GoalMetric/hasAttributes/attributesAddedAtThisScope/members/User_modifiedBy/resolutionGuidance/foreignKeyAttribute/modifiedBy",
+                                "contents": [
+                                  "GoalMetric_Resolved/hasAttributes/modifiedBy"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "User_createdOnBehalfBy",
+                    "parent": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/GoalMetric/hasAttributes/attributesAddedAtThisScope/members/User_createdOnBehalfBy",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "User",
+                        "parent": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdOnBehalfBy",
+                        "definition": "resolvedFrom/User"
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdOnBehalfBy",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdOnBehalfBy/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdOnBehalfBy/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/GoalMetric/hasAttributes/attributesAddedAtThisScope/members/User_createdOnBehalfBy/resolutionGuidance/foreignKeyAttribute/createdOnBehalfBy",
+                                "contents": [
+                                  "GoalMetric_Resolved/hasAttributes/createdOnBehalfBy"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "User_modifiedOnBehalfBy",
+                    "parent": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/GoalMetric/hasAttributes/attributesAddedAtThisScope/members/User_modifiedOnBehalfBy",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "User",
+                        "parent": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedOnBehalfBy",
+                        "definition": "resolvedFrom/User"
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedOnBehalfBy",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedOnBehalfBy/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedOnBehalfBy/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/GoalMetric/hasAttributes/attributesAddedAtThisScope/members/User_modifiedOnBehalfBy/resolutionGuidance/foreignKeyAttribute/modifiedOnBehalfBy",
+                                "contents": [
+                                  "GoalMetric_Resolved/hasAttributes/modifiedOnBehalfBy"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "organization",
+                    "parent": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/GoalMetric/hasAttributes/attributesAddedAtThisScope/members/organization",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "Organization",
+                        "parent": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/organization",
+                        "definition": "resolvedFrom/Organization"
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/organization",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/organization/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/organization/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/GoalMetric/hasAttributes/attributesAddedAtThisScope/members/organization/resolutionGuidance/foreignKeyAttribute/id",
+                                "contents": [
+                                  "GoalMetric_Resolved/hasAttributes/organizationId"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "stateCode",
+                    "parent": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/GoalMetric/hasAttributes/attributesAddedAtThisScope/members/stateCode",
+                    "contents": [
+                      "GoalMetric_Resolved/hasAttributes/stateCode",
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/stateCode",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/stateCode/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeSupporting",
+                                "name": "supporting_stateCode",
+                                "parent": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/stateCode/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/GoalMetric/hasAttributes/attributesAddedAtThisScope/members/stateCode",
+                                "contents": [
+                                  "GoalMetric_Resolved/hasAttributes/stateCode_display"
+                                ],
+                                "lineage": [
+                                  "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/stateCode"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "statusCode",
+                    "parent": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/GoalMetric/hasAttributes/attributesAddedAtThisScope/members/statusCode",
+                    "contents": [
+                      "GoalMetric_Resolved/hasAttributes/statusCode",
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/statusCode",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/statusCode/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeSupporting",
+                                "name": "supporting_statusCode",
+                                "parent": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/statusCode/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/GoalMetric/hasAttributes/attributesAddedAtThisScope/members/statusCode",
+                                "contents": [
+                                  "GoalMetric_Resolved/hasAttributes/statusCode_display"
+                                ],
+                                "lineage": [
+                                  "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/statusCode"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "versionNumber",
+                    "parent": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/GoalMetric/hasAttributes/attributesAddedAtThisScope/members/versionNumber",
+                    "contents": [
+                      "GoalMetric_Resolved/hasAttributes/versionNumber"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "importSequenceNumber",
+                    "parent": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/GoalMetric/hasAttributes/attributesAddedAtThisScope/members/importSequenceNumber",
+                    "contents": [
+                      "GoalMetric_Resolved/hasAttributes/importSequenceNumber"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "overriddenCreatedOn",
+                    "parent": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/GoalMetric/hasAttributes/attributesAddedAtThisScope/members/overriddenCreatedOn",
+                    "contents": [
+                      "GoalMetric_Resolved/hasAttributes/overriddenCreatedOn"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "timeZoneRuleVersionNumber",
+                    "parent": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/GoalMetric/hasAttributes/attributesAddedAtThisScope/members/timeZoneRuleVersionNumber",
+                    "contents": [
+                      "GoalMetric_Resolved/hasAttributes/timeZoneRuleVersionNumber"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "UTCConversionTimeZoneCode",
+                    "parent": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/GoalMetric/hasAttributes/attributesAddedAtThisScope/members/UTCConversionTimeZoneCode",
+                    "contents": [
+                      "GoalMetric_Resolved/hasAttributes/UTCConversionTimeZoneCode"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "name",
+                    "parent": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/GoalMetric/hasAttributes/attributesAddedAtThisScope/members/name",
+                    "contents": [
+                      "GoalMetric_Resolved/hasAttributes/name"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "amountDataType",
+                    "parent": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/GoalMetric/hasAttributes/attributesAddedAtThisScope/members/amountDataType",
+                    "contents": [
+                      "GoalMetric_Resolved/hasAttributes/amountDataType",
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/amountDataType",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/amountDataType/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeSupporting",
+                                "name": "supporting_amountDataType",
+                                "parent": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/amountDataType/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/GoalMetric/hasAttributes/attributesAddedAtThisScope/members/amountDataType",
+                                "contents": [
+                                  "GoalMetric_Resolved/hasAttributes/amountDataType_display"
+                                ],
+                                "lineage": [
+                                  "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/amountDataType"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "isAmount",
+                    "parent": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/GoalMetric/hasAttributes/attributesAddedAtThisScope/members/isAmount",
+                    "contents": [
+                      "GoalMetric_Resolved/hasAttributes/isAmount"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "isStretchTracked",
+                    "parent": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/GoalMetric/hasAttributes/attributesAddedAtThisScope/members/isStretchTracked",
+                    "contents": [
+                      "GoalMetric_Resolved/hasAttributes/isStretchTracked"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "description",
+                    "parent": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/GoalMetric/hasAttributes/attributesAddedAtThisScope/members/description",
+                    "contents": [
+                      "GoalMetric_Resolved/hasAttributes/description"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "metricId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            }
+          ],
+          "attributeContext": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/metricId",
+          "isPrimaryKey": true,
+          "dataFormat": "Guid",
+          "sourceName": "metricid",
+          "sourceOrdering": 1,
+          "displayName": "Goal Metric",
+          "description": "Unique identifier of the goal metric."
+        },
+        {
+          "name": "createdOn",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date",
+            "is.dataFormat.time",
+            "means.measurement.time",
+            "means.measurement.date.creation",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/createdOn",
+          "isNullable": true,
+          "dataFormat": "DateTime",
+          "sourceName": "createdon",
+          "sourceOrdering": 2,
+          "displayName": "Created On",
+          "description": "Date and time when the record was created."
+        },
+        {
+          "name": "createdBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "User.cdm.json/User",
+                        "systemUserId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdBy/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "createdby",
+          "sourceOrdering": 3,
+          "displayName": "Created By",
+          "description": "Unique identifier of the user who created the record."
+        },
+        {
+          "name": "modifiedOn",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date",
+            "is.dataFormat.time",
+            "means.measurement.time",
+            "means.measurement.date.modify",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/modifiedOn",
+          "isNullable": true,
+          "dataFormat": "DateTime",
+          "sourceName": "modifiedon",
+          "sourceOrdering": 4,
+          "displayName": "Modified On",
+          "description": "Date and time when the record was modified."
+        },
+        {
+          "name": "modifiedBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "User.cdm.json/User",
+                        "systemUserId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedBy/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "modifiedby",
+          "sourceOrdering": 5,
+          "displayName": "Modified By",
+          "description": "Unique identifier of the user who modified the record."
+        },
+        {
+          "name": "createdOnBehalfBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "User.cdm.json/User",
+                        "systemUserId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdOnBehalfBy/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "createdonbehalfby",
+          "sourceOrdering": 6,
+          "displayName": "Created By (Delegate)",
+          "description": "Unique identifier of the delegate user who created the record."
+        },
+        {
+          "name": "modifiedOnBehalfBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "User.cdm.json/User",
+                        "systemUserId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedOnBehalfBy/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "modifiedonbehalfby",
+          "sourceOrdering": 7,
+          "displayName": "Modified By (Delegate)",
+          "description": "Unique identifier of the delegate user who modified the record."
+        },
+        {
+          "name": "organizationId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "Organization.cdm.json/Organization",
+                        "organizationId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/organization/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "organizationid",
+          "sourceOrdering": 12,
+          "displayName": "Organization Id",
+          "description": "Unique identifier of the organization."
+        },
+        {
+          "name": "stateCode",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            {
+              "traitReference": "means.entityState",
+              "arguments": [
+                "GoalMetric_Resolved/(resolvedAttributes)/stateCode"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            }
+          ],
+          "attributeContext": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/stateCode",
+          "dataFormat": "Int32",
+          "sourceName": "statecode",
+          "sourceOrdering": 14,
+          "displayName": "Status",
+          "description": "Status of the goal metric.",
+          "valueConstrainedToList": true,
+          "defaultValue": [
+            {
+              "languageTag": "en",
+              "displayText": "Active",
+              "attributeValue": "0",
+              "displayOrder": "0"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Inactive",
+              "attributeValue": "1",
+              "displayOrder": "1"
+            }
+          ]
+        },
+        {
+          "name": "stateCode_display",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.reference.displayText",
+            {
+              "traitReference": "is.addedInSupportOf",
+              "arguments": [
+                "stateCode"
+              ]
+            }
+          ],
+          "attributeContext": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/stateCode/_generatedAttributeSet/_generatedAttributeRound0/supporting_stateCode",
+          "isReadOnly": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "statusCode",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            {
+              "traitReference": "is.correlatedWith",
+              "arguments": [
+                "stateCode"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/statusCode",
+          "isNullable": true,
+          "dataFormat": "Int32",
+          "sourceName": "statuscode",
+          "sourceOrdering": 16,
+          "displayName": "Status Reason",
+          "description": "Reason for the status of the goal metric.",
+          "defaultValue": [
+            {
+              "languageTag": "en",
+              "displayText": "Open",
+              "attributeValue": "0",
+              "displayOrder": "0",
+              "correlatedValue": "0"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Closed",
+              "attributeValue": "1",
+              "displayOrder": "1",
+              "correlatedValue": "1"
+            }
+          ]
+        },
+        {
+          "name": "statusCode_display",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.reference.displayText",
+            {
+              "traitReference": "is.addedInSupportOf",
+              "arguments": [
+                "statusCode"
+              ]
+            }
+          ],
+          "attributeContext": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/statusCode/_generatedAttributeSet/_generatedAttributeRound0/supporting_statusCode",
+          "isReadOnly": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "versionNumber",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            "is.dataFormat.big",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/versionNumber",
+          "isNullable": true,
+          "dataFormat": "Int64",
+          "sourceName": "versionnumber",
+          "sourceOrdering": 18,
+          "displayName": "Version Number",
+          "description": "Version number of the goal metric."
+        },
+        {
+          "name": "importSequenceNumber",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/importSequenceNumber",
+          "isNullable": true,
+          "dataFormat": "Int32",
+          "sourceName": "importsequencenumber",
+          "sourceOrdering": 19,
+          "displayName": "Import Sequence Number",
+          "description": "Sequence number of the import that created this record.",
+          "maximumValue": "2147483647",
+          "minimumValue": "-2147483648"
+        },
+        {
+          "name": "overriddenCreatedOn",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date",
+            "is.dataFormat.time",
+            "means.measurement.time",
+            "means.measurement.date.creation",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/overriddenCreatedOn",
+          "isNullable": true,
+          "dataFormat": "DateTime",
+          "sourceName": "overriddencreatedon",
+          "sourceOrdering": 20,
+          "displayName": "Record Created On",
+          "description": "Date and time that the record was migrated."
+        },
+        {
+          "name": "timeZoneRuleVersionNumber",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/timeZoneRuleVersionNumber",
+          "isNullable": true,
+          "dataFormat": "Int32",
+          "sourceName": "timezoneruleversionnumber",
+          "sourceOrdering": 21,
+          "displayName": "Time Zone Rule Version Number",
+          "description": "For internal use only.",
+          "maximumValue": "2147483647",
+          "minimumValue": "-1"
+        },
+        {
+          "name": "UTCConversionTimeZoneCode",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/UTCConversionTimeZoneCode",
+          "isNullable": true,
+          "dataFormat": "Int32",
+          "sourceName": "utcconversiontimezonecode",
+          "sourceOrdering": 22,
+          "displayName": "UTC Conversion Time Zone Code",
+          "description": "Time zone code that was in use when the record was created.",
+          "maximumValue": "2147483647",
+          "minimumValue": "-1"
+        },
+        {
+          "name": "name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.identity.name",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "required"
+              ]
+            }
+          ],
+          "attributeContext": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/name",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "name",
+          "sourceOrdering": 23,
+          "displayName": "Name",
+          "description": "Name of the goal metric.",
+          "maximumLength": 100
+        },
+        {
+          "name": "amountDataType",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/amountDataType",
+          "isNullable": true,
+          "dataFormat": "Int32",
+          "sourceName": "amountdatatype",
+          "sourceOrdering": 24,
+          "displayName": "Amount Data Type",
+          "description": "Data type of the amount.",
+          "valueConstrainedToList": true,
+          "defaultValue": [
+            {
+              "languageTag": "en",
+              "displayText": "Money",
+              "attributeValue": "0",
+              "displayOrder": "0"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Decimal",
+              "attributeValue": "1",
+              "displayOrder": "1"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Integer",
+              "attributeValue": "2",
+              "displayOrder": "2"
+            }
+          ]
+        },
+        {
+          "name": "amountDataType_display",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.reference.displayText",
+            {
+              "traitReference": "is.addedInSupportOf",
+              "arguments": [
+                "amountDataType"
+              ]
+            }
+          ],
+          "attributeContext": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/amountDataType/_generatedAttributeSet/_generatedAttributeRound0/supporting_amountDataType",
+          "isReadOnly": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "isAmount",
+          "appliedTraits": [
+            "is.dataFormat.boolean",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "required"
+              ]
+            }
+          ],
+          "attributeContext": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/isAmount",
+          "isNullable": true,
+          "dataFormat": "Boolean",
+          "sourceName": "isamount",
+          "sourceOrdering": 32,
+          "displayName": "Metric Type",
+          "description": "Information that indicates whether the metric type is Count or Amount."
+        },
+        {
+          "name": "isStretchTracked",
+          "appliedTraits": [
+            "is.dataFormat.boolean",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/isStretchTracked",
+          "isNullable": true,
+          "dataFormat": "Boolean",
+          "sourceName": "isstretchtracked",
+          "sourceOrdering": 104,
+          "displayName": "Track Stretch Target",
+          "description": "Indicates whether the goal metric tracks stretch targets."
+        },
+        {
+          "name": "description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "GoalMetric_Resolved/attributeContext/GoalMetric_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/description",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "description",
+          "sourceOrdering": 126,
+          "displayName": "Description",
+          "description": "Description of the goal metric.",
+          "maximumLength": 2000
+        }
+      ],
+      "sourceName": "Metric",
+      "displayName": "Goal Metric",
+      "description": "Type of measurement for a goal, such as money amount or count.",
+      "version": "1.3",
+      "cdmSchemas": [
+        "/core/applicationCommon/GoalMetric.cdm.json/GoalMetric/hasAttributes/attributesAddedAtThisScope"
+      ]
+    }
+  ],
+  "documentVersion": "1.3"
+}

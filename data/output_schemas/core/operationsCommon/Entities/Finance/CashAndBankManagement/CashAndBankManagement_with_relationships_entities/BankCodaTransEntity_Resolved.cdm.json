@@ -1,0 +1,281 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "BankCodaTransEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "BankCodaTransEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "BankCodaTransEntity_Resolved",
+        "definition": "resolvedFrom/BankCodaTransEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "BankCodaTransEntity_Resolved/attributeContext/BankCodaTransEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "BankCodaTransEntity_Resolved/attributeContext/BankCodaTransEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "BankCodaTransEntity_Resolved/attributeContext/BankCodaTransEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BankCodaTransEntity/hasAttributes/Description",
+            "contents": [
+              "BankCodaTransEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Transaction",
+            "parent": "BankCodaTransEntity_Resolved/attributeContext/BankCodaTransEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BankCodaTransEntity/hasAttributes/Transaction",
+            "contents": [
+              "BankCodaTransEntity_Resolved/hasAttributes/Transaction"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "TransactionFamily",
+            "parent": "BankCodaTransEntity_Resolved/attributeContext/BankCodaTransEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BankCodaTransEntity/hasAttributes/TransactionFamily",
+            "contents": [
+              "BankCodaTransEntity_Resolved/hasAttributes/TransactionFamily"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_BankCodaTransRelationship",
+            "parent": "BankCodaTransEntity_Resolved/attributeContext/BankCodaTransEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BankCodaTransEntity/hasAttributes/BackingTable_BankCodaTransRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "BankCodaTrans",
+                "parent": "BankCodaTransEntity_Resolved/attributeContext/BankCodaTransEntity_Resolved/BackingTable_BankCodaTransRelationship",
+                "definition": "resolvedFrom/BankCodaTrans",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "BankCodaTransEntity_Resolved/attributeContext/BankCodaTransEntity_Resolved/BackingTable_BankCodaTransRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "BankCodaTransEntity_Resolved/attributeContext/BankCodaTransEntity_Resolved/BackingTable_BankCodaTransRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "BankCodaTransEntity_Resolved/attributeContext/BankCodaTransEntity_Resolved/BackingTable_BankCodaTransRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "BankCodaTransEntity_Resolved/hasAttributes/BackingTable_BankCodaTransRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "BankCodaTransEntity_Resolved/attributeContext/BankCodaTransEntity_Resolved",
+            "definition": "resolvedFrom/BankCodaTransEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "BankCodaTransEntity_Resolved/attributeContext/BankCodaTransEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "BankCodaTransEntity_Resolved/attributeContext/BankCodaTransEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "BankCodaTransEntity_Resolved/attributeContext/BankCodaTransEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "BankCodaTransEntity_Resolved/attributeContext/BankCodaTransEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "BankCodaTransEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BankCodaTransEntity_Resolved/attributeContext/BankCodaTransEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Transaction",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BankCodaTransEntity_Resolved/attributeContext/BankCodaTransEntity_Resolved/Transaction",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "TransactionFamily",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BankCodaTransEntity_Resolved/attributeContext/BankCodaTransEntity_Resolved/TransactionFamily",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_BankCodaTransRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Bank/TransactionLine/BankCodaTrans.cdm.json/BankCodaTrans",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "BankCodaTransEntity_Resolved/attributeContext/BankCodaTransEntity_Resolved/BackingTable_BankCodaTransRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "BankCodaTransEntity_Resolved/attributeContext/BankCodaTransEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "CODA - transaction",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

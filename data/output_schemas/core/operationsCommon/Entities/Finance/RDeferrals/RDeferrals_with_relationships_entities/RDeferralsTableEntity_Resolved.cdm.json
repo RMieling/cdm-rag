@@ -1,0 +1,361 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "RDeferralsTableEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "RDeferralsTableEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "RDeferralsTableEntity_Resolved",
+        "definition": "resolvedFrom/RDeferralsTableEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "RDeferralsTableEntity_Resolved/attributeContext/RDeferralsTableEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "RDeferralsTableEntity_Resolved/attributeContext/RDeferralsTableEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DateAttached",
+            "parent": "RDeferralsTableEntity_Resolved/attributeContext/RDeferralsTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RDeferralsTableEntity/hasAttributes/DateAttached",
+            "contents": [
+              "RDeferralsTableEntity_Resolved/hasAttributes/DateAttached"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DeferralId",
+            "parent": "RDeferralsTableEntity_Resolved/attributeContext/RDeferralsTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RDeferralsTableEntity/hasAttributes/DeferralId",
+            "contents": [
+              "RDeferralsTableEntity_Resolved/hasAttributes/DeferralId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "RDeferralsTableEntity_Resolved/attributeContext/RDeferralsTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RDeferralsTableEntity/hasAttributes/Name",
+            "contents": [
+              "RDeferralsTableEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Comment",
+            "parent": "RDeferralsTableEntity_Resolved/attributeContext/RDeferralsTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RDeferralsTableEntity/hasAttributes/Comment",
+            "contents": [
+              "RDeferralsTableEntity_Resolved/hasAttributes/Comment"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Reference",
+            "parent": "RDeferralsTableEntity_Resolved/attributeContext/RDeferralsTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RDeferralsTableEntity/hasAttributes/Reference",
+            "contents": [
+              "RDeferralsTableEntity_Resolved/hasAttributes/Reference"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ExpenseCode",
+            "parent": "RDeferralsTableEntity_Resolved/attributeContext/RDeferralsTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RDeferralsTableEntity/hasAttributes/ExpenseCode",
+            "contents": [
+              "RDeferralsTableEntity_Resolved/hasAttributes/ExpenseCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "VATOffsetMethodForDeferrals",
+            "parent": "RDeferralsTableEntity_Resolved/attributeContext/RDeferralsTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RDeferralsTableEntity/hasAttributes/VATOffsetMethodForDeferrals",
+            "contents": [
+              "RDeferralsTableEntity_Resolved/hasAttributes/VATOffsetMethodForDeferrals"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_RDeferralsTableRelationship",
+            "parent": "RDeferralsTableEntity_Resolved/attributeContext/RDeferralsTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RDeferralsTableEntity/hasAttributes/BackingTable_RDeferralsTableRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "RDeferralsTable",
+                "parent": "RDeferralsTableEntity_Resolved/attributeContext/RDeferralsTableEntity_Resolved/BackingTable_RDeferralsTableRelationship",
+                "definition": "resolvedFrom/RDeferralsTable",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "RDeferralsTableEntity_Resolved/attributeContext/RDeferralsTableEntity_Resolved/BackingTable_RDeferralsTableRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "RDeferralsTableEntity_Resolved/attributeContext/RDeferralsTableEntity_Resolved/BackingTable_RDeferralsTableRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "RDeferralsTableEntity_Resolved/attributeContext/RDeferralsTableEntity_Resolved/BackingTable_RDeferralsTableRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "RDeferralsTableEntity_Resolved/hasAttributes/BackingTable_RDeferralsTableRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "RDeferralsTableEntity_Resolved/attributeContext/RDeferralsTableEntity_Resolved",
+            "definition": "resolvedFrom/RDeferralsTableEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "RDeferralsTableEntity_Resolved/attributeContext/RDeferralsTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "RDeferralsTableEntity_Resolved/attributeContext/RDeferralsTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "RDeferralsTableEntity_Resolved/attributeContext/RDeferralsTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "RDeferralsTableEntity_Resolved/attributeContext/RDeferralsTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "RDeferralsTableEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "DateAttached",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RDeferralsTableEntity_Resolved/attributeContext/RDeferralsTableEntity_Resolved/DateAttached",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "DeferralId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RDeferralsTableEntity_Resolved/attributeContext/RDeferralsTableEntity_Resolved/DeferralId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RDeferralsTableEntity_Resolved/attributeContext/RDeferralsTableEntity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Comment",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RDeferralsTableEntity_Resolved/attributeContext/RDeferralsTableEntity_Resolved/Comment",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Reference",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RDeferralsTableEntity_Resolved/attributeContext/RDeferralsTableEntity_Resolved/Reference",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ExpenseCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RDeferralsTableEntity_Resolved/attributeContext/RDeferralsTableEntity_Resolved/ExpenseCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "VATOffsetMethodForDeferrals",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RDeferralsTableEntity_Resolved/attributeContext/RDeferralsTableEntity_Resolved/VATOffsetMethodForDeferrals",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_RDeferralsTableRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/RDeferrals/Main/RDeferralsTable.cdm.json/RDeferralsTable",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "RDeferralsTableEntity_Resolved/attributeContext/RDeferralsTableEntity_Resolved/BackingTable_RDeferralsTableRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "RDeferralsTableEntity_Resolved/attributeContext/RDeferralsTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Deferrals",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

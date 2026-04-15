@@ -1,0 +1,420 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "EmplAdvLineEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "EmplAdvLineEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "EmplAdvLineEntity_Resolved",
+        "definition": "resolvedFrom/EmplAdvLineEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "EmplAdvLineEntity_Resolved/attributeContext/EmplAdvLineEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "EmplAdvLineEntity_Resolved/attributeContext/EmplAdvLineEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "AdvanceId",
+            "parent": "EmplAdvLineEntity_Resolved/attributeContext/EmplAdvLineEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EmplAdvLineEntity/hasAttributes/AdvanceId",
+            "contents": [
+              "EmplAdvLineEntity_Resolved/hasAttributes/AdvanceId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Amount",
+            "parent": "EmplAdvLineEntity_Resolved/attributeContext/EmplAdvLineEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EmplAdvLineEntity/hasAttributes/Amount",
+            "contents": [
+              "EmplAdvLineEntity_Resolved/hasAttributes/Amount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ConfirmedAmountOfAdvanceReport",
+            "parent": "EmplAdvLineEntity_Resolved/attributeContext/EmplAdvLineEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EmplAdvLineEntity/hasAttributes/ConfirmedAmountOfAdvanceReport",
+            "contents": [
+              "EmplAdvLineEntity_Resolved/hasAttributes/ConfirmedAmountOfAdvanceReport"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Currency",
+            "parent": "EmplAdvLineEntity_Resolved/attributeContext/EmplAdvLineEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EmplAdvLineEntity/hasAttributes/Currency",
+            "contents": [
+              "EmplAdvLineEntity_Resolved/hasAttributes/Currency"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DisbursementDate",
+            "parent": "EmplAdvLineEntity_Resolved/attributeContext/EmplAdvLineEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EmplAdvLineEntity/hasAttributes/DisbursementDate",
+            "contents": [
+              "EmplAdvLineEntity_Resolved/hasAttributes/DisbursementDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DocumentName",
+            "parent": "EmplAdvLineEntity_Resolved/attributeContext/EmplAdvLineEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EmplAdvLineEntity/hasAttributes/DocumentName",
+            "contents": [
+              "EmplAdvLineEntity_Resolved/hasAttributes/DocumentName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DocumentNumber",
+            "parent": "EmplAdvLineEntity_Resolved/attributeContext/EmplAdvLineEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EmplAdvLineEntity/hasAttributes/DocumentNumber",
+            "contents": [
+              "EmplAdvLineEntity_Resolved/hasAttributes/DocumentNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "OverRate",
+            "parent": "EmplAdvLineEntity_Resolved/attributeContext/EmplAdvLineEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EmplAdvLineEntity/hasAttributes/OverRate",
+            "contents": [
+              "EmplAdvLineEntity_Resolved/hasAttributes/OverRate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "MainAccount",
+            "parent": "EmplAdvLineEntity_Resolved/attributeContext/EmplAdvLineEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EmplAdvLineEntity/hasAttributes/MainAccount",
+            "contents": [
+              "EmplAdvLineEntity_Resolved/hasAttributes/MainAccount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "LineNum",
+            "parent": "EmplAdvLineEntity_Resolved/attributeContext/EmplAdvLineEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EmplAdvLineEntity/hasAttributes/LineNum",
+            "contents": [
+              "EmplAdvLineEntity_Resolved/hasAttributes/LineNum"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_EmplAdvLine_RURelationship",
+            "parent": "EmplAdvLineEntity_Resolved/attributeContext/EmplAdvLineEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EmplAdvLineEntity/hasAttributes/BackingTable_EmplAdvLine_RURelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "EmplAdvLine_RU",
+                "parent": "EmplAdvLineEntity_Resolved/attributeContext/EmplAdvLineEntity_Resolved/BackingTable_EmplAdvLine_RURelationship",
+                "definition": "resolvedFrom/EmplAdvLine_RU",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "EmplAdvLineEntity_Resolved/attributeContext/EmplAdvLineEntity_Resolved/BackingTable_EmplAdvLine_RURelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "EmplAdvLineEntity_Resolved/attributeContext/EmplAdvLineEntity_Resolved/BackingTable_EmplAdvLine_RURelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "EmplAdvLineEntity_Resolved/attributeContext/EmplAdvLineEntity_Resolved/BackingTable_EmplAdvLine_RURelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "EmplAdvLineEntity_Resolved/hasAttributes/BackingTable_EmplAdvLine_RURelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "EmplAdvLineEntity_Resolved/attributeContext/EmplAdvLineEntity_Resolved",
+            "definition": "resolvedFrom/EmplAdvLineEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "EmplAdvLineEntity_Resolved/attributeContext/EmplAdvLineEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "EmplAdvLineEntity_Resolved/attributeContext/EmplAdvLineEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "EmplAdvLineEntity_Resolved/attributeContext/EmplAdvLineEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "EmplAdvLineEntity_Resolved/attributeContext/EmplAdvLineEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "EmplAdvLineEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "AdvanceId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "EmplAdvLineEntity_Resolved/attributeContext/EmplAdvLineEntity_Resolved/AdvanceId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Amount",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "EmplAdvLineEntity_Resolved/attributeContext/EmplAdvLineEntity_Resolved/Amount",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ConfirmedAmountOfAdvanceReport",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "EmplAdvLineEntity_Resolved/attributeContext/EmplAdvLineEntity_Resolved/ConfirmedAmountOfAdvanceReport",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Currency",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "EmplAdvLineEntity_Resolved/attributeContext/EmplAdvLineEntity_Resolved/Currency",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "DisbursementDate",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "EmplAdvLineEntity_Resolved/attributeContext/EmplAdvLineEntity_Resolved/DisbursementDate",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "DocumentName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "EmplAdvLineEntity_Resolved/attributeContext/EmplAdvLineEntity_Resolved/DocumentName",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "DocumentNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "EmplAdvLineEntity_Resolved/attributeContext/EmplAdvLineEntity_Resolved/DocumentNumber",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "OverRate",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "EmplAdvLineEntity_Resolved/attributeContext/EmplAdvLineEntity_Resolved/OverRate",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "MainAccount",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "EmplAdvLineEntity_Resolved/attributeContext/EmplAdvLineEntity_Resolved/MainAccount",
+          "dataFormat": "String"
+        },
+        {
+          "name": "LineNum",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "EmplAdvLineEntity_Resolved/attributeContext/EmplAdvLineEntity_Resolved/LineNum",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_EmplAdvLine_RURelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Expense/WorksheetLine/EmplAdvLine_RU.cdm.json/EmplAdvLine_RU",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "EmplAdvLineEntity_Resolved/attributeContext/EmplAdvLineEntity_Resolved/BackingTable_EmplAdvLine_RURelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "EmplAdvLineEntity_Resolved/attributeContext/EmplAdvLineEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Advance report lines",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

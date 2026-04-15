@@ -1,0 +1,365 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "BankDocumentPostingEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "BankDocumentPostingEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "BankDocumentPostingEntity_Resolved",
+        "definition": "resolvedFrom/BankDocumentPostingEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "BankDocumentPostingEntity_Resolved/attributeContext/BankDocumentPostingEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "BankDocumentPostingEntity_Resolved/attributeContext/BankDocumentPostingEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "AccountCode",
+            "parent": "BankDocumentPostingEntity_Resolved/attributeContext/BankDocumentPostingEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BankDocumentPostingEntity/hasAttributes/AccountCode",
+            "contents": [
+              "BankDocumentPostingEntity_Resolved/hasAttributes/AccountCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "FacilityGroup",
+            "parent": "BankDocumentPostingEntity_Resolved/attributeContext/BankDocumentPostingEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BankDocumentPostingEntity/hasAttributes/FacilityGroup",
+            "contents": [
+              "BankDocumentPostingEntity_Resolved/hasAttributes/FacilityGroup"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "FacilityType",
+            "parent": "BankDocumentPostingEntity_Resolved/attributeContext/BankDocumentPostingEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BankDocumentPostingEntity/hasAttributes/FacilityType",
+            "contents": [
+              "BankDocumentPostingEntity_Resolved/hasAttributes/FacilityType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "LGLiquidationLedgerAccount",
+            "parent": "BankDocumentPostingEntity_Resolved/attributeContext/BankDocumentPostingEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BankDocumentPostingEntity/hasAttributes/LGLiquidationLedgerAccount",
+            "contents": [
+              "BankDocumentPostingEntity_Resolved/hasAttributes/LGLiquidationLedgerAccount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "MarginLedgerAccount",
+            "parent": "BankDocumentPostingEntity_Resolved/attributeContext/BankDocumentPostingEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BankDocumentPostingEntity/hasAttributes/MarginLedgerAccount",
+            "contents": [
+              "BankDocumentPostingEntity_Resolved/hasAttributes/MarginLedgerAccount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "MiscChargesLedgerAccount",
+            "parent": "BankDocumentPostingEntity_Resolved/attributeContext/BankDocumentPostingEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BankDocumentPostingEntity/hasAttributes/MiscChargesLedgerAccount",
+            "contents": [
+              "BankDocumentPostingEntity_Resolved/hasAttributes/MiscChargesLedgerAccount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "SettleLedgerAccount",
+            "parent": "BankDocumentPostingEntity_Resolved/attributeContext/BankDocumentPostingEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BankDocumentPostingEntity/hasAttributes/SettleLedgerAccount",
+            "contents": [
+              "BankDocumentPostingEntity_Resolved/hasAttributes/SettleLedgerAccount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_BankDocumentPostingRelationship",
+            "parent": "BankDocumentPostingEntity_Resolved/attributeContext/BankDocumentPostingEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BankDocumentPostingEntity/hasAttributes/BackingTable_BankDocumentPostingRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "BankDocumentPosting",
+                "parent": "BankDocumentPostingEntity_Resolved/attributeContext/BankDocumentPostingEntity_Resolved/BackingTable_BankDocumentPostingRelationship",
+                "definition": "resolvedFrom/BankDocumentPosting",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "BankDocumentPostingEntity_Resolved/attributeContext/BankDocumentPostingEntity_Resolved/BackingTable_BankDocumentPostingRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "BankDocumentPostingEntity_Resolved/attributeContext/BankDocumentPostingEntity_Resolved/BackingTable_BankDocumentPostingRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "BankDocumentPostingEntity_Resolved/attributeContext/BankDocumentPostingEntity_Resolved/BackingTable_BankDocumentPostingRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "BankDocumentPostingEntity_Resolved/hasAttributes/BackingTable_BankDocumentPostingRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "BankDocumentPostingEntity_Resolved/attributeContext/BankDocumentPostingEntity_Resolved",
+            "definition": "resolvedFrom/BankDocumentPostingEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "BankDocumentPostingEntity_Resolved/attributeContext/BankDocumentPostingEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "BankDocumentPostingEntity_Resolved/attributeContext/BankDocumentPostingEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "BankDocumentPostingEntity_Resolved/attributeContext/BankDocumentPostingEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "BankDocumentPostingEntity_Resolved/attributeContext/BankDocumentPostingEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "BankDocumentPostingEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "AccountCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BankDocumentPostingEntity_Resolved/attributeContext/BankDocumentPostingEntity_Resolved/AccountCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "FacilityGroup",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BankDocumentPostingEntity_Resolved/attributeContext/BankDocumentPostingEntity_Resolved/FacilityGroup",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "FacilityType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BankDocumentPostingEntity_Resolved/attributeContext/BankDocumentPostingEntity_Resolved/FacilityType",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "LGLiquidationLedgerAccount",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BankDocumentPostingEntity_Resolved/attributeContext/BankDocumentPostingEntity_Resolved/LGLiquidationLedgerAccount",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Liquidation account"
+        },
+        {
+          "name": "MarginLedgerAccount",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BankDocumentPostingEntity_Resolved/attributeContext/BankDocumentPostingEntity_Resolved/MarginLedgerAccount",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Margin account"
+        },
+        {
+          "name": "MiscChargesLedgerAccount",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BankDocumentPostingEntity_Resolved/attributeContext/BankDocumentPostingEntity_Resolved/MiscChargesLedgerAccount",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Charges account"
+        },
+        {
+          "name": "SettleLedgerAccount",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BankDocumentPostingEntity_Resolved/attributeContext/BankDocumentPostingEntity_Resolved/SettleLedgerAccount",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Settle account"
+        },
+        {
+          "name": "BackingTable_BankDocumentPostingRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Bank/Group/BankDocumentPosting.cdm.json/BankDocumentPosting",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "BankDocumentPostingEntity_Resolved/attributeContext/BankDocumentPostingEntity_Resolved/BackingTable_BankDocumentPostingRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "BankDocumentPostingEntity_Resolved/attributeContext/BankDocumentPostingEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Bank posting profiles",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

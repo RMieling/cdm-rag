@@ -1,0 +1,261 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "TaxZakatAssetGroupEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TaxZakatAssetGroupEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "TaxZakatAssetGroupEntity_Resolved",
+        "definition": "resolvedFrom/TaxZakatAssetGroupEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "TaxZakatAssetGroupEntity_Resolved/attributeContext/TaxZakatAssetGroupEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "TaxZakatAssetGroupEntity_Resolved/attributeContext/TaxZakatAssetGroupEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "GroupName",
+            "parent": "TaxZakatAssetGroupEntity_Resolved/attributeContext/TaxZakatAssetGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxZakatAssetGroupEntity/hasAttributes/GroupName",
+            "contents": [
+              "TaxZakatAssetGroupEntity_Resolved/hasAttributes/GroupName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "GroupType",
+            "parent": "TaxZakatAssetGroupEntity_Resolved/attributeContext/TaxZakatAssetGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxZakatAssetGroupEntity/hasAttributes/GroupType",
+            "contents": [
+              "TaxZakatAssetGroupEntity_Resolved/hasAttributes/GroupType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_AssetGroupZakat_SARelationship",
+            "parent": "TaxZakatAssetGroupEntity_Resolved/attributeContext/TaxZakatAssetGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxZakatAssetGroupEntity/hasAttributes/BackingTable_AssetGroupZakat_SARelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "AssetGroupZakat_SA",
+                "parent": "TaxZakatAssetGroupEntity_Resolved/attributeContext/TaxZakatAssetGroupEntity_Resolved/BackingTable_AssetGroupZakat_SARelationship",
+                "definition": "resolvedFrom/AssetGroupZakat_SA",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxZakatAssetGroupEntity_Resolved/attributeContext/TaxZakatAssetGroupEntity_Resolved/BackingTable_AssetGroupZakat_SARelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxZakatAssetGroupEntity_Resolved/attributeContext/TaxZakatAssetGroupEntity_Resolved/BackingTable_AssetGroupZakat_SARelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxZakatAssetGroupEntity_Resolved/attributeContext/TaxZakatAssetGroupEntity_Resolved/BackingTable_AssetGroupZakat_SARelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxZakatAssetGroupEntity_Resolved/hasAttributes/BackingTable_AssetGroupZakat_SARelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "TaxZakatAssetGroupEntity_Resolved/attributeContext/TaxZakatAssetGroupEntity_Resolved",
+            "definition": "resolvedFrom/TaxZakatAssetGroupEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "TaxZakatAssetGroupEntity_Resolved/attributeContext/TaxZakatAssetGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxZakatAssetGroupEntity_Resolved/attributeContext/TaxZakatAssetGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxZakatAssetGroupEntity_Resolved/attributeContext/TaxZakatAssetGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxZakatAssetGroupEntity_Resolved/attributeContext/TaxZakatAssetGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxZakatAssetGroupEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "GroupName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxZakatAssetGroupEntity_Resolved/attributeContext/TaxZakatAssetGroupEntity_Resolved/GroupName",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "GroupType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxZakatAssetGroupEntity_Resolved/attributeContext/TaxZakatAssetGroupEntity_Resolved/GroupType",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_AssetGroupZakat_SARelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/FixedAssets/Group/AssetGroupZakat_SA.cdm.json/AssetGroupZakat_SA",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxZakatAssetGroupEntity_Resolved/attributeContext/TaxZakatAssetGroupEntity_Resolved/BackingTable_AssetGroupZakat_SARelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxZakatAssetGroupEntity_Resolved/attributeContext/TaxZakatAssetGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Zakat assets group",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

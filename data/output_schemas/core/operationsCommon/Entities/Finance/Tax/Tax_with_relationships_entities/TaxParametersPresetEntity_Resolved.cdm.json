@@ -1,0 +1,261 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "TaxParametersPresetEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TaxParametersPresetEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "TaxParametersPresetEntity_Resolved",
+        "definition": "resolvedFrom/TaxParametersPresetEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "TaxParametersPresetEntity_Resolved/attributeContext/TaxParametersPresetEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "TaxParametersPresetEntity_Resolved/attributeContext/TaxParametersPresetEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CalculationMethod",
+            "parent": "TaxParametersPresetEntity_Resolved/attributeContext/TaxParametersPresetEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxParametersPresetEntity/hasAttributes/CalculationMethod",
+            "contents": [
+              "TaxParametersPresetEntity_Resolved/hasAttributes/CalculationMethod"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ID",
+            "parent": "TaxParametersPresetEntity_Resolved/attributeContext/TaxParametersPresetEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxParametersPresetEntity/hasAttributes/ID",
+            "contents": [
+              "TaxParametersPresetEntity_Resolved/hasAttributes/ID"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_TaxParametersRelationship",
+            "parent": "TaxParametersPresetEntity_Resolved/attributeContext/TaxParametersPresetEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxParametersPresetEntity/hasAttributes/BackingTable_TaxParametersRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "TaxParameters",
+                "parent": "TaxParametersPresetEntity_Resolved/attributeContext/TaxParametersPresetEntity_Resolved/BackingTable_TaxParametersRelationship",
+                "definition": "resolvedFrom/TaxParameters",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxParametersPresetEntity_Resolved/attributeContext/TaxParametersPresetEntity_Resolved/BackingTable_TaxParametersRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxParametersPresetEntity_Resolved/attributeContext/TaxParametersPresetEntity_Resolved/BackingTable_TaxParametersRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxParametersPresetEntity_Resolved/attributeContext/TaxParametersPresetEntity_Resolved/BackingTable_TaxParametersRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxParametersPresetEntity_Resolved/hasAttributes/BackingTable_TaxParametersRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "TaxParametersPresetEntity_Resolved/attributeContext/TaxParametersPresetEntity_Resolved",
+            "definition": "resolvedFrom/TaxParametersPresetEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "TaxParametersPresetEntity_Resolved/attributeContext/TaxParametersPresetEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxParametersPresetEntity_Resolved/attributeContext/TaxParametersPresetEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxParametersPresetEntity_Resolved/attributeContext/TaxParametersPresetEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxParametersPresetEntity_Resolved/attributeContext/TaxParametersPresetEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxParametersPresetEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "CalculationMethod",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxParametersPresetEntity_Resolved/attributeContext/TaxParametersPresetEntity_Resolved/CalculationMethod",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ID",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxParametersPresetEntity_Resolved/attributeContext/TaxParametersPresetEntity_Resolved/ID",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_TaxParametersRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Tax/Parameter/TaxParameters.cdm.json/TaxParameters",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxParametersPresetEntity_Resolved/attributeContext/TaxParametersPresetEntity_Resolved/BackingTable_TaxParametersRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxParametersPresetEntity_Resolved/attributeContext/TaxParametersPresetEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Sales tax parameters preset entity",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

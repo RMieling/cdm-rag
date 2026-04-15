@@ -1,0 +1,301 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "ElectronicPaymentBankFolderEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "ElectronicPaymentBankFolderEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "ElectronicPaymentBankFolderEntity_Resolved",
+        "definition": "resolvedFrom/ElectronicPaymentBankFolderEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "ElectronicPaymentBankFolderEntity_Resolved/attributeContext/ElectronicPaymentBankFolderEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "ElectronicPaymentBankFolderEntity_Resolved/attributeContext/ElectronicPaymentBankFolderEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "LayoutGroupId",
+            "parent": "ElectronicPaymentBankFolderEntity_Resolved/attributeContext/ElectronicPaymentBankFolderEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/ElectronicPaymentBankFolderEntity/hasAttributes/LayoutGroupId",
+            "contents": [
+              "ElectronicPaymentBankFolderEntity_Resolved/hasAttributes/LayoutGroupId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BankFolder",
+            "parent": "ElectronicPaymentBankFolderEntity_Resolved/attributeContext/ElectronicPaymentBankFolderEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/ElectronicPaymentBankFolderEntity/hasAttributes/BankFolder",
+            "contents": [
+              "ElectronicPaymentBankFolderEntity_Resolved/hasAttributes/BankFolder"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "ElectronicPaymentBankFolderEntity_Resolved/attributeContext/ElectronicPaymentBankFolderEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/ElectronicPaymentBankFolderEntity/hasAttributes/Description",
+            "contents": [
+              "ElectronicPaymentBankFolderEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BankFolderCode",
+            "parent": "ElectronicPaymentBankFolderEntity_Resolved/attributeContext/ElectronicPaymentBankFolderEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/ElectronicPaymentBankFolderEntity/hasAttributes/BankFolderCode",
+            "contents": [
+              "ElectronicPaymentBankFolderEntity_Resolved/hasAttributes/BankFolderCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_EPBankFolders_BRRelationship",
+            "parent": "ElectronicPaymentBankFolderEntity_Resolved/attributeContext/ElectronicPaymentBankFolderEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/ElectronicPaymentBankFolderEntity/hasAttributes/BackingTable_EPBankFolders_BRRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "EPBankFolders_BR",
+                "parent": "ElectronicPaymentBankFolderEntity_Resolved/attributeContext/ElectronicPaymentBankFolderEntity_Resolved/BackingTable_EPBankFolders_BRRelationship",
+                "definition": "resolvedFrom/EPBankFolders_BR",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "ElectronicPaymentBankFolderEntity_Resolved/attributeContext/ElectronicPaymentBankFolderEntity_Resolved/BackingTable_EPBankFolders_BRRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "ElectronicPaymentBankFolderEntity_Resolved/attributeContext/ElectronicPaymentBankFolderEntity_Resolved/BackingTable_EPBankFolders_BRRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "ElectronicPaymentBankFolderEntity_Resolved/attributeContext/ElectronicPaymentBankFolderEntity_Resolved/BackingTable_EPBankFolders_BRRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "ElectronicPaymentBankFolderEntity_Resolved/hasAttributes/BackingTable_EPBankFolders_BRRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "ElectronicPaymentBankFolderEntity_Resolved/attributeContext/ElectronicPaymentBankFolderEntity_Resolved",
+            "definition": "resolvedFrom/ElectronicPaymentBankFolderEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "ElectronicPaymentBankFolderEntity_Resolved/attributeContext/ElectronicPaymentBankFolderEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "ElectronicPaymentBankFolderEntity_Resolved/attributeContext/ElectronicPaymentBankFolderEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "ElectronicPaymentBankFolderEntity_Resolved/attributeContext/ElectronicPaymentBankFolderEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "ElectronicPaymentBankFolderEntity_Resolved/attributeContext/ElectronicPaymentBankFolderEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "ElectronicPaymentBankFolderEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "LayoutGroupId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "ElectronicPaymentBankFolderEntity_Resolved/attributeContext/ElectronicPaymentBankFolderEntity_Resolved/LayoutGroupId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BankFolder",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "ElectronicPaymentBankFolderEntity_Resolved/attributeContext/ElectronicPaymentBankFolderEntity_Resolved/BankFolder",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "ElectronicPaymentBankFolderEntity_Resolved/attributeContext/ElectronicPaymentBankFolderEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BankFolderCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "ElectronicPaymentBankFolderEntity_Resolved/attributeContext/ElectronicPaymentBankFolderEntity_Resolved/BankFolderCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_EPBankFolders_BRRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Bank/Miscellaneous/EPBankFolders_BR.cdm.json/EPBankFolders_BR",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "ElectronicPaymentBankFolderEntity_Resolved/attributeContext/ElectronicPaymentBankFolderEntity_Resolved/BackingTable_EPBankFolders_BRRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "ElectronicPaymentBankFolderEntity_Resolved/attributeContext/ElectronicPaymentBankFolderEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Bank folders",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

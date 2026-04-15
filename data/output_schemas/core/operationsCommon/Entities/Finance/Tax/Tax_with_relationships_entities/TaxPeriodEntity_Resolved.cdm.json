@@ -1,0 +1,473 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "TaxPeriodEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TaxPeriodEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "TaxPeriodEntity_Resolved",
+        "definition": "resolvedFrom/TaxPeriodEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "TaxPeriodEntity_Resolved/attributeContext/TaxPeriodEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "TaxPeriodEntity_Resolved/attributeContext/TaxPeriodEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "FromDate",
+            "parent": "TaxPeriodEntity_Resolved/attributeContext/TaxPeriodEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxPeriodEntity/hasAttributes/FromDate",
+            "contents": [
+              "TaxPeriodEntity_Resolved/hasAttributes/FromDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "TaxPeriodId",
+            "parent": "TaxPeriodEntity_Resolved/attributeContext/TaxPeriodEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxPeriodEntity/hasAttributes/TaxPeriodId",
+            "contents": [
+              "TaxPeriodEntity_Resolved/hasAttributes/TaxPeriodId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ToDate",
+            "parent": "TaxPeriodEntity_Resolved/attributeContext/TaxPeriodEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxPeriodEntity/hasAttributes/ToDate",
+            "contents": [
+              "TaxPeriodEntity_Resolved/hasAttributes/ToDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "TaxPaymentVersion",
+            "parent": "TaxPeriodEntity_Resolved/attributeContext/TaxPeriodEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxPeriodEntity/hasAttributes/TaxPaymentVersion",
+            "contents": [
+              "TaxPeriodEntity_Resolved/hasAttributes/TaxPaymentVersion"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "TaxPeriodEntity_Resolved/attributeContext/TaxPeriodEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxPeriodEntity/hasAttributes/Description",
+            "contents": [
+              "TaxPeriodEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "PaymentTermId",
+            "parent": "TaxPeriodEntity_Resolved/attributeContext/TaxPeriodEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxPeriodEntity/hasAttributes/PaymentTermId",
+            "contents": [
+              "TaxPeriodEntity_Resolved/hasAttributes/PaymentTermId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "PeriodInterval",
+            "parent": "TaxPeriodEntity_Resolved/attributeContext/TaxPeriodEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxPeriodEntity/hasAttributes/PeriodInterval",
+            "contents": [
+              "TaxPeriodEntity_Resolved/hasAttributes/PeriodInterval"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "NumberOfUnit",
+            "parent": "TaxPeriodEntity_Resolved/attributeContext/TaxPeriodEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxPeriodEntity/hasAttributes/NumberOfUnit",
+            "contents": [
+              "TaxPeriodEntity_Resolved/hasAttributes/NumberOfUnit"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "TaxAuthorityId",
+            "parent": "TaxPeriodEntity_Resolved/attributeContext/TaxPeriodEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxPeriodEntity/hasAttributes/TaxAuthorityId",
+            "contents": [
+              "TaxPeriodEntity_Resolved/hasAttributes/TaxAuthorityId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_TaxAuthorityIdRelationship",
+            "parent": "TaxPeriodEntity_Resolved/attributeContext/TaxPeriodEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxPeriodEntity/hasAttributes/Relationship_TaxAuthorityIdRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "TaxAuthorityEntity",
+                "parent": "TaxPeriodEntity_Resolved/attributeContext/TaxPeriodEntity_Resolved/Relationship_TaxAuthorityIdRelationship",
+                "definition": "resolvedFrom/TaxAuthorityEntity",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxPeriodEntity_Resolved/attributeContext/TaxPeriodEntity_Resolved/Relationship_TaxAuthorityIdRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxPeriodEntity_Resolved/attributeContext/TaxPeriodEntity_Resolved/Relationship_TaxAuthorityIdRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxPeriodEntity_Resolved/attributeContext/TaxPeriodEntity_Resolved/Relationship_TaxAuthorityIdRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxPeriodEntity_Resolved/hasAttributes/Relationship_TaxAuthorityIdRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_TaxPeriodHeadRelationship",
+            "parent": "TaxPeriodEntity_Resolved/attributeContext/TaxPeriodEntity_Resolved",
+            "definition": "resolvedFrom/TaxPeriodEntity/hasAttributes/BackingTable_TaxPeriodHeadRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "TaxPeriodHead",
+                "parent": "TaxPeriodEntity_Resolved/attributeContext/TaxPeriodEntity_Resolved/BackingTable_TaxPeriodHeadRelationship",
+                "definition": "resolvedFrom/TaxPeriodHead",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxPeriodEntity_Resolved/attributeContext/TaxPeriodEntity_Resolved/BackingTable_TaxPeriodHeadRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxPeriodEntity_Resolved/attributeContext/TaxPeriodEntity_Resolved/BackingTable_TaxPeriodHeadRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxPeriodEntity_Resolved/attributeContext/TaxPeriodEntity_Resolved/BackingTable_TaxPeriodHeadRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxPeriodEntity_Resolved/hasAttributes/BackingTable_TaxPeriodHeadRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "TaxPeriodEntity_Resolved/attributeContext/TaxPeriodEntity_Resolved",
+            "definition": "resolvedFrom/TaxPeriodEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "TaxPeriodEntity_Resolved/attributeContext/TaxPeriodEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxPeriodEntity_Resolved/attributeContext/TaxPeriodEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxPeriodEntity_Resolved/attributeContext/TaxPeriodEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxPeriodEntity_Resolved/attributeContext/TaxPeriodEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxPeriodEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "FromDate",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxPeriodEntity_Resolved/attributeContext/TaxPeriodEntity_Resolved/FromDate",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "From date"
+        },
+        {
+          "name": "TaxPeriodId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxPeriodEntity_Resolved/attributeContext/TaxPeriodEntity_Resolved/TaxPeriodId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ToDate",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxPeriodEntity_Resolved/attributeContext/TaxPeriodEntity_Resolved/ToDate",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "To date"
+        },
+        {
+          "name": "TaxPaymentVersion",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxPeriodEntity_Resolved/attributeContext/TaxPeriodEntity_Resolved/TaxPaymentVersion",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxPeriodEntity_Resolved/attributeContext/TaxPeriodEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "PaymentTermId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxPeriodEntity_Resolved/attributeContext/TaxPeriodEntity_Resolved/PaymentTermId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "PeriodInterval",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxPeriodEntity_Resolved/attributeContext/TaxPeriodEntity_Resolved/PeriodInterval",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Period interval unit"
+        },
+        {
+          "name": "NumberOfUnit",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxPeriodEntity_Resolved/attributeContext/TaxPeriodEntity_Resolved/NumberOfUnit",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Period interval duration"
+        },
+        {
+          "name": "TaxAuthorityId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxPeriodEntity_Resolved/attributeContext/TaxPeriodEntity_Resolved/TaxAuthorityId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Relationship_TaxAuthorityIdRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": []
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxPeriodEntity_Resolved/attributeContext/TaxPeriodEntity_Resolved/Relationship_TaxAuthorityIdRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "BackingTable_TaxPeriodHeadRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Tax/Group/TaxPeriodHead.cdm.json/TaxPeriodHead",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxPeriodEntity_Resolved/attributeContext/TaxPeriodEntity_Resolved/BackingTable_TaxPeriodHeadRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxPeriodEntity_Resolved/attributeContext/TaxPeriodEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Sales tax period setup",
+      "version": "1.1.1"
+    }
+  ],
+  "documentVersion": "1.1.1"
+}

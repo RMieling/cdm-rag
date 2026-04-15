@@ -1,0 +1,281 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "IntrastatTransportMethodEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "IntrastatTransportMethodEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "IntrastatTransportMethodEntity_Resolved",
+        "definition": "resolvedFrom/IntrastatTransportMethodEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "IntrastatTransportMethodEntity_Resolved/attributeContext/IntrastatTransportMethodEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "IntrastatTransportMethodEntity_Resolved/attributeContext/IntrastatTransportMethodEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "IntrastatTransportMethodEntity_Resolved/attributeContext/IntrastatTransportMethodEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/IntrastatTransportMethodEntity/hasAttributes/Description",
+            "contents": [
+              "IntrastatTransportMethodEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Port",
+            "parent": "IntrastatTransportMethodEntity_Resolved/attributeContext/IntrastatTransportMethodEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/IntrastatTransportMethodEntity/hasAttributes/Port",
+            "contents": [
+              "IntrastatTransportMethodEntity_Resolved/hasAttributes/Port"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Transport",
+            "parent": "IntrastatTransportMethodEntity_Resolved/attributeContext/IntrastatTransportMethodEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/IntrastatTransportMethodEntity/hasAttributes/Transport",
+            "contents": [
+              "IntrastatTransportMethodEntity_Resolved/hasAttributes/Transport"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_IntrastatTransportModeRelationship",
+            "parent": "IntrastatTransportMethodEntity_Resolved/attributeContext/IntrastatTransportMethodEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/IntrastatTransportMethodEntity/hasAttributes/BackingTable_IntrastatTransportModeRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "IntrastatTransportMode",
+                "parent": "IntrastatTransportMethodEntity_Resolved/attributeContext/IntrastatTransportMethodEntity_Resolved/BackingTable_IntrastatTransportModeRelationship",
+                "definition": "resolvedFrom/IntrastatTransportMode",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "IntrastatTransportMethodEntity_Resolved/attributeContext/IntrastatTransportMethodEntity_Resolved/BackingTable_IntrastatTransportModeRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "IntrastatTransportMethodEntity_Resolved/attributeContext/IntrastatTransportMethodEntity_Resolved/BackingTable_IntrastatTransportModeRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "IntrastatTransportMethodEntity_Resolved/attributeContext/IntrastatTransportMethodEntity_Resolved/BackingTable_IntrastatTransportModeRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "IntrastatTransportMethodEntity_Resolved/hasAttributes/BackingTable_IntrastatTransportModeRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "IntrastatTransportMethodEntity_Resolved/attributeContext/IntrastatTransportMethodEntity_Resolved",
+            "definition": "resolvedFrom/IntrastatTransportMethodEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "IntrastatTransportMethodEntity_Resolved/attributeContext/IntrastatTransportMethodEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "IntrastatTransportMethodEntity_Resolved/attributeContext/IntrastatTransportMethodEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "IntrastatTransportMethodEntity_Resolved/attributeContext/IntrastatTransportMethodEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "IntrastatTransportMethodEntity_Resolved/attributeContext/IntrastatTransportMethodEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "IntrastatTransportMethodEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "IntrastatTransportMethodEntity_Resolved/attributeContext/IntrastatTransportMethodEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Port",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "IntrastatTransportMethodEntity_Resolved/attributeContext/IntrastatTransportMethodEntity_Resolved/Port",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Transport",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "IntrastatTransportMethodEntity_Resolved/attributeContext/IntrastatTransportMethodEntity_Resolved/Transport",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_IntrastatTransportModeRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Common/Intrastat/Group/IntrastatTransportMode.cdm.json/IntrastatTransportMode",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "IntrastatTransportMethodEntity_Resolved/attributeContext/IntrastatTransportMethodEntity_Resolved/BackingTable_IntrastatTransportModeRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "IntrastatTransportMethodEntity_Resolved/attributeContext/IntrastatTransportMethodEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Transport method",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

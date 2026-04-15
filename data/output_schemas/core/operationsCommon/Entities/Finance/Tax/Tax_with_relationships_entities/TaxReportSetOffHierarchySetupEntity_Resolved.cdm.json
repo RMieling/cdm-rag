@@ -1,0 +1,281 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "TaxReportSetOffHierarchySetupEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TaxReportSetOffHierarchySetupEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "TaxReportSetOffHierarchySetupEntity_Resolved",
+        "definition": "resolvedFrom/TaxReportSetOffHierarchySetupEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "TaxReportSetOffHierarchySetupEntity_Resolved/attributeContext/TaxReportSetOffHierarchySetupEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "TaxReportSetOffHierarchySetupEntity_Resolved/attributeContext/TaxReportSetOffHierarchySetupEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "EffectiveDate",
+            "parent": "TaxReportSetOffHierarchySetupEntity_Resolved/attributeContext/TaxReportSetOffHierarchySetupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxReportSetOffHierarchySetupEntity/hasAttributes/EffectiveDate",
+            "contents": [
+              "TaxReportSetOffHierarchySetupEntity_Resolved/hasAttributes/EffectiveDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "HierarchyVersion",
+            "parent": "TaxReportSetOffHierarchySetupEntity_Resolved/attributeContext/TaxReportSetOffHierarchySetupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxReportSetOffHierarchySetupEntity/hasAttributes/HierarchyVersion",
+            "contents": [
+              "TaxReportSetOffHierarchySetupEntity_Resolved/hasAttributes/HierarchyVersion"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "HierarchyName",
+            "parent": "TaxReportSetOffHierarchySetupEntity_Resolved/attributeContext/TaxReportSetOffHierarchySetupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxReportSetOffHierarchySetupEntity/hasAttributes/HierarchyName",
+            "contents": [
+              "TaxReportSetOffHierarchySetupEntity_Resolved/hasAttributes/HierarchyName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_TaxReportSetOffHierarchySetup_INRelationship",
+            "parent": "TaxReportSetOffHierarchySetupEntity_Resolved/attributeContext/TaxReportSetOffHierarchySetupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxReportSetOffHierarchySetupEntity/hasAttributes/BackingTable_TaxReportSetOffHierarchySetup_INRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "TaxReportSetOffHierarchySetup_IN",
+                "parent": "TaxReportSetOffHierarchySetupEntity_Resolved/attributeContext/TaxReportSetOffHierarchySetupEntity_Resolved/BackingTable_TaxReportSetOffHierarchySetup_INRelationship",
+                "definition": "resolvedFrom/TaxReportSetOffHierarchySetup_IN",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxReportSetOffHierarchySetupEntity_Resolved/attributeContext/TaxReportSetOffHierarchySetupEntity_Resolved/BackingTable_TaxReportSetOffHierarchySetup_INRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxReportSetOffHierarchySetupEntity_Resolved/attributeContext/TaxReportSetOffHierarchySetupEntity_Resolved/BackingTable_TaxReportSetOffHierarchySetup_INRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxReportSetOffHierarchySetupEntity_Resolved/attributeContext/TaxReportSetOffHierarchySetupEntity_Resolved/BackingTable_TaxReportSetOffHierarchySetup_INRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxReportSetOffHierarchySetupEntity_Resolved/hasAttributes/BackingTable_TaxReportSetOffHierarchySetup_INRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "TaxReportSetOffHierarchySetupEntity_Resolved/attributeContext/TaxReportSetOffHierarchySetupEntity_Resolved",
+            "definition": "resolvedFrom/TaxReportSetOffHierarchySetupEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "TaxReportSetOffHierarchySetupEntity_Resolved/attributeContext/TaxReportSetOffHierarchySetupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxReportSetOffHierarchySetupEntity_Resolved/attributeContext/TaxReportSetOffHierarchySetupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxReportSetOffHierarchySetupEntity_Resolved/attributeContext/TaxReportSetOffHierarchySetupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxReportSetOffHierarchySetupEntity_Resolved/attributeContext/TaxReportSetOffHierarchySetupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxReportSetOffHierarchySetupEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "EffectiveDate",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxReportSetOffHierarchySetupEntity_Resolved/attributeContext/TaxReportSetOffHierarchySetupEntity_Resolved/EffectiveDate",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "HierarchyVersion",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxReportSetOffHierarchySetupEntity_Resolved/attributeContext/TaxReportSetOffHierarchySetupEntity_Resolved/HierarchyVersion",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "HierarchyName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxReportSetOffHierarchySetupEntity_Resolved/attributeContext/TaxReportSetOffHierarchySetupEntity_Resolved/HierarchyName",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_TaxReportSetOffHierarchySetup_INRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Tax/Group/TaxReportSetOffHierarchySetup_IN.cdm.json/TaxReportSetOffHierarchySetup_IN",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxReportSetOffHierarchySetupEntity_Resolved/attributeContext/TaxReportSetOffHierarchySetupEntity_Resolved/BackingTable_TaxReportSetOffHierarchySetup_INRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxReportSetOffHierarchySetupEntity_Resolved/attributeContext/TaxReportSetOffHierarchySetupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Setoff hierarchy profile",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

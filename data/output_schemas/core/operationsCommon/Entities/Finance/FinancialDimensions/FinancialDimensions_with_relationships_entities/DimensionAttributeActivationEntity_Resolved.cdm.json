@@ -1,0 +1,187 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "DimensionAttributeActivationEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "DimensionAttributeActivationEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "DimensionAttributeActivationEntity_Resolved",
+        "definition": "resolvedFrom/DimensionAttributeActivationEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "DimensionAttributeActivationEntity_Resolved/attributeContext/DimensionAttributeActivationEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "DimensionAttributeActivationEntity_Resolved/attributeContext/DimensionAttributeActivationEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DoActivate",
+            "parent": "DimensionAttributeActivationEntity_Resolved/attributeContext/DimensionAttributeActivationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimensionAttributeActivationEntity/hasAttributes/DoActivate",
+            "contents": [
+              "DimensionAttributeActivationEntity_Resolved/hasAttributes/DoActivate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DoCopyValues",
+            "parent": "DimensionAttributeActivationEntity_Resolved/attributeContext/DimensionAttributeActivationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimensionAttributeActivationEntity/hasAttributes/DoCopyValues",
+            "contents": [
+              "DimensionAttributeActivationEntity_Resolved/hasAttributes/DoCopyValues"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_DimensionAttributeRelationship",
+            "parent": "DimensionAttributeActivationEntity_Resolved/attributeContext/DimensionAttributeActivationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimensionAttributeActivationEntity/hasAttributes/BackingTable_DimensionAttributeRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "DimensionAttribute",
+                "parent": "DimensionAttributeActivationEntity_Resolved/attributeContext/DimensionAttributeActivationEntity_Resolved/BackingTable_DimensionAttributeRelationship",
+                "definition": "resolvedFrom/DimensionAttribute",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "DimensionAttributeActivationEntity_Resolved/attributeContext/DimensionAttributeActivationEntity_Resolved/BackingTable_DimensionAttributeRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "DimensionAttributeActivationEntity_Resolved/attributeContext/DimensionAttributeActivationEntity_Resolved/BackingTable_DimensionAttributeRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "DimensionAttributeActivationEntity_Resolved/attributeContext/DimensionAttributeActivationEntity_Resolved/BackingTable_DimensionAttributeRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "DimensionAttributeActivationEntity_Resolved/hasAttributes/BackingTable_DimensionAttributeRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "DoActivate",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DimensionAttributeActivationEntity_Resolved/attributeContext/DimensionAttributeActivationEntity_Resolved/DoActivate",
+          "dataFormat": "String"
+        },
+        {
+          "name": "DoCopyValues",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DimensionAttributeActivationEntity_Resolved/attributeContext/DimensionAttributeActivationEntity_Resolved/DoCopyValues",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_DimensionAttributeRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/FinancialDimensions/Reference/DimensionAttribute.cdm.json/DimensionAttribute",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "DimensionAttributeActivationEntity_Resolved/attributeContext/DimensionAttributeActivationEntity_Resolved/BackingTable_DimensionAttributeRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Dimension attribute activation",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

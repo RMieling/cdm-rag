@@ -1,0 +1,341 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "CustCollectionsBICollectionLetter.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "CustCollectionsBICollectionLetter_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "CustCollectionsBICollectionLetter_Resolved",
+        "definition": "resolvedFrom/CustCollectionsBICollectionLetter",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "CustCollectionsBICollectionLetter_Resolved/attributeContext/CustCollectionsBICollectionLetter_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "CustCollectionsBICollectionLetter_Resolved/attributeContext/CustCollectionsBICollectionLetter_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CollectionLetterNum",
+            "parent": "CustCollectionsBICollectionLetter_Resolved/attributeContext/CustCollectionsBICollectionLetter_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCollectionsBICollectionLetter/hasAttributes/CollectionLetterNum",
+            "contents": [
+              "CustCollectionsBICollectionLetter_Resolved/hasAttributes/CollectionLetterNum"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "AccountNum",
+            "parent": "CustCollectionsBICollectionLetter_Resolved/attributeContext/CustCollectionsBICollectionLetter_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCollectionsBICollectionLetter/hasAttributes/AccountNum",
+            "contents": [
+              "CustCollectionsBICollectionLetter_Resolved/hasAttributes/AccountNum"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "CustCollectionsBICollectionLetter_Resolved/attributeContext/CustCollectionsBICollectionLetter_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCollectionsBICollectionLetter/hasAttributes/Name",
+            "contents": [
+              "CustCollectionsBICollectionLetter_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CollectionLetterCode",
+            "parent": "CustCollectionsBICollectionLetter_Resolved/attributeContext/CustCollectionsBICollectionLetter_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCollectionsBICollectionLetter/hasAttributes/CollectionLetterCode",
+            "contents": [
+              "CustCollectionsBICollectionLetter_Resolved/hasAttributes/CollectionLetterCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CollectionLetterDate",
+            "parent": "CustCollectionsBICollectionLetter_Resolved/attributeContext/CustCollectionsBICollectionLetter_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCollectionsBICollectionLetter/hasAttributes/CollectionLetterDate",
+            "contents": [
+              "CustCollectionsBICollectionLetter_Resolved/hasAttributes/CollectionLetterDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "PrintDate",
+            "parent": "CustCollectionsBICollectionLetter_Resolved/attributeContext/CustCollectionsBICollectionLetter_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCollectionsBICollectionLetter/hasAttributes/PrintDate",
+            "contents": [
+              "CustCollectionsBICollectionLetter_Resolved/hasAttributes/PrintDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_CustCollectionLetterJourRelationship",
+            "parent": "CustCollectionsBICollectionLetter_Resolved/attributeContext/CustCollectionsBICollectionLetter_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCollectionsBICollectionLetter/hasAttributes/BackingTable_CustCollectionLetterJourRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CustCollectionLetterJour",
+                "parent": "CustCollectionsBICollectionLetter_Resolved/attributeContext/CustCollectionsBICollectionLetter_Resolved/BackingTable_CustCollectionLetterJourRelationship",
+                "definition": "resolvedFrom/CustCollectionLetterJour",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CustCollectionsBICollectionLetter_Resolved/attributeContext/CustCollectionsBICollectionLetter_Resolved/BackingTable_CustCollectionLetterJourRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CustCollectionsBICollectionLetter_Resolved/attributeContext/CustCollectionsBICollectionLetter_Resolved/BackingTable_CustCollectionLetterJourRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CustCollectionsBICollectionLetter_Resolved/attributeContext/CustCollectionsBICollectionLetter_Resolved/BackingTable_CustCollectionLetterJourRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CustCollectionsBICollectionLetter_Resolved/hasAttributes/BackingTable_CustCollectionLetterJourRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "CustCollectionsBICollectionLetter_Resolved/attributeContext/CustCollectionsBICollectionLetter_Resolved",
+            "definition": "resolvedFrom/CustCollectionsBICollectionLetter/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "CustCollectionsBICollectionLetter_Resolved/attributeContext/CustCollectionsBICollectionLetter_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CustCollectionsBICollectionLetter_Resolved/attributeContext/CustCollectionsBICollectionLetter_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CustCollectionsBICollectionLetter_Resolved/attributeContext/CustCollectionsBICollectionLetter_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CustCollectionsBICollectionLetter_Resolved/attributeContext/CustCollectionsBICollectionLetter_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CustCollectionsBICollectionLetter_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "CollectionLetterNum",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustCollectionsBICollectionLetter_Resolved/attributeContext/CustCollectionsBICollectionLetter_Resolved/CollectionLetterNum",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "AccountNum",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustCollectionsBICollectionLetter_Resolved/attributeContext/CustCollectionsBICollectionLetter_Resolved/AccountNum",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustCollectionsBICollectionLetter_Resolved/attributeContext/CustCollectionsBICollectionLetter_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "CollectionLetterCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustCollectionsBICollectionLetter_Resolved/attributeContext/CustCollectionsBICollectionLetter_Resolved/CollectionLetterCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "CollectionLetterDate",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustCollectionsBICollectionLetter_Resolved/attributeContext/CustCollectionsBICollectionLetter_Resolved/CollectionLetterDate",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "PrintDate",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustCollectionsBICollectionLetter_Resolved/attributeContext/CustCollectionsBICollectionLetter_Resolved/PrintDate",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_CustCollectionLetterJourRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/AccountsReceivable/Transaction/CustCollectionLetterJour.cdm.json/CustCollectionLetterJour",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CustCollectionsBICollectionLetter_Resolved/attributeContext/CustCollectionsBICollectionLetter_Resolved/BackingTable_CustCollectionLetterJourRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CustCollectionsBICollectionLetter_Resolved/attributeContext/CustCollectionsBICollectionLetter_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Collection letters per customer",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

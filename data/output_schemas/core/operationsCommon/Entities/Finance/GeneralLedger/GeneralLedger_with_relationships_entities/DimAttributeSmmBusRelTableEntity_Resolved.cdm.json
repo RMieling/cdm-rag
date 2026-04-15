@@ -1,0 +1,261 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "DimAttributeSmmBusRelTableEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "DimAttributeSmmBusRelTableEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "DimAttributeSmmBusRelTableEntity_Resolved",
+        "definition": "resolvedFrom/DimAttributeSmmBusRelTableEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "DimAttributeSmmBusRelTableEntity_Resolved/attributeContext/DimAttributeSmmBusRelTableEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "DimAttributeSmmBusRelTableEntity_Resolved/attributeContext/DimAttributeSmmBusRelTableEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Value",
+            "parent": "DimAttributeSmmBusRelTableEntity_Resolved/attributeContext/DimAttributeSmmBusRelTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimAttributeSmmBusRelTableEntity/hasAttributes/Value",
+            "contents": [
+              "DimAttributeSmmBusRelTableEntity_Resolved/hasAttributes/Value"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "DimAttributeSmmBusRelTableEntity_Resolved/attributeContext/DimAttributeSmmBusRelTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimAttributeSmmBusRelTableEntity/hasAttributes/Name",
+            "contents": [
+              "DimAttributeSmmBusRelTableEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_smmBusRelTableRelationship",
+            "parent": "DimAttributeSmmBusRelTableEntity_Resolved/attributeContext/DimAttributeSmmBusRelTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimAttributeSmmBusRelTableEntity/hasAttributes/BackingTable_smmBusRelTableRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "smmBusRelTable",
+                "parent": "DimAttributeSmmBusRelTableEntity_Resolved/attributeContext/DimAttributeSmmBusRelTableEntity_Resolved/BackingTable_smmBusRelTableRelationship",
+                "definition": "resolvedFrom/smmBusRelTable",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "DimAttributeSmmBusRelTableEntity_Resolved/attributeContext/DimAttributeSmmBusRelTableEntity_Resolved/BackingTable_smmBusRelTableRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "DimAttributeSmmBusRelTableEntity_Resolved/attributeContext/DimAttributeSmmBusRelTableEntity_Resolved/BackingTable_smmBusRelTableRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "DimAttributeSmmBusRelTableEntity_Resolved/attributeContext/DimAttributeSmmBusRelTableEntity_Resolved/BackingTable_smmBusRelTableRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "DimAttributeSmmBusRelTableEntity_Resolved/hasAttributes/BackingTable_smmBusRelTableRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "DimAttributeSmmBusRelTableEntity_Resolved/attributeContext/DimAttributeSmmBusRelTableEntity_Resolved",
+            "definition": "resolvedFrom/DimAttributeSmmBusRelTableEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "DimAttributeSmmBusRelTableEntity_Resolved/attributeContext/DimAttributeSmmBusRelTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "DimAttributeSmmBusRelTableEntity_Resolved/attributeContext/DimAttributeSmmBusRelTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "DimAttributeSmmBusRelTableEntity_Resolved/attributeContext/DimAttributeSmmBusRelTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "DimAttributeSmmBusRelTableEntity_Resolved/attributeContext/DimAttributeSmmBusRelTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "DimAttributeSmmBusRelTableEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Value",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DimAttributeSmmBusRelTableEntity_Resolved/attributeContext/DimAttributeSmmBusRelTableEntity_Resolved/Value",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DimAttributeSmmBusRelTableEntity_Resolved/attributeContext/DimAttributeSmmBusRelTableEntity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_smmBusRelTableRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/SupplyChain/SalesAndMarketing/Main/smmBusRelTable.cdm.json/smmBusRelTable",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "DimAttributeSmmBusRelTableEntity_Resolved/attributeContext/DimAttributeSmmBusRelTableEntity_Resolved/BackingTable_smmBusRelTableRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "DimAttributeSmmBusRelTableEntity_Resolved/attributeContext/DimAttributeSmmBusRelTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Prospects",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

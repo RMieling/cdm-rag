@@ -1,0 +1,321 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "InvoiceAutoNumberingGroupEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "InvoiceAutoNumberingGroupEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "InvoiceAutoNumberingGroupEntity_Resolved",
+        "definition": "resolvedFrom/InvoiceAutoNumberingGroupEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "InvoiceAutoNumberingGroupEntity_Resolved/attributeContext/InvoiceAutoNumberingGroupEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "InvoiceAutoNumberingGroupEntity_Resolved/attributeContext/InvoiceAutoNumberingGroupEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Type",
+            "parent": "InvoiceAutoNumberingGroupEntity_Resolved/attributeContext/InvoiceAutoNumberingGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/InvoiceAutoNumberingGroupEntity/hasAttributes/Type",
+            "contents": [
+              "InvoiceAutoNumberingGroupEntity_Resolved/hasAttributes/Type"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "AutoNumbering",
+            "parent": "InvoiceAutoNumberingGroupEntity_Resolved/attributeContext/InvoiceAutoNumberingGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/InvoiceAutoNumberingGroupEntity/hasAttributes/AutoNumbering",
+            "contents": [
+              "InvoiceAutoNumberingGroupEntity_Resolved/hasAttributes/AutoNumbering"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Code",
+            "parent": "InvoiceAutoNumberingGroupEntity_Resolved/attributeContext/InvoiceAutoNumberingGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/InvoiceAutoNumberingGroupEntity/hasAttributes/Code",
+            "contents": [
+              "InvoiceAutoNumberingGroupEntity_Resolved/hasAttributes/Code"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "AccountCode",
+            "parent": "InvoiceAutoNumberingGroupEntity_Resolved/attributeContext/InvoiceAutoNumberingGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/InvoiceAutoNumberingGroupEntity/hasAttributes/AccountCode",
+            "contents": [
+              "InvoiceAutoNumberingGroupEntity_Resolved/hasAttributes/AccountCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Module",
+            "parent": "InvoiceAutoNumberingGroupEntity_Resolved/attributeContext/InvoiceAutoNumberingGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/InvoiceAutoNumberingGroupEntity/hasAttributes/Module",
+            "contents": [
+              "InvoiceAutoNumberingGroupEntity_Resolved/hasAttributes/Module"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_LtInvoiceAutoNumberingGroupsRelationship",
+            "parent": "InvoiceAutoNumberingGroupEntity_Resolved/attributeContext/InvoiceAutoNumberingGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/InvoiceAutoNumberingGroupEntity/hasAttributes/BackingTable_LtInvoiceAutoNumberingGroupsRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "LtInvoiceAutoNumberingGroups",
+                "parent": "InvoiceAutoNumberingGroupEntity_Resolved/attributeContext/InvoiceAutoNumberingGroupEntity_Resolved/BackingTable_LtInvoiceAutoNumberingGroupsRelationship",
+                "definition": "resolvedFrom/LtInvoiceAutoNumberingGroups",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "InvoiceAutoNumberingGroupEntity_Resolved/attributeContext/InvoiceAutoNumberingGroupEntity_Resolved/BackingTable_LtInvoiceAutoNumberingGroupsRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "InvoiceAutoNumberingGroupEntity_Resolved/attributeContext/InvoiceAutoNumberingGroupEntity_Resolved/BackingTable_LtInvoiceAutoNumberingGroupsRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "InvoiceAutoNumberingGroupEntity_Resolved/attributeContext/InvoiceAutoNumberingGroupEntity_Resolved/BackingTable_LtInvoiceAutoNumberingGroupsRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "InvoiceAutoNumberingGroupEntity_Resolved/hasAttributes/BackingTable_LtInvoiceAutoNumberingGroupsRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "InvoiceAutoNumberingGroupEntity_Resolved/attributeContext/InvoiceAutoNumberingGroupEntity_Resolved",
+            "definition": "resolvedFrom/InvoiceAutoNumberingGroupEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "InvoiceAutoNumberingGroupEntity_Resolved/attributeContext/InvoiceAutoNumberingGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "InvoiceAutoNumberingGroupEntity_Resolved/attributeContext/InvoiceAutoNumberingGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "InvoiceAutoNumberingGroupEntity_Resolved/attributeContext/InvoiceAutoNumberingGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "InvoiceAutoNumberingGroupEntity_Resolved/attributeContext/InvoiceAutoNumberingGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "InvoiceAutoNumberingGroupEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Type",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "InvoiceAutoNumberingGroupEntity_Resolved/attributeContext/InvoiceAutoNumberingGroupEntity_Resolved/Type",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "AutoNumbering",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "InvoiceAutoNumberingGroupEntity_Resolved/attributeContext/InvoiceAutoNumberingGroupEntity_Resolved/AutoNumbering",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Code",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "InvoiceAutoNumberingGroupEntity_Resolved/attributeContext/InvoiceAutoNumberingGroupEntity_Resolved/Code",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "AccountCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "InvoiceAutoNumberingGroupEntity_Resolved/attributeContext/InvoiceAutoNumberingGroupEntity_Resolved/AccountCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Module",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "InvoiceAutoNumberingGroupEntity_Resolved/attributeContext/InvoiceAutoNumberingGroupEntity_Resolved/Module",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_LtInvoiceAutoNumberingGroupsRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/APARShared/Group/LtInvoiceAutoNumberingGroups.cdm.json/LtInvoiceAutoNumberingGroups",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "InvoiceAutoNumberingGroupEntity_Resolved/attributeContext/InvoiceAutoNumberingGroupEntity_Resolved/BackingTable_LtInvoiceAutoNumberingGroupsRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "InvoiceAutoNumberingGroupEntity_Resolved/attributeContext/InvoiceAutoNumberingGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Counters management",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

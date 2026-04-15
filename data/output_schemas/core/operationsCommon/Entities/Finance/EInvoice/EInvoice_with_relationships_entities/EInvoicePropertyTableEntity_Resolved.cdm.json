@@ -1,0 +1,287 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "EInvoicePropertyTableEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "EInvoicePropertyTableEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "EInvoicePropertyTableEntity_Resolved",
+        "definition": "resolvedFrom/EInvoicePropertyTableEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "EInvoicePropertyTableEntity_Resolved/attributeContext/EInvoicePropertyTableEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "EInvoicePropertyTableEntity_Resolved/attributeContext/EInvoicePropertyTableEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "RefRecId",
+            "parent": "EInvoicePropertyTableEntity_Resolved/attributeContext/EInvoicePropertyTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EInvoicePropertyTableEntity/hasAttributes/RefRecId",
+            "contents": [
+              "EInvoicePropertyTableEntity_Resolved/hasAttributes/RefRecId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "RefTableId",
+            "parent": "EInvoicePropertyTableEntity_Resolved/attributeContext/EInvoicePropertyTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EInvoicePropertyTableEntity/hasAttributes/RefTableId",
+            "contents": [
+              "EInvoicePropertyTableEntity_Resolved/hasAttributes/RefTableId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Value",
+            "parent": "EInvoicePropertyTableEntity_Resolved/attributeContext/EInvoicePropertyTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EInvoicePropertyTableEntity/hasAttributes/Value",
+            "contents": [
+              "EInvoicePropertyTableEntity_Resolved/hasAttributes/Value"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Type",
+            "parent": "EInvoicePropertyTableEntity_Resolved/attributeContext/EInvoicePropertyTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EInvoicePropertyTableEntity/hasAttributes/Type",
+            "contents": [
+              "EInvoicePropertyTableEntity_Resolved/hasAttributes/Type"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "TableName",
+            "parent": "EInvoicePropertyTableEntity_Resolved/attributeContext/EInvoicePropertyTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EInvoicePropertyTableEntity/hasAttributes/TableName",
+            "contents": [
+              "EInvoicePropertyTableEntity_Resolved/hasAttributes/TableName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "TableFieldName",
+            "parent": "EInvoicePropertyTableEntity_Resolved/attributeContext/EInvoicePropertyTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EInvoicePropertyTableEntity/hasAttributes/TableFieldName",
+            "contents": [
+              "EInvoicePropertyTableEntity_Resolved/hasAttributes/TableFieldName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "TableFieldValue",
+            "parent": "EInvoicePropertyTableEntity_Resolved/attributeContext/EInvoicePropertyTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EInvoicePropertyTableEntity/hasAttributes/TableFieldValue",
+            "contents": [
+              "EInvoicePropertyTableEntity_Resolved/hasAttributes/TableFieldValue"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_EInvoicePropertyTableRelationship",
+            "parent": "EInvoicePropertyTableEntity_Resolved/attributeContext/EInvoicePropertyTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EInvoicePropertyTableEntity/hasAttributes/BackingTable_EInvoicePropertyTableRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "EInvoicePropertyTable",
+                "parent": "EInvoicePropertyTableEntity_Resolved/attributeContext/EInvoicePropertyTableEntity_Resolved/BackingTable_EInvoicePropertyTableRelationship",
+                "definition": "resolvedFrom/EInvoicePropertyTable",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "EInvoicePropertyTableEntity_Resolved/attributeContext/EInvoicePropertyTableEntity_Resolved/BackingTable_EInvoicePropertyTableRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "EInvoicePropertyTableEntity_Resolved/attributeContext/EInvoicePropertyTableEntity_Resolved/BackingTable_EInvoicePropertyTableRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "EInvoicePropertyTableEntity_Resolved/attributeContext/EInvoicePropertyTableEntity_Resolved/BackingTable_EInvoicePropertyTableRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "EInvoicePropertyTableEntity_Resolved/hasAttributes/BackingTable_EInvoicePropertyTableRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "RefRecId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "EInvoicePropertyTableEntity_Resolved/attributeContext/EInvoicePropertyTableEntity_Resolved/RefRecId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "RefTableId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "EInvoicePropertyTableEntity_Resolved/attributeContext/EInvoicePropertyTableEntity_Resolved/RefTableId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Value",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "EInvoicePropertyTableEntity_Resolved/attributeContext/EInvoicePropertyTableEntity_Resolved/Value",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Type",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "EInvoicePropertyTableEntity_Resolved/attributeContext/EInvoicePropertyTableEntity_Resolved/Type",
+          "dataFormat": "String"
+        },
+        {
+          "name": "TableName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "EInvoicePropertyTableEntity_Resolved/attributeContext/EInvoicePropertyTableEntity_Resolved/TableName",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "TableFieldName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "EInvoicePropertyTableEntity_Resolved/attributeContext/EInvoicePropertyTableEntity_Resolved/TableFieldName",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "TableFieldValue",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "EInvoicePropertyTableEntity_Resolved/attributeContext/EInvoicePropertyTableEntity_Resolved/TableFieldValue",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_EInvoicePropertyTableRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/EInvoice/Main/EInvoicePropertyTable.cdm.json/EInvoicePropertyTable",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "EInvoicePropertyTableEntity_Resolved/attributeContext/EInvoicePropertyTableEntity_Resolved/BackingTable_EInvoicePropertyTableRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Electronic document properties",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

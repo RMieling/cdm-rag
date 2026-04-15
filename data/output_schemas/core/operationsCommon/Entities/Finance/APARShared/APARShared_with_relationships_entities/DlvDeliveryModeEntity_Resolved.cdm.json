@@ -1,0 +1,321 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "DlvDeliveryModeEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "DlvDeliveryModeEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "DlvDeliveryModeEntity_Resolved",
+        "definition": "resolvedFrom/DlvDeliveryModeEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "DlvDeliveryModeEntity_Resolved/attributeContext/DlvDeliveryModeEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "DlvDeliveryModeEntity_Resolved/attributeContext/DlvDeliveryModeEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ModeCode",
+            "parent": "DlvDeliveryModeEntity_Resolved/attributeContext/DlvDeliveryModeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DlvDeliveryModeEntity/hasAttributes/ModeCode",
+            "contents": [
+              "DlvDeliveryModeEntity_Resolved/hasAttributes/ModeCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ChargeDeliveryGroupId",
+            "parent": "DlvDeliveryModeEntity_Resolved/attributeContext/DlvDeliveryModeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DlvDeliveryModeEntity/hasAttributes/ChargeDeliveryGroupId",
+            "contents": [
+              "DlvDeliveryModeEntity_Resolved/hasAttributes/ChargeDeliveryGroupId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DefaultExpediteCode",
+            "parent": "DlvDeliveryModeEntity_Resolved/attributeContext/DlvDeliveryModeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DlvDeliveryModeEntity/hasAttributes/DefaultExpediteCode",
+            "contents": [
+              "DlvDeliveryModeEntity_Resolved/hasAttributes/DefaultExpediteCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ModeDescription",
+            "parent": "DlvDeliveryModeEntity_Resolved/attributeContext/DlvDeliveryModeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DlvDeliveryModeEntity/hasAttributes/ModeDescription",
+            "contents": [
+              "DlvDeliveryModeEntity_Resolved/hasAttributes/ModeDescription"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "IntrastatTransportModeCode",
+            "parent": "DlvDeliveryModeEntity_Resolved/attributeContext/DlvDeliveryModeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DlvDeliveryModeEntity/hasAttributes/IntrastatTransportModeCode",
+            "contents": [
+              "DlvDeliveryModeEntity_Resolved/hasAttributes/IntrastatTransportModeCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_DlvModeRelationship",
+            "parent": "DlvDeliveryModeEntity_Resolved/attributeContext/DlvDeliveryModeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DlvDeliveryModeEntity/hasAttributes/BackingTable_DlvModeRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "DlvMode",
+                "parent": "DlvDeliveryModeEntity_Resolved/attributeContext/DlvDeliveryModeEntity_Resolved/BackingTable_DlvModeRelationship",
+                "definition": "resolvedFrom/DlvMode",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "DlvDeliveryModeEntity_Resolved/attributeContext/DlvDeliveryModeEntity_Resolved/BackingTable_DlvModeRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "DlvDeliveryModeEntity_Resolved/attributeContext/DlvDeliveryModeEntity_Resolved/BackingTable_DlvModeRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "DlvDeliveryModeEntity_Resolved/attributeContext/DlvDeliveryModeEntity_Resolved/BackingTable_DlvModeRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "DlvDeliveryModeEntity_Resolved/hasAttributes/BackingTable_DlvModeRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "DlvDeliveryModeEntity_Resolved/attributeContext/DlvDeliveryModeEntity_Resolved",
+            "definition": "resolvedFrom/DlvDeliveryModeEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "DlvDeliveryModeEntity_Resolved/attributeContext/DlvDeliveryModeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "DlvDeliveryModeEntity_Resolved/attributeContext/DlvDeliveryModeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "DlvDeliveryModeEntity_Resolved/attributeContext/DlvDeliveryModeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "DlvDeliveryModeEntity_Resolved/attributeContext/DlvDeliveryModeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "DlvDeliveryModeEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "ModeCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DlvDeliveryModeEntity_Resolved/attributeContext/DlvDeliveryModeEntity_Resolved/ModeCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ChargeDeliveryGroupId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DlvDeliveryModeEntity_Resolved/attributeContext/DlvDeliveryModeEntity_Resolved/ChargeDeliveryGroupId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "DefaultExpediteCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DlvDeliveryModeEntity_Resolved/attributeContext/DlvDeliveryModeEntity_Resolved/DefaultExpediteCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ModeDescription",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DlvDeliveryModeEntity_Resolved/attributeContext/DlvDeliveryModeEntity_Resolved/ModeDescription",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "IntrastatTransportModeCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DlvDeliveryModeEntity_Resolved/attributeContext/DlvDeliveryModeEntity_Resolved/IntrastatTransportModeCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_DlvModeRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/SupplyChain/SalesAndMarketing/Group/DlvMode.cdm.json/DlvMode",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "DlvDeliveryModeEntity_Resolved/attributeContext/DlvDeliveryModeEntity_Resolved/BackingTable_DlvModeRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "DlvDeliveryModeEntity_Resolved/attributeContext/DlvDeliveryModeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Modes of delivery",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

@@ -1,0 +1,275 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "LedgerTransSettlementAccountEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "LedgerTransSettlementAccountEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "LedgerTransSettlementAccountEntity_Resolved",
+        "definition": "resolvedFrom/LedgerTransSettlementAccountEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "LedgerTransSettlementAccountEntity_Resolved/attributeContext/LedgerTransSettlementAccountEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "LedgerTransSettlementAccountEntity_Resolved/attributeContext/LedgerTransSettlementAccountEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "MainAccountId",
+            "parent": "LedgerTransSettlementAccountEntity_Resolved/attributeContext/LedgerTransSettlementAccountEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerTransSettlementAccountEntity/hasAttributes/MainAccountId",
+            "contents": [
+              "LedgerTransSettlementAccountEntity_Resolved/hasAttributes/MainAccountId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ChartOfAccounts",
+            "parent": "LedgerTransSettlementAccountEntity_Resolved/attributeContext/LedgerTransSettlementAccountEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerTransSettlementAccountEntity/hasAttributes/ChartOfAccounts",
+            "contents": [
+              "LedgerTransSettlementAccountEntity_Resolved/hasAttributes/ChartOfAccounts"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "MainAccount",
+            "parent": "LedgerTransSettlementAccountEntity_Resolved/attributeContext/LedgerTransSettlementAccountEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerTransSettlementAccountEntity/hasAttributes/MainAccount",
+            "contents": [
+              "LedgerTransSettlementAccountEntity_Resolved/hasAttributes/MainAccount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_MainAccountRelationship",
+            "parent": "LedgerTransSettlementAccountEntity_Resolved/attributeContext/LedgerTransSettlementAccountEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerTransSettlementAccountEntity/hasAttributes/Relationship_MainAccountRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "MainAccountEntity",
+                "parent": "LedgerTransSettlementAccountEntity_Resolved/attributeContext/LedgerTransSettlementAccountEntity_Resolved/Relationship_MainAccountRelationship",
+                "definition": "resolvedFrom/MainAccountEntity",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "LedgerTransSettlementAccountEntity_Resolved/attributeContext/LedgerTransSettlementAccountEntity_Resolved/Relationship_MainAccountRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "LedgerTransSettlementAccountEntity_Resolved/attributeContext/LedgerTransSettlementAccountEntity_Resolved/Relationship_MainAccountRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "LedgerTransSettlementAccountEntity_Resolved/attributeContext/LedgerTransSettlementAccountEntity_Resolved/Relationship_MainAccountRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "LedgerTransSettlementAccountEntity_Resolved/hasAttributes/Relationship_MainAccountRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_LedgerTransSettlementAccountRelationship",
+            "parent": "LedgerTransSettlementAccountEntity_Resolved/attributeContext/LedgerTransSettlementAccountEntity_Resolved",
+            "definition": "resolvedFrom/LedgerTransSettlementAccountEntity/hasAttributes/BackingTable_LedgerTransSettlementAccountRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "LedgerTransSettlementAccount",
+                "parent": "LedgerTransSettlementAccountEntity_Resolved/attributeContext/LedgerTransSettlementAccountEntity_Resolved/BackingTable_LedgerTransSettlementAccountRelationship",
+                "definition": "resolvedFrom/LedgerTransSettlementAccount",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "LedgerTransSettlementAccountEntity_Resolved/attributeContext/LedgerTransSettlementAccountEntity_Resolved/BackingTable_LedgerTransSettlementAccountRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "LedgerTransSettlementAccountEntity_Resolved/attributeContext/LedgerTransSettlementAccountEntity_Resolved/BackingTable_LedgerTransSettlementAccountRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "LedgerTransSettlementAccountEntity_Resolved/attributeContext/LedgerTransSettlementAccountEntity_Resolved/BackingTable_LedgerTransSettlementAccountRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "LedgerTransSettlementAccountEntity_Resolved/hasAttributes/BackingTable_LedgerTransSettlementAccountRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "MainAccountId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerTransSettlementAccountEntity_Resolved/attributeContext/LedgerTransSettlementAccountEntity_Resolved/MainAccountId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ChartOfAccounts",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerTransSettlementAccountEntity_Resolved/attributeContext/LedgerTransSettlementAccountEntity_Resolved/ChartOfAccounts",
+          "dataFormat": "String"
+        },
+        {
+          "name": "MainAccount",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerTransSettlementAccountEntity_Resolved/attributeContext/LedgerTransSettlementAccountEntity_Resolved/MainAccount",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Relationship_MainAccountRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": []
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "LedgerTransSettlementAccountEntity_Resolved/attributeContext/LedgerTransSettlementAccountEntity_Resolved/Relationship_MainAccountRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "BackingTable_LedgerTransSettlementAccountRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Parameter/LedgerTransSettlementAccount.cdm.json/LedgerTransSettlementAccount",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "LedgerTransSettlementAccountEntity_Resolved/attributeContext/LedgerTransSettlementAccountEntity_Resolved/BackingTable_LedgerTransSettlementAccountRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Ledger settlement accounts",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

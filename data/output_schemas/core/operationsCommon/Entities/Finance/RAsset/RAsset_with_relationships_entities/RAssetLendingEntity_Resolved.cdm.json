@@ -1,0 +1,339 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "RAssetLendingEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "RAssetLendingEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "RAssetLendingEntity_Resolved",
+        "definition": "resolvedFrom/RAssetLendingEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "RAssetLendingEntity_Resolved/attributeContext/RAssetLendingEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "RAssetLendingEntity_Resolved/attributeContext/RAssetLendingEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "FAInventoryNumber",
+            "parent": "RAssetLendingEntity_Resolved/attributeContext/RAssetLendingEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RAssetLendingEntity/hasAttributes/FAInventoryNumber",
+            "contents": [
+              "RAssetLendingEntity_Resolved/hasAttributes/FAInventoryNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ActualReturnDate",
+            "parent": "RAssetLendingEntity_Resolved/attributeContext/RAssetLendingEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RAssetLendingEntity/hasAttributes/ActualReturnDate",
+            "contents": [
+              "RAssetLendingEntity_Resolved/hasAttributes/ActualReturnDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DateOfLease",
+            "parent": "RAssetLendingEntity_Resolved/attributeContext/RAssetLendingEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RAssetLendingEntity/hasAttributes/DateOfLease",
+            "contents": [
+              "RAssetLendingEntity_Resolved/hasAttributes/DateOfLease"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Leaseholder",
+            "parent": "RAssetLendingEntity_Resolved/attributeContext/RAssetLendingEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RAssetLendingEntity/hasAttributes/Leaseholder",
+            "contents": [
+              "RAssetLendingEntity_Resolved/hasAttributes/Leaseholder"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ExpectedReturnDate",
+            "parent": "RAssetLendingEntity_Resolved/attributeContext/RAssetLendingEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RAssetLendingEntity/hasAttributes/ExpectedReturnDate",
+            "contents": [
+              "RAssetLendingEntity_Resolved/hasAttributes/ExpectedReturnDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Location",
+            "parent": "RAssetLendingEntity_Resolved/attributeContext/RAssetLendingEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RAssetLendingEntity/hasAttributes/Location",
+            "contents": [
+              "RAssetLendingEntity_Resolved/hasAttributes/Location"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_RAssetLendingRelationship",
+            "parent": "RAssetLendingEntity_Resolved/attributeContext/RAssetLendingEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RAssetLendingEntity/hasAttributes/BackingTable_RAssetLendingRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "RAssetLending",
+                "parent": "RAssetLendingEntity_Resolved/attributeContext/RAssetLendingEntity_Resolved/BackingTable_RAssetLendingRelationship",
+                "definition": "resolvedFrom/RAssetLending",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "RAssetLendingEntity_Resolved/attributeContext/RAssetLendingEntity_Resolved/BackingTable_RAssetLendingRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "RAssetLendingEntity_Resolved/attributeContext/RAssetLendingEntity_Resolved/BackingTable_RAssetLendingRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "RAssetLendingEntity_Resolved/attributeContext/RAssetLendingEntity_Resolved/BackingTable_RAssetLendingRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "RAssetLendingEntity_Resolved/hasAttributes/BackingTable_RAssetLendingRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "RAssetLendingEntity_Resolved/attributeContext/RAssetLendingEntity_Resolved",
+            "definition": "resolvedFrom/RAssetLendingEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "RAssetLendingEntity_Resolved/attributeContext/RAssetLendingEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "RAssetLendingEntity_Resolved/attributeContext/RAssetLendingEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "RAssetLendingEntity_Resolved/attributeContext/RAssetLendingEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "RAssetLendingEntity_Resolved/attributeContext/RAssetLendingEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "RAssetLendingEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "FAInventoryNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RAssetLendingEntity_Resolved/attributeContext/RAssetLendingEntity_Resolved/FAInventoryNumber",
+          "dataFormat": "String"
+        },
+        {
+          "name": "ActualReturnDate",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RAssetLendingEntity_Resolved/attributeContext/RAssetLendingEntity_Resolved/ActualReturnDate",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "DateOfLease",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RAssetLendingEntity_Resolved/attributeContext/RAssetLendingEntity_Resolved/DateOfLease",
+          "dataFormat": "String"
+        },
+        {
+          "name": "Leaseholder",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RAssetLendingEntity_Resolved/attributeContext/RAssetLendingEntity_Resolved/Leaseholder",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ExpectedReturnDate",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RAssetLendingEntity_Resolved/attributeContext/RAssetLendingEntity_Resolved/ExpectedReturnDate",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Location",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RAssetLendingEntity_Resolved/attributeContext/RAssetLendingEntity_Resolved/Location",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_RAssetLendingRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/RAsset/Transaction/RAssetLending.cdm.json/RAssetLending",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "RAssetLendingEntity_Resolved/attributeContext/RAssetLendingEntity_Resolved/BackingTable_RAssetLendingRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "RAssetLendingEntity_Resolved/attributeContext/RAssetLendingEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "FA leased",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

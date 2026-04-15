@@ -1,0 +1,281 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "TaxCountryRegionParametersEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TaxCountryRegionParametersEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "TaxCountryRegionParametersEntity_Resolved",
+        "definition": "resolvedFrom/TaxCountryRegionParametersEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "TaxCountryRegionParametersEntity_Resolved/attributeContext/TaxCountryRegionParametersEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "TaxCountryRegionParametersEntity_Resolved/attributeContext/TaxCountryRegionParametersEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CheckTaxExemptNumber",
+            "parent": "TaxCountryRegionParametersEntity_Resolved/attributeContext/TaxCountryRegionParametersEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxCountryRegionParametersEntity/hasAttributes/CheckTaxExemptNumber",
+            "contents": [
+              "TaxCountryRegionParametersEntity_Resolved/hasAttributes/CheckTaxExemptNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CountryRegionId",
+            "parent": "TaxCountryRegionParametersEntity_Resolved/attributeContext/TaxCountryRegionParametersEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxCountryRegionParametersEntity/hasAttributes/CountryRegionId",
+            "contents": [
+              "TaxCountryRegionParametersEntity_Resolved/hasAttributes/CountryRegionId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "SalesTaxCode",
+            "parent": "TaxCountryRegionParametersEntity_Resolved/attributeContext/TaxCountryRegionParametersEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxCountryRegionParametersEntity/hasAttributes/SalesTaxCode",
+            "contents": [
+              "TaxCountryRegionParametersEntity_Resolved/hasAttributes/SalesTaxCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_TaxCountryRegionParametersRelationship",
+            "parent": "TaxCountryRegionParametersEntity_Resolved/attributeContext/TaxCountryRegionParametersEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxCountryRegionParametersEntity/hasAttributes/BackingTable_TaxCountryRegionParametersRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "TaxCountryRegionParameters",
+                "parent": "TaxCountryRegionParametersEntity_Resolved/attributeContext/TaxCountryRegionParametersEntity_Resolved/BackingTable_TaxCountryRegionParametersRelationship",
+                "definition": "resolvedFrom/TaxCountryRegionParameters",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxCountryRegionParametersEntity_Resolved/attributeContext/TaxCountryRegionParametersEntity_Resolved/BackingTable_TaxCountryRegionParametersRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxCountryRegionParametersEntity_Resolved/attributeContext/TaxCountryRegionParametersEntity_Resolved/BackingTable_TaxCountryRegionParametersRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxCountryRegionParametersEntity_Resolved/attributeContext/TaxCountryRegionParametersEntity_Resolved/BackingTable_TaxCountryRegionParametersRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxCountryRegionParametersEntity_Resolved/hasAttributes/BackingTable_TaxCountryRegionParametersRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "TaxCountryRegionParametersEntity_Resolved/attributeContext/TaxCountryRegionParametersEntity_Resolved",
+            "definition": "resolvedFrom/TaxCountryRegionParametersEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "TaxCountryRegionParametersEntity_Resolved/attributeContext/TaxCountryRegionParametersEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxCountryRegionParametersEntity_Resolved/attributeContext/TaxCountryRegionParametersEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxCountryRegionParametersEntity_Resolved/attributeContext/TaxCountryRegionParametersEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxCountryRegionParametersEntity_Resolved/attributeContext/TaxCountryRegionParametersEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxCountryRegionParametersEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "CheckTaxExemptNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxCountryRegionParametersEntity_Resolved/attributeContext/TaxCountryRegionParametersEntity_Resolved/CheckTaxExemptNumber",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "CountryRegionId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxCountryRegionParametersEntity_Resolved/attributeContext/TaxCountryRegionParametersEntity_Resolved/CountryRegionId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "SalesTaxCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxCountryRegionParametersEntity_Resolved/attributeContext/TaxCountryRegionParametersEntity_Resolved/SalesTaxCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_TaxCountryRegionParametersRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Tax/Parameter/TaxCountryRegionParameters.cdm.json/TaxCountryRegionParameters",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxCountryRegionParametersEntity_Resolved/attributeContext/TaxCountryRegionParametersEntity_Resolved/BackingTable_TaxCountryRegionParametersRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxCountryRegionParametersEntity_Resolved/attributeContext/TaxCountryRegionParametersEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Sales tax country/region parameters",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

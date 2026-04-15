@@ -1,0 +1,188 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "FiscalCalendarEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "FiscalCalendarEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "FiscalCalendarEntity_Resolved",
+        "definition": "resolvedFrom/FiscalCalendarEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "FiscalCalendarEntity_Resolved/attributeContext/FiscalCalendarEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "FiscalCalendarEntity_Resolved/attributeContext/FiscalCalendarEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CalendarId",
+            "parent": "FiscalCalendarEntity_Resolved/attributeContext/FiscalCalendarEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/FiscalCalendarEntity/hasAttributes/CalendarId",
+            "contents": [
+              "FiscalCalendarEntity_Resolved/hasAttributes/CalendarId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "FiscalCalendarEntity_Resolved/attributeContext/FiscalCalendarEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/FiscalCalendarEntity/hasAttributes/Description",
+            "contents": [
+              "FiscalCalendarEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_FiscalCalendarRelationship",
+            "parent": "FiscalCalendarEntity_Resolved/attributeContext/FiscalCalendarEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/FiscalCalendarEntity/hasAttributes/BackingTable_FiscalCalendarRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "FiscalCalendar",
+                "parent": "FiscalCalendarEntity_Resolved/attributeContext/FiscalCalendarEntity_Resolved/BackingTable_FiscalCalendarRelationship",
+                "definition": "resolvedFrom/FiscalCalendar",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "FiscalCalendarEntity_Resolved/attributeContext/FiscalCalendarEntity_Resolved/BackingTable_FiscalCalendarRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "FiscalCalendarEntity_Resolved/attributeContext/FiscalCalendarEntity_Resolved/BackingTable_FiscalCalendarRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "FiscalCalendarEntity_Resolved/attributeContext/FiscalCalendarEntity_Resolved/BackingTable_FiscalCalendarRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "FiscalCalendarEntity_Resolved/hasAttributes/BackingTable_FiscalCalendarRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "CalendarId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "FiscalCalendarEntity_Resolved/attributeContext/FiscalCalendarEntity_Resolved/CalendarId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "FiscalCalendarEntity_Resolved/attributeContext/FiscalCalendarEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_FiscalCalendarRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Reference/FiscalCalendar.cdm.json/FiscalCalendar",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "FiscalCalendarEntity_Resolved/attributeContext/FiscalCalendarEntity_Resolved/BackingTable_FiscalCalendarRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Fiscal calendar integration entity",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

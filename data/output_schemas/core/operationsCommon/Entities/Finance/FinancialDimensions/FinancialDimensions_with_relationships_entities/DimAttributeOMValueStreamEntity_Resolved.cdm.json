@@ -1,0 +1,188 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "DimAttributeOMValueStreamEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "DimAttributeOMValueStreamEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "DimAttributeOMValueStreamEntity_Resolved",
+        "definition": "resolvedFrom/DimAttributeOMValueStreamEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "DimAttributeOMValueStreamEntity_Resolved/attributeContext/DimAttributeOMValueStreamEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "DimAttributeOMValueStreamEntity_Resolved/attributeContext/DimAttributeOMValueStreamEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Value",
+            "parent": "DimAttributeOMValueStreamEntity_Resolved/attributeContext/DimAttributeOMValueStreamEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimAttributeOMValueStreamEntity/hasAttributes/Value",
+            "contents": [
+              "DimAttributeOMValueStreamEntity_Resolved/hasAttributes/Value"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "DimAttributeOMValueStreamEntity_Resolved/attributeContext/DimAttributeOMValueStreamEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimAttributeOMValueStreamEntity/hasAttributes/Name",
+            "contents": [
+              "DimAttributeOMValueStreamEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_OMOperatingUnitRelationship",
+            "parent": "DimAttributeOMValueStreamEntity_Resolved/attributeContext/DimAttributeOMValueStreamEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimAttributeOMValueStreamEntity/hasAttributes/BackingTable_OMOperatingUnitRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "OMOperatingUnit",
+                "parent": "DimAttributeOMValueStreamEntity_Resolved/attributeContext/DimAttributeOMValueStreamEntity_Resolved/BackingTable_OMOperatingUnitRelationship",
+                "definition": "resolvedFrom/OMOperatingUnit",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "DimAttributeOMValueStreamEntity_Resolved/attributeContext/DimAttributeOMValueStreamEntity_Resolved/BackingTable_OMOperatingUnitRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "DimAttributeOMValueStreamEntity_Resolved/attributeContext/DimAttributeOMValueStreamEntity_Resolved/BackingTable_OMOperatingUnitRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "DimAttributeOMValueStreamEntity_Resolved/attributeContext/DimAttributeOMValueStreamEntity_Resolved/BackingTable_OMOperatingUnitRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "DimAttributeOMValueStreamEntity_Resolved/hasAttributes/BackingTable_OMOperatingUnitRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Value",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DimAttributeOMValueStreamEntity_Resolved/attributeContext/DimAttributeOMValueStreamEntity_Resolved/Value",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DimAttributeOMValueStreamEntity_Resolved/attributeContext/DimAttributeOMValueStreamEntity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_OMOperatingUnitRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Common/GAB/Main/OMOperatingUnit.cdm.json/OMOperatingUnit",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "DimAttributeOMValueStreamEntity_Resolved/attributeContext/DimAttributeOMValueStreamEntity_Resolved/BackingTable_OMOperatingUnitRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Value streams",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

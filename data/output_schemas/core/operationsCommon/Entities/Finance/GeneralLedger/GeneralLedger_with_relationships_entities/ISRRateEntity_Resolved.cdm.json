@@ -1,0 +1,320 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "ISRRateEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "ISRRateEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "ISRRateEntity_Resolved",
+        "definition": "resolvedFrom/ISRRateEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "ISRRateEntity_Resolved/attributeContext/ISRRateEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "ISRRateEntity_Resolved/attributeContext/ISRRateEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "FixedAmount",
+            "parent": "ISRRateEntity_Resolved/attributeContext/ISRRateEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/ISRRateEntity/hasAttributes/FixedAmount",
+            "contents": [
+              "ISRRateEntity_Resolved/hasAttributes/FixedAmount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Month",
+            "parent": "ISRRateEntity_Resolved/attributeContext/ISRRateEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/ISRRateEntity/hasAttributes/Month",
+            "contents": [
+              "ISRRateEntity_Resolved/hasAttributes/Month"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Rate",
+            "parent": "ISRRateEntity_Resolved/attributeContext/ISRRateEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/ISRRateEntity/hasAttributes/Rate",
+            "contents": [
+              "ISRRateEntity_Resolved/hasAttributes/Rate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "MaximumAmount",
+            "parent": "ISRRateEntity_Resolved/attributeContext/ISRRateEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/ISRRateEntity/hasAttributes/MaximumAmount",
+            "contents": [
+              "ISRRateEntity_Resolved/hasAttributes/MaximumAmount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Year",
+            "parent": "ISRRateEntity_Resolved/attributeContext/ISRRateEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/ISRRateEntity/hasAttributes/Year",
+            "contents": [
+              "ISRRateEntity_Resolved/hasAttributes/Year"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_ISRRateTable_MXRelationship",
+            "parent": "ISRRateEntity_Resolved/attributeContext/ISRRateEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/ISRRateEntity/hasAttributes/BackingTable_ISRRateTable_MXRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "ISRRateTable_MX",
+                "parent": "ISRRateEntity_Resolved/attributeContext/ISRRateEntity_Resolved/BackingTable_ISRRateTable_MXRelationship",
+                "definition": "resolvedFrom/ISRRateTable_MX",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "ISRRateEntity_Resolved/attributeContext/ISRRateEntity_Resolved/BackingTable_ISRRateTable_MXRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "ISRRateEntity_Resolved/attributeContext/ISRRateEntity_Resolved/BackingTable_ISRRateTable_MXRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "ISRRateEntity_Resolved/attributeContext/ISRRateEntity_Resolved/BackingTable_ISRRateTable_MXRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "ISRRateEntity_Resolved/hasAttributes/BackingTable_ISRRateTable_MXRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "ISRRateEntity_Resolved/attributeContext/ISRRateEntity_Resolved",
+            "definition": "resolvedFrom/ISRRateEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "ISRRateEntity_Resolved/attributeContext/ISRRateEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "ISRRateEntity_Resolved/attributeContext/ISRRateEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "ISRRateEntity_Resolved/attributeContext/ISRRateEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "ISRRateEntity_Resolved/attributeContext/ISRRateEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "ISRRateEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "FixedAmount",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "ISRRateEntity_Resolved/attributeContext/ISRRateEntity_Resolved/FixedAmount",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Month",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "ISRRateEntity_Resolved/attributeContext/ISRRateEntity_Resolved/Month",
+          "dataFormat": "String"
+        },
+        {
+          "name": "Rate",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "ISRRateEntity_Resolved/attributeContext/ISRRateEntity_Resolved/Rate",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "MaximumAmount",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "ISRRateEntity_Resolved/attributeContext/ISRRateEntity_Resolved/MaximumAmount",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Year",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "ISRRateEntity_Resolved/attributeContext/ISRRateEntity_Resolved/Year",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_ISRRateTable_MXRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/ISRRateTable_MX.cdm.json/ISRRateTable_MX",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "ISRRateEntity_Resolved/attributeContext/ISRRateEntity_Resolved/BackingTable_ISRRateTable_MXRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "ISRRateEntity_Resolved/attributeContext/ISRRateEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "ISR rate table",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

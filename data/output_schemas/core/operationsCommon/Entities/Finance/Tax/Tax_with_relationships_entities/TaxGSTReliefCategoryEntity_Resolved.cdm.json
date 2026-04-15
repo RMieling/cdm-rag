@@ -1,0 +1,301 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "TaxGSTReliefCategoryEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TaxGSTReliefCategoryEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "TaxGSTReliefCategoryEntity_Resolved",
+        "definition": "resolvedFrom/TaxGSTReliefCategoryEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "TaxGSTReliefCategoryEntity_Resolved/attributeContext/TaxGSTReliefCategoryEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "TaxGSTReliefCategoryEntity_Resolved/attributeContext/TaxGSTReliefCategoryEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ReliefCategoryEntityKey",
+            "parent": "TaxGSTReliefCategoryEntity_Resolved/attributeContext/TaxGSTReliefCategoryEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxGSTReliefCategoryEntity/hasAttributes/ReliefCategoryEntityKey",
+            "contents": [
+              "TaxGSTReliefCategoryEntity_Resolved/hasAttributes/ReliefCategoryEntityKey"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ReliefCategoryId",
+            "parent": "TaxGSTReliefCategoryEntity_Resolved/attributeContext/TaxGSTReliefCategoryEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxGSTReliefCategoryEntity/hasAttributes/ReliefCategoryId",
+            "contents": [
+              "TaxGSTReliefCategoryEntity_Resolved/hasAttributes/ReliefCategoryId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ReliefItemNumber",
+            "parent": "TaxGSTReliefCategoryEntity_Resolved/attributeContext/TaxGSTReliefCategoryEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxGSTReliefCategoryEntity/hasAttributes/ReliefItemNumber",
+            "contents": [
+              "TaxGSTReliefCategoryEntity_Resolved/hasAttributes/ReliefItemNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ReliefSchedule",
+            "parent": "TaxGSTReliefCategoryEntity_Resolved/attributeContext/TaxGSTReliefCategoryEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxGSTReliefCategoryEntity/hasAttributes/ReliefSchedule",
+            "contents": [
+              "TaxGSTReliefCategoryEntity_Resolved/hasAttributes/ReliefSchedule"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_TaxGSTReliefCategory_MYRelationship",
+            "parent": "TaxGSTReliefCategoryEntity_Resolved/attributeContext/TaxGSTReliefCategoryEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxGSTReliefCategoryEntity/hasAttributes/BackingTable_TaxGSTReliefCategory_MYRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "TaxGSTReliefCategory_MY",
+                "parent": "TaxGSTReliefCategoryEntity_Resolved/attributeContext/TaxGSTReliefCategoryEntity_Resolved/BackingTable_TaxGSTReliefCategory_MYRelationship",
+                "definition": "resolvedFrom/TaxGSTReliefCategory_MY",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxGSTReliefCategoryEntity_Resolved/attributeContext/TaxGSTReliefCategoryEntity_Resolved/BackingTable_TaxGSTReliefCategory_MYRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxGSTReliefCategoryEntity_Resolved/attributeContext/TaxGSTReliefCategoryEntity_Resolved/BackingTable_TaxGSTReliefCategory_MYRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxGSTReliefCategoryEntity_Resolved/attributeContext/TaxGSTReliefCategoryEntity_Resolved/BackingTable_TaxGSTReliefCategory_MYRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxGSTReliefCategoryEntity_Resolved/hasAttributes/BackingTable_TaxGSTReliefCategory_MYRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "TaxGSTReliefCategoryEntity_Resolved/attributeContext/TaxGSTReliefCategoryEntity_Resolved",
+            "definition": "resolvedFrom/TaxGSTReliefCategoryEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "TaxGSTReliefCategoryEntity_Resolved/attributeContext/TaxGSTReliefCategoryEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxGSTReliefCategoryEntity_Resolved/attributeContext/TaxGSTReliefCategoryEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxGSTReliefCategoryEntity_Resolved/attributeContext/TaxGSTReliefCategoryEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxGSTReliefCategoryEntity_Resolved/attributeContext/TaxGSTReliefCategoryEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxGSTReliefCategoryEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "ReliefCategoryEntityKey",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxGSTReliefCategoryEntity_Resolved/attributeContext/TaxGSTReliefCategoryEntity_Resolved/ReliefCategoryEntityKey",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ReliefCategoryId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxGSTReliefCategoryEntity_Resolved/attributeContext/TaxGSTReliefCategoryEntity_Resolved/ReliefCategoryId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ReliefItemNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxGSTReliefCategoryEntity_Resolved/attributeContext/TaxGSTReliefCategoryEntity_Resolved/ReliefItemNumber",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ReliefSchedule",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxGSTReliefCategoryEntity_Resolved/attributeContext/TaxGSTReliefCategoryEntity_Resolved/ReliefSchedule",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_TaxGSTReliefCategory_MYRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Tax/Reference/TaxGSTReliefCategory_MY.cdm.json/TaxGSTReliefCategory_MY",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxGSTReliefCategoryEntity_Resolved/attributeContext/TaxGSTReliefCategoryEntity_Resolved/BackingTable_TaxGSTReliefCategory_MYRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxGSTReliefCategoryEntity_Resolved/attributeContext/TaxGSTReliefCategoryEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "GST relief category",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

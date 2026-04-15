@@ -1,0 +1,324 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "RTax25LedgerIntervalEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "RTax25LedgerIntervalEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "RTax25LedgerIntervalEntity_Resolved",
+        "definition": "resolvedFrom/RTax25LedgerIntervalEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "RTax25LedgerIntervalEntity_Resolved/attributeContext/RTax25LedgerIntervalEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "RTax25LedgerIntervalEntity_Resolved/attributeContext/RTax25LedgerIntervalEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "IntervalGroup",
+            "parent": "RTax25LedgerIntervalEntity_Resolved/attributeContext/RTax25LedgerIntervalEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RTax25LedgerIntervalEntity/hasAttributes/IntervalGroup",
+            "contents": [
+              "RTax25LedgerIntervalEntity_Resolved/hasAttributes/IntervalGroup"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "FromLedgerChartOfAccounts",
+            "parent": "RTax25LedgerIntervalEntity_Resolved/attributeContext/RTax25LedgerIntervalEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RTax25LedgerIntervalEntity/hasAttributes/FromLedgerChartOfAccounts",
+            "contents": [
+              "RTax25LedgerIntervalEntity_Resolved/hasAttributes/FromLedgerChartOfAccounts"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "FromAccount",
+            "parent": "RTax25LedgerIntervalEntity_Resolved/attributeContext/RTax25LedgerIntervalEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RTax25LedgerIntervalEntity/hasAttributes/FromAccount",
+            "contents": [
+              "RTax25LedgerIntervalEntity_Resolved/hasAttributes/FromAccount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ToLedgerChartOfAccounts",
+            "parent": "RTax25LedgerIntervalEntity_Resolved/attributeContext/RTax25LedgerIntervalEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RTax25LedgerIntervalEntity/hasAttributes/ToLedgerChartOfAccounts",
+            "contents": [
+              "RTax25LedgerIntervalEntity_Resolved/hasAttributes/ToLedgerChartOfAccounts"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ToAccount",
+            "parent": "RTax25LedgerIntervalEntity_Resolved/attributeContext/RTax25LedgerIntervalEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RTax25LedgerIntervalEntity/hasAttributes/ToAccount",
+            "contents": [
+              "RTax25LedgerIntervalEntity_Resolved/hasAttributes/ToAccount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_RTax25LedgerIntervalRelationship",
+            "parent": "RTax25LedgerIntervalEntity_Resolved/attributeContext/RTax25LedgerIntervalEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RTax25LedgerIntervalEntity/hasAttributes/BackingTable_RTax25LedgerIntervalRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "RTax25LedgerInterval",
+                "parent": "RTax25LedgerIntervalEntity_Resolved/attributeContext/RTax25LedgerIntervalEntity_Resolved/BackingTable_RTax25LedgerIntervalRelationship",
+                "definition": "resolvedFrom/RTax25LedgerInterval",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "RTax25LedgerIntervalEntity_Resolved/attributeContext/RTax25LedgerIntervalEntity_Resolved/BackingTable_RTax25LedgerIntervalRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "RTax25LedgerIntervalEntity_Resolved/attributeContext/RTax25LedgerIntervalEntity_Resolved/BackingTable_RTax25LedgerIntervalRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "RTax25LedgerIntervalEntity_Resolved/attributeContext/RTax25LedgerIntervalEntity_Resolved/BackingTable_RTax25LedgerIntervalRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "RTax25LedgerIntervalEntity_Resolved/hasAttributes/BackingTable_RTax25LedgerIntervalRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "RTax25LedgerIntervalEntity_Resolved/attributeContext/RTax25LedgerIntervalEntity_Resolved",
+            "definition": "resolvedFrom/RTax25LedgerIntervalEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "RTax25LedgerIntervalEntity_Resolved/attributeContext/RTax25LedgerIntervalEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "RTax25LedgerIntervalEntity_Resolved/attributeContext/RTax25LedgerIntervalEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "RTax25LedgerIntervalEntity_Resolved/attributeContext/RTax25LedgerIntervalEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "RTax25LedgerIntervalEntity_Resolved/attributeContext/RTax25LedgerIntervalEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "RTax25LedgerIntervalEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "IntervalGroup",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RTax25LedgerIntervalEntity_Resolved/attributeContext/RTax25LedgerIntervalEntity_Resolved/IntervalGroup",
+          "dataFormat": "String"
+        },
+        {
+          "name": "FromLedgerChartOfAccounts",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RTax25LedgerIntervalEntity_Resolved/attributeContext/RTax25LedgerIntervalEntity_Resolved/FromLedgerChartOfAccounts",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Chat of accounts (From)"
+        },
+        {
+          "name": "FromAccount",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RTax25LedgerIntervalEntity_Resolved/attributeContext/RTax25LedgerIntervalEntity_Resolved/FromAccount",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Account (Interval: From)"
+        },
+        {
+          "name": "ToLedgerChartOfAccounts",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RTax25LedgerIntervalEntity_Resolved/attributeContext/RTax25LedgerIntervalEntity_Resolved/ToLedgerChartOfAccounts",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Chat of accounts (To)"
+        },
+        {
+          "name": "ToAccount",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RTax25LedgerIntervalEntity_Resolved/attributeContext/RTax25LedgerIntervalEntity_Resolved/ToAccount",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Account (Interval: To)"
+        },
+        {
+          "name": "BackingTable_RTax25LedgerIntervalRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/RTax25/Group/RTax25LedgerInterval.cdm.json/RTax25LedgerInterval",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "RTax25LedgerIntervalEntity_Resolved/attributeContext/RTax25LedgerIntervalEntity_Resolved/BackingTable_RTax25LedgerIntervalRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "RTax25LedgerIntervalEntity_Resolved/attributeContext/RTax25LedgerIntervalEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Account interval",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

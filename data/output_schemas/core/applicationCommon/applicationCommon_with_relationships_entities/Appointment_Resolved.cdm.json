@@ -1,0 +1,3758 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "Appointment.cdm.json",
+      "moniker": "resolvedFrom"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "Appointment_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.ordered",
+          "arguments": [
+            "Appointment_Resolved/(resolvedAttributes)/sortDate"
+          ]
+        },
+        {
+          "traitReference": "means.entityState",
+          "arguments": [
+            "Appointment_Resolved/(resolvedAttributes)/stateCode"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "Appointment_Resolved",
+        "definition": "resolvedFrom/Appointment",
+        "appliedTraits": [
+          {
+            "traitReference": "is.ordered",
+            "arguments": [
+              "Appointment_Resolved/(resolvedAttributes)/sortDate"
+            ]
+          },
+          {
+            "traitReference": "means.entityState",
+            "arguments": [
+              "Appointment_Resolved/(resolvedAttributes)/stateCode"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "ActivityCommon",
+                "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends",
+                "definition": "resolvedFrom/ActivityCommon",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.ordered",
+                    "arguments": [
+                      "resolvedFrom/ActivityCommon/(resolvedAttributes)/sortDate"
+                    ]
+                  }
+                ],
+                "contents": [
+                  {
+                    "type": "entityReferenceExtends",
+                    "name": "extends",
+                    "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "CdsStandard",
+                        "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends",
+                        "definition": "resolvedFrom/CdsStandard",
+                        "contents": [
+                          {
+                            "type": "entityReferenceExtends",
+                            "name": "extends",
+                            "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard",
+                            "contents": [
+                              {
+                                "type": "entity",
+                                "name": "CdmEntity",
+                                "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/extends",
+                                "definition": "resolvedFrom/CdmEntity"
+                              }
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "cdsCreationModificationDatesAndIds",
+                            "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard",
+                            "definition": "resolvedFrom/cdsCreationModificationDatesAndIds",
+                            "contents": [
+                              {
+                                "type": "attributeGroup",
+                                "name": "cdsCreationModificationDatesAndIds",
+                                "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds",
+                                "definition": "resolvedFrom/cdsCreationModificationDatesAndIds",
+                                "contents": [
+                                  {
+                                    "type": "attributeDefinition",
+                                    "name": "createdOn",
+                                    "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds/cdsCreationModificationDatesAndIds",
+                                    "definition": "resolvedFrom/cdsCreationModificationDatesAndIds/members/createdOn",
+                                    "contents": [
+                                      "Appointment_Resolved/hasAttributes/createdOn"
+                                    ]
+                                  },
+                                  {
+                                    "type": "attributeDefinition",
+                                    "name": "User_createdBy",
+                                    "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds/cdsCreationModificationDatesAndIds",
+                                    "definition": "resolvedFrom/cdsCreationModificationDatesAndIds/members/User_createdBy",
+                                    "contents": [
+                                      {
+                                        "type": "entity",
+                                        "name": "User",
+                                        "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds/cdsCreationModificationDatesAndIds/User_createdBy",
+                                        "definition": "resolvedFrom/User"
+                                      },
+                                      {
+                                        "type": "generatedSet",
+                                        "name": "_generatedAttributeSet",
+                                        "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds/cdsCreationModificationDatesAndIds/User_createdBy",
+                                        "contents": [
+                                          {
+                                            "type": "generatedRound",
+                                            "name": "_generatedAttributeRound0",
+                                            "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds/cdsCreationModificationDatesAndIds/User_createdBy/_generatedAttributeSet",
+                                            "contents": [
+                                              {
+                                                "type": "addedAttributeIdentity",
+                                                "name": "_foreignKey",
+                                                "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds/cdsCreationModificationDatesAndIds/User_createdBy/_generatedAttributeSet/_generatedAttributeRound0",
+                                                "definition": "resolvedFrom/cdsCreationModificationDatesAndIds/members/User_createdBy/resolutionGuidance/foreignKeyAttribute/createdBy",
+                                                "contents": [
+                                                  "Appointment_Resolved/hasAttributes/createdBy"
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "type": "attributeDefinition",
+                                    "name": "modifiedOn",
+                                    "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds/cdsCreationModificationDatesAndIds",
+                                    "definition": "resolvedFrom/cdsCreationModificationDatesAndIds/members/modifiedOn",
+                                    "contents": [
+                                      "Appointment_Resolved/hasAttributes/modifiedOn"
+                                    ]
+                                  },
+                                  {
+                                    "type": "attributeDefinition",
+                                    "name": "User_modifiedBy",
+                                    "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds/cdsCreationModificationDatesAndIds",
+                                    "definition": "resolvedFrom/cdsCreationModificationDatesAndIds/members/User_modifiedBy",
+                                    "contents": [
+                                      {
+                                        "type": "entity",
+                                        "name": "User",
+                                        "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds/cdsCreationModificationDatesAndIds/User_modifiedBy",
+                                        "definition": "resolvedFrom/User"
+                                      },
+                                      {
+                                        "type": "generatedSet",
+                                        "name": "_generatedAttributeSet",
+                                        "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds/cdsCreationModificationDatesAndIds/User_modifiedBy",
+                                        "contents": [
+                                          {
+                                            "type": "generatedRound",
+                                            "name": "_generatedAttributeRound0",
+                                            "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds/cdsCreationModificationDatesAndIds/User_modifiedBy/_generatedAttributeSet",
+                                            "contents": [
+                                              {
+                                                "type": "addedAttributeIdentity",
+                                                "name": "_foreignKey",
+                                                "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds/cdsCreationModificationDatesAndIds/User_modifiedBy/_generatedAttributeSet/_generatedAttributeRound0",
+                                                "definition": "resolvedFrom/cdsCreationModificationDatesAndIds/members/User_modifiedBy/resolutionGuidance/foreignKeyAttribute/modifiedBy",
+                                                "contents": [
+                                                  "Appointment_Resolved/hasAttributes/modifiedBy"
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "type": "attributeDefinition",
+                                    "name": "User_createdOnBehalfBy",
+                                    "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds/cdsCreationModificationDatesAndIds",
+                                    "definition": "resolvedFrom/cdsCreationModificationDatesAndIds/members/User_createdOnBehalfBy",
+                                    "contents": [
+                                      {
+                                        "type": "entity",
+                                        "name": "User",
+                                        "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds/cdsCreationModificationDatesAndIds/User_createdOnBehalfBy",
+                                        "definition": "resolvedFrom/User"
+                                      },
+                                      {
+                                        "type": "generatedSet",
+                                        "name": "_generatedAttributeSet",
+                                        "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds/cdsCreationModificationDatesAndIds/User_createdOnBehalfBy",
+                                        "contents": [
+                                          {
+                                            "type": "generatedRound",
+                                            "name": "_generatedAttributeRound0",
+                                            "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds/cdsCreationModificationDatesAndIds/User_createdOnBehalfBy/_generatedAttributeSet",
+                                            "contents": [
+                                              {
+                                                "type": "addedAttributeIdentity",
+                                                "name": "_foreignKey",
+                                                "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds/cdsCreationModificationDatesAndIds/User_createdOnBehalfBy/_generatedAttributeSet/_generatedAttributeRound0",
+                                                "definition": "resolvedFrom/cdsCreationModificationDatesAndIds/members/User_createdOnBehalfBy/resolutionGuidance/foreignKeyAttribute/createdOnBehalfBy",
+                                                "contents": [
+                                                  "Appointment_Resolved/hasAttributes/createdOnBehalfBy"
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "type": "attributeDefinition",
+                                    "name": "User_modifiedOnBehalfBy",
+                                    "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds/cdsCreationModificationDatesAndIds",
+                                    "definition": "resolvedFrom/cdsCreationModificationDatesAndIds/members/User_modifiedOnBehalfBy",
+                                    "contents": [
+                                      {
+                                        "type": "entity",
+                                        "name": "User",
+                                        "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds/cdsCreationModificationDatesAndIds/User_modifiedOnBehalfBy",
+                                        "definition": "resolvedFrom/User"
+                                      },
+                                      {
+                                        "type": "generatedSet",
+                                        "name": "_generatedAttributeSet",
+                                        "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds/cdsCreationModificationDatesAndIds/User_modifiedOnBehalfBy",
+                                        "contents": [
+                                          {
+                                            "type": "generatedRound",
+                                            "name": "_generatedAttributeRound0",
+                                            "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds/cdsCreationModificationDatesAndIds/User_modifiedOnBehalfBy/_generatedAttributeSet",
+                                            "contents": [
+                                              {
+                                                "type": "addedAttributeIdentity",
+                                                "name": "_foreignKey",
+                                                "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds/cdsCreationModificationDatesAndIds/User_modifiedOnBehalfBy/_generatedAttributeSet/_generatedAttributeRound0",
+                                                "definition": "resolvedFrom/cdsCreationModificationDatesAndIds/members/User_modifiedOnBehalfBy/resolutionGuidance/foreignKeyAttribute/modifiedOnBehalfBy",
+                                                "contents": [
+                                                  "Appointment_Resolved/hasAttributes/modifiedOnBehalfBy"
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "type": "attributeDefinition",
+                                    "name": "overriddenCreatedOn",
+                                    "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds/cdsCreationModificationDatesAndIds",
+                                    "definition": "resolvedFrom/cdsCreationModificationDatesAndIds/members/overriddenCreatedOn",
+                                    "contents": [
+                                      "Appointment_Resolved/hasAttributes/overriddenCreatedOn"
+                                    ]
+                                  },
+                                  {
+                                    "type": "attributeDefinition",
+                                    "name": "importSequenceNumber",
+                                    "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds/cdsCreationModificationDatesAndIds",
+                                    "definition": "resolvedFrom/cdsCreationModificationDatesAndIds/members/importSequenceNumber",
+                                    "contents": [
+                                      "Appointment_Resolved/hasAttributes/importSequenceNumber"
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "cdsOwnershipInfo",
+                            "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard",
+                            "definition": "resolvedFrom/cdsOwnershipInfo",
+                            "contents": [
+                              {
+                                "type": "attributeGroup",
+                                "name": "cdsOwnershipInfo",
+                                "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo",
+                                "definition": "resolvedFrom/cdsOwnershipInfo",
+                                "contents": [
+                                  {
+                                    "type": "attributeDefinition",
+                                    "name": "ownerIdAttribute",
+                                    "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo",
+                                    "definition": "resolvedFrom/ownerIdAttribute",
+                                    "contents": [
+                                      {
+                                        "type": "attributeGroup",
+                                        "name": "ownerIdAttribute",
+                                        "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo/ownerIdAttribute",
+                                        "definition": "resolvedFrom/ownerIdAttribute",
+                                        "contents": [
+                                          {
+                                            "type": "attributeDefinition",
+                                            "name": "owner",
+                                            "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo/ownerIdAttribute/ownerIdAttribute",
+                                            "definition": "resolvedFrom/ownerIdAttribute/members/owner",
+                                            "contents": [
+                                              {
+                                                "type": "entity",
+                                                "name": "Owner",
+                                                "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo/ownerIdAttribute/ownerIdAttribute/owner",
+                                                "definition": "resolvedFrom/ownerIdAttribute/members/owner/entity/Owner",
+                                                "contents": [
+                                                  {
+                                                    "type": "attributeDefinition",
+                                                    "name": "userOption",
+                                                    "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo/ownerIdAttribute/ownerIdAttribute/owner/Owner",
+                                                    "definition": "resolvedFrom/ownerIdAttribute/members/owner/entity/Owner/hasAttributes/userOption",
+                                                    "contents": [
+                                                      {
+                                                        "type": "entity",
+                                                        "name": "User",
+                                                        "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo/ownerIdAttribute/ownerIdAttribute/owner/Owner/userOption",
+                                                        "definition": "resolvedFrom/User"
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "type": "attributeDefinition",
+                                                    "name": "teamOption",
+                                                    "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo/ownerIdAttribute/ownerIdAttribute/owner/Owner",
+                                                    "definition": "resolvedFrom/ownerIdAttribute/members/owner/entity/Owner/hasAttributes/teamOption",
+                                                    "contents": [
+                                                      {
+                                                        "type": "entity",
+                                                        "name": "Team",
+                                                        "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo/ownerIdAttribute/ownerIdAttribute/owner/Owner/teamOption",
+                                                        "definition": "resolvedFrom/Team"
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "type": "generatedSet",
+                                                "name": "_generatedAttributeSet",
+                                                "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo/ownerIdAttribute/ownerIdAttribute/owner",
+                                                "contents": [
+                                                  {
+                                                    "type": "generatedRound",
+                                                    "name": "_generatedAttributeRound0",
+                                                    "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo/ownerIdAttribute/ownerIdAttribute/owner/_generatedAttributeSet",
+                                                    "contents": [
+                                                      {
+                                                        "type": "addedAttributeIdentity",
+                                                        "name": "_foreignKey",
+                                                        "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo/ownerIdAttribute/ownerIdAttribute/owner/_generatedAttributeSet/_generatedAttributeRound0",
+                                                        "definition": "resolvedFrom/ownerIdAttribute/members/owner/resolutionGuidance/foreignKeyAttribute/ownerId",
+                                                        "contents": [
+                                                          "Appointment_Resolved/hasAttributes/ownerId"
+                                                        ]
+                                                      },
+                                                      {
+                                                        "type": "addedAttributeSelectedType",
+                                                        "name": "_selectedEntityName",
+                                                        "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo/ownerIdAttribute/ownerIdAttribute/owner/_generatedAttributeSet/_generatedAttributeRound0",
+                                                        "definition": "resolvedFrom/ownerIdAttribute/members/owner/resolutionGuidance/selectedTypeAttribute/ownerIdType",
+                                                        "contents": [
+                                                          "Appointment_Resolved/hasAttributes/ownerIdType"
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "type": "attributeDefinition",
+                                    "name": "BusinessUnit_owningBusinessUnit",
+                                    "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo",
+                                    "definition": "resolvedFrom/cdsOwnershipInfo/members/BusinessUnit_owningBusinessUnit",
+                                    "contents": [
+                                      {
+                                        "type": "entity",
+                                        "name": "BusinessUnit",
+                                        "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo/BusinessUnit_owningBusinessUnit",
+                                        "definition": "resolvedFrom/BusinessUnit"
+                                      },
+                                      {
+                                        "type": "generatedSet",
+                                        "name": "_generatedAttributeSet",
+                                        "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo/BusinessUnit_owningBusinessUnit",
+                                        "contents": [
+                                          {
+                                            "type": "generatedRound",
+                                            "name": "_generatedAttributeRound0",
+                                            "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo/BusinessUnit_owningBusinessUnit/_generatedAttributeSet",
+                                            "contents": [
+                                              {
+                                                "type": "addedAttributeIdentity",
+                                                "name": "_foreignKey",
+                                                "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo/BusinessUnit_owningBusinessUnit/_generatedAttributeSet/_generatedAttributeRound0",
+                                                "definition": "resolvedFrom/cdsOwnershipInfo/members/BusinessUnit_owningBusinessUnit/resolutionGuidance/foreignKeyAttribute/owningBusinessUnit",
+                                                "contents": [
+                                                  "Appointment_Resolved/hasAttributes/owningBusinessUnit"
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "type": "attributeDefinition",
+                                    "name": "User_owningUser",
+                                    "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo",
+                                    "definition": "resolvedFrom/cdsOwnershipInfo/members/User_owningUser",
+                                    "contents": [
+                                      {
+                                        "type": "entity",
+                                        "name": "User",
+                                        "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo/User_owningUser",
+                                        "definition": "resolvedFrom/User"
+                                      },
+                                      {
+                                        "type": "generatedSet",
+                                        "name": "_generatedAttributeSet",
+                                        "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo/User_owningUser",
+                                        "contents": [
+                                          {
+                                            "type": "generatedRound",
+                                            "name": "_generatedAttributeRound0",
+                                            "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo/User_owningUser/_generatedAttributeSet",
+                                            "contents": [
+                                              {
+                                                "type": "addedAttributeIdentity",
+                                                "name": "_foreignKey",
+                                                "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo/User_owningUser/_generatedAttributeSet/_generatedAttributeRound0",
+                                                "definition": "resolvedFrom/cdsOwnershipInfo/members/User_owningUser/resolutionGuidance/foreignKeyAttribute/owningUser",
+                                                "contents": [
+                                                  "Appointment_Resolved/hasAttributes/owningUser"
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "type": "attributeDefinition",
+                                    "name": "Team_owningTeam",
+                                    "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo",
+                                    "definition": "resolvedFrom/cdsOwnershipInfo/members/Team_owningTeam",
+                                    "contents": [
+                                      {
+                                        "type": "entity",
+                                        "name": "Team",
+                                        "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo/Team_owningTeam",
+                                        "definition": "resolvedFrom/Team"
+                                      },
+                                      {
+                                        "type": "generatedSet",
+                                        "name": "_generatedAttributeSet",
+                                        "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo/Team_owningTeam",
+                                        "contents": [
+                                          {
+                                            "type": "generatedRound",
+                                            "name": "_generatedAttributeRound0",
+                                            "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo/Team_owningTeam/_generatedAttributeSet",
+                                            "contents": [
+                                              {
+                                                "type": "addedAttributeIdentity",
+                                                "name": "_foreignKey",
+                                                "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo/Team_owningTeam/_generatedAttributeSet/_generatedAttributeRound0",
+                                                "definition": "resolvedFrom/cdsOwnershipInfo/members/Team_owningTeam/resolutionGuidance/foreignKeyAttribute/owningTeam",
+                                                "contents": [
+                                                  "Appointment_Resolved/hasAttributes/owningTeam"
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "cdsTimeZoneInfo",
+                            "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard",
+                            "definition": "resolvedFrom/cdsTimeZoneInfo",
+                            "contents": [
+                              {
+                                "type": "attributeGroup",
+                                "name": "cdsTimeZoneInfo",
+                                "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsTimeZoneInfo",
+                                "definition": "resolvedFrom/cdsTimeZoneInfo",
+                                "contents": [
+                                  {
+                                    "type": "attributeDefinition",
+                                    "name": "timeZoneRuleVersionNumber",
+                                    "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsTimeZoneInfo/cdsTimeZoneInfo",
+                                    "definition": "resolvedFrom/cdsTimeZoneInfo/members/timeZoneRuleVersionNumber",
+                                    "contents": [
+                                      "Appointment_Resolved/hasAttributes/timeZoneRuleVersionNumber"
+                                    ]
+                                  },
+                                  {
+                                    "type": "attributeDefinition",
+                                    "name": "UTCConversionTimeZoneCode",
+                                    "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsTimeZoneInfo/cdsTimeZoneInfo",
+                                    "definition": "resolvedFrom/cdsTimeZoneInfo/members/UTCConversionTimeZoneCode",
+                                    "contents": [
+                                      "Appointment_Resolved/hasAttributes/UTCConversionTimeZoneCode"
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "cdsVersionTracking",
+                            "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard",
+                            "definition": "resolvedFrom/cdsVersionTracking",
+                            "contents": [
+                              {
+                                "type": "attributeGroup",
+                                "name": "cdsVersionTracking",
+                                "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsVersionTracking",
+                                "definition": "resolvedFrom/cdsVersionTracking",
+                                "contents": [
+                                  {
+                                    "type": "attributeDefinition",
+                                    "name": "versionNumber",
+                                    "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsVersionTracking/cdsVersionTracking",
+                                    "definition": "resolvedFrom/cdsVersionTracking/members/versionNumber",
+                                    "contents": [
+                                      "Appointment_Resolved/hasAttributes/versionNumber"
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "activityCommon",
+                    "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon",
+                    "definition": "resolvedFrom/activityCommon",
+                    "contents": [
+                      {
+                        "type": "attributeGroup",
+                        "name": "activityCommon",
+                        "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/activityCommon",
+                        "definition": "resolvedFrom/activityCommon",
+                        "contents": [
+                          {
+                            "type": "attributeDefinition",
+                            "name": "activity",
+                            "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/activityCommon/activityCommon",
+                            "definition": "resolvedFrom/activityCommon/members/activity",
+                            "contents": [
+                              {
+                                "type": "entity",
+                                "name": "Activity",
+                                "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/activityCommon/activityCommon/activity",
+                                "definition": "resolvedFrom/Activity",
+                                "appliedTraits": [
+                                  {
+                                    "traitReference": "is.ordered",
+                                    "arguments": [
+                                      "resolvedFrom/Activity/(resolvedAttributes)/sortDate"
+                                    ]
+                                  },
+                                  {
+                                    "traitReference": "means.entityState",
+                                    "arguments": [
+                                      "resolvedFrom/Activity/(resolvedAttributes)/stateCode"
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "type": "generatedSet",
+                                "name": "_generatedAttributeSet",
+                                "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/activityCommon/activityCommon/activity",
+                                "contents": [
+                                  {
+                                    "type": "generatedRound",
+                                    "name": "_generatedAttributeRound0",
+                                    "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/activityCommon/activityCommon/activity/_generatedAttributeSet",
+                                    "contents": [
+                                      {
+                                        "type": "addedAttributeIdentity",
+                                        "name": "_foreignKey",
+                                        "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/activityCommon/activityCommon/activity/_generatedAttributeSet/_generatedAttributeRound0",
+                                        "definition": "resolvedFrom/activityCommon/members/activity/resolutionGuidance/foreignKeyAttribute/activityId",
+                                        "contents": [
+                                          "Appointment_Resolved/hasAttributes/activityId"
+                                        ]
+                                      },
+                                      {
+                                        "type": "addedAttributeSelectedType",
+                                        "name": "_selectedEntityName",
+                                        "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/activityCommon/activityCommon/activity/_generatedAttributeSet/_generatedAttributeRound0",
+                                        "definition": "resolvedFrom/activityCommon/members/activity/resolutionGuidance/selectedTypeAttribute/activityTypeCode",
+                                        "contents": [
+                                          "Appointment_Resolved/hasAttributes/activityTypeCode"
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "isBilled",
+                            "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/activityCommon/activityCommon",
+                            "definition": "resolvedFrom/activityCommon/members/isBilled",
+                            "contents": [
+                              "Appointment_Resolved/hasAttributes/isBilled"
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "isRegularActivity",
+                            "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/activityCommon/activityCommon",
+                            "definition": "resolvedFrom/activityCommon/members/isRegularActivity",
+                            "contents": [
+                              "Appointment_Resolved/hasAttributes/isRegularActivity"
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "isWorkflowCreated",
+                            "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/activityCommon/activityCommon",
+                            "definition": "resolvedFrom/activityCommon/members/isWorkflowCreated",
+                            "contents": [
+                              "Appointment_Resolved/hasAttributes/isWorkflowCreated"
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "priorityCode",
+                            "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/activityCommon/activityCommon",
+                            "definition": "resolvedFrom/activityCommon/members/priorityCode",
+                            "contents": [
+                              "Appointment_Resolved/hasAttributes/priorityCode",
+                              {
+                                "type": "generatedSet",
+                                "name": "_generatedAttributeSet",
+                                "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/activityCommon/activityCommon/priorityCode",
+                                "contents": [
+                                  {
+                                    "type": "generatedRound",
+                                    "name": "_generatedAttributeRound0",
+                                    "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/activityCommon/activityCommon/priorityCode/_generatedAttributeSet",
+                                    "contents": [
+                                      {
+                                        "type": "addedAttributeSupporting",
+                                        "name": "supporting_priorityCode",
+                                        "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/activityCommon/activityCommon/priorityCode/_generatedAttributeSet/_generatedAttributeRound0",
+                                        "definition": "resolvedFrom/activityCommon/members/priorityCode",
+                                        "contents": [
+                                          "Appointment_Resolved/hasAttributes/priorityCode_display"
+                                        ],
+                                        "lineage": [
+                                          "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/activityCommon/activityCommon/priorityCode"
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "regardingObjectIdAttribute",
+                            "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/activityCommon/activityCommon",
+                            "definition": "resolvedFrom/regardingObjectIdAttribute",
+                            "contents": [
+                              {
+                                "type": "attributeGroup",
+                                "name": "regardingObjectIdAttribute",
+                                "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/activityCommon/activityCommon/regardingObjectIdAttribute",
+                                "definition": "resolvedFrom/regardingObjectIdAttribute",
+                                "contents": [
+                                  {
+                                    "type": "attributeDefinition",
+                                    "name": "regardingObject",
+                                    "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/activityCommon/activityCommon/regardingObjectIdAttribute/regardingObjectIdAttribute",
+                                    "definition": "resolvedFrom/regardingObjectIdAttribute/members/regardingObject",
+                                    "contents": [
+                                      {
+                                        "type": "entity",
+                                        "name": "Regarding",
+                                        "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/activityCommon/activityCommon/regardingObjectIdAttribute/regardingObjectIdAttribute/regardingObject",
+                                        "definition": "resolvedFrom/regardingObjectIdAttribute/members/regardingObject/entity/Regarding"
+                                      },
+                                      {
+                                        "type": "generatedSet",
+                                        "name": "_generatedAttributeSet",
+                                        "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/activityCommon/activityCommon/regardingObjectIdAttribute/regardingObjectIdAttribute/regardingObject",
+                                        "contents": [
+                                          {
+                                            "type": "generatedRound",
+                                            "name": "_generatedAttributeRound0",
+                                            "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/activityCommon/activityCommon/regardingObjectIdAttribute/regardingObjectIdAttribute/regardingObject/_generatedAttributeSet",
+                                            "contents": [
+                                              {
+                                                "type": "addedAttributeIdentity",
+                                                "name": "_foreignKey",
+                                                "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/activityCommon/activityCommon/regardingObjectIdAttribute/regardingObjectIdAttribute/regardingObject/_generatedAttributeSet/_generatedAttributeRound0",
+                                                "definition": "resolvedFrom/regardingObjectIdAttribute/members/regardingObject/resolutionGuidance/foreignKeyAttribute/regardingObjectId"
+                                              },
+                                              {
+                                                "type": "addedAttributeSelectedType",
+                                                "name": "_selectedEntityName",
+                                                "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/activityCommon/activityCommon/regardingObjectIdAttribute/regardingObjectIdAttribute/regardingObject/_generatedAttributeSet/_generatedAttributeRound0",
+                                                "definition": "resolvedFrom/regardingObjectIdAttribute/members/regardingObject/resolutionGuidance/selectedTypeAttribute/regardingObjectTypeCode",
+                                                "contents": [
+                                                  "Appointment_Resolved/hasAttributes/regardingObjectTypeCode"
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "scheduledEnd",
+                            "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/activityCommon/activityCommon",
+                            "definition": "resolvedFrom/activityCommon/members/scheduledEnd",
+                            "contents": [
+                              "Appointment_Resolved/hasAttributes/scheduledEnd"
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "scheduledStart",
+                            "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/activityCommon/activityCommon",
+                            "definition": "resolvedFrom/activityCommon/members/scheduledStart",
+                            "contents": [
+                              "Appointment_Resolved/hasAttributes/scheduledStart"
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "sortDate",
+                            "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/activityCommon/activityCommon",
+                            "definition": "resolvedFrom/activityCommon/members/sortDate",
+                            "contents": [
+                              "Appointment_Resolved/hasAttributes/sortDate"
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "subject",
+                            "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/activityCommon/activityCommon",
+                            "definition": "resolvedFrom/activityCommon/members/subject",
+                            "contents": [
+                              "Appointment_Resolved/hasAttributes/subject"
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "scheduledDurationMinutes",
+                            "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/activityCommon/activityCommon",
+                            "definition": "resolvedFrom/activityCommon/members/scheduledDurationMinutes",
+                            "contents": [
+                              "Appointment_Resolved/hasAttributes/scheduledDurationMinutes"
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "actualDurationMinutes",
+                            "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/activityCommon/activityCommon",
+                            "definition": "resolvedFrom/activityCommon/members/actualDurationMinutes",
+                            "contents": [
+                              "Appointment_Resolved/hasAttributes/actualDurationMinutes"
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "actualEnd",
+                            "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/activityCommon/activityCommon",
+                            "definition": "resolvedFrom/activityCommon/members/actualEnd",
+                            "contents": [
+                              "Appointment_Resolved/hasAttributes/actualEnd"
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "actualStart",
+                            "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/activityCommon/activityCommon",
+                            "definition": "resolvedFrom/activityCommon/members/actualStart",
+                            "contents": [
+                              "Appointment_Resolved/hasAttributes/actualStart"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "attributesAddedAtThisScope",
+            "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved",
+            "definition": "resolvedFrom/Appointment/hasAttributes/attributesAddedAtThisScope",
+            "contents": [
+              {
+                "type": "attributeGroup",
+                "name": "attributesAddedAtThisScope",
+                "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope",
+                "definition": "resolvedFrom/Appointment/hasAttributes/attributesAddedAtThisScope",
+                "contents": [
+                  {
+                    "type": "attributeDefinition",
+                    "name": "regardingObject",
+                    "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Appointment/hasAttributes/attributesAddedAtThisScope/members/regardingObject",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "Regarding",
+                        "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/regardingObject",
+                        "definition": "resolvedFrom/Appointment/hasAttributes/attributesAddedAtThisScope/members/regardingObject/entity/Regarding",
+                        "contents": [
+                          {
+                            "type": "attributeDefinition",
+                            "name": "knowledgeBaseRecordOption",
+                            "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/regardingObject/Regarding",
+                            "definition": "resolvedFrom/Appointment/hasAttributes/attributesAddedAtThisScope/members/regardingObject/entity/Regarding/hasAttributes/knowledgeBaseRecordOption",
+                            "contents": [
+                              {
+                                "type": "entity",
+                                "name": "KnowledgeBaseRecord",
+                                "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/regardingObject/Regarding/knowledgeBaseRecordOption",
+                                "definition": "resolvedFrom/KnowledgeBaseRecord"
+                              }
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "knowledgeArticleOption",
+                            "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/regardingObject/Regarding",
+                            "definition": "resolvedFrom/Appointment/hasAttributes/attributesAddedAtThisScope/members/regardingObject/entity/Regarding/hasAttributes/knowledgeArticleOption",
+                            "contents": [
+                              {
+                                "type": "entity",
+                                "name": "KnowledgeArticle",
+                                "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/regardingObject/Regarding/knowledgeArticleOption",
+                                "definition": "resolvedFrom/KnowledgeArticle",
+                                "appliedTraits": [
+                                  {
+                                    "traitReference": "means.entityState",
+                                    "arguments": [
+                                      "resolvedFrom/KnowledgeArticle/(resolvedAttributes)/stateCode"
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "accountOption",
+                            "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/regardingObject/Regarding",
+                            "definition": "resolvedFrom/Appointment/hasAttributes/attributesAddedAtThisScope/members/regardingObject/entity/Regarding/hasAttributes/accountOption",
+                            "contents": [
+                              {
+                                "type": "entity",
+                                "name": "Account",
+                                "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/regardingObject/Regarding/accountOption",
+                                "definition": "resolvedFrom/Account",
+                                "appliedTraits": [
+                                  {
+                                    "traitReference": "means.entityState",
+                                    "arguments": [
+                                      "resolvedFrom/Account/(resolvedAttributes)/stateCode"
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "contactOption",
+                            "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/regardingObject/Regarding",
+                            "definition": "resolvedFrom/Appointment/hasAttributes/attributesAddedAtThisScope/members/regardingObject/entity/Regarding/hasAttributes/contactOption",
+                            "contents": [
+                              {
+                                "type": "entity",
+                                "name": "Contact",
+                                "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/regardingObject/Regarding/contactOption",
+                                "definition": "resolvedFrom/Contact",
+                                "appliedTraits": [
+                                  {
+                                    "traitReference": "means.entityState",
+                                    "arguments": [
+                                      "resolvedFrom/Contact/(resolvedAttributes)/stateCode"
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/regardingObject",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/regardingObject/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/regardingObject/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/Appointment/hasAttributes/attributesAddedAtThisScope/members/regardingObject/resolutionGuidance/foreignKeyAttribute/id",
+                                "contents": [
+                                  "Appointment_Resolved/hasAttributes/regardingObjectId"
+                                ],
+                                "lineage": [
+                                  "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/activityCommon/activityCommon/regardingObjectIdAttribute/regardingObjectIdAttribute/regardingObject/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "activityCategory",
+                    "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/activityCategory",
+                    "contents": [
+                      {
+                        "type": "attributeGroup",
+                        "name": "activityCategory",
+                        "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityCategory",
+                        "definition": "resolvedFrom/activityCategory",
+                        "contents": [
+                          {
+                            "type": "attributeDefinition",
+                            "name": "category",
+                            "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityCategory/activityCategory",
+                            "definition": "resolvedFrom/activityCategory/members/category",
+                            "contents": [
+                              "Appointment_Resolved/hasAttributes/category"
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "subcategory",
+                            "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityCategory/activityCategory",
+                            "definition": "resolvedFrom/activityCategory/members/subcategory",
+                            "contents": [
+                              "Appointment_Resolved/hasAttributes/subcategory"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "activityAdditionalParams",
+                    "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/activityAdditionalParams",
+                    "contents": [
+                      {
+                        "type": "attributeGroup",
+                        "name": "activityAdditionalParams",
+                        "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityAdditionalParams",
+                        "definition": "resolvedFrom/activityAdditionalParams",
+                        "contents": [
+                          {
+                            "type": "attributeDefinition",
+                            "name": "activityAdditionalParams",
+                            "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityAdditionalParams/activityAdditionalParams",
+                            "definition": "resolvedFrom/activityAdditionalParams/members/activityAdditionalParams",
+                            "contents": [
+                              "Appointment_Resolved/hasAttributes/activityAdditionalParams"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "activityInstanceTypeCode",
+                    "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/activityInstanceTypeCode",
+                    "contents": [
+                      {
+                        "type": "attributeGroup",
+                        "name": "activityInstanceTypeCode",
+                        "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityInstanceTypeCode",
+                        "definition": "resolvedFrom/activityInstanceTypeCode",
+                        "contents": [
+                          {
+                            "type": "attributeDefinition",
+                            "name": "instanceTypeCode",
+                            "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityInstanceTypeCode/activityInstanceTypeCode",
+                            "definition": "resolvedFrom/activityInstanceTypeCode/members/instanceTypeCode",
+                            "contents": [
+                              "Appointment_Resolved/hasAttributes/instanceTypeCode",
+                              {
+                                "type": "generatedSet",
+                                "name": "_generatedAttributeSet",
+                                "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityInstanceTypeCode/activityInstanceTypeCode/instanceTypeCode",
+                                "contents": [
+                                  {
+                                    "type": "generatedRound",
+                                    "name": "_generatedAttributeRound0",
+                                    "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityInstanceTypeCode/activityInstanceTypeCode/instanceTypeCode/_generatedAttributeSet",
+                                    "contents": [
+                                      {
+                                        "type": "addedAttributeSupporting",
+                                        "name": "supporting_instanceTypeCode",
+                                        "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityInstanceTypeCode/activityInstanceTypeCode/instanceTypeCode/_generatedAttributeSet/_generatedAttributeRound0",
+                                        "definition": "resolvedFrom/activityInstanceTypeCode/members/instanceTypeCode",
+                                        "contents": [
+                                          "Appointment_Resolved/hasAttributes/instanceTypeCode_display"
+                                        ],
+                                        "lineage": [
+                                          "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityInstanceTypeCode/activityInstanceTypeCode/instanceTypeCode"
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "activityIsMAPIPrivate",
+                    "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/activityIsMAPIPrivate",
+                    "contents": [
+                      {
+                        "type": "attributeGroup",
+                        "name": "activityIsMAPIPrivate",
+                        "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityIsMAPIPrivate",
+                        "definition": "resolvedFrom/activityIsMAPIPrivate",
+                        "contents": [
+                          {
+                            "type": "attributeDefinition",
+                            "name": "isMapiPrivate",
+                            "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityIsMAPIPrivate/activityIsMAPIPrivate",
+                            "definition": "resolvedFrom/activityIsMAPIPrivate/members/isMapiPrivate",
+                            "contents": [
+                              "Appointment_Resolved/hasAttributes/isMapiPrivate"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "activityAttendees",
+                    "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/activityAttendees",
+                    "contents": [
+                      {
+                        "type": "attributeGroup",
+                        "name": "activityAttendees",
+                        "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityAttendees",
+                        "definition": "resolvedFrom/activityAttendees",
+                        "contents": [
+                          {
+                            "type": "attributeDefinition",
+                            "name": "organizer",
+                            "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityAttendees/activityAttendees",
+                            "definition": "resolvedFrom/activityAttendees/members/organizer",
+                            "contents": [
+                              "Appointment_Resolved/hasAttributes/organizer"
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "requiredAttendees",
+                            "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityAttendees/activityAttendees",
+                            "definition": "resolvedFrom/activityAttendees/members/requiredAttendees",
+                            "contents": [
+                              "Appointment_Resolved/hasAttributes/requiredAttendees"
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "optionalAttendees",
+                            "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityAttendees/activityAttendees",
+                            "definition": "resolvedFrom/activityAttendees/members/optionalAttendees",
+                            "contents": [
+                              "Appointment_Resolved/hasAttributes/optionalAttendees"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "isAllDayEvent",
+                    "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Appointment/hasAttributes/attributesAddedAtThisScope/members/isAllDayEvent",
+                    "contents": [
+                      "Appointment_Resolved/hasAttributes/isAllDayEvent"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "description",
+                    "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Appointment/hasAttributes/attributesAddedAtThisScope/members/description",
+                    "contents": [
+                      "Appointment_Resolved/hasAttributes/description"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "globalObjectId",
+                    "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Appointment/hasAttributes/attributesAddedAtThisScope/members/globalObjectId",
+                    "contents": [
+                      "Appointment_Resolved/hasAttributes/globalObjectId"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "statusCode",
+                    "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Appointment/hasAttributes/attributesAddedAtThisScope/members/statusCode",
+                    "contents": [
+                      "Appointment_Resolved/hasAttributes/statusCode",
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/statusCode",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/statusCode/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeSupporting",
+                                "name": "supporting_statusCode",
+                                "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/statusCode/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/Appointment/hasAttributes/attributesAddedAtThisScope/members/statusCode",
+                                "contents": [
+                                  "Appointment_Resolved/hasAttributes/statusCode_display"
+                                ],
+                                "lineage": [
+                                  "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/statusCode"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "outlookOwnerApptId",
+                    "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Appointment/hasAttributes/attributesAddedAtThisScope/members/outlookOwnerApptId",
+                    "contents": [
+                      "Appointment_Resolved/hasAttributes/outlookOwnerApptId"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "location",
+                    "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Appointment/hasAttributes/attributesAddedAtThisScope/members/location",
+                    "contents": [
+                      "Appointment_Resolved/hasAttributes/location"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "stateCode",
+                    "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Appointment/hasAttributes/attributesAddedAtThisScope/members/stateCode",
+                    "contents": [
+                      "Appointment_Resolved/hasAttributes/stateCode",
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/stateCode",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/stateCode/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeSupporting",
+                                "name": "supporting_stateCode",
+                                "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/stateCode/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/Appointment/hasAttributes/attributesAddedAtThisScope/members/stateCode",
+                                "contents": [
+                                  "Appointment_Resolved/hasAttributes/stateCode_display"
+                                ],
+                                "lineage": [
+                                  "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/stateCode"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "traversedPath",
+                    "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Appointment/hasAttributes/attributesAddedAtThisScope/members/traversedPath",
+                    "contents": [
+                      "Appointment_Resolved/hasAttributes/traversedPath"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "modifiedFieldsMask",
+                    "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Appointment/hasAttributes/attributesAddedAtThisScope/members/modifiedFieldsMask",
+                    "contents": [
+                      "Appointment_Resolved/hasAttributes/modifiedFieldsMask"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "series",
+                    "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Appointment/hasAttributes/attributesAddedAtThisScope/members/series",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "RecurringAppointment",
+                        "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/series",
+                        "definition": "resolvedFrom/RecurringAppointment",
+                        "appliedTraits": [
+                          {
+                            "traitReference": "is.ordered",
+                            "arguments": [
+                              "resolvedFrom/RecurringAppointment/(resolvedAttributes)/sortDate"
+                            ]
+                          },
+                          {
+                            "traitReference": "means.entityState",
+                            "arguments": [
+                              "resolvedFrom/RecurringAppointment/(resolvedAttributes)/stateCode"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/series",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/series/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/series/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/Appointment/hasAttributes/attributesAddedAtThisScope/members/series/resolutionGuidance/foreignKeyAttribute/id",
+                                "contents": [
+                                  "Appointment_Resolved/hasAttributes/seriesId"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "originalStartDate",
+                    "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Appointment/hasAttributes/attributesAddedAtThisScope/members/originalStartDate",
+                    "contents": [
+                      "Appointment_Resolved/hasAttributes/originalStartDate"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "transactionCurrency",
+                    "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Appointment/hasAttributes/attributesAddedAtThisScope/members/transactionCurrency",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "Currency",
+                        "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/transactionCurrency",
+                        "definition": "resolvedFrom/Currency",
+                        "appliedTraits": [
+                          {
+                            "traitReference": "means.entityState",
+                            "arguments": [
+                              "resolvedFrom/Currency/(resolvedAttributes)/stateCode"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/transactionCurrency",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/transactionCurrency/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/transactionCurrency/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/Appointment/hasAttributes/attributesAddedAtThisScope/members/transactionCurrency/resolutionGuidance/foreignKeyAttribute/id",
+                                "contents": [
+                                  "Appointment_Resolved/hasAttributes/transactionCurrencyId"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "exchangeRate",
+                    "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Appointment/hasAttributes/attributesAddedAtThisScope/members/exchangeRate",
+                    "contents": [
+                      "Appointment_Resolved/hasAttributes/exchangeRate"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "processId",
+                    "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Appointment/hasAttributes/attributesAddedAtThisScope/members/processId",
+                    "contents": [
+                      "Appointment_Resolved/hasAttributes/processId"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "stageId",
+                    "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Appointment/hasAttributes/attributesAddedAtThisScope/members/stageId",
+                    "contents": [
+                      "Appointment_Resolved/hasAttributes/stageId"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "attachmentErrors",
+                    "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Appointment/hasAttributes/attributesAddedAtThisScope/members/attachmentErrors",
+                    "contents": [
+                      "Appointment_Resolved/hasAttributes/attachmentErrors",
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/attachmentErrors",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/attachmentErrors/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeSupporting",
+                                "name": "supporting_attachmentErrors",
+                                "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/attachmentErrors/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/Appointment/hasAttributes/attributesAddedAtThisScope/members/attachmentErrors",
+                                "contents": [
+                                  "Appointment_Resolved/hasAttributes/attachmentErrors_display"
+                                ],
+                                "lineage": [
+                                  "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/attachmentErrors"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "attachmentCount",
+                    "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Appointment/hasAttributes/attributesAddedAtThisScope/members/attachmentCount",
+                    "contents": [
+                      "Appointment_Resolved/hasAttributes/attachmentCount"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "SLA",
+                    "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Appointment/hasAttributes/attributesAddedAtThisScope/members/SLA",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "SLA",
+                        "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/SLA",
+                        "definition": "resolvedFrom/SLA",
+                        "appliedTraits": [
+                          {
+                            "traitReference": "means.entityState",
+                            "arguments": [
+                              "resolvedFrom/SLA/(resolvedAttributes)/stateCode"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/SLA",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/SLA/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/SLA/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/Appointment/hasAttributes/attributesAddedAtThisScope/members/SLA/resolutionGuidance/foreignKeyAttribute/id",
+                                "contents": [
+                                  "Appointment_Resolved/hasAttributes/SLAId"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "SLAInvoked",
+                    "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Appointment/hasAttributes/attributesAddedAtThisScope/members/SLAInvoked",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "SLA",
+                        "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/SLAInvoked",
+                        "definition": "resolvedFrom/SLA",
+                        "appliedTraits": [
+                          {
+                            "traitReference": "means.entityState",
+                            "arguments": [
+                              "resolvedFrom/SLA/(resolvedAttributes)/stateCode"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/SLAInvoked",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/SLAInvoked/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/SLAInvoked/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/Appointment/hasAttributes/attributesAddedAtThisScope/members/SLAInvoked/resolutionGuidance/foreignKeyAttribute/id",
+                                "contents": [
+                                  "Appointment_Resolved/hasAttributes/SLAInvokedId"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "onHoldTime",
+                    "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Appointment/hasAttributes/attributesAddedAtThisScope/members/onHoldTime",
+                    "contents": [
+                      "Appointment_Resolved/hasAttributes/onHoldTime"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "lastOnHoldTime",
+                    "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Appointment/hasAttributes/attributesAddedAtThisScope/members/lastOnHoldTime",
+                    "contents": [
+                      "Appointment_Resolved/hasAttributes/lastOnHoldTime"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "isUnsafe",
+                    "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Appointment/hasAttributes/attributesAddedAtThisScope/members/isUnsafe",
+                    "contents": [
+                      "Appointment_Resolved/hasAttributes/isUnsafe"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "isDraft",
+                    "parent": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Appointment/hasAttributes/attributesAddedAtThisScope/members/isDraft",
+                    "contents": [
+                      "Appointment_Resolved/hasAttributes/isDraft"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "createdOn",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date",
+            "is.dataFormat.time",
+            "means.measurement.time",
+            "means.measurement.date.creation",
+            "is.CDS.standard",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds/cdsCreationModificationDatesAndIds/createdOn",
+          "isNullable": true,
+          "dataFormat": "DateTime",
+          "sourceName": "createdon",
+          "displayName": "Created On",
+          "description": "Date and time when the record was created."
+        },
+        {
+          "name": "createdBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            "means.userId",
+            "is.CDS.standard",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "User.cdm.json/User",
+                        "systemUserId"
+                      ],
+                      [
+                        "foundationCommon/crmCommon/projectCommon/User.cdm.json/User",
+                        "systemUserId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds/cdsCreationModificationDatesAndIds/User_createdBy/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "createdby",
+          "displayName": "Created By",
+          "description": "Unique identifier of the user who created the record."
+        },
+        {
+          "name": "modifiedOn",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date",
+            "is.dataFormat.time",
+            "means.measurement.time",
+            "means.measurement.date.modify",
+            "is.CDS.standard",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds/cdsCreationModificationDatesAndIds/modifiedOn",
+          "isNullable": true,
+          "dataFormat": "DateTime",
+          "sourceName": "modifiedon",
+          "displayName": "Modified On",
+          "description": "Date and time when the record was modified."
+        },
+        {
+          "name": "modifiedBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            "means.userId",
+            "is.CDS.standard",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "User.cdm.json/User",
+                        "systemUserId"
+                      ],
+                      [
+                        "foundationCommon/crmCommon/projectCommon/User.cdm.json/User",
+                        "systemUserId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds/cdsCreationModificationDatesAndIds/User_modifiedBy/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "modifiedby",
+          "displayName": "Modified By",
+          "description": "Unique identifier of the user who modified the record."
+        },
+        {
+          "name": "createdOnBehalfBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            "means.userId",
+            "is.CDS.standard",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "User.cdm.json/User",
+                        "systemUserId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds/cdsCreationModificationDatesAndIds/User_createdOnBehalfBy/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "createdonbehalfby",
+          "displayName": "Created By (Delegate)",
+          "description": "Unique identifier of the delegate user who created the record."
+        },
+        {
+          "name": "modifiedOnBehalfBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            "means.userId",
+            "is.CDS.standard",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "User.cdm.json/User",
+                        "systemUserId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds/cdsCreationModificationDatesAndIds/User_modifiedOnBehalfBy/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "modifiedonbehalfby",
+          "displayName": "Modified By (Delegate)",
+          "description": "Unique identifier of the delegate user who modified the record."
+        },
+        {
+          "name": "overriddenCreatedOn",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date",
+            "is.dataFormat.time",
+            "means.measurement.time",
+            "means.measurement.date.creation",
+            "is.CDS.standard",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds/cdsCreationModificationDatesAndIds/overriddenCreatedOn",
+          "isNullable": true,
+          "dataFormat": "DateTime",
+          "sourceName": "overriddencreatedon",
+          "displayName": "Record Created On",
+          "description": "Date and time that the record was migrated."
+        },
+        {
+          "name": "importSequenceNumber",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds/cdsCreationModificationDatesAndIds/importSequenceNumber",
+          "isNullable": true,
+          "dataFormat": "Int32",
+          "sourceName": "importsequencenumber",
+          "displayName": "Import Sequence Number",
+          "description": "Sequence number of the import that created this record.",
+          "maximumValue": "2147483647",
+          "minimumValue": "-2147483648"
+        },
+        {
+          "name": "ownerId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            "is.CDS.standard",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "User.cdm.json/User",
+                        "systemUserId"
+                      ],
+                      [
+                        "Team.cdm.json/Team",
+                        "teamId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            },
+            "is.CDS.owner"
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo/ownerIdAttribute/ownerIdAttribute/owner/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid",
+          "sourceName": "ownerid",
+          "displayName": "Owner",
+          "description": "Owner Id"
+        },
+        {
+          "name": "ownerIdType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.entityName",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            },
+            "is.linkedEntity.name",
+            "is.CDS.owner"
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo/ownerIdAttribute/ownerIdAttribute/owner/_generatedAttributeSet/_generatedAttributeRound0/_selectedEntityName",
+          "isReadOnly": true,
+          "dataFormat": "String",
+          "sourceName": "owneridtype",
+          "displayName": "Owner Type",
+          "description": "The type of owner, either User or Team."
+        },
+        {
+          "name": "owningBusinessUnit",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            "is.CDS.standard",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "BusinessUnit.cdm.json/BusinessUnit",
+                        "businessUnitId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo/BusinessUnit_owningBusinessUnit/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "owningbusinessunit",
+          "displayName": "Owning Business Unit",
+          "description": "Unique identifier for the business unit that owns the record"
+        },
+        {
+          "name": "owningUser",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            "means.userId",
+            "is.CDS.standard",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "User.cdm.json/User",
+                        "systemUserId"
+                      ],
+                      [
+                        "foundationCommon/crmCommon/projectCommon/User.cdm.json/User",
+                        "systemUserId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo/User_owningUser/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "owninguser",
+          "displayName": "Owning User",
+          "description": "Unique identifier of the user that owns the activity."
+        },
+        {
+          "name": "owningTeam",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            "is.CDS.standard",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "Team.cdm.json/Team",
+                        "teamId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo/Team_owningTeam/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "owningteam",
+          "displayName": "Owning Team",
+          "description": "Unique identifier for the team that owns the record."
+        },
+        {
+          "name": "timeZoneRuleVersionNumber",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            "is.CDS.standard",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsTimeZoneInfo/cdsTimeZoneInfo/timeZoneRuleVersionNumber",
+          "isNullable": true,
+          "dataFormat": "Int32",
+          "sourceName": "timezoneruleversionnumber",
+          "displayName": "Time Zone Rule Version Number",
+          "description": "For internal use only.",
+          "maximumValue": "2147483647",
+          "minimumValue": "-1"
+        },
+        {
+          "name": "UTCConversionTimeZoneCode",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            "is.CDS.standard",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsTimeZoneInfo/cdsTimeZoneInfo/UTCConversionTimeZoneCode",
+          "isNullable": true,
+          "dataFormat": "Int32",
+          "sourceName": "utcconversiontimezonecode",
+          "displayName": "UTC Conversion Time Zone Code",
+          "description": "Time zone code that was in use when the record was created.",
+          "maximumValue": "2147483647",
+          "minimumValue": "-1"
+        },
+        {
+          "name": "versionNumber",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            "is.dataFormat.big",
+            "means.measurement.version",
+            "is.CDS.standard",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsVersionTracking/cdsVersionTracking/versionNumber",
+          "isNullable": true,
+          "dataFormat": "Int64",
+          "sourceName": "versionnumber",
+          "displayName": "Version Number",
+          "description": "Version Number"
+        },
+        {
+          "name": "activityId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": []
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/activityCommon/activityCommon/activity/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isPrimaryKey": true,
+          "dataFormat": "Guid",
+          "sourceName": "activityid",
+          "displayName": "Activity",
+          "description": "Unique identifier of the activity."
+        },
+        {
+          "name": "activityTypeCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.entityName",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            },
+            "is.linkedEntity.name"
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/activityCommon/activityCommon/activity/_generatedAttributeSet/_generatedAttributeRound0/_selectedEntityName",
+          "isReadOnly": true,
+          "dataFormat": "String",
+          "sourceName": "activitytypecode",
+          "displayName": "Activity Type",
+          "description": "Type of activity.",
+          "defaultValue": [
+            {
+              "languageTag": "en",
+              "displayText": "Fax",
+              "attributeValue": null,
+              "displayOrder": null
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Phone Call",
+              "attributeValue": null,
+              "displayOrder": null
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Email",
+              "attributeValue": null,
+              "displayOrder": null
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Letter",
+              "attributeValue": null,
+              "displayOrder": null
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Appointment",
+              "attributeValue": null,
+              "displayOrder": null
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Task",
+              "attributeValue": null,
+              "displayOrder": null
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Recurring Appointment",
+              "attributeValue": null,
+              "displayOrder": null
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Quick Campaign",
+              "attributeValue": null,
+              "displayOrder": null
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Campaign Activity",
+              "attributeValue": null,
+              "displayOrder": null
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Campaign Response",
+              "attributeValue": null,
+              "displayOrder": null
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Case Resolution",
+              "attributeValue": null,
+              "displayOrder": null
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Service Activity",
+              "attributeValue": null,
+              "displayOrder": null
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Opportunity Close",
+              "attributeValue": null,
+              "displayOrder": null
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Order Close",
+              "attributeValue": null,
+              "displayOrder": null
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Quote Close",
+              "attributeValue": null,
+              "displayOrder": null
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Alert Subscription",
+              "attributeValue": null,
+              "displayOrder": null
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Invite Redemption",
+              "attributeValue": null,
+              "displayOrder": null
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Portal Comment",
+              "attributeValue": null,
+              "displayOrder": null
+            }
+          ]
+        },
+        {
+          "name": "isBilled",
+          "appliedTraits": [
+            "is.dataFormat.boolean",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/activityCommon/activityCommon/isBilled",
+          "isNullable": true,
+          "dataFormat": "Boolean",
+          "sourceName": "isbilled",
+          "displayName": "Is Billed",
+          "description": "Information regarding whether the fax activity was billed as part of resolving a case."
+        },
+        {
+          "name": "isRegularActivity",
+          "appliedTraits": [
+            "is.dataFormat.boolean",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/activityCommon/activityCommon/isRegularActivity",
+          "dataFormat": "Boolean",
+          "sourceName": "isregularactivity",
+          "displayName": "Is Regular Activity",
+          "description": "Information regarding whether the activity is a regular activity type or event type."
+        },
+        {
+          "name": "isWorkflowCreated",
+          "appliedTraits": [
+            "is.dataFormat.boolean",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/activityCommon/activityCommon/isWorkflowCreated",
+          "isNullable": true,
+          "dataFormat": "Boolean",
+          "sourceName": "isworkflowcreated",
+          "displayName": "Is Workflow Created",
+          "description": "Information regarding whether the activity was created from a workflow rule."
+        },
+        {
+          "name": "priorityCode",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/activityCommon/activityCommon/priorityCode",
+          "isNullable": true,
+          "dataFormat": "Int32",
+          "sourceName": "prioritycode",
+          "displayName": "Priority",
+          "description": "Priority of the activity.",
+          "valueConstrainedToList": true,
+          "defaultValue": [
+            {
+              "languageTag": "en",
+              "displayText": "Low",
+              "attributeValue": "0",
+              "displayOrder": "0"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Normal",
+              "attributeValue": "1",
+              "displayOrder": "1"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "High",
+              "attributeValue": "2",
+              "displayOrder": "2"
+            }
+          ]
+        },
+        {
+          "name": "priorityCode_display",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.reference.displayText",
+            {
+              "traitReference": "is.addedInSupportOf",
+              "arguments": [
+                "priorityCode"
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/activityCommon/activityCommon/priorityCode/_generatedAttributeSet/_generatedAttributeRound0/supporting_priorityCode",
+          "isReadOnly": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "regardingObjectId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "KnowledgeBaseRecord.cdm.json/KnowledgeBaseRecord",
+                        "knowledgeBaseRecordId"
+                      ],
+                      [
+                        "KnowledgeArticle.cdm.json/KnowledgeArticle",
+                        "knowledgearticleId"
+                      ],
+                      [
+                        "Account.cdm.json/Account",
+                        "accountId"
+                      ],
+                      [
+                        "Contact.cdm.json/Contact",
+                        "contactId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/regardingObject/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "regardingobjectid",
+          "displayName": "Regarding",
+          "description": "Unique identifier of the object with which the activity is associated."
+        },
+        {
+          "name": "regardingObjectTypeCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.entityName",
+            "is.linkedEntity.name"
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/activityCommon/activityCommon/regardingObjectIdAttribute/regardingObjectIdAttribute/regardingObject/_generatedAttributeSet/_generatedAttributeRound0/_selectedEntityName",
+          "isReadOnly": true,
+          "dataFormat": "String",
+          "sourceName": "regardingobjecttypecode",
+          "displayName": "Regarding Type",
+          "description": "The name of the entity linked by regardingObjectId"
+        },
+        {
+          "name": "scheduledEnd",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date",
+            "is.dataFormat.time",
+            "means.measurement.time",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/activityCommon/activityCommon/scheduledEnd",
+          "isNullable": true,
+          "dataFormat": "DateTime",
+          "sourceName": "scheduledend",
+          "displayName": "Due Date",
+          "description": "Scheduled end time of the activity."
+        },
+        {
+          "name": "scheduledStart",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date",
+            "is.dataFormat.time",
+            "means.measurement.time",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/activityCommon/activityCommon/scheduledStart",
+          "isNullable": true,
+          "dataFormat": "DateTime",
+          "sourceName": "scheduledstart",
+          "displayName": "Start Date",
+          "description": "Scheduled start time of the activity."
+        },
+        {
+          "name": "sortDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date",
+            "is.dataFormat.time",
+            "means.measurement.time",
+            {
+              "traitReference": "is.ordered",
+              "arguments": [
+                "Appointment_Resolved/(resolvedAttributes)/sortDate"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/activityCommon/activityCommon/sortDate",
+          "isNullable": true,
+          "dataFormat": "DateTime",
+          "sourceName": "sortdate",
+          "displayName": "Sort Date",
+          "description": "Shows the date and time by which the activities are sorted."
+        },
+        {
+          "name": "subject",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "required"
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/activityCommon/activityCommon/subject",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "subject",
+          "displayName": "Subject",
+          "description": "Subject associated with the activity.",
+          "maximumLength": 200
+        },
+        {
+          "name": "scheduledDurationMinutes",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            {
+              "traitReference": "means.measurement.dimension.time",
+              "arguments": [
+                "time"
+              ]
+            },
+            "means.measurement.duration.minutes",
+            {
+              "traitReference": "has.measurement.fundamentalComponent.second",
+              "arguments": [
+                {
+                  "name": "fundamentalUnit",
+                  "value": "second"
+                },
+                {
+                  "name": "symbol",
+                  "value": "s"
+                },
+                {
+                  "name": "dimension",
+                  "value": "time"
+                },
+                {
+                  "name": "fundamentalExponent",
+                  "value": "1"
+                },
+                {
+                  "name": "fundamentalScale",
+                  "value": "60"
+                },
+                {
+                  "name": "fundamentalOffset",
+                  "value": "0"
+                }
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/activityCommon/activityCommon/scheduledDurationMinutes",
+          "isNullable": true,
+          "dataFormat": "Int32",
+          "sourceName": "scheduleddurationminutes",
+          "displayName": "Scheduled Duration",
+          "description": "Scheduled duration of the activity, specified in minutes.",
+          "maximumValue": "2147483647",
+          "minimumValue": "0"
+        },
+        {
+          "name": "actualDurationMinutes",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            {
+              "traitReference": "means.measurement.dimension.time",
+              "arguments": [
+                "time"
+              ]
+            },
+            "means.measurement.duration.minutes",
+            {
+              "traitReference": "has.measurement.fundamentalComponent.second",
+              "arguments": [
+                {
+                  "name": "fundamentalUnit",
+                  "value": "second"
+                },
+                {
+                  "name": "symbol",
+                  "value": "s"
+                },
+                {
+                  "name": "dimension",
+                  "value": "time"
+                },
+                {
+                  "name": "fundamentalExponent",
+                  "value": "1"
+                },
+                {
+                  "name": "fundamentalScale",
+                  "value": "60"
+                },
+                {
+                  "name": "fundamentalOffset",
+                  "value": "0"
+                }
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/activityCommon/activityCommon/actualDurationMinutes",
+          "isNullable": true,
+          "dataFormat": "Int32",
+          "sourceName": "actualdurationminutes",
+          "displayName": "Actual Duration",
+          "description": "Actual duration of the activity in minutes.",
+          "maximumValue": "2147483647",
+          "minimumValue": "0"
+        },
+        {
+          "name": "actualEnd",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date",
+            "is.dataFormat.time",
+            "means.measurement.time",
+            "means.measurement.date.end",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/activityCommon/activityCommon/actualEnd",
+          "isNullable": true,
+          "dataFormat": "DateTime",
+          "sourceName": "actualend",
+          "displayName": "Actual End",
+          "description": "Actual end time of the activity."
+        },
+        {
+          "name": "actualStart",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date",
+            "is.dataFormat.time",
+            "means.measurement.time",
+            "means.measurement.date.start",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/extends/ActivityCommon/activityCommon/activityCommon/actualStart",
+          "isNullable": true,
+          "dataFormat": "DateTime",
+          "sourceName": "actualstart",
+          "displayName": "Actual Start",
+          "description": "Actual start time of the activity."
+        },
+        {
+          "name": "category",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.category",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityCategory/activityCategory/category",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "category",
+          "displayName": "Category",
+          "description": "Type a category to identify the activity type, such as lead outreach, customer follow-up, or service alert, to tie the eactivity to a business group or function.",
+          "maximumLength": 250
+        },
+        {
+          "name": "subcategory",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityCategory/activityCategory/subcategory",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "subcategory",
+          "displayName": "Sub-Category",
+          "description": "Type a subcategory to identify the activity type and relate the activity to a specific product, sales region, business group, or other function.",
+          "maximumLength": 250
+        },
+        {
+          "name": "activityAdditionalParams",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.content.text.JSON",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityAdditionalParams/activityAdditionalParams/activityAdditionalParams",
+          "isNullable": true,
+          "dataFormat": "Json",
+          "sourceName": "activityadditionalparams",
+          "displayName": "Activity Additional Parameters",
+          "description": "Additional information provided by the external application as JSON. For internal use only.",
+          "maximumLength": 8192
+        },
+        {
+          "name": "instanceTypeCode",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityInstanceTypeCode/activityInstanceTypeCode/instanceTypeCode",
+          "dataFormat": "Int32",
+          "sourceName": "instancetypecode",
+          "displayName": "Recurring Instance Type",
+          "description": "Type of instance of a recurring series.",
+          "valueConstrainedToList": true,
+          "defaultValue": [
+            {
+              "languageTag": "en",
+              "displayText": "Not Recurring",
+              "attributeValue": "0",
+              "displayOrder": "0"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Recurring Master",
+              "attributeValue": "1",
+              "displayOrder": "1"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Recurring Instance",
+              "attributeValue": "2",
+              "displayOrder": "2"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Recurring Exception",
+              "attributeValue": "3",
+              "displayOrder": "3"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Recurring Future Exception",
+              "attributeValue": "4",
+              "displayOrder": "4"
+            }
+          ]
+        },
+        {
+          "name": "instanceTypeCode_display",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.reference.displayText",
+            {
+              "traitReference": "is.addedInSupportOf",
+              "arguments": [
+                "instanceTypeCode"
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityInstanceTypeCode/activityInstanceTypeCode/instanceTypeCode/_generatedAttributeSet/_generatedAttributeRound0/supporting_instanceTypeCode",
+          "isReadOnly": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "isMapiPrivate",
+          "appliedTraits": [
+            "is.dataFormat.boolean",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityIsMAPIPrivate/activityIsMAPIPrivate/isMapiPrivate",
+          "isNullable": true,
+          "dataFormat": "Boolean",
+          "sourceName": "ismapiprivate",
+          "displayName": "Is Private",
+          "description": "For internal use only."
+        },
+        {
+          "name": "organizer",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "is.CDS.partyList",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityAttendees/activityAttendees/organizer",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "organizer",
+          "displayName": "Organizer",
+          "description": "The user who is in charge of coordinating or leading the activity."
+        },
+        {
+          "name": "requiredAttendees",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "is.CDS.partyList",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "multi"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityAttendees/activityAttendees/requiredAttendees",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "requiredattendees",
+          "displayName": "Required Attendees",
+          "description": "Enter the account, contact, lead, user, or other equipment resources that are required to attend the recurring appointment."
+        },
+        {
+          "name": "optionalAttendees",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "is.CDS.partyList",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "multi"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityAttendees/activityAttendees/optionalAttendees",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "optionalattendees",
+          "displayName": "Optional Attendees",
+          "description": "Enter the account, contact, lead, user, or other equipment resources that are not needed at the recurring appointment, but can optionally attend."
+        },
+        {
+          "name": "isAllDayEvent",
+          "appliedTraits": [
+            "is.dataFormat.boolean",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/isAllDayEvent",
+          "isNullable": true,
+          "dataFormat": "Boolean",
+          "sourceName": "isalldayevent",
+          "sourceOrdering": 4,
+          "displayName": "All Day Event",
+          "description": "Select whether the appointment is an all-day event to make sure that the required resources are scheduled for the full day."
+        },
+        {
+          "name": "description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/description",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "description",
+          "sourceOrdering": 11,
+          "displayName": "Description",
+          "description": "Type additional information to describe the purpose of the appointment.",
+          "maximumLength": 1048576
+        },
+        {
+          "name": "globalObjectId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/globalObjectId",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "globalobjectid",
+          "sourceOrdering": 16,
+          "displayName": "Outlook Appointment",
+          "description": "Shows the ID of the appointment in Microsoft Office Outlook. The ID is used to synchronize the appointment between Microsoft Dynamics 365 and the correct Exchange account.",
+          "maximumLength": 300
+        },
+        {
+          "name": "statusCode",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            {
+              "traitReference": "is.correlatedWith",
+              "arguments": [
+                "stateCode"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/statusCode",
+          "isNullable": true,
+          "dataFormat": "Int32",
+          "sourceName": "statuscode",
+          "sourceOrdering": 18,
+          "displayName": "Status Reason",
+          "description": "Select the appointment's status.",
+          "defaultValue": [
+            {
+              "languageTag": "en",
+              "displayText": "Free",
+              "attributeValue": "1",
+              "displayOrder": "0",
+              "correlatedValue": "0"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Tentative",
+              "attributeValue": "2",
+              "displayOrder": "1",
+              "correlatedValue": "0"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Completed",
+              "attributeValue": "3",
+              "displayOrder": "2",
+              "correlatedValue": "1"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Canceled",
+              "attributeValue": "4",
+              "displayOrder": "3",
+              "correlatedValue": "2"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Busy",
+              "attributeValue": "5",
+              "displayOrder": "4",
+              "correlatedValue": "3"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Out of Office",
+              "attributeValue": "6",
+              "displayOrder": "5",
+              "correlatedValue": "3"
+            }
+          ]
+        },
+        {
+          "name": "statusCode_display",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.reference.displayText",
+            {
+              "traitReference": "is.addedInSupportOf",
+              "arguments": [
+                "statusCode"
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/statusCode/_generatedAttributeSet/_generatedAttributeRound0/supporting_statusCode",
+          "isReadOnly": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "outlookOwnerApptId",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/outlookOwnerApptId",
+          "isNullable": true,
+          "dataFormat": "Int32",
+          "sourceName": "outlookownerapptid",
+          "sourceOrdering": 19,
+          "displayName": "Outlook Appointment Owner",
+          "description": "Unique identifier of the Microsoft Office Outlook appointment owner that correlates to the PR_OWNER_APPT_ID MAPI property.",
+          "maximumValue": "2147483647",
+          "minimumValue": "-2147483648"
+        },
+        {
+          "name": "location",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/location",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "location",
+          "sourceOrdering": 22,
+          "displayName": "Location",
+          "description": "Type the location where the appointment will take place, such as a conference room or customer office.",
+          "maximumLength": 200
+        },
+        {
+          "name": "stateCode",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            {
+              "traitReference": "means.entityState",
+              "arguments": [
+                "Appointment_Resolved/(resolvedAttributes)/stateCode"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/stateCode",
+          "dataFormat": "Int32",
+          "sourceName": "statecode",
+          "sourceOrdering": 29,
+          "displayName": "Status",
+          "description": "Shows whether the appointment is open, completed, or canceled. Completed and canceled appointments are read-only and can't be edited.",
+          "valueConstrainedToList": true,
+          "defaultValue": [
+            {
+              "languageTag": "en",
+              "displayText": "Open",
+              "attributeValue": "0",
+              "displayOrder": "0"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Completed",
+              "attributeValue": "1",
+              "displayOrder": "1"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Canceled",
+              "attributeValue": "2",
+              "displayOrder": "2"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Scheduled",
+              "attributeValue": "3",
+              "displayOrder": "3"
+            }
+          ]
+        },
+        {
+          "name": "stateCode_display",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.reference.displayText",
+            {
+              "traitReference": "is.addedInSupportOf",
+              "arguments": [
+                "stateCode"
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/stateCode/_generatedAttributeSet/_generatedAttributeRound0/supporting_stateCode",
+          "isReadOnly": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "traversedPath",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/traversedPath",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "traversedpath",
+          "sourceOrdering": 60,
+          "displayName": "Traversed Path",
+          "description": "For internal use only.",
+          "maximumLength": 1250
+        },
+        {
+          "name": "modifiedFieldsMask",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/modifiedFieldsMask",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "modifiedfieldsmask",
+          "sourceOrdering": 62,
+          "displayName": "Modified Fields Mask",
+          "description": "For internal use only. ",
+          "maximumLength": 1073741823
+        },
+        {
+          "name": "seriesId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "RecurringAppointment.cdm.json/RecurringAppointment",
+                        "activityId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/series/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "seriesid",
+          "sourceOrdering": 63,
+          "displayName": "Series Id",
+          "description": "Shows the ID of the recurring series of an instance."
+        },
+        {
+          "name": "originalStartDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date",
+            "is.dataFormat.time",
+            "means.measurement.time",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/originalStartDate",
+          "isNullable": true,
+          "dataFormat": "DateTime",
+          "sourceName": "originalstartdate",
+          "sourceOrdering": 64,
+          "displayName": "Original Start Date",
+          "description": "The original start date of the appointment."
+        },
+        {
+          "name": "transactionCurrencyId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "Currency.cdm.json/Currency",
+                        "transactionCurrencyId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/transactionCurrency/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "transactioncurrencyid",
+          "sourceOrdering": 79,
+          "displayName": "Currency",
+          "description": "Choose the local currency for the record to make sure budgets are reported in the correct currency."
+        },
+        {
+          "name": "exchangeRate",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/exchangeRate",
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "sourceName": "exchangerate",
+          "sourceOrdering": 81,
+          "displayName": "Exchange Rate",
+          "description": "Shows the conversion rate of the record's currency. The exchange rate is used to convert all money fields in the record from the local currency to the system's default currency.",
+          "maximumValue": "100000000000",
+          "minimumValue": "1E-10"
+        },
+        {
+          "name": "processId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/processId",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "processid",
+          "sourceOrdering": 84,
+          "displayName": "Process",
+          "description": "Shows the ID of the process."
+        },
+        {
+          "name": "stageId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/stageId",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "stageid",
+          "sourceOrdering": 85,
+          "displayName": "Process Stage",
+          "description": "Shows the ID of the stage."
+        },
+        {
+          "name": "attachmentErrors",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/attachmentErrors",
+          "isNullable": true,
+          "dataFormat": "Int32",
+          "sourceName": "attachmenterrors",
+          "sourceOrdering": 86,
+          "displayName": "AttachmentErrors",
+          "description": "Select the error code to identify issues with the outlook item recipients or attachments, such as blocked attachments.",
+          "valueConstrainedToList": true,
+          "defaultValue": [
+            {
+              "languageTag": "en",
+              "displayText": "None",
+              "attributeValue": "0",
+              "displayOrder": "0"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "The appointment was saved as a Microsoft Dynamics 365 appointment record, but not all the attachments could be saved with it. An attachment cannot be saved if it is blocked or if its file type is invalid.",
+              "attributeValue": "1",
+              "displayOrder": "1"
+            }
+          ]
+        },
+        {
+          "name": "attachmentErrors_display",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.reference.displayText",
+            {
+              "traitReference": "is.addedInSupportOf",
+              "arguments": [
+                "attachmentErrors"
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/attachmentErrors/_generatedAttributeSet/_generatedAttributeRound0/supporting_attachmentErrors",
+          "isReadOnly": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "attachmentCount",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/attachmentCount",
+          "dataFormat": "Int32",
+          "sourceName": "attachmentcount",
+          "sourceOrdering": 88,
+          "displayName": "Attachment Count",
+          "description": "Shows the number of attachments on the appointment.",
+          "maximumValue": "2147483647",
+          "minimumValue": "0"
+        },
+        {
+          "name": "SLAId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "SLA.cdm.json/SLA",
+                        "SLAId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/SLA/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "slaid",
+          "sourceOrdering": 91,
+          "displayName": "SLA",
+          "description": "Choose the service level agreement (SLA) that you want to apply to the appointment record."
+        },
+        {
+          "name": "SLAInvokedId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "SLA.cdm.json/SLA",
+                        "SLAId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/SLAInvoked/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "slainvokedid",
+          "sourceOrdering": 92,
+          "displayName": "Last SLA applied",
+          "description": "Last SLA that was applied to this appointment. This field is for internal use only."
+        },
+        {
+          "name": "onHoldTime",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/onHoldTime",
+          "isNullable": true,
+          "dataFormat": "Int32",
+          "sourceName": "onholdtime",
+          "sourceOrdering": 93,
+          "displayName": "On Hold Time (Minutes)",
+          "description": "Shows how long, in minutes, that the record was on hold.",
+          "maximumValue": "2147483647",
+          "minimumValue": "-2147483648"
+        },
+        {
+          "name": "lastOnHoldTime",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date",
+            "is.dataFormat.time",
+            "means.measurement.time",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/lastOnHoldTime",
+          "isNullable": true,
+          "dataFormat": "DateTime",
+          "sourceName": "lastonholdtime",
+          "sourceOrdering": 94,
+          "displayName": "Last On Hold Time",
+          "description": "Contains the date and time stamp of the last on hold time."
+        },
+        {
+          "name": "isUnsafe",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/isUnsafe",
+          "isNullable": true,
+          "dataFormat": "Int32",
+          "sourceName": "isunsafe",
+          "sourceOrdering": 98,
+          "displayName": "IsUnsafe",
+          "description": "For internal use only.",
+          "maximumValue": "2147483647",
+          "minimumValue": "0"
+        },
+        {
+          "name": "isDraft",
+          "appliedTraits": [
+            "is.dataFormat.boolean",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            }
+          ],
+          "attributeContext": "Appointment_Resolved/attributeContext/Appointment_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/isDraft",
+          "dataFormat": "Boolean",
+          "sourceName": "isdraft",
+          "sourceOrdering": 99,
+          "displayName": "IsDraft",
+          "description": "Information regarding whether the appointment is a draft."
+        }
+      ],
+      "sourceName": "Appointment",
+      "displayName": "Appointment",
+      "description": "Commitment representing a time interval with start/end times and duration.",
+      "version": "1.4",
+      "cdmSchemas": [
+        "/core/wellKnownCDSAttributeGroups.cdm.json/cdsCreationModificationDatesAndIds",
+        "/core/wellKnownCDSAttributeGroups.cdm.json/cdsOwnershipInfo",
+        "/core/wellKnownCDSAttributeGroups.cdm.json/cdsTimeZoneInfo",
+        "/core/wellKnownCDSAttributeGroups.cdm.json/cdsVersionTracking",
+        "/core/wellKnownCDSAttributeGroups.cdm.json/activityCommon",
+        "/core/applicationCommon/Appointment.cdm.json/Appointment/hasAttributes/attributesAddedAtThisScope"
+      ]
+    }
+  ],
+  "documentVersion": "1.4"
+}

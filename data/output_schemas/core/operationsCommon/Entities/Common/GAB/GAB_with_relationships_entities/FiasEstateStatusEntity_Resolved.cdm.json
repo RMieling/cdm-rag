@@ -1,0 +1,260 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "FiasEstateStatusEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "FiasEstateStatusEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "FiasEstateStatusEntity_Resolved",
+        "definition": "resolvedFrom/FiasEstateStatusEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "FiasEstateStatusEntity_Resolved/attributeContext/FiasEstateStatusEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "FiasEstateStatusEntity_Resolved/attributeContext/FiasEstateStatusEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "EstStatId",
+            "parent": "FiasEstateStatusEntity_Resolved/attributeContext/FiasEstateStatusEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/FiasEstateStatusEntity/hasAttributes/EstStatId",
+            "contents": [
+              "FiasEstateStatusEntity_Resolved/hasAttributes/EstStatId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "FiasEstateStatusEntity_Resolved/attributeContext/FiasEstateStatusEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/FiasEstateStatusEntity/hasAttributes/Name",
+            "contents": [
+              "FiasEstateStatusEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_FiasEstateStatusRelationship",
+            "parent": "FiasEstateStatusEntity_Resolved/attributeContext/FiasEstateStatusEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/FiasEstateStatusEntity/hasAttributes/BackingTable_FiasEstateStatusRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "FiasEstateStatus",
+                "parent": "FiasEstateStatusEntity_Resolved/attributeContext/FiasEstateStatusEntity_Resolved/BackingTable_FiasEstateStatusRelationship",
+                "definition": "resolvedFrom/FiasEstateStatus",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "FiasEstateStatusEntity_Resolved/attributeContext/FiasEstateStatusEntity_Resolved/BackingTable_FiasEstateStatusRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "FiasEstateStatusEntity_Resolved/attributeContext/FiasEstateStatusEntity_Resolved/BackingTable_FiasEstateStatusRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "FiasEstateStatusEntity_Resolved/attributeContext/FiasEstateStatusEntity_Resolved/BackingTable_FiasEstateStatusRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "FiasEstateStatusEntity_Resolved/hasAttributes/BackingTable_FiasEstateStatusRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "FiasEstateStatusEntity_Resolved/attributeContext/FiasEstateStatusEntity_Resolved",
+            "definition": "resolvedFrom/FiasEstateStatusEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "FiasEstateStatusEntity_Resolved/attributeContext/FiasEstateStatusEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "FiasEstateStatusEntity_Resolved/attributeContext/FiasEstateStatusEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "FiasEstateStatusEntity_Resolved/attributeContext/FiasEstateStatusEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "FiasEstateStatusEntity_Resolved/attributeContext/FiasEstateStatusEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "FiasEstateStatusEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "EstStatId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "FiasEstateStatusEntity_Resolved/attributeContext/FiasEstateStatusEntity_Resolved/EstStatId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "FiasEstateStatusEntity_Resolved/attributeContext/FiasEstateStatusEntity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_FiasEstateStatusRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Common/GAB/Miscellaneous/FiasEstateStatus.cdm.json/FiasEstateStatus",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "FiasEstateStatusEntity_Resolved/attributeContext/FiasEstateStatusEntity_Resolved/BackingTable_FiasEstateStatusRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "FiasEstateStatusEntity_Resolved/attributeContext/FiasEstateStatusEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

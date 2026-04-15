@@ -1,0 +1,261 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "CredManPaymTermRankEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "CredManPaymTermRankEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "CredManPaymTermRankEntity_Resolved",
+        "definition": "resolvedFrom/CredManPaymTermRankEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "CredManPaymTermRankEntity_Resolved/attributeContext/CredManPaymTermRankEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "CredManPaymTermRankEntity_Resolved/attributeContext/CredManPaymTermRankEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "PaymentTerms",
+            "parent": "CredManPaymTermRankEntity_Resolved/attributeContext/CredManPaymTermRankEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CredManPaymTermRankEntity/hasAttributes/PaymentTerms",
+            "contents": [
+              "CredManPaymTermRankEntity_Resolved/hasAttributes/PaymentTerms"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "PaymentTermsRanking",
+            "parent": "CredManPaymTermRankEntity_Resolved/attributeContext/CredManPaymTermRankEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CredManPaymTermRankEntity/hasAttributes/PaymentTermsRanking",
+            "contents": [
+              "CredManPaymTermRankEntity_Resolved/hasAttributes/PaymentTermsRanking"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_PaymTermRelationship",
+            "parent": "CredManPaymTermRankEntity_Resolved/attributeContext/CredManPaymTermRankEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CredManPaymTermRankEntity/hasAttributes/BackingTable_PaymTermRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "PaymTerm",
+                "parent": "CredManPaymTermRankEntity_Resolved/attributeContext/CredManPaymTermRankEntity_Resolved/BackingTable_PaymTermRelationship",
+                "definition": "resolvedFrom/PaymTerm",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CredManPaymTermRankEntity_Resolved/attributeContext/CredManPaymTermRankEntity_Resolved/BackingTable_PaymTermRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CredManPaymTermRankEntity_Resolved/attributeContext/CredManPaymTermRankEntity_Resolved/BackingTable_PaymTermRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CredManPaymTermRankEntity_Resolved/attributeContext/CredManPaymTermRankEntity_Resolved/BackingTable_PaymTermRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CredManPaymTermRankEntity_Resolved/hasAttributes/BackingTable_PaymTermRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "CredManPaymTermRankEntity_Resolved/attributeContext/CredManPaymTermRankEntity_Resolved",
+            "definition": "resolvedFrom/CredManPaymTermRankEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "CredManPaymTermRankEntity_Resolved/attributeContext/CredManPaymTermRankEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CredManPaymTermRankEntity_Resolved/attributeContext/CredManPaymTermRankEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CredManPaymTermRankEntity_Resolved/attributeContext/CredManPaymTermRankEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CredManPaymTermRankEntity_Resolved/attributeContext/CredManPaymTermRankEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CredManPaymTermRankEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "PaymentTerms",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CredManPaymTermRankEntity_Resolved/attributeContext/CredManPaymTermRankEntity_Resolved/PaymentTerms",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "PaymentTermsRanking",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CredManPaymTermRankEntity_Resolved/attributeContext/CredManPaymTermRankEntity_Resolved/PaymentTermsRanking",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_PaymTermRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Bank/Group/PaymTerm.cdm.json/PaymTerm",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CredManPaymTermRankEntity_Resolved/attributeContext/CredManPaymTermRankEntity_Resolved/BackingTable_PaymTermRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CredManPaymTermRankEntity_Resolved/attributeContext/CredManPaymTermRankEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Ranking of payment terms",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

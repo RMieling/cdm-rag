@@ -1,0 +1,1528 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "Team.cdm.json",
+      "moniker": "resolvedFrom"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "Team_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "Team_Resolved",
+        "definition": "resolvedFrom/Team",
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "Team_Resolved/attributeContext/Team_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CdmEntity",
+                "parent": "Team_Resolved/attributeContext/Team_Resolved/extends",
+                "definition": "resolvedFrom/CdmEntity"
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "attributesAddedAtThisScope",
+            "parent": "Team_Resolved/attributeContext/Team_Resolved",
+            "definition": "resolvedFrom/Team/hasAttributes/attributesAddedAtThisScope",
+            "contents": [
+              {
+                "type": "attributeGroup",
+                "name": "attributesAddedAtThisScope",
+                "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope",
+                "definition": "resolvedFrom/Team/hasAttributes/attributesAddedAtThisScope",
+                "contents": [
+                  {
+                    "type": "attributeDefinition",
+                    "name": "teamId",
+                    "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Team/hasAttributes/attributesAddedAtThisScope/members/teamId",
+                    "contents": [
+                      "Team_Resolved/hasAttributes/teamId"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "organization",
+                    "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Team/hasAttributes/attributesAddedAtThisScope/members/organization",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "Organization",
+                        "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/organization",
+                        "definition": "resolvedFrom/Organization"
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/organization",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/organization/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/organization/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/Team/hasAttributes/attributesAddedAtThisScope/members/organization/resolutionGuidance/foreignKeyAttribute/id",
+                                "contents": [
+                                  "Team_Resolved/hasAttributes/organizationId"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "businessUnit",
+                    "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Team/hasAttributes/attributesAddedAtThisScope/members/businessUnit",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "BusinessUnit",
+                        "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/businessUnit",
+                        "definition": "resolvedFrom/BusinessUnit"
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/businessUnit",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/businessUnit/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/businessUnit/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/Team/hasAttributes/attributesAddedAtThisScope/members/businessUnit/resolutionGuidance/foreignKeyAttribute/id",
+                                "contents": [
+                                  "Team_Resolved/hasAttributes/businessUnitId"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "name",
+                    "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Team/hasAttributes/attributesAddedAtThisScope/members/name",
+                    "contents": [
+                      "Team_Resolved/hasAttributes/name"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "description",
+                    "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Team/hasAttributes/attributesAddedAtThisScope/members/description",
+                    "contents": [
+                      "Team_Resolved/hasAttributes/description"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "emailAddress",
+                    "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Team/hasAttributes/attributesAddedAtThisScope/members/emailAddress",
+                    "contents": [
+                      "Team_Resolved/hasAttributes/emailAddress"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "createdOn",
+                    "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Team/hasAttributes/attributesAddedAtThisScope/members/createdOn",
+                    "contents": [
+                      "Team_Resolved/hasAttributes/createdOn"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "modifiedOn",
+                    "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Team/hasAttributes/attributesAddedAtThisScope/members/modifiedOn",
+                    "contents": [
+                      "Team_Resolved/hasAttributes/modifiedOn"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "User_createdBy",
+                    "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Team/hasAttributes/attributesAddedAtThisScope/members/User_createdBy",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "User",
+                        "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdBy",
+                        "definition": "resolvedFrom/User"
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdBy",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdBy/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdBy/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/Team/hasAttributes/attributesAddedAtThisScope/members/User_createdBy/resolutionGuidance/foreignKeyAttribute/createdBy",
+                                "contents": [
+                                  "Team_Resolved/hasAttributes/createdBy"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "User_modifiedBy",
+                    "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Team/hasAttributes/attributesAddedAtThisScope/members/User_modifiedBy",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "User",
+                        "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedBy",
+                        "definition": "resolvedFrom/User"
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedBy",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedBy/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedBy/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/Team/hasAttributes/attributesAddedAtThisScope/members/User_modifiedBy/resolutionGuidance/foreignKeyAttribute/modifiedBy",
+                                "contents": [
+                                  "Team_Resolved/hasAttributes/modifiedBy"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "versionNumber",
+                    "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Team/hasAttributes/attributesAddedAtThisScope/members/versionNumber",
+                    "contents": [
+                      "Team_Resolved/hasAttributes/versionNumber"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "importSequenceNumber",
+                    "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Team/hasAttributes/attributesAddedAtThisScope/members/importSequenceNumber",
+                    "contents": [
+                      "Team_Resolved/hasAttributes/importSequenceNumber"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "overriddenCreatedOn",
+                    "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Team/hasAttributes/attributesAddedAtThisScope/members/overriddenCreatedOn",
+                    "contents": [
+                      "Team_Resolved/hasAttributes/overriddenCreatedOn"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "administrator",
+                    "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Team/hasAttributes/attributesAddedAtThisScope/members/administrator",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "User",
+                        "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/administrator",
+                        "definition": "resolvedFrom/User"
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/administrator",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/administrator/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/administrator/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/Team/hasAttributes/attributesAddedAtThisScope/members/administrator/resolutionGuidance/foreignKeyAttribute/id",
+                                "contents": [
+                                  "Team_Resolved/hasAttributes/administratorId"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "isDefault",
+                    "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Team/hasAttributes/attributesAddedAtThisScope/members/isDefault",
+                    "contents": [
+                      "Team_Resolved/hasAttributes/isDefault"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "yomiName",
+                    "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Team/hasAttributes/attributesAddedAtThisScope/members/yomiName",
+                    "contents": [
+                      "Team_Resolved/hasAttributes/yomiName"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "User_createdOnBehalfBy",
+                    "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Team/hasAttributes/attributesAddedAtThisScope/members/User_createdOnBehalfBy",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "User",
+                        "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdOnBehalfBy",
+                        "definition": "resolvedFrom/User"
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdOnBehalfBy",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdOnBehalfBy/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdOnBehalfBy/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/Team/hasAttributes/attributesAddedAtThisScope/members/User_createdOnBehalfBy/resolutionGuidance/foreignKeyAttribute/createdOnBehalfBy",
+                                "contents": [
+                                  "Team_Resolved/hasAttributes/createdOnBehalfBy"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "User_modifiedOnBehalfBy",
+                    "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Team/hasAttributes/attributesAddedAtThisScope/members/User_modifiedOnBehalfBy",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "User",
+                        "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedOnBehalfBy",
+                        "definition": "resolvedFrom/User"
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedOnBehalfBy",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedOnBehalfBy/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedOnBehalfBy/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/Team/hasAttributes/attributesAddedAtThisScope/members/User_modifiedOnBehalfBy/resolutionGuidance/foreignKeyAttribute/modifiedOnBehalfBy",
+                                "contents": [
+                                  "Team_Resolved/hasAttributes/modifiedOnBehalfBy"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "traversedPath",
+                    "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Team/hasAttributes/attributesAddedAtThisScope/members/traversedPath",
+                    "contents": [
+                      "Team_Resolved/hasAttributes/traversedPath"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "queue",
+                    "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Team/hasAttributes/attributesAddedAtThisScope/members/queue",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "Queue",
+                        "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/queue",
+                        "definition": "resolvedFrom/Queue",
+                        "appliedTraits": [
+                          {
+                            "traitReference": "means.entityState",
+                            "arguments": [
+                              "resolvedFrom/Queue/(resolvedAttributes)/stateCode"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/queue",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/queue/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/queue/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/Team/hasAttributes/attributesAddedAtThisScope/members/queue/resolutionGuidance/foreignKeyAttribute/id",
+                                "contents": [
+                                  "Team_Resolved/hasAttributes/queueId"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "transactionCurrency",
+                    "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Team/hasAttributes/attributesAddedAtThisScope/members/transactionCurrency",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "Currency",
+                        "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/transactionCurrency",
+                        "definition": "resolvedFrom/Currency",
+                        "appliedTraits": [
+                          {
+                            "traitReference": "means.entityState",
+                            "arguments": [
+                              "resolvedFrom/Currency/(resolvedAttributes)/stateCode"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/transactionCurrency",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/transactionCurrency/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/transactionCurrency/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/Team/hasAttributes/attributesAddedAtThisScope/members/transactionCurrency/resolutionGuidance/foreignKeyAttribute/id",
+                                "contents": [
+                                  "Team_Resolved/hasAttributes/transactionCurrencyId"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "exchangeRate",
+                    "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Team/hasAttributes/attributesAddedAtThisScope/members/exchangeRate",
+                    "contents": [
+                      "Team_Resolved/hasAttributes/exchangeRate"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "teamType",
+                    "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Team/hasAttributes/attributesAddedAtThisScope/members/teamType",
+                    "contents": [
+                      "Team_Resolved/hasAttributes/teamType",
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/teamType",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/teamType/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeSupporting",
+                                "name": "supporting_teamType",
+                                "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/teamType/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/Team/hasAttributes/attributesAddedAtThisScope/members/teamType",
+                                "contents": [
+                                  "Team_Resolved/hasAttributes/teamType_display"
+                                ],
+                                "lineage": [
+                                  "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/teamType"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "teamTemplateId",
+                    "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Team/hasAttributes/attributesAddedAtThisScope/members/teamTemplateId",
+                    "contents": [
+                      "Team_Resolved/hasAttributes/teamTemplateId"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "regardingObject",
+                    "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Team/hasAttributes/attributesAddedAtThisScope/members/regardingObject",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "KnowledgeArticle",
+                        "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/regardingObject",
+                        "definition": "resolvedFrom/KnowledgeArticle",
+                        "appliedTraits": [
+                          {
+                            "traitReference": "means.entityState",
+                            "arguments": [
+                              "resolvedFrom/KnowledgeArticle/(resolvedAttributes)/stateCode"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/regardingObject",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/regardingObject/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/regardingObject/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/Team/hasAttributes/attributesAddedAtThisScope/members/regardingObject/resolutionGuidance/foreignKeyAttribute/id",
+                                "contents": [
+                                  "Team_Resolved/hasAttributes/regardingObjectId"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "systemManaged",
+                    "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Team/hasAttributes/attributesAddedAtThisScope/members/systemManaged",
+                    "contents": [
+                      "Team_Resolved/hasAttributes/systemManaged"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "stageId",
+                    "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Team/hasAttributes/attributesAddedAtThisScope/members/stageId",
+                    "contents": [
+                      "Team_Resolved/hasAttributes/stageId"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "processId",
+                    "parent": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Team/hasAttributes/attributesAddedAtThisScope/members/processId",
+                    "contents": [
+                      "Team_Resolved/hasAttributes/processId"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "teamId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            }
+          ],
+          "attributeContext": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/teamId",
+          "isPrimaryKey": true,
+          "dataFormat": "Guid",
+          "sourceName": "teamid",
+          "sourceOrdering": 1,
+          "displayName": "Team",
+          "description": "Unique identifier for the team."
+        },
+        {
+          "name": "organizationId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "Organization.cdm.json/Organization",
+                        "organizationId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/organization/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid",
+          "sourceName": "organizationid",
+          "sourceOrdering": 3,
+          "displayName": "Organization ",
+          "description": "Unique identifier of the organization associated with the team."
+        },
+        {
+          "name": "businessUnitId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "BusinessUnit.cdm.json/BusinessUnit",
+                        "businessUnitId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/businessUnit/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid",
+          "sourceName": "businessunitid",
+          "sourceOrdering": 4,
+          "displayName": "Business Unit",
+          "description": "Unique identifier of the business unit with which the team is associated."
+        },
+        {
+          "name": "name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.identity.name",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            }
+          ],
+          "attributeContext": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/name",
+          "dataFormat": "String",
+          "sourceName": "name",
+          "sourceOrdering": 5,
+          "displayName": "Team Name",
+          "description": "Name of the team.",
+          "maximumLength": 160
+        },
+        {
+          "name": "description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/description",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "description",
+          "sourceOrdering": 6,
+          "displayName": "Description",
+          "description": "Description of the team.",
+          "maximumLength": 2000
+        },
+        {
+          "name": "emailAddress",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.identity.service.email",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/emailAddress",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "emailaddress",
+          "sourceOrdering": 7,
+          "displayName": "Email",
+          "description": "Email address for the team.",
+          "maximumLength": 100
+        },
+        {
+          "name": "createdOn",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date",
+            "is.dataFormat.time",
+            "means.measurement.time",
+            "means.measurement.date.creation",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/createdOn",
+          "isNullable": true,
+          "dataFormat": "DateTime",
+          "sourceName": "createdon",
+          "sourceOrdering": 8,
+          "displayName": "Created On",
+          "description": "Date and time when the team was created."
+        },
+        {
+          "name": "modifiedOn",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date",
+            "is.dataFormat.time",
+            "means.measurement.time",
+            "means.measurement.date.modify",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/modifiedOn",
+          "isNullable": true,
+          "dataFormat": "DateTime",
+          "sourceName": "modifiedon",
+          "sourceOrdering": 9,
+          "displayName": "Modified On",
+          "description": "Date and time when the team was last modified."
+        },
+        {
+          "name": "createdBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "User.cdm.json/User",
+                        "systemUserId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdBy/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "createdby",
+          "sourceOrdering": 10,
+          "displayName": "Created By",
+          "description": "Unique identifier of the user who created the team."
+        },
+        {
+          "name": "modifiedBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "User.cdm.json/User",
+                        "systemUserId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedBy/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "modifiedby",
+          "sourceOrdering": 12,
+          "displayName": "Modified By",
+          "description": "Unique identifier of the user who last modified the team."
+        },
+        {
+          "name": "versionNumber",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            "is.dataFormat.big",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/versionNumber",
+          "isNullable": true,
+          "dataFormat": "Int64",
+          "sourceName": "versionnumber",
+          "sourceOrdering": 14,
+          "displayName": "Version number",
+          "description": "Version number of the team."
+        },
+        {
+          "name": "importSequenceNumber",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/importSequenceNumber",
+          "isNullable": true,
+          "dataFormat": "Int32",
+          "sourceName": "importsequencenumber",
+          "sourceOrdering": 23,
+          "displayName": "Import Sequence Number",
+          "description": "Unique identifier of the data import or data migration that created this record.",
+          "maximumValue": "2147483647",
+          "minimumValue": "-2147483648"
+        },
+        {
+          "name": "overriddenCreatedOn",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date",
+            "is.dataFormat.time",
+            "means.measurement.time",
+            "means.measurement.date.creation",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/overriddenCreatedOn",
+          "isNullable": true,
+          "dataFormat": "DateTime",
+          "sourceName": "overriddencreatedon",
+          "sourceOrdering": 24,
+          "displayName": "Record Created On",
+          "description": "Date and time that the record was migrated."
+        },
+        {
+          "name": "administratorId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "User.cdm.json/User",
+                        "systemUserId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/administrator/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid",
+          "sourceName": "administratorid",
+          "sourceOrdering": 27,
+          "displayName": "Administrator",
+          "description": "Unique identifier of the user primary responsible for the team."
+        },
+        {
+          "name": "isDefault",
+          "appliedTraits": [
+            "is.dataFormat.boolean",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            }
+          ],
+          "attributeContext": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/isDefault",
+          "dataFormat": "Boolean",
+          "sourceName": "isdefault",
+          "sourceOrdering": 28,
+          "displayName": "Is Default",
+          "description": "Information about whether the team is a default business unit team."
+        },
+        {
+          "name": "yomiName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.identity.name",
+            "means.reference.phonetic",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/yomiName",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "yominame",
+          "sourceOrdering": 34,
+          "displayName": "Yomi Name",
+          "description": "Pronunciation of the full name of the team, written in phonetic hiragana or katakana characters.",
+          "maximumLength": 160
+        },
+        {
+          "name": "createdOnBehalfBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "User.cdm.json/User",
+                        "systemUserId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdOnBehalfBy/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "createdonbehalfby",
+          "sourceOrdering": 35,
+          "displayName": "Created By (Delegate)",
+          "description": "Unique identifier of the delegate user who created the team."
+        },
+        {
+          "name": "modifiedOnBehalfBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "User.cdm.json/User",
+                        "systemUserId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedOnBehalfBy/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "modifiedonbehalfby",
+          "sourceOrdering": 39,
+          "displayName": "Modified By (Delegate)",
+          "description": "Unique identifier of the delegate user who last modified the team."
+        },
+        {
+          "name": "traversedPath",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/traversedPath",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "traversedpath",
+          "sourceOrdering": 43,
+          "displayName": "Traversed Path",
+          "description": "For internal use only.",
+          "maximumLength": 1250
+        },
+        {
+          "name": "queueId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "Queue.cdm.json/Queue",
+                        "queueId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/queue/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "queueid",
+          "sourceOrdering": 95,
+          "displayName": "Default Queue",
+          "description": "Unique identifier of the default queue for the team."
+        },
+        {
+          "name": "transactionCurrencyId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "Currency.cdm.json/Currency",
+                        "transactionCurrencyId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/transactionCurrency/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "transactioncurrencyid",
+          "sourceOrdering": 98,
+          "displayName": "Currency",
+          "description": "Unique identifier of the currency associated with the team."
+        },
+        {
+          "name": "exchangeRate",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/exchangeRate",
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "sourceName": "exchangerate",
+          "sourceOrdering": 100,
+          "displayName": "Exchange Rate",
+          "description": "Exchange rate for the currency associated with the team with respect to the base currency.",
+          "maximumValue": "100000000000",
+          "minimumValue": "1E-10"
+        },
+        {
+          "name": "teamType",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            }
+          ],
+          "attributeContext": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/teamType",
+          "dataFormat": "Int32",
+          "sourceName": "teamtype",
+          "sourceOrdering": 102,
+          "displayName": "Team Type",
+          "description": "Select the team type.",
+          "valueConstrainedToList": true,
+          "defaultValue": [
+            {
+              "languageTag": "en",
+              "displayText": "Owner",
+              "attributeValue": "0",
+              "displayOrder": "0"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Access",
+              "attributeValue": "1",
+              "displayOrder": "1"
+            }
+          ]
+        },
+        {
+          "name": "teamType_display",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.reference.displayText",
+            {
+              "traitReference": "is.addedInSupportOf",
+              "arguments": [
+                "teamType"
+              ]
+            }
+          ],
+          "attributeContext": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/teamType/_generatedAttributeSet/_generatedAttributeRound0/supporting_teamType",
+          "isReadOnly": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "teamTemplateId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/teamTemplateId",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "teamtemplateid",
+          "sourceOrdering": 104,
+          "displayName": "Team Template Identifier",
+          "description": "Shows the team template that is associated with the team."
+        },
+        {
+          "name": "regardingObjectId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "KnowledgeArticle.cdm.json/KnowledgeArticle",
+                        "knowledgearticleId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/regardingObject/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "regardingobjectid",
+          "sourceOrdering": 105,
+          "displayName": "Regarding Object Id",
+          "description": "Choose the record that the team relates to."
+        },
+        {
+          "name": "systemManaged",
+          "appliedTraits": [
+            "is.dataFormat.boolean",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            }
+          ],
+          "attributeContext": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/systemManaged",
+          "dataFormat": "Boolean",
+          "sourceName": "systemmanaged",
+          "sourceOrdering": 106,
+          "displayName": "Is System Managed",
+          "description": "Select whether the team will be managed by the system."
+        },
+        {
+          "name": "stageId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/stageId",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "stageid",
+          "sourceOrdering": 109,
+          "displayName": "Process Stage",
+          "description": "Shows the ID of the stage."
+        },
+        {
+          "name": "processId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Team_Resolved/attributeContext/Team_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/processId",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "processid",
+          "sourceOrdering": 110,
+          "displayName": "Process",
+          "description": "Shows the ID of the process."
+        }
+      ],
+      "sourceName": "Team",
+      "displayName": "Team",
+      "description": "Collection of system users that routinely collaborate. Teams can be used to simplify record sharing and provide team members with common access to organization data when team members belong to different Business Units.",
+      "version": "1.3",
+      "cdmSchemas": [
+        "/core/applicationCommon/Team.cdm.json/Team/hasAttributes/attributesAddedAtThisScope"
+      ]
+    }
+  ],
+  "documentVersion": "1.3"
+}

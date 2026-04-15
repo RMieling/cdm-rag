@@ -1,0 +1,188 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "LogisticsAddressFormatEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "LogisticsAddressFormatEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "LogisticsAddressFormatEntity_Resolved",
+        "definition": "resolvedFrom/LogisticsAddressFormatEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "LogisticsAddressFormatEntity_Resolved/attributeContext/LogisticsAddressFormatEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "LogisticsAddressFormatEntity_Resolved/attributeContext/LogisticsAddressFormatEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "AddressFormat",
+            "parent": "LogisticsAddressFormatEntity_Resolved/attributeContext/LogisticsAddressFormatEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LogisticsAddressFormatEntity/hasAttributes/AddressFormat",
+            "contents": [
+              "LogisticsAddressFormatEntity_Resolved/hasAttributes/AddressFormat"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "LogisticsAddressFormatEntity_Resolved/attributeContext/LogisticsAddressFormatEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LogisticsAddressFormatEntity/hasAttributes/Description",
+            "contents": [
+              "LogisticsAddressFormatEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_LogisticsAddressFormatHeadingRelationship",
+            "parent": "LogisticsAddressFormatEntity_Resolved/attributeContext/LogisticsAddressFormatEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LogisticsAddressFormatEntity/hasAttributes/BackingTable_LogisticsAddressFormatHeadingRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "LogisticsAddressFormatHeading",
+                "parent": "LogisticsAddressFormatEntity_Resolved/attributeContext/LogisticsAddressFormatEntity_Resolved/BackingTable_LogisticsAddressFormatHeadingRelationship",
+                "definition": "resolvedFrom/LogisticsAddressFormatHeading",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "LogisticsAddressFormatEntity_Resolved/attributeContext/LogisticsAddressFormatEntity_Resolved/BackingTable_LogisticsAddressFormatHeadingRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "LogisticsAddressFormatEntity_Resolved/attributeContext/LogisticsAddressFormatEntity_Resolved/BackingTable_LogisticsAddressFormatHeadingRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "LogisticsAddressFormatEntity_Resolved/attributeContext/LogisticsAddressFormatEntity_Resolved/BackingTable_LogisticsAddressFormatHeadingRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "LogisticsAddressFormatEntity_Resolved/hasAttributes/BackingTable_LogisticsAddressFormatHeadingRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "AddressFormat",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LogisticsAddressFormatEntity_Resolved/attributeContext/LogisticsAddressFormatEntity_Resolved/AddressFormat",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LogisticsAddressFormatEntity_Resolved/attributeContext/LogisticsAddressFormatEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_LogisticsAddressFormatHeadingRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Common/GAB/Group/LogisticsAddressFormatHeading.cdm.json/LogisticsAddressFormatHeading",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "LogisticsAddressFormatEntity_Resolved/attributeContext/LogisticsAddressFormatEntity_Resolved/BackingTable_LogisticsAddressFormatHeadingRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Address format",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

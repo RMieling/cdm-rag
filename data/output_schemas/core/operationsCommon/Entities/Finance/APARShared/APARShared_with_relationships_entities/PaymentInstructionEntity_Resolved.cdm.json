@@ -1,0 +1,281 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "PaymentInstructionEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "PaymentInstructionEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "PaymentInstructionEntity_Resolved",
+        "definition": "resolvedFrom/PaymentInstructionEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "PaymentInstructionEntity_Resolved/attributeContext/PaymentInstructionEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "PaymentInstructionEntity_Resolved/attributeContext/PaymentInstructionEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "PaymentInstructionCode",
+            "parent": "PaymentInstructionEntity_Resolved/attributeContext/PaymentInstructionEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/PaymentInstructionEntity/hasAttributes/PaymentInstructionCode",
+            "contents": [
+              "PaymentInstructionEntity_Resolved/hasAttributes/PaymentInstructionCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "PaymentInstructionEntity_Resolved/attributeContext/PaymentInstructionEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/PaymentInstructionEntity/hasAttributes/Name",
+            "contents": [
+              "PaymentInstructionEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "PaymentInstructionEntity_Resolved/attributeContext/PaymentInstructionEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/PaymentInstructionEntity/hasAttributes/Description",
+            "contents": [
+              "PaymentInstructionEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_PaymInstructionRelationship",
+            "parent": "PaymentInstructionEntity_Resolved/attributeContext/PaymentInstructionEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/PaymentInstructionEntity/hasAttributes/BackingTable_PaymInstructionRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "PaymInstruction",
+                "parent": "PaymentInstructionEntity_Resolved/attributeContext/PaymentInstructionEntity_Resolved/BackingTable_PaymInstructionRelationship",
+                "definition": "resolvedFrom/PaymInstruction",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "PaymentInstructionEntity_Resolved/attributeContext/PaymentInstructionEntity_Resolved/BackingTable_PaymInstructionRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "PaymentInstructionEntity_Resolved/attributeContext/PaymentInstructionEntity_Resolved/BackingTable_PaymInstructionRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "PaymentInstructionEntity_Resolved/attributeContext/PaymentInstructionEntity_Resolved/BackingTable_PaymInstructionRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "PaymentInstructionEntity_Resolved/hasAttributes/BackingTable_PaymInstructionRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "PaymentInstructionEntity_Resolved/attributeContext/PaymentInstructionEntity_Resolved",
+            "definition": "resolvedFrom/PaymentInstructionEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "PaymentInstructionEntity_Resolved/attributeContext/PaymentInstructionEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "PaymentInstructionEntity_Resolved/attributeContext/PaymentInstructionEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "PaymentInstructionEntity_Resolved/attributeContext/PaymentInstructionEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "PaymentInstructionEntity_Resolved/attributeContext/PaymentInstructionEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "PaymentInstructionEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "PaymentInstructionCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "PaymentInstructionEntity_Resolved/attributeContext/PaymentInstructionEntity_Resolved/PaymentInstructionCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "PaymentInstructionEntity_Resolved/attributeContext/PaymentInstructionEntity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "PaymentInstructionEntity_Resolved/attributeContext/PaymentInstructionEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_PaymInstructionRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Bank/Parameter/PaymInstruction.cdm.json/PaymInstruction",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "PaymentInstructionEntity_Resolved/attributeContext/PaymentInstructionEntity_Resolved/BackingTable_PaymInstructionRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "PaymentInstructionEntity_Resolved/attributeContext/PaymentInstructionEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Payment instruction",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

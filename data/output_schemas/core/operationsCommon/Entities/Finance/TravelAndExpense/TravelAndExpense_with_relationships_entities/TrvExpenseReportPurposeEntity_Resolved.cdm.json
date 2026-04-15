@@ -1,0 +1,241 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "TrvExpenseReportPurposeEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TrvExpenseReportPurposeEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "TrvExpenseReportPurposeEntity_Resolved",
+        "definition": "resolvedFrom/TrvExpenseReportPurposeEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "TrvExpenseReportPurposeEntity_Resolved/attributeContext/TrvExpenseReportPurposeEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "TrvExpenseReportPurposeEntity_Resolved/attributeContext/TrvExpenseReportPurposeEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Purpose",
+            "parent": "TrvExpenseReportPurposeEntity_Resolved/attributeContext/TrvExpenseReportPurposeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvExpenseReportPurposeEntity/hasAttributes/Purpose",
+            "contents": [
+              "TrvExpenseReportPurposeEntity_Resolved/hasAttributes/Purpose"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_TrvTravelTxtRelationship",
+            "parent": "TrvExpenseReportPurposeEntity_Resolved/attributeContext/TrvExpenseReportPurposeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvExpenseReportPurposeEntity/hasAttributes/BackingTable_TrvTravelTxtRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "TrvTravelTxt",
+                "parent": "TrvExpenseReportPurposeEntity_Resolved/attributeContext/TrvExpenseReportPurposeEntity_Resolved/BackingTable_TrvTravelTxtRelationship",
+                "definition": "resolvedFrom/TrvTravelTxt",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TrvExpenseReportPurposeEntity_Resolved/attributeContext/TrvExpenseReportPurposeEntity_Resolved/BackingTable_TrvTravelTxtRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TrvExpenseReportPurposeEntity_Resolved/attributeContext/TrvExpenseReportPurposeEntity_Resolved/BackingTable_TrvTravelTxtRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TrvExpenseReportPurposeEntity_Resolved/attributeContext/TrvExpenseReportPurposeEntity_Resolved/BackingTable_TrvTravelTxtRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TrvExpenseReportPurposeEntity_Resolved/hasAttributes/BackingTable_TrvTravelTxtRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "TrvExpenseReportPurposeEntity_Resolved/attributeContext/TrvExpenseReportPurposeEntity_Resolved",
+            "definition": "resolvedFrom/TrvExpenseReportPurposeEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "TrvExpenseReportPurposeEntity_Resolved/attributeContext/TrvExpenseReportPurposeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TrvExpenseReportPurposeEntity_Resolved/attributeContext/TrvExpenseReportPurposeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TrvExpenseReportPurposeEntity_Resolved/attributeContext/TrvExpenseReportPurposeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TrvExpenseReportPurposeEntity_Resolved/attributeContext/TrvExpenseReportPurposeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TrvExpenseReportPurposeEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Purpose",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvExpenseReportPurposeEntity_Resolved/attributeContext/TrvExpenseReportPurposeEntity_Resolved/Purpose",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_TrvTravelTxtRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Expense/Reference/TrvTravelTxt.cdm.json/TrvTravelTxt",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TrvExpenseReportPurposeEntity_Resolved/attributeContext/TrvExpenseReportPurposeEntity_Resolved/BackingTable_TrvTravelTxtRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TrvExpenseReportPurposeEntity_Resolved/attributeContext/TrvExpenseReportPurposeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Expense purposes",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

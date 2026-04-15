@@ -1,0 +1,321 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "CustCollectionsBICasesOpen.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "CustCollectionsBICasesOpen_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "CustCollectionsBICasesOpen_Resolved",
+        "definition": "resolvedFrom/CustCollectionsBICasesOpen",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "CustCollectionsBICasesOpen_Resolved/attributeContext/CustCollectionsBICasesOpen_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "CustCollectionsBICasesOpen_Resolved/attributeContext/CustCollectionsBICasesOpen_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CaseId",
+            "parent": "CustCollectionsBICasesOpen_Resolved/attributeContext/CustCollectionsBICasesOpen_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCollectionsBICasesOpen/hasAttributes/CaseId",
+            "contents": [
+              "CustCollectionsBICasesOpen_Resolved/hasAttributes/CaseId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "CustCollectionsBICasesOpen_Resolved/attributeContext/CustCollectionsBICasesOpen_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCollectionsBICasesOpen/hasAttributes/Description",
+            "contents": [
+              "CustCollectionsBICasesOpen_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ResponsibleWorker",
+            "parent": "CustCollectionsBICasesOpen_Resolved/attributeContext/CustCollectionsBICasesOpen_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCollectionsBICasesOpen/hasAttributes/ResponsibleWorker",
+            "contents": [
+              "CustCollectionsBICasesOpen_Resolved/hasAttributes/ResponsibleWorker"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "AccountNum",
+            "parent": "CustCollectionsBICasesOpen_Resolved/attributeContext/CustCollectionsBICasesOpen_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCollectionsBICasesOpen/hasAttributes/AccountNum",
+            "contents": [
+              "CustCollectionsBICasesOpen_Resolved/hasAttributes/AccountNum"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "CustCollectionsBICasesOpen_Resolved/attributeContext/CustCollectionsBICasesOpen_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCollectionsBICasesOpen/hasAttributes/Name",
+            "contents": [
+              "CustCollectionsBICasesOpen_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_CustCollectionsCaseDetailRelationship",
+            "parent": "CustCollectionsBICasesOpen_Resolved/attributeContext/CustCollectionsBICasesOpen_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCollectionsBICasesOpen/hasAttributes/BackingTable_CustCollectionsCaseDetailRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CustCollectionsCaseDetail",
+                "parent": "CustCollectionsBICasesOpen_Resolved/attributeContext/CustCollectionsBICasesOpen_Resolved/BackingTable_CustCollectionsCaseDetailRelationship",
+                "definition": "resolvedFrom/CustCollectionsCaseDetail",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CustCollectionsBICasesOpen_Resolved/attributeContext/CustCollectionsBICasesOpen_Resolved/BackingTable_CustCollectionsCaseDetailRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CustCollectionsBICasesOpen_Resolved/attributeContext/CustCollectionsBICasesOpen_Resolved/BackingTable_CustCollectionsCaseDetailRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CustCollectionsBICasesOpen_Resolved/attributeContext/CustCollectionsBICasesOpen_Resolved/BackingTable_CustCollectionsCaseDetailRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CustCollectionsBICasesOpen_Resolved/hasAttributes/BackingTable_CustCollectionsCaseDetailRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "CustCollectionsBICasesOpen_Resolved/attributeContext/CustCollectionsBICasesOpen_Resolved",
+            "definition": "resolvedFrom/CustCollectionsBICasesOpen/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "CustCollectionsBICasesOpen_Resolved/attributeContext/CustCollectionsBICasesOpen_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CustCollectionsBICasesOpen_Resolved/attributeContext/CustCollectionsBICasesOpen_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CustCollectionsBICasesOpen_Resolved/attributeContext/CustCollectionsBICasesOpen_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CustCollectionsBICasesOpen_Resolved/attributeContext/CustCollectionsBICasesOpen_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CustCollectionsBICasesOpen_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "CaseId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustCollectionsBICasesOpen_Resolved/attributeContext/CustCollectionsBICasesOpen_Resolved/CaseId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustCollectionsBICasesOpen_Resolved/attributeContext/CustCollectionsBICasesOpen_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ResponsibleWorker",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustCollectionsBICasesOpen_Resolved/attributeContext/CustCollectionsBICasesOpen_Resolved/ResponsibleWorker",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "AccountNum",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustCollectionsBICasesOpen_Resolved/attributeContext/CustCollectionsBICasesOpen_Resolved/AccountNum",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustCollectionsBICasesOpen_Resolved/attributeContext/CustCollectionsBICasesOpen_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_CustCollectionsCaseDetailRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/AccountsReceivable/Main/CustCollectionsCaseDetail.cdm.json/CustCollectionsCaseDetail",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CustCollectionsBICasesOpen_Resolved/attributeContext/CustCollectionsBICasesOpen_Resolved/BackingTable_CustCollectionsCaseDetailRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CustCollectionsBICasesOpen_Resolved/attributeContext/CustCollectionsBICasesOpen_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Open cases for customers",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

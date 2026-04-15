@@ -1,0 +1,208 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "CFMPaymentPriorityEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "CFMPaymentPriorityEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "CFMPaymentPriorityEntity_Resolved",
+        "definition": "resolvedFrom/CFMPaymentPriorityEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "CFMPaymentPriorityEntity_Resolved/attributeContext/CFMPaymentPriorityEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "CFMPaymentPriorityEntity_Resolved/attributeContext/CFMPaymentPriorityEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "CFMPaymentPriorityEntity_Resolved/attributeContext/CFMPaymentPriorityEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CFMPaymentPriorityEntity/hasAttributes/Description",
+            "contents": [
+              "CFMPaymentPriorityEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "PriorityCode",
+            "parent": "CFMPaymentPriorityEntity_Resolved/attributeContext/CFMPaymentPriorityEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CFMPaymentPriorityEntity/hasAttributes/PriorityCode",
+            "contents": [
+              "CFMPaymentPriorityEntity_Resolved/hasAttributes/PriorityCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "MatchingPriority",
+            "parent": "CFMPaymentPriorityEntity_Resolved/attributeContext/CFMPaymentPriorityEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CFMPaymentPriorityEntity/hasAttributes/MatchingPriority",
+            "contents": [
+              "CFMPaymentPriorityEntity_Resolved/hasAttributes/MatchingPriority"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_CFMPaymentPriorityRelationship",
+            "parent": "CFMPaymentPriorityEntity_Resolved/attributeContext/CFMPaymentPriorityEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CFMPaymentPriorityEntity/hasAttributes/BackingTable_CFMPaymentPriorityRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CFMPaymentPriority",
+                "parent": "CFMPaymentPriorityEntity_Resolved/attributeContext/CFMPaymentPriorityEntity_Resolved/BackingTable_CFMPaymentPriorityRelationship",
+                "definition": "resolvedFrom/CFMPaymentPriority",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CFMPaymentPriorityEntity_Resolved/attributeContext/CFMPaymentPriorityEntity_Resolved/BackingTable_CFMPaymentPriorityRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CFMPaymentPriorityEntity_Resolved/attributeContext/CFMPaymentPriorityEntity_Resolved/BackingTable_CFMPaymentPriorityRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CFMPaymentPriorityEntity_Resolved/attributeContext/CFMPaymentPriorityEntity_Resolved/BackingTable_CFMPaymentPriorityRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CFMPaymentPriorityEntity_Resolved/hasAttributes/BackingTable_CFMPaymentPriorityRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CFMPaymentPriorityEntity_Resolved/attributeContext/CFMPaymentPriorityEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "PriorityCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CFMPaymentPriorityEntity_Resolved/attributeContext/CFMPaymentPriorityEntity_Resolved/PriorityCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "MatchingPriority",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CFMPaymentPriorityEntity_Resolved/attributeContext/CFMPaymentPriorityEntity_Resolved/MatchingPriority",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_CFMPaymentPriorityRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/RCashFlowManagement/Group/CFMPaymentPriority.cdm.json/CFMPaymentPriority",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CFMPaymentPriorityEntity_Resolved/attributeContext/CFMPaymentPriorityEntity_Resolved/BackingTable_CFMPaymentPriorityRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Cash flow management payment priority.",
+      "version": "1.1.1"
+    }
+  ],
+  "documentVersion": "1.1.1"
+}

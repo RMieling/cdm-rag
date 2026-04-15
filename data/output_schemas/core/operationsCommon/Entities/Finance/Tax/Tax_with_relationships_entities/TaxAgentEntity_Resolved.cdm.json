@@ -1,0 +1,321 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "TaxAgentEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TaxAgentEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "TaxAgentEntity_Resolved",
+        "definition": "resolvedFrom/TaxAgentEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "TaxAgentEntity_Resolved/attributeContext/TaxAgentEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "TaxAgentEntity_Resolved/attributeContext/TaxAgentEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "AgentId",
+            "parent": "TaxAgentEntity_Resolved/attributeContext/TaxAgentEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxAgentEntity/hasAttributes/AgentId",
+            "contents": [
+              "TaxAgentEntity_Resolved/hasAttributes/AgentId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Party",
+            "parent": "TaxAgentEntity_Resolved/attributeContext/TaxAgentEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxAgentEntity/hasAttributes/Party",
+            "contents": [
+              "TaxAgentEntity_Resolved/hasAttributes/Party"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "TaxRegNum",
+            "parent": "TaxAgentEntity_Resolved/attributeContext/TaxAgentEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxAgentEntity/hasAttributes/TaxRegNum",
+            "contents": [
+              "TaxAgentEntity_Resolved/hasAttributes/TaxRegNum"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "TaxAgentEntity_Resolved/attributeContext/TaxAgentEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxAgentEntity/hasAttributes/Name",
+            "contents": [
+              "TaxAgentEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "PartyNumber",
+            "parent": "TaxAgentEntity_Resolved/attributeContext/TaxAgentEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxAgentEntity/hasAttributes/PartyNumber",
+            "contents": [
+              "TaxAgentEntity_Resolved/hasAttributes/PartyNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_TaxAgentRelationship",
+            "parent": "TaxAgentEntity_Resolved/attributeContext/TaxAgentEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxAgentEntity/hasAttributes/BackingTable_TaxAgentRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "TaxAgent",
+                "parent": "TaxAgentEntity_Resolved/attributeContext/TaxAgentEntity_Resolved/BackingTable_TaxAgentRelationship",
+                "definition": "resolvedFrom/TaxAgent",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxAgentEntity_Resolved/attributeContext/TaxAgentEntity_Resolved/BackingTable_TaxAgentRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxAgentEntity_Resolved/attributeContext/TaxAgentEntity_Resolved/BackingTable_TaxAgentRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxAgentEntity_Resolved/attributeContext/TaxAgentEntity_Resolved/BackingTable_TaxAgentRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxAgentEntity_Resolved/hasAttributes/BackingTable_TaxAgentRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "TaxAgentEntity_Resolved/attributeContext/TaxAgentEntity_Resolved",
+            "definition": "resolvedFrom/TaxAgentEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "TaxAgentEntity_Resolved/attributeContext/TaxAgentEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxAgentEntity_Resolved/attributeContext/TaxAgentEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxAgentEntity_Resolved/attributeContext/TaxAgentEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxAgentEntity_Resolved/attributeContext/TaxAgentEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxAgentEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "AgentId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxAgentEntity_Resolved/attributeContext/TaxAgentEntity_Resolved/AgentId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Party",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxAgentEntity_Resolved/attributeContext/TaxAgentEntity_Resolved/Party",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "TaxRegNum",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxAgentEntity_Resolved/attributeContext/TaxAgentEntity_Resolved/TaxRegNum",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxAgentEntity_Resolved/attributeContext/TaxAgentEntity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "PartyNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxAgentEntity_Resolved/attributeContext/TaxAgentEntity_Resolved/PartyNumber",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_TaxAgentRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Tax/Main/TaxAgent.cdm.json/TaxAgent",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxAgentEntity_Resolved/attributeContext/TaxAgentEntity_Resolved/BackingTable_TaxAgentRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxAgentEntity_Resolved/attributeContext/TaxAgentEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Tax agent",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

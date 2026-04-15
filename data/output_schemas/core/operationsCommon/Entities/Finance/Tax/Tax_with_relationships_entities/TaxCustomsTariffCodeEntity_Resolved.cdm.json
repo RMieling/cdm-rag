@@ -1,0 +1,281 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "TaxCustomsTariffCodeEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TaxCustomsTariffCodeEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "TaxCustomsTariffCodeEntity_Resolved",
+        "definition": "resolvedFrom/TaxCustomsTariffCodeEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "TaxCustomsTariffCodeEntity_Resolved/attributeContext/TaxCustomsTariffCodeEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "TaxCustomsTariffCodeEntity_Resolved/attributeContext/TaxCustomsTariffCodeEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Direction",
+            "parent": "TaxCustomsTariffCodeEntity_Resolved/attributeContext/TaxCustomsTariffCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxCustomsTariffCodeEntity/hasAttributes/Direction",
+            "contents": [
+              "TaxCustomsTariffCodeEntity_Resolved/hasAttributes/Direction"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "TaxCustomsTariffCodeEntity_Resolved/attributeContext/TaxCustomsTariffCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxCustomsTariffCodeEntity/hasAttributes/Description",
+            "contents": [
+              "TaxCustomsTariffCodeEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "TariffCode",
+            "parent": "TaxCustomsTariffCodeEntity_Resolved/attributeContext/TaxCustomsTariffCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxCustomsTariffCodeEntity/hasAttributes/TariffCode",
+            "contents": [
+              "TaxCustomsTariffCodeEntity_Resolved/hasAttributes/TariffCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_CustomsTariffCodeTable_INRelationship",
+            "parent": "TaxCustomsTariffCodeEntity_Resolved/attributeContext/TaxCustomsTariffCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxCustomsTariffCodeEntity/hasAttributes/BackingTable_CustomsTariffCodeTable_INRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CustomsTariffCodeTable_IN",
+                "parent": "TaxCustomsTariffCodeEntity_Resolved/attributeContext/TaxCustomsTariffCodeEntity_Resolved/BackingTable_CustomsTariffCodeTable_INRelationship",
+                "definition": "resolvedFrom/CustomsTariffCodeTable_IN",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxCustomsTariffCodeEntity_Resolved/attributeContext/TaxCustomsTariffCodeEntity_Resolved/BackingTable_CustomsTariffCodeTable_INRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxCustomsTariffCodeEntity_Resolved/attributeContext/TaxCustomsTariffCodeEntity_Resolved/BackingTable_CustomsTariffCodeTable_INRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxCustomsTariffCodeEntity_Resolved/attributeContext/TaxCustomsTariffCodeEntity_Resolved/BackingTable_CustomsTariffCodeTable_INRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxCustomsTariffCodeEntity_Resolved/hasAttributes/BackingTable_CustomsTariffCodeTable_INRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "TaxCustomsTariffCodeEntity_Resolved/attributeContext/TaxCustomsTariffCodeEntity_Resolved",
+            "definition": "resolvedFrom/TaxCustomsTariffCodeEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "TaxCustomsTariffCodeEntity_Resolved/attributeContext/TaxCustomsTariffCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxCustomsTariffCodeEntity_Resolved/attributeContext/TaxCustomsTariffCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxCustomsTariffCodeEntity_Resolved/attributeContext/TaxCustomsTariffCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxCustomsTariffCodeEntity_Resolved/attributeContext/TaxCustomsTariffCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxCustomsTariffCodeEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Direction",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxCustomsTariffCodeEntity_Resolved/attributeContext/TaxCustomsTariffCodeEntity_Resolved/Direction",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxCustomsTariffCodeEntity_Resolved/attributeContext/TaxCustomsTariffCodeEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "TariffCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxCustomsTariffCodeEntity_Resolved/attributeContext/TaxCustomsTariffCodeEntity_Resolved/TariffCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_CustomsTariffCodeTable_INRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/AccountsReceivable/Main/CustomsTariffCodeTable_IN.cdm.json/CustomsTariffCodeTable_IN",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxCustomsTariffCodeEntity_Resolved/attributeContext/TaxCustomsTariffCodeEntity_Resolved/BackingTable_CustomsTariffCodeTable_INRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxCustomsTariffCodeEntity_Resolved/attributeContext/TaxCustomsTariffCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Customs tariff codes",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

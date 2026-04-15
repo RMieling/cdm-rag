@@ -1,0 +1,261 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "TrvBarcodeInstructionsLanguageTxtEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TrvBarcodeInstructionsLanguageTxtEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "TrvBarcodeInstructionsLanguageTxtEntity_Resolved",
+        "definition": "resolvedFrom/TrvBarcodeInstructionsLanguageTxtEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "TrvBarcodeInstructionsLanguageTxtEntity_Resolved/attributeContext/TrvBarcodeInstructionsLanguageTxtEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "TrvBarcodeInstructionsLanguageTxtEntity_Resolved/attributeContext/TrvBarcodeInstructionsLanguageTxtEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Language",
+            "parent": "TrvBarcodeInstructionsLanguageTxtEntity_Resolved/attributeContext/TrvBarcodeInstructionsLanguageTxtEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvBarcodeInstructionsLanguageTxtEntity/hasAttributes/Language",
+            "contents": [
+              "TrvBarcodeInstructionsLanguageTxtEntity_Resolved/hasAttributes/Language"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Text",
+            "parent": "TrvBarcodeInstructionsLanguageTxtEntity_Resolved/attributeContext/TrvBarcodeInstructionsLanguageTxtEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvBarcodeInstructionsLanguageTxtEntity/hasAttributes/Text",
+            "contents": [
+              "TrvBarcodeInstructionsLanguageTxtEntity_Resolved/hasAttributes/Text"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_TrvBarcodeInstructionsLanguageTxtRelationship",
+            "parent": "TrvBarcodeInstructionsLanguageTxtEntity_Resolved/attributeContext/TrvBarcodeInstructionsLanguageTxtEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvBarcodeInstructionsLanguageTxtEntity/hasAttributes/BackingTable_TrvBarcodeInstructionsLanguageTxtRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "TrvBarcodeInstructionsLanguageTxt",
+                "parent": "TrvBarcodeInstructionsLanguageTxtEntity_Resolved/attributeContext/TrvBarcodeInstructionsLanguageTxtEntity_Resolved/BackingTable_TrvBarcodeInstructionsLanguageTxtRelationship",
+                "definition": "resolvedFrom/TrvBarcodeInstructionsLanguageTxt",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TrvBarcodeInstructionsLanguageTxtEntity_Resolved/attributeContext/TrvBarcodeInstructionsLanguageTxtEntity_Resolved/BackingTable_TrvBarcodeInstructionsLanguageTxtRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TrvBarcodeInstructionsLanguageTxtEntity_Resolved/attributeContext/TrvBarcodeInstructionsLanguageTxtEntity_Resolved/BackingTable_TrvBarcodeInstructionsLanguageTxtRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TrvBarcodeInstructionsLanguageTxtEntity_Resolved/attributeContext/TrvBarcodeInstructionsLanguageTxtEntity_Resolved/BackingTable_TrvBarcodeInstructionsLanguageTxtRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TrvBarcodeInstructionsLanguageTxtEntity_Resolved/hasAttributes/BackingTable_TrvBarcodeInstructionsLanguageTxtRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "TrvBarcodeInstructionsLanguageTxtEntity_Resolved/attributeContext/TrvBarcodeInstructionsLanguageTxtEntity_Resolved",
+            "definition": "resolvedFrom/TrvBarcodeInstructionsLanguageTxtEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "TrvBarcodeInstructionsLanguageTxtEntity_Resolved/attributeContext/TrvBarcodeInstructionsLanguageTxtEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TrvBarcodeInstructionsLanguageTxtEntity_Resolved/attributeContext/TrvBarcodeInstructionsLanguageTxtEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TrvBarcodeInstructionsLanguageTxtEntity_Resolved/attributeContext/TrvBarcodeInstructionsLanguageTxtEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TrvBarcodeInstructionsLanguageTxtEntity_Resolved/attributeContext/TrvBarcodeInstructionsLanguageTxtEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TrvBarcodeInstructionsLanguageTxtEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Language",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvBarcodeInstructionsLanguageTxtEntity_Resolved/attributeContext/TrvBarcodeInstructionsLanguageTxtEntity_Resolved/Language",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Text",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvBarcodeInstructionsLanguageTxtEntity_Resolved/attributeContext/TrvBarcodeInstructionsLanguageTxtEntity_Resolved/Text",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_TrvBarcodeInstructionsLanguageTxtRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Expense/Reference/TrvBarcodeInstructionsLanguageTxt.cdm.json/TrvBarcodeInstructionsLanguageTxt",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TrvBarcodeInstructionsLanguageTxtEntity_Resolved/attributeContext/TrvBarcodeInstructionsLanguageTxtEntity_Resolved/BackingTable_TrvBarcodeInstructionsLanguageTxtRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TrvBarcodeInstructionsLanguageTxtEntity_Resolved/attributeContext/TrvBarcodeInstructionsLanguageTxtEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Expense cover page translations",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

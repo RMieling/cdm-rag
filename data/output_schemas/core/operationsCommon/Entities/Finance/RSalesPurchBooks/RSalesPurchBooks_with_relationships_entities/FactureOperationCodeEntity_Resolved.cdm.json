@@ -1,0 +1,301 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "FactureOperationCodeEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "FactureOperationCodeEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "FactureOperationCodeEntity_Resolved",
+        "definition": "resolvedFrom/FactureOperationCodeEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "FactureOperationCodeEntity_Resolved/attributeContext/FactureOperationCodeEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "FactureOperationCodeEntity_Resolved/attributeContext/FactureOperationCodeEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Code",
+            "parent": "FactureOperationCodeEntity_Resolved/attributeContext/FactureOperationCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/FactureOperationCodeEntity/hasAttributes/Code",
+            "contents": [
+              "FactureOperationCodeEntity_Resolved/hasAttributes/Code"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Derive",
+            "parent": "FactureOperationCodeEntity_Resolved/attributeContext/FactureOperationCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/FactureOperationCodeEntity/hasAttributes/Derive",
+            "contents": [
+              "FactureOperationCodeEntity_Resolved/hasAttributes/Derive"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "FactureOperationCodeEntity_Resolved/attributeContext/FactureOperationCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/FactureOperationCodeEntity/hasAttributes/Name",
+            "contents": [
+              "FactureOperationCodeEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "OperationTypeDefault",
+            "parent": "FactureOperationCodeEntity_Resolved/attributeContext/FactureOperationCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/FactureOperationCodeEntity/hasAttributes/OperationTypeDefault",
+            "contents": [
+              "FactureOperationCodeEntity_Resolved/hasAttributes/OperationTypeDefault"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_OperationTypeList_RURelationship",
+            "parent": "FactureOperationCodeEntity_Resolved/attributeContext/FactureOperationCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/FactureOperationCodeEntity/hasAttributes/BackingTable_OperationTypeList_RURelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "OperationTypeList_RU",
+                "parent": "FactureOperationCodeEntity_Resolved/attributeContext/FactureOperationCodeEntity_Resolved/BackingTable_OperationTypeList_RURelationship",
+                "definition": "resolvedFrom/OperationTypeList_RU",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "FactureOperationCodeEntity_Resolved/attributeContext/FactureOperationCodeEntity_Resolved/BackingTable_OperationTypeList_RURelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "FactureOperationCodeEntity_Resolved/attributeContext/FactureOperationCodeEntity_Resolved/BackingTable_OperationTypeList_RURelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "FactureOperationCodeEntity_Resolved/attributeContext/FactureOperationCodeEntity_Resolved/BackingTable_OperationTypeList_RURelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "FactureOperationCodeEntity_Resolved/hasAttributes/BackingTable_OperationTypeList_RURelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "FactureOperationCodeEntity_Resolved/attributeContext/FactureOperationCodeEntity_Resolved",
+            "definition": "resolvedFrom/FactureOperationCodeEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "FactureOperationCodeEntity_Resolved/attributeContext/FactureOperationCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "FactureOperationCodeEntity_Resolved/attributeContext/FactureOperationCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "FactureOperationCodeEntity_Resolved/attributeContext/FactureOperationCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "FactureOperationCodeEntity_Resolved/attributeContext/FactureOperationCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "FactureOperationCodeEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Code",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "FactureOperationCodeEntity_Resolved/attributeContext/FactureOperationCodeEntity_Resolved/Code",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Derive",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "FactureOperationCodeEntity_Resolved/attributeContext/FactureOperationCodeEntity_Resolved/Derive",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "FactureOperationCodeEntity_Resolved/attributeContext/FactureOperationCodeEntity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "OperationTypeDefault",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "FactureOperationCodeEntity_Resolved/attributeContext/FactureOperationCodeEntity_Resolved/OperationTypeDefault",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_OperationTypeList_RURelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/APARShared/Group/OperationTypeList_RU.cdm.json/OperationTypeList_RU",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "FactureOperationCodeEntity_Resolved/attributeContext/FactureOperationCodeEntity_Resolved/BackingTable_OperationTypeList_RURelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "FactureOperationCodeEntity_Resolved/attributeContext/FactureOperationCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Facture operation codes",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

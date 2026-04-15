@@ -1,0 +1,281 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "RTSLCurrencyIndexEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "RTSLCurrencyIndexEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "RTSLCurrencyIndexEntity_Resolved",
+        "definition": "resolvedFrom/RTSLCurrencyIndexEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "RTSLCurrencyIndexEntity_Resolved/attributeContext/RTSLCurrencyIndexEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "RTSLCurrencyIndexEntity_Resolved/attributeContext/RTSLCurrencyIndexEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "InflationIndex",
+            "parent": "RTSLCurrencyIndexEntity_Resolved/attributeContext/RTSLCurrencyIndexEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RTSLCurrencyIndexEntity/hasAttributes/InflationIndex",
+            "contents": [
+              "RTSLCurrencyIndexEntity_Resolved/hasAttributes/InflationIndex"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "RTSLCurrencyIndexEntity_Resolved/attributeContext/RTSLCurrencyIndexEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RTSLCurrencyIndexEntity/hasAttributes/Description",
+            "contents": [
+              "RTSLCurrencyIndexEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "RuleGroup",
+            "parent": "RTSLCurrencyIndexEntity_Resolved/attributeContext/RTSLCurrencyIndexEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RTSLCurrencyIndexEntity/hasAttributes/RuleGroup",
+            "contents": [
+              "RTSLCurrencyIndexEntity_Resolved/hasAttributes/RuleGroup"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_RTSLCurrencyIndexRelationship",
+            "parent": "RTSLCurrencyIndexEntity_Resolved/attributeContext/RTSLCurrencyIndexEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RTSLCurrencyIndexEntity/hasAttributes/BackingTable_RTSLCurrencyIndexRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "RTSLCurrencyIndex",
+                "parent": "RTSLCurrencyIndexEntity_Resolved/attributeContext/RTSLCurrencyIndexEntity_Resolved/BackingTable_RTSLCurrencyIndexRelationship",
+                "definition": "resolvedFrom/RTSLCurrencyIndex",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "RTSLCurrencyIndexEntity_Resolved/attributeContext/RTSLCurrencyIndexEntity_Resolved/BackingTable_RTSLCurrencyIndexRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "RTSLCurrencyIndexEntity_Resolved/attributeContext/RTSLCurrencyIndexEntity_Resolved/BackingTable_RTSLCurrencyIndexRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "RTSLCurrencyIndexEntity_Resolved/attributeContext/RTSLCurrencyIndexEntity_Resolved/BackingTable_RTSLCurrencyIndexRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "RTSLCurrencyIndexEntity_Resolved/hasAttributes/BackingTable_RTSLCurrencyIndexRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "RTSLCurrencyIndexEntity_Resolved/attributeContext/RTSLCurrencyIndexEntity_Resolved",
+            "definition": "resolvedFrom/RTSLCurrencyIndexEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "RTSLCurrencyIndexEntity_Resolved/attributeContext/RTSLCurrencyIndexEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "RTSLCurrencyIndexEntity_Resolved/attributeContext/RTSLCurrencyIndexEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "RTSLCurrencyIndexEntity_Resolved/attributeContext/RTSLCurrencyIndexEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "RTSLCurrencyIndexEntity_Resolved/attributeContext/RTSLCurrencyIndexEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "RTSLCurrencyIndexEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "InflationIndex",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RTSLCurrencyIndexEntity_Resolved/attributeContext/RTSLCurrencyIndexEntity_Resolved/InflationIndex",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RTSLCurrencyIndexEntity_Resolved/attributeContext/RTSLCurrencyIndexEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "RuleGroup",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RTSLCurrencyIndexEntity_Resolved/attributeContext/RTSLCurrencyIndexEntity_Resolved/RuleGroup",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_RTSLCurrencyIndexRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Group/RTSLCurrencyIndex.cdm.json/RTSLCurrencyIndex",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "RTSLCurrencyIndexEntity_Resolved/attributeContext/RTSLCurrencyIndexEntity_Resolved/BackingTable_RTSLCurrencyIndexRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "RTSLCurrencyIndexEntity_Resolved/attributeContext/RTSLCurrencyIndexEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Inflation indexes",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

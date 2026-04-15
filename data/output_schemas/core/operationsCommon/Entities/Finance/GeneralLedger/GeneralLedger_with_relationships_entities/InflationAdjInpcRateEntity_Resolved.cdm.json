@@ -1,0 +1,281 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "InflationAdjInpcRateEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "InflationAdjInpcRateEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "InflationAdjInpcRateEntity_Resolved",
+        "definition": "resolvedFrom/InflationAdjInpcRateEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "InflationAdjInpcRateEntity_Resolved/attributeContext/InflationAdjInpcRateEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "InflationAdjInpcRateEntity_Resolved/attributeContext/InflationAdjInpcRateEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "InflationRate",
+            "parent": "InflationAdjInpcRateEntity_Resolved/attributeContext/InflationAdjInpcRateEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/InflationAdjInpcRateEntity/hasAttributes/InflationRate",
+            "contents": [
+              "InflationAdjInpcRateEntity_Resolved/hasAttributes/InflationRate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Month",
+            "parent": "InflationAdjInpcRateEntity_Resolved/attributeContext/InflationAdjInpcRateEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/InflationAdjInpcRateEntity/hasAttributes/Month",
+            "contents": [
+              "InflationAdjInpcRateEntity_Resolved/hasAttributes/Month"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Year",
+            "parent": "InflationAdjInpcRateEntity_Resolved/attributeContext/InflationAdjInpcRateEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/InflationAdjInpcRateEntity/hasAttributes/Year",
+            "contents": [
+              "InflationAdjInpcRateEntity_Resolved/hasAttributes/Year"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_InpcRateTable_MXRelationship",
+            "parent": "InflationAdjInpcRateEntity_Resolved/attributeContext/InflationAdjInpcRateEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/InflationAdjInpcRateEntity/hasAttributes/BackingTable_InpcRateTable_MXRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "InpcRateTable_MX",
+                "parent": "InflationAdjInpcRateEntity_Resolved/attributeContext/InflationAdjInpcRateEntity_Resolved/BackingTable_InpcRateTable_MXRelationship",
+                "definition": "resolvedFrom/InpcRateTable_MX",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "InflationAdjInpcRateEntity_Resolved/attributeContext/InflationAdjInpcRateEntity_Resolved/BackingTable_InpcRateTable_MXRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "InflationAdjInpcRateEntity_Resolved/attributeContext/InflationAdjInpcRateEntity_Resolved/BackingTable_InpcRateTable_MXRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "InflationAdjInpcRateEntity_Resolved/attributeContext/InflationAdjInpcRateEntity_Resolved/BackingTable_InpcRateTable_MXRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "InflationAdjInpcRateEntity_Resolved/hasAttributes/BackingTable_InpcRateTable_MXRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "InflationAdjInpcRateEntity_Resolved/attributeContext/InflationAdjInpcRateEntity_Resolved",
+            "definition": "resolvedFrom/InflationAdjInpcRateEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "InflationAdjInpcRateEntity_Resolved/attributeContext/InflationAdjInpcRateEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "InflationAdjInpcRateEntity_Resolved/attributeContext/InflationAdjInpcRateEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "InflationAdjInpcRateEntity_Resolved/attributeContext/InflationAdjInpcRateEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "InflationAdjInpcRateEntity_Resolved/attributeContext/InflationAdjInpcRateEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "InflationAdjInpcRateEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "InflationRate",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "InflationAdjInpcRateEntity_Resolved/attributeContext/InflationAdjInpcRateEntity_Resolved/InflationRate",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Month",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "InflationAdjInpcRateEntity_Resolved/attributeContext/InflationAdjInpcRateEntity_Resolved/Month",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Year",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "InflationAdjInpcRateEntity_Resolved/attributeContext/InflationAdjInpcRateEntity_Resolved/Year",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_InpcRateTable_MXRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Group/InpcRateTable_MX.cdm.json/InpcRateTable_MX",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "InflationAdjInpcRateEntity_Resolved/attributeContext/InflationAdjInpcRateEntity_Resolved/BackingTable_InpcRateTable_MXRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "InflationAdjInpcRateEntity_Resolved/attributeContext/InflationAdjInpcRateEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "INPC rates",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

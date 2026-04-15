@@ -1,0 +1,188 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "OMOrganizationHierarchyTypeEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "OMOrganizationHierarchyTypeEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "OMOrganizationHierarchyTypeEntity_Resolved",
+        "definition": "resolvedFrom/OMOrganizationHierarchyTypeEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "OMOrganizationHierarchyTypeEntity_Resolved/attributeContext/OMOrganizationHierarchyTypeEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "OMOrganizationHierarchyTypeEntity_Resolved/attributeContext/OMOrganizationHierarchyTypeEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "OMOrganizationHierarchyTypeEntity_Resolved/attributeContext/OMOrganizationHierarchyTypeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/OMOrganizationHierarchyTypeEntity/hasAttributes/Name",
+            "contents": [
+              "OMOrganizationHierarchyTypeEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "RelationshipTypeID",
+            "parent": "OMOrganizationHierarchyTypeEntity_Resolved/attributeContext/OMOrganizationHierarchyTypeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/OMOrganizationHierarchyTypeEntity/hasAttributes/RelationshipTypeID",
+            "contents": [
+              "OMOrganizationHierarchyTypeEntity_Resolved/hasAttributes/RelationshipTypeID"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_OMHierarchyTypeRelationship",
+            "parent": "OMOrganizationHierarchyTypeEntity_Resolved/attributeContext/OMOrganizationHierarchyTypeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/OMOrganizationHierarchyTypeEntity/hasAttributes/BackingTable_OMHierarchyTypeRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "OMHierarchyType",
+                "parent": "OMOrganizationHierarchyTypeEntity_Resolved/attributeContext/OMOrganizationHierarchyTypeEntity_Resolved/BackingTable_OMHierarchyTypeRelationship",
+                "definition": "resolvedFrom/OMHierarchyType",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "OMOrganizationHierarchyTypeEntity_Resolved/attributeContext/OMOrganizationHierarchyTypeEntity_Resolved/BackingTable_OMHierarchyTypeRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "OMOrganizationHierarchyTypeEntity_Resolved/attributeContext/OMOrganizationHierarchyTypeEntity_Resolved/BackingTable_OMHierarchyTypeRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "OMOrganizationHierarchyTypeEntity_Resolved/attributeContext/OMOrganizationHierarchyTypeEntity_Resolved/BackingTable_OMHierarchyTypeRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "OMOrganizationHierarchyTypeEntity_Resolved/hasAttributes/BackingTable_OMHierarchyTypeRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "OMOrganizationHierarchyTypeEntity_Resolved/attributeContext/OMOrganizationHierarchyTypeEntity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "RelationshipTypeID",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "OMOrganizationHierarchyTypeEntity_Resolved/attributeContext/OMOrganizationHierarchyTypeEntity_Resolved/RelationshipTypeID",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_OMHierarchyTypeRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Common/GAB/Main/OMHierarchyType.cdm.json/OMHierarchyType",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "OMOrganizationHierarchyTypeEntity_Resolved/attributeContext/OMOrganizationHierarchyTypeEntity_Resolved/BackingTable_OMHierarchyTypeRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Organization hierarchy type",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

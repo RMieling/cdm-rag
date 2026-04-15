@@ -1,0 +1,281 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "RTax25StdRateTableEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "RTax25StdRateTableEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "RTax25StdRateTableEntity_Resolved",
+        "definition": "resolvedFrom/RTax25StdRateTableEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "RTax25StdRateTableEntity_Resolved/attributeContext/RTax25StdRateTableEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "RTax25StdRateTableEntity_Resolved/attributeContext/RTax25StdRateTableEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CalculationMethod",
+            "parent": "RTax25StdRateTableEntity_Resolved/attributeContext/RTax25StdRateTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RTax25StdRateTableEntity/hasAttributes/CalculationMethod",
+            "contents": [
+              "RTax25StdRateTableEntity_Resolved/hasAttributes/CalculationMethod"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "RTax25StdRateTableEntity_Resolved/attributeContext/RTax25StdRateTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RTax25StdRateTableEntity/hasAttributes/Description",
+            "contents": [
+              "RTax25StdRateTableEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "RateCode",
+            "parent": "RTax25StdRateTableEntity_Resolved/attributeContext/RTax25StdRateTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RTax25StdRateTableEntity/hasAttributes/RateCode",
+            "contents": [
+              "RTax25StdRateTableEntity_Resolved/hasAttributes/RateCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_RTax25StdRateTableRelationship",
+            "parent": "RTax25StdRateTableEntity_Resolved/attributeContext/RTax25StdRateTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RTax25StdRateTableEntity/hasAttributes/BackingTable_RTax25StdRateTableRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "RTax25StdRateTable",
+                "parent": "RTax25StdRateTableEntity_Resolved/attributeContext/RTax25StdRateTableEntity_Resolved/BackingTable_RTax25StdRateTableRelationship",
+                "definition": "resolvedFrom/RTax25StdRateTable",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "RTax25StdRateTableEntity_Resolved/attributeContext/RTax25StdRateTableEntity_Resolved/BackingTable_RTax25StdRateTableRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "RTax25StdRateTableEntity_Resolved/attributeContext/RTax25StdRateTableEntity_Resolved/BackingTable_RTax25StdRateTableRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "RTax25StdRateTableEntity_Resolved/attributeContext/RTax25StdRateTableEntity_Resolved/BackingTable_RTax25StdRateTableRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "RTax25StdRateTableEntity_Resolved/hasAttributes/BackingTable_RTax25StdRateTableRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "RTax25StdRateTableEntity_Resolved/attributeContext/RTax25StdRateTableEntity_Resolved",
+            "definition": "resolvedFrom/RTax25StdRateTableEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "RTax25StdRateTableEntity_Resolved/attributeContext/RTax25StdRateTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "RTax25StdRateTableEntity_Resolved/attributeContext/RTax25StdRateTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "RTax25StdRateTableEntity_Resolved/attributeContext/RTax25StdRateTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "RTax25StdRateTableEntity_Resolved/attributeContext/RTax25StdRateTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "RTax25StdRateTableEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "CalculationMethod",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RTax25StdRateTableEntity_Resolved/attributeContext/RTax25StdRateTableEntity_Resolved/CalculationMethod",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RTax25StdRateTableEntity_Resolved/attributeContext/RTax25StdRateTableEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "RateCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RTax25StdRateTableEntity_Resolved/attributeContext/RTax25StdRateTableEntity_Resolved/RateCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_RTax25StdRateTableRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/RTax25/Group/RTax25StdRateTable.cdm.json/RTax25StdRateTable",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "RTax25StdRateTableEntity_Resolved/attributeContext/RTax25StdRateTableEntity_Resolved/BackingTable_RTax25StdRateTableRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "RTax25StdRateTableEntity_Resolved/attributeContext/RTax25StdRateTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Standard rate table",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

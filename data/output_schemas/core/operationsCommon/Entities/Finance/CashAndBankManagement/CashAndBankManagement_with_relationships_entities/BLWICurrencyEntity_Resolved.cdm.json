@@ -1,0 +1,301 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "BLWICurrencyEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "BLWICurrencyEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "BLWICurrencyEntity_Resolved",
+        "definition": "resolvedFrom/BLWICurrencyEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "BLWICurrencyEntity_Resolved/attributeContext/BLWICurrencyEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "BLWICurrencyEntity_Resolved/attributeContext/BLWICurrencyEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Company",
+            "parent": "BLWICurrencyEntity_Resolved/attributeContext/BLWICurrencyEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BLWICurrencyEntity/hasAttributes/Company",
+            "contents": [
+              "BLWICurrencyEntity_Resolved/hasAttributes/Company"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Currency",
+            "parent": "BLWICurrencyEntity_Resolved/attributeContext/BLWICurrencyEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BLWICurrencyEntity/hasAttributes/Currency",
+            "contents": [
+              "BLWICurrencyEntity_Resolved/hasAttributes/Currency"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ReportInThisCurrency",
+            "parent": "BLWICurrencyEntity_Resolved/attributeContext/BLWICurrencyEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BLWICurrencyEntity/hasAttributes/ReportInThisCurrency",
+            "contents": [
+              "BLWICurrencyEntity_Resolved/hasAttributes/ReportInThisCurrency"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ColumnNumber",
+            "parent": "BLWICurrencyEntity_Resolved/attributeContext/BLWICurrencyEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BLWICurrencyEntity/hasAttributes/ColumnNumber",
+            "contents": [
+              "BLWICurrencyEntity_Resolved/hasAttributes/ColumnNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_CurrencyBLWIRelationship",
+            "parent": "BLWICurrencyEntity_Resolved/attributeContext/BLWICurrencyEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BLWICurrencyEntity/hasAttributes/BackingTable_CurrencyBLWIRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CurrencyBLWI",
+                "parent": "BLWICurrencyEntity_Resolved/attributeContext/BLWICurrencyEntity_Resolved/BackingTable_CurrencyBLWIRelationship",
+                "definition": "resolvedFrom/CurrencyBLWI",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "BLWICurrencyEntity_Resolved/attributeContext/BLWICurrencyEntity_Resolved/BackingTable_CurrencyBLWIRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "BLWICurrencyEntity_Resolved/attributeContext/BLWICurrencyEntity_Resolved/BackingTable_CurrencyBLWIRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "BLWICurrencyEntity_Resolved/attributeContext/BLWICurrencyEntity_Resolved/BackingTable_CurrencyBLWIRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "BLWICurrencyEntity_Resolved/hasAttributes/BackingTable_CurrencyBLWIRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "BLWICurrencyEntity_Resolved/attributeContext/BLWICurrencyEntity_Resolved",
+            "definition": "resolvedFrom/BLWICurrencyEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "BLWICurrencyEntity_Resolved/attributeContext/BLWICurrencyEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "BLWICurrencyEntity_Resolved/attributeContext/BLWICurrencyEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "BLWICurrencyEntity_Resolved/attributeContext/BLWICurrencyEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "BLWICurrencyEntity_Resolved/attributeContext/BLWICurrencyEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "BLWICurrencyEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Company",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BLWICurrencyEntity_Resolved/attributeContext/BLWICurrencyEntity_Resolved/Company",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Currency",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BLWICurrencyEntity_Resolved/attributeContext/BLWICurrencyEntity_Resolved/Currency",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ReportInThisCurrency",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BLWICurrencyEntity_Resolved/attributeContext/BLWICurrencyEntity_Resolved/ReportInThisCurrency",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ColumnNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BLWICurrencyEntity_Resolved/attributeContext/BLWICurrencyEntity_Resolved/ColumnNumber",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_CurrencyBLWIRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Parameter/CurrencyBLWI.cdm.json/CurrencyBLWI",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "BLWICurrencyEntity_Resolved/attributeContext/BLWICurrencyEntity_Resolved/BackingTable_CurrencyBLWIRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "BLWICurrencyEntity_Resolved/attributeContext/BLWICurrencyEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "BLWI currencies",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

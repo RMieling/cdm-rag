@@ -1,0 +1,261 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "CustCustomerStatisticsGroupEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "CustCustomerStatisticsGroupEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "CustCustomerStatisticsGroupEntity_Resolved",
+        "definition": "resolvedFrom/CustCustomerStatisticsGroupEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "CustCustomerStatisticsGroupEntity_Resolved/attributeContext/CustCustomerStatisticsGroupEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "CustCustomerStatisticsGroupEntity_Resolved/attributeContext/CustCustomerStatisticsGroupEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "StatisticsGroup",
+            "parent": "CustCustomerStatisticsGroupEntity_Resolved/attributeContext/CustCustomerStatisticsGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCustomerStatisticsGroupEntity/hasAttributes/StatisticsGroup",
+            "contents": [
+              "CustCustomerStatisticsGroupEntity_Resolved/hasAttributes/StatisticsGroup"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "CustCustomerStatisticsGroupEntity_Resolved/attributeContext/CustCustomerStatisticsGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCustomerStatisticsGroupEntity/hasAttributes/Description",
+            "contents": [
+              "CustCustomerStatisticsGroupEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_CustStatisticsGroupRelationship",
+            "parent": "CustCustomerStatisticsGroupEntity_Resolved/attributeContext/CustCustomerStatisticsGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCustomerStatisticsGroupEntity/hasAttributes/BackingTable_CustStatisticsGroupRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CustStatisticsGroup",
+                "parent": "CustCustomerStatisticsGroupEntity_Resolved/attributeContext/CustCustomerStatisticsGroupEntity_Resolved/BackingTable_CustStatisticsGroupRelationship",
+                "definition": "resolvedFrom/CustStatisticsGroup",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CustCustomerStatisticsGroupEntity_Resolved/attributeContext/CustCustomerStatisticsGroupEntity_Resolved/BackingTable_CustStatisticsGroupRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CustCustomerStatisticsGroupEntity_Resolved/attributeContext/CustCustomerStatisticsGroupEntity_Resolved/BackingTable_CustStatisticsGroupRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CustCustomerStatisticsGroupEntity_Resolved/attributeContext/CustCustomerStatisticsGroupEntity_Resolved/BackingTable_CustStatisticsGroupRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CustCustomerStatisticsGroupEntity_Resolved/hasAttributes/BackingTable_CustStatisticsGroupRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "CustCustomerStatisticsGroupEntity_Resolved/attributeContext/CustCustomerStatisticsGroupEntity_Resolved",
+            "definition": "resolvedFrom/CustCustomerStatisticsGroupEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "CustCustomerStatisticsGroupEntity_Resolved/attributeContext/CustCustomerStatisticsGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CustCustomerStatisticsGroupEntity_Resolved/attributeContext/CustCustomerStatisticsGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CustCustomerStatisticsGroupEntity_Resolved/attributeContext/CustCustomerStatisticsGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CustCustomerStatisticsGroupEntity_Resolved/attributeContext/CustCustomerStatisticsGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CustCustomerStatisticsGroupEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "StatisticsGroup",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustCustomerStatisticsGroupEntity_Resolved/attributeContext/CustCustomerStatisticsGroupEntity_Resolved/StatisticsGroup",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustCustomerStatisticsGroupEntity_Resolved/attributeContext/CustCustomerStatisticsGroupEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_CustStatisticsGroupRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/AccountsReceivable/Group/CustStatisticsGroup.cdm.json/CustStatisticsGroup",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CustCustomerStatisticsGroupEntity_Resolved/attributeContext/CustCustomerStatisticsGroupEntity_Resolved/BackingTable_CustStatisticsGroupRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CustCustomerStatisticsGroupEntity_Resolved/attributeContext/CustCustomerStatisticsGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Statistics group",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

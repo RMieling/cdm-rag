@@ -1,0 +1,282 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "CustomChequeLayoutEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "CustomChequeLayoutEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "CustomChequeLayoutEntity_Resolved",
+        "definition": "resolvedFrom/CustomChequeLayoutEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "CustomChequeLayoutEntity_Resolved/attributeContext/CustomChequeLayoutEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "CustomChequeLayoutEntity_Resolved/attributeContext/CustomChequeLayoutEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "LayoutId",
+            "parent": "CustomChequeLayoutEntity_Resolved/attributeContext/CustomChequeLayoutEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustomChequeLayoutEntity/hasAttributes/LayoutId",
+            "contents": [
+              "CustomChequeLayoutEntity_Resolved/hasAttributes/LayoutId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "CustomChequeLayoutEntity_Resolved/attributeContext/CustomChequeLayoutEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustomChequeLayoutEntity/hasAttributes/Description",
+            "contents": [
+              "CustomChequeLayoutEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ReportName",
+            "parent": "CustomChequeLayoutEntity_Resolved/attributeContext/CustomChequeLayoutEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustomChequeLayoutEntity/hasAttributes/ReportName",
+            "contents": [
+              "CustomChequeLayoutEntity_Resolved/hasAttributes/ReportName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_CustomChequeLayout_BRRelationship",
+            "parent": "CustomChequeLayoutEntity_Resolved/attributeContext/CustomChequeLayoutEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustomChequeLayoutEntity/hasAttributes/BackingTable_CustomChequeLayout_BRRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CustomChequeLayout_BR",
+                "parent": "CustomChequeLayoutEntity_Resolved/attributeContext/CustomChequeLayoutEntity_Resolved/BackingTable_CustomChequeLayout_BRRelationship",
+                "definition": "resolvedFrom/CustomChequeLayout_BR",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CustomChequeLayoutEntity_Resolved/attributeContext/CustomChequeLayoutEntity_Resolved/BackingTable_CustomChequeLayout_BRRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CustomChequeLayoutEntity_Resolved/attributeContext/CustomChequeLayoutEntity_Resolved/BackingTable_CustomChequeLayout_BRRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CustomChequeLayoutEntity_Resolved/attributeContext/CustomChequeLayoutEntity_Resolved/BackingTable_CustomChequeLayout_BRRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CustomChequeLayoutEntity_Resolved/hasAttributes/BackingTable_CustomChequeLayout_BRRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "CustomChequeLayoutEntity_Resolved/attributeContext/CustomChequeLayoutEntity_Resolved",
+            "definition": "resolvedFrom/CustomChequeLayoutEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "CustomChequeLayoutEntity_Resolved/attributeContext/CustomChequeLayoutEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CustomChequeLayoutEntity_Resolved/attributeContext/CustomChequeLayoutEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CustomChequeLayoutEntity_Resolved/attributeContext/CustomChequeLayoutEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CustomChequeLayoutEntity_Resolved/attributeContext/CustomChequeLayoutEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CustomChequeLayoutEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "LayoutId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustomChequeLayoutEntity_Resolved/attributeContext/CustomChequeLayoutEntity_Resolved/LayoutId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustomChequeLayoutEntity_Resolved/attributeContext/CustomChequeLayoutEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ReportName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustomChequeLayoutEntity_Resolved/attributeContext/CustomChequeLayoutEntity_Resolved/ReportName",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Report name"
+        },
+        {
+          "name": "BackingTable_CustomChequeLayout_BRRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/AccountsReceivable/Miscellaneous/CustomChequeLayout_BR.cdm.json/CustomChequeLayout_BR",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CustomChequeLayoutEntity_Resolved/attributeContext/CustomChequeLayoutEntity_Resolved/BackingTable_CustomChequeLayout_BRRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CustomChequeLayoutEntity_Resolved/attributeContext/CustomChequeLayoutEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Custom check layout",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

@@ -1,0 +1,301 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "TNVEDCodesEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TNVEDCodesEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "TNVEDCodesEntity_Resolved",
+        "definition": "resolvedFrom/TNVEDCodesEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "TNVEDCodesEntity_Resolved/attributeContext/TNVEDCodesEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "TNVEDCodesEntity_Resolved/attributeContext/TNVEDCodesEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Blocked",
+            "parent": "TNVEDCodesEntity_Resolved/attributeContext/TNVEDCodesEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TNVEDCodesEntity/hasAttributes/Blocked",
+            "contents": [
+              "TNVEDCodesEntity_Resolved/hasAttributes/Blocked"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "TNVEDCodesEntity_Resolved/attributeContext/TNVEDCodesEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TNVEDCodesEntity/hasAttributes/Description",
+            "contents": [
+              "TNVEDCodesEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "TnVedCode",
+            "parent": "TNVEDCodesEntity_Resolved/attributeContext/TNVEDCodesEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TNVEDCodesEntity/hasAttributes/TnVedCode",
+            "contents": [
+              "TNVEDCodesEntity_Resolved/hasAttributes/TnVedCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "TNVEDCodesEntity_Resolved/attributeContext/TNVEDCodesEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TNVEDCodesEntity/hasAttributes/Name",
+            "contents": [
+              "TNVEDCodesEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_FEACCTable_RURelationship",
+            "parent": "TNVEDCodesEntity_Resolved/attributeContext/TNVEDCodesEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TNVEDCodesEntity/hasAttributes/BackingTable_FEACCTable_RURelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "FEACCTable_RU",
+                "parent": "TNVEDCodesEntity_Resolved/attributeContext/TNVEDCodesEntity_Resolved/BackingTable_FEACCTable_RURelationship",
+                "definition": "resolvedFrom/FEACCTable_RU",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TNVEDCodesEntity_Resolved/attributeContext/TNVEDCodesEntity_Resolved/BackingTable_FEACCTable_RURelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TNVEDCodesEntity_Resolved/attributeContext/TNVEDCodesEntity_Resolved/BackingTable_FEACCTable_RURelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TNVEDCodesEntity_Resolved/attributeContext/TNVEDCodesEntity_Resolved/BackingTable_FEACCTable_RURelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TNVEDCodesEntity_Resolved/hasAttributes/BackingTable_FEACCTable_RURelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "TNVEDCodesEntity_Resolved/attributeContext/TNVEDCodesEntity_Resolved",
+            "definition": "resolvedFrom/TNVEDCodesEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "TNVEDCodesEntity_Resolved/attributeContext/TNVEDCodesEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TNVEDCodesEntity_Resolved/attributeContext/TNVEDCodesEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TNVEDCodesEntity_Resolved/attributeContext/TNVEDCodesEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TNVEDCodesEntity_Resolved/attributeContext/TNVEDCodesEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TNVEDCodesEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Blocked",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TNVEDCodesEntity_Resolved/attributeContext/TNVEDCodesEntity_Resolved/Blocked",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TNVEDCodesEntity_Resolved/attributeContext/TNVEDCodesEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "TnVedCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TNVEDCodesEntity_Resolved/attributeContext/TNVEDCodesEntity_Resolved/TnVedCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TNVEDCodesEntity_Resolved/attributeContext/TNVEDCodesEntity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_FEACCTable_RURelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/SupplyChain/Inventory/Main/FEACCTable_RU.cdm.json/FEACCTable_RU",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TNVEDCodesEntity_Resolved/attributeContext/TNVEDCodesEntity_Resolved/BackingTable_FEACCTable_RURelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TNVEDCodesEntity_Resolved/attributeContext/TNVEDCodesEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "TN VED codes",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

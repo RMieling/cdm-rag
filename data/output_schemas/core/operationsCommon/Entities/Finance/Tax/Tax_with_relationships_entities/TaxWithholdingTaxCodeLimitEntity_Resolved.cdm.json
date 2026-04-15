@@ -1,0 +1,389 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "TaxWithholdingTaxCodeLimitEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TaxWithholdingTaxCodeLimitEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "TaxWithholdingTaxCodeLimitEntity_Resolved",
+        "definition": "resolvedFrom/TaxWithholdingTaxCodeLimitEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "TaxWithholdingTaxCodeLimitEntity_Resolved/attributeContext/TaxWithholdingTaxCodeLimitEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "TaxWithholdingTaxCodeLimitEntity_Resolved/attributeContext/TaxWithholdingTaxCodeLimitEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "MaximumWithholdingTax",
+            "parent": "TaxWithholdingTaxCodeLimitEntity_Resolved/attributeContext/TaxWithholdingTaxCodeLimitEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxWithholdingTaxCodeLimitEntity/hasAttributes/MaximumWithholdingTax",
+            "contents": [
+              "TaxWithholdingTaxCodeLimitEntity_Resolved/hasAttributes/MaximumWithholdingTax"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "MinimumWithholdingTax",
+            "parent": "TaxWithholdingTaxCodeLimitEntity_Resolved/attributeContext/TaxWithholdingTaxCodeLimitEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxWithholdingTaxCodeLimitEntity/hasAttributes/MinimumWithholdingTax",
+            "contents": [
+              "TaxWithholdingTaxCodeLimitEntity_Resolved/hasAttributes/MinimumWithholdingTax"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "WithholdingTaxCodeId",
+            "parent": "TaxWithholdingTaxCodeLimitEntity_Resolved/attributeContext/TaxWithholdingTaxCodeLimitEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxWithholdingTaxCodeLimitEntity/hasAttributes/WithholdingTaxCodeId",
+            "contents": [
+              "TaxWithholdingTaxCodeLimitEntity_Resolved/hasAttributes/WithholdingTaxCodeId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "FromDate",
+            "parent": "TaxWithholdingTaxCodeLimitEntity_Resolved/attributeContext/TaxWithholdingTaxCodeLimitEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxWithholdingTaxCodeLimitEntity/hasAttributes/FromDate",
+            "contents": [
+              "TaxWithholdingTaxCodeLimitEntity_Resolved/hasAttributes/FromDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ToDate",
+            "parent": "TaxWithholdingTaxCodeLimitEntity_Resolved/attributeContext/TaxWithholdingTaxCodeLimitEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxWithholdingTaxCodeLimitEntity/hasAttributes/ToDate",
+            "contents": [
+              "TaxWithholdingTaxCodeLimitEntity_Resolved/hasAttributes/ToDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_WithholdingTaxCodeRelationship",
+            "parent": "TaxWithholdingTaxCodeLimitEntity_Resolved/attributeContext/TaxWithholdingTaxCodeLimitEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxWithholdingTaxCodeLimitEntity/hasAttributes/Relationship_WithholdingTaxCodeRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "TaxWithholdingTaxCodeEntity",
+                "parent": "TaxWithholdingTaxCodeLimitEntity_Resolved/attributeContext/TaxWithholdingTaxCodeLimitEntity_Resolved/Relationship_WithholdingTaxCodeRelationship",
+                "definition": "resolvedFrom/TaxWithholdingTaxCodeEntity",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxWithholdingTaxCodeLimitEntity_Resolved/attributeContext/TaxWithholdingTaxCodeLimitEntity_Resolved/Relationship_WithholdingTaxCodeRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxWithholdingTaxCodeLimitEntity_Resolved/attributeContext/TaxWithholdingTaxCodeLimitEntity_Resolved/Relationship_WithholdingTaxCodeRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxWithholdingTaxCodeLimitEntity_Resolved/attributeContext/TaxWithholdingTaxCodeLimitEntity_Resolved/Relationship_WithholdingTaxCodeRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxWithholdingTaxCodeLimitEntity_Resolved/hasAttributes/Relationship_WithholdingTaxCodeRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_TaxWithholdLimitRelationship",
+            "parent": "TaxWithholdingTaxCodeLimitEntity_Resolved/attributeContext/TaxWithholdingTaxCodeLimitEntity_Resolved",
+            "definition": "resolvedFrom/TaxWithholdingTaxCodeLimitEntity/hasAttributes/BackingTable_TaxWithholdLimitRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "TaxWithholdLimit",
+                "parent": "TaxWithholdingTaxCodeLimitEntity_Resolved/attributeContext/TaxWithholdingTaxCodeLimitEntity_Resolved/BackingTable_TaxWithholdLimitRelationship",
+                "definition": "resolvedFrom/TaxWithholdLimit",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxWithholdingTaxCodeLimitEntity_Resolved/attributeContext/TaxWithholdingTaxCodeLimitEntity_Resolved/BackingTable_TaxWithholdLimitRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxWithholdingTaxCodeLimitEntity_Resolved/attributeContext/TaxWithholdingTaxCodeLimitEntity_Resolved/BackingTable_TaxWithholdLimitRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxWithholdingTaxCodeLimitEntity_Resolved/attributeContext/TaxWithholdingTaxCodeLimitEntity_Resolved/BackingTable_TaxWithholdLimitRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxWithholdingTaxCodeLimitEntity_Resolved/hasAttributes/BackingTable_TaxWithholdLimitRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "TaxWithholdingTaxCodeLimitEntity_Resolved/attributeContext/TaxWithholdingTaxCodeLimitEntity_Resolved",
+            "definition": "resolvedFrom/TaxWithholdingTaxCodeLimitEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "TaxWithholdingTaxCodeLimitEntity_Resolved/attributeContext/TaxWithholdingTaxCodeLimitEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxWithholdingTaxCodeLimitEntity_Resolved/attributeContext/TaxWithholdingTaxCodeLimitEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxWithholdingTaxCodeLimitEntity_Resolved/attributeContext/TaxWithholdingTaxCodeLimitEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxWithholdingTaxCodeLimitEntity_Resolved/attributeContext/TaxWithholdingTaxCodeLimitEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxWithholdingTaxCodeLimitEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "MaximumWithholdingTax",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxWithholdingTaxCodeLimitEntity_Resolved/attributeContext/TaxWithholdingTaxCodeLimitEntity_Resolved/MaximumWithholdingTax",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "MinimumWithholdingTax",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxWithholdingTaxCodeLimitEntity_Resolved/attributeContext/TaxWithholdingTaxCodeLimitEntity_Resolved/MinimumWithholdingTax",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "WithholdingTaxCodeId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxWithholdingTaxCodeLimitEntity_Resolved/attributeContext/TaxWithholdingTaxCodeLimitEntity_Resolved/WithholdingTaxCodeId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "FromDate",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxWithholdingTaxCodeLimitEntity_Resolved/attributeContext/TaxWithholdingTaxCodeLimitEntity_Resolved/FromDate",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ToDate",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxWithholdingTaxCodeLimitEntity_Resolved/attributeContext/TaxWithholdingTaxCodeLimitEntity_Resolved/ToDate",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Relationship_WithholdingTaxCodeRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": []
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxWithholdingTaxCodeLimitEntity_Resolved/attributeContext/TaxWithholdingTaxCodeLimitEntity_Resolved/Relationship_WithholdingTaxCodeRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "BackingTable_TaxWithholdLimitRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Tax/Group/TaxWithholdLimit.cdm.json/TaxWithholdLimit",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxWithholdingTaxCodeLimitEntity_Resolved/attributeContext/TaxWithholdingTaxCodeLimitEntity_Resolved/BackingTable_TaxWithholdLimitRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxWithholdingTaxCodeLimitEntity_Resolved/attributeContext/TaxWithholdingTaxCodeLimitEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Withholding tax limits",
+      "version": "1.1.1"
+    }
+  ],
+  "documentVersion": "1.1.1"
+}

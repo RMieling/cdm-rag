@@ -1,0 +1,301 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "AssetSpecialDepreciationAllowanceEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "AssetSpecialDepreciationAllowanceEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "AssetSpecialDepreciationAllowanceEntity_Resolved",
+        "definition": "resolvedFrom/AssetSpecialDepreciationAllowanceEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "AssetSpecialDepreciationAllowanceEntity_Resolved/attributeContext/AssetSpecialDepreciationAllowanceEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "AssetSpecialDepreciationAllowanceEntity_Resolved/attributeContext/AssetSpecialDepreciationAllowanceEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "SpecialDepreciationAllowanceId",
+            "parent": "AssetSpecialDepreciationAllowanceEntity_Resolved/attributeContext/AssetSpecialDepreciationAllowanceEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetSpecialDepreciationAllowanceEntity/hasAttributes/SpecialDepreciationAllowanceId",
+            "contents": [
+              "AssetSpecialDepreciationAllowanceEntity_Resolved/hasAttributes/SpecialDepreciationAllowanceId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "AssetSpecialDepreciationAllowanceEntity_Resolved/attributeContext/AssetSpecialDepreciationAllowanceEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetSpecialDepreciationAllowanceEntity/hasAttributes/Description",
+            "contents": [
+              "AssetSpecialDepreciationAllowanceEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Amount",
+            "parent": "AssetSpecialDepreciationAllowanceEntity_Resolved/attributeContext/AssetSpecialDepreciationAllowanceEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetSpecialDepreciationAllowanceEntity/hasAttributes/Amount",
+            "contents": [
+              "AssetSpecialDepreciationAllowanceEntity_Resolved/hasAttributes/Amount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Percentage",
+            "parent": "AssetSpecialDepreciationAllowanceEntity_Resolved/attributeContext/AssetSpecialDepreciationAllowanceEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetSpecialDepreciationAllowanceEntity/hasAttributes/Percentage",
+            "contents": [
+              "AssetSpecialDepreciationAllowanceEntity_Resolved/hasAttributes/Percentage"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_AssetBonusRelationship",
+            "parent": "AssetSpecialDepreciationAllowanceEntity_Resolved/attributeContext/AssetSpecialDepreciationAllowanceEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetSpecialDepreciationAllowanceEntity/hasAttributes/BackingTable_AssetBonusRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "AssetBonus",
+                "parent": "AssetSpecialDepreciationAllowanceEntity_Resolved/attributeContext/AssetSpecialDepreciationAllowanceEntity_Resolved/BackingTable_AssetBonusRelationship",
+                "definition": "resolvedFrom/AssetBonus",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "AssetSpecialDepreciationAllowanceEntity_Resolved/attributeContext/AssetSpecialDepreciationAllowanceEntity_Resolved/BackingTable_AssetBonusRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "AssetSpecialDepreciationAllowanceEntity_Resolved/attributeContext/AssetSpecialDepreciationAllowanceEntity_Resolved/BackingTable_AssetBonusRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "AssetSpecialDepreciationAllowanceEntity_Resolved/attributeContext/AssetSpecialDepreciationAllowanceEntity_Resolved/BackingTable_AssetBonusRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "AssetSpecialDepreciationAllowanceEntity_Resolved/hasAttributes/BackingTable_AssetBonusRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "AssetSpecialDepreciationAllowanceEntity_Resolved/attributeContext/AssetSpecialDepreciationAllowanceEntity_Resolved",
+            "definition": "resolvedFrom/AssetSpecialDepreciationAllowanceEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "AssetSpecialDepreciationAllowanceEntity_Resolved/attributeContext/AssetSpecialDepreciationAllowanceEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "AssetSpecialDepreciationAllowanceEntity_Resolved/attributeContext/AssetSpecialDepreciationAllowanceEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "AssetSpecialDepreciationAllowanceEntity_Resolved/attributeContext/AssetSpecialDepreciationAllowanceEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "AssetSpecialDepreciationAllowanceEntity_Resolved/attributeContext/AssetSpecialDepreciationAllowanceEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "AssetSpecialDepreciationAllowanceEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "SpecialDepreciationAllowanceId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AssetSpecialDepreciationAllowanceEntity_Resolved/attributeContext/AssetSpecialDepreciationAllowanceEntity_Resolved/SpecialDepreciationAllowanceId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AssetSpecialDepreciationAllowanceEntity_Resolved/attributeContext/AssetSpecialDepreciationAllowanceEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Amount",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AssetSpecialDepreciationAllowanceEntity_Resolved/attributeContext/AssetSpecialDepreciationAllowanceEntity_Resolved/Amount",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Percentage",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AssetSpecialDepreciationAllowanceEntity_Resolved/attributeContext/AssetSpecialDepreciationAllowanceEntity_Resolved/Percentage",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_AssetBonusRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/FixedAssets/Main/AssetBonus.cdm.json/AssetBonus",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "AssetSpecialDepreciationAllowanceEntity_Resolved/attributeContext/AssetSpecialDepreciationAllowanceEntity_Resolved/BackingTable_AssetBonusRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "AssetSpecialDepreciationAllowanceEntity_Resolved/attributeContext/AssetSpecialDepreciationAllowanceEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Fixed asset special depreciation allowance setup",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

@@ -1,0 +1,261 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "DimAttributeEmployeeTable_RUEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "DimAttributeEmployeeTable_RUEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "DimAttributeEmployeeTable_RUEntity_Resolved",
+        "definition": "resolvedFrom/DimAttributeEmployeeTable_RUEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "DimAttributeEmployeeTable_RUEntity_Resolved/attributeContext/DimAttributeEmployeeTable_RUEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "DimAttributeEmployeeTable_RUEntity_Resolved/attributeContext/DimAttributeEmployeeTable_RUEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Value",
+            "parent": "DimAttributeEmployeeTable_RUEntity_Resolved/attributeContext/DimAttributeEmployeeTable_RUEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimAttributeEmployeeTable_RUEntity/hasAttributes/Value",
+            "contents": [
+              "DimAttributeEmployeeTable_RUEntity_Resolved/hasAttributes/Value"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "DimAttributeEmployeeTable_RUEntity_Resolved/attributeContext/DimAttributeEmployeeTable_RUEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimAttributeEmployeeTable_RUEntity/hasAttributes/Name",
+            "contents": [
+              "DimAttributeEmployeeTable_RUEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_EmployeeTable_RURelationship",
+            "parent": "DimAttributeEmployeeTable_RUEntity_Resolved/attributeContext/DimAttributeEmployeeTable_RUEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimAttributeEmployeeTable_RUEntity/hasAttributes/BackingTable_EmployeeTable_RURelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "EmployeeTable_RU",
+                "parent": "DimAttributeEmployeeTable_RUEntity_Resolved/attributeContext/DimAttributeEmployeeTable_RUEntity_Resolved/BackingTable_EmployeeTable_RURelationship",
+                "definition": "resolvedFrom/EmployeeTable_RU",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "DimAttributeEmployeeTable_RUEntity_Resolved/attributeContext/DimAttributeEmployeeTable_RUEntity_Resolved/BackingTable_EmployeeTable_RURelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "DimAttributeEmployeeTable_RUEntity_Resolved/attributeContext/DimAttributeEmployeeTable_RUEntity_Resolved/BackingTable_EmployeeTable_RURelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "DimAttributeEmployeeTable_RUEntity_Resolved/attributeContext/DimAttributeEmployeeTable_RUEntity_Resolved/BackingTable_EmployeeTable_RURelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "DimAttributeEmployeeTable_RUEntity_Resolved/hasAttributes/BackingTable_EmployeeTable_RURelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "DimAttributeEmployeeTable_RUEntity_Resolved/attributeContext/DimAttributeEmployeeTable_RUEntity_Resolved",
+            "definition": "resolvedFrom/DimAttributeEmployeeTable_RUEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "DimAttributeEmployeeTable_RUEntity_Resolved/attributeContext/DimAttributeEmployeeTable_RUEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "DimAttributeEmployeeTable_RUEntity_Resolved/attributeContext/DimAttributeEmployeeTable_RUEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "DimAttributeEmployeeTable_RUEntity_Resolved/attributeContext/DimAttributeEmployeeTable_RUEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "DimAttributeEmployeeTable_RUEntity_Resolved/attributeContext/DimAttributeEmployeeTable_RUEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "DimAttributeEmployeeTable_RUEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Value",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DimAttributeEmployeeTable_RUEntity_Resolved/attributeContext/DimAttributeEmployeeTable_RUEntity_Resolved/Value",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DimAttributeEmployeeTable_RUEntity_Resolved/attributeContext/DimAttributeEmployeeTable_RUEntity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_EmployeeTable_RURelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Expense/Main/EmployeeTable_RU.cdm.json/EmployeeTable_RU",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "DimAttributeEmployeeTable_RUEntity_Resolved/attributeContext/DimAttributeEmployeeTable_RUEntity_Resolved/BackingTable_EmployeeTable_RURelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "DimAttributeEmployeeTable_RUEntity_Resolved/attributeContext/DimAttributeEmployeeTable_RUEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Advance holders",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

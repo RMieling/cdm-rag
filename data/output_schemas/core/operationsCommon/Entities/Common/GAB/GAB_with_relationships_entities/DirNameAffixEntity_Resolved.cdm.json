@@ -1,0 +1,208 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "DirNameAffixEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "DirNameAffixEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "DirNameAffixEntity_Resolved",
+        "definition": "resolvedFrom/DirNameAffixEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "DirNameAffixEntity_Resolved/attributeContext/DirNameAffixEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "DirNameAffixEntity_Resolved/attributeContext/DirNameAffixEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Affix",
+            "parent": "DirNameAffixEntity_Resolved/attributeContext/DirNameAffixEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DirNameAffixEntity/hasAttributes/Affix",
+            "contents": [
+              "DirNameAffixEntity_Resolved/hasAttributes/Affix"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Type",
+            "parent": "DirNameAffixEntity_Resolved/attributeContext/DirNameAffixEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DirNameAffixEntity/hasAttributes/Type",
+            "contents": [
+              "DirNameAffixEntity_Resolved/hasAttributes/Type"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "DirNameAffixEntity_Resolved/attributeContext/DirNameAffixEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DirNameAffixEntity/hasAttributes/Description",
+            "contents": [
+              "DirNameAffixEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_DirNameAffixRelationship",
+            "parent": "DirNameAffixEntity_Resolved/attributeContext/DirNameAffixEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DirNameAffixEntity/hasAttributes/BackingTable_DirNameAffixRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "DirNameAffix",
+                "parent": "DirNameAffixEntity_Resolved/attributeContext/DirNameAffixEntity_Resolved/BackingTable_DirNameAffixRelationship",
+                "definition": "resolvedFrom/DirNameAffix",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "DirNameAffixEntity_Resolved/attributeContext/DirNameAffixEntity_Resolved/BackingTable_DirNameAffixRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "DirNameAffixEntity_Resolved/attributeContext/DirNameAffixEntity_Resolved/BackingTable_DirNameAffixRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "DirNameAffixEntity_Resolved/attributeContext/DirNameAffixEntity_Resolved/BackingTable_DirNameAffixRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "DirNameAffixEntity_Resolved/hasAttributes/BackingTable_DirNameAffixRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Affix",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DirNameAffixEntity_Resolved/attributeContext/DirNameAffixEntity_Resolved/Affix",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Type",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DirNameAffixEntity_Resolved/attributeContext/DirNameAffixEntity_Resolved/Type",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DirNameAffixEntity_Resolved/attributeContext/DirNameAffixEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_DirNameAffixRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Common/GAB/Reference/DirNameAffix.cdm.json/DirNameAffix",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "DirNameAffixEntity_Resolved/attributeContext/DirNameAffixEntity_Resolved/BackingTable_DirNameAffixRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Name affixes",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

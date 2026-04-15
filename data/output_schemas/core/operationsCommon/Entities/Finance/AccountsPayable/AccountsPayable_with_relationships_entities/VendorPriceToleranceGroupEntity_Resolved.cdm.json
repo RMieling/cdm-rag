@@ -1,0 +1,261 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "VendorPriceToleranceGroupEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "VendorPriceToleranceGroupEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "VendorPriceToleranceGroupEntity_Resolved",
+        "definition": "resolvedFrom/VendorPriceToleranceGroupEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "VendorPriceToleranceGroupEntity_Resolved/attributeContext/VendorPriceToleranceGroupEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "VendorPriceToleranceGroupEntity_Resolved/attributeContext/VendorPriceToleranceGroupEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "GroupId",
+            "parent": "VendorPriceToleranceGroupEntity_Resolved/attributeContext/VendorPriceToleranceGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendorPriceToleranceGroupEntity/hasAttributes/GroupId",
+            "contents": [
+              "VendorPriceToleranceGroupEntity_Resolved/hasAttributes/GroupId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "VendorPriceToleranceGroupEntity_Resolved/attributeContext/VendorPriceToleranceGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendorPriceToleranceGroupEntity/hasAttributes/Name",
+            "contents": [
+              "VendorPriceToleranceGroupEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_VendPriceToleranceGroupRelationship",
+            "parent": "VendorPriceToleranceGroupEntity_Resolved/attributeContext/VendorPriceToleranceGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendorPriceToleranceGroupEntity/hasAttributes/BackingTable_VendPriceToleranceGroupRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "VendPriceToleranceGroup",
+                "parent": "VendorPriceToleranceGroupEntity_Resolved/attributeContext/VendorPriceToleranceGroupEntity_Resolved/BackingTable_VendPriceToleranceGroupRelationship",
+                "definition": "resolvedFrom/VendPriceToleranceGroup",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "VendorPriceToleranceGroupEntity_Resolved/attributeContext/VendorPriceToleranceGroupEntity_Resolved/BackingTable_VendPriceToleranceGroupRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "VendorPriceToleranceGroupEntity_Resolved/attributeContext/VendorPriceToleranceGroupEntity_Resolved/BackingTable_VendPriceToleranceGroupRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "VendorPriceToleranceGroupEntity_Resolved/attributeContext/VendorPriceToleranceGroupEntity_Resolved/BackingTable_VendPriceToleranceGroupRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "VendorPriceToleranceGroupEntity_Resolved/hasAttributes/BackingTable_VendPriceToleranceGroupRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "VendorPriceToleranceGroupEntity_Resolved/attributeContext/VendorPriceToleranceGroupEntity_Resolved",
+            "definition": "resolvedFrom/VendorPriceToleranceGroupEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "VendorPriceToleranceGroupEntity_Resolved/attributeContext/VendorPriceToleranceGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "VendorPriceToleranceGroupEntity_Resolved/attributeContext/VendorPriceToleranceGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "VendorPriceToleranceGroupEntity_Resolved/attributeContext/VendorPriceToleranceGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "VendorPriceToleranceGroupEntity_Resolved/attributeContext/VendorPriceToleranceGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "VendorPriceToleranceGroupEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "GroupId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VendorPriceToleranceGroupEntity_Resolved/attributeContext/VendorPriceToleranceGroupEntity_Resolved/GroupId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VendorPriceToleranceGroupEntity_Resolved/attributeContext/VendorPriceToleranceGroupEntity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_VendPriceToleranceGroupRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/AccountsPayable/Group/VendPriceToleranceGroup.cdm.json/VendPriceToleranceGroup",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "VendorPriceToleranceGroupEntity_Resolved/attributeContext/VendorPriceToleranceGroupEntity_Resolved/BackingTable_VendPriceToleranceGroupRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "VendorPriceToleranceGroupEntity_Resolved/attributeContext/VendorPriceToleranceGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Vendor price tolerance groups",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

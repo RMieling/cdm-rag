@@ -1,0 +1,281 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "TrvProjectExpensePolicyGroupEmployeeEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TrvProjectExpensePolicyGroupEmployeeEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "TrvProjectExpensePolicyGroupEmployeeEntity_Resolved",
+        "definition": "resolvedFrom/TrvProjectExpensePolicyGroupEmployeeEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "TrvProjectExpensePolicyGroupEmployeeEntity_Resolved/attributeContext/TrvProjectExpensePolicyGroupEmployeeEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "TrvProjectExpensePolicyGroupEmployeeEntity_Resolved/attributeContext/TrvProjectExpensePolicyGroupEmployeeEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "GroupId",
+            "parent": "TrvProjectExpensePolicyGroupEmployeeEntity_Resolved/attributeContext/TrvProjectExpensePolicyGroupEmployeeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvProjectExpensePolicyGroupEmployeeEntity/hasAttributes/GroupId",
+            "contents": [
+              "TrvProjectExpensePolicyGroupEmployeeEntity_Resolved/hasAttributes/GroupId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Worker",
+            "parent": "TrvProjectExpensePolicyGroupEmployeeEntity_Resolved/attributeContext/TrvProjectExpensePolicyGroupEmployeeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvProjectExpensePolicyGroupEmployeeEntity/hasAttributes/Worker",
+            "contents": [
+              "TrvProjectExpensePolicyGroupEmployeeEntity_Resolved/hasAttributes/Worker"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "PersonnelNumber",
+            "parent": "TrvProjectExpensePolicyGroupEmployeeEntity_Resolved/attributeContext/TrvProjectExpensePolicyGroupEmployeeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvProjectExpensePolicyGroupEmployeeEntity/hasAttributes/PersonnelNumber",
+            "contents": [
+              "TrvProjectExpensePolicyGroupEmployeeEntity_Resolved/hasAttributes/PersonnelNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_ProjExpPolicyGroupEmplRelationship",
+            "parent": "TrvProjectExpensePolicyGroupEmployeeEntity_Resolved/attributeContext/TrvProjectExpensePolicyGroupEmployeeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvProjectExpensePolicyGroupEmployeeEntity/hasAttributes/BackingTable_ProjExpPolicyGroupEmplRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "ProjExpPolicyGroupEmpl",
+                "parent": "TrvProjectExpensePolicyGroupEmployeeEntity_Resolved/attributeContext/TrvProjectExpensePolicyGroupEmployeeEntity_Resolved/BackingTable_ProjExpPolicyGroupEmplRelationship",
+                "definition": "resolvedFrom/ProjExpPolicyGroupEmpl",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TrvProjectExpensePolicyGroupEmployeeEntity_Resolved/attributeContext/TrvProjectExpensePolicyGroupEmployeeEntity_Resolved/BackingTable_ProjExpPolicyGroupEmplRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TrvProjectExpensePolicyGroupEmployeeEntity_Resolved/attributeContext/TrvProjectExpensePolicyGroupEmployeeEntity_Resolved/BackingTable_ProjExpPolicyGroupEmplRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TrvProjectExpensePolicyGroupEmployeeEntity_Resolved/attributeContext/TrvProjectExpensePolicyGroupEmployeeEntity_Resolved/BackingTable_ProjExpPolicyGroupEmplRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TrvProjectExpensePolicyGroupEmployeeEntity_Resolved/hasAttributes/BackingTable_ProjExpPolicyGroupEmplRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "TrvProjectExpensePolicyGroupEmployeeEntity_Resolved/attributeContext/TrvProjectExpensePolicyGroupEmployeeEntity_Resolved",
+            "definition": "resolvedFrom/TrvProjectExpensePolicyGroupEmployeeEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "TrvProjectExpensePolicyGroupEmployeeEntity_Resolved/attributeContext/TrvProjectExpensePolicyGroupEmployeeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TrvProjectExpensePolicyGroupEmployeeEntity_Resolved/attributeContext/TrvProjectExpensePolicyGroupEmployeeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TrvProjectExpensePolicyGroupEmployeeEntity_Resolved/attributeContext/TrvProjectExpensePolicyGroupEmployeeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TrvProjectExpensePolicyGroupEmployeeEntity_Resolved/attributeContext/TrvProjectExpensePolicyGroupEmployeeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TrvProjectExpensePolicyGroupEmployeeEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "GroupId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvProjectExpensePolicyGroupEmployeeEntity_Resolved/attributeContext/TrvProjectExpensePolicyGroupEmployeeEntity_Resolved/GroupId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Worker",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvProjectExpensePolicyGroupEmployeeEntity_Resolved/attributeContext/TrvProjectExpensePolicyGroupEmployeeEntity_Resolved/Worker",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "PersonnelNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvProjectExpensePolicyGroupEmployeeEntity_Resolved/attributeContext/TrvProjectExpensePolicyGroupEmployeeEntity_Resolved/PersonnelNumber",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_ProjExpPolicyGroupEmplRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/ProfessionalServices/ProjectManagementAndAccounting/Group/ProjExpPolicyGroupEmpl.cdm.json/ProjExpPolicyGroupEmpl",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TrvProjectExpensePolicyGroupEmployeeEntity_Resolved/attributeContext/TrvProjectExpensePolicyGroupEmployeeEntity_Resolved/BackingTable_ProjExpPolicyGroupEmplRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TrvProjectExpensePolicyGroupEmployeeEntity_Resolved/attributeContext/TrvProjectExpensePolicyGroupEmployeeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Group of employees for project expense policy purposes",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

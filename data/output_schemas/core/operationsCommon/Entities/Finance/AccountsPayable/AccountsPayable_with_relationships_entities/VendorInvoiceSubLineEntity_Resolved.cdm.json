@@ -1,0 +1,386 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "VendorInvoiceSubLineEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "VendorInvoiceSubLineEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "VendorInvoiceSubLineEntity_Resolved",
+        "definition": "resolvedFrom/VendorInvoiceSubLineEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "VendorInvoiceSubLineEntity_Resolved/attributeContext/VendorInvoiceSubLineEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "VendorInvoiceSubLineEntity_Resolved/attributeContext/VendorInvoiceSubLineEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ProductReceiptNumber",
+            "parent": "VendorInvoiceSubLineEntity_Resolved/attributeContext/VendorInvoiceSubLineEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendorInvoiceSubLineEntity/hasAttributes/ProductReceiptNumber",
+            "contents": [
+              "VendorInvoiceSubLineEntity_Resolved/hasAttributes/ProductReceiptNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "InvoiceLineReference",
+            "parent": "VendorInvoiceSubLineEntity_Resolved/attributeContext/VendorInvoiceSubLineEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendorInvoiceSubLineEntity/hasAttributes/InvoiceLineReference",
+            "contents": [
+              "VendorInvoiceSubLineEntity_Resolved/hasAttributes/InvoiceLineReference"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "PurchaseQuantity",
+            "parent": "VendorInvoiceSubLineEntity_Resolved/attributeContext/VendorInvoiceSubLineEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendorInvoiceSubLineEntity/hasAttributes/PurchaseQuantity",
+            "contents": [
+              "VendorInvoiceSubLineEntity_Resolved/hasAttributes/PurchaseQuantity"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "PurchaseOrder",
+            "parent": "VendorInvoiceSubLineEntity_Resolved/attributeContext/VendorInvoiceSubLineEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendorInvoiceSubLineEntity/hasAttributes/PurchaseOrder",
+            "contents": [
+              "VendorInvoiceSubLineEntity_Resolved/hasAttributes/PurchaseOrder"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "InvoiceLineNumber",
+            "parent": "VendorInvoiceSubLineEntity_Resolved/attributeContext/VendorInvoiceSubLineEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendorInvoiceSubLineEntity/hasAttributes/InvoiceLineNumber",
+            "contents": [
+              "VendorInvoiceSubLineEntity_Resolved/hasAttributes/InvoiceLineNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_VendorInvoiceLineEntityRelationship",
+            "parent": "VendorInvoiceSubLineEntity_Resolved/attributeContext/VendorInvoiceSubLineEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendorInvoiceSubLineEntity/hasAttributes/Relationship_VendorInvoiceLineEntityRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "VendorInvoiceLineEntity",
+                "parent": "VendorInvoiceSubLineEntity_Resolved/attributeContext/VendorInvoiceSubLineEntity_Resolved/Relationship_VendorInvoiceLineEntityRelationship",
+                "definition": "resolvedFrom/VendorInvoiceLineEntity",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "VendorInvoiceSubLineEntity_Resolved/attributeContext/VendorInvoiceSubLineEntity_Resolved/Relationship_VendorInvoiceLineEntityRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "VendorInvoiceSubLineEntity_Resolved/attributeContext/VendorInvoiceSubLineEntity_Resolved/Relationship_VendorInvoiceLineEntityRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "VendorInvoiceSubLineEntity_Resolved/attributeContext/VendorInvoiceSubLineEntity_Resolved/Relationship_VendorInvoiceLineEntityRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "VendorInvoiceSubLineEntity_Resolved/hasAttributes/Relationship_VendorInvoiceLineEntityRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_VendInvoiceInfoSubLineRelationship",
+            "parent": "VendorInvoiceSubLineEntity_Resolved/attributeContext/VendorInvoiceSubLineEntity_Resolved",
+            "definition": "resolvedFrom/VendorInvoiceSubLineEntity/hasAttributes/BackingTable_VendInvoiceInfoSubLineRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "VendInvoiceInfoSubLine",
+                "parent": "VendorInvoiceSubLineEntity_Resolved/attributeContext/VendorInvoiceSubLineEntity_Resolved/BackingTable_VendInvoiceInfoSubLineRelationship",
+                "definition": "resolvedFrom/VendInvoiceInfoSubLine",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "VendorInvoiceSubLineEntity_Resolved/attributeContext/VendorInvoiceSubLineEntity_Resolved/BackingTable_VendInvoiceInfoSubLineRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "VendorInvoiceSubLineEntity_Resolved/attributeContext/VendorInvoiceSubLineEntity_Resolved/BackingTable_VendInvoiceInfoSubLineRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "VendorInvoiceSubLineEntity_Resolved/attributeContext/VendorInvoiceSubLineEntity_Resolved/BackingTable_VendInvoiceInfoSubLineRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "VendorInvoiceSubLineEntity_Resolved/hasAttributes/BackingTable_VendInvoiceInfoSubLineRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "VendorInvoiceSubLineEntity_Resolved/attributeContext/VendorInvoiceSubLineEntity_Resolved",
+            "definition": "resolvedFrom/VendorInvoiceSubLineEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "VendorInvoiceSubLineEntity_Resolved/attributeContext/VendorInvoiceSubLineEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "VendorInvoiceSubLineEntity_Resolved/attributeContext/VendorInvoiceSubLineEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "VendorInvoiceSubLineEntity_Resolved/attributeContext/VendorInvoiceSubLineEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "VendorInvoiceSubLineEntity_Resolved/attributeContext/VendorInvoiceSubLineEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "VendorInvoiceSubLineEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "ProductReceiptNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VendorInvoiceSubLineEntity_Resolved/attributeContext/VendorInvoiceSubLineEntity_Resolved/ProductReceiptNumber",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "InvoiceLineReference",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VendorInvoiceSubLineEntity_Resolved/attributeContext/VendorInvoiceSubLineEntity_Resolved/InvoiceLineReference",
+          "dataFormat": "String"
+        },
+        {
+          "name": "PurchaseQuantity",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VendorInvoiceSubLineEntity_Resolved/attributeContext/VendorInvoiceSubLineEntity_Resolved/PurchaseQuantity",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "PurchaseOrder",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VendorInvoiceSubLineEntity_Resolved/attributeContext/VendorInvoiceSubLineEntity_Resolved/PurchaseOrder",
+          "dataFormat": "String"
+        },
+        {
+          "name": "InvoiceLineNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VendorInvoiceSubLineEntity_Resolved/attributeContext/VendorInvoiceSubLineEntity_Resolved/InvoiceLineNumber",
+          "dataFormat": "String"
+        },
+        {
+          "name": "Relationship_VendorInvoiceLineEntityRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": []
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "VendorInvoiceSubLineEntity_Resolved/attributeContext/VendorInvoiceSubLineEntity_Resolved/Relationship_VendorInvoiceLineEntityRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "BackingTable_VendInvoiceInfoSubLineRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/AccountsPayable/TransactionLine/VendInvoiceInfoSubLine.cdm.json/VendInvoiceInfoSubLine",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "VendorInvoiceSubLineEntity_Resolved/attributeContext/VendorInvoiceSubLineEntity_Resolved/BackingTable_VendInvoiceInfoSubLineRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "VendorInvoiceSubLineEntity_Resolved/attributeContext/VendorInvoiceSubLineEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Vendor invoice sub line",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

@@ -1,0 +1,319 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "CustBillingClassificationCodeEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "CustBillingClassificationCodeEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "CustBillingClassificationCodeEntity_Resolved",
+        "definition": "resolvedFrom/CustBillingClassificationCodeEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "CustBillingClassificationCodeEntity_Resolved/attributeContext/CustBillingClassificationCodeEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "CustBillingClassificationCodeEntity_Resolved/attributeContext/CustBillingClassificationCodeEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CustBillingClassification",
+            "parent": "CustBillingClassificationCodeEntity_Resolved/attributeContext/CustBillingClassificationCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustBillingClassificationCodeEntity/hasAttributes/CustBillingClassification",
+            "contents": [
+              "CustBillingClassificationCodeEntity_Resolved/hasAttributes/CustBillingClassification"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CustBillingCode",
+            "parent": "CustBillingClassificationCodeEntity_Resolved/attributeContext/CustBillingClassificationCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustBillingClassificationCodeEntity/hasAttributes/CustBillingCode",
+            "contents": [
+              "CustBillingClassificationCodeEntity_Resolved/hasAttributes/CustBillingCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Priority",
+            "parent": "CustBillingClassificationCodeEntity_Resolved/attributeContext/CustBillingClassificationCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustBillingClassificationCodeEntity/hasAttributes/Priority",
+            "contents": [
+              "CustBillingClassificationCodeEntity_Resolved/hasAttributes/Priority"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BillingClassification",
+            "parent": "CustBillingClassificationCodeEntity_Resolved/attributeContext/CustBillingClassificationCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustBillingClassificationCodeEntity/hasAttributes/BillingClassification",
+            "contents": [
+              "CustBillingClassificationCodeEntity_Resolved/hasAttributes/BillingClassification"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BillingCode",
+            "parent": "CustBillingClassificationCodeEntity_Resolved/attributeContext/CustBillingClassificationCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustBillingClassificationCodeEntity/hasAttributes/BillingCode",
+            "contents": [
+              "CustBillingClassificationCodeEntity_Resolved/hasAttributes/BillingCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_CustBillingClassificationCodeRelationship",
+            "parent": "CustBillingClassificationCodeEntity_Resolved/attributeContext/CustBillingClassificationCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustBillingClassificationCodeEntity/hasAttributes/BackingTable_CustBillingClassificationCodeRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CustBillingClassificationCode",
+                "parent": "CustBillingClassificationCodeEntity_Resolved/attributeContext/CustBillingClassificationCodeEntity_Resolved/BackingTable_CustBillingClassificationCodeRelationship",
+                "definition": "resolvedFrom/CustBillingClassificationCode",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CustBillingClassificationCodeEntity_Resolved/attributeContext/CustBillingClassificationCodeEntity_Resolved/BackingTable_CustBillingClassificationCodeRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CustBillingClassificationCodeEntity_Resolved/attributeContext/CustBillingClassificationCodeEntity_Resolved/BackingTable_CustBillingClassificationCodeRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CustBillingClassificationCodeEntity_Resolved/attributeContext/CustBillingClassificationCodeEntity_Resolved/BackingTable_CustBillingClassificationCodeRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CustBillingClassificationCodeEntity_Resolved/hasAttributes/BackingTable_CustBillingClassificationCodeRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "CustBillingClassificationCodeEntity_Resolved/attributeContext/CustBillingClassificationCodeEntity_Resolved",
+            "definition": "resolvedFrom/CustBillingClassificationCodeEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "CustBillingClassificationCodeEntity_Resolved/attributeContext/CustBillingClassificationCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CustBillingClassificationCodeEntity_Resolved/attributeContext/CustBillingClassificationCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CustBillingClassificationCodeEntity_Resolved/attributeContext/CustBillingClassificationCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CustBillingClassificationCodeEntity_Resolved/attributeContext/CustBillingClassificationCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CustBillingClassificationCodeEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "CustBillingClassification",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustBillingClassificationCodeEntity_Resolved/attributeContext/CustBillingClassificationCodeEntity_Resolved/CustBillingClassification",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "CustBillingCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustBillingClassificationCodeEntity_Resolved/attributeContext/CustBillingClassificationCodeEntity_Resolved/CustBillingCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Priority",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustBillingClassificationCodeEntity_Resolved/attributeContext/CustBillingClassificationCodeEntity_Resolved/Priority",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BillingClassification",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustBillingClassificationCodeEntity_Resolved/attributeContext/CustBillingClassificationCodeEntity_Resolved/BillingClassification",
+          "dataFormat": "String"
+        },
+        {
+          "name": "BillingCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustBillingClassificationCodeEntity_Resolved/attributeContext/CustBillingClassificationCodeEntity_Resolved/BillingCode",
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_CustBillingClassificationCodeRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/AccountsReceivable/Group/CustBillingClassificationCode.cdm.json/CustBillingClassificationCode",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CustBillingClassificationCodeEntity_Resolved/attributeContext/CustBillingClassificationCodeEntity_Resolved/BackingTable_CustBillingClassificationCodeRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CustBillingClassificationCodeEntity_Resolved/attributeContext/CustBillingClassificationCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Billing classification with billing code",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

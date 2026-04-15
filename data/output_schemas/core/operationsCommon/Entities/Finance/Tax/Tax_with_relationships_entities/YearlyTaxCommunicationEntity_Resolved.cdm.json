@@ -1,0 +1,341 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "YearlyTaxCommunicationEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "YearlyTaxCommunicationEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "YearlyTaxCommunicationEntity_Resolved",
+        "definition": "resolvedFrom/YearlyTaxCommunicationEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "YearlyTaxCommunicationEntity_Resolved/attributeContext/YearlyTaxCommunicationEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "YearlyTaxCommunicationEntity_Resolved/attributeContext/YearlyTaxCommunicationEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ATECOFINCode",
+            "parent": "YearlyTaxCommunicationEntity_Resolved/attributeContext/YearlyTaxCommunicationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/YearlyTaxCommunicationEntity/hasAttributes/ATECOFINCode",
+            "contents": [
+              "YearlyTaxCommunicationEntity_Resolved/hasAttributes/ATECOFINCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DateOfExport",
+            "parent": "YearlyTaxCommunicationEntity_Resolved/attributeContext/YearlyTaxCommunicationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/YearlyTaxCommunicationEntity/hasAttributes/DateOfExport",
+            "contents": [
+              "YearlyTaxCommunicationEntity_Resolved/hasAttributes/DateOfExport"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Exported",
+            "parent": "YearlyTaxCommunicationEntity_Resolved/attributeContext/YearlyTaxCommunicationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/YearlyTaxCommunicationEntity/hasAttributes/Exported",
+            "contents": [
+              "YearlyTaxCommunicationEntity_Resolved/hasAttributes/Exported"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ExportFileName",
+            "parent": "YearlyTaxCommunicationEntity_Resolved/attributeContext/YearlyTaxCommunicationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/YearlyTaxCommunicationEntity/hasAttributes/ExportFileName",
+            "contents": [
+              "YearlyTaxCommunicationEntity_Resolved/hasAttributes/ExportFileName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "TaxCommunicationID",
+            "parent": "YearlyTaxCommunicationEntity_Resolved/attributeContext/YearlyTaxCommunicationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/YearlyTaxCommunicationEntity/hasAttributes/TaxCommunicationID",
+            "contents": [
+              "YearlyTaxCommunicationEntity_Resolved/hasAttributes/TaxCommunicationID"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Years",
+            "parent": "YearlyTaxCommunicationEntity_Resolved/attributeContext/YearlyTaxCommunicationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/YearlyTaxCommunicationEntity/hasAttributes/Years",
+            "contents": [
+              "YearlyTaxCommunicationEntity_Resolved/hasAttributes/Years"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_TaxYearlyCom_ITRelationship",
+            "parent": "YearlyTaxCommunicationEntity_Resolved/attributeContext/YearlyTaxCommunicationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/YearlyTaxCommunicationEntity/hasAttributes/BackingTable_TaxYearlyCom_ITRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "TaxYearlyCom_IT",
+                "parent": "YearlyTaxCommunicationEntity_Resolved/attributeContext/YearlyTaxCommunicationEntity_Resolved/BackingTable_TaxYearlyCom_ITRelationship",
+                "definition": "resolvedFrom/TaxYearlyCom_IT",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "YearlyTaxCommunicationEntity_Resolved/attributeContext/YearlyTaxCommunicationEntity_Resolved/BackingTable_TaxYearlyCom_ITRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "YearlyTaxCommunicationEntity_Resolved/attributeContext/YearlyTaxCommunicationEntity_Resolved/BackingTable_TaxYearlyCom_ITRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "YearlyTaxCommunicationEntity_Resolved/attributeContext/YearlyTaxCommunicationEntity_Resolved/BackingTable_TaxYearlyCom_ITRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "YearlyTaxCommunicationEntity_Resolved/hasAttributes/BackingTable_TaxYearlyCom_ITRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "YearlyTaxCommunicationEntity_Resolved/attributeContext/YearlyTaxCommunicationEntity_Resolved",
+            "definition": "resolvedFrom/YearlyTaxCommunicationEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "YearlyTaxCommunicationEntity_Resolved/attributeContext/YearlyTaxCommunicationEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "YearlyTaxCommunicationEntity_Resolved/attributeContext/YearlyTaxCommunicationEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "YearlyTaxCommunicationEntity_Resolved/attributeContext/YearlyTaxCommunicationEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "YearlyTaxCommunicationEntity_Resolved/attributeContext/YearlyTaxCommunicationEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "YearlyTaxCommunicationEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "ATECOFINCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "YearlyTaxCommunicationEntity_Resolved/attributeContext/YearlyTaxCommunicationEntity_Resolved/ATECOFINCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "DateOfExport",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "YearlyTaxCommunicationEntity_Resolved/attributeContext/YearlyTaxCommunicationEntity_Resolved/DateOfExport",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Exported",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "YearlyTaxCommunicationEntity_Resolved/attributeContext/YearlyTaxCommunicationEntity_Resolved/Exported",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ExportFileName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "YearlyTaxCommunicationEntity_Resolved/attributeContext/YearlyTaxCommunicationEntity_Resolved/ExportFileName",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "TaxCommunicationID",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "YearlyTaxCommunicationEntity_Resolved/attributeContext/YearlyTaxCommunicationEntity_Resolved/TaxCommunicationID",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Years",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "YearlyTaxCommunicationEntity_Resolved/attributeContext/YearlyTaxCommunicationEntity_Resolved/Years",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_TaxYearlyCom_ITRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Tax/WorksheetHeader/TaxYearlyCom_IT.cdm.json/TaxYearlyCom_IT",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "YearlyTaxCommunicationEntity_Resolved/attributeContext/YearlyTaxCommunicationEntity_Resolved/BackingTable_TaxYearlyCom_ITRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "YearlyTaxCommunicationEntity_Resolved/attributeContext/YearlyTaxCommunicationEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Yearly tax communication",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

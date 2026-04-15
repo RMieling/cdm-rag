@@ -1,0 +1,261 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "RDeferralsLedgerEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "RDeferralsLedgerEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "RDeferralsLedgerEntity_Resolved",
+        "definition": "resolvedFrom/RDeferralsLedgerEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "RDeferralsLedgerEntity_Resolved/attributeContext/RDeferralsLedgerEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "RDeferralsLedgerEntity_Resolved/attributeContext/RDeferralsLedgerEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "PostingProfile",
+            "parent": "RDeferralsLedgerEntity_Resolved/attributeContext/RDeferralsLedgerEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RDeferralsLedgerEntity/hasAttributes/PostingProfile",
+            "contents": [
+              "RDeferralsLedgerEntity_Resolved/hasAttributes/PostingProfile"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "RDeferralsLedgerEntity_Resolved/attributeContext/RDeferralsLedgerEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RDeferralsLedgerEntity/hasAttributes/Description",
+            "contents": [
+              "RDeferralsLedgerEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_RDeferralsLedgerRelationship",
+            "parent": "RDeferralsLedgerEntity_Resolved/attributeContext/RDeferralsLedgerEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RDeferralsLedgerEntity/hasAttributes/BackingTable_RDeferralsLedgerRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "RDeferralsLedger",
+                "parent": "RDeferralsLedgerEntity_Resolved/attributeContext/RDeferralsLedgerEntity_Resolved/BackingTable_RDeferralsLedgerRelationship",
+                "definition": "resolvedFrom/RDeferralsLedger",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "RDeferralsLedgerEntity_Resolved/attributeContext/RDeferralsLedgerEntity_Resolved/BackingTable_RDeferralsLedgerRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "RDeferralsLedgerEntity_Resolved/attributeContext/RDeferralsLedgerEntity_Resolved/BackingTable_RDeferralsLedgerRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "RDeferralsLedgerEntity_Resolved/attributeContext/RDeferralsLedgerEntity_Resolved/BackingTable_RDeferralsLedgerRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "RDeferralsLedgerEntity_Resolved/hasAttributes/BackingTable_RDeferralsLedgerRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "RDeferralsLedgerEntity_Resolved/attributeContext/RDeferralsLedgerEntity_Resolved",
+            "definition": "resolvedFrom/RDeferralsLedgerEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "RDeferralsLedgerEntity_Resolved/attributeContext/RDeferralsLedgerEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "RDeferralsLedgerEntity_Resolved/attributeContext/RDeferralsLedgerEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "RDeferralsLedgerEntity_Resolved/attributeContext/RDeferralsLedgerEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "RDeferralsLedgerEntity_Resolved/attributeContext/RDeferralsLedgerEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "RDeferralsLedgerEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "PostingProfile",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RDeferralsLedgerEntity_Resolved/attributeContext/RDeferralsLedgerEntity_Resolved/PostingProfile",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RDeferralsLedgerEntity_Resolved/attributeContext/RDeferralsLedgerEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_RDeferralsLedgerRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/RDeferrals/Parameter/RDeferralsLedger.cdm.json/RDeferralsLedger",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "RDeferralsLedgerEntity_Resolved/attributeContext/RDeferralsLedgerEntity_Resolved/BackingTable_RDeferralsLedgerRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "RDeferralsLedgerEntity_Resolved/attributeContext/RDeferralsLedgerEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Deferrals posting profile",
+      "version": "1.1.1"
+    }
+  ],
+  "documentVersion": "1.1.1"
+}

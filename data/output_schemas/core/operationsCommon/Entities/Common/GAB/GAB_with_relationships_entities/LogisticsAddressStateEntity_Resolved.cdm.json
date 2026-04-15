@@ -1,0 +1,336 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "LogisticsAddressStateEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "LogisticsAddressStateEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "LogisticsAddressStateEntity_Resolved",
+        "definition": "resolvedFrom/LogisticsAddressStateEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "LogisticsAddressStateEntity_Resolved/attributeContext/LogisticsAddressStateEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "LogisticsAddressStateEntity_Resolved/attributeContext/LogisticsAddressStateEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CountryRegionId",
+            "parent": "LogisticsAddressStateEntity_Resolved/attributeContext/LogisticsAddressStateEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LogisticsAddressStateEntity/hasAttributes/CountryRegionId",
+            "contents": [
+              "LogisticsAddressStateEntity_Resolved/hasAttributes/CountryRegionId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "State",
+            "parent": "LogisticsAddressStateEntity_Resolved/attributeContext/LogisticsAddressStateEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LogisticsAddressStateEntity/hasAttributes/State",
+            "contents": [
+              "LogisticsAddressStateEntity_Resolved/hasAttributes/State"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "LogisticsAddressStateEntity_Resolved/attributeContext/LogisticsAddressStateEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LogisticsAddressStateEntity/hasAttributes/Name",
+            "contents": [
+              "LogisticsAddressStateEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "TimeZone",
+            "parent": "LogisticsAddressStateEntity_Resolved/attributeContext/LogisticsAddressStateEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LogisticsAddressStateEntity/hasAttributes/TimeZone",
+            "contents": [
+              "LogisticsAddressStateEntity_Resolved/hasAttributes/TimeZone"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "IntrastatCode",
+            "parent": "LogisticsAddressStateEntity_Resolved/attributeContext/LogisticsAddressStateEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LogisticsAddressStateEntity/hasAttributes/IntrastatCode",
+            "contents": [
+              "LogisticsAddressStateEntity_Resolved/hasAttributes/IntrastatCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BrazilStateCode",
+            "parent": "LogisticsAddressStateEntity_Resolved/attributeContext/LogisticsAddressStateEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LogisticsAddressStateEntity/hasAttributes/BrazilStateCode",
+            "contents": [
+              "LogisticsAddressStateEntity_Resolved/hasAttributes/BrazilStateCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_CountryRegionRelationship",
+            "parent": "LogisticsAddressStateEntity_Resolved/attributeContext/LogisticsAddressStateEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LogisticsAddressStateEntity/hasAttributes/Relationship_CountryRegionRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "LogisticsAddressCountryRegionEntity",
+                "parent": "LogisticsAddressStateEntity_Resolved/attributeContext/LogisticsAddressStateEntity_Resolved/Relationship_CountryRegionRelationship",
+                "definition": "resolvedFrom/LogisticsAddressCountryRegionEntity",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "LogisticsAddressStateEntity_Resolved/attributeContext/LogisticsAddressStateEntity_Resolved/Relationship_CountryRegionRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "LogisticsAddressStateEntity_Resolved/attributeContext/LogisticsAddressStateEntity_Resolved/Relationship_CountryRegionRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "LogisticsAddressStateEntity_Resolved/attributeContext/LogisticsAddressStateEntity_Resolved/Relationship_CountryRegionRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "LogisticsAddressStateEntity_Resolved/hasAttributes/Relationship_CountryRegionRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_LogisticsAddressStateRelationship",
+            "parent": "LogisticsAddressStateEntity_Resolved/attributeContext/LogisticsAddressStateEntity_Resolved",
+            "definition": "resolvedFrom/LogisticsAddressStateEntity/hasAttributes/BackingTable_LogisticsAddressStateRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "LogisticsAddressState",
+                "parent": "LogisticsAddressStateEntity_Resolved/attributeContext/LogisticsAddressStateEntity_Resolved/BackingTable_LogisticsAddressStateRelationship",
+                "definition": "resolvedFrom/LogisticsAddressState",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "LogisticsAddressStateEntity_Resolved/attributeContext/LogisticsAddressStateEntity_Resolved/BackingTable_LogisticsAddressStateRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "LogisticsAddressStateEntity_Resolved/attributeContext/LogisticsAddressStateEntity_Resolved/BackingTable_LogisticsAddressStateRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "LogisticsAddressStateEntity_Resolved/attributeContext/LogisticsAddressStateEntity_Resolved/BackingTable_LogisticsAddressStateRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "LogisticsAddressStateEntity_Resolved/hasAttributes/BackingTable_LogisticsAddressStateRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "CountryRegionId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LogisticsAddressStateEntity_Resolved/attributeContext/LogisticsAddressStateEntity_Resolved/CountryRegionId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "State",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LogisticsAddressStateEntity_Resolved/attributeContext/LogisticsAddressStateEntity_Resolved/State",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LogisticsAddressStateEntity_Resolved/attributeContext/LogisticsAddressStateEntity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "TimeZone",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LogisticsAddressStateEntity_Resolved/attributeContext/LogisticsAddressStateEntity_Resolved/TimeZone",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "IntrastatCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LogisticsAddressStateEntity_Resolved/attributeContext/LogisticsAddressStateEntity_Resolved/IntrastatCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BrazilStateCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LogisticsAddressStateEntity_Resolved/attributeContext/LogisticsAddressStateEntity_Resolved/BrazilStateCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Relationship_CountryRegionRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": []
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "LogisticsAddressStateEntity_Resolved/attributeContext/LogisticsAddressStateEntity_Resolved/Relationship_CountryRegionRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "BackingTable_LogisticsAddressStateRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Common/GAB/Group/LogisticsAddressState.cdm.json/LogisticsAddressState",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "LogisticsAddressStateEntity_Resolved/attributeContext/LogisticsAddressStateEntity_Resolved/BackingTable_LogisticsAddressStateRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "States",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

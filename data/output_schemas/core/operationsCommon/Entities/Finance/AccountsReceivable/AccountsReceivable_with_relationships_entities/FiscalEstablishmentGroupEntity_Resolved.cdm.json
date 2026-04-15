@@ -1,0 +1,261 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "FiscalEstablishmentGroupEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "FiscalEstablishmentGroupEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "FiscalEstablishmentGroupEntity_Resolved",
+        "definition": "resolvedFrom/FiscalEstablishmentGroupEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "FiscalEstablishmentGroupEntity_Resolved/attributeContext/FiscalEstablishmentGroupEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "FiscalEstablishmentGroupEntity_Resolved/attributeContext/FiscalEstablishmentGroupEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "FiscalEstablishmentGroup",
+            "parent": "FiscalEstablishmentGroupEntity_Resolved/attributeContext/FiscalEstablishmentGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/FiscalEstablishmentGroupEntity/hasAttributes/FiscalEstablishmentGroup",
+            "contents": [
+              "FiscalEstablishmentGroupEntity_Resolved/hasAttributes/FiscalEstablishmentGroup"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "FiscalEstablishmentGroupEntity_Resolved/attributeContext/FiscalEstablishmentGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/FiscalEstablishmentGroupEntity/hasAttributes/Description",
+            "contents": [
+              "FiscalEstablishmentGroupEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_FiscalEstablishmentGroup_BRRelationship",
+            "parent": "FiscalEstablishmentGroupEntity_Resolved/attributeContext/FiscalEstablishmentGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/FiscalEstablishmentGroupEntity/hasAttributes/BackingTable_FiscalEstablishmentGroup_BRRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "FiscalEstablishmentGroup_BR",
+                "parent": "FiscalEstablishmentGroupEntity_Resolved/attributeContext/FiscalEstablishmentGroupEntity_Resolved/BackingTable_FiscalEstablishmentGroup_BRRelationship",
+                "definition": "resolvedFrom/FiscalEstablishmentGroup_BR",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "FiscalEstablishmentGroupEntity_Resolved/attributeContext/FiscalEstablishmentGroupEntity_Resolved/BackingTable_FiscalEstablishmentGroup_BRRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "FiscalEstablishmentGroupEntity_Resolved/attributeContext/FiscalEstablishmentGroupEntity_Resolved/BackingTable_FiscalEstablishmentGroup_BRRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "FiscalEstablishmentGroupEntity_Resolved/attributeContext/FiscalEstablishmentGroupEntity_Resolved/BackingTable_FiscalEstablishmentGroup_BRRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "FiscalEstablishmentGroupEntity_Resolved/hasAttributes/BackingTable_FiscalEstablishmentGroup_BRRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "FiscalEstablishmentGroupEntity_Resolved/attributeContext/FiscalEstablishmentGroupEntity_Resolved",
+            "definition": "resolvedFrom/FiscalEstablishmentGroupEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "FiscalEstablishmentGroupEntity_Resolved/attributeContext/FiscalEstablishmentGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "FiscalEstablishmentGroupEntity_Resolved/attributeContext/FiscalEstablishmentGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "FiscalEstablishmentGroupEntity_Resolved/attributeContext/FiscalEstablishmentGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "FiscalEstablishmentGroupEntity_Resolved/attributeContext/FiscalEstablishmentGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "FiscalEstablishmentGroupEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "FiscalEstablishmentGroup",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "FiscalEstablishmentGroupEntity_Resolved/attributeContext/FiscalEstablishmentGroupEntity_Resolved/FiscalEstablishmentGroup",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "FiscalEstablishmentGroupEntity_Resolved/attributeContext/FiscalEstablishmentGroupEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_FiscalEstablishmentGroup_BRRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/FiscalBooksBrazil/Group/FiscalEstablishmentGroup_BR.cdm.json/FiscalEstablishmentGroup_BR",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "FiscalEstablishmentGroupEntity_Resolved/attributeContext/FiscalEstablishmentGroupEntity_Resolved/BackingTable_FiscalEstablishmentGroup_BRRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "FiscalEstablishmentGroupEntity_Resolved/attributeContext/FiscalEstablishmentGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Fiscal establishment groups",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

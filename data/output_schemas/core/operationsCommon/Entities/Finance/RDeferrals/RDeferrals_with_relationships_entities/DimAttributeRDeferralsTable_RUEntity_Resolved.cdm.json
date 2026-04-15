@@ -1,0 +1,261 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "DimAttributeRDeferralsTable_RUEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "DimAttributeRDeferralsTable_RUEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "DimAttributeRDeferralsTable_RUEntity_Resolved",
+        "definition": "resolvedFrom/DimAttributeRDeferralsTable_RUEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "DimAttributeRDeferralsTable_RUEntity_Resolved/attributeContext/DimAttributeRDeferralsTable_RUEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "DimAttributeRDeferralsTable_RUEntity_Resolved/attributeContext/DimAttributeRDeferralsTable_RUEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Value",
+            "parent": "DimAttributeRDeferralsTable_RUEntity_Resolved/attributeContext/DimAttributeRDeferralsTable_RUEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimAttributeRDeferralsTable_RUEntity/hasAttributes/Value",
+            "contents": [
+              "DimAttributeRDeferralsTable_RUEntity_Resolved/hasAttributes/Value"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "DimAttributeRDeferralsTable_RUEntity_Resolved/attributeContext/DimAttributeRDeferralsTable_RUEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimAttributeRDeferralsTable_RUEntity/hasAttributes/Name",
+            "contents": [
+              "DimAttributeRDeferralsTable_RUEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_RDeferralsTableRelationship",
+            "parent": "DimAttributeRDeferralsTable_RUEntity_Resolved/attributeContext/DimAttributeRDeferralsTable_RUEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimAttributeRDeferralsTable_RUEntity/hasAttributes/BackingTable_RDeferralsTableRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "RDeferralsTable",
+                "parent": "DimAttributeRDeferralsTable_RUEntity_Resolved/attributeContext/DimAttributeRDeferralsTable_RUEntity_Resolved/BackingTable_RDeferralsTableRelationship",
+                "definition": "resolvedFrom/RDeferralsTable",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "DimAttributeRDeferralsTable_RUEntity_Resolved/attributeContext/DimAttributeRDeferralsTable_RUEntity_Resolved/BackingTable_RDeferralsTableRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "DimAttributeRDeferralsTable_RUEntity_Resolved/attributeContext/DimAttributeRDeferralsTable_RUEntity_Resolved/BackingTable_RDeferralsTableRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "DimAttributeRDeferralsTable_RUEntity_Resolved/attributeContext/DimAttributeRDeferralsTable_RUEntity_Resolved/BackingTable_RDeferralsTableRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "DimAttributeRDeferralsTable_RUEntity_Resolved/hasAttributes/BackingTable_RDeferralsTableRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "DimAttributeRDeferralsTable_RUEntity_Resolved/attributeContext/DimAttributeRDeferralsTable_RUEntity_Resolved",
+            "definition": "resolvedFrom/DimAttributeRDeferralsTable_RUEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "DimAttributeRDeferralsTable_RUEntity_Resolved/attributeContext/DimAttributeRDeferralsTable_RUEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "DimAttributeRDeferralsTable_RUEntity_Resolved/attributeContext/DimAttributeRDeferralsTable_RUEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "DimAttributeRDeferralsTable_RUEntity_Resolved/attributeContext/DimAttributeRDeferralsTable_RUEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "DimAttributeRDeferralsTable_RUEntity_Resolved/attributeContext/DimAttributeRDeferralsTable_RUEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "DimAttributeRDeferralsTable_RUEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Value",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DimAttributeRDeferralsTable_RUEntity_Resolved/attributeContext/DimAttributeRDeferralsTable_RUEntity_Resolved/Value",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DimAttributeRDeferralsTable_RUEntity_Resolved/attributeContext/DimAttributeRDeferralsTable_RUEntity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_RDeferralsTableRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/RDeferrals/Main/RDeferralsTable.cdm.json/RDeferralsTable",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "DimAttributeRDeferralsTable_RUEntity_Resolved/attributeContext/DimAttributeRDeferralsTable_RUEntity_Resolved/BackingTable_RDeferralsTableRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "DimAttributeRDeferralsTable_RUEntity_Resolved/attributeContext/DimAttributeRDeferralsTable_RUEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Deferrals",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

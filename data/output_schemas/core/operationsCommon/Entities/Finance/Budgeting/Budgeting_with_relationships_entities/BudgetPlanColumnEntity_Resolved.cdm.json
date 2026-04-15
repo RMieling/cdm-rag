@@ -1,0 +1,287 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "BudgetPlanColumnEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "BudgetPlanColumnEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "BudgetPlanColumnEntity_Resolved",
+        "definition": "resolvedFrom/BudgetPlanColumnEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "BudgetPlanColumnEntity_Resolved/attributeContext/BudgetPlanColumnEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "BudgetPlanColumnEntity_Resolved/attributeContext/BudgetPlanColumnEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "BudgetPlanColumnEntity_Resolved/attributeContext/BudgetPlanColumnEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetPlanColumnEntity/hasAttributes/Name",
+            "contents": [
+              "BudgetPlanColumnEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "BudgetPlanColumnEntity_Resolved/attributeContext/BudgetPlanColumnEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetPlanColumnEntity/hasAttributes/Description",
+            "contents": [
+              "BudgetPlanColumnEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BudgetPlanScenario",
+            "parent": "BudgetPlanColumnEntity_Resolved/attributeContext/BudgetPlanColumnEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetPlanColumnEntity/hasAttributes/BudgetPlanScenario",
+            "contents": [
+              "BudgetPlanColumnEntity_Resolved/hasAttributes/BudgetPlanScenario"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ColumnPeriodLength",
+            "parent": "BudgetPlanColumnEntity_Resolved/attributeContext/BudgetPlanColumnEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetPlanColumnEntity/hasAttributes/ColumnPeriodLength",
+            "contents": [
+              "BudgetPlanColumnEntity_Resolved/hasAttributes/ColumnPeriodLength"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ColumnPeriodLengthValue",
+            "parent": "BudgetPlanColumnEntity_Resolved/attributeContext/BudgetPlanColumnEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetPlanColumnEntity/hasAttributes/ColumnPeriodLengthValue",
+            "contents": [
+              "BudgetPlanColumnEntity_Resolved/hasAttributes/ColumnPeriodLengthValue"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "YearOffset",
+            "parent": "BudgetPlanColumnEntity_Resolved/attributeContext/BudgetPlanColumnEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetPlanColumnEntity/hasAttributes/YearOffset",
+            "contents": [
+              "BudgetPlanColumnEntity_Resolved/hasAttributes/YearOffset"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Scenario",
+            "parent": "BudgetPlanColumnEntity_Resolved/attributeContext/BudgetPlanColumnEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetPlanColumnEntity/hasAttributes/Scenario",
+            "contents": [
+              "BudgetPlanColumnEntity_Resolved/hasAttributes/Scenario"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_BudgetPlanColumnRelationship",
+            "parent": "BudgetPlanColumnEntity_Resolved/attributeContext/BudgetPlanColumnEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetPlanColumnEntity/hasAttributes/BackingTable_BudgetPlanColumnRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "BudgetPlanColumn",
+                "parent": "BudgetPlanColumnEntity_Resolved/attributeContext/BudgetPlanColumnEntity_Resolved/BackingTable_BudgetPlanColumnRelationship",
+                "definition": "resolvedFrom/BudgetPlanColumn",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "BudgetPlanColumnEntity_Resolved/attributeContext/BudgetPlanColumnEntity_Resolved/BackingTable_BudgetPlanColumnRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "BudgetPlanColumnEntity_Resolved/attributeContext/BudgetPlanColumnEntity_Resolved/BackingTable_BudgetPlanColumnRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "BudgetPlanColumnEntity_Resolved/attributeContext/BudgetPlanColumnEntity_Resolved/BackingTable_BudgetPlanColumnRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "BudgetPlanColumnEntity_Resolved/hasAttributes/BackingTable_BudgetPlanColumnRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetPlanColumnEntity_Resolved/attributeContext/BudgetPlanColumnEntity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetPlanColumnEntity_Resolved/attributeContext/BudgetPlanColumnEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BudgetPlanScenario",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetPlanColumnEntity_Resolved/attributeContext/BudgetPlanColumnEntity_Resolved/BudgetPlanScenario",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ColumnPeriodLength",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetPlanColumnEntity_Resolved/attributeContext/BudgetPlanColumnEntity_Resolved/ColumnPeriodLength",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ColumnPeriodLengthValue",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetPlanColumnEntity_Resolved/attributeContext/BudgetPlanColumnEntity_Resolved/ColumnPeriodLengthValue",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "YearOffset",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetPlanColumnEntity_Resolved/attributeContext/BudgetPlanColumnEntity_Resolved/YearOffset",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Scenario",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetPlanColumnEntity_Resolved/attributeContext/BudgetPlanColumnEntity_Resolved/Scenario",
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_BudgetPlanColumnRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Budget/Group/BudgetPlanColumn.cdm.json/BudgetPlanColumn",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "BudgetPlanColumnEntity_Resolved/attributeContext/BudgetPlanColumnEntity_Resolved/BackingTable_BudgetPlanColumnRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Budget plan columns",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

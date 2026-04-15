@@ -1,0 +1,308 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "DirPersonNameHistoricalEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "DirPersonNameHistoricalEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "DirPersonNameHistoricalEntity_Resolved",
+        "definition": "resolvedFrom/DirPersonNameHistoricalEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "DirPersonNameHistoricalEntity_Resolved/attributeContext/DirPersonNameHistoricalEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "DirPersonNameHistoricalEntity_Resolved/attributeContext/DirPersonNameHistoricalEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "FirstName",
+            "parent": "DirPersonNameHistoricalEntity_Resolved/attributeContext/DirPersonNameHistoricalEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DirPersonNameHistoricalEntity/hasAttributes/FirstName",
+            "contents": [
+              "DirPersonNameHistoricalEntity_Resolved/hasAttributes/FirstName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "LastNamePrefix",
+            "parent": "DirPersonNameHistoricalEntity_Resolved/attributeContext/DirPersonNameHistoricalEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DirPersonNameHistoricalEntity/hasAttributes/LastNamePrefix",
+            "contents": [
+              "DirPersonNameHistoricalEntity_Resolved/hasAttributes/LastNamePrefix"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "LastName",
+            "parent": "DirPersonNameHistoricalEntity_Resolved/attributeContext/DirPersonNameHistoricalEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DirPersonNameHistoricalEntity/hasAttributes/LastName",
+            "contents": [
+              "DirPersonNameHistoricalEntity_Resolved/hasAttributes/LastName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "MiddleName",
+            "parent": "DirPersonNameHistoricalEntity_Resolved/attributeContext/DirPersonNameHistoricalEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DirPersonNameHistoricalEntity/hasAttributes/MiddleName",
+            "contents": [
+              "DirPersonNameHistoricalEntity_Resolved/hasAttributes/MiddleName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Person",
+            "parent": "DirPersonNameHistoricalEntity_Resolved/attributeContext/DirPersonNameHistoricalEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DirPersonNameHistoricalEntity/hasAttributes/Person",
+            "contents": [
+              "DirPersonNameHistoricalEntity_Resolved/hasAttributes/Person"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ValidFrom",
+            "parent": "DirPersonNameHistoricalEntity_Resolved/attributeContext/DirPersonNameHistoricalEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DirPersonNameHistoricalEntity/hasAttributes/ValidFrom",
+            "contents": [
+              "DirPersonNameHistoricalEntity_Resolved/hasAttributes/ValidFrom"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ValidTo",
+            "parent": "DirPersonNameHistoricalEntity_Resolved/attributeContext/DirPersonNameHistoricalEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DirPersonNameHistoricalEntity/hasAttributes/ValidTo",
+            "contents": [
+              "DirPersonNameHistoricalEntity_Resolved/hasAttributes/ValidTo"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "PartyNumber",
+            "parent": "DirPersonNameHistoricalEntity_Resolved/attributeContext/DirPersonNameHistoricalEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DirPersonNameHistoricalEntity/hasAttributes/PartyNumber",
+            "contents": [
+              "DirPersonNameHistoricalEntity_Resolved/hasAttributes/PartyNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_DirPersonNameRelationship",
+            "parent": "DirPersonNameHistoricalEntity_Resolved/attributeContext/DirPersonNameHistoricalEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DirPersonNameHistoricalEntity/hasAttributes/BackingTable_DirPersonNameRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "DirPersonName",
+                "parent": "DirPersonNameHistoricalEntity_Resolved/attributeContext/DirPersonNameHistoricalEntity_Resolved/BackingTable_DirPersonNameRelationship",
+                "definition": "resolvedFrom/DirPersonName",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "DirPersonNameHistoricalEntity_Resolved/attributeContext/DirPersonNameHistoricalEntity_Resolved/BackingTable_DirPersonNameRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "DirPersonNameHistoricalEntity_Resolved/attributeContext/DirPersonNameHistoricalEntity_Resolved/BackingTable_DirPersonNameRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "DirPersonNameHistoricalEntity_Resolved/attributeContext/DirPersonNameHistoricalEntity_Resolved/BackingTable_DirPersonNameRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "DirPersonNameHistoricalEntity_Resolved/hasAttributes/BackingTable_DirPersonNameRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "FirstName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DirPersonNameHistoricalEntity_Resolved/attributeContext/DirPersonNameHistoricalEntity_Resolved/FirstName",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "LastNamePrefix",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DirPersonNameHistoricalEntity_Resolved/attributeContext/DirPersonNameHistoricalEntity_Resolved/LastNamePrefix",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "LastName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DirPersonNameHistoricalEntity_Resolved/attributeContext/DirPersonNameHistoricalEntity_Resolved/LastName",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "MiddleName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DirPersonNameHistoricalEntity_Resolved/attributeContext/DirPersonNameHistoricalEntity_Resolved/MiddleName",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Person",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DirPersonNameHistoricalEntity_Resolved/attributeContext/DirPersonNameHistoricalEntity_Resolved/Person",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ValidFrom",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DirPersonNameHistoricalEntity_Resolved/attributeContext/DirPersonNameHistoricalEntity_Resolved/ValidFrom",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ValidTo",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DirPersonNameHistoricalEntity_Resolved/attributeContext/DirPersonNameHistoricalEntity_Resolved/ValidTo",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "PartyNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DirPersonNameHistoricalEntity_Resolved/attributeContext/DirPersonNameHistoricalEntity_Resolved/PartyNumber",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_DirPersonNameRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Common/GAB/Main/DirPersonName.cdm.json/DirPersonName",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "DirPersonNameHistoricalEntity_Resolved/attributeContext/DirPersonNameHistoricalEntity_Resolved/BackingTable_DirPersonNameRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Person name history",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

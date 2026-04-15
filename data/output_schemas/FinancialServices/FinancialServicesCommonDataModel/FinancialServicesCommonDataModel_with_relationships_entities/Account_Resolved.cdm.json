@@ -1,0 +1,259 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "Account.cdm.json",
+      "moniker": "resolvedFrom"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "Account_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "Account_Resolved",
+        "definition": "resolvedFrom/Account",
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "Account_Resolved/attributeContext/Account_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CdmEntity",
+                "parent": "Account_Resolved/attributeContext/Account_Resolved/extends",
+                "definition": "resolvedFrom/CdmEntity"
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "attributesAddedAtThisScope",
+            "parent": "Account_Resolved/attributeContext/Account_Resolved",
+            "definition": "resolvedFrom/Account/hasAttributes/attributesAddedAtThisScope",
+            "contents": [
+              {
+                "type": "attributeGroup",
+                "name": "attributesAddedAtThisScope",
+                "parent": "Account_Resolved/attributeContext/Account_Resolved/attributesAddedAtThisScope",
+                "definition": "resolvedFrom/Account/hasAttributes/attributesAddedAtThisScope",
+                "contents": [
+                  {
+                    "type": "attributeDefinition",
+                    "name": "accountId",
+                    "parent": "Account_Resolved/attributeContext/Account_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Account/hasAttributes/attributesAddedAtThisScope/members/accountId",
+                    "contents": [
+                      "Account_Resolved/hasAttributes/accountId"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "Branch",
+                    "parent": "Account_Resolved/attributeContext/Account_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Account/hasAttributes/attributesAddedAtThisScope/members/Branch",
+                    "contents": [
+                      {
+                        "type": "projection",
+                        "name": "projection",
+                        "parent": "Account_Resolved/attributeContext/Account_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/Branch",
+                        "contents": [
+                          {
+                            "type": "source",
+                            "name": "source",
+                            "parent": "Account_Resolved/attributeContext/Account_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/Branch/projection",
+                            "contents": [
+                              {
+                                "type": "entity",
+                                "name": "Branch",
+                                "parent": "Account_Resolved/attributeContext/Account_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/Branch/projection/source",
+                                "definition": "resolvedFrom/Branch"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "Account_Resolved/attributeContext/Account_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/Branch",
+                        "contents": [
+                          {
+                            "type": "operationReplaceAsForeignKey",
+                            "name": "operation/index1/operationReplaceAsForeignKey",
+                            "parent": "Account_Resolved/attributeContext/Account_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/Branch/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "Account_Resolved/attributeContext/Account_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/Branch/_generatedAttributeSet/operation/index1/operationReplaceAsForeignKey",
+                                "contents": [
+                                  "Account_Resolved/hasAttributes/Branch"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "JoinDate",
+                    "parent": "Account_Resolved/attributeContext/Account_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Account/hasAttributes/attributesAddedAtThisScope/members/JoinDate",
+                    "contents": [
+                      "Account_Resolved/hasAttributes/JoinDate"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "Tenureyears",
+                    "parent": "Account_Resolved/attributeContext/Account_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Account/hasAttributes/attributesAddedAtThisScope/members/Tenureyears",
+                    "contents": [
+                      "Account_Resolved/hasAttributes/Tenureyears"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "accountId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            }
+          ],
+          "attributeContext": "Account_Resolved/attributeContext/Account_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/accountId",
+          "isPrimaryKey": true,
+          "dataFormat": "Guid",
+          "sourceName": "accountid",
+          "sourceOrdering": 1,
+          "displayName": "Account",
+          "description": "Unique identifier of the account."
+        },
+        {
+          "name": "Branch",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entitySet",
+                    "constantValues": [
+                      [
+                        "Branch.cdm.json/Branch",
+                        "branchId",
+                        "Branch_Branch"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "Account_Resolved/attributeContext/Account_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/Branch/_generatedAttributeSet/operation/index1/operationReplaceAsForeignKey/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "msfsi_branch",
+          "sourceOrdering": 10043,
+          "displayName": "Branch",
+          "description": "The primary branch of the bank associated with the account."
+        },
+        {
+          "name": "JoinDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date",
+            "is.dataFormat.time",
+            "means.measurement.time",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Account_Resolved/attributeContext/Account_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/JoinDate",
+          "isNullable": true,
+          "dataFormat": "DateTime",
+          "sourceName": "msfsi_joindate",
+          "sourceOrdering": 10044,
+          "displayName": "Join date",
+          "description": "The date the account joined the bank."
+        },
+        {
+          "name": "Tenureyears",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Account_Resolved/attributeContext/Account_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/Tenureyears",
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "sourceName": "msfsi_tenureyears",
+          "sourceOrdering": 10045,
+          "displayName": "Tenure",
+          "description": "Number of years the account has held accounts at the bank.",
+          "maximumValue": "100000000000",
+          "minimumValue": "-100000000000"
+        }
+      ],
+      "sourceName": "account",
+      "displayName": "Account",
+      "description": "Business that represents a customer or potential customer. The company that is billed in business transactions.",
+      "version": "1.0.1"
+    }
+  ],
+  "documentVersion": "1.0.1"
+}

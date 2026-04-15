@@ -1,0 +1,471 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "LedgerJournalHeaderEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "LedgerJournalHeaderEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "LedgerJournalHeaderEntity_Resolved",
+        "definition": "resolvedFrom/LedgerJournalHeaderEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "LedgerJournalHeaderEntity_Resolved/attributeContext/LedgerJournalHeaderEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "LedgerJournalHeaderEntity_Resolved/attributeContext/LedgerJournalHeaderEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "PostingLayer",
+            "parent": "LedgerJournalHeaderEntity_Resolved/attributeContext/LedgerJournalHeaderEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerJournalHeaderEntity/hasAttributes/PostingLayer",
+            "contents": [
+              "LedgerJournalHeaderEntity_Resolved/hasAttributes/PostingLayer"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "JournalName",
+            "parent": "LedgerJournalHeaderEntity_Resolved/attributeContext/LedgerJournalHeaderEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerJournalHeaderEntity/hasAttributes/JournalName",
+            "contents": [
+              "LedgerJournalHeaderEntity_Resolved/hasAttributes/JournalName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "JournalBatchNumber",
+            "parent": "LedgerJournalHeaderEntity_Resolved/attributeContext/LedgerJournalHeaderEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerJournalHeaderEntity/hasAttributes/JournalBatchNumber",
+            "contents": [
+              "LedgerJournalHeaderEntity_Resolved/hasAttributes/JournalBatchNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "IsPosted",
+            "parent": "LedgerJournalHeaderEntity_Resolved/attributeContext/LedgerJournalHeaderEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerJournalHeaderEntity/hasAttributes/IsPosted",
+            "contents": [
+              "LedgerJournalHeaderEntity_Resolved/hasAttributes/IsPosted"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "LedgerJournalHeaderEntity_Resolved/attributeContext/LedgerJournalHeaderEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerJournalHeaderEntity/hasAttributes/Description",
+            "contents": [
+              "LedgerJournalHeaderEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "JournalTotalDebit",
+            "parent": "LedgerJournalHeaderEntity_Resolved/attributeContext/LedgerJournalHeaderEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerJournalHeaderEntity/hasAttributes/JournalTotalDebit",
+            "contents": [
+              "LedgerJournalHeaderEntity_Resolved/hasAttributes/JournalTotalDebit"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "JournalTotalCredit",
+            "parent": "LedgerJournalHeaderEntity_Resolved/attributeContext/LedgerJournalHeaderEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerJournalHeaderEntity/hasAttributes/JournalTotalCredit",
+            "contents": [
+              "LedgerJournalHeaderEntity_Resolved/hasAttributes/JournalTotalCredit"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "AccountingCurrency",
+            "parent": "LedgerJournalHeaderEntity_Resolved/attributeContext/LedgerJournalHeaderEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerJournalHeaderEntity/hasAttributes/AccountingCurrency",
+            "contents": [
+              "LedgerJournalHeaderEntity_Resolved/hasAttributes/AccountingCurrency"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "IntegrationKey",
+            "parent": "LedgerJournalHeaderEntity_Resolved/attributeContext/LedgerJournalHeaderEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerJournalHeaderEntity/hasAttributes/IntegrationKey",
+            "contents": [
+              "LedgerJournalHeaderEntity_Resolved/hasAttributes/IntegrationKey"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_LegalEntityRelationship",
+            "parent": "LedgerJournalHeaderEntity_Resolved/attributeContext/LedgerJournalHeaderEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerJournalHeaderEntity/hasAttributes/Relationship_LegalEntityRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "OMLegalEntity",
+                "parent": "LedgerJournalHeaderEntity_Resolved/attributeContext/LedgerJournalHeaderEntity_Resolved/Relationship_LegalEntityRelationship",
+                "definition": "resolvedFrom/OMLegalEntity",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "LedgerJournalHeaderEntity_Resolved/attributeContext/LedgerJournalHeaderEntity_Resolved/Relationship_LegalEntityRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "LedgerJournalHeaderEntity_Resolved/attributeContext/LedgerJournalHeaderEntity_Resolved/Relationship_LegalEntityRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "LedgerJournalHeaderEntity_Resolved/attributeContext/LedgerJournalHeaderEntity_Resolved/Relationship_LegalEntityRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "LedgerJournalHeaderEntity_Resolved/hasAttributes/Relationship_LegalEntityRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_LedgerJournalTableRelationship",
+            "parent": "LedgerJournalHeaderEntity_Resolved/attributeContext/LedgerJournalHeaderEntity_Resolved",
+            "definition": "resolvedFrom/LedgerJournalHeaderEntity/hasAttributes/BackingTable_LedgerJournalTableRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "LedgerJournalTable",
+                "parent": "LedgerJournalHeaderEntity_Resolved/attributeContext/LedgerJournalHeaderEntity_Resolved/BackingTable_LedgerJournalTableRelationship",
+                "definition": "resolvedFrom/LedgerJournalTable",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "LedgerJournalHeaderEntity_Resolved/attributeContext/LedgerJournalHeaderEntity_Resolved/BackingTable_LedgerJournalTableRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "LedgerJournalHeaderEntity_Resolved/attributeContext/LedgerJournalHeaderEntity_Resolved/BackingTable_LedgerJournalTableRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "LedgerJournalHeaderEntity_Resolved/attributeContext/LedgerJournalHeaderEntity_Resolved/BackingTable_LedgerJournalTableRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "LedgerJournalHeaderEntity_Resolved/hasAttributes/BackingTable_LedgerJournalTableRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "LedgerJournalHeaderEntity_Resolved/attributeContext/LedgerJournalHeaderEntity_Resolved",
+            "definition": "resolvedFrom/LedgerJournalHeaderEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "LedgerJournalHeaderEntity_Resolved/attributeContext/LedgerJournalHeaderEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "LedgerJournalHeaderEntity_Resolved/attributeContext/LedgerJournalHeaderEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "LedgerJournalHeaderEntity_Resolved/attributeContext/LedgerJournalHeaderEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "LedgerJournalHeaderEntity_Resolved/attributeContext/LedgerJournalHeaderEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "LedgerJournalHeaderEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "PostingLayer",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerJournalHeaderEntity_Resolved/attributeContext/LedgerJournalHeaderEntity_Resolved/PostingLayer",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "JournalName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerJournalHeaderEntity_Resolved/attributeContext/LedgerJournalHeaderEntity_Resolved/JournalName",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "JournalBatchNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerJournalHeaderEntity_Resolved/attributeContext/LedgerJournalHeaderEntity_Resolved/JournalBatchNumber",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "IsPosted",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerJournalHeaderEntity_Resolved/attributeContext/LedgerJournalHeaderEntity_Resolved/IsPosted",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerJournalHeaderEntity_Resolved/attributeContext/LedgerJournalHeaderEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "JournalTotalDebit",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerJournalHeaderEntity_Resolved/attributeContext/LedgerJournalHeaderEntity_Resolved/JournalTotalDebit",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Total debit"
+        },
+        {
+          "name": "JournalTotalCredit",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerJournalHeaderEntity_Resolved/attributeContext/LedgerJournalHeaderEntity_Resolved/JournalTotalCredit",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Total credit"
+        },
+        {
+          "name": "AccountingCurrency",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerJournalHeaderEntity_Resolved/attributeContext/LedgerJournalHeaderEntity_Resolved/AccountingCurrency",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "IntegrationKey",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerJournalHeaderEntity_Resolved/attributeContext/LedgerJournalHeaderEntity_Resolved/IntegrationKey",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Relationship_LegalEntityRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": []
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "LedgerJournalHeaderEntity_Resolved/attributeContext/LedgerJournalHeaderEntity_Resolved/Relationship_LegalEntityRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "BackingTable_LedgerJournalTableRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/AccountingFoundation/WorksheetHeader/LedgerJournalTable.cdm.json/LedgerJournalTable",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "LedgerJournalHeaderEntity_Resolved/attributeContext/LedgerJournalHeaderEntity_Resolved/BackingTable_LedgerJournalTableRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "LedgerJournalHeaderEntity_Resolved/attributeContext/LedgerJournalHeaderEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Ledger journal table",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

@@ -1,0 +1,308 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "IntrastatCommodityCodeEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "IntrastatCommodityCodeEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "IntrastatCommodityCodeEntity_Resolved",
+        "definition": "resolvedFrom/IntrastatCommodityCodeEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "IntrastatCommodityCodeEntity_Resolved/attributeContext/IntrastatCommodityCodeEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "IntrastatCommodityCodeEntity_Resolved/attributeContext/IntrastatCommodityCodeEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "AdditionalUnits",
+            "parent": "IntrastatCommodityCodeEntity_Resolved/attributeContext/IntrastatCommodityCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/IntrastatCommodityCodeEntity/hasAttributes/AdditionalUnits",
+            "contents": [
+              "IntrastatCommodityCodeEntity_Resolved/hasAttributes/AdditionalUnits"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Commodity",
+            "parent": "IntrastatCommodityCodeEntity_Resolved/attributeContext/IntrastatCommodityCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/IntrastatCommodityCodeEntity/hasAttributes/Commodity",
+            "contents": [
+              "IntrastatCommodityCodeEntity_Resolved/hasAttributes/Commodity"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "IntrastatCommodityCodeEntity_Resolved/attributeContext/IntrastatCommodityCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/IntrastatCommodityCodeEntity/hasAttributes/Name",
+            "contents": [
+              "IntrastatCommodityCodeEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ParentCommodity",
+            "parent": "IntrastatCommodityCodeEntity_Resolved/attributeContext/IntrastatCommodityCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/IntrastatCommodityCodeEntity/hasAttributes/ParentCommodity",
+            "contents": [
+              "IntrastatCommodityCodeEntity_Resolved/hasAttributes/ParentCommodity"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CommodityHierarchyName",
+            "parent": "IntrastatCommodityCodeEntity_Resolved/attributeContext/IntrastatCommodityCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/IntrastatCommodityCodeEntity/hasAttributes/CommodityHierarchyName",
+            "contents": [
+              "IntrastatCommodityCodeEntity_Resolved/hasAttributes/CommodityHierarchyName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ParentName",
+            "parent": "IntrastatCommodityCodeEntity_Resolved/attributeContext/IntrastatCommodityCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/IntrastatCommodityCodeEntity/hasAttributes/ParentName",
+            "contents": [
+              "IntrastatCommodityCodeEntity_Resolved/hasAttributes/ParentName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "OptionalWeight",
+            "parent": "IntrastatCommodityCodeEntity_Resolved/attributeContext/IntrastatCommodityCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/IntrastatCommodityCodeEntity/hasAttributes/OptionalWeight",
+            "contents": [
+              "IntrastatCommodityCodeEntity_Resolved/hasAttributes/OptionalWeight"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "IntrastatParametersDataAreaId",
+            "parent": "IntrastatCommodityCodeEntity_Resolved/attributeContext/IntrastatCommodityCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/IntrastatCommodityCodeEntity/hasAttributes/IntrastatParametersDataAreaId",
+            "contents": [
+              "IntrastatCommodityCodeEntity_Resolved/hasAttributes/IntrastatParametersDataAreaId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_EcoResProductCategoryEntityRelationship",
+            "parent": "IntrastatCommodityCodeEntity_Resolved/attributeContext/IntrastatCommodityCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/IntrastatCommodityCodeEntity/hasAttributes/BackingTable_EcoResProductCategoryEntityRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "EcoResProductCategoryEntity",
+                "parent": "IntrastatCommodityCodeEntity_Resolved/attributeContext/IntrastatCommodityCodeEntity_Resolved/BackingTable_EcoResProductCategoryEntityRelationship",
+                "definition": "resolvedFrom/EcoResProductCategoryEntity",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "IntrastatCommodityCodeEntity_Resolved/attributeContext/IntrastatCommodityCodeEntity_Resolved/BackingTable_EcoResProductCategoryEntityRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "IntrastatCommodityCodeEntity_Resolved/attributeContext/IntrastatCommodityCodeEntity_Resolved/BackingTable_EcoResProductCategoryEntityRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "IntrastatCommodityCodeEntity_Resolved/attributeContext/IntrastatCommodityCodeEntity_Resolved/BackingTable_EcoResProductCategoryEntityRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "IntrastatCommodityCodeEntity_Resolved/hasAttributes/BackingTable_EcoResProductCategoryEntityRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "AdditionalUnits",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "IntrastatCommodityCodeEntity_Resolved/attributeContext/IntrastatCommodityCodeEntity_Resolved/AdditionalUnits",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Additional units"
+        },
+        {
+          "name": "Commodity",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "IntrastatCommodityCodeEntity_Resolved/attributeContext/IntrastatCommodityCodeEntity_Resolved/Commodity",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Commodity code"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "IntrastatCommodityCodeEntity_Resolved/attributeContext/IntrastatCommodityCodeEntity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ParentCommodity",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "IntrastatCommodityCodeEntity_Resolved/attributeContext/IntrastatCommodityCodeEntity_Resolved/ParentCommodity",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Parent commodity code"
+        },
+        {
+          "name": "CommodityHierarchyName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "IntrastatCommodityCodeEntity_Resolved/attributeContext/IntrastatCommodityCodeEntity_Resolved/CommodityHierarchyName",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Commodity hierarchy name"
+        },
+        {
+          "name": "ParentName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "IntrastatCommodityCodeEntity_Resolved/attributeContext/IntrastatCommodityCodeEntity_Resolved/ParentName",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Parent commodity name"
+        },
+        {
+          "name": "OptionalWeight",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "IntrastatCommodityCodeEntity_Resolved/attributeContext/IntrastatCommodityCodeEntity_Resolved/OptionalWeight",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "IntrastatParametersDataAreaId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "IntrastatCommodityCodeEntity_Resolved/attributeContext/IntrastatCommodityCodeEntity_Resolved/IntrastatParametersDataAreaId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_EcoResProductCategoryEntityRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": []
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "IntrastatCommodityCodeEntity_Resolved/attributeContext/IntrastatCommodityCodeEntity_Resolved/BackingTable_EcoResProductCategoryEntityRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Commodity code",
+      "version": "1.1.1"
+    }
+  ],
+  "documentVersion": "1.1.1"
+}

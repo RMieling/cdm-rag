@@ -1,0 +1,261 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "VendVendorPaymFeeGroupEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "VendVendorPaymFeeGroupEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "VendVendorPaymFeeGroupEntity_Resolved",
+        "definition": "resolvedFrom/VendVendorPaymFeeGroupEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "VendVendorPaymFeeGroupEntity_Resolved/attributeContext/VendVendorPaymFeeGroupEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "VendVendorPaymFeeGroupEntity_Resolved/attributeContext/VendVendorPaymFeeGroupEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "VendVendorPaymFeeGroupEntity_Resolved/attributeContext/VendVendorPaymFeeGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendVendorPaymFeeGroupEntity/hasAttributes/Description",
+            "contents": [
+              "VendVendorPaymFeeGroupEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "GroupId",
+            "parent": "VendVendorPaymFeeGroupEntity_Resolved/attributeContext/VendVendorPaymFeeGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendVendorPaymFeeGroupEntity/hasAttributes/GroupId",
+            "contents": [
+              "VendVendorPaymFeeGroupEntity_Resolved/hasAttributes/GroupId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_CustVendPaymFeeGroup_JPRelationship",
+            "parent": "VendVendorPaymFeeGroupEntity_Resolved/attributeContext/VendVendorPaymFeeGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendVendorPaymFeeGroupEntity/hasAttributes/BackingTable_CustVendPaymFeeGroup_JPRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CustVendPaymFeeGroup_JP",
+                "parent": "VendVendorPaymFeeGroupEntity_Resolved/attributeContext/VendVendorPaymFeeGroupEntity_Resolved/BackingTable_CustVendPaymFeeGroup_JPRelationship",
+                "definition": "resolvedFrom/CustVendPaymFeeGroup_JP",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "VendVendorPaymFeeGroupEntity_Resolved/attributeContext/VendVendorPaymFeeGroupEntity_Resolved/BackingTable_CustVendPaymFeeGroup_JPRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "VendVendorPaymFeeGroupEntity_Resolved/attributeContext/VendVendorPaymFeeGroupEntity_Resolved/BackingTable_CustVendPaymFeeGroup_JPRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "VendVendorPaymFeeGroupEntity_Resolved/attributeContext/VendVendorPaymFeeGroupEntity_Resolved/BackingTable_CustVendPaymFeeGroup_JPRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "VendVendorPaymFeeGroupEntity_Resolved/hasAttributes/BackingTable_CustVendPaymFeeGroup_JPRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "VendVendorPaymFeeGroupEntity_Resolved/attributeContext/VendVendorPaymFeeGroupEntity_Resolved",
+            "definition": "resolvedFrom/VendVendorPaymFeeGroupEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "VendVendorPaymFeeGroupEntity_Resolved/attributeContext/VendVendorPaymFeeGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "VendVendorPaymFeeGroupEntity_Resolved/attributeContext/VendVendorPaymFeeGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "VendVendorPaymFeeGroupEntity_Resolved/attributeContext/VendVendorPaymFeeGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "VendVendorPaymFeeGroupEntity_Resolved/attributeContext/VendVendorPaymFeeGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "VendVendorPaymFeeGroupEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VendVendorPaymFeeGroupEntity_Resolved/attributeContext/VendVendorPaymFeeGroupEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "GroupId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VendVendorPaymFeeGroupEntity_Resolved/attributeContext/VendVendorPaymFeeGroupEntity_Resolved/GroupId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_CustVendPaymFeeGroup_JPRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/AccountsReceivable/Group/CustVendPaymFeeGroup_JP.cdm.json/CustVendPaymFeeGroup_JP",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "VendVendorPaymFeeGroupEntity_Resolved/attributeContext/VendVendorPaymFeeGroupEntity_Resolved/BackingTable_CustVendPaymFeeGroup_JPRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "VendVendorPaymFeeGroupEntity_Resolved/attributeContext/VendVendorPaymFeeGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Vendor payment fee groups",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

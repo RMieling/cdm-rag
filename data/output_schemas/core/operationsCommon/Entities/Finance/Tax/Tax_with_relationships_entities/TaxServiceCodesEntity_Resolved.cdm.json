@@ -1,0 +1,301 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "TaxServiceCodesEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TaxServiceCodesEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "TaxServiceCodesEntity_Resolved",
+        "definition": "resolvedFrom/TaxServiceCodesEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "TaxServiceCodesEntity_Resolved/attributeContext/TaxServiceCodesEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "TaxServiceCodesEntity_Resolved/attributeContext/TaxServiceCodesEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "MinorHead",
+            "parent": "TaxServiceCodesEntity_Resolved/attributeContext/TaxServiceCodesEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxServiceCodesEntity/hasAttributes/MinorHead",
+            "contents": [
+              "TaxServiceCodesEntity_Resolved/hasAttributes/MinorHead"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "TaxServiceCodesEntity_Resolved/attributeContext/TaxServiceCodesEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxServiceCodesEntity/hasAttributes/Name",
+            "contents": [
+              "TaxServiceCodesEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ServiceAccountingCode",
+            "parent": "TaxServiceCodesEntity_Resolved/attributeContext/TaxServiceCodesEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxServiceCodesEntity/hasAttributes/ServiceAccountingCode",
+            "contents": [
+              "TaxServiceCodesEntity_Resolved/hasAttributes/ServiceAccountingCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ServiceCode",
+            "parent": "TaxServiceCodesEntity_Resolved/attributeContext/TaxServiceCodesEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxServiceCodesEntity/hasAttributes/ServiceCode",
+            "contents": [
+              "TaxServiceCodesEntity_Resolved/hasAttributes/ServiceCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_ServiceCodeTable_INRelationship",
+            "parent": "TaxServiceCodesEntity_Resolved/attributeContext/TaxServiceCodesEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxServiceCodesEntity/hasAttributes/BackingTable_ServiceCodeTable_INRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "ServiceCodeTable_IN",
+                "parent": "TaxServiceCodesEntity_Resolved/attributeContext/TaxServiceCodesEntity_Resolved/BackingTable_ServiceCodeTable_INRelationship",
+                "definition": "resolvedFrom/ServiceCodeTable_IN",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxServiceCodesEntity_Resolved/attributeContext/TaxServiceCodesEntity_Resolved/BackingTable_ServiceCodeTable_INRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxServiceCodesEntity_Resolved/attributeContext/TaxServiceCodesEntity_Resolved/BackingTable_ServiceCodeTable_INRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxServiceCodesEntity_Resolved/attributeContext/TaxServiceCodesEntity_Resolved/BackingTable_ServiceCodeTable_INRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxServiceCodesEntity_Resolved/hasAttributes/BackingTable_ServiceCodeTable_INRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "TaxServiceCodesEntity_Resolved/attributeContext/TaxServiceCodesEntity_Resolved",
+            "definition": "resolvedFrom/TaxServiceCodesEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "TaxServiceCodesEntity_Resolved/attributeContext/TaxServiceCodesEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxServiceCodesEntity_Resolved/attributeContext/TaxServiceCodesEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxServiceCodesEntity_Resolved/attributeContext/TaxServiceCodesEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxServiceCodesEntity_Resolved/attributeContext/TaxServiceCodesEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxServiceCodesEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "MinorHead",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxServiceCodesEntity_Resolved/attributeContext/TaxServiceCodesEntity_Resolved/MinorHead",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxServiceCodesEntity_Resolved/attributeContext/TaxServiceCodesEntity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ServiceAccountingCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxServiceCodesEntity_Resolved/attributeContext/TaxServiceCodesEntity_Resolved/ServiceAccountingCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ServiceCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxServiceCodesEntity_Resolved/attributeContext/TaxServiceCodesEntity_Resolved/ServiceCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_ServiceCodeTable_INRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/APARShared/Main/ServiceCodeTable_IN.cdm.json/ServiceCodeTable_IN",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxServiceCodesEntity_Resolved/attributeContext/TaxServiceCodesEntity_Resolved/BackingTable_ServiceCodeTable_INRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxServiceCodesEntity_Resolved/attributeContext/TaxServiceCodesEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Service codes",
+      "version": "1.1.1"
+    }
+  ],
+  "documentVersion": "1.1.1"
+}

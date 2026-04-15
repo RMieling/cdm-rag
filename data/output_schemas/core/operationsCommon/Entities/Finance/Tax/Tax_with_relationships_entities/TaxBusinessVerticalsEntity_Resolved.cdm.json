@@ -1,0 +1,208 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "TaxBusinessVerticalsEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TaxBusinessVerticalsEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "TaxBusinessVerticalsEntity_Resolved",
+        "definition": "resolvedFrom/TaxBusinessVerticalsEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "TaxBusinessVerticalsEntity_Resolved/attributeContext/TaxBusinessVerticalsEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "TaxBusinessVerticalsEntity_Resolved/attributeContext/TaxBusinessVerticalsEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BusinessVerticals",
+            "parent": "TaxBusinessVerticalsEntity_Resolved/attributeContext/TaxBusinessVerticalsEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxBusinessVerticalsEntity/hasAttributes/BusinessVerticals",
+            "contents": [
+              "TaxBusinessVerticalsEntity_Resolved/hasAttributes/BusinessVerticals"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "EntityCode",
+            "parent": "TaxBusinessVerticalsEntity_Resolved/attributeContext/TaxBusinessVerticalsEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxBusinessVerticalsEntity/hasAttributes/EntityCode",
+            "contents": [
+              "TaxBusinessVerticalsEntity_Resolved/hasAttributes/EntityCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "TaxBusinessVerticalsEntity_Resolved/attributeContext/TaxBusinessVerticalsEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxBusinessVerticalsEntity/hasAttributes/Description",
+            "contents": [
+              "TaxBusinessVerticalsEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_BusinessVerticalsTable_INRelationship",
+            "parent": "TaxBusinessVerticalsEntity_Resolved/attributeContext/TaxBusinessVerticalsEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxBusinessVerticalsEntity/hasAttributes/BackingTable_BusinessVerticalsTable_INRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "BusinessVerticalsTable_IN",
+                "parent": "TaxBusinessVerticalsEntity_Resolved/attributeContext/TaxBusinessVerticalsEntity_Resolved/BackingTable_BusinessVerticalsTable_INRelationship",
+                "definition": "resolvedFrom/BusinessVerticalsTable_IN",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxBusinessVerticalsEntity_Resolved/attributeContext/TaxBusinessVerticalsEntity_Resolved/BackingTable_BusinessVerticalsTable_INRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxBusinessVerticalsEntity_Resolved/attributeContext/TaxBusinessVerticalsEntity_Resolved/BackingTable_BusinessVerticalsTable_INRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxBusinessVerticalsEntity_Resolved/attributeContext/TaxBusinessVerticalsEntity_Resolved/BackingTable_BusinessVerticalsTable_INRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxBusinessVerticalsEntity_Resolved/hasAttributes/BackingTable_BusinessVerticalsTable_INRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "BusinessVerticals",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxBusinessVerticalsEntity_Resolved/attributeContext/TaxBusinessVerticalsEntity_Resolved/BusinessVerticals",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "EntityCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxBusinessVerticalsEntity_Resolved/attributeContext/TaxBusinessVerticalsEntity_Resolved/EntityCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxBusinessVerticalsEntity_Resolved/attributeContext/TaxBusinessVerticalsEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_BusinessVerticalsTable_INRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/APARShared/Main/BusinessVerticalsTable_IN.cdm.json/BusinessVerticalsTable_IN",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxBusinessVerticalsEntity_Resolved/attributeContext/TaxBusinessVerticalsEntity_Resolved/BackingTable_BusinessVerticalsTable_INRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Business verticals",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

@@ -1,0 +1,369 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "BankTransactionTypeEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "BankTransactionTypeEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "BankTransactionTypeEntity_Resolved",
+        "definition": "resolvedFrom/BankTransactionTypeEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "BankTransactionTypeEntity_Resolved/attributeContext/BankTransactionTypeEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "BankTransactionTypeEntity_Resolved/attributeContext/BankTransactionTypeEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "TransactionTypeId",
+            "parent": "BankTransactionTypeEntity_Resolved/attributeContext/BankTransactionTypeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BankTransactionTypeEntity/hasAttributes/TransactionTypeId",
+            "contents": [
+              "BankTransactionTypeEntity_Resolved/hasAttributes/TransactionTypeId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "MainAccountId",
+            "parent": "BankTransactionTypeEntity_Resolved/attributeContext/BankTransactionTypeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BankTransactionTypeEntity/hasAttributes/MainAccountId",
+            "contents": [
+              "BankTransactionTypeEntity_Resolved/hasAttributes/MainAccountId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "BankTransactionTypeEntity_Resolved/attributeContext/BankTransactionTypeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BankTransactionTypeEntity/hasAttributes/Name",
+            "contents": [
+              "BankTransactionTypeEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "MainAccountIdDisplayValue",
+            "parent": "BankTransactionTypeEntity_Resolved/attributeContext/BankTransactionTypeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BankTransactionTypeEntity/hasAttributes/MainAccountIdDisplayValue",
+            "contents": [
+              "BankTransactionTypeEntity_Resolved/hasAttributes/MainAccountIdDisplayValue"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_MainAccountIdCombinationRelationship",
+            "parent": "BankTransactionTypeEntity_Resolved/attributeContext/BankTransactionTypeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BankTransactionTypeEntity/hasAttributes/Relationship_MainAccountIdCombinationRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "DimensionCombinationEntity",
+                "parent": "BankTransactionTypeEntity_Resolved/attributeContext/BankTransactionTypeEntity_Resolved/Relationship_MainAccountIdCombinationRelationship",
+                "definition": "resolvedFrom/DimensionCombinationEntity",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "BankTransactionTypeEntity_Resolved/attributeContext/BankTransactionTypeEntity_Resolved/Relationship_MainAccountIdCombinationRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "BankTransactionTypeEntity_Resolved/attributeContext/BankTransactionTypeEntity_Resolved/Relationship_MainAccountIdCombinationRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "BankTransactionTypeEntity_Resolved/attributeContext/BankTransactionTypeEntity_Resolved/Relationship_MainAccountIdCombinationRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "BankTransactionTypeEntity_Resolved/hasAttributes/Relationship_MainAccountIdCombinationRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_BankTransTypeRelationship",
+            "parent": "BankTransactionTypeEntity_Resolved/attributeContext/BankTransactionTypeEntity_Resolved",
+            "definition": "resolvedFrom/BankTransactionTypeEntity/hasAttributes/BackingTable_BankTransTypeRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "BankTransType",
+                "parent": "BankTransactionTypeEntity_Resolved/attributeContext/BankTransactionTypeEntity_Resolved/BackingTable_BankTransTypeRelationship",
+                "definition": "resolvedFrom/BankTransType",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "BankTransactionTypeEntity_Resolved/attributeContext/BankTransactionTypeEntity_Resolved/BackingTable_BankTransTypeRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "BankTransactionTypeEntity_Resolved/attributeContext/BankTransactionTypeEntity_Resolved/BackingTable_BankTransTypeRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "BankTransactionTypeEntity_Resolved/attributeContext/BankTransactionTypeEntity_Resolved/BackingTable_BankTransTypeRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "BankTransactionTypeEntity_Resolved/hasAttributes/BackingTable_BankTransTypeRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "BankTransactionTypeEntity_Resolved/attributeContext/BankTransactionTypeEntity_Resolved",
+            "definition": "resolvedFrom/BankTransactionTypeEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "BankTransactionTypeEntity_Resolved/attributeContext/BankTransactionTypeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "BankTransactionTypeEntity_Resolved/attributeContext/BankTransactionTypeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "BankTransactionTypeEntity_Resolved/attributeContext/BankTransactionTypeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "BankTransactionTypeEntity_Resolved/attributeContext/BankTransactionTypeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "BankTransactionTypeEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "TransactionTypeId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BankTransactionTypeEntity_Resolved/attributeContext/BankTransactionTypeEntity_Resolved/TransactionTypeId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "MainAccountId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BankTransactionTypeEntity_Resolved/attributeContext/BankTransactionTypeEntity_Resolved/MainAccountId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BankTransactionTypeEntity_Resolved/attributeContext/BankTransactionTypeEntity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "MainAccountIdDisplayValue",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BankTransactionTypeEntity_Resolved/attributeContext/BankTransactionTypeEntity_Resolved/MainAccountIdDisplayValue",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Relationship_MainAccountIdCombinationRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": []
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "BankTransactionTypeEntity_Resolved/attributeContext/BankTransactionTypeEntity_Resolved/Relationship_MainAccountIdCombinationRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "BackingTable_BankTransTypeRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Bank/Group/BankTransType.cdm.json/BankTransType",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "BankTransactionTypeEntity_Resolved/attributeContext/BankTransactionTypeEntity_Resolved/BackingTable_BankTransTypeRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "BankTransactionTypeEntity_Resolved/attributeContext/BankTransactionTypeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Bank transaction type",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

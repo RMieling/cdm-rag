@@ -1,0 +1,1982 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "Feedback.cdm.json",
+      "moniker": "resolvedFrom"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "Feedback_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "means.entityState",
+          "arguments": [
+            "Feedback_Resolved/(resolvedAttributes)/stateCode"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "Feedback_Resolved",
+        "definition": "resolvedFrom/Feedback",
+        "appliedTraits": [
+          {
+            "traitReference": "means.entityState",
+            "arguments": [
+              "Feedback_Resolved/(resolvedAttributes)/stateCode"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CdmEntity",
+                "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/extends",
+                "definition": "resolvedFrom/CdmEntity"
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "attributesAddedAtThisScope",
+            "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved",
+            "definition": "resolvedFrom/Feedback/hasAttributes/attributesAddedAtThisScope",
+            "contents": [
+              {
+                "type": "attributeGroup",
+                "name": "attributesAddedAtThisScope",
+                "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope",
+                "definition": "resolvedFrom/Feedback/hasAttributes/attributesAddedAtThisScope",
+                "contents": [
+                  {
+                    "type": "attributeDefinition",
+                    "name": "feedbackId",
+                    "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Feedback/hasAttributes/attributesAddedAtThisScope/members/feedbackId",
+                    "contents": [
+                      "Feedback_Resolved/hasAttributes/feedbackId"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "rating",
+                    "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Feedback/hasAttributes/attributesAddedAtThisScope/members/rating",
+                    "contents": [
+                      "Feedback_Resolved/hasAttributes/rating"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "minRating",
+                    "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Feedback/hasAttributes/attributesAddedAtThisScope/members/minRating",
+                    "contents": [
+                      "Feedback_Resolved/hasAttributes/minRating"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "maxRating",
+                    "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Feedback/hasAttributes/attributesAddedAtThisScope/members/maxRating",
+                    "contents": [
+                      "Feedback_Resolved/hasAttributes/maxRating"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "normalizedRating",
+                    "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Feedback/hasAttributes/attributesAddedAtThisScope/members/normalizedRating",
+                    "contents": [
+                      "Feedback_Resolved/hasAttributes/normalizedRating"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "comments",
+                    "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Feedback/hasAttributes/attributesAddedAtThisScope/members/comments",
+                    "contents": [
+                      "Feedback_Resolved/hasAttributes/comments"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "source",
+                    "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Feedback/hasAttributes/attributesAddedAtThisScope/members/source",
+                    "contents": [
+                      "Feedback_Resolved/hasAttributes/source",
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/source",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/source/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeSupporting",
+                                "name": "supporting_source",
+                                "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/source/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/Feedback/hasAttributes/attributesAddedAtThisScope/members/source",
+                                "contents": [
+                                  "Feedback_Resolved/hasAttributes/source_display"
+                                ],
+                                "lineage": [
+                                  "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/source"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "stateCode",
+                    "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Feedback/hasAttributes/attributesAddedAtThisScope/members/stateCode",
+                    "contents": [
+                      "Feedback_Resolved/hasAttributes/stateCode",
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/stateCode",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/stateCode/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeSupporting",
+                                "name": "supporting_stateCode",
+                                "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/stateCode/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/Feedback/hasAttributes/attributesAddedAtThisScope/members/stateCode",
+                                "contents": [
+                                  "Feedback_Resolved/hasAttributes/stateCode_display"
+                                ],
+                                "lineage": [
+                                  "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/stateCode"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "statusCode",
+                    "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Feedback/hasAttributes/attributesAddedAtThisScope/members/statusCode",
+                    "contents": [
+                      "Feedback_Resolved/hasAttributes/statusCode",
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/statusCode",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/statusCode/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeSupporting",
+                                "name": "supporting_statusCode",
+                                "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/statusCode/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/Feedback/hasAttributes/attributesAddedAtThisScope/members/statusCode",
+                                "contents": [
+                                  "Feedback_Resolved/hasAttributes/statusCode_display"
+                                ],
+                                "lineage": [
+                                  "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/statusCode"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "versionNumber",
+                    "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Feedback/hasAttributes/attributesAddedAtThisScope/members/versionNumber",
+                    "contents": [
+                      "Feedback_Resolved/hasAttributes/versionNumber"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "regardingObject",
+                    "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Feedback/hasAttributes/attributesAddedAtThisScope/members/regardingObject",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "Regarding",
+                        "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/regardingObject",
+                        "definition": "resolvedFrom/Feedback/hasAttributes/attributesAddedAtThisScope/members/regardingObject/entity/Regarding",
+                        "contents": [
+                          {
+                            "type": "attributeDefinition",
+                            "name": "feedbackOption",
+                            "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/regardingObject/Regarding",
+                            "definition": "resolvedFrom/Feedback/hasAttributes/attributesAddedAtThisScope/members/regardingObject/entity/Regarding/hasAttributes/feedbackOption",
+                            "contents": [
+                              {
+                                "type": "entity",
+                                "name": "Feedback",
+                                "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/regardingObject/Regarding/feedbackOption",
+                                "definition": "resolvedFrom/Feedback",
+                                "appliedTraits": [
+                                  {
+                                    "traitReference": "means.entityState",
+                                    "arguments": [
+                                      "resolvedFrom/Feedback/(resolvedAttributes)/stateCode"
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "knowledgeArticleOption",
+                            "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/regardingObject/Regarding",
+                            "definition": "resolvedFrom/Feedback/hasAttributes/attributesAddedAtThisScope/members/regardingObject/entity/Regarding/hasAttributes/knowledgeArticleOption",
+                            "contents": [
+                              {
+                                "type": "entity",
+                                "name": "KnowledgeArticle",
+                                "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/regardingObject/Regarding/knowledgeArticleOption",
+                                "definition": "resolvedFrom/KnowledgeArticle",
+                                "appliedTraits": [
+                                  {
+                                    "traitReference": "means.entityState",
+                                    "arguments": [
+                                      "resolvedFrom/KnowledgeArticle/(resolvedAttributes)/stateCode"
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "contactOption",
+                            "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/regardingObject/Regarding",
+                            "definition": "resolvedFrom/Feedback/hasAttributes/attributesAddedAtThisScope/members/regardingObject/entity/Regarding/hasAttributes/contactOption",
+                            "contents": [
+                              {
+                                "type": "entity",
+                                "name": "Contact",
+                                "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/regardingObject/Regarding/contactOption",
+                                "definition": "resolvedFrom/Contact",
+                                "appliedTraits": [
+                                  {
+                                    "traitReference": "means.entityState",
+                                    "arguments": [
+                                      "resolvedFrom/Contact/(resolvedAttributes)/stateCode"
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/regardingObject",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/regardingObject/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/regardingObject/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/Feedback/hasAttributes/attributesAddedAtThisScope/members/regardingObject/resolutionGuidance/foreignKeyAttribute/id",
+                                "contents": [
+                                  "Feedback_Resolved/hasAttributes/regardingObjectId"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "User_createdBy",
+                    "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Feedback/hasAttributes/attributesAddedAtThisScope/members/User_createdBy",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "User",
+                        "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdBy",
+                        "definition": "resolvedFrom/User"
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdBy",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdBy/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdBy/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/Feedback/hasAttributes/attributesAddedAtThisScope/members/User_createdBy/resolutionGuidance/foreignKeyAttribute/createdBy",
+                                "contents": [
+                                  "Feedback_Resolved/hasAttributes/createdBy"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "createdOn",
+                    "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Feedback/hasAttributes/attributesAddedAtThisScope/members/createdOn",
+                    "contents": [
+                      "Feedback_Resolved/hasAttributes/createdOn"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "User_createdOnBehalfBy",
+                    "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Feedback/hasAttributes/attributesAddedAtThisScope/members/User_createdOnBehalfBy",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "User",
+                        "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdOnBehalfBy",
+                        "definition": "resolvedFrom/User"
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdOnBehalfBy",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdOnBehalfBy/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdOnBehalfBy/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/Feedback/hasAttributes/attributesAddedAtThisScope/members/User_createdOnBehalfBy/resolutionGuidance/foreignKeyAttribute/createdOnBehalfBy",
+                                "contents": [
+                                  "Feedback_Resolved/hasAttributes/createdOnBehalfBy"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "User_modifiedBy",
+                    "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Feedback/hasAttributes/attributesAddedAtThisScope/members/User_modifiedBy",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "User",
+                        "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedBy",
+                        "definition": "resolvedFrom/User"
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedBy",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedBy/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedBy/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/Feedback/hasAttributes/attributesAddedAtThisScope/members/User_modifiedBy/resolutionGuidance/foreignKeyAttribute/modifiedBy",
+                                "contents": [
+                                  "Feedback_Resolved/hasAttributes/modifiedBy"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "modifiedOn",
+                    "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Feedback/hasAttributes/attributesAddedAtThisScope/members/modifiedOn",
+                    "contents": [
+                      "Feedback_Resolved/hasAttributes/modifiedOn"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "User_modifiedOnBehalfBy",
+                    "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Feedback/hasAttributes/attributesAddedAtThisScope/members/User_modifiedOnBehalfBy",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "User",
+                        "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedOnBehalfBy",
+                        "definition": "resolvedFrom/User"
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedOnBehalfBy",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedOnBehalfBy/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedOnBehalfBy/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/Feedback/hasAttributes/attributesAddedAtThisScope/members/User_modifiedOnBehalfBy/resolutionGuidance/foreignKeyAttribute/modifiedOnBehalfBy",
+                                "contents": [
+                                  "Feedback_Resolved/hasAttributes/modifiedOnBehalfBy"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "ownerIdAttribute",
+                    "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/ownerIdAttribute",
+                    "contents": [
+                      {
+                        "type": "attributeGroup",
+                        "name": "ownerIdAttribute",
+                        "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute",
+                        "definition": "resolvedFrom/ownerIdAttribute",
+                        "contents": [
+                          {
+                            "type": "attributeDefinition",
+                            "name": "owner",
+                            "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute/ownerIdAttribute",
+                            "definition": "resolvedFrom/ownerIdAttribute/members/owner",
+                            "contents": [
+                              {
+                                "type": "entity",
+                                "name": "Owner",
+                                "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute/ownerIdAttribute/owner",
+                                "definition": "resolvedFrom/ownerIdAttribute/members/owner/entity/Owner",
+                                "contents": [
+                                  {
+                                    "type": "attributeDefinition",
+                                    "name": "userOption",
+                                    "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute/ownerIdAttribute/owner/Owner",
+                                    "definition": "resolvedFrom/ownerIdAttribute/members/owner/entity/Owner/hasAttributes/userOption",
+                                    "contents": [
+                                      {
+                                        "type": "entity",
+                                        "name": "User",
+                                        "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute/ownerIdAttribute/owner/Owner/userOption",
+                                        "definition": "resolvedFrom/User"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "type": "attributeDefinition",
+                                    "name": "teamOption",
+                                    "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute/ownerIdAttribute/owner/Owner",
+                                    "definition": "resolvedFrom/ownerIdAttribute/members/owner/entity/Owner/hasAttributes/teamOption",
+                                    "contents": [
+                                      {
+                                        "type": "entity",
+                                        "name": "Team",
+                                        "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute/ownerIdAttribute/owner/Owner/teamOption",
+                                        "definition": "resolvedFrom/Team"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "type": "generatedSet",
+                                "name": "_generatedAttributeSet",
+                                "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute/ownerIdAttribute/owner",
+                                "contents": [
+                                  {
+                                    "type": "generatedRound",
+                                    "name": "_generatedAttributeRound0",
+                                    "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute/ownerIdAttribute/owner/_generatedAttributeSet",
+                                    "contents": [
+                                      {
+                                        "type": "addedAttributeIdentity",
+                                        "name": "_foreignKey",
+                                        "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute/ownerIdAttribute/owner/_generatedAttributeSet/_generatedAttributeRound0",
+                                        "definition": "resolvedFrom/ownerIdAttribute/members/owner/resolutionGuidance/foreignKeyAttribute/ownerId",
+                                        "contents": [
+                                          "Feedback_Resolved/hasAttributes/ownerId"
+                                        ]
+                                      },
+                                      {
+                                        "type": "addedAttributeSelectedType",
+                                        "name": "_selectedEntityName",
+                                        "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute/ownerIdAttribute/owner/_generatedAttributeSet/_generatedAttributeRound0",
+                                        "definition": "resolvedFrom/ownerIdAttribute/members/owner/resolutionGuidance/selectedTypeAttribute/ownerIdType",
+                                        "contents": [
+                                          "Feedback_Resolved/hasAttributes/ownerIdType"
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "BusinessUnit_owningBusinessUnit",
+                    "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Feedback/hasAttributes/attributesAddedAtThisScope/members/BusinessUnit_owningBusinessUnit",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "BusinessUnit",
+                        "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/BusinessUnit_owningBusinessUnit",
+                        "definition": "resolvedFrom/BusinessUnit"
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/BusinessUnit_owningBusinessUnit",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/BusinessUnit_owningBusinessUnit/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/BusinessUnit_owningBusinessUnit/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/Feedback/hasAttributes/attributesAddedAtThisScope/members/BusinessUnit_owningBusinessUnit/resolutionGuidance/foreignKeyAttribute/owningBusinessUnit",
+                                "contents": [
+                                  "Feedback_Resolved/hasAttributes/owningBusinessUnit"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "owningUser",
+                    "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Feedback/hasAttributes/attributesAddedAtThisScope/members/owningUser",
+                    "contents": [
+                      "Feedback_Resolved/hasAttributes/owningUser"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "owningTeam",
+                    "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Feedback/hasAttributes/attributesAddedAtThisScope/members/owningTeam",
+                    "contents": [
+                      "Feedback_Resolved/hasAttributes/owningTeam"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "User_closedBy",
+                    "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Feedback/hasAttributes/attributesAddedAtThisScope/members/User_closedBy",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "User",
+                        "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_closedBy",
+                        "definition": "resolvedFrom/User"
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_closedBy",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_closedBy/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_closedBy/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/Feedback/hasAttributes/attributesAddedAtThisScope/members/User_closedBy/resolutionGuidance/foreignKeyAttribute/closedBy",
+                                "contents": [
+                                  "Feedback_Resolved/hasAttributes/closedBy"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "closedOn",
+                    "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Feedback/hasAttributes/attributesAddedAtThisScope/members/closedOn",
+                    "contents": [
+                      "Feedback_Resolved/hasAttributes/closedOn"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "importSequenceNumber",
+                    "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Feedback/hasAttributes/attributesAddedAtThisScope/members/importSequenceNumber",
+                    "contents": [
+                      "Feedback_Resolved/hasAttributes/importSequenceNumber"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "overriddenCreatedOn",
+                    "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Feedback/hasAttributes/attributesAddedAtThisScope/members/overriddenCreatedOn",
+                    "contents": [
+                      "Feedback_Resolved/hasAttributes/overriddenCreatedOn"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "transactionCurrency",
+                    "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Feedback/hasAttributes/attributesAddedAtThisScope/members/transactionCurrency",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "Currency",
+                        "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/transactionCurrency",
+                        "definition": "resolvedFrom/Currency",
+                        "appliedTraits": [
+                          {
+                            "traitReference": "means.entityState",
+                            "arguments": [
+                              "resolvedFrom/Currency/(resolvedAttributes)/stateCode"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/transactionCurrency",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/transactionCurrency/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/transactionCurrency/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/Feedback/hasAttributes/attributesAddedAtThisScope/members/transactionCurrency/resolutionGuidance/foreignKeyAttribute/id",
+                                "contents": [
+                                  "Feedback_Resolved/hasAttributes/transactionCurrencyId"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "exchangeRate",
+                    "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Feedback/hasAttributes/attributesAddedAtThisScope/members/exchangeRate",
+                    "contents": [
+                      "Feedback_Resolved/hasAttributes/exchangeRate"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "title",
+                    "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Feedback/hasAttributes/attributesAddedAtThisScope/members/title",
+                    "contents": [
+                      "Feedback_Resolved/hasAttributes/title"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "Contact_createdByContact",
+                    "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Feedback/hasAttributes/attributesAddedAtThisScope/members/Contact_createdByContact",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "Contact",
+                        "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/Contact_createdByContact",
+                        "definition": "resolvedFrom/Contact",
+                        "appliedTraits": [
+                          {
+                            "traitReference": "means.entityState",
+                            "arguments": [
+                              "resolvedFrom/Contact/(resolvedAttributes)/stateCode"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/Contact_createdByContact",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/Contact_createdByContact/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/Contact_createdByContact/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/Feedback/hasAttributes/attributesAddedAtThisScope/members/Contact_createdByContact/resolutionGuidance/foreignKeyAttribute/createdByContact",
+                                "contents": [
+                                  "Feedback_Resolved/hasAttributes/createdByContact"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "Contact_createdOnBehalfByContact",
+                    "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Feedback/hasAttributes/attributesAddedAtThisScope/members/Contact_createdOnBehalfByContact",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "Contact",
+                        "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/Contact_createdOnBehalfByContact",
+                        "definition": "resolvedFrom/Contact",
+                        "appliedTraits": [
+                          {
+                            "traitReference": "means.entityState",
+                            "arguments": [
+                              "resolvedFrom/Contact/(resolvedAttributes)/stateCode"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/Contact_createdOnBehalfByContact",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/Contact_createdOnBehalfByContact/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/Contact_createdOnBehalfByContact/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/Feedback/hasAttributes/attributesAddedAtThisScope/members/Contact_createdOnBehalfByContact/resolutionGuidance/foreignKeyAttribute/createdOnBehalfByContact",
+                                "contents": [
+                                  "Feedback_Resolved/hasAttributes/createdOnBehalfByContact"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "feedbackId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            }
+          ],
+          "attributeContext": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/feedbackId",
+          "isPrimaryKey": true,
+          "dataFormat": "Guid",
+          "sourceName": "feedbackid",
+          "sourceOrdering": 1,
+          "displayName": "Feedback",
+          "description": "FeedbackId"
+        },
+        {
+          "name": "rating",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/rating",
+          "isNullable": true,
+          "dataFormat": "Int32",
+          "sourceName": "rating",
+          "sourceOrdering": 2,
+          "displayName": "Rating",
+          "description": "Specifies how helpful the related record was.",
+          "maximumValue": "2147483647",
+          "minimumValue": "-2147483648"
+        },
+        {
+          "name": "minRating",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/minRating",
+          "isNullable": true,
+          "dataFormat": "Int32",
+          "sourceName": "minrating",
+          "sourceOrdering": 3,
+          "displayName": "Minimum Rating",
+          "description": "Enter the minimum rating value.",
+          "maximumValue": "2147483647",
+          "minimumValue": "-2147483648"
+        },
+        {
+          "name": "maxRating",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/maxRating",
+          "isNullable": true,
+          "dataFormat": "Int32",
+          "sourceName": "maxrating",
+          "sourceOrdering": 4,
+          "displayName": "Maximum Rating",
+          "description": "Enter the maximum rating value.",
+          "maximumValue": "2147483647",
+          "minimumValue": "-2147483648"
+        },
+        {
+          "name": "normalizedRating",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/normalizedRating",
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "sourceName": "normalizedrating",
+          "sourceOrdering": 5,
+          "displayName": "Normalized Rating",
+          "description": "Shows the rating scaled to a value between 0 and 1 based on minimum and maximum ratings.",
+          "maximumValue": "1000000000",
+          "minimumValue": "-100000000000"
+        },
+        {
+          "name": "comments",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/comments",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "comments",
+          "sourceOrdering": 6,
+          "displayName": "Comments",
+          "description": "Type the feedback comments.",
+          "maximumLength": 2000
+        },
+        {
+          "name": "source",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/source",
+          "isNullable": true,
+          "dataFormat": "Int32",
+          "sourceName": "source",
+          "sourceOrdering": 7,
+          "displayName": "Source",
+          "description": "Shows where the feedback was submitted from.",
+          "valueConstrainedToList": true,
+          "defaultValue": [
+            {
+              "languageTag": "en",
+              "displayText": "Internal",
+              "attributeValue": "0",
+              "displayOrder": "0"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Portal",
+              "attributeValue": "1",
+              "displayOrder": "1"
+            }
+          ]
+        },
+        {
+          "name": "source_display",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.reference.displayText",
+            {
+              "traitReference": "is.addedInSupportOf",
+              "arguments": [
+                "source"
+              ]
+            }
+          ],
+          "attributeContext": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/source/_generatedAttributeSet/_generatedAttributeRound0/supporting_source",
+          "isReadOnly": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "stateCode",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            {
+              "traitReference": "means.entityState",
+              "arguments": [
+                "Feedback_Resolved/(resolvedAttributes)/stateCode"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            }
+          ],
+          "attributeContext": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/stateCode",
+          "dataFormat": "Int32",
+          "sourceName": "statecode",
+          "sourceOrdering": 9,
+          "displayName": "Status",
+          "description": "Shows whether the feedback is open, rejected or closed.",
+          "valueConstrainedToList": true,
+          "defaultValue": [
+            {
+              "languageTag": "en",
+              "displayText": "Open",
+              "attributeValue": "0",
+              "displayOrder": "0"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Closed",
+              "attributeValue": "1",
+              "displayOrder": "1"
+            }
+          ]
+        },
+        {
+          "name": "stateCode_display",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.reference.displayText",
+            {
+              "traitReference": "is.addedInSupportOf",
+              "arguments": [
+                "stateCode"
+              ]
+            }
+          ],
+          "attributeContext": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/stateCode/_generatedAttributeSet/_generatedAttributeRound0/supporting_stateCode",
+          "isReadOnly": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "statusCode",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            {
+              "traitReference": "is.correlatedWith",
+              "arguments": [
+                "stateCode"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            }
+          ],
+          "attributeContext": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/statusCode",
+          "isNullable": true,
+          "dataFormat": "Int32",
+          "sourceName": "statuscode",
+          "sourceOrdering": 11,
+          "displayName": "Status Reason",
+          "description": "Select the feedback's status.",
+          "defaultValue": [
+            {
+              "languageTag": "en",
+              "displayText": "Proposed",
+              "attributeValue": "1",
+              "displayOrder": "0",
+              "correlatedValue": "0"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Accepted",
+              "attributeValue": "2",
+              "displayOrder": "1",
+              "correlatedValue": "0"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Closed",
+              "attributeValue": "3",
+              "displayOrder": "2",
+              "correlatedValue": "1"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Rejected",
+              "attributeValue": "4",
+              "displayOrder": "3",
+              "correlatedValue": "1"
+            }
+          ]
+        },
+        {
+          "name": "statusCode_display",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.reference.displayText",
+            {
+              "traitReference": "is.addedInSupportOf",
+              "arguments": [
+                "statusCode"
+              ]
+            }
+          ],
+          "attributeContext": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/statusCode/_generatedAttributeSet/_generatedAttributeRound0/supporting_statusCode",
+          "isReadOnly": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "versionNumber",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            "is.dataFormat.big",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/versionNumber",
+          "isNullable": true,
+          "dataFormat": "Int64",
+          "sourceName": "versionnumber",
+          "sourceOrdering": 13,
+          "displayName": "Version Number",
+          "description": "Version number of the feedback."
+        },
+        {
+          "name": "regardingObjectId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "Feedback.cdm.json/Feedback",
+                        "feedbackId"
+                      ],
+                      [
+                        "KnowledgeArticle.cdm.json/KnowledgeArticle",
+                        "knowledgearticleId"
+                      ],
+                      [
+                        "Contact.cdm.json/Contact",
+                        "contactId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/regardingObject/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "regardingobjectid",
+          "sourceOrdering": 14,
+          "displayName": "Regarding",
+          "description": "Shows the record that the feedback is associated with."
+        },
+        {
+          "name": "createdBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "User.cdm.json/User",
+                        "systemUserId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdBy/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "createdby",
+          "sourceOrdering": 18,
+          "displayName": "Created By",
+          "description": "Shows who created the record."
+        },
+        {
+          "name": "createdOn",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date",
+            "is.dataFormat.time",
+            "means.measurement.time",
+            "means.measurement.date.creation",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/createdOn",
+          "isNullable": true,
+          "dataFormat": "DateTime",
+          "sourceName": "createdon",
+          "sourceOrdering": 21,
+          "displayName": "Created On",
+          "description": "Shows the date and time when the record was created. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 options."
+        },
+        {
+          "name": "createdOnBehalfBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "User.cdm.json/User",
+                        "systemUserId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdOnBehalfBy/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "createdonbehalfby",
+          "sourceOrdering": 22,
+          "displayName": "Created By (Delegate)",
+          "description": "Shows who created the record on behalf of another user."
+        },
+        {
+          "name": "modifiedBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "User.cdm.json/User",
+                        "systemUserId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedBy/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "modifiedby",
+          "sourceOrdering": 25,
+          "displayName": "Modified By",
+          "description": "Shows who last updated the record."
+        },
+        {
+          "name": "modifiedOn",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date",
+            "is.dataFormat.time",
+            "means.measurement.time",
+            "means.measurement.date.modify",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/modifiedOn",
+          "isNullable": true,
+          "dataFormat": "DateTime",
+          "sourceName": "modifiedon",
+          "sourceOrdering": 28,
+          "displayName": "Modified On",
+          "description": "Shows the date and time when the record was last updated. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 options."
+        },
+        {
+          "name": "modifiedOnBehalfBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "User.cdm.json/User",
+                        "systemUserId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedOnBehalfBy/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "modifiedonbehalfby",
+          "sourceOrdering": 29,
+          "displayName": "Modified By (Delegate)",
+          "description": "Unique identifier of the delegate user who modified the record."
+        },
+        {
+          "name": "ownerId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            "is.CDS.standard",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "User.cdm.json/User",
+                        "systemUserId"
+                      ],
+                      [
+                        "Team.cdm.json/Team",
+                        "teamId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            },
+            "is.CDS.owner"
+          ],
+          "attributeContext": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute/ownerIdAttribute/owner/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid",
+          "sourceName": "ownerid",
+          "displayName": "Owner",
+          "description": "Owner Id"
+        },
+        {
+          "name": "ownerIdType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.entityName",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            },
+            "is.linkedEntity.name",
+            "is.CDS.owner"
+          ],
+          "attributeContext": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute/ownerIdAttribute/owner/_generatedAttributeSet/_generatedAttributeRound0/_selectedEntityName",
+          "isReadOnly": true,
+          "dataFormat": "String",
+          "sourceName": "owneridtype",
+          "displayName": "Owner Type",
+          "description": "The type of owner, either User or Team."
+        },
+        {
+          "name": "owningBusinessUnit",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "BusinessUnit.cdm.json/BusinessUnit",
+                        "businessUnitId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/BusinessUnit_owningBusinessUnit/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "owningbusinessunit",
+          "sourceOrdering": 36,
+          "displayName": "Owning Business Unit",
+          "description": "Unique identifier of the business unit that owns the knowledge article views."
+        },
+        {
+          "name": "owningUser",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/owningUser",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "owninguser",
+          "sourceOrdering": 37,
+          "displayName": "Owning User",
+          "description": "Unique identifier of the user who owns this feedback."
+        },
+        {
+          "name": "owningTeam",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/owningTeam",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "owningteam",
+          "sourceOrdering": 38,
+          "displayName": "Owning Team",
+          "description": "Unique identifier of the team that owns the feedback."
+        },
+        {
+          "name": "closedBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "User.cdm.json/User",
+                        "systemUserId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_closedBy/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "closedby",
+          "sourceOrdering": 39,
+          "displayName": "Closed By",
+          "description": "Shows who closed the record."
+        },
+        {
+          "name": "closedOn",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date",
+            "is.dataFormat.time",
+            "means.measurement.time",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/closedOn",
+          "isNullable": true,
+          "dataFormat": "DateTime",
+          "sourceName": "closedon",
+          "sourceOrdering": 42,
+          "displayName": "Closed On",
+          "description": "Shows the date and time when the record was closed. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 options."
+        },
+        {
+          "name": "importSequenceNumber",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/importSequenceNumber",
+          "isNullable": true,
+          "dataFormat": "Int32",
+          "sourceName": "importsequencenumber",
+          "sourceOrdering": 43,
+          "displayName": "Import Sequence Number",
+          "description": "Unique identifier of the data import or data migration that created this record.",
+          "maximumValue": "2147483647",
+          "minimumValue": "-2147483648"
+        },
+        {
+          "name": "overriddenCreatedOn",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date",
+            "is.dataFormat.time",
+            "means.measurement.time",
+            "means.measurement.date.creation",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/overriddenCreatedOn",
+          "isNullable": true,
+          "dataFormat": "DateTime",
+          "sourceName": "overriddencreatedon",
+          "sourceOrdering": 44,
+          "displayName": "Record Created On",
+          "description": "Date and time that the record was migrated."
+        },
+        {
+          "name": "transactionCurrencyId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "Currency.cdm.json/Currency",
+                        "transactionCurrencyId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/transactionCurrency/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "transactioncurrencyid",
+          "sourceOrdering": 45,
+          "displayName": "Currency",
+          "description": "Choose the local currency for the record to make sure budgets are reported in the correct currency."
+        },
+        {
+          "name": "exchangeRate",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/exchangeRate",
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "sourceName": "exchangerate",
+          "sourceOrdering": 47,
+          "displayName": "Exchange Rate",
+          "description": "Shows the conversion rate of the record's currency. The exchange rate is used to convert all money fields in the record from the local currency to the system's default currency.",
+          "maximumValue": "100000000000",
+          "minimumValue": "1E-10"
+        },
+        {
+          "name": "title",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            }
+          ],
+          "attributeContext": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/title",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "title",
+          "sourceOrdering": 48,
+          "displayName": "Title",
+          "description": "Type a title for the feedback.",
+          "maximumLength": 155
+        },
+        {
+          "name": "createdByContact",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "Contact.cdm.json/Contact",
+                        "contactId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/Contact_createdByContact/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "createdbycontact",
+          "sourceOrdering": 49,
+          "displayName": "Created By (Contact)",
+          "description": "Shows the contact who created the record."
+        },
+        {
+          "name": "createdOnBehalfByContact",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "Contact.cdm.json/Contact",
+                        "contactId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "Feedback_Resolved/attributeContext/Feedback_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/Contact_createdOnBehalfByContact/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "createdonbehalfbycontact",
+          "sourceOrdering": 51,
+          "displayName": "Created OnBelhalfBy (Contact)",
+          "description": "Shows the contact who created the record on behalf of another user."
+        }
+      ],
+      "sourceName": "Feedback",
+      "displayName": "Feedback",
+      "description": "Container for feedback and ratings for knowledge articles.",
+      "version": "1.3",
+      "cdmSchemas": [
+        "/core/applicationCommon/Feedback.cdm.json/Feedback/hasAttributes/attributesAddedAtThisScope"
+      ]
+    }
+  ],
+  "documentVersion": "1.3"
+}

@@ -1,0 +1,301 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "TaxFiscalClassificationCodeEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TaxFiscalClassificationCodeEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "TaxFiscalClassificationCodeEntity_Resolved",
+        "definition": "resolvedFrom/TaxFiscalClassificationCodeEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "TaxFiscalClassificationCodeEntity_Resolved/attributeContext/TaxFiscalClassificationCodeEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "TaxFiscalClassificationCodeEntity_Resolved/attributeContext/TaxFiscalClassificationCodeEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "FiscalClassificationCode",
+            "parent": "TaxFiscalClassificationCodeEntity_Resolved/attributeContext/TaxFiscalClassificationCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxFiscalClassificationCodeEntity/hasAttributes/FiscalClassificationCode",
+            "contents": [
+              "TaxFiscalClassificationCodeEntity_Resolved/hasAttributes/FiscalClassificationCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "FiscalClassificationName",
+            "parent": "TaxFiscalClassificationCodeEntity_Resolved/attributeContext/TaxFiscalClassificationCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxFiscalClassificationCodeEntity/hasAttributes/FiscalClassificationName",
+            "contents": [
+              "TaxFiscalClassificationCodeEntity_Resolved/hasAttributes/FiscalClassificationName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ApproximateTaxRateForNationalProducts",
+            "parent": "TaxFiscalClassificationCodeEntity_Resolved/attributeContext/TaxFiscalClassificationCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxFiscalClassificationCodeEntity/hasAttributes/ApproximateTaxRateForNationalProducts",
+            "contents": [
+              "TaxFiscalClassificationCodeEntity_Resolved/hasAttributes/ApproximateTaxRateForNationalProducts"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ApproximateTaxRateForImportedProducts",
+            "parent": "TaxFiscalClassificationCodeEntity_Resolved/attributeContext/TaxFiscalClassificationCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxFiscalClassificationCodeEntity/hasAttributes/ApproximateTaxRateForImportedProducts",
+            "contents": [
+              "TaxFiscalClassificationCodeEntity_Resolved/hasAttributes/ApproximateTaxRateForImportedProducts"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_TaxFiscalClassification_BRRelationship",
+            "parent": "TaxFiscalClassificationCodeEntity_Resolved/attributeContext/TaxFiscalClassificationCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxFiscalClassificationCodeEntity/hasAttributes/BackingTable_TaxFiscalClassification_BRRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "TaxFiscalClassification_BR",
+                "parent": "TaxFiscalClassificationCodeEntity_Resolved/attributeContext/TaxFiscalClassificationCodeEntity_Resolved/BackingTable_TaxFiscalClassification_BRRelationship",
+                "definition": "resolvedFrom/TaxFiscalClassification_BR",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxFiscalClassificationCodeEntity_Resolved/attributeContext/TaxFiscalClassificationCodeEntity_Resolved/BackingTable_TaxFiscalClassification_BRRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxFiscalClassificationCodeEntity_Resolved/attributeContext/TaxFiscalClassificationCodeEntity_Resolved/BackingTable_TaxFiscalClassification_BRRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxFiscalClassificationCodeEntity_Resolved/attributeContext/TaxFiscalClassificationCodeEntity_Resolved/BackingTable_TaxFiscalClassification_BRRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxFiscalClassificationCodeEntity_Resolved/hasAttributes/BackingTable_TaxFiscalClassification_BRRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "TaxFiscalClassificationCodeEntity_Resolved/attributeContext/TaxFiscalClassificationCodeEntity_Resolved",
+            "definition": "resolvedFrom/TaxFiscalClassificationCodeEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "TaxFiscalClassificationCodeEntity_Resolved/attributeContext/TaxFiscalClassificationCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxFiscalClassificationCodeEntity_Resolved/attributeContext/TaxFiscalClassificationCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxFiscalClassificationCodeEntity_Resolved/attributeContext/TaxFiscalClassificationCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxFiscalClassificationCodeEntity_Resolved/attributeContext/TaxFiscalClassificationCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxFiscalClassificationCodeEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "FiscalClassificationCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxFiscalClassificationCodeEntity_Resolved/attributeContext/TaxFiscalClassificationCodeEntity_Resolved/FiscalClassificationCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "FiscalClassificationName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxFiscalClassificationCodeEntity_Resolved/attributeContext/TaxFiscalClassificationCodeEntity_Resolved/FiscalClassificationName",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ApproximateTaxRateForNationalProducts",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxFiscalClassificationCodeEntity_Resolved/attributeContext/TaxFiscalClassificationCodeEntity_Resolved/ApproximateTaxRateForNationalProducts",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ApproximateTaxRateForImportedProducts",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxFiscalClassificationCodeEntity_Resolved/attributeContext/TaxFiscalClassificationCodeEntity_Resolved/ApproximateTaxRateForImportedProducts",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_TaxFiscalClassification_BRRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Tax/Parameter/TaxFiscalClassification_BR.cdm.json/TaxFiscalClassification_BR",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxFiscalClassificationCodeEntity_Resolved/attributeContext/TaxFiscalClassificationCodeEntity_Resolved/BackingTable_TaxFiscalClassification_BRRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxFiscalClassificationCodeEntity_Resolved/attributeContext/TaxFiscalClassificationCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Fiscal classification code",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

@@ -1,0 +1,301 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "LedgerLiquidityEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "LedgerLiquidityEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "LedgerLiquidityEntity_Resolved",
+        "definition": "resolvedFrom/LedgerLiquidityEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "LedgerLiquidityEntity_Resolved/attributeContext/LedgerLiquidityEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "LedgerLiquidityEntity_Resolved/attributeContext/LedgerLiquidityEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "MainAccount",
+            "parent": "LedgerLiquidityEntity_Resolved/attributeContext/LedgerLiquidityEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerLiquidityEntity/hasAttributes/MainAccount",
+            "contents": [
+              "LedgerLiquidityEntity_Resolved/hasAttributes/MainAccount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ChartOfAccounts",
+            "parent": "LedgerLiquidityEntity_Resolved/attributeContext/LedgerLiquidityEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerLiquidityEntity/hasAttributes/ChartOfAccounts",
+            "contents": [
+              "LedgerLiquidityEntity_Resolved/hasAttributes/ChartOfAccounts"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "MainAccountId",
+            "parent": "LedgerLiquidityEntity_Resolved/attributeContext/LedgerLiquidityEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerLiquidityEntity/hasAttributes/MainAccountId",
+            "contents": [
+              "LedgerLiquidityEntity_Resolved/hasAttributes/MainAccountId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ChartOfAccountsName",
+            "parent": "LedgerLiquidityEntity_Resolved/attributeContext/LedgerLiquidityEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerLiquidityEntity/hasAttributes/ChartOfAccountsName",
+            "contents": [
+              "LedgerLiquidityEntity_Resolved/hasAttributes/ChartOfAccountsName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_LedgerLiquidityRelationship",
+            "parent": "LedgerLiquidityEntity_Resolved/attributeContext/LedgerLiquidityEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerLiquidityEntity/hasAttributes/BackingTable_LedgerLiquidityRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "LedgerLiquidity",
+                "parent": "LedgerLiquidityEntity_Resolved/attributeContext/LedgerLiquidityEntity_Resolved/BackingTable_LedgerLiquidityRelationship",
+                "definition": "resolvedFrom/LedgerLiquidity",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "LedgerLiquidityEntity_Resolved/attributeContext/LedgerLiquidityEntity_Resolved/BackingTable_LedgerLiquidityRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "LedgerLiquidityEntity_Resolved/attributeContext/LedgerLiquidityEntity_Resolved/BackingTable_LedgerLiquidityRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "LedgerLiquidityEntity_Resolved/attributeContext/LedgerLiquidityEntity_Resolved/BackingTable_LedgerLiquidityRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "LedgerLiquidityEntity_Resolved/hasAttributes/BackingTable_LedgerLiquidityRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "LedgerLiquidityEntity_Resolved/attributeContext/LedgerLiquidityEntity_Resolved",
+            "definition": "resolvedFrom/LedgerLiquidityEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "LedgerLiquidityEntity_Resolved/attributeContext/LedgerLiquidityEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "LedgerLiquidityEntity_Resolved/attributeContext/LedgerLiquidityEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "LedgerLiquidityEntity_Resolved/attributeContext/LedgerLiquidityEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "LedgerLiquidityEntity_Resolved/attributeContext/LedgerLiquidityEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "LedgerLiquidityEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "MainAccount",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerLiquidityEntity_Resolved/attributeContext/LedgerLiquidityEntity_Resolved/MainAccount",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ChartOfAccounts",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerLiquidityEntity_Resolved/attributeContext/LedgerLiquidityEntity_Resolved/ChartOfAccounts",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "MainAccountId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerLiquidityEntity_Resolved/attributeContext/LedgerLiquidityEntity_Resolved/MainAccountId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ChartOfAccountsName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerLiquidityEntity_Resolved/attributeContext/LedgerLiquidityEntity_Resolved/ChartOfAccountsName",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_LedgerLiquidityRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Bank/Group/LedgerLiquidity.cdm.json/LedgerLiquidity",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "LedgerLiquidityEntity_Resolved/attributeContext/LedgerLiquidityEntity_Resolved/BackingTable_LedgerLiquidityRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "LedgerLiquidityEntity_Resolved/attributeContext/LedgerLiquidityEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Liquidity accounts",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

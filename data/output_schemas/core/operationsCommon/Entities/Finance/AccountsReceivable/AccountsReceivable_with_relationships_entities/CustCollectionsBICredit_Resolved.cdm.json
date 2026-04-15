@@ -1,0 +1,309 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "CustCollectionsBICredit.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "CustCollectionsBICredit_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "CustCollectionsBICredit_Resolved",
+        "definition": "resolvedFrom/CustCollectionsBICredit",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "CustCollectionsBICredit_Resolved/attributeContext/CustCollectionsBICredit_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "CustCollectionsBICredit_Resolved/attributeContext/CustCollectionsBICredit_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "AccountNum",
+            "parent": "CustCollectionsBICredit_Resolved/attributeContext/CustCollectionsBICredit_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCollectionsBICredit/hasAttributes/AccountNum",
+            "contents": [
+              "CustCollectionsBICredit_Resolved/hasAttributes/AccountNum"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Company",
+            "parent": "CustCollectionsBICredit_Resolved/attributeContext/CustCollectionsBICredit_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCollectionsBICredit/hasAttributes/Company",
+            "contents": [
+              "CustCollectionsBICredit_Resolved/hasAttributes/Company"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CreditRating",
+            "parent": "CustCollectionsBICredit_Resolved/attributeContext/CustCollectionsBICredit_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCollectionsBICredit/hasAttributes/CreditRating",
+            "contents": [
+              "CustCollectionsBICredit_Resolved/hasAttributes/CreditRating"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "CustCollectionsBICredit_Resolved/attributeContext/CustCollectionsBICredit_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCollectionsBICredit/hasAttributes/Name",
+            "contents": [
+              "CustCollectionsBICredit_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "SystemCurrencyAmount",
+            "parent": "CustCollectionsBICredit_Resolved/attributeContext/CustCollectionsBICredit_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCollectionsBICredit/hasAttributes/SystemCurrencyAmount",
+            "contents": [
+              "CustCollectionsBICredit_Resolved/hasAttributes/SystemCurrencyAmount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CreditRemaining",
+            "parent": "CustCollectionsBICredit_Resolved/attributeContext/CustCollectionsBICredit_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCollectionsBICredit/hasAttributes/CreditRemaining",
+            "contents": [
+              "CustCollectionsBICredit_Resolved/hasAttributes/CreditRemaining"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "AmountOverCreditLimit",
+            "parent": "CustCollectionsBICredit_Resolved/attributeContext/CustCollectionsBICredit_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCollectionsBICredit/hasAttributes/AmountOverCreditLimit",
+            "contents": [
+              "CustCollectionsBICredit_Resolved/hasAttributes/AmountOverCreditLimit"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "SystemCurrencyCreditMax",
+            "parent": "CustCollectionsBICredit_Resolved/attributeContext/CustCollectionsBICredit_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCollectionsBICredit/hasAttributes/SystemCurrencyCreditMax",
+            "contents": [
+              "CustCollectionsBICredit_Resolved/hasAttributes/SystemCurrencyCreditMax"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "CustCollectionsBICredit_Resolved/attributeContext/CustCollectionsBICredit_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCollectionsBICredit/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "CustCollectionsBICredit_Resolved/attributeContext/CustCollectionsBICredit_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CustCollectionsBICredit_Resolved/attributeContext/CustCollectionsBICredit_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CustCollectionsBICredit_Resolved/attributeContext/CustCollectionsBICredit_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CustCollectionsBICredit_Resolved/attributeContext/CustCollectionsBICredit_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CustCollectionsBICredit_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "AccountNum",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustCollectionsBICredit_Resolved/attributeContext/CustCollectionsBICredit_Resolved/AccountNum",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Company",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustCollectionsBICredit_Resolved/attributeContext/CustCollectionsBICredit_Resolved/Company",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "CreditRating",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustCollectionsBICredit_Resolved/attributeContext/CustCollectionsBICredit_Resolved/CreditRating",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustCollectionsBICredit_Resolved/attributeContext/CustCollectionsBICredit_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "SystemCurrencyAmount",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustCollectionsBICredit_Resolved/attributeContext/CustCollectionsBICredit_Resolved/SystemCurrencyAmount",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "CreditRemaining",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustCollectionsBICredit_Resolved/attributeContext/CustCollectionsBICredit_Resolved/CreditRemaining",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "AmountOverCreditLimit",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustCollectionsBICredit_Resolved/attributeContext/CustCollectionsBICredit_Resolved/AmountOverCreditLimit",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Credit per customer"
+        },
+        {
+          "name": "SystemCurrencyCreditMax",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustCollectionsBICredit_Resolved/attributeContext/CustCollectionsBICredit_Resolved/SystemCurrencyCreditMax",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CustCollectionsBICredit_Resolved/attributeContext/CustCollectionsBICredit_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "@AccountsReceivable:AR_Collections_CustCollectionsBICreditLimitOver",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

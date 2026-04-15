@@ -1,0 +1,430 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "CustomerPaymentFeeEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "CustomerPaymentFeeEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "CustomerPaymentFeeEntity_Resolved",
+        "definition": "resolvedFrom/CustomerPaymentFeeEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "CustomerPaymentFeeEntity_Resolved/attributeContext/CustomerPaymentFeeEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "CustomerPaymentFeeEntity_Resolved/attributeContext/CustomerPaymentFeeEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "CustomerPaymentFeeEntity_Resolved/attributeContext/CustomerPaymentFeeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustomerPaymentFeeEntity/hasAttributes/Name",
+            "contents": [
+              "CustomerPaymentFeeEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "CustomerPaymentFeeEntity_Resolved/attributeContext/CustomerPaymentFeeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustomerPaymentFeeEntity/hasAttributes/Description",
+            "contents": [
+              "CustomerPaymentFeeEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ChargeType",
+            "parent": "CustomerPaymentFeeEntity_Resolved/attributeContext/CustomerPaymentFeeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustomerPaymentFeeEntity/hasAttributes/ChargeType",
+            "contents": [
+              "CustomerPaymentFeeEntity_Resolved/hasAttributes/ChargeType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "MainAccountId",
+            "parent": "CustomerPaymentFeeEntity_Resolved/attributeContext/CustomerPaymentFeeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustomerPaymentFeeEntity/hasAttributes/MainAccountId",
+            "contents": [
+              "CustomerPaymentFeeEntity_Resolved/hasAttributes/MainAccountId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "JournalType",
+            "parent": "CustomerPaymentFeeEntity_Resolved/attributeContext/CustomerPaymentFeeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustomerPaymentFeeEntity/hasAttributes/JournalType",
+            "contents": [
+              "CustomerPaymentFeeEntity_Resolved/hasAttributes/JournalType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "TransactionText",
+            "parent": "CustomerPaymentFeeEntity_Resolved/attributeContext/CustomerPaymentFeeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustomerPaymentFeeEntity/hasAttributes/TransactionText",
+            "contents": [
+              "CustomerPaymentFeeEntity_Resolved/hasAttributes/TransactionText"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "MainAccountIdDisplayValue",
+            "parent": "CustomerPaymentFeeEntity_Resolved/attributeContext/CustomerPaymentFeeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustomerPaymentFeeEntity/hasAttributes/MainAccountIdDisplayValue",
+            "contents": [
+              "CustomerPaymentFeeEntity_Resolved/hasAttributes/MainAccountIdDisplayValue"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_MainAccountIdCombinationRelationship",
+            "parent": "CustomerPaymentFeeEntity_Resolved/attributeContext/CustomerPaymentFeeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustomerPaymentFeeEntity/hasAttributes/Relationship_MainAccountIdCombinationRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "DimensionCombinationEntity",
+                "parent": "CustomerPaymentFeeEntity_Resolved/attributeContext/CustomerPaymentFeeEntity_Resolved/Relationship_MainAccountIdCombinationRelationship",
+                "definition": "resolvedFrom/DimensionCombinationEntity",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CustomerPaymentFeeEntity_Resolved/attributeContext/CustomerPaymentFeeEntity_Resolved/Relationship_MainAccountIdCombinationRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CustomerPaymentFeeEntity_Resolved/attributeContext/CustomerPaymentFeeEntity_Resolved/Relationship_MainAccountIdCombinationRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CustomerPaymentFeeEntity_Resolved/attributeContext/CustomerPaymentFeeEntity_Resolved/Relationship_MainAccountIdCombinationRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CustomerPaymentFeeEntity_Resolved/hasAttributes/Relationship_MainAccountIdCombinationRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_CustPaymFeeRelationship",
+            "parent": "CustomerPaymentFeeEntity_Resolved/attributeContext/CustomerPaymentFeeEntity_Resolved",
+            "definition": "resolvedFrom/CustomerPaymentFeeEntity/hasAttributes/BackingTable_CustPaymFeeRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CustPaymFee",
+                "parent": "CustomerPaymentFeeEntity_Resolved/attributeContext/CustomerPaymentFeeEntity_Resolved/BackingTable_CustPaymFeeRelationship",
+                "definition": "resolvedFrom/CustPaymFee",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CustomerPaymentFeeEntity_Resolved/attributeContext/CustomerPaymentFeeEntity_Resolved/BackingTable_CustPaymFeeRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CustomerPaymentFeeEntity_Resolved/attributeContext/CustomerPaymentFeeEntity_Resolved/BackingTable_CustPaymFeeRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CustomerPaymentFeeEntity_Resolved/attributeContext/CustomerPaymentFeeEntity_Resolved/BackingTable_CustPaymFeeRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CustomerPaymentFeeEntity_Resolved/hasAttributes/BackingTable_CustPaymFeeRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "CustomerPaymentFeeEntity_Resolved/attributeContext/CustomerPaymentFeeEntity_Resolved",
+            "definition": "resolvedFrom/CustomerPaymentFeeEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "CustomerPaymentFeeEntity_Resolved/attributeContext/CustomerPaymentFeeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CustomerPaymentFeeEntity_Resolved/attributeContext/CustomerPaymentFeeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CustomerPaymentFeeEntity_Resolved/attributeContext/CustomerPaymentFeeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CustomerPaymentFeeEntity_Resolved/attributeContext/CustomerPaymentFeeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CustomerPaymentFeeEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustomerPaymentFeeEntity_Resolved/attributeContext/CustomerPaymentFeeEntity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustomerPaymentFeeEntity_Resolved/attributeContext/CustomerPaymentFeeEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ChargeType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustomerPaymentFeeEntity_Resolved/attributeContext/CustomerPaymentFeeEntity_Resolved/ChargeType",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "MainAccountId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustomerPaymentFeeEntity_Resolved/attributeContext/CustomerPaymentFeeEntity_Resolved/MainAccountId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "JournalType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustomerPaymentFeeEntity_Resolved/attributeContext/CustomerPaymentFeeEntity_Resolved/JournalType",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "TransactionText",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustomerPaymentFeeEntity_Resolved/attributeContext/CustomerPaymentFeeEntity_Resolved/TransactionText",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "MainAccountIdDisplayValue",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustomerPaymentFeeEntity_Resolved/attributeContext/CustomerPaymentFeeEntity_Resolved/MainAccountIdDisplayValue",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Main account"
+        },
+        {
+          "name": "Relationship_MainAccountIdCombinationRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": []
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CustomerPaymentFeeEntity_Resolved/attributeContext/CustomerPaymentFeeEntity_Resolved/Relationship_MainAccountIdCombinationRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "BackingTable_CustPaymFeeRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Bank/Group/CustPaymFee.cdm.json/CustPaymFee",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CustomerPaymentFeeEntity_Resolved/attributeContext/CustomerPaymentFeeEntity_Resolved/BackingTable_CustPaymFeeRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CustomerPaymentFeeEntity_Resolved/attributeContext/CustomerPaymentFeeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Customer payment fee",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

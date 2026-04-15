@@ -1,0 +1,3629 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "Activity.cdm.json",
+      "moniker": "resolvedFrom"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "Activity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.ordered",
+          "arguments": [
+            "Activity_Resolved/(resolvedAttributes)/sortDate"
+          ]
+        },
+        {
+          "traitReference": "means.entityState",
+          "arguments": [
+            "Activity_Resolved/(resolvedAttributes)/stateCode"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "Activity_Resolved",
+        "definition": "resolvedFrom/Activity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.ordered",
+            "arguments": [
+              "Activity_Resolved/(resolvedAttributes)/sortDate"
+            ]
+          },
+          {
+            "traitReference": "means.entityState",
+            "arguments": [
+              "Activity_Resolved/(resolvedAttributes)/stateCode"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "Activity_Resolved/attributeContext/Activity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "ActivityCommon",
+                "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends",
+                "definition": "resolvedFrom/ActivityCommon",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.ordered",
+                    "arguments": [
+                      "resolvedFrom/ActivityCommon/(resolvedAttributes)/sortDate"
+                    ]
+                  }
+                ],
+                "contents": [
+                  {
+                    "type": "entityReferenceExtends",
+                    "name": "extends",
+                    "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "CdsStandard",
+                        "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends",
+                        "definition": "resolvedFrom/CdsStandard",
+                        "contents": [
+                          {
+                            "type": "entityReferenceExtends",
+                            "name": "extends",
+                            "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard",
+                            "contents": [
+                              {
+                                "type": "entity",
+                                "name": "CdmEntity",
+                                "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/extends",
+                                "definition": "resolvedFrom/CdmEntity"
+                              }
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "cdsCreationModificationDatesAndIds",
+                            "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard",
+                            "definition": "resolvedFrom/cdsCreationModificationDatesAndIds",
+                            "contents": [
+                              {
+                                "type": "attributeGroup",
+                                "name": "cdsCreationModificationDatesAndIds",
+                                "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds",
+                                "definition": "resolvedFrom/cdsCreationModificationDatesAndIds",
+                                "contents": [
+                                  {
+                                    "type": "attributeDefinition",
+                                    "name": "createdOn",
+                                    "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds/cdsCreationModificationDatesAndIds",
+                                    "definition": "resolvedFrom/cdsCreationModificationDatesAndIds/members/createdOn",
+                                    "contents": [
+                                      "Activity_Resolved/hasAttributes/createdOn"
+                                    ]
+                                  },
+                                  {
+                                    "type": "attributeDefinition",
+                                    "name": "User_createdBy",
+                                    "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds/cdsCreationModificationDatesAndIds",
+                                    "definition": "resolvedFrom/cdsCreationModificationDatesAndIds/members/User_createdBy",
+                                    "contents": [
+                                      {
+                                        "type": "entity",
+                                        "name": "User",
+                                        "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds/cdsCreationModificationDatesAndIds/User_createdBy",
+                                        "definition": "resolvedFrom/User"
+                                      },
+                                      {
+                                        "type": "generatedSet",
+                                        "name": "_generatedAttributeSet",
+                                        "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds/cdsCreationModificationDatesAndIds/User_createdBy",
+                                        "contents": [
+                                          {
+                                            "type": "generatedRound",
+                                            "name": "_generatedAttributeRound0",
+                                            "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds/cdsCreationModificationDatesAndIds/User_createdBy/_generatedAttributeSet",
+                                            "contents": [
+                                              {
+                                                "type": "addedAttributeIdentity",
+                                                "name": "_foreignKey",
+                                                "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds/cdsCreationModificationDatesAndIds/User_createdBy/_generatedAttributeSet/_generatedAttributeRound0",
+                                                "definition": "resolvedFrom/cdsCreationModificationDatesAndIds/members/User_createdBy/resolutionGuidance/foreignKeyAttribute/createdBy",
+                                                "contents": [
+                                                  "Activity_Resolved/hasAttributes/createdBy"
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "type": "attributeDefinition",
+                                    "name": "modifiedOn",
+                                    "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds/cdsCreationModificationDatesAndIds",
+                                    "definition": "resolvedFrom/cdsCreationModificationDatesAndIds/members/modifiedOn",
+                                    "contents": [
+                                      "Activity_Resolved/hasAttributes/modifiedOn"
+                                    ]
+                                  },
+                                  {
+                                    "type": "attributeDefinition",
+                                    "name": "User_modifiedBy",
+                                    "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds/cdsCreationModificationDatesAndIds",
+                                    "definition": "resolvedFrom/cdsCreationModificationDatesAndIds/members/User_modifiedBy",
+                                    "contents": [
+                                      {
+                                        "type": "entity",
+                                        "name": "User",
+                                        "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds/cdsCreationModificationDatesAndIds/User_modifiedBy",
+                                        "definition": "resolvedFrom/User"
+                                      },
+                                      {
+                                        "type": "generatedSet",
+                                        "name": "_generatedAttributeSet",
+                                        "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds/cdsCreationModificationDatesAndIds/User_modifiedBy",
+                                        "contents": [
+                                          {
+                                            "type": "generatedRound",
+                                            "name": "_generatedAttributeRound0",
+                                            "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds/cdsCreationModificationDatesAndIds/User_modifiedBy/_generatedAttributeSet",
+                                            "contents": [
+                                              {
+                                                "type": "addedAttributeIdentity",
+                                                "name": "_foreignKey",
+                                                "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds/cdsCreationModificationDatesAndIds/User_modifiedBy/_generatedAttributeSet/_generatedAttributeRound0",
+                                                "definition": "resolvedFrom/cdsCreationModificationDatesAndIds/members/User_modifiedBy/resolutionGuidance/foreignKeyAttribute/modifiedBy",
+                                                "contents": [
+                                                  "Activity_Resolved/hasAttributes/modifiedBy"
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "type": "attributeDefinition",
+                                    "name": "User_createdOnBehalfBy",
+                                    "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds/cdsCreationModificationDatesAndIds",
+                                    "definition": "resolvedFrom/cdsCreationModificationDatesAndIds/members/User_createdOnBehalfBy",
+                                    "contents": [
+                                      {
+                                        "type": "entity",
+                                        "name": "User",
+                                        "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds/cdsCreationModificationDatesAndIds/User_createdOnBehalfBy",
+                                        "definition": "resolvedFrom/User"
+                                      },
+                                      {
+                                        "type": "generatedSet",
+                                        "name": "_generatedAttributeSet",
+                                        "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds/cdsCreationModificationDatesAndIds/User_createdOnBehalfBy",
+                                        "contents": [
+                                          {
+                                            "type": "generatedRound",
+                                            "name": "_generatedAttributeRound0",
+                                            "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds/cdsCreationModificationDatesAndIds/User_createdOnBehalfBy/_generatedAttributeSet",
+                                            "contents": [
+                                              {
+                                                "type": "addedAttributeIdentity",
+                                                "name": "_foreignKey",
+                                                "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds/cdsCreationModificationDatesAndIds/User_createdOnBehalfBy/_generatedAttributeSet/_generatedAttributeRound0",
+                                                "definition": "resolvedFrom/cdsCreationModificationDatesAndIds/members/User_createdOnBehalfBy/resolutionGuidance/foreignKeyAttribute/createdOnBehalfBy",
+                                                "contents": [
+                                                  "Activity_Resolved/hasAttributes/createdOnBehalfBy"
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "type": "attributeDefinition",
+                                    "name": "User_modifiedOnBehalfBy",
+                                    "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds/cdsCreationModificationDatesAndIds",
+                                    "definition": "resolvedFrom/cdsCreationModificationDatesAndIds/members/User_modifiedOnBehalfBy",
+                                    "contents": [
+                                      {
+                                        "type": "entity",
+                                        "name": "User",
+                                        "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds/cdsCreationModificationDatesAndIds/User_modifiedOnBehalfBy",
+                                        "definition": "resolvedFrom/User"
+                                      },
+                                      {
+                                        "type": "generatedSet",
+                                        "name": "_generatedAttributeSet",
+                                        "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds/cdsCreationModificationDatesAndIds/User_modifiedOnBehalfBy",
+                                        "contents": [
+                                          {
+                                            "type": "generatedRound",
+                                            "name": "_generatedAttributeRound0",
+                                            "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds/cdsCreationModificationDatesAndIds/User_modifiedOnBehalfBy/_generatedAttributeSet",
+                                            "contents": [
+                                              {
+                                                "type": "addedAttributeIdentity",
+                                                "name": "_foreignKey",
+                                                "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds/cdsCreationModificationDatesAndIds/User_modifiedOnBehalfBy/_generatedAttributeSet/_generatedAttributeRound0",
+                                                "definition": "resolvedFrom/cdsCreationModificationDatesAndIds/members/User_modifiedOnBehalfBy/resolutionGuidance/foreignKeyAttribute/modifiedOnBehalfBy",
+                                                "contents": [
+                                                  "Activity_Resolved/hasAttributes/modifiedOnBehalfBy"
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "cdsOwnershipInfo",
+                            "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard",
+                            "definition": "resolvedFrom/cdsOwnershipInfo",
+                            "contents": [
+                              {
+                                "type": "attributeGroup",
+                                "name": "cdsOwnershipInfo",
+                                "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo",
+                                "definition": "resolvedFrom/cdsOwnershipInfo",
+                                "contents": [
+                                  {
+                                    "type": "attributeDefinition",
+                                    "name": "User_owningUser",
+                                    "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo",
+                                    "definition": "resolvedFrom/cdsOwnershipInfo/members/User_owningUser",
+                                    "contents": [
+                                      {
+                                        "type": "entity",
+                                        "name": "User",
+                                        "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo/User_owningUser",
+                                        "definition": "resolvedFrom/User"
+                                      },
+                                      {
+                                        "type": "generatedSet",
+                                        "name": "_generatedAttributeSet",
+                                        "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo/User_owningUser",
+                                        "contents": [
+                                          {
+                                            "type": "generatedRound",
+                                            "name": "_generatedAttributeRound0",
+                                            "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo/User_owningUser/_generatedAttributeSet",
+                                            "contents": [
+                                              {
+                                                "type": "addedAttributeIdentity",
+                                                "name": "_foreignKey",
+                                                "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo/User_owningUser/_generatedAttributeSet/_generatedAttributeRound0",
+                                                "definition": "resolvedFrom/cdsOwnershipInfo/members/User_owningUser/resolutionGuidance/foreignKeyAttribute/owningUser"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "type": "attributeDefinition",
+                                    "name": "ownerIdAttribute",
+                                    "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo",
+                                    "definition": "resolvedFrom/ownerIdAttribute",
+                                    "contents": [
+                                      {
+                                        "type": "attributeGroup",
+                                        "name": "ownerIdAttribute",
+                                        "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo/ownerIdAttribute",
+                                        "definition": "resolvedFrom/ownerIdAttribute",
+                                        "contents": [
+                                          {
+                                            "type": "attributeDefinition",
+                                            "name": "owner",
+                                            "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo/ownerIdAttribute/ownerIdAttribute",
+                                            "definition": "resolvedFrom/ownerIdAttribute/members/owner",
+                                            "contents": [
+                                              {
+                                                "type": "entity",
+                                                "name": "Owner",
+                                                "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo/ownerIdAttribute/ownerIdAttribute/owner",
+                                                "definition": "resolvedFrom/ownerIdAttribute/members/owner/entity/Owner",
+                                                "contents": [
+                                                  {
+                                                    "type": "attributeDefinition",
+                                                    "name": "userOption",
+                                                    "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo/ownerIdAttribute/ownerIdAttribute/owner/Owner",
+                                                    "definition": "resolvedFrom/ownerIdAttribute/members/owner/entity/Owner/hasAttributes/userOption",
+                                                    "contents": [
+                                                      {
+                                                        "type": "entity",
+                                                        "name": "User",
+                                                        "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo/ownerIdAttribute/ownerIdAttribute/owner/Owner/userOption",
+                                                        "definition": "resolvedFrom/User"
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "type": "attributeDefinition",
+                                                    "name": "teamOption",
+                                                    "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo/ownerIdAttribute/ownerIdAttribute/owner/Owner",
+                                                    "definition": "resolvedFrom/ownerIdAttribute/members/owner/entity/Owner/hasAttributes/teamOption",
+                                                    "contents": [
+                                                      {
+                                                        "type": "entity",
+                                                        "name": "Team",
+                                                        "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo/ownerIdAttribute/ownerIdAttribute/owner/Owner/teamOption",
+                                                        "definition": "resolvedFrom/Team"
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "type": "generatedSet",
+                                                "name": "_generatedAttributeSet",
+                                                "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo/ownerIdAttribute/ownerIdAttribute/owner",
+                                                "contents": [
+                                                  {
+                                                    "type": "generatedRound",
+                                                    "name": "_generatedAttributeRound0",
+                                                    "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo/ownerIdAttribute/ownerIdAttribute/owner/_generatedAttributeSet",
+                                                    "contents": [
+                                                      {
+                                                        "type": "addedAttributeIdentity",
+                                                        "name": "_foreignKey",
+                                                        "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo/ownerIdAttribute/ownerIdAttribute/owner/_generatedAttributeSet/_generatedAttributeRound0",
+                                                        "definition": "resolvedFrom/ownerIdAttribute/members/owner/resolutionGuidance/foreignKeyAttribute/ownerId",
+                                                        "contents": [
+                                                          "Activity_Resolved/hasAttributes/ownerId"
+                                                        ]
+                                                      },
+                                                      {
+                                                        "type": "addedAttributeSelectedType",
+                                                        "name": "_selectedEntityName",
+                                                        "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo/ownerIdAttribute/ownerIdAttribute/owner/_generatedAttributeSet/_generatedAttributeRound0",
+                                                        "definition": "resolvedFrom/ownerIdAttribute/members/owner/resolutionGuidance/selectedTypeAttribute/ownerIdType",
+                                                        "contents": [
+                                                          "Activity_Resolved/hasAttributes/ownerIdType"
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "type": "attributeDefinition",
+                                    "name": "BusinessUnit_owningBusinessUnit",
+                                    "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo",
+                                    "definition": "resolvedFrom/cdsOwnershipInfo/members/BusinessUnit_owningBusinessUnit",
+                                    "contents": [
+                                      {
+                                        "type": "entity",
+                                        "name": "BusinessUnit",
+                                        "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo/BusinessUnit_owningBusinessUnit",
+                                        "definition": "resolvedFrom/BusinessUnit"
+                                      },
+                                      {
+                                        "type": "generatedSet",
+                                        "name": "_generatedAttributeSet",
+                                        "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo/BusinessUnit_owningBusinessUnit",
+                                        "contents": [
+                                          {
+                                            "type": "generatedRound",
+                                            "name": "_generatedAttributeRound0",
+                                            "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo/BusinessUnit_owningBusinessUnit/_generatedAttributeSet",
+                                            "contents": [
+                                              {
+                                                "type": "addedAttributeIdentity",
+                                                "name": "_foreignKey",
+                                                "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo/BusinessUnit_owningBusinessUnit/_generatedAttributeSet/_generatedAttributeRound0",
+                                                "definition": "resolvedFrom/cdsOwnershipInfo/members/BusinessUnit_owningBusinessUnit/resolutionGuidance/foreignKeyAttribute/owningBusinessUnit",
+                                                "contents": [
+                                                  "Activity_Resolved/hasAttributes/owningBusinessUnit"
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "type": "attributeDefinition",
+                                    "name": "Team_owningTeam",
+                                    "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo",
+                                    "definition": "resolvedFrom/cdsOwnershipInfo/members/Team_owningTeam",
+                                    "contents": [
+                                      {
+                                        "type": "entity",
+                                        "name": "Team",
+                                        "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo/Team_owningTeam",
+                                        "definition": "resolvedFrom/Team"
+                                      },
+                                      {
+                                        "type": "generatedSet",
+                                        "name": "_generatedAttributeSet",
+                                        "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo/Team_owningTeam",
+                                        "contents": [
+                                          {
+                                            "type": "generatedRound",
+                                            "name": "_generatedAttributeRound0",
+                                            "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo/Team_owningTeam/_generatedAttributeSet",
+                                            "contents": [
+                                              {
+                                                "type": "addedAttributeIdentity",
+                                                "name": "_foreignKey",
+                                                "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo/Team_owningTeam/_generatedAttributeSet/_generatedAttributeRound0",
+                                                "definition": "resolvedFrom/cdsOwnershipInfo/members/Team_owningTeam/resolutionGuidance/foreignKeyAttribute/owningTeam",
+                                                "contents": [
+                                                  "Activity_Resolved/hasAttributes/owningTeam"
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "cdsTimeZoneInfo",
+                            "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard",
+                            "definition": "resolvedFrom/cdsTimeZoneInfo",
+                            "contents": [
+                              {
+                                "type": "attributeGroup",
+                                "name": "cdsTimeZoneInfo",
+                                "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsTimeZoneInfo",
+                                "definition": "resolvedFrom/cdsTimeZoneInfo",
+                                "contents": [
+                                  {
+                                    "type": "attributeDefinition",
+                                    "name": "timeZoneRuleVersionNumber",
+                                    "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsTimeZoneInfo/cdsTimeZoneInfo",
+                                    "definition": "resolvedFrom/cdsTimeZoneInfo/members/timeZoneRuleVersionNumber",
+                                    "contents": [
+                                      "Activity_Resolved/hasAttributes/timeZoneRuleVersionNumber"
+                                    ]
+                                  },
+                                  {
+                                    "type": "attributeDefinition",
+                                    "name": "UTCConversionTimeZoneCode",
+                                    "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsTimeZoneInfo/cdsTimeZoneInfo",
+                                    "definition": "resolvedFrom/cdsTimeZoneInfo/members/UTCConversionTimeZoneCode",
+                                    "contents": [
+                                      "Activity_Resolved/hasAttributes/UTCConversionTimeZoneCode"
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "cdsVersionTracking",
+                            "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard",
+                            "definition": "resolvedFrom/cdsVersionTracking",
+                            "contents": [
+                              {
+                                "type": "attributeGroup",
+                                "name": "cdsVersionTracking",
+                                "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsVersionTracking",
+                                "definition": "resolvedFrom/cdsVersionTracking",
+                                "contents": [
+                                  {
+                                    "type": "attributeDefinition",
+                                    "name": "versionNumber",
+                                    "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsVersionTracking/cdsVersionTracking",
+                                    "definition": "resolvedFrom/cdsVersionTracking/members/versionNumber",
+                                    "contents": [
+                                      "Activity_Resolved/hasAttributes/versionNumber"
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "activityCommon",
+                    "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon",
+                    "definition": "resolvedFrom/activityCommon",
+                    "contents": [
+                      {
+                        "type": "attributeGroup",
+                        "name": "activityCommon",
+                        "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/activityCommon",
+                        "definition": "resolvedFrom/activityCommon",
+                        "contents": [
+                          {
+                            "type": "attributeDefinition",
+                            "name": "activity",
+                            "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/activityCommon/activityCommon",
+                            "definition": "resolvedFrom/activityCommon/members/activity",
+                            "contents": [
+                              {
+                                "type": "entity",
+                                "name": "Activity",
+                                "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/activityCommon/activityCommon/activity",
+                                "definition": "resolvedFrom/Activity",
+                                "appliedTraits": [
+                                  {
+                                    "traitReference": "is.ordered",
+                                    "arguments": [
+                                      "resolvedFrom/Activity/(resolvedAttributes)/sortDate"
+                                    ]
+                                  },
+                                  {
+                                    "traitReference": "means.entityState",
+                                    "arguments": [
+                                      "resolvedFrom/Activity/(resolvedAttributes)/stateCode"
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "type": "generatedSet",
+                                "name": "_generatedAttributeSet",
+                                "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/activityCommon/activityCommon/activity",
+                                "contents": [
+                                  {
+                                    "type": "generatedRound",
+                                    "name": "_generatedAttributeRound0",
+                                    "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/activityCommon/activityCommon/activity/_generatedAttributeSet",
+                                    "contents": [
+                                      {
+                                        "type": "addedAttributeIdentity",
+                                        "name": "_foreignKey",
+                                        "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/activityCommon/activityCommon/activity/_generatedAttributeSet/_generatedAttributeRound0",
+                                        "definition": "resolvedFrom/activityCommon/members/activity/resolutionGuidance/foreignKeyAttribute/activityId",
+                                        "contents": [
+                                          "Activity_Resolved/hasAttributes/activityId"
+                                        ]
+                                      },
+                                      {
+                                        "type": "addedAttributeSelectedType",
+                                        "name": "_selectedEntityName",
+                                        "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/activityCommon/activityCommon/activity/_generatedAttributeSet/_generatedAttributeRound0",
+                                        "definition": "resolvedFrom/activityCommon/members/activity/resolutionGuidance/selectedTypeAttribute/activityTypeCode",
+                                        "contents": [
+                                          "Activity_Resolved/hasAttributes/activityTypeCode"
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "isBilled",
+                            "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/activityCommon/activityCommon",
+                            "definition": "resolvedFrom/activityCommon/members/isBilled",
+                            "contents": [
+                              "Activity_Resolved/hasAttributes/isBilled"
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "isRegularActivity",
+                            "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/activityCommon/activityCommon",
+                            "definition": "resolvedFrom/activityCommon/members/isRegularActivity",
+                            "contents": [
+                              "Activity_Resolved/hasAttributes/isRegularActivity"
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "isWorkflowCreated",
+                            "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/activityCommon/activityCommon",
+                            "definition": "resolvedFrom/activityCommon/members/isWorkflowCreated",
+                            "contents": [
+                              "Activity_Resolved/hasAttributes/isWorkflowCreated"
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "priorityCode",
+                            "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/activityCommon/activityCommon",
+                            "definition": "resolvedFrom/activityCommon/members/priorityCode",
+                            "contents": [
+                              "Activity_Resolved/hasAttributes/priorityCode",
+                              {
+                                "type": "generatedSet",
+                                "name": "_generatedAttributeSet",
+                                "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/activityCommon/activityCommon/priorityCode",
+                                "contents": [
+                                  {
+                                    "type": "generatedRound",
+                                    "name": "_generatedAttributeRound0",
+                                    "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/activityCommon/activityCommon/priorityCode/_generatedAttributeSet",
+                                    "contents": [
+                                      {
+                                        "type": "addedAttributeSupporting",
+                                        "name": "supporting_priorityCode",
+                                        "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/activityCommon/activityCommon/priorityCode/_generatedAttributeSet/_generatedAttributeRound0",
+                                        "definition": "resolvedFrom/activityCommon/members/priorityCode",
+                                        "contents": [
+                                          "Activity_Resolved/hasAttributes/priorityCode_display"
+                                        ],
+                                        "lineage": [
+                                          "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/activityCommon/activityCommon/priorityCode"
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "regardingObjectIdAttribute",
+                            "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/activityCommon/activityCommon",
+                            "definition": "resolvedFrom/regardingObjectIdAttribute",
+                            "contents": [
+                              {
+                                "type": "attributeGroup",
+                                "name": "regardingObjectIdAttribute",
+                                "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/activityCommon/activityCommon/regardingObjectIdAttribute",
+                                "definition": "resolvedFrom/regardingObjectIdAttribute",
+                                "contents": [
+                                  {
+                                    "type": "attributeDefinition",
+                                    "name": "regardingObject",
+                                    "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/activityCommon/activityCommon/regardingObjectIdAttribute/regardingObjectIdAttribute",
+                                    "definition": "resolvedFrom/regardingObjectIdAttribute/members/regardingObject",
+                                    "contents": [
+                                      {
+                                        "type": "entity",
+                                        "name": "Regarding",
+                                        "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/activityCommon/activityCommon/regardingObjectIdAttribute/regardingObjectIdAttribute/regardingObject",
+                                        "definition": "resolvedFrom/regardingObjectIdAttribute/members/regardingObject/entity/Regarding"
+                                      },
+                                      {
+                                        "type": "generatedSet",
+                                        "name": "_generatedAttributeSet",
+                                        "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/activityCommon/activityCommon/regardingObjectIdAttribute/regardingObjectIdAttribute/regardingObject",
+                                        "contents": [
+                                          {
+                                            "type": "generatedRound",
+                                            "name": "_generatedAttributeRound0",
+                                            "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/activityCommon/activityCommon/regardingObjectIdAttribute/regardingObjectIdAttribute/regardingObject/_generatedAttributeSet",
+                                            "contents": [
+                                              {
+                                                "type": "addedAttributeIdentity",
+                                                "name": "_foreignKey",
+                                                "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/activityCommon/activityCommon/regardingObjectIdAttribute/regardingObjectIdAttribute/regardingObject/_generatedAttributeSet/_generatedAttributeRound0",
+                                                "definition": "resolvedFrom/regardingObjectIdAttribute/members/regardingObject/resolutionGuidance/foreignKeyAttribute/regardingObjectId"
+                                              },
+                                              {
+                                                "type": "addedAttributeSelectedType",
+                                                "name": "_selectedEntityName",
+                                                "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/activityCommon/activityCommon/regardingObjectIdAttribute/regardingObjectIdAttribute/regardingObject/_generatedAttributeSet/_generatedAttributeRound0",
+                                                "definition": "resolvedFrom/regardingObjectIdAttribute/members/regardingObject/resolutionGuidance/selectedTypeAttribute/regardingObjectTypeCode",
+                                                "contents": [
+                                                  "Activity_Resolved/hasAttributes/regardingObjectTypeCode"
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "scheduledEnd",
+                            "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/activityCommon/activityCommon",
+                            "definition": "resolvedFrom/activityCommon/members/scheduledEnd",
+                            "contents": [
+                              "Activity_Resolved/hasAttributes/scheduledEnd"
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "scheduledStart",
+                            "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/activityCommon/activityCommon",
+                            "definition": "resolvedFrom/activityCommon/members/scheduledStart",
+                            "contents": [
+                              "Activity_Resolved/hasAttributes/scheduledStart"
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "sortDate",
+                            "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/activityCommon/activityCommon",
+                            "definition": "resolvedFrom/activityCommon/members/sortDate",
+                            "contents": [
+                              "Activity_Resolved/hasAttributes/sortDate"
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "subject",
+                            "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/activityCommon/activityCommon",
+                            "definition": "resolvedFrom/activityCommon/members/subject",
+                            "contents": [
+                              "Activity_Resolved/hasAttributes/subject"
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "scheduledDurationMinutes",
+                            "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/activityCommon/activityCommon",
+                            "definition": "resolvedFrom/activityCommon/members/scheduledDurationMinutes",
+                            "contents": [
+                              "Activity_Resolved/hasAttributes/scheduledDurationMinutes"
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "actualDurationMinutes",
+                            "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/activityCommon/activityCommon",
+                            "definition": "resolvedFrom/activityCommon/members/actualDurationMinutes",
+                            "contents": [
+                              "Activity_Resolved/hasAttributes/actualDurationMinutes"
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "actualEnd",
+                            "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/activityCommon/activityCommon",
+                            "definition": "resolvedFrom/activityCommon/members/actualEnd",
+                            "contents": [
+                              "Activity_Resolved/hasAttributes/actualEnd"
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "actualStart",
+                            "parent": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/activityCommon/activityCommon",
+                            "definition": "resolvedFrom/activityCommon/members/actualStart",
+                            "contents": [
+                              "Activity_Resolved/hasAttributes/actualStart"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "attributesAddedAtThisScope",
+            "parent": "Activity_Resolved/attributeContext/Activity_Resolved",
+            "definition": "resolvedFrom/Activity/hasAttributes/attributesAddedAtThisScope",
+            "contents": [
+              {
+                "type": "attributeGroup",
+                "name": "attributesAddedAtThisScope",
+                "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope",
+                "definition": "resolvedFrom/Activity/hasAttributes/attributesAddedAtThisScope",
+                "contents": [
+                  {
+                    "type": "attributeDefinition",
+                    "name": "User_owningUser",
+                    "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Activity/hasAttributes/attributesAddedAtThisScope/members/User_owningUser",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "User",
+                        "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_owningUser",
+                        "definition": "resolvedFrom/User"
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_owningUser",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_owningUser/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_owningUser/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/Activity/hasAttributes/attributesAddedAtThisScope/members/User_owningUser/resolutionGuidance/foreignKeyAttribute/owningUser",
+                                "contents": [
+                                  "Activity_Resolved/hasAttributes/owningUser"
+                                ],
+                                "lineage": [
+                                  "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo/User_owningUser/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "regardingObject",
+                    "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Activity/hasAttributes/attributesAddedAtThisScope/members/regardingObject",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "Regarding",
+                        "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/regardingObject",
+                        "definition": "resolvedFrom/Activity/hasAttributes/attributesAddedAtThisScope/members/regardingObject/entity/Regarding",
+                        "contents": [
+                          {
+                            "type": "attributeDefinition",
+                            "name": "contactOption",
+                            "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/regardingObject/Regarding",
+                            "definition": "resolvedFrom/Activity/hasAttributes/attributesAddedAtThisScope/members/regardingObject/entity/Regarding/hasAttributes/contactOption",
+                            "contents": [
+                              {
+                                "type": "entity",
+                                "name": "Contact",
+                                "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/regardingObject/Regarding/contactOption",
+                                "definition": "resolvedFrom/Contact",
+                                "appliedTraits": [
+                                  {
+                                    "traitReference": "means.entityState",
+                                    "arguments": [
+                                      "resolvedFrom/Contact/(resolvedAttributes)/stateCode"
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "knowledgeBaseRecordOption",
+                            "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/regardingObject/Regarding",
+                            "definition": "resolvedFrom/Activity/hasAttributes/attributesAddedAtThisScope/members/regardingObject/entity/Regarding/hasAttributes/knowledgeBaseRecordOption",
+                            "contents": [
+                              {
+                                "type": "entity",
+                                "name": "KnowledgeBaseRecord",
+                                "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/regardingObject/Regarding/knowledgeBaseRecordOption",
+                                "definition": "resolvedFrom/KnowledgeBaseRecord"
+                              }
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "accountOption",
+                            "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/regardingObject/Regarding",
+                            "definition": "resolvedFrom/Activity/hasAttributes/attributesAddedAtThisScope/members/regardingObject/entity/Regarding/hasAttributes/accountOption",
+                            "contents": [
+                              {
+                                "type": "entity",
+                                "name": "Account",
+                                "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/regardingObject/Regarding/accountOption",
+                                "definition": "resolvedFrom/Account",
+                                "appliedTraits": [
+                                  {
+                                    "traitReference": "means.entityState",
+                                    "arguments": [
+                                      "resolvedFrom/Account/(resolvedAttributes)/stateCode"
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "knowledgeArticleOption",
+                            "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/regardingObject/Regarding",
+                            "definition": "resolvedFrom/Activity/hasAttributes/attributesAddedAtThisScope/members/regardingObject/entity/Regarding/hasAttributes/knowledgeArticleOption",
+                            "contents": [
+                              {
+                                "type": "entity",
+                                "name": "KnowledgeArticle",
+                                "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/regardingObject/Regarding/knowledgeArticleOption",
+                                "definition": "resolvedFrom/KnowledgeArticle",
+                                "appliedTraits": [
+                                  {
+                                    "traitReference": "means.entityState",
+                                    "arguments": [
+                                      "resolvedFrom/KnowledgeArticle/(resolvedAttributes)/stateCode"
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/regardingObject",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/regardingObject/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/regardingObject/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/Activity/hasAttributes/attributesAddedAtThisScope/members/regardingObject/resolutionGuidance/foreignKeyAttribute/id",
+                                "contents": [
+                                  "Activity_Resolved/hasAttributes/regardingObjectId"
+                                ],
+                                "lineage": [
+                                  "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/activityCommon/activityCommon/regardingObjectIdAttribute/regardingObjectIdAttribute/regardingObject/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "activityAdditionalParams",
+                    "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/activityAdditionalParams",
+                    "contents": [
+                      {
+                        "type": "attributeGroup",
+                        "name": "activityAdditionalParams",
+                        "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityAdditionalParams",
+                        "definition": "resolvedFrom/activityAdditionalParams",
+                        "contents": [
+                          {
+                            "type": "attributeDefinition",
+                            "name": "activityAdditionalParams",
+                            "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityAdditionalParams/activityAdditionalParams",
+                            "definition": "resolvedFrom/activityAdditionalParams/members/activityAdditionalParams",
+                            "contents": [
+                              "Activity_Resolved/hasAttributes/activityAdditionalParams"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "activityInstanceTypeCode",
+                    "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/activityInstanceTypeCode",
+                    "contents": [
+                      {
+                        "type": "attributeGroup",
+                        "name": "activityInstanceTypeCode",
+                        "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityInstanceTypeCode",
+                        "definition": "resolvedFrom/activityInstanceTypeCode",
+                        "contents": [
+                          {
+                            "type": "attributeDefinition",
+                            "name": "instanceTypeCode",
+                            "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityInstanceTypeCode/activityInstanceTypeCode",
+                            "definition": "resolvedFrom/activityInstanceTypeCode/members/instanceTypeCode",
+                            "contents": [
+                              "Activity_Resolved/hasAttributes/instanceTypeCode",
+                              {
+                                "type": "generatedSet",
+                                "name": "_generatedAttributeSet",
+                                "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityInstanceTypeCode/activityInstanceTypeCode/instanceTypeCode",
+                                "contents": [
+                                  {
+                                    "type": "generatedRound",
+                                    "name": "_generatedAttributeRound0",
+                                    "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityInstanceTypeCode/activityInstanceTypeCode/instanceTypeCode/_generatedAttributeSet",
+                                    "contents": [
+                                      {
+                                        "type": "addedAttributeSupporting",
+                                        "name": "supporting_instanceTypeCode",
+                                        "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityInstanceTypeCode/activityInstanceTypeCode/instanceTypeCode/_generatedAttributeSet/_generatedAttributeRound0",
+                                        "definition": "resolvedFrom/activityInstanceTypeCode/members/instanceTypeCode",
+                                        "contents": [
+                                          "Activity_Resolved/hasAttributes/instanceTypeCode_display"
+                                        ],
+                                        "lineage": [
+                                          "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityInstanceTypeCode/activityInstanceTypeCode/instanceTypeCode"
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "activityIsMAPIPrivate",
+                    "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/activityIsMAPIPrivate",
+                    "contents": [
+                      {
+                        "type": "attributeGroup",
+                        "name": "activityIsMAPIPrivate",
+                        "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityIsMAPIPrivate",
+                        "definition": "resolvedFrom/activityIsMAPIPrivate",
+                        "contents": [
+                          {
+                            "type": "attributeDefinition",
+                            "name": "isMapiPrivate",
+                            "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityIsMAPIPrivate/activityIsMAPIPrivate",
+                            "definition": "resolvedFrom/activityIsMAPIPrivate/members/isMapiPrivate",
+                            "contents": [
+                              "Activity_Resolved/hasAttributes/isMapiPrivate"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "activitySeriesId",
+                    "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/activitySeriesId",
+                    "contents": [
+                      {
+                        "type": "attributeGroup",
+                        "name": "activitySeriesId",
+                        "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activitySeriesId",
+                        "definition": "resolvedFrom/activitySeriesId",
+                        "contents": [
+                          {
+                            "type": "attributeDefinition",
+                            "name": "seriesId",
+                            "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activitySeriesId/activitySeriesId",
+                            "definition": "resolvedFrom/activitySeriesId/members/seriesId",
+                            "contents": [
+                              "Activity_Resolved/hasAttributes/seriesId"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "activityDelivery",
+                    "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/activityDelivery",
+                    "contents": [
+                      {
+                        "type": "attributeGroup",
+                        "name": "activityDelivery",
+                        "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityDelivery",
+                        "definition": "resolvedFrom/activityDelivery",
+                        "contents": [
+                          {
+                            "type": "attributeDefinition",
+                            "name": "sentOn",
+                            "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityDelivery/activityDelivery",
+                            "definition": "resolvedFrom/activityDelivery/members/sentOn",
+                            "contents": [
+                              "Activity_Resolved/hasAttributes/sentOn"
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "senderMailboxId",
+                            "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityDelivery/activityDelivery",
+                            "definition": "resolvedFrom/activityDelivery/members/senderMailboxId",
+                            "contents": [
+                              "Activity_Resolved/hasAttributes/senderMailboxId"
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "deliveryPriorityCode",
+                            "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityDelivery/activityDelivery",
+                            "definition": "resolvedFrom/activityDelivery/members/deliveryPriorityCode",
+                            "contents": [
+                              "Activity_Resolved/hasAttributes/deliveryPriorityCode",
+                              {
+                                "type": "generatedSet",
+                                "name": "_generatedAttributeSet",
+                                "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityDelivery/activityDelivery/deliveryPriorityCode",
+                                "contents": [
+                                  {
+                                    "type": "generatedRound",
+                                    "name": "_generatedAttributeRound0",
+                                    "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityDelivery/activityDelivery/deliveryPriorityCode/_generatedAttributeSet",
+                                    "contents": [
+                                      {
+                                        "type": "addedAttributeSupporting",
+                                        "name": "supporting_deliveryPriorityCode",
+                                        "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityDelivery/activityDelivery/deliveryPriorityCode/_generatedAttributeSet/_generatedAttributeRound0",
+                                        "definition": "resolvedFrom/activityDelivery/members/deliveryPriorityCode",
+                                        "contents": [
+                                          "Activity_Resolved/hasAttributes/deliveryPriorityCode_display"
+                                        ],
+                                        "lineage": [
+                                          "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityDelivery/activityDelivery/deliveryPriorityCode"
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "activityCommunity",
+                    "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/activityCommunity",
+                    "contents": [
+                      {
+                        "type": "attributeGroup",
+                        "name": "activityCommunity",
+                        "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityCommunity",
+                        "definition": "resolvedFrom/activityCommunity",
+                        "contents": [
+                          {
+                            "type": "attributeDefinition",
+                            "name": "community",
+                            "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityCommunity/activityCommunity",
+                            "definition": "resolvedFrom/activityCommunity/members/community",
+                            "contents": [
+                              "Activity_Resolved/hasAttributes/community",
+                              {
+                                "type": "generatedSet",
+                                "name": "_generatedAttributeSet",
+                                "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityCommunity/activityCommunity/community",
+                                "contents": [
+                                  {
+                                    "type": "generatedRound",
+                                    "name": "_generatedAttributeRound0",
+                                    "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityCommunity/activityCommunity/community/_generatedAttributeSet",
+                                    "contents": [
+                                      {
+                                        "type": "addedAttributeSupporting",
+                                        "name": "supporting_community",
+                                        "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityCommunity/activityCommunity/community/_generatedAttributeSet/_generatedAttributeRound0",
+                                        "definition": "resolvedFrom/activityCommunity/members/community",
+                                        "contents": [
+                                          "Activity_Resolved/hasAttributes/community_display"
+                                        ],
+                                        "lineage": [
+                                          "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityCommunity/activityCommunity/community"
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "activityLeftVoiceMail",
+                    "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/activityLeftVoiceMail",
+                    "contents": [
+                      {
+                        "type": "attributeGroup",
+                        "name": "activityLeftVoiceMail",
+                        "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityLeftVoiceMail",
+                        "definition": "resolvedFrom/activityLeftVoiceMail",
+                        "contents": [
+                          {
+                            "type": "attributeDefinition",
+                            "name": "leftVoiceMail",
+                            "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityLeftVoiceMail/activityLeftVoiceMail",
+                            "definition": "resolvedFrom/activityLeftVoiceMail/members/leftVoiceMail",
+                            "contents": [
+                              "Activity_Resolved/hasAttributes/leftVoiceMail"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "activityExchangeSync",
+                    "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/activityExchangeSync",
+                    "contents": [
+                      {
+                        "type": "attributeGroup",
+                        "name": "activityExchangeSync",
+                        "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityExchangeSync",
+                        "definition": "resolvedFrom/activityExchangeSync",
+                        "contents": [
+                          {
+                            "type": "attributeDefinition",
+                            "name": "deliveryLastAttemptedOn",
+                            "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityExchangeSync/activityExchangeSync",
+                            "definition": "resolvedFrom/activityExchangeSync/members/deliveryLastAttemptedOn",
+                            "contents": [
+                              "Activity_Resolved/hasAttributes/deliveryLastAttemptedOn"
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "exchangeItemId",
+                            "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityExchangeSync/activityExchangeSync",
+                            "definition": "resolvedFrom/activityExchangeSync/members/exchangeItemId",
+                            "contents": [
+                              "Activity_Resolved/hasAttributes/exchangeItemId"
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "exchangeWebLink",
+                            "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityExchangeSync/activityExchangeSync",
+                            "definition": "resolvedFrom/activityExchangeSync/members/exchangeWebLink",
+                            "contents": [
+                              "Activity_Resolved/hasAttributes/exchangeWebLink"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "activityPostponeProcessingUntil",
+                    "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/activityPostponeProcessingUntil",
+                    "contents": [
+                      {
+                        "type": "attributeGroup",
+                        "name": "activityPostponeProcessingUntil",
+                        "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityPostponeProcessingUntil",
+                        "definition": "resolvedFrom/activityPostponeProcessingUntil",
+                        "contents": [
+                          {
+                            "type": "attributeDefinition",
+                            "name": "postponeActivityProcessingUntil",
+                            "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityPostponeProcessingUntil/activityPostponeProcessingUntil",
+                            "definition": "resolvedFrom/activityPostponeProcessingUntil/members/postponeActivityProcessingUntil",
+                            "contents": [
+                              "Activity_Resolved/hasAttributes/postponeActivityProcessingUntil"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "description",
+                    "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Activity/hasAttributes/attributesAddedAtThisScope/members/description",
+                    "contents": [
+                      "Activity_Resolved/hasAttributes/description"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "stateCode",
+                    "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Activity/hasAttributes/attributesAddedAtThisScope/members/stateCode",
+                    "contents": [
+                      "Activity_Resolved/hasAttributes/stateCode",
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/stateCode",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/stateCode/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeSupporting",
+                                "name": "supporting_stateCode",
+                                "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/stateCode/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/Activity/hasAttributes/attributesAddedAtThisScope/members/stateCode",
+                                "contents": [
+                                  "Activity_Resolved/hasAttributes/stateCode_display"
+                                ],
+                                "lineage": [
+                                  "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/stateCode"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "statusCode",
+                    "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Activity/hasAttributes/attributesAddedAtThisScope/members/statusCode",
+                    "contents": [
+                      "Activity_Resolved/hasAttributes/statusCode",
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/statusCode",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/statusCode/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeSupporting",
+                                "name": "supporting_statusCode",
+                                "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/statusCode/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/Activity/hasAttributes/attributesAddedAtThisScope/members/statusCode",
+                                "contents": [
+                                  "Activity_Resolved/hasAttributes/statusCode_display"
+                                ],
+                                "lineage": [
+                                  "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/statusCode"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "transactionCurrency",
+                    "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Activity/hasAttributes/attributesAddedAtThisScope/members/transactionCurrency",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "Currency",
+                        "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/transactionCurrency",
+                        "definition": "resolvedFrom/Currency",
+                        "appliedTraits": [
+                          {
+                            "traitReference": "means.entityState",
+                            "arguments": [
+                              "resolvedFrom/Currency/(resolvedAttributes)/stateCode"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/transactionCurrency",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/transactionCurrency/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/transactionCurrency/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/Activity/hasAttributes/attributesAddedAtThisScope/members/transactionCurrency/resolutionGuidance/foreignKeyAttribute/id",
+                                "contents": [
+                                  "Activity_Resolved/hasAttributes/transactionCurrencyId"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "exchangeRate",
+                    "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Activity/hasAttributes/attributesAddedAtThisScope/members/exchangeRate",
+                    "contents": [
+                      "Activity_Resolved/hasAttributes/exchangeRate"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "allActivityParties",
+                    "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Activity/hasAttributes/attributesAddedAtThisScope/members/allActivityParties",
+                    "contents": [
+                      "Activity_Resolved/hasAttributes/allActivityParties"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "traversedPath",
+                    "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Activity/hasAttributes/attributesAddedAtThisScope/members/traversedPath",
+                    "contents": [
+                      "Activity_Resolved/hasAttributes/traversedPath"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "processId",
+                    "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Activity/hasAttributes/attributesAddedAtThisScope/members/processId",
+                    "contents": [
+                      "Activity_Resolved/hasAttributes/processId"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "stageId",
+                    "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Activity/hasAttributes/attributesAddedAtThisScope/members/stageId",
+                    "contents": [
+                      "Activity_Resolved/hasAttributes/stageId"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "SLA",
+                    "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Activity/hasAttributes/attributesAddedAtThisScope/members/SLA",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "SLA",
+                        "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/SLA",
+                        "definition": "resolvedFrom/SLA",
+                        "appliedTraits": [
+                          {
+                            "traitReference": "means.entityState",
+                            "arguments": [
+                              "resolvedFrom/SLA/(resolvedAttributes)/stateCode"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/SLA",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/SLA/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/SLA/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/Activity/hasAttributes/attributesAddedAtThisScope/members/SLA/resolutionGuidance/foreignKeyAttribute/id",
+                                "contents": [
+                                  "Activity_Resolved/hasAttributes/SLAId"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "SLAInvoked",
+                    "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Activity/hasAttributes/attributesAddedAtThisScope/members/SLAInvoked",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "SLA",
+                        "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/SLAInvoked",
+                        "definition": "resolvedFrom/SLA",
+                        "appliedTraits": [
+                          {
+                            "traitReference": "means.entityState",
+                            "arguments": [
+                              "resolvedFrom/SLA/(resolvedAttributes)/stateCode"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/SLAInvoked",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/SLAInvoked/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/SLAInvoked/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/Activity/hasAttributes/attributesAddedAtThisScope/members/SLAInvoked/resolutionGuidance/foreignKeyAttribute/id",
+                                "contents": [
+                                  "Activity_Resolved/hasAttributes/SLAInvokedId"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "onHoldTime",
+                    "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Activity/hasAttributes/attributesAddedAtThisScope/members/onHoldTime",
+                    "contents": [
+                      "Activity_Resolved/hasAttributes/onHoldTime"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "lastOnHoldTime",
+                    "parent": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Activity/hasAttributes/attributesAddedAtThisScope/members/lastOnHoldTime",
+                    "contents": [
+                      "Activity_Resolved/hasAttributes/lastOnHoldTime"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "createdOn",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date",
+            "is.dataFormat.time",
+            "means.measurement.time",
+            "means.measurement.date.creation",
+            "is.CDS.standard",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds/cdsCreationModificationDatesAndIds/createdOn",
+          "isNullable": true,
+          "dataFormat": "DateTime",
+          "sourceName": "createdon",
+          "displayName": "Created On",
+          "description": "Date and time when the record was created."
+        },
+        {
+          "name": "createdBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            "means.userId",
+            "is.CDS.standard",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "User.cdm.json/User",
+                        "systemUserId"
+                      ],
+                      [
+                        "foundationCommon/crmCommon/projectCommon/User.cdm.json/User",
+                        "systemUserId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds/cdsCreationModificationDatesAndIds/User_createdBy/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "createdby",
+          "displayName": "Created By",
+          "description": "Unique identifier of the user who created the record."
+        },
+        {
+          "name": "modifiedOn",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date",
+            "is.dataFormat.time",
+            "means.measurement.time",
+            "means.measurement.date.modify",
+            "is.CDS.standard",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds/cdsCreationModificationDatesAndIds/modifiedOn",
+          "isNullable": true,
+          "dataFormat": "DateTime",
+          "sourceName": "modifiedon",
+          "displayName": "Modified On",
+          "description": "Date and time when the record was modified."
+        },
+        {
+          "name": "modifiedBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            "means.userId",
+            "is.CDS.standard",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "User.cdm.json/User",
+                        "systemUserId"
+                      ],
+                      [
+                        "foundationCommon/crmCommon/projectCommon/User.cdm.json/User",
+                        "systemUserId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds/cdsCreationModificationDatesAndIds/User_modifiedBy/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "modifiedby",
+          "displayName": "Modified By",
+          "description": "Unique identifier of the user who modified the record."
+        },
+        {
+          "name": "createdOnBehalfBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            "means.userId",
+            "is.CDS.standard",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "User.cdm.json/User",
+                        "systemUserId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds/cdsCreationModificationDatesAndIds/User_createdOnBehalfBy/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "createdonbehalfby",
+          "displayName": "Created By (Delegate)",
+          "description": "Unique identifier of the delegate user who created the record."
+        },
+        {
+          "name": "modifiedOnBehalfBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            "means.userId",
+            "is.CDS.standard",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "User.cdm.json/User",
+                        "systemUserId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsCreationModificationDatesAndIds/cdsCreationModificationDatesAndIds/User_modifiedOnBehalfBy/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "modifiedonbehalfby",
+          "displayName": "Modified By (Delegate)",
+          "description": "Unique identifier of the delegate user who modified the record."
+        },
+        {
+          "name": "ownerId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            "is.CDS.standard",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "User.cdm.json/User",
+                        "systemUserId"
+                      ],
+                      [
+                        "Team.cdm.json/Team",
+                        "teamId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            },
+            "is.CDS.owner"
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo/ownerIdAttribute/ownerIdAttribute/owner/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid",
+          "sourceName": "ownerid",
+          "displayName": "Owner",
+          "description": "Owner Id"
+        },
+        {
+          "name": "ownerIdType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.entityName",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            },
+            "is.linkedEntity.name",
+            "is.CDS.owner"
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo/ownerIdAttribute/ownerIdAttribute/owner/_generatedAttributeSet/_generatedAttributeRound0/_selectedEntityName",
+          "isReadOnly": true,
+          "dataFormat": "String",
+          "sourceName": "owneridtype",
+          "displayName": "Owner Type",
+          "description": "The type of owner, either User or Team."
+        },
+        {
+          "name": "owningBusinessUnit",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            "is.CDS.standard",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "BusinessUnit.cdm.json/BusinessUnit",
+                        "businessUnitId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo/BusinessUnit_owningBusinessUnit/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "owningbusinessunit",
+          "displayName": "Owning Business Unit",
+          "description": "Unique identifier for the business unit that owns the record"
+        },
+        {
+          "name": "owningUser",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            "means.userId",
+            "is.CDS.standard",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "User.cdm.json/User",
+                        "systemUserId"
+                      ],
+                      [
+                        "foundationCommon/crmCommon/projectCommon/User.cdm.json/User",
+                        "systemUserId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_owningUser/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "owninguser",
+          "sourceOrdering": 26,
+          "displayName": "Owning User",
+          "description": "Unique identifier of the user that owns the activity."
+        },
+        {
+          "name": "owningTeam",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            "is.CDS.standard",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "Team.cdm.json/Team",
+                        "teamId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsOwnershipInfo/cdsOwnershipInfo/Team_owningTeam/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "owningteam",
+          "displayName": "Owning Team",
+          "description": "Unique identifier for the team that owns the record."
+        },
+        {
+          "name": "timeZoneRuleVersionNumber",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            "is.CDS.standard",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsTimeZoneInfo/cdsTimeZoneInfo/timeZoneRuleVersionNumber",
+          "isNullable": true,
+          "dataFormat": "Int32",
+          "sourceName": "timezoneruleversionnumber",
+          "displayName": "Time Zone Rule Version Number",
+          "description": "For internal use only.",
+          "maximumValue": "2147483647",
+          "minimumValue": "-1"
+        },
+        {
+          "name": "UTCConversionTimeZoneCode",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            "is.CDS.standard",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsTimeZoneInfo/cdsTimeZoneInfo/UTCConversionTimeZoneCode",
+          "isNullable": true,
+          "dataFormat": "Int32",
+          "sourceName": "utcconversiontimezonecode",
+          "displayName": "UTC Conversion Time Zone Code",
+          "description": "Time zone code that was in use when the record was created.",
+          "maximumValue": "2147483647",
+          "minimumValue": "-1"
+        },
+        {
+          "name": "versionNumber",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            "is.dataFormat.big",
+            "means.measurement.version",
+            "is.CDS.standard",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/extends/CdsStandard/cdsVersionTracking/cdsVersionTracking/versionNumber",
+          "isNullable": true,
+          "dataFormat": "Int64",
+          "sourceName": "versionnumber",
+          "displayName": "Version Number",
+          "description": "Version Number"
+        },
+        {
+          "name": "activityId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": []
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/activityCommon/activityCommon/activity/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isPrimaryKey": true,
+          "dataFormat": "Guid",
+          "sourceName": "activityid",
+          "displayName": "Activity",
+          "description": "Unique identifier of the activity."
+        },
+        {
+          "name": "activityTypeCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.entityName",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            },
+            "is.linkedEntity.name"
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/activityCommon/activityCommon/activity/_generatedAttributeSet/_generatedAttributeRound0/_selectedEntityName",
+          "isReadOnly": true,
+          "dataFormat": "String",
+          "sourceName": "activitytypecode",
+          "displayName": "Activity Type",
+          "description": "Type of activity.",
+          "defaultValue": [
+            {
+              "languageTag": "en",
+              "displayText": "Fax",
+              "attributeValue": null,
+              "displayOrder": null
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Phone Call",
+              "attributeValue": null,
+              "displayOrder": null
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Email",
+              "attributeValue": null,
+              "displayOrder": null
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Letter",
+              "attributeValue": null,
+              "displayOrder": null
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Appointment",
+              "attributeValue": null,
+              "displayOrder": null
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Task",
+              "attributeValue": null,
+              "displayOrder": null
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Recurring Appointment",
+              "attributeValue": null,
+              "displayOrder": null
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Quick Campaign",
+              "attributeValue": null,
+              "displayOrder": null
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Campaign Activity",
+              "attributeValue": null,
+              "displayOrder": null
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Campaign Response",
+              "attributeValue": null,
+              "displayOrder": null
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Case Resolution",
+              "attributeValue": null,
+              "displayOrder": null
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Service Activity",
+              "attributeValue": null,
+              "displayOrder": null
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Opportunity Close",
+              "attributeValue": null,
+              "displayOrder": null
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Order Close",
+              "attributeValue": null,
+              "displayOrder": null
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Quote Close",
+              "attributeValue": null,
+              "displayOrder": null
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Alert Subscription",
+              "attributeValue": null,
+              "displayOrder": null
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Invite Redemption",
+              "attributeValue": null,
+              "displayOrder": null
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Portal Comment",
+              "attributeValue": null,
+              "displayOrder": null
+            }
+          ]
+        },
+        {
+          "name": "isBilled",
+          "appliedTraits": [
+            "is.dataFormat.boolean",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/activityCommon/activityCommon/isBilled",
+          "isNullable": true,
+          "dataFormat": "Boolean",
+          "sourceName": "isbilled",
+          "displayName": "Is Billed",
+          "description": "Information regarding whether the fax activity was billed as part of resolving a case."
+        },
+        {
+          "name": "isRegularActivity",
+          "appliedTraits": [
+            "is.dataFormat.boolean",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            }
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/activityCommon/activityCommon/isRegularActivity",
+          "dataFormat": "Boolean",
+          "sourceName": "isregularactivity",
+          "displayName": "Is Regular Activity",
+          "description": "Information regarding whether the activity is a regular activity type or event type."
+        },
+        {
+          "name": "isWorkflowCreated",
+          "appliedTraits": [
+            "is.dataFormat.boolean",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/activityCommon/activityCommon/isWorkflowCreated",
+          "isNullable": true,
+          "dataFormat": "Boolean",
+          "sourceName": "isworkflowcreated",
+          "displayName": "Is Workflow Created",
+          "description": "Information regarding whether the activity was created from a workflow rule."
+        },
+        {
+          "name": "priorityCode",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/activityCommon/activityCommon/priorityCode",
+          "isNullable": true,
+          "dataFormat": "Int32",
+          "sourceName": "prioritycode",
+          "displayName": "Priority",
+          "description": "Priority of the activity.",
+          "valueConstrainedToList": true,
+          "defaultValue": [
+            {
+              "languageTag": "en",
+              "displayText": "Low",
+              "attributeValue": "0",
+              "displayOrder": "0"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Normal",
+              "attributeValue": "1",
+              "displayOrder": "1"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "High",
+              "attributeValue": "2",
+              "displayOrder": "2"
+            }
+          ]
+        },
+        {
+          "name": "priorityCode_display",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.reference.displayText",
+            {
+              "traitReference": "is.addedInSupportOf",
+              "arguments": [
+                "priorityCode"
+              ]
+            }
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/activityCommon/activityCommon/priorityCode/_generatedAttributeSet/_generatedAttributeRound0/supporting_priorityCode",
+          "isReadOnly": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "regardingObjectId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "Contact.cdm.json/Contact",
+                        "contactId"
+                      ],
+                      [
+                        "KnowledgeBaseRecord.cdm.json/KnowledgeBaseRecord",
+                        "knowledgeBaseRecordId"
+                      ],
+                      [
+                        "Account.cdm.json/Account",
+                        "accountId"
+                      ],
+                      [
+                        "KnowledgeArticle.cdm.json/KnowledgeArticle",
+                        "knowledgearticleId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/regardingObject/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "regardingobjectid",
+          "displayName": "Regarding",
+          "description": "Unique identifier of the object with which the activity is associated."
+        },
+        {
+          "name": "regardingObjectTypeCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.entityName",
+            "is.linkedEntity.name"
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/activityCommon/activityCommon/regardingObjectIdAttribute/regardingObjectIdAttribute/regardingObject/_generatedAttributeSet/_generatedAttributeRound0/_selectedEntityName",
+          "isReadOnly": true,
+          "dataFormat": "String",
+          "sourceName": "regardingobjecttypecode",
+          "displayName": "Regarding Type",
+          "description": "The name of the entity linked by regardingObjectId"
+        },
+        {
+          "name": "scheduledEnd",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date",
+            "is.dataFormat.time",
+            "means.measurement.time",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/activityCommon/activityCommon/scheduledEnd",
+          "isNullable": true,
+          "dataFormat": "DateTime",
+          "sourceName": "scheduledend",
+          "displayName": "Due Date",
+          "description": "Scheduled end time of the activity."
+        },
+        {
+          "name": "scheduledStart",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date",
+            "is.dataFormat.time",
+            "means.measurement.time",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/activityCommon/activityCommon/scheduledStart",
+          "isNullable": true,
+          "dataFormat": "DateTime",
+          "sourceName": "scheduledstart",
+          "displayName": "Start Date",
+          "description": "Scheduled start time of the activity."
+        },
+        {
+          "name": "sortDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date",
+            "is.dataFormat.time",
+            "means.measurement.time",
+            {
+              "traitReference": "is.ordered",
+              "arguments": [
+                "Activity_Resolved/(resolvedAttributes)/sortDate"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/activityCommon/activityCommon/sortDate",
+          "isNullable": true,
+          "dataFormat": "DateTime",
+          "sourceName": "sortdate",
+          "displayName": "Sort Date",
+          "description": "Shows the date and time by which the activities are sorted."
+        },
+        {
+          "name": "subject",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "required"
+              ]
+            }
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/activityCommon/activityCommon/subject",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "subject",
+          "displayName": "Subject",
+          "description": "Subject associated with the activity.",
+          "maximumLength": 200
+        },
+        {
+          "name": "scheduledDurationMinutes",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            {
+              "traitReference": "means.measurement.dimension.time",
+              "arguments": [
+                "time"
+              ]
+            },
+            "means.measurement.duration.minutes",
+            {
+              "traitReference": "has.measurement.fundamentalComponent.second",
+              "arguments": [
+                {
+                  "name": "fundamentalUnit",
+                  "value": "second"
+                },
+                {
+                  "name": "symbol",
+                  "value": "s"
+                },
+                {
+                  "name": "dimension",
+                  "value": "time"
+                },
+                {
+                  "name": "fundamentalExponent",
+                  "value": "1"
+                },
+                {
+                  "name": "fundamentalScale",
+                  "value": "60"
+                },
+                {
+                  "name": "fundamentalOffset",
+                  "value": "0"
+                }
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/activityCommon/activityCommon/scheduledDurationMinutes",
+          "isNullable": true,
+          "dataFormat": "Int32",
+          "sourceName": "scheduleddurationminutes",
+          "displayName": "Scheduled Duration",
+          "description": "Scheduled duration of the activity, specified in minutes.",
+          "maximumValue": "2147483647",
+          "minimumValue": "0"
+        },
+        {
+          "name": "actualDurationMinutes",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            {
+              "traitReference": "means.measurement.dimension.time",
+              "arguments": [
+                "time"
+              ]
+            },
+            "means.measurement.duration.minutes",
+            {
+              "traitReference": "has.measurement.fundamentalComponent.second",
+              "arguments": [
+                {
+                  "name": "fundamentalUnit",
+                  "value": "second"
+                },
+                {
+                  "name": "symbol",
+                  "value": "s"
+                },
+                {
+                  "name": "dimension",
+                  "value": "time"
+                },
+                {
+                  "name": "fundamentalExponent",
+                  "value": "1"
+                },
+                {
+                  "name": "fundamentalScale",
+                  "value": "60"
+                },
+                {
+                  "name": "fundamentalOffset",
+                  "value": "0"
+                }
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/activityCommon/activityCommon/actualDurationMinutes",
+          "isNullable": true,
+          "dataFormat": "Int32",
+          "sourceName": "actualdurationminutes",
+          "displayName": "Actual Duration",
+          "description": "Actual duration of the activity in minutes.",
+          "maximumValue": "2147483647",
+          "minimumValue": "0"
+        },
+        {
+          "name": "actualEnd",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date",
+            "is.dataFormat.time",
+            "means.measurement.time",
+            "means.measurement.date.end",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/activityCommon/activityCommon/actualEnd",
+          "isNullable": true,
+          "dataFormat": "DateTime",
+          "sourceName": "actualend",
+          "displayName": "Actual End",
+          "description": "Actual end time of the activity."
+        },
+        {
+          "name": "actualStart",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date",
+            "is.dataFormat.time",
+            "means.measurement.time",
+            "means.measurement.date.start",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/extends/ActivityCommon/activityCommon/activityCommon/actualStart",
+          "isNullable": true,
+          "dataFormat": "DateTime",
+          "sourceName": "actualstart",
+          "displayName": "Actual Start",
+          "description": "Actual start time of the activity."
+        },
+        {
+          "name": "activityAdditionalParams",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.content.text.JSON",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityAdditionalParams/activityAdditionalParams/activityAdditionalParams",
+          "isNullable": true,
+          "dataFormat": "Json",
+          "sourceName": "activityadditionalparams",
+          "displayName": "Activity Additional Parameters",
+          "description": "Additional information provided by the external application as JSON. For internal use only.",
+          "maximumLength": 8192
+        },
+        {
+          "name": "instanceTypeCode",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            }
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityInstanceTypeCode/activityInstanceTypeCode/instanceTypeCode",
+          "dataFormat": "Int32",
+          "sourceName": "instancetypecode",
+          "displayName": "Recurring Instance Type",
+          "description": "Type of instance of a recurring series.",
+          "valueConstrainedToList": true,
+          "defaultValue": [
+            {
+              "languageTag": "en",
+              "displayText": "Not Recurring",
+              "attributeValue": "0",
+              "displayOrder": "0"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Recurring Master",
+              "attributeValue": "1",
+              "displayOrder": "1"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Recurring Instance",
+              "attributeValue": "2",
+              "displayOrder": "2"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Recurring Exception",
+              "attributeValue": "3",
+              "displayOrder": "3"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Recurring Future Exception",
+              "attributeValue": "4",
+              "displayOrder": "4"
+            }
+          ]
+        },
+        {
+          "name": "instanceTypeCode_display",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.reference.displayText",
+            {
+              "traitReference": "is.addedInSupportOf",
+              "arguments": [
+                "instanceTypeCode"
+              ]
+            }
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityInstanceTypeCode/activityInstanceTypeCode/instanceTypeCode/_generatedAttributeSet/_generatedAttributeRound0/supporting_instanceTypeCode",
+          "isReadOnly": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "isMapiPrivate",
+          "appliedTraits": [
+            "is.dataFormat.boolean",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityIsMAPIPrivate/activityIsMAPIPrivate/isMapiPrivate",
+          "isNullable": true,
+          "dataFormat": "Boolean",
+          "sourceName": "ismapiprivate",
+          "displayName": "Is Private",
+          "description": "For internal use only."
+        },
+        {
+          "name": "seriesId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activitySeriesId/activitySeriesId/seriesId",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "seriesid",
+          "displayName": "Series Id",
+          "description": "Uniqueidentifier specifying the id of recurring series of an instance."
+        },
+        {
+          "name": "sentOn",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date",
+            "is.dataFormat.time",
+            "means.measurement.time",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityDelivery/activityDelivery/sentOn",
+          "isNullable": true,
+          "dataFormat": "DateTime",
+          "sourceName": "senton",
+          "displayName": "Date Sent",
+          "description": "Date and time when the activity was sent."
+        },
+        {
+          "name": "senderMailboxId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityDelivery/activityDelivery/senderMailboxId",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "sendermailboxid",
+          "displayName": "Sender's Mailbox",
+          "description": "Unique identifier of the mailbox associated with the sender of the email message."
+        },
+        {
+          "name": "deliveryPriorityCode",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityDelivery/activityDelivery/deliveryPriorityCode",
+          "isNullable": true,
+          "dataFormat": "Int32",
+          "sourceName": "deliveryprioritycode",
+          "displayName": "Delivery Priority",
+          "description": "Priority of delivery of the activity to the email server.",
+          "valueConstrainedToList": true,
+          "defaultValue": [
+            {
+              "languageTag": "en",
+              "displayText": "Low",
+              "attributeValue": "0",
+              "displayOrder": "0"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Normal",
+              "attributeValue": "1",
+              "displayOrder": "1"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "High",
+              "attributeValue": "2",
+              "displayOrder": "2"
+            }
+          ]
+        },
+        {
+          "name": "deliveryPriorityCode_display",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.reference.displayText",
+            {
+              "traitReference": "is.addedInSupportOf",
+              "arguments": [
+                "deliveryPriorityCode"
+              ]
+            }
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityDelivery/activityDelivery/deliveryPriorityCode/_generatedAttributeSet/_generatedAttributeRound0/supporting_deliveryPriorityCode",
+          "isReadOnly": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "community",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityCommunity/activityCommunity/community",
+          "isNullable": true,
+          "dataFormat": "Int32",
+          "sourceName": "community",
+          "displayName": "Social Channel",
+          "description": "Shows how contact about the activity originated, such as from Twitter or Facebook. This field is read-only.",
+          "valueConstrainedToList": true,
+          "defaultValue": [
+            {
+              "languageTag": "en",
+              "displayText": "Facebook",
+              "attributeValue": "1",
+              "displayOrder": "0"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Twitter",
+              "attributeValue": "2",
+              "displayOrder": "1"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Other",
+              "attributeValue": "0",
+              "displayOrder": "2"
+            }
+          ]
+        },
+        {
+          "name": "community_display",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.reference.displayText",
+            {
+              "traitReference": "is.addedInSupportOf",
+              "arguments": [
+                "community"
+              ]
+            }
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityCommunity/activityCommunity/community/_generatedAttributeSet/_generatedAttributeRound0/supporting_community",
+          "isReadOnly": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "leftVoiceMail",
+          "appliedTraits": [
+            "is.dataFormat.boolean",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityLeftVoiceMail/activityLeftVoiceMail/leftVoiceMail",
+          "isNullable": true,
+          "dataFormat": "Boolean",
+          "sourceName": "leftvoicemail",
+          "displayName": "Left Voice Mail",
+          "description": "Left the voice mail"
+        },
+        {
+          "name": "deliveryLastAttemptedOn",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date",
+            "is.dataFormat.time",
+            "means.measurement.time",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityExchangeSync/activityExchangeSync/deliveryLastAttemptedOn",
+          "isNullable": true,
+          "dataFormat": "DateTime",
+          "sourceName": "deliverylastattemptedon",
+          "displayName": "Date Delivery Last Attempted",
+          "description": "Date and time when the delivery of the activity was last attempted."
+        },
+        {
+          "name": "exchangeItemId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityExchangeSync/activityExchangeSync/exchangeItemId",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "exchangeitemid",
+          "displayName": "Exchange Item ID",
+          "description": "The message id of activity which is returned from Exchange Server.",
+          "maximumLength": 200
+        },
+        {
+          "name": "exchangeWebLink",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.reference.URL",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityExchangeSync/activityExchangeSync/exchangeWebLink",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "exchangeweblink",
+          "displayName": "Exchange WebLink",
+          "description": "Shows the web link of Activity of type email.",
+          "maximumLength": 1250
+        },
+        {
+          "name": "postponeActivityProcessingUntil",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date",
+            "is.dataFormat.time",
+            "means.measurement.time",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityPostponeProcessingUntil/activityPostponeProcessingUntil/postponeActivityProcessingUntil",
+          "isNullable": true,
+          "dataFormat": "DateTime",
+          "sourceName": "postponeactivityprocessinguntil",
+          "displayName": "Delay activity processing until",
+          "description": "For internal use only."
+        },
+        {
+          "name": "description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/description",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "description",
+          "sourceOrdering": 7,
+          "displayName": "Description",
+          "description": "Description of the activity.",
+          "maximumLength": 2000
+        },
+        {
+          "name": "stateCode",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            {
+              "traitReference": "means.entityState",
+              "arguments": [
+                "Activity_Resolved/(resolvedAttributes)/stateCode"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            }
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/stateCode",
+          "dataFormat": "Int32",
+          "sourceName": "statecode",
+          "sourceOrdering": 12,
+          "displayName": "Activity Status",
+          "description": "Status of the activity.",
+          "valueConstrainedToList": true,
+          "defaultValue": [
+            {
+              "languageTag": "en",
+              "displayText": "Open",
+              "attributeValue": "0",
+              "displayOrder": "0"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Completed",
+              "attributeValue": "1",
+              "displayOrder": "1"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Canceled",
+              "attributeValue": "2",
+              "displayOrder": "2"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Scheduled",
+              "attributeValue": "3",
+              "displayOrder": "3"
+            }
+          ]
+        },
+        {
+          "name": "stateCode_display",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.reference.displayText",
+            {
+              "traitReference": "is.addedInSupportOf",
+              "arguments": [
+                "stateCode"
+              ]
+            }
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/stateCode/_generatedAttributeSet/_generatedAttributeRound0/supporting_stateCode",
+          "isReadOnly": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "statusCode",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            {
+              "traitReference": "is.correlatedWith",
+              "arguments": [
+                "stateCode"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/statusCode",
+          "isNullable": true,
+          "dataFormat": "Int32",
+          "sourceName": "statuscode",
+          "sourceOrdering": 16,
+          "displayName": "Status Reason",
+          "description": "Reason for the status of the activity.",
+          "defaultValue": [
+            {
+              "languageTag": "en",
+              "displayText": "Open",
+              "attributeValue": "1",
+              "displayOrder": "0",
+              "correlatedValue": "0"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Completed",
+              "attributeValue": "2",
+              "displayOrder": "1",
+              "correlatedValue": "1"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Canceled",
+              "attributeValue": "3",
+              "displayOrder": "2",
+              "correlatedValue": "2"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Scheduled",
+              "attributeValue": "4",
+              "displayOrder": "3",
+              "correlatedValue": "3"
+            }
+          ]
+        },
+        {
+          "name": "statusCode_display",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.reference.displayText",
+            {
+              "traitReference": "is.addedInSupportOf",
+              "arguments": [
+                "statusCode"
+              ]
+            }
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/statusCode/_generatedAttributeSet/_generatedAttributeRound0/supporting_statusCode",
+          "isReadOnly": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "transactionCurrencyId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "Currency.cdm.json/Currency",
+                        "transactionCurrencyId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/transactionCurrency/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "transactioncurrencyid",
+          "sourceOrdering": 66,
+          "displayName": "Currency",
+          "description": "Unique identifier of the currency associated with the activitypointer."
+        },
+        {
+          "name": "exchangeRate",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/exchangeRate",
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "sourceName": "exchangerate",
+          "sourceOrdering": 68,
+          "displayName": "Exchange Rate",
+          "description": "Exchange rate for the currency associated with the activitypointer with respect to the base currency.",
+          "maximumValue": "100000000000",
+          "minimumValue": "1E-10"
+        },
+        {
+          "name": "allActivityParties",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "is.CDS.partyList",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "multi"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/allActivityParties",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "allparties",
+          "sourceOrdering": 69,
+          "displayName": "All Activity Parties"
+        },
+        {
+          "name": "traversedPath",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/traversedPath",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "traversedpath",
+          "sourceOrdering": 75,
+          "displayName": "Traversed Path",
+          "description": "For internal use only.",
+          "maximumLength": 1250
+        },
+        {
+          "name": "processId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/processId",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "processid",
+          "sourceOrdering": 155,
+          "displayName": "Process",
+          "description": "Unique identifier of the Process."
+        },
+        {
+          "name": "stageId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/stageId",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "stageid",
+          "sourceOrdering": 156,
+          "displayName": "Process Stage",
+          "description": "Unique identifier of the Stage."
+        },
+        {
+          "name": "SLAId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "SLA.cdm.json/SLA",
+                        "SLAId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/SLA/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "slaid",
+          "sourceOrdering": 158,
+          "displayName": "SLA",
+          "description": "Choose the service level agreement (SLA) that you want to apply to the case record."
+        },
+        {
+          "name": "SLAInvokedId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "SLA.cdm.json/SLA",
+                        "SLAId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/SLAInvoked/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "slainvokedid",
+          "sourceOrdering": 159,
+          "displayName": "Last SLA applied",
+          "description": "Last SLA that was applied to this case. This field is for internal use only."
+        },
+        {
+          "name": "onHoldTime",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/onHoldTime",
+          "isNullable": true,
+          "dataFormat": "Int32",
+          "sourceName": "onholdtime",
+          "sourceOrdering": 160,
+          "displayName": "On Hold Time (Minutes)",
+          "description": "Shows how long, in minutes, that the record was on hold.",
+          "maximumValue": "2147483647",
+          "minimumValue": "-2147483648"
+        },
+        {
+          "name": "lastOnHoldTime",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date",
+            "is.dataFormat.time",
+            "means.measurement.time",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Activity_Resolved/attributeContext/Activity_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/lastOnHoldTime",
+          "isNullable": true,
+          "dataFormat": "DateTime",
+          "sourceName": "lastonholdtime",
+          "sourceOrdering": 161,
+          "displayName": "Last On Hold Time",
+          "description": "Contains the date and time stamp of the last on hold time."
+        }
+      ],
+      "sourceName": "ActivityPointer",
+      "displayName": "Activity",
+      "description": "Task performed, or to be performed, by a user. An activity is any action for which an entry can be made on a calendar.",
+      "version": "1.3",
+      "cdmSchemas": [
+        "/core/wellKnownCDSAttributeGroups.cdm.json/cdsCreationModificationDatesAndIds",
+        "/core/wellKnownCDSAttributeGroups.cdm.json/cdsOwnershipInfo",
+        "/core/wellKnownCDSAttributeGroups.cdm.json/cdsTimeZoneInfo",
+        "/core/wellKnownCDSAttributeGroups.cdm.json/cdsVersionTracking",
+        "/core/wellKnownCDSAttributeGroups.cdm.json/activityCommon",
+        "/core/applicationCommon/Activity.cdm.json/Activity/hasAttributes/attributesAddedAtThisScope"
+      ]
+    }
+  ],
+  "documentVersion": "1.3"
+}

@@ -1,0 +1,281 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "IntrastatCodeEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "IntrastatCodeEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "IntrastatCodeEntity_Resolved",
+        "definition": "resolvedFrom/IntrastatCodeEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "IntrastatCodeEntity_Resolved/attributeContext/IntrastatCodeEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "IntrastatCodeEntity_Resolved/attributeContext/IntrastatCodeEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CountryRegionId",
+            "parent": "IntrastatCodeEntity_Resolved/attributeContext/IntrastatCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/IntrastatCodeEntity/hasAttributes/CountryRegionId",
+            "contents": [
+              "IntrastatCodeEntity_Resolved/hasAttributes/CountryRegionId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "IntrastatCode",
+            "parent": "IntrastatCodeEntity_Resolved/attributeContext/IntrastatCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/IntrastatCodeEntity/hasAttributes/IntrastatCode",
+            "contents": [
+              "IntrastatCodeEntity_Resolved/hasAttributes/IntrastatCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "StateId",
+            "parent": "IntrastatCodeEntity_Resolved/attributeContext/IntrastatCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/IntrastatCodeEntity/hasAttributes/StateId",
+            "contents": [
+              "IntrastatCodeEntity_Resolved/hasAttributes/StateId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_IntrastatStateParametersRelationship",
+            "parent": "IntrastatCodeEntity_Resolved/attributeContext/IntrastatCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/IntrastatCodeEntity/hasAttributes/BackingTable_IntrastatStateParametersRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "IntrastatStateParameters",
+                "parent": "IntrastatCodeEntity_Resolved/attributeContext/IntrastatCodeEntity_Resolved/BackingTable_IntrastatStateParametersRelationship",
+                "definition": "resolvedFrom/IntrastatStateParameters",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "IntrastatCodeEntity_Resolved/attributeContext/IntrastatCodeEntity_Resolved/BackingTable_IntrastatStateParametersRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "IntrastatCodeEntity_Resolved/attributeContext/IntrastatCodeEntity_Resolved/BackingTable_IntrastatStateParametersRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "IntrastatCodeEntity_Resolved/attributeContext/IntrastatCodeEntity_Resolved/BackingTable_IntrastatStateParametersRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "IntrastatCodeEntity_Resolved/hasAttributes/BackingTable_IntrastatStateParametersRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "IntrastatCodeEntity_Resolved/attributeContext/IntrastatCodeEntity_Resolved",
+            "definition": "resolvedFrom/IntrastatCodeEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "IntrastatCodeEntity_Resolved/attributeContext/IntrastatCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "IntrastatCodeEntity_Resolved/attributeContext/IntrastatCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "IntrastatCodeEntity_Resolved/attributeContext/IntrastatCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "IntrastatCodeEntity_Resolved/attributeContext/IntrastatCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "IntrastatCodeEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "CountryRegionId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "IntrastatCodeEntity_Resolved/attributeContext/IntrastatCodeEntity_Resolved/CountryRegionId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "IntrastatCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "IntrastatCodeEntity_Resolved/attributeContext/IntrastatCodeEntity_Resolved/IntrastatCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "StateId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "IntrastatCodeEntity_Resolved/attributeContext/IntrastatCodeEntity_Resolved/StateId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_IntrastatStateParametersRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Common/Intrastat/Parameter/IntrastatStateParameters.cdm.json/IntrastatStateParameters",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "IntrastatCodeEntity_Resolved/attributeContext/IntrastatCodeEntity_Resolved/BackingTable_IntrastatStateParametersRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "IntrastatCodeEntity_Resolved/attributeContext/IntrastatCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Intrastat code",
+      "version": "1.1.1"
+    }
+  ],
+  "documentVersion": "1.1.1"
+}

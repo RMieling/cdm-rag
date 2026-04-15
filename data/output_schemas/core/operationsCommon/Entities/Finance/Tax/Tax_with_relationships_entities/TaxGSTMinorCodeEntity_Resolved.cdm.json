@@ -1,0 +1,281 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "TaxGSTMinorCodeEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TaxGSTMinorCodeEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "TaxGSTMinorCodeEntity_Resolved",
+        "definition": "resolvedFrom/TaxGSTMinorCodeEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "TaxGSTMinorCodeEntity_Resolved/attributeContext/TaxGSTMinorCodeEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "TaxGSTMinorCodeEntity_Resolved/attributeContext/TaxGSTMinorCodeEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "TaxGSTMinorCodeEntity_Resolved/attributeContext/TaxGSTMinorCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxGSTMinorCodeEntity/hasAttributes/Description",
+            "contents": [
+              "TaxGSTMinorCodeEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "MinorCode",
+            "parent": "TaxGSTMinorCodeEntity_Resolved/attributeContext/TaxGSTMinorCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxGSTMinorCodeEntity/hasAttributes/MinorCode",
+            "contents": [
+              "TaxGSTMinorCodeEntity_Resolved/hasAttributes/MinorCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "TaxComponent",
+            "parent": "TaxGSTMinorCodeEntity_Resolved/attributeContext/TaxGSTMinorCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxGSTMinorCodeEntity/hasAttributes/TaxComponent",
+            "contents": [
+              "TaxGSTMinorCodeEntity_Resolved/hasAttributes/TaxComponent"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_TaxGSTMinorCode_INRelationship",
+            "parent": "TaxGSTMinorCodeEntity_Resolved/attributeContext/TaxGSTMinorCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxGSTMinorCodeEntity/hasAttributes/BackingTable_TaxGSTMinorCode_INRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "TaxGSTMinorCode_IN",
+                "parent": "TaxGSTMinorCodeEntity_Resolved/attributeContext/TaxGSTMinorCodeEntity_Resolved/BackingTable_TaxGSTMinorCode_INRelationship",
+                "definition": "resolvedFrom/TaxGSTMinorCode_IN",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxGSTMinorCodeEntity_Resolved/attributeContext/TaxGSTMinorCodeEntity_Resolved/BackingTable_TaxGSTMinorCode_INRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxGSTMinorCodeEntity_Resolved/attributeContext/TaxGSTMinorCodeEntity_Resolved/BackingTable_TaxGSTMinorCode_INRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxGSTMinorCodeEntity_Resolved/attributeContext/TaxGSTMinorCodeEntity_Resolved/BackingTable_TaxGSTMinorCode_INRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxGSTMinorCodeEntity_Resolved/hasAttributes/BackingTable_TaxGSTMinorCode_INRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "TaxGSTMinorCodeEntity_Resolved/attributeContext/TaxGSTMinorCodeEntity_Resolved",
+            "definition": "resolvedFrom/TaxGSTMinorCodeEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "TaxGSTMinorCodeEntity_Resolved/attributeContext/TaxGSTMinorCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxGSTMinorCodeEntity_Resolved/attributeContext/TaxGSTMinorCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxGSTMinorCodeEntity_Resolved/attributeContext/TaxGSTMinorCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxGSTMinorCodeEntity_Resolved/attributeContext/TaxGSTMinorCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxGSTMinorCodeEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxGSTMinorCodeEntity_Resolved/attributeContext/TaxGSTMinorCodeEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "MinorCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxGSTMinorCodeEntity_Resolved/attributeContext/TaxGSTMinorCodeEntity_Resolved/MinorCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "TaxComponent",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxGSTMinorCodeEntity_Resolved/attributeContext/TaxGSTMinorCodeEntity_Resolved/TaxComponent",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_TaxGSTMinorCode_INRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Tax/Miscellaneous/TaxGSTMinorCode_IN.cdm.json/TaxGSTMinorCode_IN",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxGSTMinorCodeEntity_Resolved/attributeContext/TaxGSTMinorCodeEntity_Resolved/BackingTable_TaxGSTMinorCode_INRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxGSTMinorCodeEntity_Resolved/attributeContext/TaxGSTMinorCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "GST minor code",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

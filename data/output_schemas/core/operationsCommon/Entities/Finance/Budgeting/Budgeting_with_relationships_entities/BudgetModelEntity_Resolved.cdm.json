@@ -1,0 +1,341 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "BudgetModelEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "BudgetModelEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "BudgetModelEntity_Resolved",
+        "definition": "resolvedFrom/BudgetModelEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "BudgetModelEntity_Resolved/attributeContext/BudgetModelEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "BudgetModelEntity_Resolved/attributeContext/BudgetModelEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BudgetModel",
+            "parent": "BudgetModelEntity_Resolved/attributeContext/BudgetModelEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetModelEntity/hasAttributes/BudgetModel",
+            "contents": [
+              "BudgetModelEntity_Resolved/hasAttributes/BudgetModel"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CashFlowForecasts",
+            "parent": "BudgetModelEntity_Resolved/attributeContext/BudgetModelEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetModelEntity/hasAttributes/CashFlowForecasts",
+            "contents": [
+              "BudgetModelEntity_Resolved/hasAttributes/CashFlowForecasts"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "BudgetModelEntity_Resolved/attributeContext/BudgetModelEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetModelEntity/hasAttributes/Name",
+            "contents": [
+              "BudgetModelEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Stopped",
+            "parent": "BudgetModelEntity_Resolved/attributeContext/BudgetModelEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetModelEntity/hasAttributes/Stopped",
+            "contents": [
+              "BudgetModelEntity_Resolved/hasAttributes/Stopped"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Submodel",
+            "parent": "BudgetModelEntity_Resolved/attributeContext/BudgetModelEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetModelEntity/hasAttributes/Submodel",
+            "contents": [
+              "BudgetModelEntity_Resolved/hasAttributes/Submodel"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Type",
+            "parent": "BudgetModelEntity_Resolved/attributeContext/BudgetModelEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetModelEntity/hasAttributes/Type",
+            "contents": [
+              "BudgetModelEntity_Resolved/hasAttributes/Type"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_BudgetModelRelationship",
+            "parent": "BudgetModelEntity_Resolved/attributeContext/BudgetModelEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetModelEntity/hasAttributes/BackingTable_BudgetModelRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "BudgetModel",
+                "parent": "BudgetModelEntity_Resolved/attributeContext/BudgetModelEntity_Resolved/BackingTable_BudgetModelRelationship",
+                "definition": "resolvedFrom/BudgetModel",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "BudgetModelEntity_Resolved/attributeContext/BudgetModelEntity_Resolved/BackingTable_BudgetModelRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "BudgetModelEntity_Resolved/attributeContext/BudgetModelEntity_Resolved/BackingTable_BudgetModelRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "BudgetModelEntity_Resolved/attributeContext/BudgetModelEntity_Resolved/BackingTable_BudgetModelRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "BudgetModelEntity_Resolved/hasAttributes/BackingTable_BudgetModelRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "BudgetModelEntity_Resolved/attributeContext/BudgetModelEntity_Resolved",
+            "definition": "resolvedFrom/BudgetModelEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "BudgetModelEntity_Resolved/attributeContext/BudgetModelEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "BudgetModelEntity_Resolved/attributeContext/BudgetModelEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "BudgetModelEntity_Resolved/attributeContext/BudgetModelEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "BudgetModelEntity_Resolved/attributeContext/BudgetModelEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "BudgetModelEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "BudgetModel",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetModelEntity_Resolved/attributeContext/BudgetModelEntity_Resolved/BudgetModel",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "CashFlowForecasts",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetModelEntity_Resolved/attributeContext/BudgetModelEntity_Resolved/CashFlowForecasts",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetModelEntity_Resolved/attributeContext/BudgetModelEntity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Stopped",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetModelEntity_Resolved/attributeContext/BudgetModelEntity_Resolved/Stopped",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Submodel",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetModelEntity_Resolved/attributeContext/BudgetModelEntity_Resolved/Submodel",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Type",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetModelEntity_Resolved/attributeContext/BudgetModelEntity_Resolved/Type",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_BudgetModelRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Budget/Group/BudgetModel.cdm.json/BudgetModel",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "BudgetModelEntity_Resolved/attributeContext/BudgetModelEntity_Resolved/BackingTable_BudgetModelRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "BudgetModelEntity_Resolved/attributeContext/BudgetModelEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Budget models",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

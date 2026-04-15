@@ -1,0 +1,261 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "VATOperationCodeTableEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "VATOperationCodeTableEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "VATOperationCodeTableEntity_Resolved",
+        "definition": "resolvedFrom/VATOperationCodeTableEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "VATOperationCodeTableEntity_Resolved/attributeContext/VATOperationCodeTableEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "VATOperationCodeTableEntity_Resolved/attributeContext/VATOperationCodeTableEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "VATOperationCodeTableEntity_Resolved/attributeContext/VATOperationCodeTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VATOperationCodeTableEntity/hasAttributes/Description",
+            "contents": [
+              "VATOperationCodeTableEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "VATOperationCode",
+            "parent": "VATOperationCodeTableEntity_Resolved/attributeContext/VATOperationCodeTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VATOperationCodeTableEntity/hasAttributes/VATOperationCode",
+            "contents": [
+              "VATOperationCodeTableEntity_Resolved/hasAttributes/VATOperationCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_VATOperationCodeTable_RURelationship",
+            "parent": "VATOperationCodeTableEntity_Resolved/attributeContext/VATOperationCodeTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VATOperationCodeTableEntity/hasAttributes/BackingTable_VATOperationCodeTable_RURelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "VATOperationCodeTable_RU",
+                "parent": "VATOperationCodeTableEntity_Resolved/attributeContext/VATOperationCodeTableEntity_Resolved/BackingTable_VATOperationCodeTable_RURelationship",
+                "definition": "resolvedFrom/VATOperationCodeTable_RU",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "VATOperationCodeTableEntity_Resolved/attributeContext/VATOperationCodeTableEntity_Resolved/BackingTable_VATOperationCodeTable_RURelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "VATOperationCodeTableEntity_Resolved/attributeContext/VATOperationCodeTableEntity_Resolved/BackingTable_VATOperationCodeTable_RURelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "VATOperationCodeTableEntity_Resolved/attributeContext/VATOperationCodeTableEntity_Resolved/BackingTable_VATOperationCodeTable_RURelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "VATOperationCodeTableEntity_Resolved/hasAttributes/BackingTable_VATOperationCodeTable_RURelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "VATOperationCodeTableEntity_Resolved/attributeContext/VATOperationCodeTableEntity_Resolved",
+            "definition": "resolvedFrom/VATOperationCodeTableEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "VATOperationCodeTableEntity_Resolved/attributeContext/VATOperationCodeTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "VATOperationCodeTableEntity_Resolved/attributeContext/VATOperationCodeTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "VATOperationCodeTableEntity_Resolved/attributeContext/VATOperationCodeTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "VATOperationCodeTableEntity_Resolved/attributeContext/VATOperationCodeTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "VATOperationCodeTableEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VATOperationCodeTableEntity_Resolved/attributeContext/VATOperationCodeTableEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "VATOperationCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VATOperationCodeTableEntity_Resolved/attributeContext/VATOperationCodeTableEntity_Resolved/VATOperationCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_VATOperationCodeTable_RURelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/RSalesPurchBooks/Group/VATOperationCodeTable_RU.cdm.json/VATOperationCodeTable_RU",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "VATOperationCodeTableEntity_Resolved/attributeContext/VATOperationCodeTableEntity_Resolved/BackingTable_VATOperationCodeTable_RURelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "VATOperationCodeTableEntity_Resolved/attributeContext/VATOperationCodeTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "VAT operation codes",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

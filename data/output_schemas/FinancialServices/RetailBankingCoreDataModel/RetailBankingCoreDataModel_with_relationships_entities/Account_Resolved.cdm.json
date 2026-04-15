@@ -1,0 +1,100 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "Account.cdm.json",
+      "moniker": "resolvedFrom"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "Account_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "Account_Resolved",
+        "definition": "resolvedFrom/Account",
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "Account_Resolved/attributeContext/Account_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CdmEntity",
+                "parent": "Account_Resolved/attributeContext/Account_Resolved/extends",
+                "definition": "resolvedFrom/CdmEntity"
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "attributesAddedAtThisScope",
+            "parent": "Account_Resolved/attributeContext/Account_Resolved",
+            "definition": "resolvedFrom/Account/hasAttributes/attributesAddedAtThisScope",
+            "contents": [
+              {
+                "type": "attributeGroup",
+                "name": "attributesAddedAtThisScope",
+                "parent": "Account_Resolved/attributeContext/Account_Resolved/attributesAddedAtThisScope",
+                "definition": "resolvedFrom/Account/hasAttributes/attributesAddedAtThisScope",
+                "contents": [
+                  {
+                    "type": "attributeDefinition",
+                    "name": "accountId",
+                    "parent": "Account_Resolved/attributeContext/Account_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Account/hasAttributes/attributesAddedAtThisScope/members/accountId",
+                    "contents": [
+                      "Account_Resolved/hasAttributes/accountId"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "accountId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            }
+          ],
+          "attributeContext": "Account_Resolved/attributeContext/Account_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/accountId",
+          "isPrimaryKey": true,
+          "dataFormat": "Guid",
+          "sourceName": "accountid",
+          "sourceOrdering": 1,
+          "displayName": "Account",
+          "description": "Unique identifier of the account."
+        }
+      ],
+      "sourceName": "account",
+      "displayName": "Account",
+      "description": "Business that represents a customer or potential customer. The company that is billed in business transactions.",
+      "version": "1.0"
+    }
+  ],
+  "documentVersion": "1.0"
+}

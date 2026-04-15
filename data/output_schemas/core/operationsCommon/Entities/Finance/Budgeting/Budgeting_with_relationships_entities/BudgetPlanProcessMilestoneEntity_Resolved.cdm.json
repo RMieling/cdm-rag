@@ -1,0 +1,340 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "BudgetPlanProcessMilestoneEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "BudgetPlanProcessMilestoneEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "BudgetPlanProcessMilestoneEntity_Resolved",
+        "definition": "resolvedFrom/BudgetPlanProcessMilestoneEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "BudgetPlanProcessMilestoneEntity_Resolved/attributeContext/BudgetPlanProcessMilestoneEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "BudgetPlanProcessMilestoneEntity_Resolved/attributeContext/BudgetPlanProcessMilestoneEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BudgetPlanningProcess",
+            "parent": "BudgetPlanProcessMilestoneEntity_Resolved/attributeContext/BudgetPlanProcessMilestoneEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetPlanProcessMilestoneEntity/hasAttributes/BudgetPlanningProcess",
+            "contents": [
+              "BudgetPlanProcessMilestoneEntity_Resolved/hasAttributes/BudgetPlanningProcess"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "BudgetPlanProcessMilestoneEntity_Resolved/attributeContext/BudgetPlanProcessMilestoneEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetPlanProcessMilestoneEntity/hasAttributes/Name",
+            "contents": [
+              "BudgetPlanProcessMilestoneEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "BudgetPlanProcessMilestoneEntity_Resolved/attributeContext/BudgetPlanProcessMilestoneEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetPlanProcessMilestoneEntity/hasAttributes/Description",
+            "contents": [
+              "BudgetPlanProcessMilestoneEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DueDate",
+            "parent": "BudgetPlanProcessMilestoneEntity_Resolved/attributeContext/BudgetPlanProcessMilestoneEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetPlanProcessMilestoneEntity/hasAttributes/DueDate",
+            "contents": [
+              "BudgetPlanProcessMilestoneEntity_Resolved/hasAttributes/DueDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CompletedDate",
+            "parent": "BudgetPlanProcessMilestoneEntity_Resolved/attributeContext/BudgetPlanProcessMilestoneEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetPlanProcessMilestoneEntity/hasAttributes/CompletedDate",
+            "contents": [
+              "BudgetPlanProcessMilestoneEntity_Resolved/hasAttributes/CompletedDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Process",
+            "parent": "BudgetPlanProcessMilestoneEntity_Resolved/attributeContext/BudgetPlanProcessMilestoneEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetPlanProcessMilestoneEntity/hasAttributes/Process",
+            "contents": [
+              "BudgetPlanProcessMilestoneEntity_Resolved/hasAttributes/Process"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_BudgetPlanningProcessMilestoneRelationship",
+            "parent": "BudgetPlanProcessMilestoneEntity_Resolved/attributeContext/BudgetPlanProcessMilestoneEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetPlanProcessMilestoneEntity/hasAttributes/BackingTable_BudgetPlanningProcessMilestoneRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "BudgetPlanningProcessMilestone",
+                "parent": "BudgetPlanProcessMilestoneEntity_Resolved/attributeContext/BudgetPlanProcessMilestoneEntity_Resolved/BackingTable_BudgetPlanningProcessMilestoneRelationship",
+                "definition": "resolvedFrom/BudgetPlanningProcessMilestone",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "BudgetPlanProcessMilestoneEntity_Resolved/attributeContext/BudgetPlanProcessMilestoneEntity_Resolved/BackingTable_BudgetPlanningProcessMilestoneRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "BudgetPlanProcessMilestoneEntity_Resolved/attributeContext/BudgetPlanProcessMilestoneEntity_Resolved/BackingTable_BudgetPlanningProcessMilestoneRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "BudgetPlanProcessMilestoneEntity_Resolved/attributeContext/BudgetPlanProcessMilestoneEntity_Resolved/BackingTable_BudgetPlanningProcessMilestoneRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "BudgetPlanProcessMilestoneEntity_Resolved/hasAttributes/BackingTable_BudgetPlanningProcessMilestoneRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "BudgetPlanProcessMilestoneEntity_Resolved/attributeContext/BudgetPlanProcessMilestoneEntity_Resolved",
+            "definition": "resolvedFrom/BudgetPlanProcessMilestoneEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "BudgetPlanProcessMilestoneEntity_Resolved/attributeContext/BudgetPlanProcessMilestoneEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "BudgetPlanProcessMilestoneEntity_Resolved/attributeContext/BudgetPlanProcessMilestoneEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "BudgetPlanProcessMilestoneEntity_Resolved/attributeContext/BudgetPlanProcessMilestoneEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "BudgetPlanProcessMilestoneEntity_Resolved/attributeContext/BudgetPlanProcessMilestoneEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "BudgetPlanProcessMilestoneEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "BudgetPlanningProcess",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetPlanProcessMilestoneEntity_Resolved/attributeContext/BudgetPlanProcessMilestoneEntity_Resolved/BudgetPlanningProcess",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetPlanProcessMilestoneEntity_Resolved/attributeContext/BudgetPlanProcessMilestoneEntity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetPlanProcessMilestoneEntity_Resolved/attributeContext/BudgetPlanProcessMilestoneEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "DueDate",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetPlanProcessMilestoneEntity_Resolved/attributeContext/BudgetPlanProcessMilestoneEntity_Resolved/DueDate",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "CompletedDate",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetPlanProcessMilestoneEntity_Resolved/attributeContext/BudgetPlanProcessMilestoneEntity_Resolved/CompletedDate",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Process",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetPlanProcessMilestoneEntity_Resolved/attributeContext/BudgetPlanProcessMilestoneEntity_Resolved/Process",
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_BudgetPlanningProcessMilestoneRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Budget/Group/BudgetPlanningProcessMilestone.cdm.json/BudgetPlanningProcessMilestone",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "BudgetPlanProcessMilestoneEntity_Resolved/attributeContext/BudgetPlanProcessMilestoneEntity_Resolved/BackingTable_BudgetPlanningProcessMilestoneRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "BudgetPlanProcessMilestoneEntity_Resolved/attributeContext/BudgetPlanProcessMilestoneEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Budget planning process milestone",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

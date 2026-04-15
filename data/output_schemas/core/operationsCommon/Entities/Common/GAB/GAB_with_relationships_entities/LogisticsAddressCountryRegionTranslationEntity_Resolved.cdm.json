@@ -1,0 +1,296 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "LogisticsAddressCountryRegionTranslationEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "LogisticsAddressCountryRegionTranslationEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "LogisticsAddressCountryRegionTranslationEntity_Resolved",
+        "definition": "resolvedFrom/LogisticsAddressCountryRegionTranslationEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "LogisticsAddressCountryRegionTranslationEntity_Resolved/attributeContext/LogisticsAddressCountryRegionTranslationEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "LogisticsAddressCountryRegionTranslationEntity_Resolved/attributeContext/LogisticsAddressCountryRegionTranslationEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CountryRegionId",
+            "parent": "LogisticsAddressCountryRegionTranslationEntity_Resolved/attributeContext/LogisticsAddressCountryRegionTranslationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LogisticsAddressCountryRegionTranslationEntity/hasAttributes/CountryRegionId",
+            "contents": [
+              "LogisticsAddressCountryRegionTranslationEntity_Resolved/hasAttributes/CountryRegionId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "LanguageId",
+            "parent": "LogisticsAddressCountryRegionTranslationEntity_Resolved/attributeContext/LogisticsAddressCountryRegionTranslationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LogisticsAddressCountryRegionTranslationEntity/hasAttributes/LanguageId",
+            "contents": [
+              "LogisticsAddressCountryRegionTranslationEntity_Resolved/hasAttributes/LanguageId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "LongName",
+            "parent": "LogisticsAddressCountryRegionTranslationEntity_Resolved/attributeContext/LogisticsAddressCountryRegionTranslationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LogisticsAddressCountryRegionTranslationEntity/hasAttributes/LongName",
+            "contents": [
+              "LogisticsAddressCountryRegionTranslationEntity_Resolved/hasAttributes/LongName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ShortName",
+            "parent": "LogisticsAddressCountryRegionTranslationEntity_Resolved/attributeContext/LogisticsAddressCountryRegionTranslationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LogisticsAddressCountryRegionTranslationEntity/hasAttributes/ShortName",
+            "contents": [
+              "LogisticsAddressCountryRegionTranslationEntity_Resolved/hasAttributes/ShortName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_CountryRegionRelationship",
+            "parent": "LogisticsAddressCountryRegionTranslationEntity_Resolved/attributeContext/LogisticsAddressCountryRegionTranslationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LogisticsAddressCountryRegionTranslationEntity/hasAttributes/Relationship_CountryRegionRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "LogisticsAddressCountryRegionEntity",
+                "parent": "LogisticsAddressCountryRegionTranslationEntity_Resolved/attributeContext/LogisticsAddressCountryRegionTranslationEntity_Resolved/Relationship_CountryRegionRelationship",
+                "definition": "resolvedFrom/LogisticsAddressCountryRegionEntity",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "LogisticsAddressCountryRegionTranslationEntity_Resolved/attributeContext/LogisticsAddressCountryRegionTranslationEntity_Resolved/Relationship_CountryRegionRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "LogisticsAddressCountryRegionTranslationEntity_Resolved/attributeContext/LogisticsAddressCountryRegionTranslationEntity_Resolved/Relationship_CountryRegionRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "LogisticsAddressCountryRegionTranslationEntity_Resolved/attributeContext/LogisticsAddressCountryRegionTranslationEntity_Resolved/Relationship_CountryRegionRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "LogisticsAddressCountryRegionTranslationEntity_Resolved/hasAttributes/Relationship_CountryRegionRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_LogisticsAddressCountryRegionTranslationRelationship",
+            "parent": "LogisticsAddressCountryRegionTranslationEntity_Resolved/attributeContext/LogisticsAddressCountryRegionTranslationEntity_Resolved",
+            "definition": "resolvedFrom/LogisticsAddressCountryRegionTranslationEntity/hasAttributes/BackingTable_LogisticsAddressCountryRegionTranslationRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "LogisticsAddressCountryRegionTranslation",
+                "parent": "LogisticsAddressCountryRegionTranslationEntity_Resolved/attributeContext/LogisticsAddressCountryRegionTranslationEntity_Resolved/BackingTable_LogisticsAddressCountryRegionTranslationRelationship",
+                "definition": "resolvedFrom/LogisticsAddressCountryRegionTranslation",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "LogisticsAddressCountryRegionTranslationEntity_Resolved/attributeContext/LogisticsAddressCountryRegionTranslationEntity_Resolved/BackingTable_LogisticsAddressCountryRegionTranslationRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "LogisticsAddressCountryRegionTranslationEntity_Resolved/attributeContext/LogisticsAddressCountryRegionTranslationEntity_Resolved/BackingTable_LogisticsAddressCountryRegionTranslationRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "LogisticsAddressCountryRegionTranslationEntity_Resolved/attributeContext/LogisticsAddressCountryRegionTranslationEntity_Resolved/BackingTable_LogisticsAddressCountryRegionTranslationRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "LogisticsAddressCountryRegionTranslationEntity_Resolved/hasAttributes/BackingTable_LogisticsAddressCountryRegionTranslationRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "CountryRegionId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LogisticsAddressCountryRegionTranslationEntity_Resolved/attributeContext/LogisticsAddressCountryRegionTranslationEntity_Resolved/CountryRegionId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "LanguageId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LogisticsAddressCountryRegionTranslationEntity_Resolved/attributeContext/LogisticsAddressCountryRegionTranslationEntity_Resolved/LanguageId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "LongName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LogisticsAddressCountryRegionTranslationEntity_Resolved/attributeContext/LogisticsAddressCountryRegionTranslationEntity_Resolved/LongName",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ShortName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LogisticsAddressCountryRegionTranslationEntity_Resolved/attributeContext/LogisticsAddressCountryRegionTranslationEntity_Resolved/ShortName",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Relationship_CountryRegionRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": []
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "LogisticsAddressCountryRegionTranslationEntity_Resolved/attributeContext/LogisticsAddressCountryRegionTranslationEntity_Resolved/Relationship_CountryRegionRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "BackingTable_LogisticsAddressCountryRegionTranslationRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Common/GAB/Group/LogisticsAddressCountryRegionTranslation.cdm.json/LogisticsAddressCountryRegionTranslation",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "LogisticsAddressCountryRegionTranslationEntity_Resolved/attributeContext/LogisticsAddressCountryRegionTranslationEntity_Resolved/BackingTable_LogisticsAddressCountryRegionTranslationRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Country/region translations",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

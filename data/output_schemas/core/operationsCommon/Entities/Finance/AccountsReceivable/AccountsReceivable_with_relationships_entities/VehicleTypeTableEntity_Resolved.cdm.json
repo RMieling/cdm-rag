@@ -1,0 +1,261 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "VehicleTypeTableEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "VehicleTypeTableEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "VehicleTypeTableEntity_Resolved",
+        "definition": "resolvedFrom/VehicleTypeTableEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "VehicleTypeTableEntity_Resolved/attributeContext/VehicleTypeTableEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "VehicleTypeTableEntity_Resolved/attributeContext/VehicleTypeTableEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "VehicleType",
+            "parent": "VehicleTypeTableEntity_Resolved/attributeContext/VehicleTypeTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VehicleTypeTableEntity/hasAttributes/VehicleType",
+            "contents": [
+              "VehicleTypeTableEntity_Resolved/hasAttributes/VehicleType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "VehicleTypeTableEntity_Resolved/attributeContext/VehicleTypeTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VehicleTypeTableEntity/hasAttributes/Description",
+            "contents": [
+              "VehicleTypeTableEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_VehicleTypeTable_WRelationship",
+            "parent": "VehicleTypeTableEntity_Resolved/attributeContext/VehicleTypeTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VehicleTypeTableEntity/hasAttributes/BackingTable_VehicleTypeTable_WRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "VehicleTypeTable_W",
+                "parent": "VehicleTypeTableEntity_Resolved/attributeContext/VehicleTypeTableEntity_Resolved/BackingTable_VehicleTypeTable_WRelationship",
+                "definition": "resolvedFrom/VehicleTypeTable_W",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "VehicleTypeTableEntity_Resolved/attributeContext/VehicleTypeTableEntity_Resolved/BackingTable_VehicleTypeTable_WRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "VehicleTypeTableEntity_Resolved/attributeContext/VehicleTypeTableEntity_Resolved/BackingTable_VehicleTypeTable_WRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "VehicleTypeTableEntity_Resolved/attributeContext/VehicleTypeTableEntity_Resolved/BackingTable_VehicleTypeTable_WRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "VehicleTypeTableEntity_Resolved/hasAttributes/BackingTable_VehicleTypeTable_WRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "VehicleTypeTableEntity_Resolved/attributeContext/VehicleTypeTableEntity_Resolved",
+            "definition": "resolvedFrom/VehicleTypeTableEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "VehicleTypeTableEntity_Resolved/attributeContext/VehicleTypeTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "VehicleTypeTableEntity_Resolved/attributeContext/VehicleTypeTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "VehicleTypeTableEntity_Resolved/attributeContext/VehicleTypeTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "VehicleTypeTableEntity_Resolved/attributeContext/VehicleTypeTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "VehicleTypeTableEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "VehicleType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VehicleTypeTableEntity_Resolved/attributeContext/VehicleTypeTableEntity_Resolved/VehicleType",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VehicleTypeTableEntity_Resolved/attributeContext/VehicleTypeTableEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_VehicleTypeTable_WRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/AccountsReceivable/Main/VehicleTypeTable_W.cdm.json/VehicleTypeTable_W",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "VehicleTypeTableEntity_Resolved/attributeContext/VehicleTypeTableEntity_Resolved/BackingTable_VehicleTypeTable_WRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "VehicleTypeTableEntity_Resolved/attributeContext/VehicleTypeTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Vehicle types",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

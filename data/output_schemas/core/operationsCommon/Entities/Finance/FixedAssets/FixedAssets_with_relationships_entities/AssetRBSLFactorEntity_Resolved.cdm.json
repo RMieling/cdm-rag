@@ -1,0 +1,301 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "AssetRBSLFactorEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "AssetRBSLFactorEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "AssetRBSLFactorEntity_Resolved",
+        "definition": "resolvedFrom/AssetRBSLFactorEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "AssetRBSLFactorEntity_Resolved/attributeContext/AssetRBSLFactorEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "AssetRBSLFactorEntity_Resolved/attributeContext/AssetRBSLFactorEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "AssetRBSLFactor",
+            "parent": "AssetRBSLFactorEntity_Resolved/attributeContext/AssetRBSLFactorEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetRBSLFactorEntity/hasAttributes/AssetRBSLFactor",
+            "contents": [
+              "AssetRBSLFactorEntity_Resolved/hasAttributes/AssetRBSLFactor"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "FromDate",
+            "parent": "AssetRBSLFactorEntity_Resolved/attributeContext/AssetRBSLFactorEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetRBSLFactorEntity/hasAttributes/FromDate",
+            "contents": [
+              "AssetRBSLFactorEntity_Resolved/hasAttributes/FromDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Years",
+            "parent": "AssetRBSLFactorEntity_Resolved/attributeContext/AssetRBSLFactorEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetRBSLFactorEntity/hasAttributes/Years",
+            "contents": [
+              "AssetRBSLFactorEntity_Resolved/hasAttributes/Years"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Months",
+            "parent": "AssetRBSLFactorEntity_Resolved/attributeContext/AssetRBSLFactorEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetRBSLFactorEntity/hasAttributes/Months",
+            "contents": [
+              "AssetRBSLFactorEntity_Resolved/hasAttributes/Months"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_AssetRBSLFactorTableRelationship",
+            "parent": "AssetRBSLFactorEntity_Resolved/attributeContext/AssetRBSLFactorEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetRBSLFactorEntity/hasAttributes/BackingTable_AssetRBSLFactorTableRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "AssetRBSLFactorTable",
+                "parent": "AssetRBSLFactorEntity_Resolved/attributeContext/AssetRBSLFactorEntity_Resolved/BackingTable_AssetRBSLFactorTableRelationship",
+                "definition": "resolvedFrom/AssetRBSLFactorTable",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "AssetRBSLFactorEntity_Resolved/attributeContext/AssetRBSLFactorEntity_Resolved/BackingTable_AssetRBSLFactorTableRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "AssetRBSLFactorEntity_Resolved/attributeContext/AssetRBSLFactorEntity_Resolved/BackingTable_AssetRBSLFactorTableRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "AssetRBSLFactorEntity_Resolved/attributeContext/AssetRBSLFactorEntity_Resolved/BackingTable_AssetRBSLFactorTableRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "AssetRBSLFactorEntity_Resolved/hasAttributes/BackingTable_AssetRBSLFactorTableRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "AssetRBSLFactorEntity_Resolved/attributeContext/AssetRBSLFactorEntity_Resolved",
+            "definition": "resolvedFrom/AssetRBSLFactorEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "AssetRBSLFactorEntity_Resolved/attributeContext/AssetRBSLFactorEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "AssetRBSLFactorEntity_Resolved/attributeContext/AssetRBSLFactorEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "AssetRBSLFactorEntity_Resolved/attributeContext/AssetRBSLFactorEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "AssetRBSLFactorEntity_Resolved/attributeContext/AssetRBSLFactorEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "AssetRBSLFactorEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "AssetRBSLFactor",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AssetRBSLFactorEntity_Resolved/attributeContext/AssetRBSLFactorEntity_Resolved/AssetRBSLFactor",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "FromDate",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AssetRBSLFactorEntity_Resolved/attributeContext/AssetRBSLFactorEntity_Resolved/FromDate",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Years",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AssetRBSLFactorEntity_Resolved/attributeContext/AssetRBSLFactorEntity_Resolved/Years",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Months",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AssetRBSLFactorEntity_Resolved/attributeContext/AssetRBSLFactorEntity_Resolved/Months",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_AssetRBSLFactorTableRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/FixedAssets/Main/AssetRBSLFactorTable.cdm.json/AssetRBSLFactorTable",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "AssetRBSLFactorEntity_Resolved/attributeContext/AssetRBSLFactorEntity_Resolved/BackingTable_AssetRBSLFactorTableRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "AssetRBSLFactorEntity_Resolved/attributeContext/AssetRBSLFactorEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "RB/SL factors",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

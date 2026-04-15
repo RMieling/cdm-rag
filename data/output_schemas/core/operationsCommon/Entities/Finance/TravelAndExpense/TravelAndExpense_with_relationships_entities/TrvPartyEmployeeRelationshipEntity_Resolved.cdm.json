@@ -1,0 +1,409 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "TrvPartyEmployeeRelationshipEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TrvPartyEmployeeRelationshipEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "TrvPartyEmployeeRelationshipEntity_Resolved",
+        "definition": "resolvedFrom/TrvPartyEmployeeRelationshipEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "TrvPartyEmployeeRelationshipEntity_Resolved/attributeContext/TrvPartyEmployeeRelationshipEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "TrvPartyEmployeeRelationshipEntity_Resolved/attributeContext/TrvPartyEmployeeRelationshipEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "AccountType",
+            "parent": "TrvPartyEmployeeRelationshipEntity_Resolved/attributeContext/TrvPartyEmployeeRelationshipEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvPartyEmployeeRelationshipEntity/hasAttributes/AccountType",
+            "contents": [
+              "TrvPartyEmployeeRelationshipEntity_Resolved/hasAttributes/AccountType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Account",
+            "parent": "TrvPartyEmployeeRelationshipEntity_Resolved/attributeContext/TrvPartyEmployeeRelationshipEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvPartyEmployeeRelationshipEntity/hasAttributes/Account",
+            "contents": [
+              "TrvPartyEmployeeRelationshipEntity_Resolved/hasAttributes/Account"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "AccountDisplayValue",
+            "parent": "TrvPartyEmployeeRelationshipEntity_Resolved/attributeContext/TrvPartyEmployeeRelationshipEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvPartyEmployeeRelationshipEntity/hasAttributes/AccountDisplayValue",
+            "contents": [
+              "TrvPartyEmployeeRelationshipEntity_Resolved/hasAttributes/AccountDisplayValue"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "PerDiem",
+            "parent": "TrvPartyEmployeeRelationshipEntity_Resolved/attributeContext/TrvPartyEmployeeRelationshipEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvPartyEmployeeRelationshipEntity/hasAttributes/PerDiem",
+            "contents": [
+              "TrvPartyEmployeeRelationshipEntity_Resolved/hasAttributes/PerDiem"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Employee",
+            "parent": "TrvPartyEmployeeRelationshipEntity_Resolved/attributeContext/TrvPartyEmployeeRelationshipEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvPartyEmployeeRelationshipEntity/hasAttributes/Employee",
+            "contents": [
+              "TrvPartyEmployeeRelationshipEntity_Resolved/hasAttributes/Employee"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "TrvHcmWorker_PersonnelNumber",
+            "parent": "TrvPartyEmployeeRelationshipEntity_Resolved/attributeContext/TrvPartyEmployeeRelationshipEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvPartyEmployeeRelationshipEntity/hasAttributes/TrvHcmWorker_PersonnelNumber",
+            "contents": [
+              "TrvPartyEmployeeRelationshipEntity_Resolved/hasAttributes/TrvHcmWorker_PersonnelNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_AccountCombinationRelationship",
+            "parent": "TrvPartyEmployeeRelationshipEntity_Resolved/attributeContext/TrvPartyEmployeeRelationshipEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvPartyEmployeeRelationshipEntity/hasAttributes/Relationship_AccountCombinationRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "DimensionCombinationEntity",
+                "parent": "TrvPartyEmployeeRelationshipEntity_Resolved/attributeContext/TrvPartyEmployeeRelationshipEntity_Resolved/Relationship_AccountCombinationRelationship",
+                "definition": "resolvedFrom/DimensionCombinationEntity",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TrvPartyEmployeeRelationshipEntity_Resolved/attributeContext/TrvPartyEmployeeRelationshipEntity_Resolved/Relationship_AccountCombinationRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TrvPartyEmployeeRelationshipEntity_Resolved/attributeContext/TrvPartyEmployeeRelationshipEntity_Resolved/Relationship_AccountCombinationRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TrvPartyEmployeeRelationshipEntity_Resolved/attributeContext/TrvPartyEmployeeRelationshipEntity_Resolved/Relationship_AccountCombinationRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TrvPartyEmployeeRelationshipEntity_Resolved/hasAttributes/Relationship_AccountCombinationRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_TrvPartyEmployeeRelationshipRelationship",
+            "parent": "TrvPartyEmployeeRelationshipEntity_Resolved/attributeContext/TrvPartyEmployeeRelationshipEntity_Resolved",
+            "definition": "resolvedFrom/TrvPartyEmployeeRelationshipEntity/hasAttributes/BackingTable_TrvPartyEmployeeRelationshipRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "TrvPartyEmployeeRelationship",
+                "parent": "TrvPartyEmployeeRelationshipEntity_Resolved/attributeContext/TrvPartyEmployeeRelationshipEntity_Resolved/BackingTable_TrvPartyEmployeeRelationshipRelationship",
+                "definition": "resolvedFrom/TrvPartyEmployeeRelationship",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TrvPartyEmployeeRelationshipEntity_Resolved/attributeContext/TrvPartyEmployeeRelationshipEntity_Resolved/BackingTable_TrvPartyEmployeeRelationshipRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TrvPartyEmployeeRelationshipEntity_Resolved/attributeContext/TrvPartyEmployeeRelationshipEntity_Resolved/BackingTable_TrvPartyEmployeeRelationshipRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TrvPartyEmployeeRelationshipEntity_Resolved/attributeContext/TrvPartyEmployeeRelationshipEntity_Resolved/BackingTable_TrvPartyEmployeeRelationshipRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TrvPartyEmployeeRelationshipEntity_Resolved/hasAttributes/BackingTable_TrvPartyEmployeeRelationshipRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "TrvPartyEmployeeRelationshipEntity_Resolved/attributeContext/TrvPartyEmployeeRelationshipEntity_Resolved",
+            "definition": "resolvedFrom/TrvPartyEmployeeRelationshipEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "TrvPartyEmployeeRelationshipEntity_Resolved/attributeContext/TrvPartyEmployeeRelationshipEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TrvPartyEmployeeRelationshipEntity_Resolved/attributeContext/TrvPartyEmployeeRelationshipEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TrvPartyEmployeeRelationshipEntity_Resolved/attributeContext/TrvPartyEmployeeRelationshipEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TrvPartyEmployeeRelationshipEntity_Resolved/attributeContext/TrvPartyEmployeeRelationshipEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TrvPartyEmployeeRelationshipEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "AccountType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvPartyEmployeeRelationshipEntity_Resolved/attributeContext/TrvPartyEmployeeRelationshipEntity_Resolved/AccountType",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Account",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvPartyEmployeeRelationshipEntity_Resolved/attributeContext/TrvPartyEmployeeRelationshipEntity_Resolved/Account",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "AccountDisplayValue",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvPartyEmployeeRelationshipEntity_Resolved/attributeContext/TrvPartyEmployeeRelationshipEntity_Resolved/AccountDisplayValue",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "PerDiem",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvPartyEmployeeRelationshipEntity_Resolved/attributeContext/TrvPartyEmployeeRelationshipEntity_Resolved/PerDiem",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Employee",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvPartyEmployeeRelationshipEntity_Resolved/attributeContext/TrvPartyEmployeeRelationshipEntity_Resolved/Employee",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "TrvHcmWorker_PersonnelNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvPartyEmployeeRelationshipEntity_Resolved/attributeContext/TrvPartyEmployeeRelationshipEntity_Resolved/TrvHcmWorker_PersonnelNumber",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Relationship_AccountCombinationRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": []
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TrvPartyEmployeeRelationshipEntity_Resolved/attributeContext/TrvPartyEmployeeRelationshipEntity_Resolved/Relationship_AccountCombinationRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "BackingTable_TrvPartyEmployeeRelationshipRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Expense/Main/TrvPartyEmployeeRelationship.cdm.json/TrvPartyEmployeeRelationship",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TrvPartyEmployeeRelationshipEntity_Resolved/attributeContext/TrvPartyEmployeeRelationshipEntity_Resolved/BackingTable_TrvPartyEmployeeRelationshipRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TrvPartyEmployeeRelationshipEntity_Resolved/attributeContext/TrvPartyEmployeeRelationshipEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Expense employee mapping",
+      "version": "1.1.1"
+    }
+  ],
+  "documentVersion": "1.1.1"
+}

@@ -1,0 +1,185 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "LedgerAdvancedRuleStructureActivationEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "LedgerAdvancedRuleStructureActivationEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "LedgerAdvancedRuleStructureActivationEntity_Resolved",
+        "definition": "resolvedFrom/LedgerAdvancedRuleStructureActivationEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "LedgerAdvancedRuleStructureActivationEntity_Resolved/attributeContext/LedgerAdvancedRuleStructureActivationEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "LedgerAdvancedRuleStructureActivationEntity_Resolved/attributeContext/LedgerAdvancedRuleStructureActivationEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "AdvancedRuleStructure",
+            "parent": "LedgerAdvancedRuleStructureActivationEntity_Resolved/attributeContext/LedgerAdvancedRuleStructureActivationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerAdvancedRuleStructureActivationEntity/hasAttributes/AdvancedRuleStructure",
+            "contents": [
+              "LedgerAdvancedRuleStructureActivationEntity_Resolved/hasAttributes/AdvancedRuleStructure"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DoActivate",
+            "parent": "LedgerAdvancedRuleStructureActivationEntity_Resolved/attributeContext/LedgerAdvancedRuleStructureActivationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerAdvancedRuleStructureActivationEntity/hasAttributes/DoActivate",
+            "contents": [
+              "LedgerAdvancedRuleStructureActivationEntity_Resolved/hasAttributes/DoActivate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_LedgerAdvancedRuleStructureEntityRelationship",
+            "parent": "LedgerAdvancedRuleStructureActivationEntity_Resolved/attributeContext/LedgerAdvancedRuleStructureActivationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerAdvancedRuleStructureActivationEntity/hasAttributes/Relationship_LedgerAdvancedRuleStructureEntityRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "LedgerAdvancedRuleStructureEntity",
+                "parent": "LedgerAdvancedRuleStructureActivationEntity_Resolved/attributeContext/LedgerAdvancedRuleStructureActivationEntity_Resolved/Relationship_LedgerAdvancedRuleStructureEntityRelationship",
+                "definition": "resolvedFrom/LedgerAdvancedRuleStructureEntity",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "LedgerAdvancedRuleStructureActivationEntity_Resolved/attributeContext/LedgerAdvancedRuleStructureActivationEntity_Resolved/Relationship_LedgerAdvancedRuleStructureEntityRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "LedgerAdvancedRuleStructureActivationEntity_Resolved/attributeContext/LedgerAdvancedRuleStructureActivationEntity_Resolved/Relationship_LedgerAdvancedRuleStructureEntityRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "LedgerAdvancedRuleStructureActivationEntity_Resolved/attributeContext/LedgerAdvancedRuleStructureActivationEntity_Resolved/Relationship_LedgerAdvancedRuleStructureEntityRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "LedgerAdvancedRuleStructureActivationEntity_Resolved/hasAttributes/Relationship_LedgerAdvancedRuleStructureEntityRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "AdvancedRuleStructure",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerAdvancedRuleStructureActivationEntity_Resolved/attributeContext/LedgerAdvancedRuleStructureActivationEntity_Resolved/AdvancedRuleStructure",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Dimension tree name"
+        },
+        {
+          "name": "DoActivate",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerAdvancedRuleStructureActivationEntity_Resolved/attributeContext/LedgerAdvancedRuleStructureActivationEntity_Resolved/DoActivate",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Activate"
+        },
+        {
+          "name": "Relationship_LedgerAdvancedRuleStructureEntityRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": []
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "LedgerAdvancedRuleStructureActivationEntity_Resolved/attributeContext/LedgerAdvancedRuleStructureActivationEntity_Resolved/Relationship_LedgerAdvancedRuleStructureEntityRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Advanced rule structure activation",
+      "version": "1.1.1"
+    }
+  ],
+  "documentVersion": "1.1.1"
+}

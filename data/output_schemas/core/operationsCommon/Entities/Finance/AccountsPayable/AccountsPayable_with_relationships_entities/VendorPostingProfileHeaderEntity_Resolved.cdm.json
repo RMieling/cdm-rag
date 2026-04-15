@@ -1,0 +1,341 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "VendorPostingProfileHeaderEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "VendorPostingProfileHeaderEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "VendorPostingProfileHeaderEntity_Resolved",
+        "definition": "resolvedFrom/VendorPostingProfileHeaderEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "VendorPostingProfileHeaderEntity_Resolved/attributeContext/VendorPostingProfileHeaderEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "VendorPostingProfileHeaderEntity_Resolved/attributeContext/VendorPostingProfileHeaderEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "IsTransactionCancelEnabled",
+            "parent": "VendorPostingProfileHeaderEntity_Resolved/attributeContext/VendorPostingProfileHeaderEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendorPostingProfileHeaderEntity/hasAttributes/IsTransactionCancelEnabled",
+            "contents": [
+              "VendorPostingProfileHeaderEntity_Resolved/hasAttributes/IsTransactionCancelEnabled"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "VendorPostingProfileHeaderEntity_Resolved/attributeContext/VendorPostingProfileHeaderEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendorPostingProfileHeaderEntity/hasAttributes/Description",
+            "contents": [
+              "VendorPostingProfileHeaderEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "PostingProfile",
+            "parent": "VendorPostingProfileHeaderEntity_Resolved/attributeContext/VendorPostingProfileHeaderEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendorPostingProfileHeaderEntity/hasAttributes/PostingProfile",
+            "contents": [
+              "VendorPostingProfileHeaderEntity_Resolved/hasAttributes/PostingProfile"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "PostingProfileToCloseSettlement",
+            "parent": "VendorPostingProfileHeaderEntity_Resolved/attributeContext/VendorPostingProfileHeaderEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendorPostingProfileHeaderEntity/hasAttributes/PostingProfileToCloseSettlement",
+            "contents": [
+              "VendorPostingProfileHeaderEntity_Resolved/hasAttributes/PostingProfileToCloseSettlement"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "IsTransactionIncludedInAutoSettlement",
+            "parent": "VendorPostingProfileHeaderEntity_Resolved/attributeContext/VendorPostingProfileHeaderEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendorPostingProfileHeaderEntity/hasAttributes/IsTransactionIncludedInAutoSettlement",
+            "contents": [
+              "VendorPostingProfileHeaderEntity_Resolved/hasAttributes/IsTransactionIncludedInAutoSettlement"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "AllowEmptyDimensionValue",
+            "parent": "VendorPostingProfileHeaderEntity_Resolved/attributeContext/VendorPostingProfileHeaderEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendorPostingProfileHeaderEntity/hasAttributes/AllowEmptyDimensionValue",
+            "contents": [
+              "VendorPostingProfileHeaderEntity_Resolved/hasAttributes/AllowEmptyDimensionValue"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_VendLedgerRelationship",
+            "parent": "VendorPostingProfileHeaderEntity_Resolved/attributeContext/VendorPostingProfileHeaderEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendorPostingProfileHeaderEntity/hasAttributes/BackingTable_VendLedgerRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "VendLedger",
+                "parent": "VendorPostingProfileHeaderEntity_Resolved/attributeContext/VendorPostingProfileHeaderEntity_Resolved/BackingTable_VendLedgerRelationship",
+                "definition": "resolvedFrom/VendLedger",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "VendorPostingProfileHeaderEntity_Resolved/attributeContext/VendorPostingProfileHeaderEntity_Resolved/BackingTable_VendLedgerRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "VendorPostingProfileHeaderEntity_Resolved/attributeContext/VendorPostingProfileHeaderEntity_Resolved/BackingTable_VendLedgerRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "VendorPostingProfileHeaderEntity_Resolved/attributeContext/VendorPostingProfileHeaderEntity_Resolved/BackingTable_VendLedgerRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "VendorPostingProfileHeaderEntity_Resolved/hasAttributes/BackingTable_VendLedgerRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "VendorPostingProfileHeaderEntity_Resolved/attributeContext/VendorPostingProfileHeaderEntity_Resolved",
+            "definition": "resolvedFrom/VendorPostingProfileHeaderEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "VendorPostingProfileHeaderEntity_Resolved/attributeContext/VendorPostingProfileHeaderEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "VendorPostingProfileHeaderEntity_Resolved/attributeContext/VendorPostingProfileHeaderEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "VendorPostingProfileHeaderEntity_Resolved/attributeContext/VendorPostingProfileHeaderEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "VendorPostingProfileHeaderEntity_Resolved/attributeContext/VendorPostingProfileHeaderEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "VendorPostingProfileHeaderEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "IsTransactionCancelEnabled",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VendorPostingProfileHeaderEntity_Resolved/attributeContext/VendorPostingProfileHeaderEntity_Resolved/IsTransactionCancelEnabled",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VendorPostingProfileHeaderEntity_Resolved/attributeContext/VendorPostingProfileHeaderEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "PostingProfile",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VendorPostingProfileHeaderEntity_Resolved/attributeContext/VendorPostingProfileHeaderEntity_Resolved/PostingProfile",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "PostingProfileToCloseSettlement",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VendorPostingProfileHeaderEntity_Resolved/attributeContext/VendorPostingProfileHeaderEntity_Resolved/PostingProfileToCloseSettlement",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "IsTransactionIncludedInAutoSettlement",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VendorPostingProfileHeaderEntity_Resolved/attributeContext/VendorPostingProfileHeaderEntity_Resolved/IsTransactionIncludedInAutoSettlement",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "AllowEmptyDimensionValue",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VendorPostingProfileHeaderEntity_Resolved/attributeContext/VendorPostingProfileHeaderEntity_Resolved/AllowEmptyDimensionValue",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_VendLedgerRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/AccountsPayable/Group/VendLedger.cdm.json/VendLedger",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "VendorPostingProfileHeaderEntity_Resolved/attributeContext/VendorPostingProfileHeaderEntity_Resolved/BackingTable_VendLedgerRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "VendorPostingProfileHeaderEntity_Resolved/attributeContext/VendorPostingProfileHeaderEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Vendor posting profile",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

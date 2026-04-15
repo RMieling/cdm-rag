@@ -1,0 +1,886 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "KnowledgeBaseRecord.cdm.json",
+      "moniker": "resolvedFrom"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "KnowledgeBaseRecord_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "KnowledgeBaseRecord_Resolved",
+        "definition": "resolvedFrom/KnowledgeBaseRecord",
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "KnowledgeBaseRecord_Resolved/attributeContext/KnowledgeBaseRecord_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CdmEntity",
+                "parent": "KnowledgeBaseRecord_Resolved/attributeContext/KnowledgeBaseRecord_Resolved/extends",
+                "definition": "resolvedFrom/CdmEntity"
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "attributesAddedAtThisScope",
+            "parent": "KnowledgeBaseRecord_Resolved/attributeContext/KnowledgeBaseRecord_Resolved",
+            "definition": "resolvedFrom/KnowledgeBaseRecord/hasAttributes/attributesAddedAtThisScope",
+            "contents": [
+              {
+                "type": "attributeGroup",
+                "name": "attributesAddedAtThisScope",
+                "parent": "KnowledgeBaseRecord_Resolved/attributeContext/KnowledgeBaseRecord_Resolved/attributesAddedAtThisScope",
+                "definition": "resolvedFrom/KnowledgeBaseRecord/hasAttributes/attributesAddedAtThisScope",
+                "contents": [
+                  {
+                    "type": "attributeDefinition",
+                    "name": "knowledgeBaseRecordId",
+                    "parent": "KnowledgeBaseRecord_Resolved/attributeContext/KnowledgeBaseRecord_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/KnowledgeBaseRecord/hasAttributes/attributesAddedAtThisScope/members/knowledgeBaseRecordId",
+                    "contents": [
+                      "KnowledgeBaseRecord_Resolved/hasAttributes/knowledgeBaseRecordId"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "createdOn",
+                    "parent": "KnowledgeBaseRecord_Resolved/attributeContext/KnowledgeBaseRecord_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/KnowledgeBaseRecord/hasAttributes/attributesAddedAtThisScope/members/createdOn",
+                    "contents": [
+                      "KnowledgeBaseRecord_Resolved/hasAttributes/createdOn"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "User_createdBy",
+                    "parent": "KnowledgeBaseRecord_Resolved/attributeContext/KnowledgeBaseRecord_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/KnowledgeBaseRecord/hasAttributes/attributesAddedAtThisScope/members/User_createdBy",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "User",
+                        "parent": "KnowledgeBaseRecord_Resolved/attributeContext/KnowledgeBaseRecord_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdBy",
+                        "definition": "resolvedFrom/User"
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "KnowledgeBaseRecord_Resolved/attributeContext/KnowledgeBaseRecord_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdBy",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "KnowledgeBaseRecord_Resolved/attributeContext/KnowledgeBaseRecord_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdBy/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "KnowledgeBaseRecord_Resolved/attributeContext/KnowledgeBaseRecord_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdBy/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/KnowledgeBaseRecord/hasAttributes/attributesAddedAtThisScope/members/User_createdBy/resolutionGuidance/foreignKeyAttribute/createdBy",
+                                "contents": [
+                                  "KnowledgeBaseRecord_Resolved/hasAttributes/createdBy"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "modifiedOn",
+                    "parent": "KnowledgeBaseRecord_Resolved/attributeContext/KnowledgeBaseRecord_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/KnowledgeBaseRecord/hasAttributes/attributesAddedAtThisScope/members/modifiedOn",
+                    "contents": [
+                      "KnowledgeBaseRecord_Resolved/hasAttributes/modifiedOn"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "User_modifiedBy",
+                    "parent": "KnowledgeBaseRecord_Resolved/attributeContext/KnowledgeBaseRecord_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/KnowledgeBaseRecord/hasAttributes/attributesAddedAtThisScope/members/User_modifiedBy",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "User",
+                        "parent": "KnowledgeBaseRecord_Resolved/attributeContext/KnowledgeBaseRecord_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedBy",
+                        "definition": "resolvedFrom/User"
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "KnowledgeBaseRecord_Resolved/attributeContext/KnowledgeBaseRecord_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedBy",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "KnowledgeBaseRecord_Resolved/attributeContext/KnowledgeBaseRecord_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedBy/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "KnowledgeBaseRecord_Resolved/attributeContext/KnowledgeBaseRecord_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedBy/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/KnowledgeBaseRecord/hasAttributes/attributesAddedAtThisScope/members/User_modifiedBy/resolutionGuidance/foreignKeyAttribute/modifiedBy",
+                                "contents": [
+                                  "KnowledgeBaseRecord_Resolved/hasAttributes/modifiedBy"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "User_createdOnBehalfBy",
+                    "parent": "KnowledgeBaseRecord_Resolved/attributeContext/KnowledgeBaseRecord_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/KnowledgeBaseRecord/hasAttributes/attributesAddedAtThisScope/members/User_createdOnBehalfBy",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "User",
+                        "parent": "KnowledgeBaseRecord_Resolved/attributeContext/KnowledgeBaseRecord_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdOnBehalfBy",
+                        "definition": "resolvedFrom/User"
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "KnowledgeBaseRecord_Resolved/attributeContext/KnowledgeBaseRecord_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdOnBehalfBy",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "KnowledgeBaseRecord_Resolved/attributeContext/KnowledgeBaseRecord_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdOnBehalfBy/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "KnowledgeBaseRecord_Resolved/attributeContext/KnowledgeBaseRecord_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdOnBehalfBy/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/KnowledgeBaseRecord/hasAttributes/attributesAddedAtThisScope/members/User_createdOnBehalfBy/resolutionGuidance/foreignKeyAttribute/createdOnBehalfBy",
+                                "contents": [
+                                  "KnowledgeBaseRecord_Resolved/hasAttributes/createdOnBehalfBy"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "User_modifiedOnBehalfBy",
+                    "parent": "KnowledgeBaseRecord_Resolved/attributeContext/KnowledgeBaseRecord_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/KnowledgeBaseRecord/hasAttributes/attributesAddedAtThisScope/members/User_modifiedOnBehalfBy",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "User",
+                        "parent": "KnowledgeBaseRecord_Resolved/attributeContext/KnowledgeBaseRecord_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedOnBehalfBy",
+                        "definition": "resolvedFrom/User"
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "KnowledgeBaseRecord_Resolved/attributeContext/KnowledgeBaseRecord_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedOnBehalfBy",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "KnowledgeBaseRecord_Resolved/attributeContext/KnowledgeBaseRecord_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedOnBehalfBy/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "KnowledgeBaseRecord_Resolved/attributeContext/KnowledgeBaseRecord_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedOnBehalfBy/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/KnowledgeBaseRecord/hasAttributes/attributesAddedAtThisScope/members/User_modifiedOnBehalfBy/resolutionGuidance/foreignKeyAttribute/modifiedOnBehalfBy",
+                                "contents": [
+                                  "KnowledgeBaseRecord_Resolved/hasAttributes/modifiedOnBehalfBy"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "organization",
+                    "parent": "KnowledgeBaseRecord_Resolved/attributeContext/KnowledgeBaseRecord_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/KnowledgeBaseRecord/hasAttributes/attributesAddedAtThisScope/members/organization",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "Organization",
+                        "parent": "KnowledgeBaseRecord_Resolved/attributeContext/KnowledgeBaseRecord_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/organization",
+                        "definition": "resolvedFrom/Organization"
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "KnowledgeBaseRecord_Resolved/attributeContext/KnowledgeBaseRecord_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/organization",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "KnowledgeBaseRecord_Resolved/attributeContext/KnowledgeBaseRecord_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/organization/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "KnowledgeBaseRecord_Resolved/attributeContext/KnowledgeBaseRecord_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/organization/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/KnowledgeBaseRecord/hasAttributes/attributesAddedAtThisScope/members/organization/resolutionGuidance/foreignKeyAttribute/id",
+                                "contents": [
+                                  "KnowledgeBaseRecord_Resolved/hasAttributes/organizationId"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "versionNumber",
+                    "parent": "KnowledgeBaseRecord_Resolved/attributeContext/KnowledgeBaseRecord_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/KnowledgeBaseRecord/hasAttributes/attributesAddedAtThisScope/members/versionNumber",
+                    "contents": [
+                      "KnowledgeBaseRecord_Resolved/hasAttributes/versionNumber"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "timeZoneRuleVersionNumber",
+                    "parent": "KnowledgeBaseRecord_Resolved/attributeContext/KnowledgeBaseRecord_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/KnowledgeBaseRecord/hasAttributes/attributesAddedAtThisScope/members/timeZoneRuleVersionNumber",
+                    "contents": [
+                      "KnowledgeBaseRecord_Resolved/hasAttributes/timeZoneRuleVersionNumber"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "title",
+                    "parent": "KnowledgeBaseRecord_Resolved/attributeContext/KnowledgeBaseRecord_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/KnowledgeBaseRecord/hasAttributes/attributesAddedAtThisScope/members/title",
+                    "contents": [
+                      "KnowledgeBaseRecord_Resolved/hasAttributes/title"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "privateUrl",
+                    "parent": "KnowledgeBaseRecord_Resolved/attributeContext/KnowledgeBaseRecord_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/KnowledgeBaseRecord/hasAttributes/attributesAddedAtThisScope/members/privateUrl",
+                    "contents": [
+                      "KnowledgeBaseRecord_Resolved/hasAttributes/privateUrl"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "publicUrl",
+                    "parent": "KnowledgeBaseRecord_Resolved/attributeContext/KnowledgeBaseRecord_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/KnowledgeBaseRecord/hasAttributes/attributesAddedAtThisScope/members/publicUrl",
+                    "contents": [
+                      "KnowledgeBaseRecord_Resolved/hasAttributes/publicUrl"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "exchangeRate",
+                    "parent": "KnowledgeBaseRecord_Resolved/attributeContext/KnowledgeBaseRecord_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/KnowledgeBaseRecord/hasAttributes/attributesAddedAtThisScope/members/exchangeRate",
+                    "contents": [
+                      "KnowledgeBaseRecord_Resolved/hasAttributes/exchangeRate"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "transactionCurrency",
+                    "parent": "KnowledgeBaseRecord_Resolved/attributeContext/KnowledgeBaseRecord_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/KnowledgeBaseRecord/hasAttributes/attributesAddedAtThisScope/members/transactionCurrency",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "Currency",
+                        "parent": "KnowledgeBaseRecord_Resolved/attributeContext/KnowledgeBaseRecord_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/transactionCurrency",
+                        "definition": "resolvedFrom/Currency",
+                        "appliedTraits": [
+                          {
+                            "traitReference": "means.entityState",
+                            "arguments": [
+                              "resolvedFrom/Currency/(resolvedAttributes)/stateCode"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "KnowledgeBaseRecord_Resolved/attributeContext/KnowledgeBaseRecord_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/transactionCurrency",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "KnowledgeBaseRecord_Resolved/attributeContext/KnowledgeBaseRecord_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/transactionCurrency/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "KnowledgeBaseRecord_Resolved/attributeContext/KnowledgeBaseRecord_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/transactionCurrency/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/KnowledgeBaseRecord/hasAttributes/attributesAddedAtThisScope/members/transactionCurrency/resolutionGuidance/foreignKeyAttribute/id",
+                                "contents": [
+                                  "KnowledgeBaseRecord_Resolved/hasAttributes/transactionCurrencyId"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "uniqueId",
+                    "parent": "KnowledgeBaseRecord_Resolved/attributeContext/KnowledgeBaseRecord_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/KnowledgeBaseRecord/hasAttributes/attributesAddedAtThisScope/members/uniqueId",
+                    "contents": [
+                      "KnowledgeBaseRecord_Resolved/hasAttributes/uniqueId"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "knowledgeBaseRecordId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            }
+          ],
+          "attributeContext": "KnowledgeBaseRecord_Resolved/attributeContext/KnowledgeBaseRecord_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/knowledgeBaseRecordId",
+          "isPrimaryKey": true,
+          "dataFormat": "Guid",
+          "sourceName": "knowledgebaserecordid",
+          "sourceOrdering": 1,
+          "displayName": "ID",
+          "description": "This field will be used to store the Unique ID of the associated Knowledge Base records"
+        },
+        {
+          "name": "createdOn",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date",
+            "is.dataFormat.time",
+            "means.measurement.time",
+            "means.measurement.date.creation",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "KnowledgeBaseRecord_Resolved/attributeContext/KnowledgeBaseRecord_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/createdOn",
+          "isNullable": true,
+          "dataFormat": "DateTime",
+          "sourceName": "createdon",
+          "sourceOrdering": 2,
+          "displayName": "Created On",
+          "description": "Date and time when the record was created."
+        },
+        {
+          "name": "createdBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "User.cdm.json/User",
+                        "systemUserId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "KnowledgeBaseRecord_Resolved/attributeContext/KnowledgeBaseRecord_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdBy/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "createdby",
+          "sourceOrdering": 3,
+          "displayName": "Created By",
+          "description": "Unique identifier of the user who created the record."
+        },
+        {
+          "name": "modifiedOn",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date",
+            "is.dataFormat.time",
+            "means.measurement.time",
+            "means.measurement.date.modify",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "KnowledgeBaseRecord_Resolved/attributeContext/KnowledgeBaseRecord_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/modifiedOn",
+          "isNullable": true,
+          "dataFormat": "DateTime",
+          "sourceName": "modifiedon",
+          "sourceOrdering": 4,
+          "displayName": "Modified On",
+          "description": "Date and time when the record was modified."
+        },
+        {
+          "name": "modifiedBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "User.cdm.json/User",
+                        "systemUserId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "KnowledgeBaseRecord_Resolved/attributeContext/KnowledgeBaseRecord_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedBy/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "modifiedby",
+          "sourceOrdering": 5,
+          "displayName": "Modified By",
+          "description": "Unique identifier of the user who modified the record."
+        },
+        {
+          "name": "createdOnBehalfBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "User.cdm.json/User",
+                        "systemUserId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "KnowledgeBaseRecord_Resolved/attributeContext/KnowledgeBaseRecord_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdOnBehalfBy/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "createdonbehalfby",
+          "sourceOrdering": 6,
+          "displayName": "Created By (Delegate)",
+          "description": "Unique identifier of the delegate user who created the record."
+        },
+        {
+          "name": "modifiedOnBehalfBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "User.cdm.json/User",
+                        "systemUserId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "KnowledgeBaseRecord_Resolved/attributeContext/KnowledgeBaseRecord_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedOnBehalfBy/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "modifiedonbehalfby",
+          "sourceOrdering": 7,
+          "displayName": "Modified By (Delegate)",
+          "description": "Unique identifier of the delegate user who modified the record."
+        },
+        {
+          "name": "organizationId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "Organization.cdm.json/Organization",
+                        "organizationId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "KnowledgeBaseRecord_Resolved/attributeContext/KnowledgeBaseRecord_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/organization/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "organizationid",
+          "sourceOrdering": 16,
+          "displayName": "Organization Id",
+          "description": "Unique identifier for the organization"
+        },
+        {
+          "name": "versionNumber",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            "is.dataFormat.big",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "KnowledgeBaseRecord_Resolved/attributeContext/KnowledgeBaseRecord_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/versionNumber",
+          "isNullable": true,
+          "dataFormat": "Int64",
+          "sourceName": "versionnumber",
+          "sourceOrdering": 22
+        },
+        {
+          "name": "timeZoneRuleVersionNumber",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "KnowledgeBaseRecord_Resolved/attributeContext/KnowledgeBaseRecord_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/timeZoneRuleVersionNumber",
+          "isNullable": true,
+          "dataFormat": "Int32",
+          "sourceName": "timezoneruleversionnumber",
+          "sourceOrdering": 25,
+          "displayName": "Time Zone Rule Version Number",
+          "description": "For internal use only.",
+          "maximumValue": "2147483647",
+          "minimumValue": "-1"
+        },
+        {
+          "name": "title",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "required"
+              ]
+            }
+          ],
+          "attributeContext": "KnowledgeBaseRecord_Resolved/attributeContext/KnowledgeBaseRecord_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/title",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "title",
+          "sourceOrdering": 28,
+          "displayName": "KB Record Title",
+          "description": "Shows the title of the knowledge base (KB) Record.",
+          "maximumLength": 4000
+        },
+        {
+          "name": "privateUrl",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.reference.URL",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "required"
+              ]
+            }
+          ],
+          "attributeContext": "KnowledgeBaseRecord_Resolved/attributeContext/KnowledgeBaseRecord_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/privateUrl",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "privateurl",
+          "sourceOrdering": 29,
+          "displayName": "Private URL",
+          "description": "Shows the internal Parature service desk URL of the knowledge base records.",
+          "maximumLength": 256
+        },
+        {
+          "name": "publicUrl",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.reference.URL",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "KnowledgeBaseRecord_Resolved/attributeContext/KnowledgeBaseRecord_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/publicUrl",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "publicurl",
+          "sourceOrdering": 30,
+          "displayName": "Public URL",
+          "description": "Shows the public Parature portal URL of the knowledge base records.",
+          "maximumLength": 256
+        },
+        {
+          "name": "exchangeRate",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "KnowledgeBaseRecord_Resolved/attributeContext/KnowledgeBaseRecord_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/exchangeRate",
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "sourceName": "exchangerate",
+          "sourceOrdering": 35,
+          "displayName": "ExchangeRate",
+          "description": "Exchange rate for the currency associated with the knowledge base record with respect to the base currency.",
+          "maximumValue": "100000000000",
+          "minimumValue": "1E-10"
+        },
+        {
+          "name": "transactionCurrencyId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "Currency.cdm.json/Currency",
+                        "transactionCurrencyId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "KnowledgeBaseRecord_Resolved/attributeContext/KnowledgeBaseRecord_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/transactionCurrency/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "transactioncurrencyid",
+          "sourceOrdering": 36,
+          "displayName": "Currency",
+          "description": "Exchange rate for the currency associated with the Knowledge Base Record with respect to the base currency."
+        },
+        {
+          "name": "uniqueId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            }
+          ],
+          "attributeContext": "KnowledgeBaseRecord_Resolved/attributeContext/KnowledgeBaseRecord_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/uniqueId",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "uniqueid",
+          "sourceOrdering": 38,
+          "displayName": "Unique ID",
+          "description": "Shows the unique ID of the linked knowledge base (KB) article.",
+          "maximumLength": 256
+        }
+      ],
+      "sourceName": "KnowledgeBaseRecord",
+      "displayName": "Knowledge Base Record",
+      "description": "Metadata of knowledge base (KB) articles associated with Microsoft Dynamics 365 entities.",
+      "version": "1.3",
+      "cdmSchemas": [
+        "/core/applicationCommon/KnowledgeBaseRecord.cdm.json/KnowledgeBaseRecord/hasAttributes/attributesAddedAtThisScope"
+      ]
+    }
+  ],
+  "documentVersion": "1.3"
+}

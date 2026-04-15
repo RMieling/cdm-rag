@@ -1,0 +1,270 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "MCRCouponCustomerEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "MCRCouponCustomerEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "MCRCouponCustomerEntity_Resolved",
+        "definition": "resolvedFrom/MCRCouponCustomerEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "MCRCouponCustomerEntity_Resolved/attributeContext/MCRCouponCustomerEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "MCRCouponCustomerEntity_Resolved/attributeContext/MCRCouponCustomerEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CustomerCode",
+            "parent": "MCRCouponCustomerEntity_Resolved/attributeContext/MCRCouponCustomerEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/MCRCouponCustomerEntity/hasAttributes/CustomerCode",
+            "contents": [
+              "MCRCouponCustomerEntity_Resolved/hasAttributes/CustomerCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CustVendRel",
+            "parent": "MCRCouponCustomerEntity_Resolved/attributeContext/MCRCouponCustomerEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/MCRCouponCustomerEntity/hasAttributes/CustVendRel",
+            "contents": [
+              "MCRCouponCustomerEntity_Resolved/hasAttributes/CustVendRel"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CouponId",
+            "parent": "MCRCouponCustomerEntity_Resolved/attributeContext/MCRCouponCustomerEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/MCRCouponCustomerEntity/hasAttributes/CouponId",
+            "contents": [
+              "MCRCouponCustomerEntity_Resolved/hasAttributes/CouponId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "IsCouponVoided",
+            "parent": "MCRCouponCustomerEntity_Resolved/attributeContext/MCRCouponCustomerEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/MCRCouponCustomerEntity/hasAttributes/IsCouponVoided",
+            "contents": [
+              "MCRCouponCustomerEntity_Resolved/hasAttributes/IsCouponVoided"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CustomerAccountNumber",
+            "parent": "MCRCouponCustomerEntity_Resolved/attributeContext/MCRCouponCustomerEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/MCRCouponCustomerEntity/hasAttributes/CustomerAccountNumber",
+            "contents": [
+              "MCRCouponCustomerEntity_Resolved/hasAttributes/CustomerAccountNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CustomerGroupId",
+            "parent": "MCRCouponCustomerEntity_Resolved/attributeContext/MCRCouponCustomerEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/MCRCouponCustomerEntity/hasAttributes/CustomerGroupId",
+            "contents": [
+              "MCRCouponCustomerEntity_Resolved/hasAttributes/CustomerGroupId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "MCRCouponCustomerEntity_Resolved/attributeContext/MCRCouponCustomerEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/MCRCouponCustomerEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "MCRCouponCustomerEntity_Resolved/attributeContext/MCRCouponCustomerEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "MCRCouponCustomerEntity_Resolved/attributeContext/MCRCouponCustomerEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "MCRCouponCustomerEntity_Resolved/attributeContext/MCRCouponCustomerEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "MCRCouponCustomerEntity_Resolved/attributeContext/MCRCouponCustomerEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "MCRCouponCustomerEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "CustomerCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "MCRCouponCustomerEntity_Resolved/attributeContext/MCRCouponCustomerEntity_Resolved/CustomerCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "CustVendRel",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "MCRCouponCustomerEntity_Resolved/attributeContext/MCRCouponCustomerEntity_Resolved/CustVendRel",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "CouponId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "MCRCouponCustomerEntity_Resolved/attributeContext/MCRCouponCustomerEntity_Resolved/CouponId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "IsCouponVoided",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "MCRCouponCustomerEntity_Resolved/attributeContext/MCRCouponCustomerEntity_Resolved/IsCouponVoided",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "CustomerAccountNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "MCRCouponCustomerEntity_Resolved/attributeContext/MCRCouponCustomerEntity_Resolved/CustomerAccountNumber",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Customer account"
+        },
+        {
+          "name": "CustomerGroupId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "MCRCouponCustomerEntity_Resolved/attributeContext/MCRCouponCustomerEntity_Resolved/CustomerGroupId",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Customer group"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "MCRCouponCustomerEntity_Resolved/attributeContext/MCRCouponCustomerEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Customer reference",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

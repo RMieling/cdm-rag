@@ -1,0 +1,389 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "RAssetJournalHeaderEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "RAssetJournalHeaderEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "RAssetJournalHeaderEntity_Resolved",
+        "definition": "resolvedFrom/RAssetJournalHeaderEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "RAssetJournalHeaderEntity_Resolved/attributeContext/RAssetJournalHeaderEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "RAssetJournalHeaderEntity_Resolved/attributeContext/RAssetJournalHeaderEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "PostingLayer",
+            "parent": "RAssetJournalHeaderEntity_Resolved/attributeContext/RAssetJournalHeaderEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RAssetJournalHeaderEntity/hasAttributes/PostingLayer",
+            "contents": [
+              "RAssetJournalHeaderEntity_Resolved/hasAttributes/PostingLayer"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "JournalNameId",
+            "parent": "RAssetJournalHeaderEntity_Resolved/attributeContext/RAssetJournalHeaderEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RAssetJournalHeaderEntity/hasAttributes/JournalNameId",
+            "contents": [
+              "RAssetJournalHeaderEntity_Resolved/hasAttributes/JournalNameId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "JournalBatchNumber",
+            "parent": "RAssetJournalHeaderEntity_Resolved/attributeContext/RAssetJournalHeaderEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RAssetJournalHeaderEntity/hasAttributes/JournalBatchNumber",
+            "contents": [
+              "RAssetJournalHeaderEntity_Resolved/hasAttributes/JournalBatchNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "IsPosted",
+            "parent": "RAssetJournalHeaderEntity_Resolved/attributeContext/RAssetJournalHeaderEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RAssetJournalHeaderEntity/hasAttributes/IsPosted",
+            "contents": [
+              "RAssetJournalHeaderEntity_Resolved/hasAttributes/IsPosted"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "RAssetJournalHeaderEntity_Resolved/attributeContext/RAssetJournalHeaderEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RAssetJournalHeaderEntity/hasAttributes/Description",
+            "contents": [
+              "RAssetJournalHeaderEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_LegalEntityRelationship",
+            "parent": "RAssetJournalHeaderEntity_Resolved/attributeContext/RAssetJournalHeaderEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RAssetJournalHeaderEntity/hasAttributes/Relationship_LegalEntityRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "OMLegalEntity",
+                "parent": "RAssetJournalHeaderEntity_Resolved/attributeContext/RAssetJournalHeaderEntity_Resolved/Relationship_LegalEntityRelationship",
+                "definition": "resolvedFrom/OMLegalEntity",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "RAssetJournalHeaderEntity_Resolved/attributeContext/RAssetJournalHeaderEntity_Resolved/Relationship_LegalEntityRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "RAssetJournalHeaderEntity_Resolved/attributeContext/RAssetJournalHeaderEntity_Resolved/Relationship_LegalEntityRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "RAssetJournalHeaderEntity_Resolved/attributeContext/RAssetJournalHeaderEntity_Resolved/Relationship_LegalEntityRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "RAssetJournalHeaderEntity_Resolved/hasAttributes/Relationship_LegalEntityRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_LedgerJournalTableRelationship",
+            "parent": "RAssetJournalHeaderEntity_Resolved/attributeContext/RAssetJournalHeaderEntity_Resolved",
+            "definition": "resolvedFrom/RAssetJournalHeaderEntity/hasAttributes/BackingTable_LedgerJournalTableRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "LedgerJournalTable",
+                "parent": "RAssetJournalHeaderEntity_Resolved/attributeContext/RAssetJournalHeaderEntity_Resolved/BackingTable_LedgerJournalTableRelationship",
+                "definition": "resolvedFrom/LedgerJournalTable",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "RAssetJournalHeaderEntity_Resolved/attributeContext/RAssetJournalHeaderEntity_Resolved/BackingTable_LedgerJournalTableRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "RAssetJournalHeaderEntity_Resolved/attributeContext/RAssetJournalHeaderEntity_Resolved/BackingTable_LedgerJournalTableRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "RAssetJournalHeaderEntity_Resolved/attributeContext/RAssetJournalHeaderEntity_Resolved/BackingTable_LedgerJournalTableRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "RAssetJournalHeaderEntity_Resolved/hasAttributes/BackingTable_LedgerJournalTableRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "RAssetJournalHeaderEntity_Resolved/attributeContext/RAssetJournalHeaderEntity_Resolved",
+            "definition": "resolvedFrom/RAssetJournalHeaderEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "RAssetJournalHeaderEntity_Resolved/attributeContext/RAssetJournalHeaderEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "RAssetJournalHeaderEntity_Resolved/attributeContext/RAssetJournalHeaderEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "RAssetJournalHeaderEntity_Resolved/attributeContext/RAssetJournalHeaderEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "RAssetJournalHeaderEntity_Resolved/attributeContext/RAssetJournalHeaderEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "RAssetJournalHeaderEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "PostingLayer",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RAssetJournalHeaderEntity_Resolved/attributeContext/RAssetJournalHeaderEntity_Resolved/PostingLayer",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "JournalNameId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RAssetJournalHeaderEntity_Resolved/attributeContext/RAssetJournalHeaderEntity_Resolved/JournalNameId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "JournalBatchNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RAssetJournalHeaderEntity_Resolved/attributeContext/RAssetJournalHeaderEntity_Resolved/JournalBatchNumber",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "IsPosted",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RAssetJournalHeaderEntity_Resolved/attributeContext/RAssetJournalHeaderEntity_Resolved/IsPosted",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RAssetJournalHeaderEntity_Resolved/attributeContext/RAssetJournalHeaderEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Relationship_LegalEntityRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": []
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "RAssetJournalHeaderEntity_Resolved/attributeContext/RAssetJournalHeaderEntity_Resolved/Relationship_LegalEntityRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "BackingTable_LedgerJournalTableRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/AccountingFoundation/WorksheetHeader/LedgerJournalTable.cdm.json/LedgerJournalTable",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "RAssetJournalHeaderEntity_Resolved/attributeContext/RAssetJournalHeaderEntity_Resolved/BackingTable_LedgerJournalTableRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "RAssetJournalHeaderEntity_Resolved/attributeContext/RAssetJournalHeaderEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Fixed asset journal header (Russia)",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

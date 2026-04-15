@@ -1,0 +1,303 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "LedgerPrintLayoutEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "LedgerPrintLayoutEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "LedgerPrintLayoutEntity_Resolved",
+        "definition": "resolvedFrom/LedgerPrintLayoutEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "LedgerPrintLayoutEntity_Resolved/attributeContext/LedgerPrintLayoutEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "LedgerPrintLayoutEntity_Resolved/attributeContext/LedgerPrintLayoutEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "GroupDescription",
+            "parent": "LedgerPrintLayoutEntity_Resolved/attributeContext/LedgerPrintLayoutEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerPrintLayoutEntity/hasAttributes/GroupDescription",
+            "contents": [
+              "LedgerPrintLayoutEntity_Resolved/hasAttributes/GroupDescription"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "PrintLayoutGroup",
+            "parent": "LedgerPrintLayoutEntity_Resolved/attributeContext/LedgerPrintLayoutEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerPrintLayoutEntity/hasAttributes/PrintLayoutGroup",
+            "contents": [
+              "LedgerPrintLayoutEntity_Resolved/hasAttributes/PrintLayoutGroup"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "PrintLayoutCode",
+            "parent": "LedgerPrintLayoutEntity_Resolved/attributeContext/LedgerPrintLayoutEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerPrintLayoutEntity/hasAttributes/PrintLayoutCode",
+            "contents": [
+              "LedgerPrintLayoutEntity_Resolved/hasAttributes/PrintLayoutCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CodeDescription",
+            "parent": "LedgerPrintLayoutEntity_Resolved/attributeContext/LedgerPrintLayoutEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerPrintLayoutEntity/hasAttributes/CodeDescription",
+            "contents": [
+              "LedgerPrintLayoutEntity_Resolved/hasAttributes/CodeDescription"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_LedgerPrintLayoutGroup_CNRelationship",
+            "parent": "LedgerPrintLayoutEntity_Resolved/attributeContext/LedgerPrintLayoutEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerPrintLayoutEntity/hasAttributes/BackingTable_LedgerPrintLayoutGroup_CNRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "LedgerPrintLayoutGroup_CN",
+                "parent": "LedgerPrintLayoutEntity_Resolved/attributeContext/LedgerPrintLayoutEntity_Resolved/BackingTable_LedgerPrintLayoutGroup_CNRelationship",
+                "definition": "resolvedFrom/LedgerPrintLayoutGroup_CN",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "LedgerPrintLayoutEntity_Resolved/attributeContext/LedgerPrintLayoutEntity_Resolved/BackingTable_LedgerPrintLayoutGroup_CNRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "LedgerPrintLayoutEntity_Resolved/attributeContext/LedgerPrintLayoutEntity_Resolved/BackingTable_LedgerPrintLayoutGroup_CNRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "LedgerPrintLayoutEntity_Resolved/attributeContext/LedgerPrintLayoutEntity_Resolved/BackingTable_LedgerPrintLayoutGroup_CNRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "LedgerPrintLayoutEntity_Resolved/hasAttributes/BackingTable_LedgerPrintLayoutGroup_CNRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "LedgerPrintLayoutEntity_Resolved/attributeContext/LedgerPrintLayoutEntity_Resolved",
+            "definition": "resolvedFrom/LedgerPrintLayoutEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "LedgerPrintLayoutEntity_Resolved/attributeContext/LedgerPrintLayoutEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "LedgerPrintLayoutEntity_Resolved/attributeContext/LedgerPrintLayoutEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "LedgerPrintLayoutEntity_Resolved/attributeContext/LedgerPrintLayoutEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "LedgerPrintLayoutEntity_Resolved/attributeContext/LedgerPrintLayoutEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "LedgerPrintLayoutEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "GroupDescription",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerPrintLayoutEntity_Resolved/attributeContext/LedgerPrintLayoutEntity_Resolved/GroupDescription",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "PrintLayoutGroup",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerPrintLayoutEntity_Resolved/attributeContext/LedgerPrintLayoutEntity_Resolved/PrintLayoutGroup",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Print layout group"
+        },
+        {
+          "name": "PrintLayoutCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerPrintLayoutEntity_Resolved/attributeContext/LedgerPrintLayoutEntity_Resolved/PrintLayoutCode",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Print layout code"
+        },
+        {
+          "name": "CodeDescription",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerPrintLayoutEntity_Resolved/attributeContext/LedgerPrintLayoutEntity_Resolved/CodeDescription",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_LedgerPrintLayoutGroup_CNRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Reference/LedgerPrintLayoutGroup_CN.cdm.json/LedgerPrintLayoutGroup_CN",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "LedgerPrintLayoutEntity_Resolved/attributeContext/LedgerPrintLayoutEntity_Resolved/BackingTable_LedgerPrintLayoutGroup_CNRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "LedgerPrintLayoutEntity_Resolved/attributeContext/LedgerPrintLayoutEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Print layout",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

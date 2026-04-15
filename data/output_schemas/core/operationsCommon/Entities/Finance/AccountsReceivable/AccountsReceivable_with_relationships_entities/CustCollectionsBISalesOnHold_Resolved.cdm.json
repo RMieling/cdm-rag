@@ -1,0 +1,301 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "CustCollectionsBISalesOnHold.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "CustCollectionsBISalesOnHold_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "CustCollectionsBISalesOnHold_Resolved",
+        "definition": "resolvedFrom/CustCollectionsBISalesOnHold",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "CustCollectionsBISalesOnHold_Resolved/attributeContext/CustCollectionsBISalesOnHold_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "CustCollectionsBISalesOnHold_Resolved/attributeContext/CustCollectionsBISalesOnHold_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "SalesId",
+            "parent": "CustCollectionsBISalesOnHold_Resolved/attributeContext/CustCollectionsBISalesOnHold_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCollectionsBISalesOnHold/hasAttributes/SalesId",
+            "contents": [
+              "CustCollectionsBISalesOnHold_Resolved/hasAttributes/SalesId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "MCRReasonCode",
+            "parent": "CustCollectionsBISalesOnHold_Resolved/attributeContext/CustCollectionsBISalesOnHold_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCollectionsBISalesOnHold/hasAttributes/MCRReasonCode",
+            "contents": [
+              "CustCollectionsBISalesOnHold_Resolved/hasAttributes/MCRReasonCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "SalesName",
+            "parent": "CustCollectionsBISalesOnHold_Resolved/attributeContext/CustCollectionsBISalesOnHold_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCollectionsBISalesOnHold/hasAttributes/SalesName",
+            "contents": [
+              "CustCollectionsBISalesOnHold_Resolved/hasAttributes/SalesName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CustAccount",
+            "parent": "CustCollectionsBISalesOnHold_Resolved/attributeContext/CustCollectionsBISalesOnHold_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCollectionsBISalesOnHold/hasAttributes/CustAccount",
+            "contents": [
+              "CustCollectionsBISalesOnHold_Resolved/hasAttributes/CustAccount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_SalesTableRelationship",
+            "parent": "CustCollectionsBISalesOnHold_Resolved/attributeContext/CustCollectionsBISalesOnHold_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCollectionsBISalesOnHold/hasAttributes/BackingTable_SalesTableRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "SalesTable",
+                "parent": "CustCollectionsBISalesOnHold_Resolved/attributeContext/CustCollectionsBISalesOnHold_Resolved/BackingTable_SalesTableRelationship",
+                "definition": "resolvedFrom/SalesTable",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CustCollectionsBISalesOnHold_Resolved/attributeContext/CustCollectionsBISalesOnHold_Resolved/BackingTable_SalesTableRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CustCollectionsBISalesOnHold_Resolved/attributeContext/CustCollectionsBISalesOnHold_Resolved/BackingTable_SalesTableRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CustCollectionsBISalesOnHold_Resolved/attributeContext/CustCollectionsBISalesOnHold_Resolved/BackingTable_SalesTableRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CustCollectionsBISalesOnHold_Resolved/hasAttributes/BackingTable_SalesTableRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "CustCollectionsBISalesOnHold_Resolved/attributeContext/CustCollectionsBISalesOnHold_Resolved",
+            "definition": "resolvedFrom/CustCollectionsBISalesOnHold/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "CustCollectionsBISalesOnHold_Resolved/attributeContext/CustCollectionsBISalesOnHold_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CustCollectionsBISalesOnHold_Resolved/attributeContext/CustCollectionsBISalesOnHold_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CustCollectionsBISalesOnHold_Resolved/attributeContext/CustCollectionsBISalesOnHold_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CustCollectionsBISalesOnHold_Resolved/attributeContext/CustCollectionsBISalesOnHold_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CustCollectionsBISalesOnHold_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "SalesId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustCollectionsBISalesOnHold_Resolved/attributeContext/CustCollectionsBISalesOnHold_Resolved/SalesId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "MCRReasonCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustCollectionsBISalesOnHold_Resolved/attributeContext/CustCollectionsBISalesOnHold_Resolved/MCRReasonCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "SalesName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustCollectionsBISalesOnHold_Resolved/attributeContext/CustCollectionsBISalesOnHold_Resolved/SalesName",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "CustAccount",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustCollectionsBISalesOnHold_Resolved/attributeContext/CustCollectionsBISalesOnHold_Resolved/CustAccount",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_SalesTableRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/SupplyChain/SalesAndMarketing/WorksheetHeader/SalesTable.cdm.json/SalesTable",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CustCollectionsBISalesOnHold_Resolved/attributeContext/CustCollectionsBISalesOnHold_Resolved/BackingTable_SalesTableRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CustCollectionsBISalesOnHold_Resolved/attributeContext/CustCollectionsBISalesOnHold_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Sales orders on hold for customers",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

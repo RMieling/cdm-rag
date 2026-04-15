@@ -1,0 +1,261 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "DimAttributeSmmCampaignTableEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "DimAttributeSmmCampaignTableEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "DimAttributeSmmCampaignTableEntity_Resolved",
+        "definition": "resolvedFrom/DimAttributeSmmCampaignTableEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "DimAttributeSmmCampaignTableEntity_Resolved/attributeContext/DimAttributeSmmCampaignTableEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "DimAttributeSmmCampaignTableEntity_Resolved/attributeContext/DimAttributeSmmCampaignTableEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Value",
+            "parent": "DimAttributeSmmCampaignTableEntity_Resolved/attributeContext/DimAttributeSmmCampaignTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimAttributeSmmCampaignTableEntity/hasAttributes/Value",
+            "contents": [
+              "DimAttributeSmmCampaignTableEntity_Resolved/hasAttributes/Value"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "DimAttributeSmmCampaignTableEntity_Resolved/attributeContext/DimAttributeSmmCampaignTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimAttributeSmmCampaignTableEntity/hasAttributes/Name",
+            "contents": [
+              "DimAttributeSmmCampaignTableEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_smmCampaignTableRelationship",
+            "parent": "DimAttributeSmmCampaignTableEntity_Resolved/attributeContext/DimAttributeSmmCampaignTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimAttributeSmmCampaignTableEntity/hasAttributes/BackingTable_smmCampaignTableRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "smmCampaignTable",
+                "parent": "DimAttributeSmmCampaignTableEntity_Resolved/attributeContext/DimAttributeSmmCampaignTableEntity_Resolved/BackingTable_smmCampaignTableRelationship",
+                "definition": "resolvedFrom/smmCampaignTable",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "DimAttributeSmmCampaignTableEntity_Resolved/attributeContext/DimAttributeSmmCampaignTableEntity_Resolved/BackingTable_smmCampaignTableRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "DimAttributeSmmCampaignTableEntity_Resolved/attributeContext/DimAttributeSmmCampaignTableEntity_Resolved/BackingTable_smmCampaignTableRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "DimAttributeSmmCampaignTableEntity_Resolved/attributeContext/DimAttributeSmmCampaignTableEntity_Resolved/BackingTable_smmCampaignTableRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "DimAttributeSmmCampaignTableEntity_Resolved/hasAttributes/BackingTable_smmCampaignTableRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "DimAttributeSmmCampaignTableEntity_Resolved/attributeContext/DimAttributeSmmCampaignTableEntity_Resolved",
+            "definition": "resolvedFrom/DimAttributeSmmCampaignTableEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "DimAttributeSmmCampaignTableEntity_Resolved/attributeContext/DimAttributeSmmCampaignTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "DimAttributeSmmCampaignTableEntity_Resolved/attributeContext/DimAttributeSmmCampaignTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "DimAttributeSmmCampaignTableEntity_Resolved/attributeContext/DimAttributeSmmCampaignTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "DimAttributeSmmCampaignTableEntity_Resolved/attributeContext/DimAttributeSmmCampaignTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "DimAttributeSmmCampaignTableEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Value",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DimAttributeSmmCampaignTableEntity_Resolved/attributeContext/DimAttributeSmmCampaignTableEntity_Resolved/Value",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DimAttributeSmmCampaignTableEntity_Resolved/attributeContext/DimAttributeSmmCampaignTableEntity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_smmCampaignTableRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/SupplyChain/SalesAndMarketing/Main/smmCampaignTable.cdm.json/smmCampaignTable",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "DimAttributeSmmCampaignTableEntity_Resolved/attributeContext/DimAttributeSmmCampaignTableEntity_Resolved/BackingTable_smmCampaignTableRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "DimAttributeSmmCampaignTableEntity_Resolved/attributeContext/DimAttributeSmmCampaignTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Campaigns",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

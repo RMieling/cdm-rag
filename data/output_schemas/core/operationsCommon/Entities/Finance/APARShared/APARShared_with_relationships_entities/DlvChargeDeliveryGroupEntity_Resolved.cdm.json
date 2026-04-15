@@ -1,0 +1,261 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "DlvChargeDeliveryGroupEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "DlvChargeDeliveryGroupEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "DlvChargeDeliveryGroupEntity_Resolved",
+        "definition": "resolvedFrom/DlvChargeDeliveryGroupEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "DlvChargeDeliveryGroupEntity_Resolved/attributeContext/DlvChargeDeliveryGroupEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "DlvChargeDeliveryGroupEntity_Resolved/attributeContext/DlvChargeDeliveryGroupEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "GroupId",
+            "parent": "DlvChargeDeliveryGroupEntity_Resolved/attributeContext/DlvChargeDeliveryGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DlvChargeDeliveryGroupEntity/hasAttributes/GroupId",
+            "contents": [
+              "DlvChargeDeliveryGroupEntity_Resolved/hasAttributes/GroupId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "GroupDescription",
+            "parent": "DlvChargeDeliveryGroupEntity_Resolved/attributeContext/DlvChargeDeliveryGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DlvChargeDeliveryGroupEntity/hasAttributes/GroupDescription",
+            "contents": [
+              "DlvChargeDeliveryGroupEntity_Resolved/hasAttributes/GroupDescription"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_MarkupGroupRelationship",
+            "parent": "DlvChargeDeliveryGroupEntity_Resolved/attributeContext/DlvChargeDeliveryGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DlvChargeDeliveryGroupEntity/hasAttributes/BackingTable_MarkupGroupRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "MarkupGroup",
+                "parent": "DlvChargeDeliveryGroupEntity_Resolved/attributeContext/DlvChargeDeliveryGroupEntity_Resolved/BackingTable_MarkupGroupRelationship",
+                "definition": "resolvedFrom/MarkupGroup",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "DlvChargeDeliveryGroupEntity_Resolved/attributeContext/DlvChargeDeliveryGroupEntity_Resolved/BackingTable_MarkupGroupRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "DlvChargeDeliveryGroupEntity_Resolved/attributeContext/DlvChargeDeliveryGroupEntity_Resolved/BackingTable_MarkupGroupRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "DlvChargeDeliveryGroupEntity_Resolved/attributeContext/DlvChargeDeliveryGroupEntity_Resolved/BackingTable_MarkupGroupRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "DlvChargeDeliveryGroupEntity_Resolved/hasAttributes/BackingTable_MarkupGroupRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "DlvChargeDeliveryGroupEntity_Resolved/attributeContext/DlvChargeDeliveryGroupEntity_Resolved",
+            "definition": "resolvedFrom/DlvChargeDeliveryGroupEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "DlvChargeDeliveryGroupEntity_Resolved/attributeContext/DlvChargeDeliveryGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "DlvChargeDeliveryGroupEntity_Resolved/attributeContext/DlvChargeDeliveryGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "DlvChargeDeliveryGroupEntity_Resolved/attributeContext/DlvChargeDeliveryGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "DlvChargeDeliveryGroupEntity_Resolved/attributeContext/DlvChargeDeliveryGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "DlvChargeDeliveryGroupEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "GroupId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DlvChargeDeliveryGroupEntity_Resolved/attributeContext/DlvChargeDeliveryGroupEntity_Resolved/GroupId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "GroupDescription",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DlvChargeDeliveryGroupEntity_Resolved/attributeContext/DlvChargeDeliveryGroupEntity_Resolved/GroupDescription",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_MarkupGroupRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/SupplyChain/ProcurementAndSourcing/Group/MarkupGroup.cdm.json/MarkupGroup",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "DlvChargeDeliveryGroupEntity_Resolved/attributeContext/DlvChargeDeliveryGroupEntity_Resolved/BackingTable_MarkupGroupRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "DlvChargeDeliveryGroupEntity_Resolved/attributeContext/DlvChargeDeliveryGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Delivery charges groups",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

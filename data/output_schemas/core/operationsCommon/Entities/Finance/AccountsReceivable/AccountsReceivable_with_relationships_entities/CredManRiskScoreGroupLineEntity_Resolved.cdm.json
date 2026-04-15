@@ -1,0 +1,321 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "CredManRiskScoreGroupLineEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "CredManRiskScoreGroupLineEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "CredManRiskScoreGroupLineEntity_Resolved",
+        "definition": "resolvedFrom/CredManRiskScoreGroupLineEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "CredManRiskScoreGroupLineEntity_Resolved/attributeContext/CredManRiskScoreGroupLineEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "CredManRiskScoreGroupLineEntity_Resolved/attributeContext/CredManRiskScoreGroupLineEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "RangeFrom",
+            "parent": "CredManRiskScoreGroupLineEntity_Resolved/attributeContext/CredManRiskScoreGroupLineEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CredManRiskScoreGroupLineEntity/hasAttributes/RangeFrom",
+            "contents": [
+              "CredManRiskScoreGroupLineEntity_Resolved/hasAttributes/RangeFrom"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "RangeTo",
+            "parent": "CredManRiskScoreGroupLineEntity_Resolved/attributeContext/CredManRiskScoreGroupLineEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CredManRiskScoreGroupLineEntity/hasAttributes/RangeTo",
+            "contents": [
+              "CredManRiskScoreGroupLineEntity_Resolved/hasAttributes/RangeTo"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "GroupId",
+            "parent": "CredManRiskScoreGroupLineEntity_Resolved/attributeContext/CredManRiskScoreGroupLineEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CredManRiskScoreGroupLineEntity/hasAttributes/GroupId",
+            "contents": [
+              "CredManRiskScoreGroupLineEntity_Resolved/hasAttributes/GroupId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Score",
+            "parent": "CredManRiskScoreGroupLineEntity_Resolved/attributeContext/CredManRiskScoreGroupLineEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CredManRiskScoreGroupLineEntity/hasAttributes/Score",
+            "contents": [
+              "CredManRiskScoreGroupLineEntity_Resolved/hasAttributes/Score"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Value",
+            "parent": "CredManRiskScoreGroupLineEntity_Resolved/attributeContext/CredManRiskScoreGroupLineEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CredManRiskScoreGroupLineEntity/hasAttributes/Value",
+            "contents": [
+              "CredManRiskScoreGroupLineEntity_Resolved/hasAttributes/Value"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_CredManRiskScoreGroupLineRelationship",
+            "parent": "CredManRiskScoreGroupLineEntity_Resolved/attributeContext/CredManRiskScoreGroupLineEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CredManRiskScoreGroupLineEntity/hasAttributes/BackingTable_CredManRiskScoreGroupLineRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CredManRiskScoreGroupLine",
+                "parent": "CredManRiskScoreGroupLineEntity_Resolved/attributeContext/CredManRiskScoreGroupLineEntity_Resolved/BackingTable_CredManRiskScoreGroupLineRelationship",
+                "definition": "resolvedFrom/CredManRiskScoreGroupLine",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CredManRiskScoreGroupLineEntity_Resolved/attributeContext/CredManRiskScoreGroupLineEntity_Resolved/BackingTable_CredManRiskScoreGroupLineRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CredManRiskScoreGroupLineEntity_Resolved/attributeContext/CredManRiskScoreGroupLineEntity_Resolved/BackingTable_CredManRiskScoreGroupLineRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CredManRiskScoreGroupLineEntity_Resolved/attributeContext/CredManRiskScoreGroupLineEntity_Resolved/BackingTable_CredManRiskScoreGroupLineRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CredManRiskScoreGroupLineEntity_Resolved/hasAttributes/BackingTable_CredManRiskScoreGroupLineRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "CredManRiskScoreGroupLineEntity_Resolved/attributeContext/CredManRiskScoreGroupLineEntity_Resolved",
+            "definition": "resolvedFrom/CredManRiskScoreGroupLineEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "CredManRiskScoreGroupLineEntity_Resolved/attributeContext/CredManRiskScoreGroupLineEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CredManRiskScoreGroupLineEntity_Resolved/attributeContext/CredManRiskScoreGroupLineEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CredManRiskScoreGroupLineEntity_Resolved/attributeContext/CredManRiskScoreGroupLineEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CredManRiskScoreGroupLineEntity_Resolved/attributeContext/CredManRiskScoreGroupLineEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CredManRiskScoreGroupLineEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "RangeFrom",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CredManRiskScoreGroupLineEntity_Resolved/attributeContext/CredManRiskScoreGroupLineEntity_Resolved/RangeFrom",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "RangeTo",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CredManRiskScoreGroupLineEntity_Resolved/attributeContext/CredManRiskScoreGroupLineEntity_Resolved/RangeTo",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "GroupId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CredManRiskScoreGroupLineEntity_Resolved/attributeContext/CredManRiskScoreGroupLineEntity_Resolved/GroupId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Score",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CredManRiskScoreGroupLineEntity_Resolved/attributeContext/CredManRiskScoreGroupLineEntity_Resolved/Score",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Value",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CredManRiskScoreGroupLineEntity_Resolved/attributeContext/CredManRiskScoreGroupLineEntity_Resolved/Value",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_CredManRiskScoreGroupLineRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/AccountsReceivable/WorksheetLine/CredManRiskScoreGroupLine.cdm.json/CredManRiskScoreGroupLine",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CredManRiskScoreGroupLineEntity_Resolved/attributeContext/CredManRiskScoreGroupLineEntity_Resolved/BackingTable_CredManRiskScoreGroupLineRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CredManRiskScoreGroupLineEntity_Resolved/attributeContext/CredManRiskScoreGroupLineEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Scoring group setup",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

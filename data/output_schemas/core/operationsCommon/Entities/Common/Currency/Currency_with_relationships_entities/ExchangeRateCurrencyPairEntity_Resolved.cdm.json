@@ -1,0 +1,315 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "ExchangeRateCurrencyPairEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "ExchangeRateCurrencyPairEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "ExchangeRateCurrencyPairEntity_Resolved",
+        "definition": "resolvedFrom/ExchangeRateCurrencyPairEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "ExchangeRateCurrencyPairEntity_Resolved/attributeContext/ExchangeRateCurrencyPairEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "ExchangeRateCurrencyPairEntity_Resolved/attributeContext/ExchangeRateCurrencyPairEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ExchangeRateDisplayFactor",
+            "parent": "ExchangeRateCurrencyPairEntity_Resolved/attributeContext/ExchangeRateCurrencyPairEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/ExchangeRateCurrencyPairEntity/hasAttributes/ExchangeRateDisplayFactor",
+            "contents": [
+              "ExchangeRateCurrencyPairEntity_Resolved/hasAttributes/ExchangeRateDisplayFactor"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ExchangeRateType",
+            "parent": "ExchangeRateCurrencyPairEntity_Resolved/attributeContext/ExchangeRateCurrencyPairEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/ExchangeRateCurrencyPairEntity/hasAttributes/ExchangeRateType",
+            "contents": [
+              "ExchangeRateCurrencyPairEntity_Resolved/hasAttributes/ExchangeRateType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "FromCurrencyCode",
+            "parent": "ExchangeRateCurrencyPairEntity_Resolved/attributeContext/ExchangeRateCurrencyPairEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/ExchangeRateCurrencyPairEntity/hasAttributes/FromCurrencyCode",
+            "contents": [
+              "ExchangeRateCurrencyPairEntity_Resolved/hasAttributes/FromCurrencyCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ToCurrencyCode",
+            "parent": "ExchangeRateCurrencyPairEntity_Resolved/attributeContext/ExchangeRateCurrencyPairEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/ExchangeRateCurrencyPairEntity/hasAttributes/ToCurrencyCode",
+            "contents": [
+              "ExchangeRateCurrencyPairEntity_Resolved/hasAttributes/ToCurrencyCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ExchangeRateTypeName",
+            "parent": "ExchangeRateCurrencyPairEntity_Resolved/attributeContext/ExchangeRateCurrencyPairEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/ExchangeRateCurrencyPairEntity/hasAttributes/ExchangeRateTypeName",
+            "contents": [
+              "ExchangeRateCurrencyPairEntity_Resolved/hasAttributes/ExchangeRateTypeName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_ExchangeRateTypeEntityRelationship",
+            "parent": "ExchangeRateCurrencyPairEntity_Resolved/attributeContext/ExchangeRateCurrencyPairEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/ExchangeRateCurrencyPairEntity/hasAttributes/Relationship_ExchangeRateTypeEntityRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "ExchangeRateTypeEntity",
+                "parent": "ExchangeRateCurrencyPairEntity_Resolved/attributeContext/ExchangeRateCurrencyPairEntity_Resolved/Relationship_ExchangeRateTypeEntityRelationship",
+                "definition": "resolvedFrom/ExchangeRateTypeEntity",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "ExchangeRateCurrencyPairEntity_Resolved/attributeContext/ExchangeRateCurrencyPairEntity_Resolved/Relationship_ExchangeRateTypeEntityRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "ExchangeRateCurrencyPairEntity_Resolved/attributeContext/ExchangeRateCurrencyPairEntity_Resolved/Relationship_ExchangeRateTypeEntityRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "ExchangeRateCurrencyPairEntity_Resolved/attributeContext/ExchangeRateCurrencyPairEntity_Resolved/Relationship_ExchangeRateTypeEntityRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "ExchangeRateCurrencyPairEntity_Resolved/hasAttributes/Relationship_ExchangeRateTypeEntityRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_ExchangeRateCurrencyPairRelationship",
+            "parent": "ExchangeRateCurrencyPairEntity_Resolved/attributeContext/ExchangeRateCurrencyPairEntity_Resolved",
+            "definition": "resolvedFrom/ExchangeRateCurrencyPairEntity/hasAttributes/BackingTable_ExchangeRateCurrencyPairRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "ExchangeRateCurrencyPair",
+                "parent": "ExchangeRateCurrencyPairEntity_Resolved/attributeContext/ExchangeRateCurrencyPairEntity_Resolved/BackingTable_ExchangeRateCurrencyPairRelationship",
+                "definition": "resolvedFrom/ExchangeRateCurrencyPair",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "ExchangeRateCurrencyPairEntity_Resolved/attributeContext/ExchangeRateCurrencyPairEntity_Resolved/BackingTable_ExchangeRateCurrencyPairRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "ExchangeRateCurrencyPairEntity_Resolved/attributeContext/ExchangeRateCurrencyPairEntity_Resolved/BackingTable_ExchangeRateCurrencyPairRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "ExchangeRateCurrencyPairEntity_Resolved/attributeContext/ExchangeRateCurrencyPairEntity_Resolved/BackingTable_ExchangeRateCurrencyPairRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "ExchangeRateCurrencyPairEntity_Resolved/hasAttributes/BackingTable_ExchangeRateCurrencyPairRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "ExchangeRateDisplayFactor",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "ExchangeRateCurrencyPairEntity_Resolved/attributeContext/ExchangeRateCurrencyPairEntity_Resolved/ExchangeRateDisplayFactor",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ExchangeRateType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "ExchangeRateCurrencyPairEntity_Resolved/attributeContext/ExchangeRateCurrencyPairEntity_Resolved/ExchangeRateType",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "FromCurrencyCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "ExchangeRateCurrencyPairEntity_Resolved/attributeContext/ExchangeRateCurrencyPairEntity_Resolved/FromCurrencyCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ToCurrencyCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "ExchangeRateCurrencyPairEntity_Resolved/attributeContext/ExchangeRateCurrencyPairEntity_Resolved/ToCurrencyCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ExchangeRateTypeName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "ExchangeRateCurrencyPairEntity_Resolved/attributeContext/ExchangeRateCurrencyPairEntity_Resolved/ExchangeRateTypeName",
+          "dataFormat": "String"
+        },
+        {
+          "name": "Relationship_ExchangeRateTypeEntityRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": []
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "ExchangeRateCurrencyPairEntity_Resolved/attributeContext/ExchangeRateCurrencyPairEntity_Resolved/Relationship_ExchangeRateTypeEntityRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "BackingTable_ExchangeRateCurrencyPairRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Common/Currency/Group/ExchangeRateCurrencyPair.cdm.json/ExchangeRateCurrencyPair",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "ExchangeRateCurrencyPairEntity_Resolved/attributeContext/ExchangeRateCurrencyPairEntity_Resolved/BackingTable_ExchangeRateCurrencyPairRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Exchange rate currency pair",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

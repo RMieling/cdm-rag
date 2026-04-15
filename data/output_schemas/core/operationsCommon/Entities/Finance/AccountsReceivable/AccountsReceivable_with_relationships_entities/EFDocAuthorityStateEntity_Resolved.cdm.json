@@ -1,0 +1,248 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "EFDocAuthorityStateEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "EFDocAuthorityStateEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "EFDocAuthorityStateEntity_Resolved",
+        "definition": "resolvedFrom/EFDocAuthorityStateEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "EFDocAuthorityStateEntity_Resolved/attributeContext/EFDocAuthorityStateEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "EFDocAuthorityStateEntity_Resolved/attributeContext/EFDocAuthorityStateEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Authority",
+            "parent": "EFDocAuthorityStateEntity_Resolved/attributeContext/EFDocAuthorityStateEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EFDocAuthorityStateEntity/hasAttributes/Authority",
+            "contents": [
+              "EFDocAuthorityStateEntity_Resolved/hasAttributes/Authority"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "StateId",
+            "parent": "EFDocAuthorityStateEntity_Resolved/attributeContext/EFDocAuthorityStateEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EFDocAuthorityStateEntity/hasAttributes/StateId",
+            "contents": [
+              "EFDocAuthorityStateEntity_Resolved/hasAttributes/StateId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "State",
+            "parent": "EFDocAuthorityStateEntity_Resolved/attributeContext/EFDocAuthorityStateEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EFDocAuthorityStateEntity/hasAttributes/State",
+            "contents": [
+              "EFDocAuthorityStateEntity_Resolved/hasAttributes/State"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "AddExempt",
+            "parent": "EFDocAuthorityStateEntity_Resolved/attributeContext/EFDocAuthorityStateEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EFDocAuthorityStateEntity/hasAttributes/AddExempt",
+            "contents": [
+              "EFDocAuthorityStateEntity_Resolved/hasAttributes/AddExempt"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ValidateBenefitCodes",
+            "parent": "EFDocAuthorityStateEntity_Resolved/attributeContext/EFDocAuthorityStateEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EFDocAuthorityStateEntity/hasAttributes/ValidateBenefitCodes",
+            "contents": [
+              "EFDocAuthorityStateEntity_Resolved/hasAttributes/ValidateBenefitCodes"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_EFDocAuthorityState_BRRelationship",
+            "parent": "EFDocAuthorityStateEntity_Resolved/attributeContext/EFDocAuthorityStateEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EFDocAuthorityStateEntity/hasAttributes/BackingTable_EFDocAuthorityState_BRRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "EFDocAuthorityState_BR",
+                "parent": "EFDocAuthorityStateEntity_Resolved/attributeContext/EFDocAuthorityStateEntity_Resolved/BackingTable_EFDocAuthorityState_BRRelationship",
+                "definition": "resolvedFrom/EFDocAuthorityState_BR",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "EFDocAuthorityStateEntity_Resolved/attributeContext/EFDocAuthorityStateEntity_Resolved/BackingTable_EFDocAuthorityState_BRRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "EFDocAuthorityStateEntity_Resolved/attributeContext/EFDocAuthorityStateEntity_Resolved/BackingTable_EFDocAuthorityState_BRRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "EFDocAuthorityStateEntity_Resolved/attributeContext/EFDocAuthorityStateEntity_Resolved/BackingTable_EFDocAuthorityState_BRRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "EFDocAuthorityStateEntity_Resolved/hasAttributes/BackingTable_EFDocAuthorityState_BRRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Authority",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "EFDocAuthorityStateEntity_Resolved/attributeContext/EFDocAuthorityStateEntity_Resolved/Authority",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "StateId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "EFDocAuthorityStateEntity_Resolved/attributeContext/EFDocAuthorityStateEntity_Resolved/StateId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "State",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "EFDocAuthorityStateEntity_Resolved/attributeContext/EFDocAuthorityStateEntity_Resolved/State",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "AddExempt",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "EFDocAuthorityStateEntity_Resolved/attributeContext/EFDocAuthorityStateEntity_Resolved/AddExempt",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ValidateBenefitCodes",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "EFDocAuthorityStateEntity_Resolved/attributeContext/EFDocAuthorityStateEntity_Resolved/ValidateBenefitCodes",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_EFDocAuthorityState_BRRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/FiscalBooksBrazil/Miscellaneous/EFDocAuthorityState_BR.cdm.json/EFDocAuthorityState_BR",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "EFDocAuthorityStateEntity_Resolved/attributeContext/EFDocAuthorityStateEntity_Resolved/BackingTable_EFDocAuthorityState_BRRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "NF-e authorities and states mappings",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

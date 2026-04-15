@@ -1,0 +1,261 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "CommissionProductGroupEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "CommissionProductGroupEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "CommissionProductGroupEntity_Resolved",
+        "definition": "resolvedFrom/CommissionProductGroupEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "CommissionProductGroupEntity_Resolved/attributeContext/CommissionProductGroupEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "CommissionProductGroupEntity_Resolved/attributeContext/CommissionProductGroupEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "GroupId",
+            "parent": "CommissionProductGroupEntity_Resolved/attributeContext/CommissionProductGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CommissionProductGroupEntity/hasAttributes/GroupId",
+            "contents": [
+              "CommissionProductGroupEntity_Resolved/hasAttributes/GroupId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "GroupName",
+            "parent": "CommissionProductGroupEntity_Resolved/attributeContext/CommissionProductGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CommissionProductGroupEntity/hasAttributes/GroupName",
+            "contents": [
+              "CommissionProductGroupEntity_Resolved/hasAttributes/GroupName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_CommissionItemGroupRelationship",
+            "parent": "CommissionProductGroupEntity_Resolved/attributeContext/CommissionProductGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CommissionProductGroupEntity/hasAttributes/BackingTable_CommissionItemGroupRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CommissionItemGroup",
+                "parent": "CommissionProductGroupEntity_Resolved/attributeContext/CommissionProductGroupEntity_Resolved/BackingTable_CommissionItemGroupRelationship",
+                "definition": "resolvedFrom/CommissionItemGroup",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CommissionProductGroupEntity_Resolved/attributeContext/CommissionProductGroupEntity_Resolved/BackingTable_CommissionItemGroupRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CommissionProductGroupEntity_Resolved/attributeContext/CommissionProductGroupEntity_Resolved/BackingTable_CommissionItemGroupRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CommissionProductGroupEntity_Resolved/attributeContext/CommissionProductGroupEntity_Resolved/BackingTable_CommissionItemGroupRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CommissionProductGroupEntity_Resolved/hasAttributes/BackingTable_CommissionItemGroupRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "CommissionProductGroupEntity_Resolved/attributeContext/CommissionProductGroupEntity_Resolved",
+            "definition": "resolvedFrom/CommissionProductGroupEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "CommissionProductGroupEntity_Resolved/attributeContext/CommissionProductGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CommissionProductGroupEntity_Resolved/attributeContext/CommissionProductGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CommissionProductGroupEntity_Resolved/attributeContext/CommissionProductGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CommissionProductGroupEntity_Resolved/attributeContext/CommissionProductGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CommissionProductGroupEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "GroupId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CommissionProductGroupEntity_Resolved/attributeContext/CommissionProductGroupEntity_Resolved/GroupId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "GroupName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CommissionProductGroupEntity_Resolved/attributeContext/CommissionProductGroupEntity_Resolved/GroupName",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_CommissionItemGroupRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/SupplyChain/SalesAndMarketing/Group/CommissionItemGroup.cdm.json/CommissionItemGroup",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CommissionProductGroupEntity_Resolved/attributeContext/CommissionProductGroupEntity_Resolved/BackingTable_CommissionItemGroupRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CommissionProductGroupEntity_Resolved/attributeContext/CommissionProductGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Commission item group",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

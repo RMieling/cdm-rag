@@ -1,0 +1,261 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "CredManCashDiscRankEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "CredManCashDiscRankEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "CredManCashDiscRankEntity_Resolved",
+        "definition": "resolvedFrom/CredManCashDiscRankEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "CredManCashDiscRankEntity_Resolved/attributeContext/CredManCashDiscRankEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "CredManCashDiscRankEntity_Resolved/attributeContext/CredManCashDiscRankEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CashDiscCode",
+            "parent": "CredManCashDiscRankEntity_Resolved/attributeContext/CredManCashDiscRankEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CredManCashDiscRankEntity/hasAttributes/CashDiscCode",
+            "contents": [
+              "CredManCashDiscRankEntity_Resolved/hasAttributes/CashDiscCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CashDiscRanking",
+            "parent": "CredManCashDiscRankEntity_Resolved/attributeContext/CredManCashDiscRankEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CredManCashDiscRankEntity/hasAttributes/CashDiscRanking",
+            "contents": [
+              "CredManCashDiscRankEntity_Resolved/hasAttributes/CashDiscRanking"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_CashDiscRelationship",
+            "parent": "CredManCashDiscRankEntity_Resolved/attributeContext/CredManCashDiscRankEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CredManCashDiscRankEntity/hasAttributes/BackingTable_CashDiscRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CashDisc",
+                "parent": "CredManCashDiscRankEntity_Resolved/attributeContext/CredManCashDiscRankEntity_Resolved/BackingTable_CashDiscRelationship",
+                "definition": "resolvedFrom/CashDisc",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CredManCashDiscRankEntity_Resolved/attributeContext/CredManCashDiscRankEntity_Resolved/BackingTable_CashDiscRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CredManCashDiscRankEntity_Resolved/attributeContext/CredManCashDiscRankEntity_Resolved/BackingTable_CashDiscRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CredManCashDiscRankEntity_Resolved/attributeContext/CredManCashDiscRankEntity_Resolved/BackingTable_CashDiscRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CredManCashDiscRankEntity_Resolved/hasAttributes/BackingTable_CashDiscRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "CredManCashDiscRankEntity_Resolved/attributeContext/CredManCashDiscRankEntity_Resolved",
+            "definition": "resolvedFrom/CredManCashDiscRankEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "CredManCashDiscRankEntity_Resolved/attributeContext/CredManCashDiscRankEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CredManCashDiscRankEntity_Resolved/attributeContext/CredManCashDiscRankEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CredManCashDiscRankEntity_Resolved/attributeContext/CredManCashDiscRankEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CredManCashDiscRankEntity_Resolved/attributeContext/CredManCashDiscRankEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CredManCashDiscRankEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "CashDiscCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CredManCashDiscRankEntity_Resolved/attributeContext/CredManCashDiscRankEntity_Resolved/CashDiscCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "CashDiscRanking",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CredManCashDiscRankEntity_Resolved/attributeContext/CredManCashDiscRankEntity_Resolved/CashDiscRanking",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_CashDiscRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Bank/Group/CashDisc.cdm.json/CashDisc",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CredManCashDiscRankEntity_Resolved/attributeContext/CredManCashDiscRankEntity_Resolved/BackingTable_CashDiscRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CredManCashDiscRankEntity_Resolved/attributeContext/CredManCashDiscRankEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Ranking of cash discounts",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

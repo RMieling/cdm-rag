@@ -1,0 +1,281 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "TaxWithholdCountryRegionToRemittanceEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TaxWithholdCountryRegionToRemittanceEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "TaxWithholdCountryRegionToRemittanceEntity_Resolved",
+        "definition": "resolvedFrom/TaxWithholdCountryRegionToRemittanceEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "TaxWithholdCountryRegionToRemittanceEntity_Resolved/attributeContext/TaxWithholdCountryRegionToRemittanceEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "TaxWithholdCountryRegionToRemittanceEntity_Resolved/attributeContext/TaxWithholdCountryRegionToRemittanceEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CountryCode",
+            "parent": "TaxWithholdCountryRegionToRemittanceEntity_Resolved/attributeContext/TaxWithholdCountryRegionToRemittanceEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxWithholdCountryRegionToRemittanceEntity/hasAttributes/CountryCode",
+            "contents": [
+              "TaxWithholdCountryRegionToRemittanceEntity_Resolved/hasAttributes/CountryCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CountryRegionCode",
+            "parent": "TaxWithholdCountryRegionToRemittanceEntity_Resolved/attributeContext/TaxWithholdCountryRegionToRemittanceEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxWithholdCountryRegionToRemittanceEntity/hasAttributes/CountryRegionCode",
+            "contents": [
+              "TaxWithholdCountryRegionToRemittanceEntity_Resolved/hasAttributes/CountryRegionCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CountryRegionName",
+            "parent": "TaxWithholdCountryRegionToRemittanceEntity_Resolved/attributeContext/TaxWithholdCountryRegionToRemittanceEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxWithholdCountryRegionToRemittanceEntity/hasAttributes/CountryRegionName",
+            "contents": [
+              "TaxWithholdCountryRegionToRemittanceEntity_Resolved/hasAttributes/CountryRegionName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_TaxWithholdCountryRegionToRemittance_INRelationship",
+            "parent": "TaxWithholdCountryRegionToRemittanceEntity_Resolved/attributeContext/TaxWithholdCountryRegionToRemittanceEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxWithholdCountryRegionToRemittanceEntity/hasAttributes/BackingTable_TaxWithholdCountryRegionToRemittance_INRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "TaxWithholdCountryRegionToRemittance_IN",
+                "parent": "TaxWithholdCountryRegionToRemittanceEntity_Resolved/attributeContext/TaxWithholdCountryRegionToRemittanceEntity_Resolved/BackingTable_TaxWithholdCountryRegionToRemittance_INRelationship",
+                "definition": "resolvedFrom/TaxWithholdCountryRegionToRemittance_IN",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxWithholdCountryRegionToRemittanceEntity_Resolved/attributeContext/TaxWithholdCountryRegionToRemittanceEntity_Resolved/BackingTable_TaxWithholdCountryRegionToRemittance_INRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxWithholdCountryRegionToRemittanceEntity_Resolved/attributeContext/TaxWithholdCountryRegionToRemittanceEntity_Resolved/BackingTable_TaxWithholdCountryRegionToRemittance_INRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxWithholdCountryRegionToRemittanceEntity_Resolved/attributeContext/TaxWithholdCountryRegionToRemittanceEntity_Resolved/BackingTable_TaxWithholdCountryRegionToRemittance_INRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxWithholdCountryRegionToRemittanceEntity_Resolved/hasAttributes/BackingTable_TaxWithholdCountryRegionToRemittance_INRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "TaxWithholdCountryRegionToRemittanceEntity_Resolved/attributeContext/TaxWithholdCountryRegionToRemittanceEntity_Resolved",
+            "definition": "resolvedFrom/TaxWithholdCountryRegionToRemittanceEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "TaxWithholdCountryRegionToRemittanceEntity_Resolved/attributeContext/TaxWithholdCountryRegionToRemittanceEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxWithholdCountryRegionToRemittanceEntity_Resolved/attributeContext/TaxWithholdCountryRegionToRemittanceEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxWithholdCountryRegionToRemittanceEntity_Resolved/attributeContext/TaxWithholdCountryRegionToRemittanceEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxWithholdCountryRegionToRemittanceEntity_Resolved/attributeContext/TaxWithholdCountryRegionToRemittanceEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxWithholdCountryRegionToRemittanceEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "CountryCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxWithholdCountryRegionToRemittanceEntity_Resolved/attributeContext/TaxWithholdCountryRegionToRemittanceEntity_Resolved/CountryCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "CountryRegionCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxWithholdCountryRegionToRemittanceEntity_Resolved/attributeContext/TaxWithholdCountryRegionToRemittanceEntity_Resolved/CountryRegionCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "CountryRegionName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxWithholdCountryRegionToRemittanceEntity_Resolved/attributeContext/TaxWithholdCountryRegionToRemittanceEntity_Resolved/CountryRegionName",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_TaxWithholdCountryRegionToRemittance_INRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Tax/Main/TaxWithholdCountryRegionToRemittance_IN.cdm.json/TaxWithholdCountryRegionToRemittance_IN",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxWithholdCountryRegionToRemittanceEntity_Resolved/attributeContext/TaxWithholdCountryRegionToRemittanceEntity_Resolved/BackingTable_TaxWithholdCountryRegionToRemittance_INRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxWithholdCountryRegionToRemittanceEntity_Resolved/attributeContext/TaxWithholdCountryRegionToRemittanceEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Deductee country/region of residence",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

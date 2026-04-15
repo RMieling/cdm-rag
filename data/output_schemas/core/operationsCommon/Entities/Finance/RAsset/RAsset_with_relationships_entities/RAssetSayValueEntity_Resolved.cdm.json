@@ -1,0 +1,300 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "RAssetSayValueEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "RAssetSayValueEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "RAssetSayValueEntity_Resolved",
+        "definition": "resolvedFrom/RAssetSayValueEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "RAssetSayValueEntity_Resolved/attributeContext/RAssetSayValueEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "RAssetSayValueEntity_Resolved/attributeContext/RAssetSayValueEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "StartDate",
+            "parent": "RAssetSayValueEntity_Resolved/attributeContext/RAssetSayValueEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RAssetSayValueEntity/hasAttributes/StartDate",
+            "contents": [
+              "RAssetSayValueEntity_Resolved/hasAttributes/StartDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DepreciationRate",
+            "parent": "RAssetSayValueEntity_Resolved/attributeContext/RAssetSayValueEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RAssetSayValueEntity/hasAttributes/DepreciationRate",
+            "contents": [
+              "RAssetSayValueEntity_Resolved/hasAttributes/DepreciationRate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Factor",
+            "parent": "RAssetSayValueEntity_Resolved/attributeContext/RAssetSayValueEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RAssetSayValueEntity/hasAttributes/Factor",
+            "contents": [
+              "RAssetSayValueEntity_Resolved/hasAttributes/Factor"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "AnalysisCode",
+            "parent": "RAssetSayValueEntity_Resolved/attributeContext/RAssetSayValueEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RAssetSayValueEntity/hasAttributes/AnalysisCode",
+            "contents": [
+              "RAssetSayValueEntity_Resolved/hasAttributes/AnalysisCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_RAssetSayvalueRelationship",
+            "parent": "RAssetSayValueEntity_Resolved/attributeContext/RAssetSayValueEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RAssetSayValueEntity/hasAttributes/BackingTable_RAssetSayvalueRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "RAssetSayvalue",
+                "parent": "RAssetSayValueEntity_Resolved/attributeContext/RAssetSayValueEntity_Resolved/BackingTable_RAssetSayvalueRelationship",
+                "definition": "resolvedFrom/RAssetSayvalue",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "RAssetSayValueEntity_Resolved/attributeContext/RAssetSayValueEntity_Resolved/BackingTable_RAssetSayvalueRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "RAssetSayValueEntity_Resolved/attributeContext/RAssetSayValueEntity_Resolved/BackingTable_RAssetSayvalueRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "RAssetSayValueEntity_Resolved/attributeContext/RAssetSayValueEntity_Resolved/BackingTable_RAssetSayvalueRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "RAssetSayValueEntity_Resolved/hasAttributes/BackingTable_RAssetSayvalueRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "RAssetSayValueEntity_Resolved/attributeContext/RAssetSayValueEntity_Resolved",
+            "definition": "resolvedFrom/RAssetSayValueEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "RAssetSayValueEntity_Resolved/attributeContext/RAssetSayValueEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "RAssetSayValueEntity_Resolved/attributeContext/RAssetSayValueEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "RAssetSayValueEntity_Resolved/attributeContext/RAssetSayValueEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "RAssetSayValueEntity_Resolved/attributeContext/RAssetSayValueEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "RAssetSayValueEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "StartDate",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RAssetSayValueEntity_Resolved/attributeContext/RAssetSayValueEntity_Resolved/StartDate",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "DepreciationRate",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RAssetSayValueEntity_Resolved/attributeContext/RAssetSayValueEntity_Resolved/DepreciationRate",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Factor",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RAssetSayValueEntity_Resolved/attributeContext/RAssetSayValueEntity_Resolved/Factor",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "AnalysisCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RAssetSayValueEntity_Resolved/attributeContext/RAssetSayValueEntity_Resolved/AnalysisCode",
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_RAssetSayvalueRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/RAsset/WorksheetLine/RAssetSayvalue.cdm.json/RAssetSayvalue",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "RAssetSayValueEntity_Resolved/attributeContext/RAssetSayValueEntity_Resolved/BackingTable_RAssetSayvalueRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "RAssetSayValueEntity_Resolved/attributeContext/RAssetSayValueEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Analysis code lines",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

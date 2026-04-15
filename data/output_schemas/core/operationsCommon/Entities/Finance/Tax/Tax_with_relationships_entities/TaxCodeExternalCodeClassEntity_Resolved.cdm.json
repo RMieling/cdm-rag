@@ -1,0 +1,248 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "TaxCodeExternalCodeClassEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TaxCodeExternalCodeClassEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "TaxCodeExternalCodeClassEntity_Resolved",
+        "definition": "resolvedFrom/TaxCodeExternalCodeClassEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "TaxCodeExternalCodeClassEntity_Resolved/attributeContext/TaxCodeExternalCodeClassEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "TaxCodeExternalCodeClassEntity_Resolved/attributeContext/TaxCodeExternalCodeClassEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CodeClassDefinition",
+            "parent": "TaxCodeExternalCodeClassEntity_Resolved/attributeContext/TaxCodeExternalCodeClassEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxCodeExternalCodeClassEntity/hasAttributes/CodeClassDefinition",
+            "contents": [
+              "TaxCodeExternalCodeClassEntity_Resolved/hasAttributes/CodeClassDefinition"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CodeClassDescription",
+            "parent": "TaxCodeExternalCodeClassEntity_Resolved/attributeContext/TaxCodeExternalCodeClassEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxCodeExternalCodeClassEntity/hasAttributes/CodeClassDescription",
+            "contents": [
+              "TaxCodeExternalCodeClassEntity_Resolved/hasAttributes/CodeClassDescription"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CodeClassId",
+            "parent": "TaxCodeExternalCodeClassEntity_Resolved/attributeContext/TaxCodeExternalCodeClassEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxCodeExternalCodeClassEntity/hasAttributes/CodeClassId",
+            "contents": [
+              "TaxCodeExternalCodeClassEntity_Resolved/hasAttributes/CodeClassId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CodeClassTableId",
+            "parent": "TaxCodeExternalCodeClassEntity_Resolved/attributeContext/TaxCodeExternalCodeClassEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxCodeExternalCodeClassEntity/hasAttributes/CodeClassTableId",
+            "contents": [
+              "TaxCodeExternalCodeClassEntity_Resolved/hasAttributes/CodeClassTableId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "IsStandardizedCode",
+            "parent": "TaxCodeExternalCodeClassEntity_Resolved/attributeContext/TaxCodeExternalCodeClassEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxCodeExternalCodeClassEntity/hasAttributes/IsStandardizedCode",
+            "contents": [
+              "TaxCodeExternalCodeClassEntity_Resolved/hasAttributes/IsStandardizedCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_ExtCodeTableRelationship",
+            "parent": "TaxCodeExternalCodeClassEntity_Resolved/attributeContext/TaxCodeExternalCodeClassEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxCodeExternalCodeClassEntity/hasAttributes/BackingTable_ExtCodeTableRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "ExtCodeTable",
+                "parent": "TaxCodeExternalCodeClassEntity_Resolved/attributeContext/TaxCodeExternalCodeClassEntity_Resolved/BackingTable_ExtCodeTableRelationship",
+                "definition": "resolvedFrom/ExtCodeTable",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxCodeExternalCodeClassEntity_Resolved/attributeContext/TaxCodeExternalCodeClassEntity_Resolved/BackingTable_ExtCodeTableRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxCodeExternalCodeClassEntity_Resolved/attributeContext/TaxCodeExternalCodeClassEntity_Resolved/BackingTable_ExtCodeTableRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxCodeExternalCodeClassEntity_Resolved/attributeContext/TaxCodeExternalCodeClassEntity_Resolved/BackingTable_ExtCodeTableRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxCodeExternalCodeClassEntity_Resolved/hasAttributes/BackingTable_ExtCodeTableRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "CodeClassDefinition",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxCodeExternalCodeClassEntity_Resolved/attributeContext/TaxCodeExternalCodeClassEntity_Resolved/CodeClassDefinition",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "CodeClassDescription",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxCodeExternalCodeClassEntity_Resolved/attributeContext/TaxCodeExternalCodeClassEntity_Resolved/CodeClassDescription",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "CodeClassId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxCodeExternalCodeClassEntity_Resolved/attributeContext/TaxCodeExternalCodeClassEntity_Resolved/CodeClassId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "CodeClassTableId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxCodeExternalCodeClassEntity_Resolved/attributeContext/TaxCodeExternalCodeClassEntity_Resolved/CodeClassTableId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "IsStandardizedCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxCodeExternalCodeClassEntity_Resolved/attributeContext/TaxCodeExternalCodeClassEntity_Resolved/IsStandardizedCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_ExtCodeTableRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/SupplyChain/ProcurementAndSourcing/Group/ExtCodeTable.cdm.json/ExtCodeTable",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxCodeExternalCodeClassEntity_Resolved/attributeContext/TaxCodeExternalCodeClassEntity_Resolved/BackingTable_ExtCodeTableRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "External code classes for tax code",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

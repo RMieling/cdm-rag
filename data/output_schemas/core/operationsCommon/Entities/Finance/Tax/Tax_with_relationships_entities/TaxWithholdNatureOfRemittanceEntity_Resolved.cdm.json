@@ -1,0 +1,261 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "TaxWithholdNatureOfRemittanceEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TaxWithholdNatureOfRemittanceEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "TaxWithholdNatureOfRemittanceEntity_Resolved",
+        "definition": "resolvedFrom/TaxWithholdNatureOfRemittanceEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "TaxWithholdNatureOfRemittanceEntity_Resolved/attributeContext/TaxWithholdNatureOfRemittanceEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "TaxWithholdNatureOfRemittanceEntity_Resolved/attributeContext/TaxWithholdNatureOfRemittanceEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "RemittanceCategoryCode",
+            "parent": "TaxWithholdNatureOfRemittanceEntity_Resolved/attributeContext/TaxWithholdNatureOfRemittanceEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxWithholdNatureOfRemittanceEntity/hasAttributes/RemittanceCategoryCode",
+            "contents": [
+              "TaxWithholdNatureOfRemittanceEntity_Resolved/hasAttributes/RemittanceCategoryCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "RemittanceDetails",
+            "parent": "TaxWithholdNatureOfRemittanceEntity_Resolved/attributeContext/TaxWithholdNatureOfRemittanceEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxWithholdNatureOfRemittanceEntity/hasAttributes/RemittanceDetails",
+            "contents": [
+              "TaxWithholdNatureOfRemittanceEntity_Resolved/hasAttributes/RemittanceDetails"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_TaxWithholdNatureOfRemittance_INRelationship",
+            "parent": "TaxWithholdNatureOfRemittanceEntity_Resolved/attributeContext/TaxWithholdNatureOfRemittanceEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxWithholdNatureOfRemittanceEntity/hasAttributes/BackingTable_TaxWithholdNatureOfRemittance_INRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "TaxWithholdNatureOfRemittance_IN",
+                "parent": "TaxWithholdNatureOfRemittanceEntity_Resolved/attributeContext/TaxWithholdNatureOfRemittanceEntity_Resolved/BackingTable_TaxWithholdNatureOfRemittance_INRelationship",
+                "definition": "resolvedFrom/TaxWithholdNatureOfRemittance_IN",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxWithholdNatureOfRemittanceEntity_Resolved/attributeContext/TaxWithholdNatureOfRemittanceEntity_Resolved/BackingTable_TaxWithholdNatureOfRemittance_INRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxWithholdNatureOfRemittanceEntity_Resolved/attributeContext/TaxWithholdNatureOfRemittanceEntity_Resolved/BackingTable_TaxWithholdNatureOfRemittance_INRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxWithholdNatureOfRemittanceEntity_Resolved/attributeContext/TaxWithholdNatureOfRemittanceEntity_Resolved/BackingTable_TaxWithholdNatureOfRemittance_INRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxWithholdNatureOfRemittanceEntity_Resolved/hasAttributes/BackingTable_TaxWithholdNatureOfRemittance_INRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "TaxWithholdNatureOfRemittanceEntity_Resolved/attributeContext/TaxWithholdNatureOfRemittanceEntity_Resolved",
+            "definition": "resolvedFrom/TaxWithholdNatureOfRemittanceEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "TaxWithholdNatureOfRemittanceEntity_Resolved/attributeContext/TaxWithholdNatureOfRemittanceEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxWithholdNatureOfRemittanceEntity_Resolved/attributeContext/TaxWithholdNatureOfRemittanceEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxWithholdNatureOfRemittanceEntity_Resolved/attributeContext/TaxWithholdNatureOfRemittanceEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxWithholdNatureOfRemittanceEntity_Resolved/attributeContext/TaxWithholdNatureOfRemittanceEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxWithholdNatureOfRemittanceEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "RemittanceCategoryCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxWithholdNatureOfRemittanceEntity_Resolved/attributeContext/TaxWithholdNatureOfRemittanceEntity_Resolved/RemittanceCategoryCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "RemittanceDetails",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxWithholdNatureOfRemittanceEntity_Resolved/attributeContext/TaxWithholdNatureOfRemittanceEntity_Resolved/RemittanceDetails",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_TaxWithholdNatureOfRemittance_INRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Tax/Main/TaxWithholdNatureOfRemittance_IN.cdm.json/TaxWithholdNatureOfRemittance_IN",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxWithholdNatureOfRemittanceEntity_Resolved/attributeContext/TaxWithholdNatureOfRemittanceEntity_Resolved/BackingTable_TaxWithholdNatureOfRemittance_INRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxWithholdNatureOfRemittanceEntity_Resolved/attributeContext/TaxWithholdNatureOfRemittanceEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Nature of remittance categories for direct taxes",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

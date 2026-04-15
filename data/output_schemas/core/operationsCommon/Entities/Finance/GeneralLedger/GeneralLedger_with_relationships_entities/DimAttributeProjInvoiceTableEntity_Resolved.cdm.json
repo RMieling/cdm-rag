@@ -1,0 +1,261 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "DimAttributeProjInvoiceTableEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "DimAttributeProjInvoiceTableEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "DimAttributeProjInvoiceTableEntity_Resolved",
+        "definition": "resolvedFrom/DimAttributeProjInvoiceTableEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "DimAttributeProjInvoiceTableEntity_Resolved/attributeContext/DimAttributeProjInvoiceTableEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "DimAttributeProjInvoiceTableEntity_Resolved/attributeContext/DimAttributeProjInvoiceTableEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Value",
+            "parent": "DimAttributeProjInvoiceTableEntity_Resolved/attributeContext/DimAttributeProjInvoiceTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimAttributeProjInvoiceTableEntity/hasAttributes/Value",
+            "contents": [
+              "DimAttributeProjInvoiceTableEntity_Resolved/hasAttributes/Value"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "DimAttributeProjInvoiceTableEntity_Resolved/attributeContext/DimAttributeProjInvoiceTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimAttributeProjInvoiceTableEntity/hasAttributes/Name",
+            "contents": [
+              "DimAttributeProjInvoiceTableEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_ProjInvoiceTableRelationship",
+            "parent": "DimAttributeProjInvoiceTableEntity_Resolved/attributeContext/DimAttributeProjInvoiceTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimAttributeProjInvoiceTableEntity/hasAttributes/BackingTable_ProjInvoiceTableRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "ProjInvoiceTable",
+                "parent": "DimAttributeProjInvoiceTableEntity_Resolved/attributeContext/DimAttributeProjInvoiceTableEntity_Resolved/BackingTable_ProjInvoiceTableRelationship",
+                "definition": "resolvedFrom/ProjInvoiceTable",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "DimAttributeProjInvoiceTableEntity_Resolved/attributeContext/DimAttributeProjInvoiceTableEntity_Resolved/BackingTable_ProjInvoiceTableRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "DimAttributeProjInvoiceTableEntity_Resolved/attributeContext/DimAttributeProjInvoiceTableEntity_Resolved/BackingTable_ProjInvoiceTableRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "DimAttributeProjInvoiceTableEntity_Resolved/attributeContext/DimAttributeProjInvoiceTableEntity_Resolved/BackingTable_ProjInvoiceTableRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "DimAttributeProjInvoiceTableEntity_Resolved/hasAttributes/BackingTable_ProjInvoiceTableRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "DimAttributeProjInvoiceTableEntity_Resolved/attributeContext/DimAttributeProjInvoiceTableEntity_Resolved",
+            "definition": "resolvedFrom/DimAttributeProjInvoiceTableEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "DimAttributeProjInvoiceTableEntity_Resolved/attributeContext/DimAttributeProjInvoiceTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "DimAttributeProjInvoiceTableEntity_Resolved/attributeContext/DimAttributeProjInvoiceTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "DimAttributeProjInvoiceTableEntity_Resolved/attributeContext/DimAttributeProjInvoiceTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "DimAttributeProjInvoiceTableEntity_Resolved/attributeContext/DimAttributeProjInvoiceTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "DimAttributeProjInvoiceTableEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Value",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DimAttributeProjInvoiceTableEntity_Resolved/attributeContext/DimAttributeProjInvoiceTableEntity_Resolved/Value",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DimAttributeProjInvoiceTableEntity_Resolved/attributeContext/DimAttributeProjInvoiceTableEntity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_ProjInvoiceTableRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/ProfessionalServices/ProjectManagementAndAccounting/Main/ProjInvoiceTable.cdm.json/ProjInvoiceTable",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "DimAttributeProjInvoiceTableEntity_Resolved/attributeContext/DimAttributeProjInvoiceTableEntity_Resolved/BackingTable_ProjInvoiceTableRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "DimAttributeProjInvoiceTableEntity_Resolved/attributeContext/DimAttributeProjInvoiceTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Project contracts",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

@@ -1,0 +1,321 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "PaymentDayEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "PaymentDayEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "PaymentDayEntity_Resolved",
+        "definition": "resolvedFrom/PaymentDayEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "PaymentDayEntity_Resolved/attributeContext/PaymentDayEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "PaymentDayEntity_Resolved/attributeContext/PaymentDayEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DayOfMonth",
+            "parent": "PaymentDayEntity_Resolved/attributeContext/PaymentDayEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/PaymentDayEntity/hasAttributes/DayOfMonth",
+            "contents": [
+              "PaymentDayEntity_Resolved/hasAttributes/DayOfMonth"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DayOfWeek",
+            "parent": "PaymentDayEntity_Resolved/attributeContext/PaymentDayEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/PaymentDayEntity/hasAttributes/DayOfWeek",
+            "contents": [
+              "PaymentDayEntity_Resolved/hasAttributes/DayOfWeek"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Frequency",
+            "parent": "PaymentDayEntity_Resolved/attributeContext/PaymentDayEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/PaymentDayEntity/hasAttributes/Frequency",
+            "contents": [
+              "PaymentDayEntity_Resolved/hasAttributes/Frequency"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "PaymentDayEntity_Resolved/attributeContext/PaymentDayEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/PaymentDayEntity/hasAttributes/Name",
+            "contents": [
+              "PaymentDayEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "PaymentDayEntity_Resolved/attributeContext/PaymentDayEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/PaymentDayEntity/hasAttributes/Description",
+            "contents": [
+              "PaymentDayEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_PaymDayLineRelationship",
+            "parent": "PaymentDayEntity_Resolved/attributeContext/PaymentDayEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/PaymentDayEntity/hasAttributes/BackingTable_PaymDayLineRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "PaymDayLine",
+                "parent": "PaymentDayEntity_Resolved/attributeContext/PaymentDayEntity_Resolved/BackingTable_PaymDayLineRelationship",
+                "definition": "resolvedFrom/PaymDayLine",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "PaymentDayEntity_Resolved/attributeContext/PaymentDayEntity_Resolved/BackingTable_PaymDayLineRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "PaymentDayEntity_Resolved/attributeContext/PaymentDayEntity_Resolved/BackingTable_PaymDayLineRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "PaymentDayEntity_Resolved/attributeContext/PaymentDayEntity_Resolved/BackingTable_PaymDayLineRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "PaymentDayEntity_Resolved/hasAttributes/BackingTable_PaymDayLineRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "PaymentDayEntity_Resolved/attributeContext/PaymentDayEntity_Resolved",
+            "definition": "resolvedFrom/PaymentDayEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "PaymentDayEntity_Resolved/attributeContext/PaymentDayEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "PaymentDayEntity_Resolved/attributeContext/PaymentDayEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "PaymentDayEntity_Resolved/attributeContext/PaymentDayEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "PaymentDayEntity_Resolved/attributeContext/PaymentDayEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "PaymentDayEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "DayOfMonth",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "PaymentDayEntity_Resolved/attributeContext/PaymentDayEntity_Resolved/DayOfMonth",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "DayOfWeek",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "PaymentDayEntity_Resolved/attributeContext/PaymentDayEntity_Resolved/DayOfWeek",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Frequency",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "PaymentDayEntity_Resolved/attributeContext/PaymentDayEntity_Resolved/Frequency",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "PaymentDayEntity_Resolved/attributeContext/PaymentDayEntity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "PaymentDayEntity_Resolved/attributeContext/PaymentDayEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_PaymDayLineRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Bank/Group/PaymDayLine.cdm.json/PaymDayLine",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "PaymentDayEntity_Resolved/attributeContext/PaymentDayEntity_Resolved/BackingTable_PaymDayLineRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "PaymentDayEntity_Resolved/attributeContext/PaymentDayEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Payment day lines",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

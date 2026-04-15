@@ -1,0 +1,361 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "AssetDepreciationGroupEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "AssetDepreciationGroupEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "AssetDepreciationGroupEntity_Resolved",
+        "definition": "resolvedFrom/AssetDepreciationGroupEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "AssetDepreciationGroupEntity_Resolved/attributeContext/AssetDepreciationGroupEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "AssetDepreciationGroupEntity_Resolved/attributeContext/AssetDepreciationGroupEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DepreciationGroup",
+            "parent": "AssetDepreciationGroupEntity_Resolved/attributeContext/AssetDepreciationGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetDepreciationGroupEntity/hasAttributes/DepreciationGroup",
+            "contents": [
+              "AssetDepreciationGroupEntity_Resolved/hasAttributes/DepreciationGroup"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "StartDate",
+            "parent": "AssetDepreciationGroupEntity_Resolved/attributeContext/AssetDepreciationGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetDepreciationGroupEntity/hasAttributes/StartDate",
+            "contents": [
+              "AssetDepreciationGroupEntity_Resolved/hasAttributes/StartDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "AssetDepreciationGroupEntity_Resolved/attributeContext/AssetDepreciationGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetDepreciationGroupEntity/hasAttributes/Description",
+            "contents": [
+              "AssetDepreciationGroupEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Factor",
+            "parent": "AssetDepreciationGroupEntity_Resolved/attributeContext/AssetDepreciationGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetDepreciationGroupEntity/hasAttributes/Factor",
+            "contents": [
+              "AssetDepreciationGroupEntity_Resolved/hasAttributes/Factor"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "FactorAlt",
+            "parent": "AssetDepreciationGroupEntity_Resolved/attributeContext/AssetDepreciationGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetDepreciationGroupEntity/hasAttributes/FactorAlt",
+            "contents": [
+              "AssetDepreciationGroupEntity_Resolved/hasAttributes/FactorAlt"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "FactorExt",
+            "parent": "AssetDepreciationGroupEntity_Resolved/attributeContext/AssetDepreciationGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetDepreciationGroupEntity/hasAttributes/FactorExt",
+            "contents": [
+              "AssetDepreciationGroupEntity_Resolved/hasAttributes/FactorExt"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CostLimit_PL",
+            "parent": "AssetDepreciationGroupEntity_Resolved/attributeContext/AssetDepreciationGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetDepreciationGroupEntity/hasAttributes/CostLimit_PL",
+            "contents": [
+              "AssetDepreciationGroupEntity_Resolved/hasAttributes/CostLimit_PL"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_AssetDepreciationGroup_WRelationship",
+            "parent": "AssetDepreciationGroupEntity_Resolved/attributeContext/AssetDepreciationGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetDepreciationGroupEntity/hasAttributes/BackingTable_AssetDepreciationGroup_WRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "AssetDepreciationGroup_W",
+                "parent": "AssetDepreciationGroupEntity_Resolved/attributeContext/AssetDepreciationGroupEntity_Resolved/BackingTable_AssetDepreciationGroup_WRelationship",
+                "definition": "resolvedFrom/AssetDepreciationGroup_W",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "AssetDepreciationGroupEntity_Resolved/attributeContext/AssetDepreciationGroupEntity_Resolved/BackingTable_AssetDepreciationGroup_WRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "AssetDepreciationGroupEntity_Resolved/attributeContext/AssetDepreciationGroupEntity_Resolved/BackingTable_AssetDepreciationGroup_WRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "AssetDepreciationGroupEntity_Resolved/attributeContext/AssetDepreciationGroupEntity_Resolved/BackingTable_AssetDepreciationGroup_WRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "AssetDepreciationGroupEntity_Resolved/hasAttributes/BackingTable_AssetDepreciationGroup_WRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "AssetDepreciationGroupEntity_Resolved/attributeContext/AssetDepreciationGroupEntity_Resolved",
+            "definition": "resolvedFrom/AssetDepreciationGroupEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "AssetDepreciationGroupEntity_Resolved/attributeContext/AssetDepreciationGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "AssetDepreciationGroupEntity_Resolved/attributeContext/AssetDepreciationGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "AssetDepreciationGroupEntity_Resolved/attributeContext/AssetDepreciationGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "AssetDepreciationGroupEntity_Resolved/attributeContext/AssetDepreciationGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "AssetDepreciationGroupEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "DepreciationGroup",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AssetDepreciationGroupEntity_Resolved/attributeContext/AssetDepreciationGroupEntity_Resolved/DepreciationGroup",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "StartDate",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AssetDepreciationGroupEntity_Resolved/attributeContext/AssetDepreciationGroupEntity_Resolved/StartDate",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AssetDepreciationGroupEntity_Resolved/attributeContext/AssetDepreciationGroupEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Factor",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AssetDepreciationGroupEntity_Resolved/attributeContext/AssetDepreciationGroupEntity_Resolved/Factor",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "FactorAlt",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AssetDepreciationGroupEntity_Resolved/attributeContext/AssetDepreciationGroupEntity_Resolved/FactorAlt",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "FactorExt",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AssetDepreciationGroupEntity_Resolved/attributeContext/AssetDepreciationGroupEntity_Resolved/FactorExt",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "CostLimit_PL",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AssetDepreciationGroupEntity_Resolved/attributeContext/AssetDepreciationGroupEntity_Resolved/CostLimit_PL",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_AssetDepreciationGroup_WRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/FixedAssets/Group/AssetDepreciationGroup_W.cdm.json/AssetDepreciationGroup_W",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "AssetDepreciationGroupEntity_Resolved/attributeContext/AssetDepreciationGroupEntity_Resolved/BackingTable_AssetDepreciationGroup_WRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "AssetDepreciationGroupEntity_Resolved/attributeContext/AssetDepreciationGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Depreciation rates",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

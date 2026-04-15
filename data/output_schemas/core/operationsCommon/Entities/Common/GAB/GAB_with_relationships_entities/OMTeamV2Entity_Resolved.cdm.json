@@ -1,0 +1,355 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "OMTeamV2Entity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "OMTeamV2Entity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "OMTeamV2Entity_Resolved",
+        "definition": "resolvedFrom/OMTeamV2Entity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "OMTeamV2Entity_Resolved/attributeContext/OMTeamV2Entity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "OMTeamV2Entity_Resolved/attributeContext/OMTeamV2Entity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "OMTeamV2Entity_Resolved/attributeContext/OMTeamV2Entity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/OMTeamV2Entity/hasAttributes/Name",
+            "contents": [
+              "OMTeamV2Entity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "PartyNumber",
+            "parent": "OMTeamV2Entity_Resolved/attributeContext/OMTeamV2Entity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/OMTeamV2Entity/hasAttributes/PartyNumber",
+            "contents": [
+              "OMTeamV2Entity_Resolved/hasAttributes/PartyNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "TeamType",
+            "parent": "OMTeamV2Entity_Resolved/attributeContext/OMTeamV2Entity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/OMTeamV2Entity/hasAttributes/TeamType",
+            "contents": [
+              "OMTeamV2Entity_Resolved/hasAttributes/TeamType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Administrator",
+            "parent": "OMTeamV2Entity_Resolved/attributeContext/OMTeamV2Entity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/OMTeamV2Entity/hasAttributes/Administrator",
+            "contents": [
+              "OMTeamV2Entity_Resolved/hasAttributes/Administrator"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "IsActive",
+            "parent": "OMTeamV2Entity_Resolved/attributeContext/OMTeamV2Entity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/OMTeamV2Entity/hasAttributes/IsActive",
+            "contents": [
+              "OMTeamV2Entity_Resolved/hasAttributes/IsActive"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "OMTeamV2Entity_Resolved/attributeContext/OMTeamV2Entity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/OMTeamV2Entity/hasAttributes/Description",
+            "contents": [
+              "OMTeamV2Entity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "TeamTypeName",
+            "parent": "OMTeamV2Entity_Resolved/attributeContext/OMTeamV2Entity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/OMTeamV2Entity/hasAttributes/TeamTypeName",
+            "contents": [
+              "OMTeamV2Entity_Resolved/hasAttributes/TeamTypeName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_OMTeamTypeEntityRelationship",
+            "parent": "OMTeamV2Entity_Resolved/attributeContext/OMTeamV2Entity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/OMTeamV2Entity/hasAttributes/Relationship_OMTeamTypeEntityRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "OMTeamTypeEntity",
+                "parent": "OMTeamV2Entity_Resolved/attributeContext/OMTeamV2Entity_Resolved/Relationship_OMTeamTypeEntityRelationship",
+                "definition": "resolvedFrom/OMTeamTypeEntity",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "OMTeamV2Entity_Resolved/attributeContext/OMTeamV2Entity_Resolved/Relationship_OMTeamTypeEntityRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "OMTeamV2Entity_Resolved/attributeContext/OMTeamV2Entity_Resolved/Relationship_OMTeamTypeEntityRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "OMTeamV2Entity_Resolved/attributeContext/OMTeamV2Entity_Resolved/Relationship_OMTeamTypeEntityRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "OMTeamV2Entity_Resolved/hasAttributes/Relationship_OMTeamTypeEntityRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_OMTeamRelationship",
+            "parent": "OMTeamV2Entity_Resolved/attributeContext/OMTeamV2Entity_Resolved",
+            "definition": "resolvedFrom/OMTeamV2Entity/hasAttributes/BackingTable_OMTeamRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "OMTeam",
+                "parent": "OMTeamV2Entity_Resolved/attributeContext/OMTeamV2Entity_Resolved/BackingTable_OMTeamRelationship",
+                "definition": "resolvedFrom/OMTeam",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "OMTeamV2Entity_Resolved/attributeContext/OMTeamV2Entity_Resolved/BackingTable_OMTeamRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "OMTeamV2Entity_Resolved/attributeContext/OMTeamV2Entity_Resolved/BackingTable_OMTeamRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "OMTeamV2Entity_Resolved/attributeContext/OMTeamV2Entity_Resolved/BackingTable_OMTeamRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "OMTeamV2Entity_Resolved/hasAttributes/BackingTable_OMTeamRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "OMTeamV2Entity_Resolved/attributeContext/OMTeamV2Entity_Resolved/Name",
+          "dataFormat": "String"
+        },
+        {
+          "name": "PartyNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "OMTeamV2Entity_Resolved/attributeContext/OMTeamV2Entity_Resolved/PartyNumber",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "TeamType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "OMTeamV2Entity_Resolved/attributeContext/OMTeamV2Entity_Resolved/TeamType",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Administrator",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "OMTeamV2Entity_Resolved/attributeContext/OMTeamV2Entity_Resolved/Administrator",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "IsActive",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "OMTeamV2Entity_Resolved/attributeContext/OMTeamV2Entity_Resolved/IsActive",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "OMTeamV2Entity_Resolved/attributeContext/OMTeamV2Entity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "TeamTypeName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "OMTeamV2Entity_Resolved/attributeContext/OMTeamV2Entity_Resolved/TeamTypeName",
+          "dataFormat": "String",
+          "displayName": "Team type"
+        },
+        {
+          "name": "Relationship_OMTeamTypeEntityRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": []
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "OMTeamV2Entity_Resolved/attributeContext/OMTeamV2Entity_Resolved/Relationship_OMTeamTypeEntityRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "BackingTable_OMTeamRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Common/GAB/Main/OMTeam.cdm.json/OMTeam",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "OMTeamV2Entity_Resolved/attributeContext/OMTeamV2Entity_Resolved/BackingTable_OMTeamRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Teams V2",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

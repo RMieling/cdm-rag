@@ -1,0 +1,301 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "RDeferralsFactorCalculationEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "RDeferralsFactorCalculationEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "RDeferralsFactorCalculationEntity_Resolved",
+        "definition": "resolvedFrom/RDeferralsFactorCalculationEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "RDeferralsFactorCalculationEntity_Resolved/attributeContext/RDeferralsFactorCalculationEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "RDeferralsFactorCalculationEntity_Resolved/attributeContext/RDeferralsFactorCalculationEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Calculated",
+            "parent": "RDeferralsFactorCalculationEntity_Resolved/attributeContext/RDeferralsFactorCalculationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RDeferralsFactorCalculationEntity/hasAttributes/Calculated",
+            "contents": [
+              "RDeferralsFactorCalculationEntity_Resolved/hasAttributes/Calculated"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "EndDate",
+            "parent": "RDeferralsFactorCalculationEntity_Resolved/attributeContext/RDeferralsFactorCalculationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RDeferralsFactorCalculationEntity/hasAttributes/EndDate",
+            "contents": [
+              "RDeferralsFactorCalculationEntity_Resolved/hasAttributes/EndDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "PeriodType",
+            "parent": "RDeferralsFactorCalculationEntity_Resolved/attributeContext/RDeferralsFactorCalculationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RDeferralsFactorCalculationEntity/hasAttributes/PeriodType",
+            "contents": [
+              "RDeferralsFactorCalculationEntity_Resolved/hasAttributes/PeriodType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "StartDate",
+            "parent": "RDeferralsFactorCalculationEntity_Resolved/attributeContext/RDeferralsFactorCalculationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RDeferralsFactorCalculationEntity/hasAttributes/StartDate",
+            "contents": [
+              "RDeferralsFactorCalculationEntity_Resolved/hasAttributes/StartDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_RDeferralsFactorCalculationRelationship",
+            "parent": "RDeferralsFactorCalculationEntity_Resolved/attributeContext/RDeferralsFactorCalculationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RDeferralsFactorCalculationEntity/hasAttributes/BackingTable_RDeferralsFactorCalculationRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "RDeferralsFactorCalculation",
+                "parent": "RDeferralsFactorCalculationEntity_Resolved/attributeContext/RDeferralsFactorCalculationEntity_Resolved/BackingTable_RDeferralsFactorCalculationRelationship",
+                "definition": "resolvedFrom/RDeferralsFactorCalculation",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "RDeferralsFactorCalculationEntity_Resolved/attributeContext/RDeferralsFactorCalculationEntity_Resolved/BackingTable_RDeferralsFactorCalculationRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "RDeferralsFactorCalculationEntity_Resolved/attributeContext/RDeferralsFactorCalculationEntity_Resolved/BackingTable_RDeferralsFactorCalculationRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "RDeferralsFactorCalculationEntity_Resolved/attributeContext/RDeferralsFactorCalculationEntity_Resolved/BackingTable_RDeferralsFactorCalculationRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "RDeferralsFactorCalculationEntity_Resolved/hasAttributes/BackingTable_RDeferralsFactorCalculationRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "RDeferralsFactorCalculationEntity_Resolved/attributeContext/RDeferralsFactorCalculationEntity_Resolved",
+            "definition": "resolvedFrom/RDeferralsFactorCalculationEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "RDeferralsFactorCalculationEntity_Resolved/attributeContext/RDeferralsFactorCalculationEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "RDeferralsFactorCalculationEntity_Resolved/attributeContext/RDeferralsFactorCalculationEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "RDeferralsFactorCalculationEntity_Resolved/attributeContext/RDeferralsFactorCalculationEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "RDeferralsFactorCalculationEntity_Resolved/attributeContext/RDeferralsFactorCalculationEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "RDeferralsFactorCalculationEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Calculated",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RDeferralsFactorCalculationEntity_Resolved/attributeContext/RDeferralsFactorCalculationEntity_Resolved/Calculated",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "EndDate",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RDeferralsFactorCalculationEntity_Resolved/attributeContext/RDeferralsFactorCalculationEntity_Resolved/EndDate",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "PeriodType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RDeferralsFactorCalculationEntity_Resolved/attributeContext/RDeferralsFactorCalculationEntity_Resolved/PeriodType",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "StartDate",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RDeferralsFactorCalculationEntity_Resolved/attributeContext/RDeferralsFactorCalculationEntity_Resolved/StartDate",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_RDeferralsFactorCalculationRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/RDeferrals/WorksheetHeader/RDeferralsFactorCalculation.cdm.json/RDeferralsFactorCalculation",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "RDeferralsFactorCalculationEntity_Resolved/attributeContext/RDeferralsFactorCalculationEntity_Resolved/BackingTable_RDeferralsFactorCalculationRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "RDeferralsFactorCalculationEntity_Resolved/attributeContext/RDeferralsFactorCalculationEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Deferrals writing off factor calculation",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

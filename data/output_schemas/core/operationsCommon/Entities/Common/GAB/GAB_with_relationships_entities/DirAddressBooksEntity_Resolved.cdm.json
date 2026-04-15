@@ -1,0 +1,208 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "DirAddressBooksEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "DirAddressBooksEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "DirAddressBooksEntity_Resolved",
+        "definition": "resolvedFrom/DirAddressBooksEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "DirAddressBooksEntity_Resolved/attributeContext/DirAddressBooksEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "DirAddressBooksEntity_Resolved/attributeContext/DirAddressBooksEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "DirAddressBooksEntity_Resolved/attributeContext/DirAddressBooksEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DirAddressBooksEntity/hasAttributes/Description",
+            "contents": [
+              "DirAddressBooksEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "System",
+            "parent": "DirAddressBooksEntity_Resolved/attributeContext/DirAddressBooksEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DirAddressBooksEntity/hasAttributes/System",
+            "contents": [
+              "DirAddressBooksEntity_Resolved/hasAttributes/System"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "DirAddressBooksEntity_Resolved/attributeContext/DirAddressBooksEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DirAddressBooksEntity/hasAttributes/Name",
+            "contents": [
+              "DirAddressBooksEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_DirAddressBookRelationship",
+            "parent": "DirAddressBooksEntity_Resolved/attributeContext/DirAddressBooksEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DirAddressBooksEntity/hasAttributes/BackingTable_DirAddressBookRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "DirAddressBook",
+                "parent": "DirAddressBooksEntity_Resolved/attributeContext/DirAddressBooksEntity_Resolved/BackingTable_DirAddressBookRelationship",
+                "definition": "resolvedFrom/DirAddressBook",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "DirAddressBooksEntity_Resolved/attributeContext/DirAddressBooksEntity_Resolved/BackingTable_DirAddressBookRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "DirAddressBooksEntity_Resolved/attributeContext/DirAddressBooksEntity_Resolved/BackingTable_DirAddressBookRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "DirAddressBooksEntity_Resolved/attributeContext/DirAddressBooksEntity_Resolved/BackingTable_DirAddressBookRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "DirAddressBooksEntity_Resolved/hasAttributes/BackingTable_DirAddressBookRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DirAddressBooksEntity_Resolved/attributeContext/DirAddressBooksEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "System",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DirAddressBooksEntity_Resolved/attributeContext/DirAddressBooksEntity_Resolved/System",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DirAddressBooksEntity_Resolved/attributeContext/DirAddressBooksEntity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_DirAddressBookRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Common/GAB/Group/DirAddressBook.cdm.json/DirAddressBook",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "DirAddressBooksEntity_Resolved/attributeContext/DirAddressBooksEntity_Resolved/BackingTable_DirAddressBookRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Address books",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

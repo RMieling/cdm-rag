@@ -1,0 +1,429 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "AssetJournalHeaderEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "AssetJournalHeaderEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "AssetJournalHeaderEntity_Resolved",
+        "definition": "resolvedFrom/AssetJournalHeaderEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "AssetJournalHeaderEntity_Resolved/attributeContext/AssetJournalHeaderEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "AssetJournalHeaderEntity_Resolved/attributeContext/AssetJournalHeaderEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "PostingLayer",
+            "parent": "AssetJournalHeaderEntity_Resolved/attributeContext/AssetJournalHeaderEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetJournalHeaderEntity/hasAttributes/PostingLayer",
+            "contents": [
+              "AssetJournalHeaderEntity_Resolved/hasAttributes/PostingLayer"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "JournalNameId",
+            "parent": "AssetJournalHeaderEntity_Resolved/attributeContext/AssetJournalHeaderEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetJournalHeaderEntity/hasAttributes/JournalNameId",
+            "contents": [
+              "AssetJournalHeaderEntity_Resolved/hasAttributes/JournalNameId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "JournalBatchNumber",
+            "parent": "AssetJournalHeaderEntity_Resolved/attributeContext/AssetJournalHeaderEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetJournalHeaderEntity/hasAttributes/JournalBatchNumber",
+            "contents": [
+              "AssetJournalHeaderEntity_Resolved/hasAttributes/JournalBatchNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "IsPosted",
+            "parent": "AssetJournalHeaderEntity_Resolved/attributeContext/AssetJournalHeaderEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetJournalHeaderEntity/hasAttributes/IsPosted",
+            "contents": [
+              "AssetJournalHeaderEntity_Resolved/hasAttributes/IsPosted"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "AssetJournalHeaderEntity_Resolved/attributeContext/AssetJournalHeaderEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetJournalHeaderEntity/hasAttributes/Description",
+            "contents": [
+              "AssetJournalHeaderEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "AccountingCurrency",
+            "parent": "AssetJournalHeaderEntity_Resolved/attributeContext/AssetJournalHeaderEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetJournalHeaderEntity/hasAttributes/AccountingCurrency",
+            "contents": [
+              "AssetJournalHeaderEntity_Resolved/hasAttributes/AccountingCurrency"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ReportingCurrency",
+            "parent": "AssetJournalHeaderEntity_Resolved/attributeContext/AssetJournalHeaderEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetJournalHeaderEntity/hasAttributes/ReportingCurrency",
+            "contents": [
+              "AssetJournalHeaderEntity_Resolved/hasAttributes/ReportingCurrency"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_LegalEntityRelationship",
+            "parent": "AssetJournalHeaderEntity_Resolved/attributeContext/AssetJournalHeaderEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetJournalHeaderEntity/hasAttributes/Relationship_LegalEntityRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "OMLegalEntity",
+                "parent": "AssetJournalHeaderEntity_Resolved/attributeContext/AssetJournalHeaderEntity_Resolved/Relationship_LegalEntityRelationship",
+                "definition": "resolvedFrom/OMLegalEntity",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "AssetJournalHeaderEntity_Resolved/attributeContext/AssetJournalHeaderEntity_Resolved/Relationship_LegalEntityRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "AssetJournalHeaderEntity_Resolved/attributeContext/AssetJournalHeaderEntity_Resolved/Relationship_LegalEntityRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "AssetJournalHeaderEntity_Resolved/attributeContext/AssetJournalHeaderEntity_Resolved/Relationship_LegalEntityRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "AssetJournalHeaderEntity_Resolved/hasAttributes/Relationship_LegalEntityRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_LedgerJournalTableRelationship",
+            "parent": "AssetJournalHeaderEntity_Resolved/attributeContext/AssetJournalHeaderEntity_Resolved",
+            "definition": "resolvedFrom/AssetJournalHeaderEntity/hasAttributes/BackingTable_LedgerJournalTableRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "LedgerJournalTable",
+                "parent": "AssetJournalHeaderEntity_Resolved/attributeContext/AssetJournalHeaderEntity_Resolved/BackingTable_LedgerJournalTableRelationship",
+                "definition": "resolvedFrom/LedgerJournalTable",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "AssetJournalHeaderEntity_Resolved/attributeContext/AssetJournalHeaderEntity_Resolved/BackingTable_LedgerJournalTableRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "AssetJournalHeaderEntity_Resolved/attributeContext/AssetJournalHeaderEntity_Resolved/BackingTable_LedgerJournalTableRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "AssetJournalHeaderEntity_Resolved/attributeContext/AssetJournalHeaderEntity_Resolved/BackingTable_LedgerJournalTableRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "AssetJournalHeaderEntity_Resolved/hasAttributes/BackingTable_LedgerJournalTableRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "AssetJournalHeaderEntity_Resolved/attributeContext/AssetJournalHeaderEntity_Resolved",
+            "definition": "resolvedFrom/AssetJournalHeaderEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "AssetJournalHeaderEntity_Resolved/attributeContext/AssetJournalHeaderEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "AssetJournalHeaderEntity_Resolved/attributeContext/AssetJournalHeaderEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "AssetJournalHeaderEntity_Resolved/attributeContext/AssetJournalHeaderEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "AssetJournalHeaderEntity_Resolved/attributeContext/AssetJournalHeaderEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "AssetJournalHeaderEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "PostingLayer",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AssetJournalHeaderEntity_Resolved/attributeContext/AssetJournalHeaderEntity_Resolved/PostingLayer",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "JournalNameId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AssetJournalHeaderEntity_Resolved/attributeContext/AssetJournalHeaderEntity_Resolved/JournalNameId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "JournalBatchNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AssetJournalHeaderEntity_Resolved/attributeContext/AssetJournalHeaderEntity_Resolved/JournalBatchNumber",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "IsPosted",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AssetJournalHeaderEntity_Resolved/attributeContext/AssetJournalHeaderEntity_Resolved/IsPosted",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AssetJournalHeaderEntity_Resolved/attributeContext/AssetJournalHeaderEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "AccountingCurrency",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AssetJournalHeaderEntity_Resolved/attributeContext/AssetJournalHeaderEntity_Resolved/AccountingCurrency",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ReportingCurrency",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AssetJournalHeaderEntity_Resolved/attributeContext/AssetJournalHeaderEntity_Resolved/ReportingCurrency",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Relationship_LegalEntityRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": []
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "AssetJournalHeaderEntity_Resolved/attributeContext/AssetJournalHeaderEntity_Resolved/Relationship_LegalEntityRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "BackingTable_LedgerJournalTableRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/AccountingFoundation/WorksheetHeader/LedgerJournalTable.cdm.json/LedgerJournalTable",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "AssetJournalHeaderEntity_Resolved/attributeContext/AssetJournalHeaderEntity_Resolved/BackingTable_LedgerJournalTableRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "AssetJournalHeaderEntity_Resolved/attributeContext/AssetJournalHeaderEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Fixed asset journal table",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

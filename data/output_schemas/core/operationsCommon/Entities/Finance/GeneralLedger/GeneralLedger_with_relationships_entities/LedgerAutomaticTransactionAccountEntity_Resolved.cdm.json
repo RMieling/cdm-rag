@@ -1,0 +1,282 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "LedgerAutomaticTransactionAccountEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "LedgerAutomaticTransactionAccountEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "LedgerAutomaticTransactionAccountEntity_Resolved",
+        "definition": "resolvedFrom/LedgerAutomaticTransactionAccountEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "LedgerAutomaticTransactionAccountEntity_Resolved/attributeContext/LedgerAutomaticTransactionAccountEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "LedgerAutomaticTransactionAccountEntity_Resolved/attributeContext/LedgerAutomaticTransactionAccountEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "PostingType",
+            "parent": "LedgerAutomaticTransactionAccountEntity_Resolved/attributeContext/LedgerAutomaticTransactionAccountEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerAutomaticTransactionAccountEntity/hasAttributes/PostingType",
+            "contents": [
+              "LedgerAutomaticTransactionAccountEntity_Resolved/hasAttributes/PostingType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "MainAccountId",
+            "parent": "LedgerAutomaticTransactionAccountEntity_Resolved/attributeContext/LedgerAutomaticTransactionAccountEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerAutomaticTransactionAccountEntity/hasAttributes/MainAccountId",
+            "contents": [
+              "LedgerAutomaticTransactionAccountEntity_Resolved/hasAttributes/MainAccountId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "MainAccountIdDisplayValue",
+            "parent": "LedgerAutomaticTransactionAccountEntity_Resolved/attributeContext/LedgerAutomaticTransactionAccountEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerAutomaticTransactionAccountEntity/hasAttributes/MainAccountIdDisplayValue",
+            "contents": [
+              "LedgerAutomaticTransactionAccountEntity_Resolved/hasAttributes/MainAccountIdDisplayValue"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_LedgerSystemAccountsRelationship",
+            "parent": "LedgerAutomaticTransactionAccountEntity_Resolved/attributeContext/LedgerAutomaticTransactionAccountEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerAutomaticTransactionAccountEntity/hasAttributes/BackingTable_LedgerSystemAccountsRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "LedgerSystemAccounts",
+                "parent": "LedgerAutomaticTransactionAccountEntity_Resolved/attributeContext/LedgerAutomaticTransactionAccountEntity_Resolved/BackingTable_LedgerSystemAccountsRelationship",
+                "definition": "resolvedFrom/LedgerSystemAccounts",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "LedgerAutomaticTransactionAccountEntity_Resolved/attributeContext/LedgerAutomaticTransactionAccountEntity_Resolved/BackingTable_LedgerSystemAccountsRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "LedgerAutomaticTransactionAccountEntity_Resolved/attributeContext/LedgerAutomaticTransactionAccountEntity_Resolved/BackingTable_LedgerSystemAccountsRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "LedgerAutomaticTransactionAccountEntity_Resolved/attributeContext/LedgerAutomaticTransactionAccountEntity_Resolved/BackingTable_LedgerSystemAccountsRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "LedgerAutomaticTransactionAccountEntity_Resolved/hasAttributes/BackingTable_LedgerSystemAccountsRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "LedgerAutomaticTransactionAccountEntity_Resolved/attributeContext/LedgerAutomaticTransactionAccountEntity_Resolved",
+            "definition": "resolvedFrom/LedgerAutomaticTransactionAccountEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "LedgerAutomaticTransactionAccountEntity_Resolved/attributeContext/LedgerAutomaticTransactionAccountEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "LedgerAutomaticTransactionAccountEntity_Resolved/attributeContext/LedgerAutomaticTransactionAccountEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "LedgerAutomaticTransactionAccountEntity_Resolved/attributeContext/LedgerAutomaticTransactionAccountEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "LedgerAutomaticTransactionAccountEntity_Resolved/attributeContext/LedgerAutomaticTransactionAccountEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "LedgerAutomaticTransactionAccountEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "PostingType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerAutomaticTransactionAccountEntity_Resolved/attributeContext/LedgerAutomaticTransactionAccountEntity_Resolved/PostingType",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "MainAccountId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerAutomaticTransactionAccountEntity_Resolved/attributeContext/LedgerAutomaticTransactionAccountEntity_Resolved/MainAccountId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "MainAccountIdDisplayValue",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerAutomaticTransactionAccountEntity_Resolved/attributeContext/LedgerAutomaticTransactionAccountEntity_Resolved/MainAccountIdDisplayValue",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Main account"
+        },
+        {
+          "name": "BackingTable_LedgerSystemAccountsRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Group/LedgerSystemAccounts.cdm.json/LedgerSystemAccounts",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "LedgerAutomaticTransactionAccountEntity_Resolved/attributeContext/LedgerAutomaticTransactionAccountEntity_Resolved/BackingTable_LedgerSystemAccountsRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "LedgerAutomaticTransactionAccountEntity_Resolved/attributeContext/LedgerAutomaticTransactionAccountEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Accounts for automatic transactions",
+      "version": "1.1.1"
+    }
+  ],
+  "documentVersion": "1.1.1"
+}

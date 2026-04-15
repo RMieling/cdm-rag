@@ -1,0 +1,449 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "VendorPaymentJournalHeaderEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "VendorPaymentJournalHeaderEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "VendorPaymentJournalHeaderEntity_Resolved",
+        "definition": "resolvedFrom/VendorPaymentJournalHeaderEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "VendorPaymentJournalHeaderEntity_Resolved/attributeContext/VendorPaymentJournalHeaderEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "VendorPaymentJournalHeaderEntity_Resolved/attributeContext/VendorPaymentJournalHeaderEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "JournalName",
+            "parent": "VendorPaymentJournalHeaderEntity_Resolved/attributeContext/VendorPaymentJournalHeaderEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendorPaymentJournalHeaderEntity/hasAttributes/JournalName",
+            "contents": [
+              "VendorPaymentJournalHeaderEntity_Resolved/hasAttributes/JournalName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "JournalBatchNumber",
+            "parent": "VendorPaymentJournalHeaderEntity_Resolved/attributeContext/VendorPaymentJournalHeaderEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendorPaymentJournalHeaderEntity/hasAttributes/JournalBatchNumber",
+            "contents": [
+              "VendorPaymentJournalHeaderEntity_Resolved/hasAttributes/JournalBatchNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "IsPosted",
+            "parent": "VendorPaymentJournalHeaderEntity_Resolved/attributeContext/VendorPaymentJournalHeaderEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendorPaymentJournalHeaderEntity/hasAttributes/IsPosted",
+            "contents": [
+              "VendorPaymentJournalHeaderEntity_Resolved/hasAttributes/IsPosted"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "VendorPaymentJournalHeaderEntity_Resolved/attributeContext/VendorPaymentJournalHeaderEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendorPaymentJournalHeaderEntity/hasAttributes/Description",
+            "contents": [
+              "VendorPaymentJournalHeaderEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "LocalInstrument",
+            "parent": "VendorPaymentJournalHeaderEntity_Resolved/attributeContext/VendorPaymentJournalHeaderEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendorPaymentJournalHeaderEntity/hasAttributes/LocalInstrument",
+            "contents": [
+              "VendorPaymentJournalHeaderEntity_Resolved/hasAttributes/LocalInstrument"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ChargeBearer",
+            "parent": "VendorPaymentJournalHeaderEntity_Resolved/attributeContext/VendorPaymentJournalHeaderEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendorPaymentJournalHeaderEntity/hasAttributes/ChargeBearer",
+            "contents": [
+              "VendorPaymentJournalHeaderEntity_Resolved/hasAttributes/ChargeBearer"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CategoryPurpose",
+            "parent": "VendorPaymentJournalHeaderEntity_Resolved/attributeContext/VendorPaymentJournalHeaderEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendorPaymentJournalHeaderEntity/hasAttributes/CategoryPurpose",
+            "contents": [
+              "VendorPaymentJournalHeaderEntity_Resolved/hasAttributes/CategoryPurpose"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ServiceLevel",
+            "parent": "VendorPaymentJournalHeaderEntity_Resolved/attributeContext/VendorPaymentJournalHeaderEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendorPaymentJournalHeaderEntity/hasAttributes/ServiceLevel",
+            "contents": [
+              "VendorPaymentJournalHeaderEntity_Resolved/hasAttributes/ServiceLevel"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_JournalNameRelationship",
+            "parent": "VendorPaymentJournalHeaderEntity_Resolved/attributeContext/VendorPaymentJournalHeaderEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendorPaymentJournalHeaderEntity/hasAttributes/Relationship_JournalNameRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "LedgerJournalNameEntity",
+                "parent": "VendorPaymentJournalHeaderEntity_Resolved/attributeContext/VendorPaymentJournalHeaderEntity_Resolved/Relationship_JournalNameRelationship",
+                "definition": "resolvedFrom/LedgerJournalNameEntity",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "VendorPaymentJournalHeaderEntity_Resolved/attributeContext/VendorPaymentJournalHeaderEntity_Resolved/Relationship_JournalNameRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "VendorPaymentJournalHeaderEntity_Resolved/attributeContext/VendorPaymentJournalHeaderEntity_Resolved/Relationship_JournalNameRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "VendorPaymentJournalHeaderEntity_Resolved/attributeContext/VendorPaymentJournalHeaderEntity_Resolved/Relationship_JournalNameRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "VendorPaymentJournalHeaderEntity_Resolved/hasAttributes/Relationship_JournalNameRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_LedgerJournalTableRelationship",
+            "parent": "VendorPaymentJournalHeaderEntity_Resolved/attributeContext/VendorPaymentJournalHeaderEntity_Resolved",
+            "definition": "resolvedFrom/VendorPaymentJournalHeaderEntity/hasAttributes/BackingTable_LedgerJournalTableRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "LedgerJournalTable",
+                "parent": "VendorPaymentJournalHeaderEntity_Resolved/attributeContext/VendorPaymentJournalHeaderEntity_Resolved/BackingTable_LedgerJournalTableRelationship",
+                "definition": "resolvedFrom/LedgerJournalTable",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "VendorPaymentJournalHeaderEntity_Resolved/attributeContext/VendorPaymentJournalHeaderEntity_Resolved/BackingTable_LedgerJournalTableRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "VendorPaymentJournalHeaderEntity_Resolved/attributeContext/VendorPaymentJournalHeaderEntity_Resolved/BackingTable_LedgerJournalTableRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "VendorPaymentJournalHeaderEntity_Resolved/attributeContext/VendorPaymentJournalHeaderEntity_Resolved/BackingTable_LedgerJournalTableRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "VendorPaymentJournalHeaderEntity_Resolved/hasAttributes/BackingTable_LedgerJournalTableRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "VendorPaymentJournalHeaderEntity_Resolved/attributeContext/VendorPaymentJournalHeaderEntity_Resolved",
+            "definition": "resolvedFrom/VendorPaymentJournalHeaderEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "VendorPaymentJournalHeaderEntity_Resolved/attributeContext/VendorPaymentJournalHeaderEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "VendorPaymentJournalHeaderEntity_Resolved/attributeContext/VendorPaymentJournalHeaderEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "VendorPaymentJournalHeaderEntity_Resolved/attributeContext/VendorPaymentJournalHeaderEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "VendorPaymentJournalHeaderEntity_Resolved/attributeContext/VendorPaymentJournalHeaderEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "VendorPaymentJournalHeaderEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "JournalName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VendorPaymentJournalHeaderEntity_Resolved/attributeContext/VendorPaymentJournalHeaderEntity_Resolved/JournalName",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "JournalBatchNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VendorPaymentJournalHeaderEntity_Resolved/attributeContext/VendorPaymentJournalHeaderEntity_Resolved/JournalBatchNumber",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "IsPosted",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VendorPaymentJournalHeaderEntity_Resolved/attributeContext/VendorPaymentJournalHeaderEntity_Resolved/IsPosted",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VendorPaymentJournalHeaderEntity_Resolved/attributeContext/VendorPaymentJournalHeaderEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "LocalInstrument",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VendorPaymentJournalHeaderEntity_Resolved/attributeContext/VendorPaymentJournalHeaderEntity_Resolved/LocalInstrument",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ChargeBearer",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VendorPaymentJournalHeaderEntity_Resolved/attributeContext/VendorPaymentJournalHeaderEntity_Resolved/ChargeBearer",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "CategoryPurpose",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VendorPaymentJournalHeaderEntity_Resolved/attributeContext/VendorPaymentJournalHeaderEntity_Resolved/CategoryPurpose",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ServiceLevel",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VendorPaymentJournalHeaderEntity_Resolved/attributeContext/VendorPaymentJournalHeaderEntity_Resolved/ServiceLevel",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Relationship_JournalNameRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": []
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "VendorPaymentJournalHeaderEntity_Resolved/attributeContext/VendorPaymentJournalHeaderEntity_Resolved/Relationship_JournalNameRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "BackingTable_LedgerJournalTableRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/AccountingFoundation/WorksheetHeader/LedgerJournalTable.cdm.json/LedgerJournalTable",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "VendorPaymentJournalHeaderEntity_Resolved/attributeContext/VendorPaymentJournalHeaderEntity_Resolved/BackingTable_LedgerJournalTableRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "VendorPaymentJournalHeaderEntity_Resolved/attributeContext/VendorPaymentJournalHeaderEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Vendor payment journal header",
+      "version": "1.1.1"
+    }
+  ],
+  "documentVersion": "1.1.1"
+}

@@ -1,0 +1,307 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "LedgerFiscalYearEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "LedgerFiscalYearEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "LedgerFiscalYearEntity_Resolved",
+        "definition": "resolvedFrom/LedgerFiscalYearEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "LedgerFiscalYearEntity_Resolved/attributeContext/LedgerFiscalYearEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "LedgerFiscalYearEntity_Resolved/attributeContext/LedgerFiscalYearEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "FiscalYear",
+            "parent": "LedgerFiscalYearEntity_Resolved/attributeContext/LedgerFiscalYearEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerFiscalYearEntity/hasAttributes/FiscalYear",
+            "contents": [
+              "LedgerFiscalYearEntity_Resolved/hasAttributes/FiscalYear"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Calendar",
+            "parent": "LedgerFiscalYearEntity_Resolved/attributeContext/LedgerFiscalYearEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerFiscalYearEntity/hasAttributes/Calendar",
+            "contents": [
+              "LedgerFiscalYearEntity_Resolved/hasAttributes/Calendar"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Status",
+            "parent": "LedgerFiscalYearEntity_Resolved/attributeContext/LedgerFiscalYearEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerFiscalYearEntity/hasAttributes/Status",
+            "contents": [
+              "LedgerFiscalYearEntity_Resolved/hasAttributes/Status"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "LegalEntityId",
+            "parent": "LedgerFiscalYearEntity_Resolved/attributeContext/LedgerFiscalYearEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerFiscalYearEntity/hasAttributes/LegalEntityId",
+            "contents": [
+              "LedgerFiscalYearEntity_Resolved/hasAttributes/LegalEntityId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "FiscalCalendarYearRecId",
+            "parent": "LedgerFiscalYearEntity_Resolved/attributeContext/LedgerFiscalYearEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerFiscalYearEntity/hasAttributes/FiscalCalendarYearRecId",
+            "contents": [
+              "LedgerFiscalYearEntity_Resolved/hasAttributes/FiscalCalendarYearRecId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "FiscalCalendarRecId",
+            "parent": "LedgerFiscalYearEntity_Resolved/attributeContext/LedgerFiscalYearEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerFiscalYearEntity/hasAttributes/FiscalCalendarRecId",
+            "contents": [
+              "LedgerFiscalYearEntity_Resolved/hasAttributes/FiscalCalendarRecId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "LedgerRecId",
+            "parent": "LedgerFiscalYearEntity_Resolved/attributeContext/LedgerFiscalYearEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerFiscalYearEntity/hasAttributes/LedgerRecId",
+            "contents": [
+              "LedgerFiscalYearEntity_Resolved/hasAttributes/LedgerRecId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "LegalEntityName",
+            "parent": "LedgerFiscalYearEntity_Resolved/attributeContext/LedgerFiscalYearEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerFiscalYearEntity/hasAttributes/LegalEntityName",
+            "contents": [
+              "LedgerFiscalYearEntity_Resolved/hasAttributes/LegalEntityName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_LedgerFiscalCalendarYearRelationship",
+            "parent": "LedgerFiscalYearEntity_Resolved/attributeContext/LedgerFiscalYearEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerFiscalYearEntity/hasAttributes/BackingTable_LedgerFiscalCalendarYearRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "LedgerFiscalCalendarYear",
+                "parent": "LedgerFiscalYearEntity_Resolved/attributeContext/LedgerFiscalYearEntity_Resolved/BackingTable_LedgerFiscalCalendarYearRelationship",
+                "definition": "resolvedFrom/LedgerFiscalCalendarYear",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "LedgerFiscalYearEntity_Resolved/attributeContext/LedgerFiscalYearEntity_Resolved/BackingTable_LedgerFiscalCalendarYearRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "LedgerFiscalYearEntity_Resolved/attributeContext/LedgerFiscalYearEntity_Resolved/BackingTable_LedgerFiscalCalendarYearRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "LedgerFiscalYearEntity_Resolved/attributeContext/LedgerFiscalYearEntity_Resolved/BackingTable_LedgerFiscalCalendarYearRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "LedgerFiscalYearEntity_Resolved/hasAttributes/BackingTable_LedgerFiscalCalendarYearRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "FiscalYear",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerFiscalYearEntity_Resolved/attributeContext/LedgerFiscalYearEntity_Resolved/FiscalYear",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Calendar",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerFiscalYearEntity_Resolved/attributeContext/LedgerFiscalYearEntity_Resolved/Calendar",
+          "dataFormat": "String"
+        },
+        {
+          "name": "Status",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerFiscalYearEntity_Resolved/attributeContext/LedgerFiscalYearEntity_Resolved/Status",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "LegalEntityId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerFiscalYearEntity_Resolved/attributeContext/LedgerFiscalYearEntity_Resolved/LegalEntityId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "FiscalCalendarYearRecId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerFiscalYearEntity_Resolved/attributeContext/LedgerFiscalYearEntity_Resolved/FiscalCalendarYearRecId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "FiscalCalendarRecId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerFiscalYearEntity_Resolved/attributeContext/LedgerFiscalYearEntity_Resolved/FiscalCalendarRecId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "LedgerRecId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerFiscalYearEntity_Resolved/attributeContext/LedgerFiscalYearEntity_Resolved/LedgerRecId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "LegalEntityName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerFiscalYearEntity_Resolved/attributeContext/LedgerFiscalYearEntity_Resolved/LegalEntityName",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_LedgerFiscalCalendarYearRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Reference/LedgerFiscalCalendarYear.cdm.json/LedgerFiscalCalendarYear",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "LedgerFiscalYearEntity_Resolved/attributeContext/LedgerFiscalYearEntity_Resolved/BackingTable_LedgerFiscalCalendarYearRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Ledger fiscal calendar year",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

@@ -1,0 +1,301 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "CFPSTableEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "CFPSTableEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "CFPSTableEntity_Resolved",
+        "definition": "resolvedFrom/CFPSTableEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "CFPSTableEntity_Resolved/attributeContext/CFPSTableEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "CFPSTableEntity_Resolved/attributeContext/CFPSTableEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CFPSCode",
+            "parent": "CFPSTableEntity_Resolved/attributeContext/CFPSTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CFPSTableEntity/hasAttributes/CFPSCode",
+            "contents": [
+              "CFPSTableEntity_Resolved/hasAttributes/CFPSCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "TransactionType",
+            "parent": "CFPSTableEntity_Resolved/attributeContext/CFPSTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CFPSTableEntity/hasAttributes/TransactionType",
+            "contents": [
+              "CFPSTableEntity_Resolved/hasAttributes/TransactionType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "CFPSTableEntity_Resolved/attributeContext/CFPSTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CFPSTableEntity/hasAttributes/Name",
+            "contents": [
+              "CFPSTableEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "SearchName",
+            "parent": "CFPSTableEntity_Resolved/attributeContext/CFPSTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CFPSTableEntity/hasAttributes/SearchName",
+            "contents": [
+              "CFPSTableEntity_Resolved/hasAttributes/SearchName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_CFPSTable_BRRelationship",
+            "parent": "CFPSTableEntity_Resolved/attributeContext/CFPSTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CFPSTableEntity/hasAttributes/BackingTable_CFPSTable_BRRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CFPSTable_BR",
+                "parent": "CFPSTableEntity_Resolved/attributeContext/CFPSTableEntity_Resolved/BackingTable_CFPSTable_BRRelationship",
+                "definition": "resolvedFrom/CFPSTable_BR",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CFPSTableEntity_Resolved/attributeContext/CFPSTableEntity_Resolved/BackingTable_CFPSTable_BRRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CFPSTableEntity_Resolved/attributeContext/CFPSTableEntity_Resolved/BackingTable_CFPSTable_BRRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CFPSTableEntity_Resolved/attributeContext/CFPSTableEntity_Resolved/BackingTable_CFPSTable_BRRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CFPSTableEntity_Resolved/hasAttributes/BackingTable_CFPSTable_BRRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "CFPSTableEntity_Resolved/attributeContext/CFPSTableEntity_Resolved",
+            "definition": "resolvedFrom/CFPSTableEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "CFPSTableEntity_Resolved/attributeContext/CFPSTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CFPSTableEntity_Resolved/attributeContext/CFPSTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CFPSTableEntity_Resolved/attributeContext/CFPSTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CFPSTableEntity_Resolved/attributeContext/CFPSTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CFPSTableEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "CFPSCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CFPSTableEntity_Resolved/attributeContext/CFPSTableEntity_Resolved/CFPSCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "TransactionType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CFPSTableEntity_Resolved/attributeContext/CFPSTableEntity_Resolved/TransactionType",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CFPSTableEntity_Resolved/attributeContext/CFPSTableEntity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "SearchName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CFPSTableEntity_Resolved/attributeContext/CFPSTableEntity_Resolved/SearchName",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_CFPSTable_BRRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/APARShared/Group/CFPSTable_BR.cdm.json/CFPSTable_BR",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CFPSTableEntity_Resolved/attributeContext/CFPSTableEntity_Resolved/BackingTable_CFPSTable_BRRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CFPSTableEntity_Resolved/attributeContext/CFPSTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Services CFPS",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

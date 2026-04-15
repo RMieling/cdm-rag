@@ -1,0 +1,365 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "TrvExpenseDelegateEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TrvExpenseDelegateEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "TrvExpenseDelegateEntity_Resolved",
+        "definition": "resolvedFrom/TrvExpenseDelegateEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "TrvExpenseDelegateEntity_Resolved/attributeContext/TrvExpenseDelegateEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "TrvExpenseDelegateEntity_Resolved/attributeContext/TrvExpenseDelegateEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DelegatedUser",
+            "parent": "TrvExpenseDelegateEntity_Resolved/attributeContext/TrvExpenseDelegateEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvExpenseDelegateEntity/hasAttributes/DelegatedUser",
+            "contents": [
+              "TrvExpenseDelegateEntity_Resolved/hasAttributes/DelegatedUser"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DelegatedWorker",
+            "parent": "TrvExpenseDelegateEntity_Resolved/attributeContext/TrvExpenseDelegateEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvExpenseDelegateEntity/hasAttributes/DelegatedWorker",
+            "contents": [
+              "TrvExpenseDelegateEntity_Resolved/hasAttributes/DelegatedWorker"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DelegatingWorker",
+            "parent": "TrvExpenseDelegateEntity_Resolved/attributeContext/TrvExpenseDelegateEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvExpenseDelegateEntity/hasAttributes/DelegatingWorker",
+            "contents": [
+              "TrvExpenseDelegateEntity_Resolved/hasAttributes/DelegatingWorker"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "FromDateUTC",
+            "parent": "TrvExpenseDelegateEntity_Resolved/attributeContext/TrvExpenseDelegateEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvExpenseDelegateEntity/hasAttributes/FromDateUTC",
+            "contents": [
+              "TrvExpenseDelegateEntity_Resolved/hasAttributes/FromDateUTC"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ToDateUTC",
+            "parent": "TrvExpenseDelegateEntity_Resolved/attributeContext/TrvExpenseDelegateEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvExpenseDelegateEntity/hasAttributes/ToDateUTC",
+            "contents": [
+              "TrvExpenseDelegateEntity_Resolved/hasAttributes/ToDateUTC"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DelegatedPersonnelNumber",
+            "parent": "TrvExpenseDelegateEntity_Resolved/attributeContext/TrvExpenseDelegateEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvExpenseDelegateEntity/hasAttributes/DelegatedPersonnelNumber",
+            "contents": [
+              "TrvExpenseDelegateEntity_Resolved/hasAttributes/DelegatedPersonnelNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DelegatingPersonnelNumber",
+            "parent": "TrvExpenseDelegateEntity_Resolved/attributeContext/TrvExpenseDelegateEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvExpenseDelegateEntity/hasAttributes/DelegatingPersonnelNumber",
+            "contents": [
+              "TrvExpenseDelegateEntity_Resolved/hasAttributes/DelegatingPersonnelNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_TrvAppEmplSubRelationship",
+            "parent": "TrvExpenseDelegateEntity_Resolved/attributeContext/TrvExpenseDelegateEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvExpenseDelegateEntity/hasAttributes/BackingTable_TrvAppEmplSubRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "TrvAppEmplSub",
+                "parent": "TrvExpenseDelegateEntity_Resolved/attributeContext/TrvExpenseDelegateEntity_Resolved/BackingTable_TrvAppEmplSubRelationship",
+                "definition": "resolvedFrom/TrvAppEmplSub",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TrvExpenseDelegateEntity_Resolved/attributeContext/TrvExpenseDelegateEntity_Resolved/BackingTable_TrvAppEmplSubRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TrvExpenseDelegateEntity_Resolved/attributeContext/TrvExpenseDelegateEntity_Resolved/BackingTable_TrvAppEmplSubRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TrvExpenseDelegateEntity_Resolved/attributeContext/TrvExpenseDelegateEntity_Resolved/BackingTable_TrvAppEmplSubRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TrvExpenseDelegateEntity_Resolved/hasAttributes/BackingTable_TrvAppEmplSubRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "TrvExpenseDelegateEntity_Resolved/attributeContext/TrvExpenseDelegateEntity_Resolved",
+            "definition": "resolvedFrom/TrvExpenseDelegateEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "TrvExpenseDelegateEntity_Resolved/attributeContext/TrvExpenseDelegateEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TrvExpenseDelegateEntity_Resolved/attributeContext/TrvExpenseDelegateEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TrvExpenseDelegateEntity_Resolved/attributeContext/TrvExpenseDelegateEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TrvExpenseDelegateEntity_Resolved/attributeContext/TrvExpenseDelegateEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TrvExpenseDelegateEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "DelegatedUser",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvExpenseDelegateEntity_Resolved/attributeContext/TrvExpenseDelegateEntity_Resolved/DelegatedUser",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Delegate"
+        },
+        {
+          "name": "DelegatedWorker",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvExpenseDelegateEntity_Resolved/attributeContext/TrvExpenseDelegateEntity_Resolved/DelegatedWorker",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Delegate"
+        },
+        {
+          "name": "DelegatingWorker",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvExpenseDelegateEntity_Resolved/attributeContext/TrvExpenseDelegateEntity_Resolved/DelegatingWorker",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "FromDateUTC",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvExpenseDelegateEntity_Resolved/attributeContext/TrvExpenseDelegateEntity_Resolved/FromDateUTC",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Start date"
+        },
+        {
+          "name": "ToDateUTC",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvExpenseDelegateEntity_Resolved/attributeContext/TrvExpenseDelegateEntity_Resolved/ToDateUTC",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "End date"
+        },
+        {
+          "name": "DelegatedPersonnelNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvExpenseDelegateEntity_Resolved/attributeContext/TrvExpenseDelegateEntity_Resolved/DelegatedPersonnelNumber",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "DelegatingPersonnelNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvExpenseDelegateEntity_Resolved/attributeContext/TrvExpenseDelegateEntity_Resolved/DelegatingPersonnelNumber",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_TrvAppEmplSubRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Expense/Reference/TrvAppEmplSub.cdm.json/TrvAppEmplSub",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TrvExpenseDelegateEntity_Resolved/attributeContext/TrvExpenseDelegateEntity_Resolved/BackingTable_TrvAppEmplSubRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TrvExpenseDelegateEntity_Resolved/attributeContext/TrvExpenseDelegateEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Delegate",
+      "version": "1.1.1"
+    }
+  ],
+  "documentVersion": "1.1.1"
+}

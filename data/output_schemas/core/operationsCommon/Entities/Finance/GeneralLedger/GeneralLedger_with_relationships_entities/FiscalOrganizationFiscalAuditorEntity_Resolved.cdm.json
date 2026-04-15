@@ -1,0 +1,228 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "FiscalOrganizationFiscalAuditorEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "FiscalOrganizationFiscalAuditorEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "FiscalOrganizationFiscalAuditorEntity_Resolved",
+        "definition": "resolvedFrom/FiscalOrganizationFiscalAuditorEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "FiscalOrganizationFiscalAuditorEntity_Resolved/attributeContext/FiscalOrganizationFiscalAuditorEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "FiscalOrganizationFiscalAuditorEntity_Resolved/attributeContext/FiscalOrganizationFiscalAuditorEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CVMNumber",
+            "parent": "FiscalOrganizationFiscalAuditorEntity_Resolved/attributeContext/FiscalOrganizationFiscalAuditorEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/FiscalOrganizationFiscalAuditorEntity/hasAttributes/CVMNumber",
+            "contents": [
+              "FiscalOrganizationFiscalAuditorEntity_Resolved/hasAttributes/CVMNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "FiscalOrganizationFiscalAuditorEntity_Resolved/attributeContext/FiscalOrganizationFiscalAuditorEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/FiscalOrganizationFiscalAuditorEntity/hasAttributes/Name",
+            "contents": [
+              "FiscalOrganizationFiscalAuditorEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "RootFiscalEstablishmentDataArea",
+            "parent": "FiscalOrganizationFiscalAuditorEntity_Resolved/attributeContext/FiscalOrganizationFiscalAuditorEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/FiscalOrganizationFiscalAuditorEntity/hasAttributes/RootFiscalEstablishmentDataArea",
+            "contents": [
+              "FiscalOrganizationFiscalAuditorEntity_Resolved/hasAttributes/RootFiscalEstablishmentDataArea"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "RootFiscalEstablishment",
+            "parent": "FiscalOrganizationFiscalAuditorEntity_Resolved/attributeContext/FiscalOrganizationFiscalAuditorEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/FiscalOrganizationFiscalAuditorEntity/hasAttributes/RootFiscalEstablishment",
+            "contents": [
+              "FiscalOrganizationFiscalAuditorEntity_Resolved/hasAttributes/RootFiscalEstablishment"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_FBFiscalAuditor_BRRelationship",
+            "parent": "FiscalOrganizationFiscalAuditorEntity_Resolved/attributeContext/FiscalOrganizationFiscalAuditorEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/FiscalOrganizationFiscalAuditorEntity/hasAttributes/BackingTable_FBFiscalAuditor_BRRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "FBFiscalAuditor_BR",
+                "parent": "FiscalOrganizationFiscalAuditorEntity_Resolved/attributeContext/FiscalOrganizationFiscalAuditorEntity_Resolved/BackingTable_FBFiscalAuditor_BRRelationship",
+                "definition": "resolvedFrom/FBFiscalAuditor_BR",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "FiscalOrganizationFiscalAuditorEntity_Resolved/attributeContext/FiscalOrganizationFiscalAuditorEntity_Resolved/BackingTable_FBFiscalAuditor_BRRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "FiscalOrganizationFiscalAuditorEntity_Resolved/attributeContext/FiscalOrganizationFiscalAuditorEntity_Resolved/BackingTable_FBFiscalAuditor_BRRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "FiscalOrganizationFiscalAuditorEntity_Resolved/attributeContext/FiscalOrganizationFiscalAuditorEntity_Resolved/BackingTable_FBFiscalAuditor_BRRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "FiscalOrganizationFiscalAuditorEntity_Resolved/hasAttributes/BackingTable_FBFiscalAuditor_BRRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "CVMNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "FiscalOrganizationFiscalAuditorEntity_Resolved/attributeContext/FiscalOrganizationFiscalAuditorEntity_Resolved/CVMNumber",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "FiscalOrganizationFiscalAuditorEntity_Resolved/attributeContext/FiscalOrganizationFiscalAuditorEntity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "RootFiscalEstablishmentDataArea",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "FiscalOrganizationFiscalAuditorEntity_Resolved/attributeContext/FiscalOrganizationFiscalAuditorEntity_Resolved/RootFiscalEstablishmentDataArea",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Root company"
+        },
+        {
+          "name": "RootFiscalEstablishment",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "FiscalOrganizationFiscalAuditorEntity_Resolved/attributeContext/FiscalOrganizationFiscalAuditorEntity_Resolved/RootFiscalEstablishment",
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_FBFiscalAuditor_BRRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/FiscalBooksBrazil/Main/FBFiscalAuditor_BR.cdm.json/FBFiscalAuditor_BR",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "FiscalOrganizationFiscalAuditorEntity_Resolved/attributeContext/FiscalOrganizationFiscalAuditorEntity_Resolved/BackingTable_FBFiscalAuditor_BRRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Fiscal auditor entity",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

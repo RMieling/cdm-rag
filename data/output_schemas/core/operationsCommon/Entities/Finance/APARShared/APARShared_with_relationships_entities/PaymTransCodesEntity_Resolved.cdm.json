@@ -1,0 +1,261 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "PaymTransCodesEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "PaymTransCodesEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "PaymTransCodesEntity_Resolved",
+        "definition": "resolvedFrom/PaymTransCodesEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "PaymTransCodesEntity_Resolved/attributeContext/PaymTransCodesEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "PaymTransCodesEntity_Resolved/attributeContext/PaymTransCodesEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "PaymTransCodesEntity_Resolved/attributeContext/PaymTransCodesEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/PaymTransCodesEntity/hasAttributes/Description",
+            "contents": [
+              "PaymTransCodesEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "PaymentTransactionCode",
+            "parent": "PaymTransCodesEntity_Resolved/attributeContext/PaymTransCodesEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/PaymTransCodesEntity/hasAttributes/PaymentTransactionCode",
+            "contents": [
+              "PaymTransCodesEntity_Resolved/hasAttributes/PaymentTransactionCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_LvPaymTransCodesRelationship",
+            "parent": "PaymTransCodesEntity_Resolved/attributeContext/PaymTransCodesEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/PaymTransCodesEntity/hasAttributes/BackingTable_LvPaymTransCodesRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "LvPaymTransCodes",
+                "parent": "PaymTransCodesEntity_Resolved/attributeContext/PaymTransCodesEntity_Resolved/BackingTable_LvPaymTransCodesRelationship",
+                "definition": "resolvedFrom/LvPaymTransCodes",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "PaymTransCodesEntity_Resolved/attributeContext/PaymTransCodesEntity_Resolved/BackingTable_LvPaymTransCodesRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "PaymTransCodesEntity_Resolved/attributeContext/PaymTransCodesEntity_Resolved/BackingTable_LvPaymTransCodesRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "PaymTransCodesEntity_Resolved/attributeContext/PaymTransCodesEntity_Resolved/BackingTable_LvPaymTransCodesRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "PaymTransCodesEntity_Resolved/hasAttributes/BackingTable_LvPaymTransCodesRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "PaymTransCodesEntity_Resolved/attributeContext/PaymTransCodesEntity_Resolved",
+            "definition": "resolvedFrom/PaymTransCodesEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "PaymTransCodesEntity_Resolved/attributeContext/PaymTransCodesEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "PaymTransCodesEntity_Resolved/attributeContext/PaymTransCodesEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "PaymTransCodesEntity_Resolved/attributeContext/PaymTransCodesEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "PaymTransCodesEntity_Resolved/attributeContext/PaymTransCodesEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "PaymTransCodesEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "PaymTransCodesEntity_Resolved/attributeContext/PaymTransCodesEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "PaymentTransactionCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "PaymTransCodesEntity_Resolved/attributeContext/PaymTransCodesEntity_Resolved/PaymentTransactionCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_LvPaymTransCodesRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Bank/Miscellaneous/LvPaymTransCodes.cdm.json/LvPaymTransCodes",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "PaymTransCodesEntity_Resolved/attributeContext/PaymTransCodesEntity_Resolved/BackingTable_LvPaymTransCodesRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "PaymTransCodesEntity_Resolved/attributeContext/PaymTransCodesEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Payment transaction code",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

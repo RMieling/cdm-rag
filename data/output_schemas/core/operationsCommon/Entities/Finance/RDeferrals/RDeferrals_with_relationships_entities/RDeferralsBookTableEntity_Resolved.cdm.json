@@ -1,0 +1,281 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "RDeferralsBookTableEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "RDeferralsBookTableEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "RDeferralsBookTableEntity_Resolved",
+        "definition": "resolvedFrom/RDeferralsBookTableEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "RDeferralsBookTableEntity_Resolved/attributeContext/RDeferralsBookTableEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "RDeferralsBookTableEntity_Resolved/attributeContext/RDeferralsBookTableEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "PostingLayer",
+            "parent": "RDeferralsBookTableEntity_Resolved/attributeContext/RDeferralsBookTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RDeferralsBookTableEntity/hasAttributes/PostingLayer",
+            "contents": [
+              "RDeferralsBookTableEntity_Resolved/hasAttributes/PostingLayer"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ModelNumber",
+            "parent": "RDeferralsBookTableEntity_Resolved/attributeContext/RDeferralsBookTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RDeferralsBookTableEntity/hasAttributes/ModelNumber",
+            "contents": [
+              "RDeferralsBookTableEntity_Resolved/hasAttributes/ModelNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "RDeferralsBookTableEntity_Resolved/attributeContext/RDeferralsBookTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RDeferralsBookTableEntity/hasAttributes/Name",
+            "contents": [
+              "RDeferralsBookTableEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_RDeferralsBookTableRelationship",
+            "parent": "RDeferralsBookTableEntity_Resolved/attributeContext/RDeferralsBookTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RDeferralsBookTableEntity/hasAttributes/BackingTable_RDeferralsBookTableRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "RDeferralsBookTable",
+                "parent": "RDeferralsBookTableEntity_Resolved/attributeContext/RDeferralsBookTableEntity_Resolved/BackingTable_RDeferralsBookTableRelationship",
+                "definition": "resolvedFrom/RDeferralsBookTable",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "RDeferralsBookTableEntity_Resolved/attributeContext/RDeferralsBookTableEntity_Resolved/BackingTable_RDeferralsBookTableRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "RDeferralsBookTableEntity_Resolved/attributeContext/RDeferralsBookTableEntity_Resolved/BackingTable_RDeferralsBookTableRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "RDeferralsBookTableEntity_Resolved/attributeContext/RDeferralsBookTableEntity_Resolved/BackingTable_RDeferralsBookTableRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "RDeferralsBookTableEntity_Resolved/hasAttributes/BackingTable_RDeferralsBookTableRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "RDeferralsBookTableEntity_Resolved/attributeContext/RDeferralsBookTableEntity_Resolved",
+            "definition": "resolvedFrom/RDeferralsBookTableEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "RDeferralsBookTableEntity_Resolved/attributeContext/RDeferralsBookTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "RDeferralsBookTableEntity_Resolved/attributeContext/RDeferralsBookTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "RDeferralsBookTableEntity_Resolved/attributeContext/RDeferralsBookTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "RDeferralsBookTableEntity_Resolved/attributeContext/RDeferralsBookTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "RDeferralsBookTableEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "PostingLayer",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RDeferralsBookTableEntity_Resolved/attributeContext/RDeferralsBookTableEntity_Resolved/PostingLayer",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ModelNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RDeferralsBookTableEntity_Resolved/attributeContext/RDeferralsBookTableEntity_Resolved/ModelNumber",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RDeferralsBookTableEntity_Resolved/attributeContext/RDeferralsBookTableEntity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_RDeferralsBookTableRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/RDeferrals/Main/RDeferralsBookTable.cdm.json/RDeferralsBookTable",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "RDeferralsBookTableEntity_Resolved/attributeContext/RDeferralsBookTableEntity_Resolved/BackingTable_RDeferralsBookTableRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "RDeferralsBookTableEntity_Resolved/attributeContext/RDeferralsBookTableEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Deferrals value models",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

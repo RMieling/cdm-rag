@@ -1,0 +1,247 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "BudgetCycleTimeSpanEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "BudgetCycleTimeSpanEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "BudgetCycleTimeSpanEntity_Resolved",
+        "definition": "resolvedFrom/BudgetCycleTimeSpanEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "BudgetCycleTimeSpanEntity_Resolved/attributeContext/BudgetCycleTimeSpanEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "BudgetCycleTimeSpanEntity_Resolved/attributeContext/BudgetCycleTimeSpanEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "BudgetCycleTimeSpanEntity_Resolved/attributeContext/BudgetCycleTimeSpanEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetCycleTimeSpanEntity/hasAttributes/Name",
+            "contents": [
+              "BudgetCycleTimeSpanEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "FiscalCalendarId",
+            "parent": "BudgetCycleTimeSpanEntity_Resolved/attributeContext/BudgetCycleTimeSpanEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetCycleTimeSpanEntity/hasAttributes/FiscalCalendarId",
+            "contents": [
+              "BudgetCycleTimeSpanEntity_Resolved/hasAttributes/FiscalCalendarId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "FiscalCalendar",
+            "parent": "BudgetCycleTimeSpanEntity_Resolved/attributeContext/BudgetCycleTimeSpanEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetCycleTimeSpanEntity/hasAttributes/FiscalCalendar",
+            "contents": [
+              "BudgetCycleTimeSpanEntity_Resolved/hasAttributes/FiscalCalendar"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BudgetCycleLengthOption",
+            "parent": "BudgetCycleTimeSpanEntity_Resolved/attributeContext/BudgetCycleTimeSpanEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetCycleTimeSpanEntity/hasAttributes/BudgetCycleLengthOption",
+            "contents": [
+              "BudgetCycleTimeSpanEntity_Resolved/hasAttributes/BudgetCycleLengthOption"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DefaultNumberOfAccountingPeriods",
+            "parent": "BudgetCycleTimeSpanEntity_Resolved/attributeContext/BudgetCycleTimeSpanEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetCycleTimeSpanEntity/hasAttributes/DefaultNumberOfAccountingPeriods",
+            "contents": [
+              "BudgetCycleTimeSpanEntity_Resolved/hasAttributes/DefaultNumberOfAccountingPeriods"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_BudgetCycleTimeSpanRelationship",
+            "parent": "BudgetCycleTimeSpanEntity_Resolved/attributeContext/BudgetCycleTimeSpanEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetCycleTimeSpanEntity/hasAttributes/BackingTable_BudgetCycleTimeSpanRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "BudgetCycleTimeSpan",
+                "parent": "BudgetCycleTimeSpanEntity_Resolved/attributeContext/BudgetCycleTimeSpanEntity_Resolved/BackingTable_BudgetCycleTimeSpanRelationship",
+                "definition": "resolvedFrom/BudgetCycleTimeSpan",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "BudgetCycleTimeSpanEntity_Resolved/attributeContext/BudgetCycleTimeSpanEntity_Resolved/BackingTable_BudgetCycleTimeSpanRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "BudgetCycleTimeSpanEntity_Resolved/attributeContext/BudgetCycleTimeSpanEntity_Resolved/BackingTable_BudgetCycleTimeSpanRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "BudgetCycleTimeSpanEntity_Resolved/attributeContext/BudgetCycleTimeSpanEntity_Resolved/BackingTable_BudgetCycleTimeSpanRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "BudgetCycleTimeSpanEntity_Resolved/hasAttributes/BackingTable_BudgetCycleTimeSpanRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetCycleTimeSpanEntity_Resolved/attributeContext/BudgetCycleTimeSpanEntity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "FiscalCalendarId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetCycleTimeSpanEntity_Resolved/attributeContext/BudgetCycleTimeSpanEntity_Resolved/FiscalCalendarId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "FiscalCalendar",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetCycleTimeSpanEntity_Resolved/attributeContext/BudgetCycleTimeSpanEntity_Resolved/FiscalCalendar",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BudgetCycleLengthOption",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetCycleTimeSpanEntity_Resolved/attributeContext/BudgetCycleTimeSpanEntity_Resolved/BudgetCycleLengthOption",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "DefaultNumberOfAccountingPeriods",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetCycleTimeSpanEntity_Resolved/attributeContext/BudgetCycleTimeSpanEntity_Resolved/DefaultNumberOfAccountingPeriods",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_BudgetCycleTimeSpanRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Budget/Group/BudgetCycleTimeSpan.cdm.json/BudgetCycleTimeSpan",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "BudgetCycleTimeSpanEntity_Resolved/attributeContext/BudgetCycleTimeSpanEntity_Resolved/BackingTable_BudgetCycleTimeSpanRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Budget cycle time span",
+      "version": "1.1.1"
+    }
+  ],
+  "documentVersion": "1.1.1"
+}

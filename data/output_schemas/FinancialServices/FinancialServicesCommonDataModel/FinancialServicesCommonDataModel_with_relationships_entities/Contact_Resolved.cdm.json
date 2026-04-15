@@ -1,0 +1,287 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "Contact.cdm.json",
+      "moniker": "resolvedFrom"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "Contact_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "Contact_Resolved",
+        "definition": "resolvedFrom/Contact",
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "Contact_Resolved/attributeContext/Contact_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CdmEntity",
+                "parent": "Contact_Resolved/attributeContext/Contact_Resolved/extends",
+                "definition": "resolvedFrom/CdmEntity"
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "attributesAddedAtThisScope",
+            "parent": "Contact_Resolved/attributeContext/Contact_Resolved",
+            "definition": "resolvedFrom/Contact/hasAttributes/attributesAddedAtThisScope",
+            "contents": [
+              {
+                "type": "attributeGroup",
+                "name": "attributesAddedAtThisScope",
+                "parent": "Contact_Resolved/attributeContext/Contact_Resolved/attributesAddedAtThisScope",
+                "definition": "resolvedFrom/Contact/hasAttributes/attributesAddedAtThisScope",
+                "contents": [
+                  {
+                    "type": "attributeDefinition",
+                    "name": "contactId",
+                    "parent": "Contact_Resolved/attributeContext/Contact_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Contact/hasAttributes/attributesAddedAtThisScope/members/contactId",
+                    "contents": [
+                      "Contact_Resolved/hasAttributes/contactId"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "Branch",
+                    "parent": "Contact_Resolved/attributeContext/Contact_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Contact/hasAttributes/attributesAddedAtThisScope/members/Branch",
+                    "contents": [
+                      {
+                        "type": "projection",
+                        "name": "projection",
+                        "parent": "Contact_Resolved/attributeContext/Contact_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/Branch",
+                        "contents": [
+                          {
+                            "type": "source",
+                            "name": "source",
+                            "parent": "Contact_Resolved/attributeContext/Contact_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/Branch/projection",
+                            "contents": [
+                              {
+                                "type": "entity",
+                                "name": "Branch",
+                                "parent": "Contact_Resolved/attributeContext/Contact_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/Branch/projection/source",
+                                "definition": "resolvedFrom/Branch"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "Contact_Resolved/attributeContext/Contact_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/Branch",
+                        "contents": [
+                          {
+                            "type": "operationReplaceAsForeignKey",
+                            "name": "operation/index1/operationReplaceAsForeignKey",
+                            "parent": "Contact_Resolved/attributeContext/Contact_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/Branch/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "Contact_Resolved/attributeContext/Contact_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/Branch/_generatedAttributeSet/operation/index1/operationReplaceAsForeignKey",
+                                "contents": [
+                                  "Contact_Resolved/hasAttributes/Branch"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "IsManagedByBankSystem",
+                    "parent": "Contact_Resolved/attributeContext/Contact_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Contact/hasAttributes/attributesAddedAtThisScope/members/IsManagedByBankSystem",
+                    "contents": [
+                      "Contact_Resolved/hasAttributes/IsManagedByBankSystem"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "JoinDate",
+                    "parent": "Contact_Resolved/attributeContext/Contact_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Contact/hasAttributes/attributesAddedAtThisScope/members/JoinDate",
+                    "contents": [
+                      "Contact_Resolved/hasAttributes/JoinDate"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "Tenureyears",
+                    "parent": "Contact_Resolved/attributeContext/Contact_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Contact/hasAttributes/attributesAddedAtThisScope/members/Tenureyears",
+                    "contents": [
+                      "Contact_Resolved/hasAttributes/Tenureyears"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "contactId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            }
+          ],
+          "attributeContext": "Contact_Resolved/attributeContext/Contact_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/contactId",
+          "isPrimaryKey": true,
+          "dataFormat": "Guid",
+          "sourceName": "contactid",
+          "sourceOrdering": 1,
+          "displayName": "Contact",
+          "description": "Unique identifier of the contact."
+        },
+        {
+          "name": "Branch",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entitySet",
+                    "constantValues": [
+                      [
+                        "Branch.cdm.json/Branch",
+                        "branchId",
+                        "Branch_Branch"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "Contact_Resolved/attributeContext/Contact_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/Branch/_generatedAttributeSet/operation/index1/operationReplaceAsForeignKey/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "msfsi_branch",
+          "sourceOrdering": 10023,
+          "displayName": "Branch",
+          "description": "The primary branch of the bank associated with the contact."
+        },
+        {
+          "name": "IsManagedByBankSystem",
+          "appliedTraits": [
+            "is.dataFormat.boolean",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Contact_Resolved/attributeContext/Contact_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/IsManagedByBankSystem",
+          "isNullable": true,
+          "dataFormat": "Boolean",
+          "sourceName": "msfsi_ismanagedbybanksystem",
+          "sourceOrdering": 10024,
+          "displayName": "Is managed by bank system",
+          "description": "Indicates whether the record is managed and tracked by the banking system."
+        },
+        {
+          "name": "JoinDate",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date",
+            "is.dataFormat.time",
+            "means.measurement.time",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Contact_Resolved/attributeContext/Contact_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/JoinDate",
+          "isNullable": true,
+          "dataFormat": "DateTime",
+          "sourceName": "JoinDate",
+          "sourceOrdering": 10026,
+          "displayName": "Join date",
+          "description": "The date the contact joined the bank."
+        },
+        {
+          "name": "Tenureyears",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Contact_Resolved/attributeContext/Contact_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/Tenureyears",
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "sourceName": "msfsi_tenureyears",
+          "sourceOrdering": 10027,
+          "displayName": "Tenure",
+          "description": "Number of years the contact has held accounts at the bank.",
+          "maximumValue": "100000000000",
+          "minimumValue": "-100000000000"
+        }
+      ],
+      "sourceName": "contact",
+      "displayName": "Contact",
+      "description": "Person with whom a business unit has a relationship, such as customer, supplier, and colleague.",
+      "version": "1.1"
+    }
+  ],
+  "documentVersion": "1.1"
+}

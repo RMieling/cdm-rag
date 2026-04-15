@@ -1,0 +1,241 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "MCRAutoTaxHeaderEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "MCRAutoTaxHeaderEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "MCRAutoTaxHeaderEntity_Resolved",
+        "definition": "resolvedFrom/MCRAutoTaxHeaderEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "MCRAutoTaxHeaderEntity_Resolved/attributeContext/MCRAutoTaxHeaderEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "MCRAutoTaxHeaderEntity_Resolved/attributeContext/MCRAutoTaxHeaderEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Warnings",
+            "parent": "MCRAutoTaxHeaderEntity_Resolved/attributeContext/MCRAutoTaxHeaderEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/MCRAutoTaxHeaderEntity/hasAttributes/Warnings",
+            "contents": [
+              "MCRAutoTaxHeaderEntity_Resolved/hasAttributes/Warnings"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_MCRAutoTaxHeaderRelationship",
+            "parent": "MCRAutoTaxHeaderEntity_Resolved/attributeContext/MCRAutoTaxHeaderEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/MCRAutoTaxHeaderEntity/hasAttributes/BackingTable_MCRAutoTaxHeaderRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "MCRAutoTaxHeader",
+                "parent": "MCRAutoTaxHeaderEntity_Resolved/attributeContext/MCRAutoTaxHeaderEntity_Resolved/BackingTable_MCRAutoTaxHeaderRelationship",
+                "definition": "resolvedFrom/MCRAutoTaxHeader",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "MCRAutoTaxHeaderEntity_Resolved/attributeContext/MCRAutoTaxHeaderEntity_Resolved/BackingTable_MCRAutoTaxHeaderRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "MCRAutoTaxHeaderEntity_Resolved/attributeContext/MCRAutoTaxHeaderEntity_Resolved/BackingTable_MCRAutoTaxHeaderRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "MCRAutoTaxHeaderEntity_Resolved/attributeContext/MCRAutoTaxHeaderEntity_Resolved/BackingTable_MCRAutoTaxHeaderRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "MCRAutoTaxHeaderEntity_Resolved/hasAttributes/BackingTable_MCRAutoTaxHeaderRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "MCRAutoTaxHeaderEntity_Resolved/attributeContext/MCRAutoTaxHeaderEntity_Resolved",
+            "definition": "resolvedFrom/MCRAutoTaxHeaderEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "MCRAutoTaxHeaderEntity_Resolved/attributeContext/MCRAutoTaxHeaderEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "MCRAutoTaxHeaderEntity_Resolved/attributeContext/MCRAutoTaxHeaderEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "MCRAutoTaxHeaderEntity_Resolved/attributeContext/MCRAutoTaxHeaderEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "MCRAutoTaxHeaderEntity_Resolved/attributeContext/MCRAutoTaxHeaderEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "MCRAutoTaxHeaderEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Warnings",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "MCRAutoTaxHeaderEntity_Resolved/attributeContext/MCRAutoTaxHeaderEntity_Resolved/Warnings",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_MCRAutoTaxHeaderRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/SupplyChain/SalesAndMarketing/Group/MCRAutoTaxHeader.cdm.json/MCRAutoTaxHeader",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "MCRAutoTaxHeaderEntity_Resolved/attributeContext/MCRAutoTaxHeaderEntity_Resolved/BackingTable_MCRAutoTaxHeaderRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "MCRAutoTaxHeaderEntity_Resolved/attributeContext/MCRAutoTaxHeaderEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Auto tax header",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

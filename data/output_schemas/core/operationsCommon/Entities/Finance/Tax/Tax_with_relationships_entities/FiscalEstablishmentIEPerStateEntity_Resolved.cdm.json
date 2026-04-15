@@ -1,0 +1,388 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "FiscalEstablishmentIEPerStateEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "FiscalEstablishmentIEPerStateEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "FiscalEstablishmentIEPerStateEntity_Resolved",
+        "definition": "resolvedFrom/FiscalEstablishmentIEPerStateEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "FiscalEstablishmentIEPerStateEntity_Resolved/attributeContext/FiscalEstablishmentIEPerStateEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "FiscalEstablishmentIEPerStateEntity_Resolved/attributeContext/FiscalEstablishmentIEPerStateEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CountryRegionId",
+            "parent": "FiscalEstablishmentIEPerStateEntity_Resolved/attributeContext/FiscalEstablishmentIEPerStateEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/FiscalEstablishmentIEPerStateEntity/hasAttributes/CountryRegionId",
+            "contents": [
+              "FiscalEstablishmentIEPerStateEntity_Resolved/hasAttributes/CountryRegionId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "FiscalEstablishment",
+            "parent": "FiscalEstablishmentIEPerStateEntity_Resolved/attributeContext/FiscalEstablishmentIEPerStateEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/FiscalEstablishmentIEPerStateEntity/hasAttributes/FiscalEstablishment",
+            "contents": [
+              "FiscalEstablishmentIEPerStateEntity_Resolved/hasAttributes/FiscalEstablishment"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "IE",
+            "parent": "FiscalEstablishmentIEPerStateEntity_Resolved/attributeContext/FiscalEstablishmentIEPerStateEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/FiscalEstablishmentIEPerStateEntity/hasAttributes/IE",
+            "contents": [
+              "FiscalEstablishmentIEPerStateEntity_Resolved/hasAttributes/IE"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "State",
+            "parent": "FiscalEstablishmentIEPerStateEntity_Resolved/attributeContext/FiscalEstablishmentIEPerStateEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/FiscalEstablishmentIEPerStateEntity/hasAttributes/State",
+            "contents": [
+              "FiscalEstablishmentIEPerStateEntity_Resolved/hasAttributes/State"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "FiscalEstablishmentId",
+            "parent": "FiscalEstablishmentIEPerStateEntity_Resolved/attributeContext/FiscalEstablishmentIEPerStateEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/FiscalEstablishmentIEPerStateEntity/hasAttributes/FiscalEstablishmentId",
+            "contents": [
+              "FiscalEstablishmentIEPerStateEntity_Resolved/hasAttributes/FiscalEstablishmentId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_FiscalEstablishmentRelationship",
+            "parent": "FiscalEstablishmentIEPerStateEntity_Resolved/attributeContext/FiscalEstablishmentIEPerStateEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/FiscalEstablishmentIEPerStateEntity/hasAttributes/Relationship_FiscalEstablishmentRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "FiscalEstablishmentEntity",
+                "parent": "FiscalEstablishmentIEPerStateEntity_Resolved/attributeContext/FiscalEstablishmentIEPerStateEntity_Resolved/Relationship_FiscalEstablishmentRelationship",
+                "definition": "resolvedFrom/FiscalEstablishmentEntity",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "FiscalEstablishmentIEPerStateEntity_Resolved/attributeContext/FiscalEstablishmentIEPerStateEntity_Resolved/Relationship_FiscalEstablishmentRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "FiscalEstablishmentIEPerStateEntity_Resolved/attributeContext/FiscalEstablishmentIEPerStateEntity_Resolved/Relationship_FiscalEstablishmentRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "FiscalEstablishmentIEPerStateEntity_Resolved/attributeContext/FiscalEstablishmentIEPerStateEntity_Resolved/Relationship_FiscalEstablishmentRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "FiscalEstablishmentIEPerStateEntity_Resolved/hasAttributes/Relationship_FiscalEstablishmentRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_FiscalEstablishmentIEPerState_BRRelationship",
+            "parent": "FiscalEstablishmentIEPerStateEntity_Resolved/attributeContext/FiscalEstablishmentIEPerStateEntity_Resolved",
+            "definition": "resolvedFrom/FiscalEstablishmentIEPerStateEntity/hasAttributes/BackingTable_FiscalEstablishmentIEPerState_BRRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "FiscalEstablishmentIEPerState_BR",
+                "parent": "FiscalEstablishmentIEPerStateEntity_Resolved/attributeContext/FiscalEstablishmentIEPerStateEntity_Resolved/BackingTable_FiscalEstablishmentIEPerState_BRRelationship",
+                "definition": "resolvedFrom/FiscalEstablishmentIEPerState_BR",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "FiscalEstablishmentIEPerStateEntity_Resolved/attributeContext/FiscalEstablishmentIEPerStateEntity_Resolved/BackingTable_FiscalEstablishmentIEPerState_BRRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "FiscalEstablishmentIEPerStateEntity_Resolved/attributeContext/FiscalEstablishmentIEPerStateEntity_Resolved/BackingTable_FiscalEstablishmentIEPerState_BRRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "FiscalEstablishmentIEPerStateEntity_Resolved/attributeContext/FiscalEstablishmentIEPerStateEntity_Resolved/BackingTable_FiscalEstablishmentIEPerState_BRRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "FiscalEstablishmentIEPerStateEntity_Resolved/hasAttributes/BackingTable_FiscalEstablishmentIEPerState_BRRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "FiscalEstablishmentIEPerStateEntity_Resolved/attributeContext/FiscalEstablishmentIEPerStateEntity_Resolved",
+            "definition": "resolvedFrom/FiscalEstablishmentIEPerStateEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "FiscalEstablishmentIEPerStateEntity_Resolved/attributeContext/FiscalEstablishmentIEPerStateEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "FiscalEstablishmentIEPerStateEntity_Resolved/attributeContext/FiscalEstablishmentIEPerStateEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "FiscalEstablishmentIEPerStateEntity_Resolved/attributeContext/FiscalEstablishmentIEPerStateEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "FiscalEstablishmentIEPerStateEntity_Resolved/attributeContext/FiscalEstablishmentIEPerStateEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "FiscalEstablishmentIEPerStateEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "CountryRegionId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "FiscalEstablishmentIEPerStateEntity_Resolved/attributeContext/FiscalEstablishmentIEPerStateEntity_Resolved/CountryRegionId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "FiscalEstablishment",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "FiscalEstablishmentIEPerStateEntity_Resolved/attributeContext/FiscalEstablishmentIEPerStateEntity_Resolved/FiscalEstablishment",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "IE",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "FiscalEstablishmentIEPerStateEntity_Resolved/attributeContext/FiscalEstablishmentIEPerStateEntity_Resolved/IE",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "State",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "FiscalEstablishmentIEPerStateEntity_Resolved/attributeContext/FiscalEstablishmentIEPerStateEntity_Resolved/State",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "FiscalEstablishmentId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "FiscalEstablishmentIEPerStateEntity_Resolved/attributeContext/FiscalEstablishmentIEPerStateEntity_Resolved/FiscalEstablishmentId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "Relationship_FiscalEstablishmentRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": []
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "FiscalEstablishmentIEPerStateEntity_Resolved/attributeContext/FiscalEstablishmentIEPerStateEntity_Resolved/Relationship_FiscalEstablishmentRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "BackingTable_FiscalEstablishmentIEPerState_BRRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/FiscalBooksBrazil/Miscellaneous/FiscalEstablishmentIEPerState_BR.cdm.json/FiscalEstablishmentIEPerState_BR",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "FiscalEstablishmentIEPerStateEntity_Resolved/attributeContext/FiscalEstablishmentIEPerStateEntity_Resolved/BackingTable_FiscalEstablishmentIEPerState_BRRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "FiscalEstablishmentIEPerStateEntity_Resolved/attributeContext/FiscalEstablishmentIEPerStateEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Fiscal establishments tax substitution",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

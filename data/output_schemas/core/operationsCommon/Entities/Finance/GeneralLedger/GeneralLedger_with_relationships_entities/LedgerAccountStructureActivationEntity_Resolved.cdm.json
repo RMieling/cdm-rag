@@ -1,0 +1,185 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "LedgerAccountStructureActivationEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "LedgerAccountStructureActivationEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "LedgerAccountStructureActivationEntity_Resolved",
+        "definition": "resolvedFrom/LedgerAccountStructureActivationEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "LedgerAccountStructureActivationEntity_Resolved/attributeContext/LedgerAccountStructureActivationEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "LedgerAccountStructureActivationEntity_Resolved/attributeContext/LedgerAccountStructureActivationEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "AccountStructure",
+            "parent": "LedgerAccountStructureActivationEntity_Resolved/attributeContext/LedgerAccountStructureActivationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerAccountStructureActivationEntity/hasAttributes/AccountStructure",
+            "contents": [
+              "LedgerAccountStructureActivationEntity_Resolved/hasAttributes/AccountStructure"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DoActivate",
+            "parent": "LedgerAccountStructureActivationEntity_Resolved/attributeContext/LedgerAccountStructureActivationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerAccountStructureActivationEntity/hasAttributes/DoActivate",
+            "contents": [
+              "LedgerAccountStructureActivationEntity_Resolved/hasAttributes/DoActivate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_LedgerAccountStructureEntityRelationship",
+            "parent": "LedgerAccountStructureActivationEntity_Resolved/attributeContext/LedgerAccountStructureActivationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerAccountStructureActivationEntity/hasAttributes/Relationship_LedgerAccountStructureEntityRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "LedgerAccountStructureEntity",
+                "parent": "LedgerAccountStructureActivationEntity_Resolved/attributeContext/LedgerAccountStructureActivationEntity_Resolved/Relationship_LedgerAccountStructureEntityRelationship",
+                "definition": "resolvedFrom/LedgerAccountStructureEntity",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "LedgerAccountStructureActivationEntity_Resolved/attributeContext/LedgerAccountStructureActivationEntity_Resolved/Relationship_LedgerAccountStructureEntityRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "LedgerAccountStructureActivationEntity_Resolved/attributeContext/LedgerAccountStructureActivationEntity_Resolved/Relationship_LedgerAccountStructureEntityRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "LedgerAccountStructureActivationEntity_Resolved/attributeContext/LedgerAccountStructureActivationEntity_Resolved/Relationship_LedgerAccountStructureEntityRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "LedgerAccountStructureActivationEntity_Resolved/hasAttributes/Relationship_LedgerAccountStructureEntityRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "AccountStructure",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerAccountStructureActivationEntity_Resolved/attributeContext/LedgerAccountStructureActivationEntity_Resolved/AccountStructure",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Dimension tree name"
+        },
+        {
+          "name": "DoActivate",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerAccountStructureActivationEntity_Resolved/attributeContext/LedgerAccountStructureActivationEntity_Resolved/DoActivate",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Activate"
+        },
+        {
+          "name": "Relationship_LedgerAccountStructureEntityRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": []
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "LedgerAccountStructureActivationEntity_Resolved/attributeContext/LedgerAccountStructureActivationEntity_Resolved/Relationship_LedgerAccountStructureEntityRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Account structure activation",
+      "version": "1.1.1"
+    }
+  ],
+  "documentVersion": "1.1.1"
+}

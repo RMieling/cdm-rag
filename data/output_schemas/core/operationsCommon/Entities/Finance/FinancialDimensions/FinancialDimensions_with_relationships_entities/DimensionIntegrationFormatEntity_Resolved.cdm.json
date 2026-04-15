@@ -1,0 +1,252 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "DimensionIntegrationFormatEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "DimensionIntegrationFormatEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "DimensionIntegrationFormatEntity_Resolved",
+        "definition": "resolvedFrom/DimensionIntegrationFormatEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "DimensionIntegrationFormatEntity_Resolved/attributeContext/DimensionIntegrationFormatEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "DimensionIntegrationFormatEntity_Resolved/attributeContext/DimensionIntegrationFormatEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DimensionFormatName",
+            "parent": "DimensionIntegrationFormatEntity_Resolved/attributeContext/DimensionIntegrationFormatEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimensionIntegrationFormatEntity/hasAttributes/DimensionFormatName",
+            "contents": [
+              "DimensionIntegrationFormatEntity_Resolved/hasAttributes/DimensionFormatName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DimensionFormatType",
+            "parent": "DimensionIntegrationFormatEntity_Resolved/attributeContext/DimensionIntegrationFormatEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimensionIntegrationFormatEntity/hasAttributes/DimensionFormatType",
+            "contents": [
+              "DimensionIntegrationFormatEntity_Resolved/hasAttributes/DimensionFormatType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "IsActive",
+            "parent": "DimensionIntegrationFormatEntity_Resolved/attributeContext/DimensionIntegrationFormatEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimensionIntegrationFormatEntity/hasAttributes/IsActive",
+            "contents": [
+              "DimensionIntegrationFormatEntity_Resolved/hasAttributes/IsActive"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "FinancialDimensionFormat",
+            "parent": "DimensionIntegrationFormatEntity_Resolved/attributeContext/DimensionIntegrationFormatEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimensionIntegrationFormatEntity/hasAttributes/FinancialDimensionFormat",
+            "contents": [
+              "DimensionIntegrationFormatEntity_Resolved/hasAttributes/FinancialDimensionFormat"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DimensionHierarchy",
+            "parent": "DimensionIntegrationFormatEntity_Resolved/attributeContext/DimensionIntegrationFormatEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimensionIntegrationFormatEntity/hasAttributes/DimensionHierarchy",
+            "contents": [
+              "DimensionIntegrationFormatEntity_Resolved/hasAttributes/DimensionHierarchy"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_DimensionHierarchyRelationship",
+            "parent": "DimensionIntegrationFormatEntity_Resolved/attributeContext/DimensionIntegrationFormatEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimensionIntegrationFormatEntity/hasAttributes/BackingTable_DimensionHierarchyRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "DimensionHierarchy",
+                "parent": "DimensionIntegrationFormatEntity_Resolved/attributeContext/DimensionIntegrationFormatEntity_Resolved/BackingTable_DimensionHierarchyRelationship",
+                "definition": "resolvedFrom/DimensionHierarchy",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "DimensionIntegrationFormatEntity_Resolved/attributeContext/DimensionIntegrationFormatEntity_Resolved/BackingTable_DimensionHierarchyRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "DimensionIntegrationFormatEntity_Resolved/attributeContext/DimensionIntegrationFormatEntity_Resolved/BackingTable_DimensionHierarchyRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "DimensionIntegrationFormatEntity_Resolved/attributeContext/DimensionIntegrationFormatEntity_Resolved/BackingTable_DimensionHierarchyRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "DimensionIntegrationFormatEntity_Resolved/hasAttributes/BackingTable_DimensionHierarchyRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "DimensionFormatName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DimensionIntegrationFormatEntity_Resolved/attributeContext/DimensionIntegrationFormatEntity_Resolved/DimensionFormatName",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Dimension format name"
+        },
+        {
+          "name": "DimensionFormatType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DimensionIntegrationFormatEntity_Resolved/attributeContext/DimensionIntegrationFormatEntity_Resolved/DimensionFormatType",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Dimension format type"
+        },
+        {
+          "name": "IsActive",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DimensionIntegrationFormatEntity_Resolved/attributeContext/DimensionIntegrationFormatEntity_Resolved/IsActive",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Is active"
+        },
+        {
+          "name": "FinancialDimensionFormat",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DimensionIntegrationFormatEntity_Resolved/attributeContext/DimensionIntegrationFormatEntity_Resolved/FinancialDimensionFormat",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Financial dimension format"
+        },
+        {
+          "name": "DimensionHierarchy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DimensionIntegrationFormatEntity_Resolved/attributeContext/DimensionIntegrationFormatEntity_Resolved/DimensionHierarchy",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_DimensionHierarchyRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/FinancialDimensions/Group/DimensionHierarchy.cdm.json/DimensionHierarchy",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "DimensionIntegrationFormatEntity_Resolved/attributeContext/DimensionIntegrationFormatEntity_Resolved/BackingTable_DimensionHierarchyRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Financial dimension format",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

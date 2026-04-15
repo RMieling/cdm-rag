@@ -1,0 +1,2469 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "Queue.cdm.json",
+      "moniker": "resolvedFrom"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "Queue_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "means.entityState",
+          "arguments": [
+            "Queue_Resolved/(resolvedAttributes)/stateCode"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "Queue_Resolved",
+        "definition": "resolvedFrom/Queue",
+        "appliedTraits": [
+          {
+            "traitReference": "means.entityState",
+            "arguments": [
+              "Queue_Resolved/(resolvedAttributes)/stateCode"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "Queue_Resolved/attributeContext/Queue_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CdmEntity",
+                "parent": "Queue_Resolved/attributeContext/Queue_Resolved/extends",
+                "definition": "resolvedFrom/CdmEntity"
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "attributesAddedAtThisScope",
+            "parent": "Queue_Resolved/attributeContext/Queue_Resolved",
+            "definition": "resolvedFrom/Queue/hasAttributes/attributesAddedAtThisScope",
+            "contents": [
+              {
+                "type": "attributeGroup",
+                "name": "attributesAddedAtThisScope",
+                "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope",
+                "definition": "resolvedFrom/Queue/hasAttributes/attributesAddedAtThisScope",
+                "contents": [
+                  {
+                    "type": "attributeDefinition",
+                    "name": "queueId",
+                    "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Queue/hasAttributes/attributesAddedAtThisScope/members/queueId",
+                    "contents": [
+                      "Queue_Resolved/hasAttributes/queueId"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "businessUnit",
+                    "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Queue/hasAttributes/attributesAddedAtThisScope/members/businessUnit",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "BusinessUnit",
+                        "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/businessUnit",
+                        "definition": "resolvedFrom/BusinessUnit"
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/businessUnit",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/businessUnit/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/businessUnit/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/Queue/hasAttributes/attributesAddedAtThisScope/members/businessUnit/resolutionGuidance/foreignKeyAttribute/id",
+                                "contents": [
+                                  "Queue_Resolved/hasAttributes/businessUnitId"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "organization",
+                    "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Queue/hasAttributes/attributesAddedAtThisScope/members/organization",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "Organization",
+                        "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/organization",
+                        "definition": "resolvedFrom/Organization"
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/organization",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/organization/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/organization/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/Queue/hasAttributes/attributesAddedAtThisScope/members/organization/resolutionGuidance/foreignKeyAttribute/id",
+                                "contents": [
+                                  "Queue_Resolved/hasAttributes/organizationId"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "emailAddress",
+                    "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Queue/hasAttributes/attributesAddedAtThisScope/members/emailAddress",
+                    "contents": [
+                      "Queue_Resolved/hasAttributes/emailAddress"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "primaryUser",
+                    "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Queue/hasAttributes/attributesAddedAtThisScope/members/primaryUser",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "User",
+                        "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/primaryUser",
+                        "definition": "resolvedFrom/User"
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/primaryUser",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/primaryUser/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/primaryUser/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/Queue/hasAttributes/attributesAddedAtThisScope/members/primaryUser/resolutionGuidance/foreignKeyAttribute/id",
+                                "contents": [
+                                  "Queue_Resolved/hasAttributes/primaryUserId"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "queueTypeCode",
+                    "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Queue/hasAttributes/attributesAddedAtThisScope/members/queueTypeCode",
+                    "contents": [
+                      "Queue_Resolved/hasAttributes/queueTypeCode",
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/queueTypeCode",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/queueTypeCode/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeSupporting",
+                                "name": "supporting_queueTypeCode",
+                                "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/queueTypeCode/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/Queue/hasAttributes/attributesAddedAtThisScope/members/queueTypeCode",
+                                "contents": [
+                                  "Queue_Resolved/hasAttributes/queueTypeCode_display"
+                                ],
+                                "lineage": [
+                                  "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/queueTypeCode"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "name",
+                    "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Queue/hasAttributes/attributesAddedAtThisScope/members/name",
+                    "contents": [
+                      "Queue_Resolved/hasAttributes/name"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "description",
+                    "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Queue/hasAttributes/attributesAddedAtThisScope/members/description",
+                    "contents": [
+                      "Queue_Resolved/hasAttributes/description"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "queueSemantics",
+                    "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Queue/hasAttributes/attributesAddedAtThisScope/members/queueSemantics",
+                    "contents": [
+                      "Queue_Resolved/hasAttributes/queueSemantics"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "createdOn",
+                    "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Queue/hasAttributes/attributesAddedAtThisScope/members/createdOn",
+                    "contents": [
+                      "Queue_Resolved/hasAttributes/createdOn"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "User_createdBy",
+                    "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Queue/hasAttributes/attributesAddedAtThisScope/members/User_createdBy",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "User",
+                        "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdBy",
+                        "definition": "resolvedFrom/User"
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdBy",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdBy/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdBy/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/Queue/hasAttributes/attributesAddedAtThisScope/members/User_createdBy/resolutionGuidance/foreignKeyAttribute/createdBy",
+                                "contents": [
+                                  "Queue_Resolved/hasAttributes/createdBy"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "User_modifiedBy",
+                    "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Queue/hasAttributes/attributesAddedAtThisScope/members/User_modifiedBy",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "User",
+                        "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedBy",
+                        "definition": "resolvedFrom/User"
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedBy",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedBy/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedBy/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/Queue/hasAttributes/attributesAddedAtThisScope/members/User_modifiedBy/resolutionGuidance/foreignKeyAttribute/modifiedBy",
+                                "contents": [
+                                  "Queue_Resolved/hasAttributes/modifiedBy"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "modifiedOn",
+                    "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Queue/hasAttributes/attributesAddedAtThisScope/members/modifiedOn",
+                    "contents": [
+                      "Queue_Resolved/hasAttributes/modifiedOn"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "versionNumber",
+                    "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Queue/hasAttributes/attributesAddedAtThisScope/members/versionNumber",
+                    "contents": [
+                      "Queue_Resolved/hasAttributes/versionNumber"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "ignoreUnsolicitedEmail",
+                    "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Queue/hasAttributes/attributesAddedAtThisScope/members/ignoreUnsolicitedEmail",
+                    "contents": [
+                      "Queue_Resolved/hasAttributes/ignoreUnsolicitedEmail"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "isFaxQueue",
+                    "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Queue/hasAttributes/attributesAddedAtThisScope/members/isFaxQueue",
+                    "contents": [
+                      "Queue_Resolved/hasAttributes/isFaxQueue"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "emailPassword",
+                    "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Queue/hasAttributes/attributesAddedAtThisScope/members/emailPassword",
+                    "contents": [
+                      "Queue_Resolved/hasAttributes/emailPassword"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "incomingEmailDeliveryMethod",
+                    "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Queue/hasAttributes/attributesAddedAtThisScope/members/incomingEmailDeliveryMethod",
+                    "contents": [
+                      "Queue_Resolved/hasAttributes/incomingEmailDeliveryMethod",
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/incomingEmailDeliveryMethod",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/incomingEmailDeliveryMethod/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeSupporting",
+                                "name": "supporting_incomingEmailDeliveryMethod",
+                                "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/incomingEmailDeliveryMethod/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/Queue/hasAttributes/attributesAddedAtThisScope/members/incomingEmailDeliveryMethod",
+                                "contents": [
+                                  "Queue_Resolved/hasAttributes/incomingEmailDeliveryMethod_display"
+                                ],
+                                "lineage": [
+                                  "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/incomingEmailDeliveryMethod"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "emailUsername",
+                    "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Queue/hasAttributes/attributesAddedAtThisScope/members/emailUsername",
+                    "contents": [
+                      "Queue_Resolved/hasAttributes/emailUsername"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "outgoingEmailDeliveryMethod",
+                    "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Queue/hasAttributes/attributesAddedAtThisScope/members/outgoingEmailDeliveryMethod",
+                    "contents": [
+                      "Queue_Resolved/hasAttributes/outgoingEmailDeliveryMethod",
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/outgoingEmailDeliveryMethod",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/outgoingEmailDeliveryMethod/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeSupporting",
+                                "name": "supporting_outgoingEmailDeliveryMethod",
+                                "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/outgoingEmailDeliveryMethod/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/Queue/hasAttributes/attributesAddedAtThisScope/members/outgoingEmailDeliveryMethod",
+                                "contents": [
+                                  "Queue_Resolved/hasAttributes/outgoingEmailDeliveryMethod_display"
+                                ],
+                                "lineage": [
+                                  "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/outgoingEmailDeliveryMethod"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "allowEmailCredentials",
+                    "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Queue/hasAttributes/attributesAddedAtThisScope/members/allowEmailCredentials",
+                    "contents": [
+                      "Queue_Resolved/hasAttributes/allowEmailCredentials"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "incomingEmailFilteringMethod",
+                    "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Queue/hasAttributes/attributesAddedAtThisScope/members/incomingEmailFilteringMethod",
+                    "contents": [
+                      "Queue_Resolved/hasAttributes/incomingEmailFilteringMethod",
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/incomingEmailFilteringMethod",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/incomingEmailFilteringMethod/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeSupporting",
+                                "name": "supporting_incomingEmailFilteringMethod",
+                                "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/incomingEmailFilteringMethod/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/Queue/hasAttributes/attributesAddedAtThisScope/members/incomingEmailFilteringMethod",
+                                "contents": [
+                                  "Queue_Resolved/hasAttributes/incomingEmailFilteringMethod_display"
+                                ],
+                                "lineage": [
+                                  "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/incomingEmailFilteringMethod"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "ownerIdAttribute",
+                    "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/ownerIdAttribute",
+                    "contents": [
+                      {
+                        "type": "attributeGroup",
+                        "name": "ownerIdAttribute",
+                        "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute",
+                        "definition": "resolvedFrom/ownerIdAttribute",
+                        "contents": [
+                          {
+                            "type": "attributeDefinition",
+                            "name": "owner",
+                            "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute/ownerIdAttribute",
+                            "definition": "resolvedFrom/ownerIdAttribute/members/owner",
+                            "contents": [
+                              {
+                                "type": "entity",
+                                "name": "Owner",
+                                "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute/ownerIdAttribute/owner",
+                                "definition": "resolvedFrom/ownerIdAttribute/members/owner/entity/Owner",
+                                "contents": [
+                                  {
+                                    "type": "attributeDefinition",
+                                    "name": "userOption",
+                                    "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute/ownerIdAttribute/owner/Owner",
+                                    "definition": "resolvedFrom/ownerIdAttribute/members/owner/entity/Owner/hasAttributes/userOption",
+                                    "contents": [
+                                      {
+                                        "type": "entity",
+                                        "name": "User",
+                                        "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute/ownerIdAttribute/owner/Owner/userOption",
+                                        "definition": "resolvedFrom/User"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "type": "attributeDefinition",
+                                    "name": "teamOption",
+                                    "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute/ownerIdAttribute/owner/Owner",
+                                    "definition": "resolvedFrom/ownerIdAttribute/members/owner/entity/Owner/hasAttributes/teamOption",
+                                    "contents": [
+                                      {
+                                        "type": "entity",
+                                        "name": "Team",
+                                        "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute/ownerIdAttribute/owner/Owner/teamOption",
+                                        "definition": "resolvedFrom/Team"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "type": "generatedSet",
+                                "name": "_generatedAttributeSet",
+                                "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute/ownerIdAttribute/owner",
+                                "contents": [
+                                  {
+                                    "type": "generatedRound",
+                                    "name": "_generatedAttributeRound0",
+                                    "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute/ownerIdAttribute/owner/_generatedAttributeSet",
+                                    "contents": [
+                                      {
+                                        "type": "addedAttributeIdentity",
+                                        "name": "_foreignKey",
+                                        "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute/ownerIdAttribute/owner/_generatedAttributeSet/_generatedAttributeRound0",
+                                        "definition": "resolvedFrom/ownerIdAttribute/members/owner/resolutionGuidance/foreignKeyAttribute/ownerId",
+                                        "contents": [
+                                          "Queue_Resolved/hasAttributes/ownerId"
+                                        ]
+                                      },
+                                      {
+                                        "type": "addedAttributeSelectedType",
+                                        "name": "_selectedEntityName",
+                                        "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute/ownerIdAttribute/owner/_generatedAttributeSet/_generatedAttributeRound0",
+                                        "definition": "resolvedFrom/ownerIdAttribute/members/owner/resolutionGuidance/selectedTypeAttribute/ownerIdType",
+                                        "contents": [
+                                          "Queue_Resolved/hasAttributes/ownerIdType"
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "overriddenCreatedOn",
+                    "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Queue/hasAttributes/attributesAddedAtThisScope/members/overriddenCreatedOn",
+                    "contents": [
+                      "Queue_Resolved/hasAttributes/overriddenCreatedOn"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "statusCode",
+                    "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Queue/hasAttributes/attributesAddedAtThisScope/members/statusCode",
+                    "contents": [
+                      "Queue_Resolved/hasAttributes/statusCode",
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/statusCode",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/statusCode/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeSupporting",
+                                "name": "supporting_statusCode",
+                                "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/statusCode/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/Queue/hasAttributes/attributesAddedAtThisScope/members/statusCode",
+                                "contents": [
+                                  "Queue_Resolved/hasAttributes/statusCode_display"
+                                ],
+                                "lineage": [
+                                  "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/statusCode"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "BusinessUnit_owningBusinessUnit",
+                    "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Queue/hasAttributes/attributesAddedAtThisScope/members/BusinessUnit_owningBusinessUnit",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "BusinessUnit",
+                        "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/BusinessUnit_owningBusinessUnit",
+                        "definition": "resolvedFrom/BusinessUnit"
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/BusinessUnit_owningBusinessUnit",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/BusinessUnit_owningBusinessUnit/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/BusinessUnit_owningBusinessUnit/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/Queue/hasAttributes/attributesAddedAtThisScope/members/BusinessUnit_owningBusinessUnit/resolutionGuidance/foreignKeyAttribute/owningBusinessUnit",
+                                "contents": [
+                                  "Queue_Resolved/hasAttributes/owningBusinessUnit"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "owningUser",
+                    "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Queue/hasAttributes/attributesAddedAtThisScope/members/owningUser",
+                    "contents": [
+                      "Queue_Resolved/hasAttributes/owningUser"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "stateCode",
+                    "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Queue/hasAttributes/attributesAddedAtThisScope/members/stateCode",
+                    "contents": [
+                      "Queue_Resolved/hasAttributes/stateCode",
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/stateCode",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/stateCode/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeSupporting",
+                                "name": "supporting_stateCode",
+                                "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/stateCode/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/Queue/hasAttributes/attributesAddedAtThisScope/members/stateCode",
+                                "contents": [
+                                  "Queue_Resolved/hasAttributes/stateCode_display"
+                                ],
+                                "lineage": [
+                                  "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/stateCode"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "User_createdOnBehalfBy",
+                    "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Queue/hasAttributes/attributesAddedAtThisScope/members/User_createdOnBehalfBy",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "User",
+                        "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdOnBehalfBy",
+                        "definition": "resolvedFrom/User"
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdOnBehalfBy",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdOnBehalfBy/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdOnBehalfBy/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/Queue/hasAttributes/attributesAddedAtThisScope/members/User_createdOnBehalfBy/resolutionGuidance/foreignKeyAttribute/createdOnBehalfBy",
+                                "contents": [
+                                  "Queue_Resolved/hasAttributes/createdOnBehalfBy"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "User_modifiedOnBehalfBy",
+                    "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Queue/hasAttributes/attributesAddedAtThisScope/members/User_modifiedOnBehalfBy",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "User",
+                        "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedOnBehalfBy",
+                        "definition": "resolvedFrom/User"
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedOnBehalfBy",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedOnBehalfBy/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedOnBehalfBy/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/Queue/hasAttributes/attributesAddedAtThisScope/members/User_modifiedOnBehalfBy/resolutionGuidance/foreignKeyAttribute/modifiedOnBehalfBy",
+                                "contents": [
+                                  "Queue_Resolved/hasAttributes/modifiedOnBehalfBy"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "numberOfItems",
+                    "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Queue/hasAttributes/attributesAddedAtThisScope/members/numberOfItems",
+                    "contents": [
+                      "Queue_Resolved/hasAttributes/numberOfItems"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "numberOfMembers",
+                    "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Queue/hasAttributes/attributesAddedAtThisScope/members/numberOfMembers",
+                    "contents": [
+                      "Queue_Resolved/hasAttributes/numberOfMembers"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "importSequenceNumber",
+                    "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Queue/hasAttributes/attributesAddedAtThisScope/members/importSequenceNumber",
+                    "contents": [
+                      "Queue_Resolved/hasAttributes/importSequenceNumber"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "owningTeam",
+                    "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Queue/hasAttributes/attributesAddedAtThisScope/members/owningTeam",
+                    "contents": [
+                      "Queue_Resolved/hasAttributes/owningTeam"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "transactionCurrency",
+                    "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Queue/hasAttributes/attributesAddedAtThisScope/members/transactionCurrency",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "Currency",
+                        "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/transactionCurrency",
+                        "definition": "resolvedFrom/Currency",
+                        "appliedTraits": [
+                          {
+                            "traitReference": "means.entityState",
+                            "arguments": [
+                              "resolvedFrom/Currency/(resolvedAttributes)/stateCode"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/transactionCurrency",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/transactionCurrency/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/transactionCurrency/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/Queue/hasAttributes/attributesAddedAtThisScope/members/transactionCurrency/resolutionGuidance/foreignKeyAttribute/id",
+                                "contents": [
+                                  "Queue_Resolved/hasAttributes/transactionCurrencyId"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "exchangeRate",
+                    "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Queue/hasAttributes/attributesAddedAtThisScope/members/exchangeRate",
+                    "contents": [
+                      "Queue_Resolved/hasAttributes/exchangeRate"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "emailRouterAccessApproval",
+                    "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Queue/hasAttributes/attributesAddedAtThisScope/members/emailRouterAccessApproval",
+                    "contents": [
+                      "Queue_Resolved/hasAttributes/emailRouterAccessApproval",
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/emailRouterAccessApproval",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/emailRouterAccessApproval/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeSupporting",
+                                "name": "supporting_emailRouterAccessApproval",
+                                "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/emailRouterAccessApproval/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/Queue/hasAttributes/attributesAddedAtThisScope/members/emailRouterAccessApproval",
+                                "contents": [
+                                  "Queue_Resolved/hasAttributes/emailRouterAccessApproval_display"
+                                ],
+                                "lineage": [
+                                  "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/emailRouterAccessApproval"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "defaultMailbox",
+                    "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Queue/hasAttributes/attributesAddedAtThisScope/members/defaultMailbox",
+                    "contents": [
+                      "Queue_Resolved/hasAttributes/defaultMailbox"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "entityImageId",
+                    "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Queue/hasAttributes/attributesAddedAtThisScope/members/entityImageId",
+                    "contents": [
+                      "Queue_Resolved/hasAttributes/entityImageId"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "isEmailAddressApprovedByO365Admin",
+                    "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Queue/hasAttributes/attributesAddedAtThisScope/members/isEmailAddressApprovedByO365Admin",
+                    "contents": [
+                      "Queue_Resolved/hasAttributes/isEmailAddressApprovedByO365Admin"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "queueViewType",
+                    "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/Queue/hasAttributes/attributesAddedAtThisScope/members/queueViewType",
+                    "contents": [
+                      "Queue_Resolved/hasAttributes/queueViewType",
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/queueViewType",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/queueViewType/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeSupporting",
+                                "name": "supporting_queueViewType",
+                                "parent": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/queueViewType/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/Queue/hasAttributes/attributesAddedAtThisScope/members/queueViewType",
+                                "contents": [
+                                  "Queue_Resolved/hasAttributes/queueViewType_display"
+                                ],
+                                "lineage": [
+                                  "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/queueViewType"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "queueId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            }
+          ],
+          "attributeContext": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/queueId",
+          "isPrimaryKey": true,
+          "dataFormat": "Guid",
+          "sourceName": "queueid",
+          "sourceOrdering": 1,
+          "displayName": "Queue",
+          "description": "Unique identifier of the queue."
+        },
+        {
+          "name": "businessUnitId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "BusinessUnit.cdm.json/BusinessUnit",
+                        "businessUnitId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/businessUnit/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "businessunitid",
+          "sourceOrdering": 2,
+          "displayName": "Business Unit",
+          "description": "Unique identifier of the business unit with which the queue is associated."
+        },
+        {
+          "name": "organizationId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "Organization.cdm.json/Organization",
+                        "organizationId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/organization/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid",
+          "sourceName": "organizationid",
+          "sourceOrdering": 4,
+          "displayName": "Organization",
+          "description": "Unique identifier of the organization associated with the queue."
+        },
+        {
+          "name": "emailAddress",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.identity.service.email",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/emailAddress",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "emailaddress",
+          "sourceOrdering": 5,
+          "displayName": "Incoming Email",
+          "description": "Email address that is associated with the queue.",
+          "maximumLength": 100
+        },
+        {
+          "name": "primaryUserId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "User.cdm.json/User",
+                        "systemUserId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/primaryUser/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "primaryuserid",
+          "sourceOrdering": 6,
+          "displayName": "Owner (deprecated)",
+          "description": "Unique identifier of the owner of the queue."
+        },
+        {
+          "name": "queueTypeCode",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/queueTypeCode",
+          "isNullable": true,
+          "dataFormat": "Int32",
+          "sourceName": "queuetypecode",
+          "sourceOrdering": 7,
+          "displayName": "Queue Type",
+          "description": "Type of queue that is automatically assigned when a user or queue is created. The type can be public, private, or work in process.",
+          "valueConstrainedToList": true,
+          "defaultValue": [
+            {
+              "languageTag": "en",
+              "displayText": "Default Value",
+              "attributeValue": "1",
+              "displayOrder": "0"
+            }
+          ]
+        },
+        {
+          "name": "queueTypeCode_display",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.reference.displayText",
+            {
+              "traitReference": "is.addedInSupportOf",
+              "arguments": [
+                "queueTypeCode"
+              ]
+            }
+          ],
+          "attributeContext": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/queueTypeCode/_generatedAttributeSet/_generatedAttributeRound0/supporting_queueTypeCode",
+          "isReadOnly": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.identity.name",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "required"
+              ]
+            }
+          ],
+          "attributeContext": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/name",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "name",
+          "sourceOrdering": 8,
+          "displayName": "Name",
+          "description": "Name of the queue.",
+          "maximumLength": 200
+        },
+        {
+          "name": "description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/description",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "description",
+          "sourceOrdering": 9,
+          "displayName": "Description",
+          "description": "Description of the queue.",
+          "maximumLength": 2000
+        },
+        {
+          "name": "queueSemantics",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/queueSemantics",
+          "isNullable": true,
+          "dataFormat": "Int32",
+          "sourceName": "queuesemantics",
+          "sourceOrdering": 10,
+          "displayName": "Queue Semantics",
+          "description": "For internal use only.",
+          "maximumValue": "1000000000",
+          "minimumValue": "0"
+        },
+        {
+          "name": "createdOn",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date",
+            "is.dataFormat.time",
+            "means.measurement.time",
+            "means.measurement.date.creation",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/createdOn",
+          "isNullable": true,
+          "dataFormat": "DateTime",
+          "sourceName": "createdon",
+          "sourceOrdering": 11,
+          "displayName": "Created On",
+          "description": "Date and time when the queue was created."
+        },
+        {
+          "name": "createdBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "User.cdm.json/User",
+                        "systemUserId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdBy/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "createdby",
+          "sourceOrdering": 12,
+          "displayName": "Created By",
+          "description": "Unique identifier of the user who created the queue record."
+        },
+        {
+          "name": "modifiedBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "User.cdm.json/User",
+                        "systemUserId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedBy/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "modifiedby",
+          "sourceOrdering": 13,
+          "displayName": "Modified By",
+          "description": "Unique identifier of the user who last modified the queue."
+        },
+        {
+          "name": "modifiedOn",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date",
+            "is.dataFormat.time",
+            "means.measurement.time",
+            "means.measurement.date.modify",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/modifiedOn",
+          "isNullable": true,
+          "dataFormat": "DateTime",
+          "sourceName": "modifiedon",
+          "sourceOrdering": 14,
+          "displayName": "Modified On",
+          "description": "Date and time when the queue was last modified."
+        },
+        {
+          "name": "versionNumber",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            "is.dataFormat.big",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/versionNumber",
+          "isNullable": true,
+          "dataFormat": "Int64",
+          "sourceName": "versionnumber",
+          "sourceOrdering": 16,
+          "displayName": "Version Number",
+          "description": "Version number of the queue."
+        },
+        {
+          "name": "ignoreUnsolicitedEmail",
+          "appliedTraits": [
+            "is.dataFormat.boolean",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ignoreUnsolicitedEmail",
+          "isNullable": true,
+          "dataFormat": "Boolean",
+          "sourceName": "ignoreunsolicitedemail",
+          "sourceOrdering": 28,
+          "displayName": "Convert To Email Activities",
+          "description": "Information that specifies whether a queue is to ignore unsolicited email (deprecated)."
+        },
+        {
+          "name": "isFaxQueue",
+          "appliedTraits": [
+            "is.dataFormat.boolean",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/isFaxQueue",
+          "isNullable": true,
+          "dataFormat": "Boolean",
+          "sourceName": "isfaxqueue",
+          "sourceOrdering": 29,
+          "displayName": "Fax Queue",
+          "description": "Indication of whether a queue is the fax delivery queue."
+        },
+        {
+          "name": "emailPassword",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.identity.service.email",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/emailPassword",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "emailpassword",
+          "sourceOrdering": 32,
+          "displayName": "Password (Obsolete)",
+          "description": "This attribute is no longer used. The data is now in the Mailbox.Password attribute.",
+          "maximumLength": 200
+        },
+        {
+          "name": "incomingEmailDeliveryMethod",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            }
+          ],
+          "attributeContext": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/incomingEmailDeliveryMethod",
+          "dataFormat": "Int32",
+          "sourceName": "incomingemaildeliverymethod",
+          "sourceOrdering": 33,
+          "displayName": "Incoming Email Delivery Method",
+          "description": "Incoming email delivery method for the queue.",
+          "valueConstrainedToList": true,
+          "defaultValue": [
+            {
+              "languageTag": "en",
+              "displayText": "None",
+              "attributeValue": "0",
+              "displayOrder": "0"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Server-Side Synchronization or Email Router",
+              "attributeValue": "2",
+              "displayOrder": "1"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Forward Mailbox",
+              "attributeValue": "3",
+              "displayOrder": "2"
+            }
+          ]
+        },
+        {
+          "name": "incomingEmailDeliveryMethod_display",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.reference.displayText",
+            {
+              "traitReference": "is.addedInSupportOf",
+              "arguments": [
+                "incomingEmailDeliveryMethod"
+              ]
+            }
+          ],
+          "attributeContext": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/incomingEmailDeliveryMethod/_generatedAttributeSet/_generatedAttributeRound0/supporting_incomingEmailDeliveryMethod",
+          "isReadOnly": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "emailUsername",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.identity.name",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/emailUsername",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "emailusername",
+          "sourceOrdering": 34,
+          "displayName": "User Name (Obsolete)",
+          "description": "This attribute is no longer used. The data is now in the Mailbox.UserName attribute.",
+          "maximumLength": 200
+        },
+        {
+          "name": "outgoingEmailDeliveryMethod",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            }
+          ],
+          "attributeContext": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/outgoingEmailDeliveryMethod",
+          "dataFormat": "Int32",
+          "sourceName": "outgoingemaildeliverymethod",
+          "sourceOrdering": 35,
+          "displayName": "Outgoing Email Delivery Method",
+          "description": "Outgoing email delivery method for the queue.",
+          "valueConstrainedToList": true,
+          "defaultValue": [
+            {
+              "languageTag": "en",
+              "displayText": "None",
+              "attributeValue": "0",
+              "displayOrder": "0"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Server-Side Synchronization or Email Router",
+              "attributeValue": "2",
+              "displayOrder": "1"
+            }
+          ]
+        },
+        {
+          "name": "outgoingEmailDeliveryMethod_display",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.reference.displayText",
+            {
+              "traitReference": "is.addedInSupportOf",
+              "arguments": [
+                "outgoingEmailDeliveryMethod"
+              ]
+            }
+          ],
+          "attributeContext": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/outgoingEmailDeliveryMethod/_generatedAttributeSet/_generatedAttributeRound0/supporting_outgoingEmailDeliveryMethod",
+          "isReadOnly": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "allowEmailCredentials",
+          "appliedTraits": [
+            "is.dataFormat.boolean",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            }
+          ],
+          "attributeContext": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/allowEmailCredentials",
+          "dataFormat": "Boolean",
+          "sourceName": "allowemailcredentials",
+          "sourceOrdering": 36,
+          "displayName": "Allow to Use Credentials for Email Processing (Obsolete)",
+          "description": "This attribute is no longer used. The data is now in the Mailbox.AllowEmailConnectorToUseCredentials attribute."
+        },
+        {
+          "name": "incomingEmailFilteringMethod",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            }
+          ],
+          "attributeContext": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/incomingEmailFilteringMethod",
+          "dataFormat": "Int32",
+          "sourceName": "incomingemailfilteringmethod",
+          "sourceOrdering": 37,
+          "displayName": "Convert Incoming Email To Activities",
+          "description": "Convert Incoming Email To Activities",
+          "valueConstrainedToList": true,
+          "defaultValue": [
+            {
+              "languageTag": "en",
+              "displayText": "All email messages",
+              "attributeValue": "0",
+              "displayOrder": "0"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Email messages in response to Dynamics 365 email",
+              "attributeValue": "1",
+              "displayOrder": "1"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Email messages from Dynamics 365 Leads, Contacts and Accounts",
+              "attributeValue": "2",
+              "displayOrder": "2"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Email messages from Dynamics 365 records that are email enabled",
+              "attributeValue": "3",
+              "displayOrder": "3"
+            }
+          ]
+        },
+        {
+          "name": "incomingEmailFilteringMethod_display",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.reference.displayText",
+            {
+              "traitReference": "is.addedInSupportOf",
+              "arguments": [
+                "incomingEmailFilteringMethod"
+              ]
+            }
+          ],
+          "attributeContext": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/incomingEmailFilteringMethod/_generatedAttributeSet/_generatedAttributeRound0/supporting_incomingEmailFilteringMethod",
+          "isReadOnly": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ownerId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            "is.CDS.standard",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "User.cdm.json/User",
+                        "systemUserId"
+                      ],
+                      [
+                        "Team.cdm.json/Team",
+                        "teamId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            },
+            "is.CDS.owner"
+          ],
+          "attributeContext": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute/ownerIdAttribute/owner/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid",
+          "sourceName": "ownerid",
+          "displayName": "Owner",
+          "description": "Owner Id"
+        },
+        {
+          "name": "ownerIdType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.entityName",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            },
+            "is.linkedEntity.name",
+            "is.CDS.owner"
+          ],
+          "attributeContext": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute/ownerIdAttribute/owner/_generatedAttributeSet/_generatedAttributeRound0/_selectedEntityName",
+          "isReadOnly": true,
+          "dataFormat": "String",
+          "sourceName": "owneridtype",
+          "displayName": "Owner Type",
+          "description": "The type of owner, either User or Team."
+        },
+        {
+          "name": "overriddenCreatedOn",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date",
+            "is.dataFormat.time",
+            "means.measurement.time",
+            "means.measurement.date.creation",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/overriddenCreatedOn",
+          "isNullable": true,
+          "dataFormat": "DateTime",
+          "sourceName": "overriddencreatedon",
+          "sourceOrdering": 46,
+          "displayName": "Record Created On",
+          "description": "Date and time that the record was migrated."
+        },
+        {
+          "name": "statusCode",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            {
+              "traitReference": "is.correlatedWith",
+              "arguments": [
+                "stateCode"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            }
+          ],
+          "attributeContext": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/statusCode",
+          "dataFormat": "Int32",
+          "sourceName": "statuscode",
+          "sourceOrdering": 47,
+          "displayName": "Status Reason",
+          "description": "Reason for the status of the queue.",
+          "defaultValue": [
+            {
+              "languageTag": "en",
+              "displayText": "Inactive",
+              "attributeValue": "2",
+              "displayOrder": "0",
+              "correlatedValue": "1"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Active",
+              "attributeValue": "1",
+              "displayOrder": "1",
+              "correlatedValue": "0"
+            }
+          ]
+        },
+        {
+          "name": "statusCode_display",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.reference.displayText",
+            {
+              "traitReference": "is.addedInSupportOf",
+              "arguments": [
+                "statusCode"
+              ]
+            }
+          ],
+          "attributeContext": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/statusCode/_generatedAttributeSet/_generatedAttributeRound0/supporting_statusCode",
+          "isReadOnly": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "owningBusinessUnit",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "BusinessUnit.cdm.json/BusinessUnit",
+                        "businessUnitId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/BusinessUnit_owningBusinessUnit/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "owningbusinessunit",
+          "sourceOrdering": 48,
+          "displayName": "Owning Business Unit",
+          "description": "Unique identifier of the business unit that owns the queue."
+        },
+        {
+          "name": "owningUser",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/owningUser",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "owninguser",
+          "sourceOrdering": 49,
+          "displayName": "Owning User",
+          "description": "Unique identifier of the user who owns the queue."
+        },
+        {
+          "name": "stateCode",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            {
+              "traitReference": "means.entityState",
+              "arguments": [
+                "Queue_Resolved/(resolvedAttributes)/stateCode"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            }
+          ],
+          "attributeContext": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/stateCode",
+          "dataFormat": "Int32",
+          "sourceName": "statecode",
+          "sourceOrdering": 50,
+          "displayName": "Status",
+          "description": "Status of the queue.",
+          "valueConstrainedToList": true,
+          "defaultValue": [
+            {
+              "languageTag": "en",
+              "displayText": "Active",
+              "attributeValue": "0",
+              "displayOrder": "0"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Inactive",
+              "attributeValue": "1",
+              "displayOrder": "1"
+            }
+          ]
+        },
+        {
+          "name": "stateCode_display",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.reference.displayText",
+            {
+              "traitReference": "is.addedInSupportOf",
+              "arguments": [
+                "stateCode"
+              ]
+            }
+          ],
+          "attributeContext": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/stateCode/_generatedAttributeSet/_generatedAttributeRound0/supporting_stateCode",
+          "isReadOnly": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "createdOnBehalfBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "User.cdm.json/User",
+                        "systemUserId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdOnBehalfBy/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "createdonbehalfby",
+          "sourceOrdering": 56,
+          "displayName": "Created By (Delegate)",
+          "description": "Unique identifier of the delegate user who created the queue."
+        },
+        {
+          "name": "modifiedOnBehalfBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "User.cdm.json/User",
+                        "systemUserId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedOnBehalfBy/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "modifiedonbehalfby",
+          "sourceOrdering": 60,
+          "displayName": "Modified By (Delegate)",
+          "description": "Unique identifier of the delegate user who last modified the queue."
+        },
+        {
+          "name": "numberOfItems",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/numberOfItems",
+          "isNullable": true,
+          "dataFormat": "Int32",
+          "sourceName": "numberofitems",
+          "sourceOrdering": 74,
+          "displayName": "Queue Items",
+          "description": "Number of Queue items associated with the queue.",
+          "maximumValue": "2147483647",
+          "minimumValue": "-2147483648"
+        },
+        {
+          "name": "numberOfMembers",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/numberOfMembers",
+          "isNullable": true,
+          "dataFormat": "Int32",
+          "sourceName": "numberofmembers",
+          "sourceOrdering": 75,
+          "displayName": "No. of Members",
+          "description": "Number of Members associated with the queue.",
+          "maximumValue": "2147483647",
+          "minimumValue": "-2147483648"
+        },
+        {
+          "name": "importSequenceNumber",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/importSequenceNumber",
+          "isNullable": true,
+          "dataFormat": "Int32",
+          "sourceName": "importsequencenumber",
+          "sourceOrdering": 80,
+          "displayName": "Import Sequence Number",
+          "description": "Unique identifier of the data import or data migration that created this record.",
+          "maximumValue": "2147483647",
+          "minimumValue": "-2147483648"
+        },
+        {
+          "name": "owningTeam",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/owningTeam",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "owningteam",
+          "sourceOrdering": 81,
+          "displayName": "Owning Team",
+          "description": "Unique identifier of the team who owns the queue."
+        },
+        {
+          "name": "transactionCurrencyId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "Currency.cdm.json/Currency",
+                        "transactionCurrencyId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/transactionCurrency/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "transactioncurrencyid",
+          "sourceOrdering": 82,
+          "displayName": "Currency",
+          "description": "Unique identifier of the currency associated with the queue."
+        },
+        {
+          "name": "exchangeRate",
+          "appliedTraits": [
+            {
+              "traitReference": "is.dataFormat.numeric.shaped"
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/exchangeRate",
+          "isNullable": true,
+          "dataFormat": "Decimal",
+          "sourceName": "exchangerate",
+          "sourceOrdering": 84,
+          "displayName": "Exchange Rate",
+          "description": "Exchange rate for the currency associated with the queue with respect to the base currency.",
+          "maximumValue": "100000000000",
+          "minimumValue": "1E-10"
+        },
+        {
+          "name": "emailRouterAccessApproval",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            }
+          ],
+          "attributeContext": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/emailRouterAccessApproval",
+          "dataFormat": "Int32",
+          "sourceName": "emailrouteraccessapproval",
+          "sourceOrdering": 111,
+          "displayName": "Primary Email Status",
+          "description": "Shows the status of the primary email address.",
+          "valueConstrainedToList": true,
+          "defaultValue": [
+            {
+              "languageTag": "en",
+              "displayText": "Empty",
+              "attributeValue": "0",
+              "displayOrder": "0"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Approved",
+              "attributeValue": "1",
+              "displayOrder": "1"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Pending Approval",
+              "attributeValue": "2",
+              "displayOrder": "2"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Rejected",
+              "attributeValue": "3",
+              "displayOrder": "3"
+            }
+          ]
+        },
+        {
+          "name": "emailRouterAccessApproval_display",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.reference.displayText",
+            {
+              "traitReference": "is.addedInSupportOf",
+              "arguments": [
+                "emailRouterAccessApproval"
+              ]
+            }
+          ],
+          "attributeContext": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/emailRouterAccessApproval/_generatedAttributeSet/_generatedAttributeRound0/supporting_emailRouterAccessApproval",
+          "isReadOnly": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "defaultMailbox",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/defaultMailbox",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "defaultmailbox",
+          "sourceOrdering": 113,
+          "displayName": "Mailbox",
+          "description": "Select the mailbox associated with this queue."
+        },
+        {
+          "name": "entityImageId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/entityImageId",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "entityimageid",
+          "sourceOrdering": 115,
+          "displayName": "Entity Image Id",
+          "description": "For internal use only."
+        },
+        {
+          "name": "isEmailAddressApprovedByO365Admin",
+          "appliedTraits": [
+            "is.dataFormat.boolean",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            }
+          ],
+          "attributeContext": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/isEmailAddressApprovedByO365Admin",
+          "dataFormat": "Boolean",
+          "sourceName": "isemailaddressapprovedbyo365admin",
+          "sourceOrdering": 119,
+          "displayName": "Email Address O365 Admin Approval Status",
+          "description": "Shows the status of approval of the email address by O365 Admin."
+        },
+        {
+          "name": "queueViewType",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            }
+          ],
+          "attributeContext": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/queueViewType",
+          "dataFormat": "Int32",
+          "sourceName": "queueviewtype",
+          "sourceOrdering": 125,
+          "displayName": "Type",
+          "description": "Select whether the queue is public or private. A public queue can be viewed by all. A private queue can be viewed only by the members added to the queue.",
+          "valueConstrainedToList": true,
+          "defaultValue": [
+            {
+              "languageTag": "en",
+              "displayText": "Public",
+              "attributeValue": "0",
+              "displayOrder": "0"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Private",
+              "attributeValue": "1",
+              "displayOrder": "1"
+            }
+          ]
+        },
+        {
+          "name": "queueViewType_display",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.reference.displayText",
+            {
+              "traitReference": "is.addedInSupportOf",
+              "arguments": [
+                "queueViewType"
+              ]
+            }
+          ],
+          "attributeContext": "Queue_Resolved/attributeContext/Queue_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/queueViewType/_generatedAttributeSet/_generatedAttributeRound0/supporting_queueViewType",
+          "isReadOnly": true,
+          "dataFormat": "String"
+        }
+      ],
+      "sourceName": "Queue",
+      "displayName": "Queue",
+      "description": "A list of records that require action, such as accounts, activities, and cases.",
+      "version": "1.3",
+      "cdmSchemas": [
+        "/core/applicationCommon/Queue.cdm.json/Queue/hasAttributes/attributesAddedAtThisScope"
+      ]
+    }
+  ],
+  "documentVersion": "1.3"
+}

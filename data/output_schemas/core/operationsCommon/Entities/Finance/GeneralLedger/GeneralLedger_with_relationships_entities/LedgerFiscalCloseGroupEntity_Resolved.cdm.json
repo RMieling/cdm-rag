@@ -1,0 +1,206 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "LedgerFiscalCloseGroupEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "LedgerFiscalCloseGroupEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "LedgerFiscalCloseGroupEntity_Resolved",
+        "definition": "resolvedFrom/LedgerFiscalCloseGroupEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "LedgerFiscalCloseGroupEntity_Resolved/attributeContext/LedgerFiscalCloseGroupEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "LedgerFiscalCloseGroupEntity_Resolved/attributeContext/LedgerFiscalCloseGroupEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "LedgerFiscalCloseGroupEntity_Resolved/attributeContext/LedgerFiscalCloseGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerFiscalCloseGroupEntity/hasAttributes/Name",
+            "contents": [
+              "LedgerFiscalCloseGroupEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "FiscalCalendar",
+            "parent": "LedgerFiscalCloseGroupEntity_Resolved/attributeContext/LedgerFiscalCloseGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerFiscalCloseGroupEntity/hasAttributes/FiscalCalendar",
+            "contents": [
+              "LedgerFiscalCloseGroupEntity_Resolved/hasAttributes/FiscalCalendar"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CalendarId",
+            "parent": "LedgerFiscalCloseGroupEntity_Resolved/attributeContext/LedgerFiscalCloseGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerFiscalCloseGroupEntity/hasAttributes/CalendarId",
+            "contents": [
+              "LedgerFiscalCloseGroupEntity_Resolved/hasAttributes/CalendarId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_LedgerFiscalCloseGroupRelationship",
+            "parent": "LedgerFiscalCloseGroupEntity_Resolved/attributeContext/LedgerFiscalCloseGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerFiscalCloseGroupEntity/hasAttributes/BackingTable_LedgerFiscalCloseGroupRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "LedgerFiscalCloseGroup",
+                "parent": "LedgerFiscalCloseGroupEntity_Resolved/attributeContext/LedgerFiscalCloseGroupEntity_Resolved/BackingTable_LedgerFiscalCloseGroupRelationship",
+                "definition": "resolvedFrom/LedgerFiscalCloseGroup",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "LedgerFiscalCloseGroupEntity_Resolved/attributeContext/LedgerFiscalCloseGroupEntity_Resolved/BackingTable_LedgerFiscalCloseGroupRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "LedgerFiscalCloseGroupEntity_Resolved/attributeContext/LedgerFiscalCloseGroupEntity_Resolved/BackingTable_LedgerFiscalCloseGroupRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "LedgerFiscalCloseGroupEntity_Resolved/attributeContext/LedgerFiscalCloseGroupEntity_Resolved/BackingTable_LedgerFiscalCloseGroupRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "LedgerFiscalCloseGroupEntity_Resolved/hasAttributes/BackingTable_LedgerFiscalCloseGroupRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerFiscalCloseGroupEntity_Resolved/attributeContext/LedgerFiscalCloseGroupEntity_Resolved/Name",
+          "dataFormat": "String"
+        },
+        {
+          "name": "FiscalCalendar",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerFiscalCloseGroupEntity_Resolved/attributeContext/LedgerFiscalCloseGroupEntity_Resolved/FiscalCalendar",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "CalendarId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerFiscalCloseGroupEntity_Resolved/attributeContext/LedgerFiscalCloseGroupEntity_Resolved/CalendarId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_LedgerFiscalCloseGroupRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/LedgerFiscalCloseGroup.cdm.json/LedgerFiscalCloseGroup",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "LedgerFiscalCloseGroupEntity_Resolved/attributeContext/LedgerFiscalCloseGroupEntity_Resolved/BackingTable_LedgerFiscalCloseGroupRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Fiscal close group",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

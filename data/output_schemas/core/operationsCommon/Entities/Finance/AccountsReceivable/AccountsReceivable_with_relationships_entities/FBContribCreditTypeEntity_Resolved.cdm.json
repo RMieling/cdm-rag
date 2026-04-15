@@ -1,0 +1,228 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "FBContribCreditTypeEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "FBContribCreditTypeEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "FBContribCreditTypeEntity_Resolved",
+        "definition": "resolvedFrom/FBContribCreditTypeEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "FBContribCreditTypeEntity_Resolved/attributeContext/FBContribCreditTypeEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "FBContribCreditTypeEntity_Resolved/attributeContext/FBContribCreditTypeEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CreditType",
+            "parent": "FBContribCreditTypeEntity_Resolved/attributeContext/FBContribCreditTypeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/FBContribCreditTypeEntity/hasAttributes/CreditType",
+            "contents": [
+              "FBContribCreditTypeEntity_Resolved/hasAttributes/CreditType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "FBContribCreditTypeEntity_Resolved/attributeContext/FBContribCreditTypeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/FBContribCreditTypeEntity/hasAttributes/Description",
+            "contents": [
+              "FBContribCreditTypeEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ValidFromDate",
+            "parent": "FBContribCreditTypeEntity_Resolved/attributeContext/FBContribCreditTypeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/FBContribCreditTypeEntity/hasAttributes/ValidFromDate",
+            "contents": [
+              "FBContribCreditTypeEntity_Resolved/hasAttributes/ValidFromDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ValidToDate",
+            "parent": "FBContribCreditTypeEntity_Resolved/attributeContext/FBContribCreditTypeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/FBContribCreditTypeEntity/hasAttributes/ValidToDate",
+            "contents": [
+              "FBContribCreditTypeEntity_Resolved/hasAttributes/ValidToDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_FBContribCreditType_BRRelationship",
+            "parent": "FBContribCreditTypeEntity_Resolved/attributeContext/FBContribCreditTypeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/FBContribCreditTypeEntity/hasAttributes/BackingTable_FBContribCreditType_BRRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "FBContribCreditType_BR",
+                "parent": "FBContribCreditTypeEntity_Resolved/attributeContext/FBContribCreditTypeEntity_Resolved/BackingTable_FBContribCreditType_BRRelationship",
+                "definition": "resolvedFrom/FBContribCreditType_BR",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "FBContribCreditTypeEntity_Resolved/attributeContext/FBContribCreditTypeEntity_Resolved/BackingTable_FBContribCreditType_BRRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "FBContribCreditTypeEntity_Resolved/attributeContext/FBContribCreditTypeEntity_Resolved/BackingTable_FBContribCreditType_BRRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "FBContribCreditTypeEntity_Resolved/attributeContext/FBContribCreditTypeEntity_Resolved/BackingTable_FBContribCreditType_BRRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "FBContribCreditTypeEntity_Resolved/hasAttributes/BackingTable_FBContribCreditType_BRRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "CreditType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "FBContribCreditTypeEntity_Resolved/attributeContext/FBContribCreditTypeEntity_Resolved/CreditType",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "FBContribCreditTypeEntity_Resolved/attributeContext/FBContribCreditTypeEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ValidFromDate",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "FBContribCreditTypeEntity_Resolved/attributeContext/FBContribCreditTypeEntity_Resolved/ValidFromDate",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ValidToDate",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "FBContribCreditTypeEntity_Resolved/attributeContext/FBContribCreditTypeEntity_Resolved/ValidToDate",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_FBContribCreditType_BRRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/FiscalBooksBrazil/Miscellaneous/FBContribCreditType_BR.cdm.json/FBContribCreditType_BR",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "FBContribCreditTypeEntity_Resolved/attributeContext/FBContribCreditTypeEntity_Resolved/BackingTable_FBContribCreditType_BRRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Credit type codes table",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

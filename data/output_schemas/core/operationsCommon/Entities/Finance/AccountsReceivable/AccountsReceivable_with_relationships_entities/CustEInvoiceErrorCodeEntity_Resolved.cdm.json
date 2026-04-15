@@ -1,0 +1,284 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "CustEInvoiceErrorCodeEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "CustEInvoiceErrorCodeEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "CustEInvoiceErrorCodeEntity_Resolved",
+        "definition": "resolvedFrom/CustEInvoiceErrorCodeEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "CustEInvoiceErrorCodeEntity_Resolved/attributeContext/CustEInvoiceErrorCodeEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "CustEInvoiceErrorCodeEntity_Resolved/attributeContext/CustEInvoiceErrorCodeEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Code",
+            "parent": "CustEInvoiceErrorCodeEntity_Resolved/attributeContext/CustEInvoiceErrorCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustEInvoiceErrorCodeEntity/hasAttributes/Code",
+            "contents": [
+              "CustEInvoiceErrorCodeEntity_Resolved/hasAttributes/Code"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ErrorText",
+            "parent": "CustEInvoiceErrorCodeEntity_Resolved/attributeContext/CustEInvoiceErrorCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustEInvoiceErrorCodeEntity/hasAttributes/ErrorText",
+            "contents": [
+              "CustEInvoiceErrorCodeEntity_Resolved/hasAttributes/ErrorText"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Change",
+            "parent": "CustEInvoiceErrorCodeEntity_Resolved/attributeContext/CustEInvoiceErrorCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustEInvoiceErrorCodeEntity/hasAttributes/Change",
+            "contents": [
+              "CustEInvoiceErrorCodeEntity_Resolved/hasAttributes/Change"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_CustEinvoiceIntegrationErrorRelationship",
+            "parent": "CustEInvoiceErrorCodeEntity_Resolved/attributeContext/CustEInvoiceErrorCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustEInvoiceErrorCodeEntity/hasAttributes/BackingTable_CustEinvoiceIntegrationErrorRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CustEinvoiceIntegrationError",
+                "parent": "CustEInvoiceErrorCodeEntity_Resolved/attributeContext/CustEInvoiceErrorCodeEntity_Resolved/BackingTable_CustEinvoiceIntegrationErrorRelationship",
+                "definition": "resolvedFrom/CustEinvoiceIntegrationError",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CustEInvoiceErrorCodeEntity_Resolved/attributeContext/CustEInvoiceErrorCodeEntity_Resolved/BackingTable_CustEinvoiceIntegrationErrorRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CustEInvoiceErrorCodeEntity_Resolved/attributeContext/CustEInvoiceErrorCodeEntity_Resolved/BackingTable_CustEinvoiceIntegrationErrorRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CustEInvoiceErrorCodeEntity_Resolved/attributeContext/CustEInvoiceErrorCodeEntity_Resolved/BackingTable_CustEinvoiceIntegrationErrorRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CustEInvoiceErrorCodeEntity_Resolved/hasAttributes/BackingTable_CustEinvoiceIntegrationErrorRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "CustEInvoiceErrorCodeEntity_Resolved/attributeContext/CustEInvoiceErrorCodeEntity_Resolved",
+            "definition": "resolvedFrom/CustEInvoiceErrorCodeEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "CustEInvoiceErrorCodeEntity_Resolved/attributeContext/CustEInvoiceErrorCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CustEInvoiceErrorCodeEntity_Resolved/attributeContext/CustEInvoiceErrorCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CustEInvoiceErrorCodeEntity_Resolved/attributeContext/CustEInvoiceErrorCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CustEInvoiceErrorCodeEntity_Resolved/attributeContext/CustEInvoiceErrorCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CustEInvoiceErrorCodeEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Code",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustEInvoiceErrorCodeEntity_Resolved/attributeContext/CustEInvoiceErrorCodeEntity_Resolved/Code",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Error Code"
+        },
+        {
+          "name": "ErrorText",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustEInvoiceErrorCodeEntity_Resolved/attributeContext/CustEInvoiceErrorCodeEntity_Resolved/ErrorText",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Error Text"
+        },
+        {
+          "name": "Change",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustEInvoiceErrorCodeEntity_Resolved/attributeContext/CustEInvoiceErrorCodeEntity_Resolved/Change",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Change"
+        },
+        {
+          "name": "BackingTable_CustEinvoiceIntegrationErrorRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/AccountsReceivable/Transaction/CustEinvoiceIntegrationError.cdm.json/CustEinvoiceIntegrationError",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CustEInvoiceErrorCodeEntity_Resolved/attributeContext/CustEInvoiceErrorCodeEntity_Resolved/BackingTable_CustEinvoiceIntegrationErrorRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CustEInvoiceErrorCodeEntity_Resolved/attributeContext/CustEInvoiceErrorCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Error codes",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

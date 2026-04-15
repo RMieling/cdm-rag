@@ -1,0 +1,228 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "VendPaymentBIAccountingToSystemExchRate.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "VendPaymentBIAccountingToSystemExchRate_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "VendPaymentBIAccountingToSystemExchRate_Resolved",
+        "definition": "resolvedFrom/VendPaymentBIAccountingToSystemExchRate",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "VendPaymentBIAccountingToSystemExchRate_Resolved/attributeContext/VendPaymentBIAccountingToSystemExchRate_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "VendPaymentBIAccountingToSystemExchRate_Resolved/attributeContext/VendPaymentBIAccountingToSystemExchRate_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Company",
+            "parent": "VendPaymentBIAccountingToSystemExchRate_Resolved/attributeContext/VendPaymentBIAccountingToSystemExchRate_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendPaymentBIAccountingToSystemExchRate/hasAttributes/Company",
+            "contents": [
+              "VendPaymentBIAccountingToSystemExchRate_Resolved/hasAttributes/Company"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CrossRate",
+            "parent": "VendPaymentBIAccountingToSystemExchRate_Resolved/attributeContext/VendPaymentBIAccountingToSystemExchRate_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendPaymentBIAccountingToSystemExchRate/hasAttributes/CrossRate",
+            "contents": [
+              "VendPaymentBIAccountingToSystemExchRate_Resolved/hasAttributes/CrossRate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "GregorianDate",
+            "parent": "VendPaymentBIAccountingToSystemExchRate_Resolved/attributeContext/VendPaymentBIAccountingToSystemExchRate_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendPaymentBIAccountingToSystemExchRate/hasAttributes/GregorianDate",
+            "contents": [
+              "VendPaymentBIAccountingToSystemExchRate_Resolved/hasAttributes/GregorianDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "AccountingCurrency",
+            "parent": "VendPaymentBIAccountingToSystemExchRate_Resolved/attributeContext/VendPaymentBIAccountingToSystemExchRate_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendPaymentBIAccountingToSystemExchRate/hasAttributes/AccountingCurrency",
+            "contents": [
+              "VendPaymentBIAccountingToSystemExchRate_Resolved/hasAttributes/AccountingCurrency"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_LedgerRelationship",
+            "parent": "VendPaymentBIAccountingToSystemExchRate_Resolved/attributeContext/VendPaymentBIAccountingToSystemExchRate_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendPaymentBIAccountingToSystemExchRate/hasAttributes/BackingTable_LedgerRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "Ledger",
+                "parent": "VendPaymentBIAccountingToSystemExchRate_Resolved/attributeContext/VendPaymentBIAccountingToSystemExchRate_Resolved/BackingTable_LedgerRelationship",
+                "definition": "resolvedFrom/Ledger",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "VendPaymentBIAccountingToSystemExchRate_Resolved/attributeContext/VendPaymentBIAccountingToSystemExchRate_Resolved/BackingTable_LedgerRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "VendPaymentBIAccountingToSystemExchRate_Resolved/attributeContext/VendPaymentBIAccountingToSystemExchRate_Resolved/BackingTable_LedgerRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "VendPaymentBIAccountingToSystemExchRate_Resolved/attributeContext/VendPaymentBIAccountingToSystemExchRate_Resolved/BackingTable_LedgerRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "VendPaymentBIAccountingToSystemExchRate_Resolved/hasAttributes/BackingTable_LedgerRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Company",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VendPaymentBIAccountingToSystemExchRate_Resolved/attributeContext/VendPaymentBIAccountingToSystemExchRate_Resolved/Company",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "CrossRate",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VendPaymentBIAccountingToSystemExchRate_Resolved/attributeContext/VendPaymentBIAccountingToSystemExchRate_Resolved/CrossRate",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "GregorianDate",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VendPaymentBIAccountingToSystemExchRate_Resolved/attributeContext/VendPaymentBIAccountingToSystemExchRate_Resolved/GregorianDate",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "AccountingCurrency",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VendPaymentBIAccountingToSystemExchRate_Resolved/attributeContext/VendPaymentBIAccountingToSystemExchRate_Resolved/AccountingCurrency",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_LedgerRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/Ledger.cdm.json/Ledger",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "VendPaymentBIAccountingToSystemExchRate_Resolved/attributeContext/VendPaymentBIAccountingToSystemExchRate_Resolved/BackingTable_LedgerRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Vendor accounting to system currency exchange rates",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

@@ -1,0 +1,288 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "CustCollectionsBIExpectedPayment.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "CustCollectionsBIExpectedPayment_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "CustCollectionsBIExpectedPayment_Resolved",
+        "definition": "resolvedFrom/CustCollectionsBIExpectedPayment",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "CustCollectionsBIExpectedPayment_Resolved/attributeContext/CustCollectionsBIExpectedPayment_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "CustCollectionsBIExpectedPayment_Resolved/attributeContext/CustCollectionsBIExpectedPayment_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "AccountNum",
+            "parent": "CustCollectionsBIExpectedPayment_Resolved/attributeContext/CustCollectionsBIExpectedPayment_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCollectionsBIExpectedPayment/hasAttributes/AccountNum",
+            "contents": [
+              "CustCollectionsBIExpectedPayment_Resolved/hasAttributes/AccountNum"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ExpectedPayDate",
+            "parent": "CustCollectionsBIExpectedPayment_Resolved/attributeContext/CustCollectionsBIExpectedPayment_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCollectionsBIExpectedPayment/hasAttributes/ExpectedPayDate",
+            "contents": [
+              "CustCollectionsBIExpectedPayment_Resolved/hasAttributes/ExpectedPayDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Company",
+            "parent": "CustCollectionsBIExpectedPayment_Resolved/attributeContext/CustCollectionsBIExpectedPayment_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCollectionsBIExpectedPayment/hasAttributes/Company",
+            "contents": [
+              "CustCollectionsBIExpectedPayment_Resolved/hasAttributes/Company"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "CustCollectionsBIExpectedPayment_Resolved/attributeContext/CustCollectionsBIExpectedPayment_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCollectionsBIExpectedPayment/hasAttributes/Name",
+            "contents": [
+              "CustCollectionsBIExpectedPayment_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Invoice",
+            "parent": "CustCollectionsBIExpectedPayment_Resolved/attributeContext/CustCollectionsBIExpectedPayment_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCollectionsBIExpectedPayment/hasAttributes/Invoice",
+            "contents": [
+              "CustCollectionsBIExpectedPayment_Resolved/hasAttributes/Invoice"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "SystemCurrencyAmounts",
+            "parent": "CustCollectionsBIExpectedPayment_Resolved/attributeContext/CustCollectionsBIExpectedPayment_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCollectionsBIExpectedPayment/hasAttributes/SystemCurrencyAmounts",
+            "contents": [
+              "CustCollectionsBIExpectedPayment_Resolved/hasAttributes/SystemCurrencyAmounts"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Voucher",
+            "parent": "CustCollectionsBIExpectedPayment_Resolved/attributeContext/CustCollectionsBIExpectedPayment_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCollectionsBIExpectedPayment/hasAttributes/Voucher",
+            "contents": [
+              "CustCollectionsBIExpectedPayment_Resolved/hasAttributes/Voucher"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "CustCollectionsBIExpectedPayment_Resolved/attributeContext/CustCollectionsBIExpectedPayment_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCollectionsBIExpectedPayment/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "CustCollectionsBIExpectedPayment_Resolved/attributeContext/CustCollectionsBIExpectedPayment_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CustCollectionsBIExpectedPayment_Resolved/attributeContext/CustCollectionsBIExpectedPayment_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CustCollectionsBIExpectedPayment_Resolved/attributeContext/CustCollectionsBIExpectedPayment_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CustCollectionsBIExpectedPayment_Resolved/attributeContext/CustCollectionsBIExpectedPayment_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CustCollectionsBIExpectedPayment_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "AccountNum",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustCollectionsBIExpectedPayment_Resolved/attributeContext/CustCollectionsBIExpectedPayment_Resolved/AccountNum",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ExpectedPayDate",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustCollectionsBIExpectedPayment_Resolved/attributeContext/CustCollectionsBIExpectedPayment_Resolved/ExpectedPayDate",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Company",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustCollectionsBIExpectedPayment_Resolved/attributeContext/CustCollectionsBIExpectedPayment_Resolved/Company",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustCollectionsBIExpectedPayment_Resolved/attributeContext/CustCollectionsBIExpectedPayment_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Invoice",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustCollectionsBIExpectedPayment_Resolved/attributeContext/CustCollectionsBIExpectedPayment_Resolved/Invoice",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "SystemCurrencyAmounts",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustCollectionsBIExpectedPayment_Resolved/attributeContext/CustCollectionsBIExpectedPayment_Resolved/SystemCurrencyAmounts",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Voucher",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustCollectionsBIExpectedPayment_Resolved/attributeContext/CustCollectionsBIExpectedPayment_Resolved/Voucher",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CustCollectionsBIExpectedPayment_Resolved/attributeContext/CustCollectionsBIExpectedPayment_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Expected payments by date for customers",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

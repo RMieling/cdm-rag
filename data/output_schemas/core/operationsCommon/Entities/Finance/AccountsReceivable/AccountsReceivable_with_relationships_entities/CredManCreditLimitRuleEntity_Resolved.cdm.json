@@ -1,0 +1,261 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "CredManCreditLimitRuleEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "CredManCreditLimitRuleEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "CredManCreditLimitRuleEntity_Resolved",
+        "definition": "resolvedFrom/CredManCreditLimitRuleEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "CredManCreditLimitRuleEntity_Resolved/attributeContext/CredManCreditLimitRuleEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "CredManCreditLimitRuleEntity_Resolved/attributeContext/CredManCreditLimitRuleEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CurrencyCode",
+            "parent": "CredManCreditLimitRuleEntity_Resolved/attributeContext/CredManCreditLimitRuleEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CredManCreditLimitRuleEntity/hasAttributes/CurrencyCode",
+            "contents": [
+              "CredManCreditLimitRuleEntity_Resolved/hasAttributes/CurrencyCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "RiskGroupId",
+            "parent": "CredManCreditLimitRuleEntity_Resolved/attributeContext/CredManCreditLimitRuleEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CredManCreditLimitRuleEntity/hasAttributes/RiskGroupId",
+            "contents": [
+              "CredManCreditLimitRuleEntity_Resolved/hasAttributes/RiskGroupId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_CredManCreditLimitRuleRelationship",
+            "parent": "CredManCreditLimitRuleEntity_Resolved/attributeContext/CredManCreditLimitRuleEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CredManCreditLimitRuleEntity/hasAttributes/BackingTable_CredManCreditLimitRuleRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CredManCreditLimitRule",
+                "parent": "CredManCreditLimitRuleEntity_Resolved/attributeContext/CredManCreditLimitRuleEntity_Resolved/BackingTable_CredManCreditLimitRuleRelationship",
+                "definition": "resolvedFrom/CredManCreditLimitRule",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CredManCreditLimitRuleEntity_Resolved/attributeContext/CredManCreditLimitRuleEntity_Resolved/BackingTable_CredManCreditLimitRuleRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CredManCreditLimitRuleEntity_Resolved/attributeContext/CredManCreditLimitRuleEntity_Resolved/BackingTable_CredManCreditLimitRuleRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CredManCreditLimitRuleEntity_Resolved/attributeContext/CredManCreditLimitRuleEntity_Resolved/BackingTable_CredManCreditLimitRuleRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CredManCreditLimitRuleEntity_Resolved/hasAttributes/BackingTable_CredManCreditLimitRuleRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "CredManCreditLimitRuleEntity_Resolved/attributeContext/CredManCreditLimitRuleEntity_Resolved",
+            "definition": "resolvedFrom/CredManCreditLimitRuleEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "CredManCreditLimitRuleEntity_Resolved/attributeContext/CredManCreditLimitRuleEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CredManCreditLimitRuleEntity_Resolved/attributeContext/CredManCreditLimitRuleEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CredManCreditLimitRuleEntity_Resolved/attributeContext/CredManCreditLimitRuleEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CredManCreditLimitRuleEntity_Resolved/attributeContext/CredManCreditLimitRuleEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CredManCreditLimitRuleEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "CurrencyCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CredManCreditLimitRuleEntity_Resolved/attributeContext/CredManCreditLimitRuleEntity_Resolved/CurrencyCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "RiskGroupId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CredManCreditLimitRuleEntity_Resolved/attributeContext/CredManCreditLimitRuleEntity_Resolved/RiskGroupId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_CredManCreditLimitRuleRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/AccountsReceivable/WorksheetLine/CredManCreditLimitRule.cdm.json/CredManCreditLimitRule",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CredManCreditLimitRuleEntity_Resolved/attributeContext/CredManCreditLimitRuleEntity_Resolved/BackingTable_CredManCreditLimitRuleRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CredManCreditLimitRuleEntity_Resolved/attributeContext/CredManCreditLimitRuleEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Automatic credit limits",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

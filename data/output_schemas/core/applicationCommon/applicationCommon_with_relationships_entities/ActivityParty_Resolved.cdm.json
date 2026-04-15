@@ -1,0 +1,1464 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "ActivityParty.cdm.json",
+      "moniker": "resolvedFrom"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "ActivityParty_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "ActivityParty_Resolved",
+        "definition": "resolvedFrom/ActivityParty",
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CdmEntity",
+                "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/extends",
+                "definition": "resolvedFrom/CdmEntity"
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "attributesAddedAtThisScope",
+            "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved",
+            "definition": "resolvedFrom/ActivityParty/hasAttributes/attributesAddedAtThisScope",
+            "contents": [
+              {
+                "type": "attributeGroup",
+                "name": "attributesAddedAtThisScope",
+                "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope",
+                "definition": "resolvedFrom/ActivityParty/hasAttributes/attributesAddedAtThisScope",
+                "contents": [
+                  {
+                    "type": "attributeDefinition",
+                    "name": "activity",
+                    "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/ActivityParty/hasAttributes/attributesAddedAtThisScope/members/activity",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "Activity",
+                        "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activity",
+                        "definition": "resolvedFrom/ActivityParty/hasAttributes/attributesAddedAtThisScope/members/activity/entity/Activity",
+                        "contents": [
+                          {
+                            "type": "attributeDefinition",
+                            "name": "appointmentOption",
+                            "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activity/Activity",
+                            "definition": "resolvedFrom/ActivityParty/hasAttributes/attributesAddedAtThisScope/members/activity/entity/Activity/hasAttributes/appointmentOption",
+                            "contents": [
+                              {
+                                "type": "entity",
+                                "name": "Appointment",
+                                "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activity/Activity/appointmentOption",
+                                "definition": "resolvedFrom/Appointment",
+                                "appliedTraits": [
+                                  {
+                                    "traitReference": "is.ordered",
+                                    "arguments": [
+                                      "resolvedFrom/Appointment/(resolvedAttributes)/sortDate"
+                                    ]
+                                  },
+                                  {
+                                    "traitReference": "means.entityState",
+                                    "arguments": [
+                                      "resolvedFrom/Appointment/(resolvedAttributes)/stateCode"
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "activityOption",
+                            "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activity/Activity",
+                            "definition": "resolvedFrom/ActivityParty/hasAttributes/attributesAddedAtThisScope/members/activity/entity/Activity/hasAttributes/activityOption",
+                            "contents": [
+                              {
+                                "type": "entity",
+                                "name": "Activity",
+                                "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activity/Activity/activityOption",
+                                "definition": "resolvedFrom/Activity",
+                                "appliedTraits": [
+                                  {
+                                    "traitReference": "is.ordered",
+                                    "arguments": [
+                                      "resolvedFrom/Activity/(resolvedAttributes)/sortDate"
+                                    ]
+                                  },
+                                  {
+                                    "traitReference": "means.entityState",
+                                    "arguments": [
+                                      "resolvedFrom/Activity/(resolvedAttributes)/stateCode"
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "faxOption",
+                            "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activity/Activity",
+                            "definition": "resolvedFrom/ActivityParty/hasAttributes/attributesAddedAtThisScope/members/activity/entity/Activity/hasAttributes/faxOption",
+                            "contents": [
+                              {
+                                "type": "entity",
+                                "name": "Fax",
+                                "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activity/Activity/faxOption",
+                                "definition": "resolvedFrom/Fax",
+                                "appliedTraits": [
+                                  {
+                                    "traitReference": "is.ordered",
+                                    "arguments": [
+                                      "resolvedFrom/Fax/(resolvedAttributes)/sortDate"
+                                    ]
+                                  },
+                                  {
+                                    "traitReference": "means.entityState",
+                                    "arguments": [
+                                      "resolvedFrom/Fax/(resolvedAttributes)/stateCode"
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "taskOption",
+                            "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activity/Activity",
+                            "definition": "resolvedFrom/ActivityParty/hasAttributes/attributesAddedAtThisScope/members/activity/entity/Activity/hasAttributes/taskOption",
+                            "contents": [
+                              {
+                                "type": "entity",
+                                "name": "Task",
+                                "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activity/Activity/taskOption",
+                                "definition": "resolvedFrom/Task",
+                                "appliedTraits": [
+                                  {
+                                    "traitReference": "is.ordered",
+                                    "arguments": [
+                                      "resolvedFrom/Task/(resolvedAttributes)/sortDate"
+                                    ]
+                                  },
+                                  {
+                                    "traitReference": "means.entityState",
+                                    "arguments": [
+                                      "resolvedFrom/Task/(resolvedAttributes)/stateCode"
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "socialActivityOption",
+                            "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activity/Activity",
+                            "definition": "resolvedFrom/ActivityParty/hasAttributes/attributesAddedAtThisScope/members/activity/entity/Activity/hasAttributes/socialActivityOption",
+                            "contents": [
+                              {
+                                "type": "entity",
+                                "name": "SocialActivity",
+                                "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activity/Activity/socialActivityOption",
+                                "definition": "resolvedFrom/SocialActivity",
+                                "appliedTraits": [
+                                  {
+                                    "traitReference": "is.ordered",
+                                    "arguments": [
+                                      "resolvedFrom/SocialActivity/(resolvedAttributes)/sortDate"
+                                    ]
+                                  },
+                                  {
+                                    "traitReference": "means.entityState",
+                                    "arguments": [
+                                      "resolvedFrom/SocialActivity/(resolvedAttributes)/stateCode"
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "letterOption",
+                            "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activity/Activity",
+                            "definition": "resolvedFrom/ActivityParty/hasAttributes/attributesAddedAtThisScope/members/activity/entity/Activity/hasAttributes/letterOption",
+                            "contents": [
+                              {
+                                "type": "entity",
+                                "name": "Letter",
+                                "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activity/Activity/letterOption",
+                                "definition": "resolvedFrom/Letter",
+                                "appliedTraits": [
+                                  {
+                                    "traitReference": "is.ordered",
+                                    "arguments": [
+                                      "resolvedFrom/Letter/(resolvedAttributes)/sortDate"
+                                    ]
+                                  },
+                                  {
+                                    "traitReference": "means.entityState",
+                                    "arguments": [
+                                      "resolvedFrom/Letter/(resolvedAttributes)/stateCode"
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "emailOption",
+                            "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activity/Activity",
+                            "definition": "resolvedFrom/ActivityParty/hasAttributes/attributesAddedAtThisScope/members/activity/entity/Activity/hasAttributes/emailOption",
+                            "contents": [
+                              {
+                                "type": "entity",
+                                "name": "Email",
+                                "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activity/Activity/emailOption",
+                                "definition": "resolvedFrom/Email",
+                                "appliedTraits": [
+                                  {
+                                    "traitReference": "is.ordered",
+                                    "arguments": [
+                                      "resolvedFrom/Email/(resolvedAttributes)/sortDate"
+                                    ]
+                                  },
+                                  {
+                                    "traitReference": "means.entityState",
+                                    "arguments": [
+                                      "resolvedFrom/Email/(resolvedAttributes)/stateCode"
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "PhoneCallOption",
+                            "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activity/Activity",
+                            "definition": "resolvedFrom/ActivityParty/hasAttributes/attributesAddedAtThisScope/members/activity/entity/Activity/hasAttributes/PhoneCallOption",
+                            "contents": [
+                              {
+                                "type": "entity",
+                                "name": "PhoneCall",
+                                "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activity/Activity/PhoneCallOption",
+                                "definition": "resolvedFrom/PhoneCall",
+                                "appliedTraits": [
+                                  {
+                                    "traitReference": "is.ordered",
+                                    "arguments": [
+                                      "resolvedFrom/PhoneCall/(resolvedAttributes)/sortDate"
+                                    ]
+                                  },
+                                  {
+                                    "traitReference": "means.entityState",
+                                    "arguments": [
+                                      "resolvedFrom/PhoneCall/(resolvedAttributes)/stateCode"
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "recurringAppointmentOption",
+                            "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activity/Activity",
+                            "definition": "resolvedFrom/ActivityParty/hasAttributes/attributesAddedAtThisScope/members/activity/entity/Activity/hasAttributes/recurringAppointmentOption",
+                            "contents": [
+                              {
+                                "type": "entity",
+                                "name": "RecurringAppointment",
+                                "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activity/Activity/recurringAppointmentOption",
+                                "definition": "resolvedFrom/RecurringAppointment",
+                                "appliedTraits": [
+                                  {
+                                    "traitReference": "is.ordered",
+                                    "arguments": [
+                                      "resolvedFrom/RecurringAppointment/(resolvedAttributes)/sortDate"
+                                    ]
+                                  },
+                                  {
+                                    "traitReference": "means.entityState",
+                                    "arguments": [
+                                      "resolvedFrom/RecurringAppointment/(resolvedAttributes)/stateCode"
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activity",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activity/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activity/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/ActivityParty/hasAttributes/attributesAddedAtThisScope/members/activity/resolutionGuidance/foreignKeyAttribute/id",
+                                "contents": [
+                                  "ActivityParty_Resolved/hasAttributes/activityId"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "activityPartyId",
+                    "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/ActivityParty/hasAttributes/attributesAddedAtThisScope/members/activityPartyId",
+                    "contents": [
+                      "ActivityParty_Resolved/hasAttributes/activityPartyId"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "party",
+                    "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/ActivityParty/hasAttributes/attributesAddedAtThisScope/members/party",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "PartyMember",
+                        "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/party",
+                        "definition": "resolvedFrom/ActivityParty/hasAttributes/attributesAddedAtThisScope/members/party/entity/PartyMember",
+                        "contents": [
+                          {
+                            "type": "attributeDefinition",
+                            "name": "contactOption",
+                            "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/party/PartyMember",
+                            "definition": "resolvedFrom/ActivityParty/hasAttributes/attributesAddedAtThisScope/members/party/entity/PartyMember/hasAttributes/contactOption",
+                            "contents": [
+                              {
+                                "type": "entity",
+                                "name": "Contact",
+                                "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/party/PartyMember/contactOption",
+                                "definition": "resolvedFrom/Contact",
+                                "appliedTraits": [
+                                  {
+                                    "traitReference": "means.entityState",
+                                    "arguments": [
+                                      "resolvedFrom/Contact/(resolvedAttributes)/stateCode"
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "knowledgeArticleOption",
+                            "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/party/PartyMember",
+                            "definition": "resolvedFrom/ActivityParty/hasAttributes/attributesAddedAtThisScope/members/party/entity/PartyMember/hasAttributes/knowledgeArticleOption",
+                            "contents": [
+                              {
+                                "type": "entity",
+                                "name": "KnowledgeArticle",
+                                "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/party/PartyMember/knowledgeArticleOption",
+                                "definition": "resolvedFrom/KnowledgeArticle",
+                                "appliedTraits": [
+                                  {
+                                    "traitReference": "means.entityState",
+                                    "arguments": [
+                                      "resolvedFrom/KnowledgeArticle/(resolvedAttributes)/stateCode"
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "userOption",
+                            "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/party/PartyMember",
+                            "definition": "resolvedFrom/ActivityParty/hasAttributes/attributesAddedAtThisScope/members/party/entity/PartyMember/hasAttributes/userOption",
+                            "contents": [
+                              {
+                                "type": "entity",
+                                "name": "User",
+                                "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/party/PartyMember/userOption",
+                                "definition": "resolvedFrom/User"
+                              }
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "accountOption",
+                            "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/party/PartyMember",
+                            "definition": "resolvedFrom/ActivityParty/hasAttributes/attributesAddedAtThisScope/members/party/entity/PartyMember/hasAttributes/accountOption",
+                            "contents": [
+                              {
+                                "type": "entity",
+                                "name": "Account",
+                                "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/party/PartyMember/accountOption",
+                                "definition": "resolvedFrom/Account",
+                                "appliedTraits": [
+                                  {
+                                    "traitReference": "means.entityState",
+                                    "arguments": [
+                                      "resolvedFrom/Account/(resolvedAttributes)/stateCode"
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "queueOption",
+                            "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/party/PartyMember",
+                            "definition": "resolvedFrom/ActivityParty/hasAttributes/attributesAddedAtThisScope/members/party/entity/PartyMember/hasAttributes/queueOption",
+                            "contents": [
+                              {
+                                "type": "entity",
+                                "name": "Queue",
+                                "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/party/PartyMember/queueOption",
+                                "definition": "resolvedFrom/Queue",
+                                "appliedTraits": [
+                                  {
+                                    "traitReference": "means.entityState",
+                                    "arguments": [
+                                      "resolvedFrom/Queue/(resolvedAttributes)/stateCode"
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/party",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/party/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/party/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/ActivityParty/hasAttributes/attributesAddedAtThisScope/members/party/resolutionGuidance/foreignKeyAttribute/id",
+                                "contents": [
+                                  "ActivityParty_Resolved/hasAttributes/partyId"
+                                ]
+                              },
+                              {
+                                "type": "addedAttributeSelectedType",
+                                "name": "_selectedEntityName",
+                                "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/party/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/ActivityParty/hasAttributes/attributesAddedAtThisScope/members/party/resolutionGuidance/selectedTypeAttribute/objectTypeCode",
+                                "contents": [
+                                  "ActivityParty_Resolved/hasAttributes/partyObjectTypeCode"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "participationTypeMask",
+                    "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/ActivityParty/hasAttributes/attributesAddedAtThisScope/members/participationTypeMask",
+                    "contents": [
+                      "ActivityParty_Resolved/hasAttributes/participationTypeMask",
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/participationTypeMask",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/participationTypeMask/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeSupporting",
+                                "name": "supporting_participationTypeMask",
+                                "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/participationTypeMask/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/ActivityParty/hasAttributes/attributesAddedAtThisScope/members/participationTypeMask",
+                                "contents": [
+                                  "ActivityParty_Resolved/hasAttributes/participationTypeMask_display"
+                                ],
+                                "lineage": [
+                                  "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/participationTypeMask"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "addressUsed",
+                    "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/ActivityParty/hasAttributes/attributesAddedAtThisScope/members/addressUsed",
+                    "contents": [
+                      "ActivityParty_Resolved/hasAttributes/addressUsed"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "doNotFax",
+                    "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/ActivityParty/hasAttributes/attributesAddedAtThisScope/members/doNotFax",
+                    "contents": [
+                      "ActivityParty_Resolved/hasAttributes/doNotFax"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "scheduledStart",
+                    "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/ActivityParty/hasAttributes/attributesAddedAtThisScope/members/scheduledStart",
+                    "contents": [
+                      "ActivityParty_Resolved/hasAttributes/scheduledStart"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "scheduledEnd",
+                    "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/ActivityParty/hasAttributes/attributesAddedAtThisScope/members/scheduledEnd",
+                    "contents": [
+                      "ActivityParty_Resolved/hasAttributes/scheduledEnd"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "effort",
+                    "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/ActivityParty/hasAttributes/attributesAddedAtThisScope/members/effort",
+                    "contents": [
+                      "ActivityParty_Resolved/hasAttributes/effort"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "doNotEMail",
+                    "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/ActivityParty/hasAttributes/attributesAddedAtThisScope/members/doNotEMail",
+                    "contents": [
+                      "ActivityParty_Resolved/hasAttributes/doNotEMail"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "exchangeEntryId",
+                    "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/ActivityParty/hasAttributes/attributesAddedAtThisScope/members/exchangeEntryId",
+                    "contents": [
+                      "ActivityParty_Resolved/hasAttributes/exchangeEntryId"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "versionNumber",
+                    "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/ActivityParty/hasAttributes/attributesAddedAtThisScope/members/versionNumber",
+                    "contents": [
+                      "ActivityParty_Resolved/hasAttributes/versionNumber"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "doNotPostalMail",
+                    "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/ActivityParty/hasAttributes/attributesAddedAtThisScope/members/doNotPostalMail",
+                    "contents": [
+                      "ActivityParty_Resolved/hasAttributes/doNotPostalMail"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "doNotPhone",
+                    "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/ActivityParty/hasAttributes/attributesAddedAtThisScope/members/doNotPhone",
+                    "contents": [
+                      "ActivityParty_Resolved/hasAttributes/doNotPhone"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "ownerIdAttribute",
+                    "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/ownerIdAttribute",
+                    "contents": [
+                      {
+                        "type": "attributeGroup",
+                        "name": "ownerIdAttribute",
+                        "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute",
+                        "definition": "resolvedFrom/ownerIdAttribute",
+                        "contents": [
+                          {
+                            "type": "attributeDefinition",
+                            "name": "owner",
+                            "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute/ownerIdAttribute",
+                            "definition": "resolvedFrom/ownerIdAttribute/members/owner",
+                            "contents": [
+                              {
+                                "type": "entity",
+                                "name": "Owner",
+                                "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute/ownerIdAttribute/owner",
+                                "definition": "resolvedFrom/ownerIdAttribute/members/owner/entity/Owner",
+                                "contents": [
+                                  {
+                                    "type": "attributeDefinition",
+                                    "name": "userOption",
+                                    "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute/ownerIdAttribute/owner/Owner",
+                                    "definition": "resolvedFrom/ownerIdAttribute/members/owner/entity/Owner/hasAttributes/userOption",
+                                    "contents": [
+                                      {
+                                        "type": "entity",
+                                        "name": "User",
+                                        "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute/ownerIdAttribute/owner/Owner/userOption",
+                                        "definition": "resolvedFrom/User"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "type": "attributeDefinition",
+                                    "name": "teamOption",
+                                    "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute/ownerIdAttribute/owner/Owner",
+                                    "definition": "resolvedFrom/ownerIdAttribute/members/owner/entity/Owner/hasAttributes/teamOption",
+                                    "contents": [
+                                      {
+                                        "type": "entity",
+                                        "name": "Team",
+                                        "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute/ownerIdAttribute/owner/Owner/teamOption",
+                                        "definition": "resolvedFrom/Team"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "type": "generatedSet",
+                                "name": "_generatedAttributeSet",
+                                "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute/ownerIdAttribute/owner",
+                                "contents": [
+                                  {
+                                    "type": "generatedRound",
+                                    "name": "_generatedAttributeRound0",
+                                    "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute/ownerIdAttribute/owner/_generatedAttributeSet",
+                                    "contents": [
+                                      {
+                                        "type": "addedAttributeIdentity",
+                                        "name": "_foreignKey",
+                                        "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute/ownerIdAttribute/owner/_generatedAttributeSet/_generatedAttributeRound0",
+                                        "definition": "resolvedFrom/ownerIdAttribute/members/owner/resolutionGuidance/foreignKeyAttribute/ownerId",
+                                        "contents": [
+                                          "ActivityParty_Resolved/hasAttributes/ownerId"
+                                        ]
+                                      },
+                                      {
+                                        "type": "addedAttributeSelectedType",
+                                        "name": "_selectedEntityName",
+                                        "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute/ownerIdAttribute/owner/_generatedAttributeSet/_generatedAttributeRound0",
+                                        "definition": "resolvedFrom/ownerIdAttribute/members/owner/resolutionGuidance/selectedTypeAttribute/ownerIdType",
+                                        "contents": [
+                                          "ActivityParty_Resolved/hasAttributes/ownerIdType"
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "instanceTypeCode",
+                    "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/ActivityParty/hasAttributes/attributesAddedAtThisScope/members/instanceTypeCode",
+                    "contents": [
+                      "ActivityParty_Resolved/hasAttributes/instanceTypeCode",
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/instanceTypeCode",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/instanceTypeCode/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeSupporting",
+                                "name": "supporting_instanceTypeCode",
+                                "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/instanceTypeCode/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/ActivityParty/hasAttributes/attributesAddedAtThisScope/members/instanceTypeCode",
+                                "contents": [
+                                  "ActivityParty_Resolved/hasAttributes/instanceTypeCode_display"
+                                ],
+                                "lineage": [
+                                  "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/instanceTypeCode"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "isPartyDeleted",
+                    "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/ActivityParty/hasAttributes/attributesAddedAtThisScope/members/isPartyDeleted",
+                    "contents": [
+                      "ActivityParty_Resolved/hasAttributes/isPartyDeleted"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "addressUsedEmailColumnNumber",
+                    "parent": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/ActivityParty/hasAttributes/attributesAddedAtThisScope/members/addressUsedEmailColumnNumber",
+                    "contents": [
+                      "ActivityParty_Resolved/hasAttributes/addressUsedEmailColumnNumber"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "activityId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "Appointment.cdm.json/Appointment",
+                        "activityId"
+                      ],
+                      [
+                        "Activity.cdm.json/Activity",
+                        "activityId"
+                      ],
+                      [
+                        "Fax.cdm.json/Fax",
+                        "activityId"
+                      ],
+                      [
+                        "Task.cdm.json/Task",
+                        "activityId"
+                      ],
+                      [
+                        "SocialActivity.cdm.json/SocialActivity",
+                        "activityId"
+                      ],
+                      [
+                        "Letter.cdm.json/Letter",
+                        "activityId"
+                      ],
+                      [
+                        "Email.cdm.json/Email",
+                        "activityId"
+                      ],
+                      [
+                        "PhoneCall.cdm.json/PhoneCall",
+                        "activityId"
+                      ],
+                      [
+                        "RecurringAppointment.cdm.json/RecurringAppointment",
+                        "activityId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activity/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid",
+          "sourceName": "activityid",
+          "sourceOrdering": 1,
+          "displayName": "Activity",
+          "description": "Unique identifier of the activity associated with the activity party. (A \"party\" is any person who is associated with an activity.)"
+        },
+        {
+          "name": "activityPartyId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            }
+          ],
+          "attributeContext": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/activityPartyId",
+          "isPrimaryKey": true,
+          "dataFormat": "Guid",
+          "sourceName": "activitypartyid",
+          "sourceOrdering": 2,
+          "displayName": "Activity Party",
+          "description": "Unique identifier of the activity party."
+        },
+        {
+          "name": "partyId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "Contact.cdm.json/Contact",
+                        "contactId"
+                      ],
+                      [
+                        "KnowledgeArticle.cdm.json/KnowledgeArticle",
+                        "knowledgearticleId"
+                      ],
+                      [
+                        "User.cdm.json/User",
+                        "systemUserId"
+                      ],
+                      [
+                        "Account.cdm.json/Account",
+                        "accountId"
+                      ],
+                      [
+                        "Queue.cdm.json/Queue",
+                        "queueId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/party/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "partyid",
+          "sourceOrdering": 3,
+          "displayName": "Party",
+          "description": "Unique identifier of the party associated with the activity."
+        },
+        {
+          "name": "partyObjectTypeCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.entityName",
+            "is.linkedEntity.name"
+          ],
+          "attributeContext": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/party/_generatedAttributeSet/_generatedAttributeRound0/_selectedEntityName",
+          "isReadOnly": true,
+          "dataFormat": "String",
+          "sourceName": "partyobjecttypecode",
+          "displayName": "partyId Type",
+          "description": "The name of the entity linked by partyId"
+        },
+        {
+          "name": "participationTypeMask",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            }
+          ],
+          "attributeContext": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/participationTypeMask",
+          "dataFormat": "Int32",
+          "sourceName": "participationtypemask",
+          "sourceOrdering": 5,
+          "displayName": "Participation Type",
+          "description": "Role of the person in the activity, such as sender, to, cc, bcc, required, optional, organizer, regarding, or owner.",
+          "valueConstrainedToList": true,
+          "defaultValue": [
+            {
+              "languageTag": "en",
+              "displayText": "Sender",
+              "attributeValue": "1",
+              "displayOrder": "0"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "To Recipient",
+              "attributeValue": "2",
+              "displayOrder": "1"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "CC Recipient",
+              "attributeValue": "3",
+              "displayOrder": "2"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "BCC Recipient",
+              "attributeValue": "4",
+              "displayOrder": "3"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Required attendee",
+              "attributeValue": "5",
+              "displayOrder": "4"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Optional attendee",
+              "attributeValue": "6",
+              "displayOrder": "5"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Organizer",
+              "attributeValue": "7",
+              "displayOrder": "6"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Regarding",
+              "attributeValue": "8",
+              "displayOrder": "7"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Owner",
+              "attributeValue": "9",
+              "displayOrder": "8"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Resource",
+              "attributeValue": "10",
+              "displayOrder": "9"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Customer",
+              "attributeValue": "11",
+              "displayOrder": "10"
+            }
+          ]
+        },
+        {
+          "name": "participationTypeMask_display",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.reference.displayText",
+            {
+              "traitReference": "is.addedInSupportOf",
+              "arguments": [
+                "participationTypeMask"
+              ]
+            }
+          ],
+          "attributeContext": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/participationTypeMask/_generatedAttributeSet/_generatedAttributeRound0/supporting_participationTypeMask",
+          "isReadOnly": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "addressUsed",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/addressUsed",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "addressused",
+          "sourceOrdering": 6,
+          "displayName": "Address ",
+          "description": "Email address to which an email is delivered, and which is associated with the target entity.",
+          "maximumLength": 200
+        },
+        {
+          "name": "doNotFax",
+          "appliedTraits": [
+            "is.dataFormat.boolean",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/doNotFax",
+          "isNullable": true,
+          "dataFormat": "Boolean",
+          "sourceName": "donotfax",
+          "sourceOrdering": 12,
+          "displayName": "Do not allow Faxes",
+          "description": "Information about whether to allow sending faxes to the activity party."
+        },
+        {
+          "name": "scheduledStart",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date",
+            "is.dataFormat.time",
+            "means.measurement.time",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/scheduledStart",
+          "isNullable": true,
+          "dataFormat": "DateTime",
+          "sourceName": "scheduledstart",
+          "sourceOrdering": 13,
+          "displayName": "Scheduled Start",
+          "description": "Scheduled start time of the activity."
+        },
+        {
+          "name": "scheduledEnd",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date",
+            "is.dataFormat.time",
+            "means.measurement.time",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/scheduledEnd",
+          "isNullable": true,
+          "dataFormat": "DateTime",
+          "sourceName": "scheduledend",
+          "sourceOrdering": 14,
+          "displayName": "Scheduled End",
+          "description": "Scheduled end time of the activity."
+        },
+        {
+          "name": "effort",
+          "appliedTraits": [
+            "is.dataFormat.floatingPoint",
+            "is.dataFormat.big",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/effort",
+          "isNullable": true,
+          "dataFormat": "Double",
+          "sourceName": "effort",
+          "sourceOrdering": 15,
+          "displayName": "Effort",
+          "description": "Amount of effort used by the resource in a service appointment activity.",
+          "maximumValue": "1000000000",
+          "minimumValue": "0"
+        },
+        {
+          "name": "doNotEMail",
+          "appliedTraits": [
+            "is.dataFormat.boolean",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/doNotEMail",
+          "isNullable": true,
+          "dataFormat": "Boolean",
+          "sourceName": "donotemail",
+          "sourceOrdering": 16,
+          "displayName": "Do not allow Emails",
+          "description": "Information about whether to allow sending email to the activity party."
+        },
+        {
+          "name": "exchangeEntryId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/exchangeEntryId",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "exchangeentryid",
+          "sourceOrdering": 18,
+          "displayName": "Exchange Entry",
+          "description": "For internal use only.",
+          "maximumLength": 1024
+        },
+        {
+          "name": "versionNumber",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            "is.dataFormat.big",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/versionNumber",
+          "isNullable": true,
+          "dataFormat": "Int64",
+          "sourceName": "versionnumber",
+          "sourceOrdering": 20
+        },
+        {
+          "name": "doNotPostalMail",
+          "appliedTraits": [
+            "is.dataFormat.boolean",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/doNotPostalMail",
+          "isNullable": true,
+          "dataFormat": "Boolean",
+          "sourceName": "donotpostalmail",
+          "sourceOrdering": 26,
+          "displayName": "Do not allow Postal Mails",
+          "description": "Information about whether to allow sending postal mail to the lead."
+        },
+        {
+          "name": "doNotPhone",
+          "appliedTraits": [
+            "is.dataFormat.boolean",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/doNotPhone",
+          "isNullable": true,
+          "dataFormat": "Boolean",
+          "sourceName": "donotphone",
+          "sourceOrdering": 27,
+          "displayName": "Do not allow Phone Calls",
+          "description": "Information about whether to allow phone calls to the lead."
+        },
+        {
+          "name": "ownerId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            "is.CDS.standard",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "User.cdm.json/User",
+                        "systemUserId"
+                      ],
+                      [
+                        "Team.cdm.json/Team",
+                        "teamId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            },
+            "is.CDS.owner"
+          ],
+          "attributeContext": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute/ownerIdAttribute/owner/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid",
+          "sourceName": "ownerid",
+          "displayName": "Owner",
+          "description": "Owner Id"
+        },
+        {
+          "name": "ownerIdType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.entityName",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            },
+            "is.linkedEntity.name",
+            "is.CDS.owner"
+          ],
+          "attributeContext": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute/ownerIdAttribute/owner/_generatedAttributeSet/_generatedAttributeRound0/_selectedEntityName",
+          "isReadOnly": true,
+          "dataFormat": "String",
+          "sourceName": "owneridtype",
+          "displayName": "Owner Type",
+          "description": "The type of owner, either User or Team."
+        },
+        {
+          "name": "instanceTypeCode",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            }
+          ],
+          "attributeContext": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/instanceTypeCode",
+          "dataFormat": "Int32",
+          "sourceName": "instancetypecode",
+          "sourceOrdering": 32,
+          "displayName": "Appointment Type",
+          "description": "Type of instance of a recurring series.",
+          "valueConstrainedToList": true,
+          "defaultValue": [
+            {
+              "languageTag": "en",
+              "displayText": "Not Recurring",
+              "attributeValue": "0",
+              "displayOrder": "0"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Recurring Master",
+              "attributeValue": "1",
+              "displayOrder": "1"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Recurring Instance",
+              "attributeValue": "2",
+              "displayOrder": "2"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Recurring Exception",
+              "attributeValue": "3",
+              "displayOrder": "3"
+            },
+            {
+              "languageTag": "en",
+              "displayText": "Recurring Future Exception",
+              "attributeValue": "4",
+              "displayOrder": "4"
+            }
+          ]
+        },
+        {
+          "name": "instanceTypeCode_display",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.reference.displayText",
+            {
+              "traitReference": "is.addedInSupportOf",
+              "arguments": [
+                "instanceTypeCode"
+              ]
+            }
+          ],
+          "attributeContext": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/instanceTypeCode/_generatedAttributeSet/_generatedAttributeRound0/supporting_instanceTypeCode",
+          "isReadOnly": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "isPartyDeleted",
+          "appliedTraits": [
+            "is.dataFormat.boolean",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            }
+          ],
+          "attributeContext": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/isPartyDeleted",
+          "dataFormat": "Boolean",
+          "sourceName": "ispartydeleted",
+          "sourceOrdering": 34,
+          "displayName": "Is Party Deleted",
+          "description": "Information about whether the underlying entity record is deleted."
+        },
+        {
+          "name": "addressUsedEmailColumnNumber",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "ActivityParty_Resolved/attributeContext/ActivityParty_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/addressUsedEmailColumnNumber",
+          "isNullable": true,
+          "dataFormat": "Int32",
+          "sourceName": "addressusedemailcolumnnumber",
+          "sourceOrdering": 36,
+          "displayName": "Email column number of party",
+          "description": "Email address column number from associated party.",
+          "maximumValue": "2147483647",
+          "minimumValue": "1"
+        }
+      ],
+      "sourceName": "ActivityParty",
+      "displayName": "Activity Party",
+      "description": "Person or group associated with an activity. An activity can have multiple activity parties.",
+      "version": "1.4",
+      "cdmSchemas": [
+        "/core/applicationCommon/ActivityParty.cdm.json/ActivityParty/hasAttributes/attributesAddedAtThisScope"
+      ]
+    }
+  ],
+  "documentVersion": "1.4"
+}

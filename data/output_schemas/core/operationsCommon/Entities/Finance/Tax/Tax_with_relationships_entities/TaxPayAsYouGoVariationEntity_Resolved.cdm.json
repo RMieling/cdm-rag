@@ -1,0 +1,261 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "TaxPayAsYouGoVariationEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TaxPayAsYouGoVariationEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "TaxPayAsYouGoVariationEntity_Resolved",
+        "definition": "resolvedFrom/TaxPayAsYouGoVariationEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "TaxPayAsYouGoVariationEntity_Resolved/attributeContext/TaxPayAsYouGoVariationEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "TaxPayAsYouGoVariationEntity_Resolved/attributeContext/TaxPayAsYouGoVariationEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "TaxPayAsYouGoVariationEntity_Resolved/attributeContext/TaxPayAsYouGoVariationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxPayAsYouGoVariationEntity/hasAttributes/Description",
+            "contents": [
+              "TaxPayAsYouGoVariationEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ReasonCode",
+            "parent": "TaxPayAsYouGoVariationEntity_Resolved/attributeContext/TaxPayAsYouGoVariationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxPayAsYouGoVariationEntity/hasAttributes/ReasonCode",
+            "contents": [
+              "TaxPayAsYouGoVariationEntity_Resolved/hasAttributes/ReasonCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_TaxPAYGVariationTableRelationship",
+            "parent": "TaxPayAsYouGoVariationEntity_Resolved/attributeContext/TaxPayAsYouGoVariationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxPayAsYouGoVariationEntity/hasAttributes/BackingTable_TaxPAYGVariationTableRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "TaxPAYGVariationTable",
+                "parent": "TaxPayAsYouGoVariationEntity_Resolved/attributeContext/TaxPayAsYouGoVariationEntity_Resolved/BackingTable_TaxPAYGVariationTableRelationship",
+                "definition": "resolvedFrom/TaxPAYGVariationTable",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxPayAsYouGoVariationEntity_Resolved/attributeContext/TaxPayAsYouGoVariationEntity_Resolved/BackingTable_TaxPAYGVariationTableRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxPayAsYouGoVariationEntity_Resolved/attributeContext/TaxPayAsYouGoVariationEntity_Resolved/BackingTable_TaxPAYGVariationTableRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxPayAsYouGoVariationEntity_Resolved/attributeContext/TaxPayAsYouGoVariationEntity_Resolved/BackingTable_TaxPAYGVariationTableRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxPayAsYouGoVariationEntity_Resolved/hasAttributes/BackingTable_TaxPAYGVariationTableRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "TaxPayAsYouGoVariationEntity_Resolved/attributeContext/TaxPayAsYouGoVariationEntity_Resolved",
+            "definition": "resolvedFrom/TaxPayAsYouGoVariationEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "TaxPayAsYouGoVariationEntity_Resolved/attributeContext/TaxPayAsYouGoVariationEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxPayAsYouGoVariationEntity_Resolved/attributeContext/TaxPayAsYouGoVariationEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxPayAsYouGoVariationEntity_Resolved/attributeContext/TaxPayAsYouGoVariationEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxPayAsYouGoVariationEntity_Resolved/attributeContext/TaxPayAsYouGoVariationEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxPayAsYouGoVariationEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxPayAsYouGoVariationEntity_Resolved/attributeContext/TaxPayAsYouGoVariationEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ReasonCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxPayAsYouGoVariationEntity_Resolved/attributeContext/TaxPayAsYouGoVariationEntity_Resolved/ReasonCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_TaxPAYGVariationTableRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Tax/Main/TaxPAYGVariationTable.cdm.json/TaxPAYGVariationTable",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxPayAsYouGoVariationEntity_Resolved/attributeContext/TaxPayAsYouGoVariationEntity_Resolved/BackingTable_TaxPAYGVariationTableRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxPayAsYouGoVariationEntity_Resolved/attributeContext/TaxPayAsYouGoVariationEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "BAS PAYG reason codes",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

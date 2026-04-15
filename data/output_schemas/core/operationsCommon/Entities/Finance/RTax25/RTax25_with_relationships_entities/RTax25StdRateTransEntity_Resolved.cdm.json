@@ -1,0 +1,321 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "RTax25StdRateTransEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "RTax25StdRateTransEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "RTax25StdRateTransEntity_Resolved",
+        "definition": "resolvedFrom/RTax25StdRateTransEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "RTax25StdRateTransEntity_Resolved/attributeContext/RTax25StdRateTransEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "RTax25StdRateTransEntity_Resolved/attributeContext/RTax25StdRateTransEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CriterionType",
+            "parent": "RTax25StdRateTransEntity_Resolved/attributeContext/RTax25StdRateTransEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RTax25StdRateTransEntity/hasAttributes/CriterionType",
+            "contents": [
+              "RTax25StdRateTransEntity_Resolved/hasAttributes/CriterionType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "StartDate",
+            "parent": "RTax25StdRateTransEntity_Resolved/attributeContext/RTax25StdRateTransEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RTax25StdRateTransEntity/hasAttributes/StartDate",
+            "contents": [
+              "RTax25StdRateTransEntity_Resolved/hasAttributes/StartDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Value",
+            "parent": "RTax25StdRateTransEntity_Resolved/attributeContext/RTax25StdRateTransEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RTax25StdRateTransEntity/hasAttributes/Value",
+            "contents": [
+              "RTax25StdRateTransEntity_Resolved/hasAttributes/Value"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "RateCode",
+            "parent": "RTax25StdRateTransEntity_Resolved/attributeContext/RTax25StdRateTransEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RTax25StdRateTransEntity/hasAttributes/RateCode",
+            "contents": [
+              "RTax25StdRateTransEntity_Resolved/hasAttributes/RateCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "LineId",
+            "parent": "RTax25StdRateTransEntity_Resolved/attributeContext/RTax25StdRateTransEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RTax25StdRateTransEntity/hasAttributes/LineId",
+            "contents": [
+              "RTax25StdRateTransEntity_Resolved/hasAttributes/LineId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_RTax25StdRateTransRelationship",
+            "parent": "RTax25StdRateTransEntity_Resolved/attributeContext/RTax25StdRateTransEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RTax25StdRateTransEntity/hasAttributes/BackingTable_RTax25StdRateTransRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "RTax25StdRateTrans",
+                "parent": "RTax25StdRateTransEntity_Resolved/attributeContext/RTax25StdRateTransEntity_Resolved/BackingTable_RTax25StdRateTransRelationship",
+                "definition": "resolvedFrom/RTax25StdRateTrans",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "RTax25StdRateTransEntity_Resolved/attributeContext/RTax25StdRateTransEntity_Resolved/BackingTable_RTax25StdRateTransRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "RTax25StdRateTransEntity_Resolved/attributeContext/RTax25StdRateTransEntity_Resolved/BackingTable_RTax25StdRateTransRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "RTax25StdRateTransEntity_Resolved/attributeContext/RTax25StdRateTransEntity_Resolved/BackingTable_RTax25StdRateTransRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "RTax25StdRateTransEntity_Resolved/hasAttributes/BackingTable_RTax25StdRateTransRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "RTax25StdRateTransEntity_Resolved/attributeContext/RTax25StdRateTransEntity_Resolved",
+            "definition": "resolvedFrom/RTax25StdRateTransEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "RTax25StdRateTransEntity_Resolved/attributeContext/RTax25StdRateTransEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "RTax25StdRateTransEntity_Resolved/attributeContext/RTax25StdRateTransEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "RTax25StdRateTransEntity_Resolved/attributeContext/RTax25StdRateTransEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "RTax25StdRateTransEntity_Resolved/attributeContext/RTax25StdRateTransEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "RTax25StdRateTransEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "CriterionType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RTax25StdRateTransEntity_Resolved/attributeContext/RTax25StdRateTransEntity_Resolved/CriterionType",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "StartDate",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RTax25StdRateTransEntity_Resolved/attributeContext/RTax25StdRateTransEntity_Resolved/StartDate",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Value",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RTax25StdRateTransEntity_Resolved/attributeContext/RTax25StdRateTransEntity_Resolved/Value",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "RateCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RTax25StdRateTransEntity_Resolved/attributeContext/RTax25StdRateTransEntity_Resolved/RateCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "LineId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RTax25StdRateTransEntity_Resolved/attributeContext/RTax25StdRateTransEntity_Resolved/LineId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_RTax25StdRateTransRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/RTax25/Group/RTax25StdRateTrans.cdm.json/RTax25StdRateTrans",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "RTax25StdRateTransEntity_Resolved/attributeContext/RTax25StdRateTransEntity_Resolved/BackingTable_RTax25StdRateTransRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "RTax25StdRateTransEntity_Resolved/attributeContext/RTax25StdRateTransEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Standard expense rate lines",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

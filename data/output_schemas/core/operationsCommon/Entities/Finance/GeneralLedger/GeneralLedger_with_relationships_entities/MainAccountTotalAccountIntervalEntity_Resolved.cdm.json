@@ -1,0 +1,383 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "MainAccountTotalAccountIntervalEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "MainAccountTotalAccountIntervalEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "MainAccountTotalAccountIntervalEntity_Resolved",
+        "definition": "resolvedFrom/MainAccountTotalAccountIntervalEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "MainAccountTotalAccountIntervalEntity_Resolved/attributeContext/MainAccountTotalAccountIntervalEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "MainAccountTotalAccountIntervalEntity_Resolved/attributeContext/MainAccountTotalAccountIntervalEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "MainAccountId",
+            "parent": "MainAccountTotalAccountIntervalEntity_Resolved/attributeContext/MainAccountTotalAccountIntervalEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/MainAccountTotalAccountIntervalEntity/hasAttributes/MainAccountId",
+            "contents": [
+              "MainAccountTotalAccountIntervalEntity_Resolved/hasAttributes/MainAccountId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ChartOfAccounts",
+            "parent": "MainAccountTotalAccountIntervalEntity_Resolved/attributeContext/MainAccountTotalAccountIntervalEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/MainAccountTotalAccountIntervalEntity/hasAttributes/ChartOfAccounts",
+            "contents": [
+              "MainAccountTotalAccountIntervalEntity_Resolved/hasAttributes/ChartOfAccounts"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "FromValue",
+            "parent": "MainAccountTotalAccountIntervalEntity_Resolved/attributeContext/MainAccountTotalAccountIntervalEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/MainAccountTotalAccountIntervalEntity/hasAttributes/FromValue",
+            "contents": [
+              "MainAccountTotalAccountIntervalEntity_Resolved/hasAttributes/FromValue"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ToValue",
+            "parent": "MainAccountTotalAccountIntervalEntity_Resolved/attributeContext/MainAccountTotalAccountIntervalEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/MainAccountTotalAccountIntervalEntity/hasAttributes/ToValue",
+            "contents": [
+              "MainAccountTotalAccountIntervalEntity_Resolved/hasAttributes/ToValue"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "InvertTotalSign",
+            "parent": "MainAccountTotalAccountIntervalEntity_Resolved/attributeContext/MainAccountTotalAccountIntervalEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/MainAccountTotalAccountIntervalEntity/hasAttributes/InvertTotalSign",
+            "contents": [
+              "MainAccountTotalAccountIntervalEntity_Resolved/hasAttributes/InvertTotalSign"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_MainAccountRelationship",
+            "parent": "MainAccountTotalAccountIntervalEntity_Resolved/attributeContext/MainAccountTotalAccountIntervalEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/MainAccountTotalAccountIntervalEntity/hasAttributes/Relationship_MainAccountRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "MainAccountEntity",
+                "parent": "MainAccountTotalAccountIntervalEntity_Resolved/attributeContext/MainAccountTotalAccountIntervalEntity_Resolved/Relationship_MainAccountRelationship",
+                "definition": "resolvedFrom/MainAccountEntity",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "MainAccountTotalAccountIntervalEntity_Resolved/attributeContext/MainAccountTotalAccountIntervalEntity_Resolved/Relationship_MainAccountRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "MainAccountTotalAccountIntervalEntity_Resolved/attributeContext/MainAccountTotalAccountIntervalEntity_Resolved/Relationship_MainAccountRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "MainAccountTotalAccountIntervalEntity_Resolved/attributeContext/MainAccountTotalAccountIntervalEntity_Resolved/Relationship_MainAccountRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "MainAccountTotalAccountIntervalEntity_Resolved/hasAttributes/Relationship_MainAccountRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_LedgerChartOfAccountsRelationship",
+            "parent": "MainAccountTotalAccountIntervalEntity_Resolved/attributeContext/MainAccountTotalAccountIntervalEntity_Resolved",
+            "definition": "resolvedFrom/MainAccountTotalAccountIntervalEntity/hasAttributes/Relationship_LedgerChartOfAccountsRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "LedgerChartOfAccountsEntity",
+                "parent": "MainAccountTotalAccountIntervalEntity_Resolved/attributeContext/MainAccountTotalAccountIntervalEntity_Resolved/Relationship_LedgerChartOfAccountsRelationship",
+                "definition": "resolvedFrom/LedgerChartOfAccountsEntity",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "MainAccountTotalAccountIntervalEntity_Resolved/attributeContext/MainAccountTotalAccountIntervalEntity_Resolved/Relationship_LedgerChartOfAccountsRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "MainAccountTotalAccountIntervalEntity_Resolved/attributeContext/MainAccountTotalAccountIntervalEntity_Resolved/Relationship_LedgerChartOfAccountsRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "MainAccountTotalAccountIntervalEntity_Resolved/attributeContext/MainAccountTotalAccountIntervalEntity_Resolved/Relationship_LedgerChartOfAccountsRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "MainAccountTotalAccountIntervalEntity_Resolved/hasAttributes/Relationship_LedgerChartOfAccountsRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_DimensionAttributeValueTotallingCriteriaRelationship",
+            "parent": "MainAccountTotalAccountIntervalEntity_Resolved/attributeContext/MainAccountTotalAccountIntervalEntity_Resolved",
+            "definition": "resolvedFrom/MainAccountTotalAccountIntervalEntity/hasAttributes/BackingTable_DimensionAttributeValueTotallingCriteriaRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "DimensionAttributeValueTotallingCriteria",
+                "parent": "MainAccountTotalAccountIntervalEntity_Resolved/attributeContext/MainAccountTotalAccountIntervalEntity_Resolved/BackingTable_DimensionAttributeValueTotallingCriteriaRelationship",
+                "definition": "resolvedFrom/DimensionAttributeValueTotallingCriteria",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "MainAccountTotalAccountIntervalEntity_Resolved/attributeContext/MainAccountTotalAccountIntervalEntity_Resolved/BackingTable_DimensionAttributeValueTotallingCriteriaRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "MainAccountTotalAccountIntervalEntity_Resolved/attributeContext/MainAccountTotalAccountIntervalEntity_Resolved/BackingTable_DimensionAttributeValueTotallingCriteriaRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "MainAccountTotalAccountIntervalEntity_Resolved/attributeContext/MainAccountTotalAccountIntervalEntity_Resolved/BackingTable_DimensionAttributeValueTotallingCriteriaRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "MainAccountTotalAccountIntervalEntity_Resolved/hasAttributes/BackingTable_DimensionAttributeValueTotallingCriteriaRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "MainAccountId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "MainAccountTotalAccountIntervalEntity_Resolved/attributeContext/MainAccountTotalAccountIntervalEntity_Resolved/MainAccountId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ChartOfAccounts",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "MainAccountTotalAccountIntervalEntity_Resolved/attributeContext/MainAccountTotalAccountIntervalEntity_Resolved/ChartOfAccounts",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "FromValue",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "MainAccountTotalAccountIntervalEntity_Resolved/attributeContext/MainAccountTotalAccountIntervalEntity_Resolved/FromValue",
+          "dataFormat": "String"
+        },
+        {
+          "name": "ToValue",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "MainAccountTotalAccountIntervalEntity_Resolved/attributeContext/MainAccountTotalAccountIntervalEntity_Resolved/ToValue",
+          "dataFormat": "String"
+        },
+        {
+          "name": "InvertTotalSign",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "MainAccountTotalAccountIntervalEntity_Resolved/attributeContext/MainAccountTotalAccountIntervalEntity_Resolved/InvertTotalSign",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Invert sign"
+        },
+        {
+          "name": "Relationship_MainAccountRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": []
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "MainAccountTotalAccountIntervalEntity_Resolved/attributeContext/MainAccountTotalAccountIntervalEntity_Resolved/Relationship_MainAccountRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_LedgerChartOfAccountsRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": []
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "MainAccountTotalAccountIntervalEntity_Resolved/attributeContext/MainAccountTotalAccountIntervalEntity_Resolved/Relationship_LedgerChartOfAccountsRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "BackingTable_DimensionAttributeValueTotallingCriteriaRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/FinancialDimensions/Main/DimensionAttributeValueTotallingCriteria.cdm.json/DimensionAttributeValueTotallingCriteria",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "MainAccountTotalAccountIntervalEntity_Resolved/attributeContext/MainAccountTotalAccountIntervalEntity_Resolved/BackingTable_DimensionAttributeValueTotallingCriteriaRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Main account totaling account intervals",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

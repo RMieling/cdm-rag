@@ -1,0 +1,281 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "BudgetPlanProjectLookupEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "BudgetPlanProjectLookupEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "BudgetPlanProjectLookupEntity_Resolved",
+        "definition": "resolvedFrom/BudgetPlanProjectLookupEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "BudgetPlanProjectLookupEntity_Resolved/attributeContext/BudgetPlanProjectLookupEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "BudgetPlanProjectLookupEntity_Resolved/attributeContext/BudgetPlanProjectLookupEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ProjectId",
+            "parent": "BudgetPlanProjectLookupEntity_Resolved/attributeContext/BudgetPlanProjectLookupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetPlanProjectLookupEntity/hasAttributes/ProjectId",
+            "contents": [
+              "BudgetPlanProjectLookupEntity_Resolved/hasAttributes/ProjectId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "BudgetPlanProjectLookupEntity_Resolved/attributeContext/BudgetPlanProjectLookupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetPlanProjectLookupEntity/hasAttributes/Name",
+            "contents": [
+              "BudgetPlanProjectLookupEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ProjectStatusRule",
+            "parent": "BudgetPlanProjectLookupEntity_Resolved/attributeContext/BudgetPlanProjectLookupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetPlanProjectLookupEntity/hasAttributes/ProjectStatusRule",
+            "contents": [
+              "BudgetPlanProjectLookupEntity_Resolved/hasAttributes/ProjectStatusRule"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_ProjTableRelationship",
+            "parent": "BudgetPlanProjectLookupEntity_Resolved/attributeContext/BudgetPlanProjectLookupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetPlanProjectLookupEntity/hasAttributes/BackingTable_ProjTableRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "ProjTable",
+                "parent": "BudgetPlanProjectLookupEntity_Resolved/attributeContext/BudgetPlanProjectLookupEntity_Resolved/BackingTable_ProjTableRelationship",
+                "definition": "resolvedFrom/ProjTable",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "BudgetPlanProjectLookupEntity_Resolved/attributeContext/BudgetPlanProjectLookupEntity_Resolved/BackingTable_ProjTableRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "BudgetPlanProjectLookupEntity_Resolved/attributeContext/BudgetPlanProjectLookupEntity_Resolved/BackingTable_ProjTableRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "BudgetPlanProjectLookupEntity_Resolved/attributeContext/BudgetPlanProjectLookupEntity_Resolved/BackingTable_ProjTableRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "BudgetPlanProjectLookupEntity_Resolved/hasAttributes/BackingTable_ProjTableRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "BudgetPlanProjectLookupEntity_Resolved/attributeContext/BudgetPlanProjectLookupEntity_Resolved",
+            "definition": "resolvedFrom/BudgetPlanProjectLookupEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "BudgetPlanProjectLookupEntity_Resolved/attributeContext/BudgetPlanProjectLookupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "BudgetPlanProjectLookupEntity_Resolved/attributeContext/BudgetPlanProjectLookupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "BudgetPlanProjectLookupEntity_Resolved/attributeContext/BudgetPlanProjectLookupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "BudgetPlanProjectLookupEntity_Resolved/attributeContext/BudgetPlanProjectLookupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "BudgetPlanProjectLookupEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "ProjectId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetPlanProjectLookupEntity_Resolved/attributeContext/BudgetPlanProjectLookupEntity_Resolved/ProjectId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetPlanProjectLookupEntity_Resolved/attributeContext/BudgetPlanProjectLookupEntity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ProjectStatusRule",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetPlanProjectLookupEntity_Resolved/attributeContext/BudgetPlanProjectLookupEntity_Resolved/ProjectStatusRule",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_ProjTableRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/ProfessionalServices/ProjectManagementAndAccounting/Main/ProjTable.cdm.json/ProjTable",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "BudgetPlanProjectLookupEntity_Resolved/attributeContext/BudgetPlanProjectLookupEntity_Resolved/BackingTable_ProjTableRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "BudgetPlanProjectLookupEntity_Resolved/attributeContext/BudgetPlanProjectLookupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Projects",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

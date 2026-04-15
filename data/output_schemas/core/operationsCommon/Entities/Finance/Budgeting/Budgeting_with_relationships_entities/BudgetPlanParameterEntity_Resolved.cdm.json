@@ -1,0 +1,341 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "BudgetPlanParameterEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "BudgetPlanParameterEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "BudgetPlanParameterEntity_Resolved",
+        "definition": "resolvedFrom/BudgetPlanParameterEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "BudgetPlanParameterEntity_Resolved/attributeContext/BudgetPlanParameterEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "BudgetPlanParameterEntity_Resolved/attributeContext/BudgetPlanParameterEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Key",
+            "parent": "BudgetPlanParameterEntity_Resolved/attributeContext/BudgetPlanParameterEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetPlanParameterEntity/hasAttributes/Key",
+            "contents": [
+              "BudgetPlanParameterEntity_Resolved/hasAttributes/Key"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "UseBudgetPlanningUserGroups",
+            "parent": "BudgetPlanParameterEntity_Resolved/attributeContext/BudgetPlanParameterEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetPlanParameterEntity/hasAttributes/UseBudgetPlanningUserGroups",
+            "contents": [
+              "BudgetPlanParameterEntity_Resolved/hasAttributes/UseBudgetPlanningUserGroups"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "SecurityModel",
+            "parent": "BudgetPlanParameterEntity_Resolved/attributeContext/BudgetPlanParameterEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetPlanParameterEntity/hasAttributes/SecurityModel",
+            "contents": [
+              "BudgetPlanParameterEntity_Resolved/hasAttributes/SecurityModel"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DimensionHierarchy",
+            "parent": "BudgetPlanParameterEntity_Resolved/attributeContext/BudgetPlanParameterEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetPlanParameterEntity/hasAttributes/DimensionHierarchy",
+            "contents": [
+              "BudgetPlanParameterEntity_Resolved/hasAttributes/DimensionHierarchy"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "SkipCurrencyConversion",
+            "parent": "BudgetPlanParameterEntity_Resolved/attributeContext/BudgetPlanParameterEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetPlanParameterEntity/hasAttributes/SkipCurrencyConversion",
+            "contents": [
+              "BudgetPlanParameterEntity_Resolved/hasAttributes/SkipCurrencyConversion"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DimensionHierarchyName",
+            "parent": "BudgetPlanParameterEntity_Resolved/attributeContext/BudgetPlanParameterEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetPlanParameterEntity/hasAttributes/DimensionHierarchyName",
+            "contents": [
+              "BudgetPlanParameterEntity_Resolved/hasAttributes/DimensionHierarchyName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_BudgetPlanningConfigurationRelationship",
+            "parent": "BudgetPlanParameterEntity_Resolved/attributeContext/BudgetPlanParameterEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetPlanParameterEntity/hasAttributes/BackingTable_BudgetPlanningConfigurationRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "BudgetPlanningConfiguration",
+                "parent": "BudgetPlanParameterEntity_Resolved/attributeContext/BudgetPlanParameterEntity_Resolved/BackingTable_BudgetPlanningConfigurationRelationship",
+                "definition": "resolvedFrom/BudgetPlanningConfiguration",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "BudgetPlanParameterEntity_Resolved/attributeContext/BudgetPlanParameterEntity_Resolved/BackingTable_BudgetPlanningConfigurationRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "BudgetPlanParameterEntity_Resolved/attributeContext/BudgetPlanParameterEntity_Resolved/BackingTable_BudgetPlanningConfigurationRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "BudgetPlanParameterEntity_Resolved/attributeContext/BudgetPlanParameterEntity_Resolved/BackingTable_BudgetPlanningConfigurationRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "BudgetPlanParameterEntity_Resolved/hasAttributes/BackingTable_BudgetPlanningConfigurationRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "BudgetPlanParameterEntity_Resolved/attributeContext/BudgetPlanParameterEntity_Resolved",
+            "definition": "resolvedFrom/BudgetPlanParameterEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "BudgetPlanParameterEntity_Resolved/attributeContext/BudgetPlanParameterEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "BudgetPlanParameterEntity_Resolved/attributeContext/BudgetPlanParameterEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "BudgetPlanParameterEntity_Resolved/attributeContext/BudgetPlanParameterEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "BudgetPlanParameterEntity_Resolved/attributeContext/BudgetPlanParameterEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "BudgetPlanParameterEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Key",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetPlanParameterEntity_Resolved/attributeContext/BudgetPlanParameterEntity_Resolved/Key",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "UseBudgetPlanningUserGroups",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetPlanParameterEntity_Resolved/attributeContext/BudgetPlanParameterEntity_Resolved/UseBudgetPlanningUserGroups",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "SecurityModel",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetPlanParameterEntity_Resolved/attributeContext/BudgetPlanParameterEntity_Resolved/SecurityModel",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "DimensionHierarchy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetPlanParameterEntity_Resolved/attributeContext/BudgetPlanParameterEntity_Resolved/DimensionHierarchy",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "SkipCurrencyConversion",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetPlanParameterEntity_Resolved/attributeContext/BudgetPlanParameterEntity_Resolved/SkipCurrencyConversion",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "DimensionHierarchyName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetPlanParameterEntity_Resolved/attributeContext/BudgetPlanParameterEntity_Resolved/DimensionHierarchyName",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_BudgetPlanningConfigurationRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Budget/Parameter/BudgetPlanningConfiguration.cdm.json/BudgetPlanningConfiguration",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "BudgetPlanParameterEntity_Resolved/attributeContext/BudgetPlanParameterEntity_Resolved/BackingTable_BudgetPlanningConfigurationRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "BudgetPlanParameterEntity_Resolved/attributeContext/BudgetPlanParameterEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Budget plan parameter",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

@@ -1,0 +1,188 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "FBObservationCodeEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "FBObservationCodeEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "FBObservationCodeEntity_Resolved",
+        "definition": "resolvedFrom/FBObservationCodeEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "FBObservationCodeEntity_Resolved/attributeContext/FBObservationCodeEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "FBObservationCodeEntity_Resolved/attributeContext/FBObservationCodeEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ObservationCode",
+            "parent": "FBObservationCodeEntity_Resolved/attributeContext/FBObservationCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/FBObservationCodeEntity/hasAttributes/ObservationCode",
+            "contents": [
+              "FBObservationCodeEntity_Resolved/hasAttributes/ObservationCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "FBObservationCodeEntity_Resolved/attributeContext/FBObservationCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/FBObservationCodeEntity/hasAttributes/Description",
+            "contents": [
+              "FBObservationCodeEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_FBObservationCodeTable_BRRelationship",
+            "parent": "FBObservationCodeEntity_Resolved/attributeContext/FBObservationCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/FBObservationCodeEntity/hasAttributes/BackingTable_FBObservationCodeTable_BRRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "FBObservationCodeTable_BR",
+                "parent": "FBObservationCodeEntity_Resolved/attributeContext/FBObservationCodeEntity_Resolved/BackingTable_FBObservationCodeTable_BRRelationship",
+                "definition": "resolvedFrom/FBObservationCodeTable_BR",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "FBObservationCodeEntity_Resolved/attributeContext/FBObservationCodeEntity_Resolved/BackingTable_FBObservationCodeTable_BRRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "FBObservationCodeEntity_Resolved/attributeContext/FBObservationCodeEntity_Resolved/BackingTable_FBObservationCodeTable_BRRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "FBObservationCodeEntity_Resolved/attributeContext/FBObservationCodeEntity_Resolved/BackingTable_FBObservationCodeTable_BRRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "FBObservationCodeEntity_Resolved/hasAttributes/BackingTable_FBObservationCodeTable_BRRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "ObservationCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "FBObservationCodeEntity_Resolved/attributeContext/FBObservationCodeEntity_Resolved/ObservationCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "FBObservationCodeEntity_Resolved/attributeContext/FBObservationCodeEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_FBObservationCodeTable_BRRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/FiscalBooksBrazil/Main/FBObservationCodeTable_BR.cdm.json/FBObservationCodeTable_BR",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "FBObservationCodeEntity_Resolved/attributeContext/FBObservationCodeEntity_Resolved/BackingTable_FBObservationCodeTable_BRRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Tax adjustment observation codes",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

@@ -1,0 +1,280 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "TaxWithholdReportSetupEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TaxWithholdReportSetupEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "TaxWithholdReportSetupEntity_Resolved",
+        "definition": "resolvedFrom/TaxWithholdReportSetupEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "TaxWithholdReportSetupEntity_Resolved/attributeContext/TaxWithholdReportSetupEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "TaxWithholdReportSetupEntity_Resolved/attributeContext/TaxWithholdReportSetupEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "TaxWithholdReportLayout_TH",
+            "parent": "TaxWithholdReportSetupEntity_Resolved/attributeContext/TaxWithholdReportSetupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxWithholdReportSetupEntity/hasAttributes/TaxWithholdReportLayout_TH",
+            "contents": [
+              "TaxWithholdReportSetupEntity_Resolved/hasAttributes/TaxWithholdReportLayout_TH"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "TaxWithholdVendorType_TH",
+            "parent": "TaxWithholdReportSetupEntity_Resolved/attributeContext/TaxWithholdReportSetupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxWithholdReportSetupEntity/hasAttributes/TaxWithholdVendorType_TH",
+            "contents": [
+              "TaxWithholdReportSetupEntity_Resolved/hasAttributes/TaxWithholdVendorType_TH"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "TaxWithholdItemGroupHeading_TH",
+            "parent": "TaxWithholdReportSetupEntity_Resolved/attributeContext/TaxWithholdReportSetupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxWithholdReportSetupEntity/hasAttributes/TaxWithholdItemGroupHeading_TH",
+            "contents": [
+              "TaxWithholdReportSetupEntity_Resolved/hasAttributes/TaxWithholdItemGroupHeading_TH"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_TaxWithholdReportSetup_THRelationship",
+            "parent": "TaxWithholdReportSetupEntity_Resolved/attributeContext/TaxWithholdReportSetupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxWithholdReportSetupEntity/hasAttributes/BackingTable_TaxWithholdReportSetup_THRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "TaxWithholdReportSetup_TH",
+                "parent": "TaxWithholdReportSetupEntity_Resolved/attributeContext/TaxWithholdReportSetupEntity_Resolved/BackingTable_TaxWithholdReportSetup_THRelationship",
+                "definition": "resolvedFrom/TaxWithholdReportSetup_TH",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxWithholdReportSetupEntity_Resolved/attributeContext/TaxWithholdReportSetupEntity_Resolved/BackingTable_TaxWithholdReportSetup_THRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxWithholdReportSetupEntity_Resolved/attributeContext/TaxWithholdReportSetupEntity_Resolved/BackingTable_TaxWithholdReportSetup_THRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxWithholdReportSetupEntity_Resolved/attributeContext/TaxWithholdReportSetupEntity_Resolved/BackingTable_TaxWithholdReportSetup_THRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxWithholdReportSetupEntity_Resolved/hasAttributes/BackingTable_TaxWithholdReportSetup_THRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "TaxWithholdReportSetupEntity_Resolved/attributeContext/TaxWithholdReportSetupEntity_Resolved",
+            "definition": "resolvedFrom/TaxWithholdReportSetupEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "TaxWithholdReportSetupEntity_Resolved/attributeContext/TaxWithholdReportSetupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxWithholdReportSetupEntity_Resolved/attributeContext/TaxWithholdReportSetupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxWithholdReportSetupEntity_Resolved/attributeContext/TaxWithholdReportSetupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxWithholdReportSetupEntity_Resolved/attributeContext/TaxWithholdReportSetupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxWithholdReportSetupEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "TaxWithholdReportLayout_TH",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxWithholdReportSetupEntity_Resolved/attributeContext/TaxWithholdReportSetupEntity_Resolved/TaxWithholdReportLayout_TH",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "TaxWithholdVendorType_TH",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxWithholdReportSetupEntity_Resolved/attributeContext/TaxWithholdReportSetupEntity_Resolved/TaxWithholdVendorType_TH",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "TaxWithholdItemGroupHeading_TH",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxWithholdReportSetupEntity_Resolved/attributeContext/TaxWithholdReportSetupEntity_Resolved/TaxWithholdItemGroupHeading_TH",
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_TaxWithholdReportSetup_THRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Tax/Group/TaxWithholdReportSetup_TH.cdm.json/TaxWithholdReportSetup_TH",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxWithholdReportSetupEntity_Resolved/attributeContext/TaxWithholdReportSetupEntity_Resolved/BackingTable_TaxWithholdReportSetup_THRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxWithholdReportSetupEntity_Resolved/attributeContext/TaxWithholdReportSetupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Withholding tax report setup",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

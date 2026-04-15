@@ -1,0 +1,321 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "BankClientAccountBalanceEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "BankClientAccountBalanceEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "BankClientAccountBalanceEntity_Resolved",
+        "definition": "resolvedFrom/BankClientAccountBalanceEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "BankClientAccountBalanceEntity_Resolved/attributeContext/BankClientAccountBalanceEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "BankClientAccountBalanceEntity_Resolved/attributeContext/BankClientAccountBalanceEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BankAccount",
+            "parent": "BankClientAccountBalanceEntity_Resolved/attributeContext/BankClientAccountBalanceEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BankClientAccountBalanceEntity/hasAttributes/BankAccount",
+            "contents": [
+              "BankClientAccountBalanceEntity_Resolved/hasAttributes/BankAccount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Amount",
+            "parent": "BankClientAccountBalanceEntity_Resolved/attributeContext/BankClientAccountBalanceEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BankClientAccountBalanceEntity/hasAttributes/Amount",
+            "contents": [
+              "BankClientAccountBalanceEntity_Resolved/hasAttributes/Amount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "RecordType",
+            "parent": "BankClientAccountBalanceEntity_Resolved/attributeContext/BankClientAccountBalanceEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BankClientAccountBalanceEntity/hasAttributes/RecordType",
+            "contents": [
+              "BankClientAccountBalanceEntity_Resolved/hasAttributes/RecordType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "FromDate",
+            "parent": "BankClientAccountBalanceEntity_Resolved/attributeContext/BankClientAccountBalanceEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BankClientAccountBalanceEntity/hasAttributes/FromDate",
+            "contents": [
+              "BankClientAccountBalanceEntity_Resolved/hasAttributes/FromDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ToDate",
+            "parent": "BankClientAccountBalanceEntity_Resolved/attributeContext/BankClientAccountBalanceEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BankClientAccountBalanceEntity/hasAttributes/ToDate",
+            "contents": [
+              "BankClientAccountBalanceEntity_Resolved/hasAttributes/ToDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_BankClientAccountBalance_RURelationship",
+            "parent": "BankClientAccountBalanceEntity_Resolved/attributeContext/BankClientAccountBalanceEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BankClientAccountBalanceEntity/hasAttributes/BackingTable_BankClientAccountBalance_RURelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "BankClientAccountBalance_RU",
+                "parent": "BankClientAccountBalanceEntity_Resolved/attributeContext/BankClientAccountBalanceEntity_Resolved/BackingTable_BankClientAccountBalance_RURelationship",
+                "definition": "resolvedFrom/BankClientAccountBalance_RU",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "BankClientAccountBalanceEntity_Resolved/attributeContext/BankClientAccountBalanceEntity_Resolved/BackingTable_BankClientAccountBalance_RURelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "BankClientAccountBalanceEntity_Resolved/attributeContext/BankClientAccountBalanceEntity_Resolved/BackingTable_BankClientAccountBalance_RURelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "BankClientAccountBalanceEntity_Resolved/attributeContext/BankClientAccountBalanceEntity_Resolved/BackingTable_BankClientAccountBalance_RURelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "BankClientAccountBalanceEntity_Resolved/hasAttributes/BackingTable_BankClientAccountBalance_RURelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "BankClientAccountBalanceEntity_Resolved/attributeContext/BankClientAccountBalanceEntity_Resolved",
+            "definition": "resolvedFrom/BankClientAccountBalanceEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "BankClientAccountBalanceEntity_Resolved/attributeContext/BankClientAccountBalanceEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "BankClientAccountBalanceEntity_Resolved/attributeContext/BankClientAccountBalanceEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "BankClientAccountBalanceEntity_Resolved/attributeContext/BankClientAccountBalanceEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "BankClientAccountBalanceEntity_Resolved/attributeContext/BankClientAccountBalanceEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "BankClientAccountBalanceEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "BankAccount",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BankClientAccountBalanceEntity_Resolved/attributeContext/BankClientAccountBalanceEntity_Resolved/BankAccount",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Amount",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BankClientAccountBalanceEntity_Resolved/attributeContext/BankClientAccountBalanceEntity_Resolved/Amount",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "RecordType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BankClientAccountBalanceEntity_Resolved/attributeContext/BankClientAccountBalanceEntity_Resolved/RecordType",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "FromDate",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BankClientAccountBalanceEntity_Resolved/attributeContext/BankClientAccountBalanceEntity_Resolved/FromDate",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ToDate",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BankClientAccountBalanceEntity_Resolved/attributeContext/BankClientAccountBalanceEntity_Resolved/ToDate",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_BankClientAccountBalance_RURelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Bank/Miscellaneous/BankClientAccountBalance_RU.cdm.json/BankClientAccountBalance_RU",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "BankClientAccountBalanceEntity_Resolved/attributeContext/BankClientAccountBalanceEntity_Resolved/BackingTable_BankClientAccountBalance_RURelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "BankClientAccountBalanceEntity_Resolved/attributeContext/BankClientAccountBalanceEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Bank account balance according to the statement",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

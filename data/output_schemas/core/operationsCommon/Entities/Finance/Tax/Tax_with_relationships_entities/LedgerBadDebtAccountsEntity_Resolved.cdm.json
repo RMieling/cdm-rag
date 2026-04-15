@@ -1,0 +1,250 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "LedgerBadDebtAccountsEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "LedgerBadDebtAccountsEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "LedgerBadDebtAccountsEntity_Resolved",
+        "definition": "resolvedFrom/LedgerBadDebtAccountsEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "LedgerBadDebtAccountsEntity_Resolved/attributeContext/LedgerBadDebtAccountsEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "LedgerBadDebtAccountsEntity_Resolved/attributeContext/LedgerBadDebtAccountsEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BadDebtMainAccountDisplayValue",
+            "parent": "LedgerBadDebtAccountsEntity_Resolved/attributeContext/LedgerBadDebtAccountsEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerBadDebtAccountsEntity/hasAttributes/BadDebtMainAccountDisplayValue",
+            "contents": [
+              "LedgerBadDebtAccountsEntity_Resolved/hasAttributes/BadDebtMainAccountDisplayValue"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CollectedBadDebtMainAccountDisplayValue",
+            "parent": "LedgerBadDebtAccountsEntity_Resolved/attributeContext/LedgerBadDebtAccountsEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerBadDebtAccountsEntity/hasAttributes/CollectedBadDebtMainAccountDisplayValue",
+            "contents": [
+              "LedgerBadDebtAccountsEntity_Resolved/hasAttributes/CollectedBadDebtMainAccountDisplayValue"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BadDebtMainAccount",
+            "parent": "LedgerBadDebtAccountsEntity_Resolved/attributeContext/LedgerBadDebtAccountsEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerBadDebtAccountsEntity/hasAttributes/BadDebtMainAccount",
+            "contents": [
+              "LedgerBadDebtAccountsEntity_Resolved/hasAttributes/BadDebtMainAccount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CollectedBadDebtMainAccount",
+            "parent": "LedgerBadDebtAccountsEntity_Resolved/attributeContext/LedgerBadDebtAccountsEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerBadDebtAccountsEntity/hasAttributes/CollectedBadDebtMainAccount",
+            "contents": [
+              "LedgerBadDebtAccountsEntity_Resolved/hasAttributes/CollectedBadDebtMainAccount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Company",
+            "parent": "LedgerBadDebtAccountsEntity_Resolved/attributeContext/LedgerBadDebtAccountsEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerBadDebtAccountsEntity/hasAttributes/Company",
+            "contents": [
+              "LedgerBadDebtAccountsEntity_Resolved/hasAttributes/Company"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_LedgerBadDebtAccounts_JPRelationship",
+            "parent": "LedgerBadDebtAccountsEntity_Resolved/attributeContext/LedgerBadDebtAccountsEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/LedgerBadDebtAccountsEntity/hasAttributes/BackingTable_LedgerBadDebtAccounts_JPRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "LedgerBadDebtAccounts_JP",
+                "parent": "LedgerBadDebtAccountsEntity_Resolved/attributeContext/LedgerBadDebtAccountsEntity_Resolved/BackingTable_LedgerBadDebtAccounts_JPRelationship",
+                "definition": "resolvedFrom/LedgerBadDebtAccounts_JP",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "LedgerBadDebtAccountsEntity_Resolved/attributeContext/LedgerBadDebtAccountsEntity_Resolved/BackingTable_LedgerBadDebtAccounts_JPRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "LedgerBadDebtAccountsEntity_Resolved/attributeContext/LedgerBadDebtAccountsEntity_Resolved/BackingTable_LedgerBadDebtAccounts_JPRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "LedgerBadDebtAccountsEntity_Resolved/attributeContext/LedgerBadDebtAccountsEntity_Resolved/BackingTable_LedgerBadDebtAccounts_JPRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "LedgerBadDebtAccountsEntity_Resolved/hasAttributes/BackingTable_LedgerBadDebtAccounts_JPRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "BadDebtMainAccountDisplayValue",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerBadDebtAccountsEntity_Resolved/attributeContext/LedgerBadDebtAccountsEntity_Resolved/BadDebtMainAccountDisplayValue",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Bad debt"
+        },
+        {
+          "name": "CollectedBadDebtMainAccountDisplayValue",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerBadDebtAccountsEntity_Resolved/attributeContext/LedgerBadDebtAccountsEntity_Resolved/CollectedBadDebtMainAccountDisplayValue",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Collected bad debt"
+        },
+        {
+          "name": "BadDebtMainAccount",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerBadDebtAccountsEntity_Resolved/attributeContext/LedgerBadDebtAccountsEntity_Resolved/BadDebtMainAccount",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "CollectedBadDebtMainAccount",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerBadDebtAccountsEntity_Resolved/attributeContext/LedgerBadDebtAccountsEntity_Resolved/CollectedBadDebtMainAccount",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Company",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "LedgerBadDebtAccountsEntity_Resolved/attributeContext/LedgerBadDebtAccountsEntity_Resolved/Company",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_LedgerBadDebtAccounts_JPRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Reference/LedgerBadDebtAccounts_JP.cdm.json/LedgerBadDebtAccounts_JP",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "LedgerBadDebtAccountsEntity_Resolved/attributeContext/LedgerBadDebtAccountsEntity_Resolved/BackingTable_LedgerBadDebtAccounts_JPRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Tax reporting accounts",
+      "version": "1.1.1"
+    }
+  ],
+  "documentVersion": "1.1.1"
+}

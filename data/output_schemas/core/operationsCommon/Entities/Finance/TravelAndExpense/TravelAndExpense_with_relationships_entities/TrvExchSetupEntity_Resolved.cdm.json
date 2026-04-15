@@ -1,0 +1,302 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "TrvExchSetupEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TrvExchSetupEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "TrvExchSetupEntity_Resolved",
+        "definition": "resolvedFrom/TrvExchSetupEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "TrvExchSetupEntity_Resolved/attributeContext/TrvExchSetupEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "TrvExchSetupEntity_Resolved/attributeContext/TrvExchSetupEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "AccountType",
+            "parent": "TrvExchSetupEntity_Resolved/attributeContext/TrvExchSetupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvExchSetupEntity/hasAttributes/AccountType",
+            "contents": [
+              "TrvExchSetupEntity_Resolved/hasAttributes/AccountType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "AdvanceAccountLedgerDimension",
+            "parent": "TrvExchSetupEntity_Resolved/attributeContext/TrvExchSetupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvExchSetupEntity/hasAttributes/AdvanceAccountLedgerDimension",
+            "contents": [
+              "TrvExchSetupEntity_Resolved/hasAttributes/AdvanceAccountLedgerDimension"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ExchangeCode",
+            "parent": "TrvExchSetupEntity_Resolved/attributeContext/TrvExchSetupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvExchSetupEntity/hasAttributes/ExchangeCode",
+            "contents": [
+              "TrvExchSetupEntity_Resolved/hasAttributes/ExchangeCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "AdvanceAccountLedgerDimensionDisplayValue",
+            "parent": "TrvExchSetupEntity_Resolved/attributeContext/TrvExchSetupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvExchSetupEntity/hasAttributes/AdvanceAccountLedgerDimensionDisplayValue",
+            "contents": [
+              "TrvExchSetupEntity_Resolved/hasAttributes/AdvanceAccountLedgerDimensionDisplayValue"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_TrvExchSetupRelationship",
+            "parent": "TrvExchSetupEntity_Resolved/attributeContext/TrvExchSetupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvExchSetupEntity/hasAttributes/BackingTable_TrvExchSetupRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "TrvExchSetup",
+                "parent": "TrvExchSetupEntity_Resolved/attributeContext/TrvExchSetupEntity_Resolved/BackingTable_TrvExchSetupRelationship",
+                "definition": "resolvedFrom/TrvExchSetup",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TrvExchSetupEntity_Resolved/attributeContext/TrvExchSetupEntity_Resolved/BackingTable_TrvExchSetupRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TrvExchSetupEntity_Resolved/attributeContext/TrvExchSetupEntity_Resolved/BackingTable_TrvExchSetupRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TrvExchSetupEntity_Resolved/attributeContext/TrvExchSetupEntity_Resolved/BackingTable_TrvExchSetupRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TrvExchSetupEntity_Resolved/hasAttributes/BackingTable_TrvExchSetupRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "TrvExchSetupEntity_Resolved/attributeContext/TrvExchSetupEntity_Resolved",
+            "definition": "resolvedFrom/TrvExchSetupEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "TrvExchSetupEntity_Resolved/attributeContext/TrvExchSetupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TrvExchSetupEntity_Resolved/attributeContext/TrvExchSetupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TrvExchSetupEntity_Resolved/attributeContext/TrvExchSetupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TrvExchSetupEntity_Resolved/attributeContext/TrvExchSetupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TrvExchSetupEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "AccountType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvExchSetupEntity_Resolved/attributeContext/TrvExchSetupEntity_Resolved/AccountType",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "AdvanceAccountLedgerDimension",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvExchSetupEntity_Resolved/attributeContext/TrvExchSetupEntity_Resolved/AdvanceAccountLedgerDimension",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ExchangeCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvExchSetupEntity_Resolved/attributeContext/TrvExchSetupEntity_Resolved/ExchangeCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "AdvanceAccountLedgerDimensionDisplayValue",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvExchSetupEntity_Resolved/attributeContext/TrvExchSetupEntity_Resolved/AdvanceAccountLedgerDimensionDisplayValue",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Combination display"
+        },
+        {
+          "name": "BackingTable_TrvExchSetupRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Expense/Reference/TrvExchSetup.cdm.json/TrvExchSetup",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TrvExchSetupEntity_Resolved/attributeContext/TrvExchSetupEntity_Resolved/BackingTable_TrvExchSetupRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TrvExchSetupEntity_Resolved/attributeContext/TrvExchSetupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Cash advance accounts",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

@@ -1,0 +1,321 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "RTax25StdSeqEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "RTax25StdSeqEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "RTax25StdSeqEntity_Resolved",
+        "definition": "resolvedFrom/RTax25StdSeqEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "RTax25StdSeqEntity_Resolved/attributeContext/RTax25StdSeqEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "RTax25StdSeqEntity_Resolved/attributeContext/RTax25StdSeqEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ChannelReference",
+            "parent": "RTax25StdSeqEntity_Resolved/attributeContext/RTax25StdSeqEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RTax25StdSeqEntity/hasAttributes/ChannelReference",
+            "contents": [
+              "RTax25StdSeqEntity_Resolved/hasAttributes/ChannelReference"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Channel",
+            "parent": "RTax25StdSeqEntity_Resolved/attributeContext/RTax25StdSeqEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RTax25StdSeqEntity/hasAttributes/Channel",
+            "contents": [
+              "RTax25StdSeqEntity_Resolved/hasAttributes/Channel"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "RTax25StdSeqEntity_Resolved/attributeContext/RTax25StdSeqEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RTax25StdSeqEntity/hasAttributes/Description",
+            "contents": [
+              "RTax25StdSeqEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "AppliedModule",
+            "parent": "RTax25StdSeqEntity_Resolved/attributeContext/RTax25StdSeqEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RTax25StdSeqEntity/hasAttributes/AppliedModule",
+            "contents": [
+              "RTax25StdSeqEntity_Resolved/hasAttributes/AppliedModule"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Sequence",
+            "parent": "RTax25StdSeqEntity_Resolved/attributeContext/RTax25StdSeqEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RTax25StdSeqEntity/hasAttributes/Sequence",
+            "contents": [
+              "RTax25StdSeqEntity_Resolved/hasAttributes/Sequence"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_RTax25StdSeqRelationship",
+            "parent": "RTax25StdSeqEntity_Resolved/attributeContext/RTax25StdSeqEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RTax25StdSeqEntity/hasAttributes/BackingTable_RTax25StdSeqRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "RTax25StdSeq",
+                "parent": "RTax25StdSeqEntity_Resolved/attributeContext/RTax25StdSeqEntity_Resolved/BackingTable_RTax25StdSeqRelationship",
+                "definition": "resolvedFrom/RTax25StdSeq",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "RTax25StdSeqEntity_Resolved/attributeContext/RTax25StdSeqEntity_Resolved/BackingTable_RTax25StdSeqRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "RTax25StdSeqEntity_Resolved/attributeContext/RTax25StdSeqEntity_Resolved/BackingTable_RTax25StdSeqRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "RTax25StdSeqEntity_Resolved/attributeContext/RTax25StdSeqEntity_Resolved/BackingTable_RTax25StdSeqRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "RTax25StdSeqEntity_Resolved/hasAttributes/BackingTable_RTax25StdSeqRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "RTax25StdSeqEntity_Resolved/attributeContext/RTax25StdSeqEntity_Resolved",
+            "definition": "resolvedFrom/RTax25StdSeqEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "RTax25StdSeqEntity_Resolved/attributeContext/RTax25StdSeqEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "RTax25StdSeqEntity_Resolved/attributeContext/RTax25StdSeqEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "RTax25StdSeqEntity_Resolved/attributeContext/RTax25StdSeqEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "RTax25StdSeqEntity_Resolved/attributeContext/RTax25StdSeqEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "RTax25StdSeqEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "ChannelReference",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RTax25StdSeqEntity_Resolved/attributeContext/RTax25StdSeqEntity_Resolved/ChannelReference",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Channel",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RTax25StdSeqEntity_Resolved/attributeContext/RTax25StdSeqEntity_Resolved/Channel",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RTax25StdSeqEntity_Resolved/attributeContext/RTax25StdSeqEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "AppliedModule",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RTax25StdSeqEntity_Resolved/attributeContext/RTax25StdSeqEntity_Resolved/AppliedModule",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Sequence",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RTax25StdSeqEntity_Resolved/attributeContext/RTax25StdSeqEntity_Resolved/Sequence",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_RTax25StdSeqRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/RTax25/Main/RTax25StdSeq.cdm.json/RTax25StdSeq",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "RTax25StdSeqEntity_Resolved/attributeContext/RTax25StdSeqEntity_Resolved/BackingTable_RTax25StdSeqRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "RTax25StdSeqEntity_Resolved/attributeContext/RTax25StdSeqEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Standard expenses sequence",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

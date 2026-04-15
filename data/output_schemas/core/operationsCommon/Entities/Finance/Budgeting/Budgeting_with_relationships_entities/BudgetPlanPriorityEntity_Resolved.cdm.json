@@ -1,0 +1,188 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "BudgetPlanPriorityEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "BudgetPlanPriorityEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "BudgetPlanPriorityEntity_Resolved",
+        "definition": "resolvedFrom/BudgetPlanPriorityEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "BudgetPlanPriorityEntity_Resolved/attributeContext/BudgetPlanPriorityEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "BudgetPlanPriorityEntity_Resolved/attributeContext/BudgetPlanPriorityEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "BudgetPlanPriorityEntity_Resolved/attributeContext/BudgetPlanPriorityEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetPlanPriorityEntity/hasAttributes/Description",
+            "contents": [
+              "BudgetPlanPriorityEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "BudgetPlanPriorityEntity_Resolved/attributeContext/BudgetPlanPriorityEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetPlanPriorityEntity/hasAttributes/Name",
+            "contents": [
+              "BudgetPlanPriorityEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_BudgetPlanPriorityRelationship",
+            "parent": "BudgetPlanPriorityEntity_Resolved/attributeContext/BudgetPlanPriorityEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetPlanPriorityEntity/hasAttributes/BackingTable_BudgetPlanPriorityRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "BudgetPlanPriority",
+                "parent": "BudgetPlanPriorityEntity_Resolved/attributeContext/BudgetPlanPriorityEntity_Resolved/BackingTable_BudgetPlanPriorityRelationship",
+                "definition": "resolvedFrom/BudgetPlanPriority",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "BudgetPlanPriorityEntity_Resolved/attributeContext/BudgetPlanPriorityEntity_Resolved/BackingTable_BudgetPlanPriorityRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "BudgetPlanPriorityEntity_Resolved/attributeContext/BudgetPlanPriorityEntity_Resolved/BackingTable_BudgetPlanPriorityRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "BudgetPlanPriorityEntity_Resolved/attributeContext/BudgetPlanPriorityEntity_Resolved/BackingTable_BudgetPlanPriorityRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "BudgetPlanPriorityEntity_Resolved/hasAttributes/BackingTable_BudgetPlanPriorityRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetPlanPriorityEntity_Resolved/attributeContext/BudgetPlanPriorityEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetPlanPriorityEntity_Resolved/attributeContext/BudgetPlanPriorityEntity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_BudgetPlanPriorityRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Budget/Group/BudgetPlanPriority.cdm.json/BudgetPlanPriority",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "BudgetPlanPriorityEntity_Resolved/attributeContext/BudgetPlanPriorityEntity_Resolved/BackingTable_BudgetPlanPriorityRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Budget plan priorities",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

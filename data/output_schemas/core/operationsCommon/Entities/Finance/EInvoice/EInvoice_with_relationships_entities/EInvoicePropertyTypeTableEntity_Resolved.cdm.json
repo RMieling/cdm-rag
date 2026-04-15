@@ -1,0 +1,248 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "EInvoicePropertyTypeTableEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "EInvoicePropertyTypeTableEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "EInvoicePropertyTypeTableEntity_Resolved",
+        "definition": "resolvedFrom/EInvoicePropertyTypeTableEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "EInvoicePropertyTypeTableEntity_Resolved/attributeContext/EInvoicePropertyTypeTableEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "EInvoicePropertyTypeTableEntity_Resolved/attributeContext/EInvoicePropertyTypeTableEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Custom",
+            "parent": "EInvoicePropertyTypeTableEntity_Resolved/attributeContext/EInvoicePropertyTypeTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EInvoicePropertyTypeTableEntity/hasAttributes/Custom",
+            "contents": [
+              "EInvoicePropertyTypeTableEntity_Resolved/hasAttributes/Custom"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DescriptionLabel",
+            "parent": "EInvoicePropertyTypeTableEntity_Resolved/attributeContext/EInvoicePropertyTypeTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EInvoicePropertyTypeTableEntity/hasAttributes/DescriptionLabel",
+            "contents": [
+              "EInvoicePropertyTypeTableEntity_Resolved/hasAttributes/DescriptionLabel"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "GroupDescriptionLabel",
+            "parent": "EInvoicePropertyTypeTableEntity_Resolved/attributeContext/EInvoicePropertyTypeTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EInvoicePropertyTypeTableEntity/hasAttributes/GroupDescriptionLabel",
+            "contents": [
+              "EInvoicePropertyTypeTableEntity_Resolved/hasAttributes/GroupDescriptionLabel"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Type",
+            "parent": "EInvoicePropertyTypeTableEntity_Resolved/attributeContext/EInvoicePropertyTypeTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EInvoicePropertyTypeTableEntity/hasAttributes/Type",
+            "contents": [
+              "EInvoicePropertyTypeTableEntity_Resolved/hasAttributes/Type"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Sorting",
+            "parent": "EInvoicePropertyTypeTableEntity_Resolved/attributeContext/EInvoicePropertyTypeTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EInvoicePropertyTypeTableEntity/hasAttributes/Sorting",
+            "contents": [
+              "EInvoicePropertyTypeTableEntity_Resolved/hasAttributes/Sorting"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_EInvoicePropertyTypeTableRelationship",
+            "parent": "EInvoicePropertyTypeTableEntity_Resolved/attributeContext/EInvoicePropertyTypeTableEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EInvoicePropertyTypeTableEntity/hasAttributes/BackingTable_EInvoicePropertyTypeTableRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "EInvoicePropertyTypeTable",
+                "parent": "EInvoicePropertyTypeTableEntity_Resolved/attributeContext/EInvoicePropertyTypeTableEntity_Resolved/BackingTable_EInvoicePropertyTypeTableRelationship",
+                "definition": "resolvedFrom/EInvoicePropertyTypeTable",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "EInvoicePropertyTypeTableEntity_Resolved/attributeContext/EInvoicePropertyTypeTableEntity_Resolved/BackingTable_EInvoicePropertyTypeTableRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "EInvoicePropertyTypeTableEntity_Resolved/attributeContext/EInvoicePropertyTypeTableEntity_Resolved/BackingTable_EInvoicePropertyTypeTableRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "EInvoicePropertyTypeTableEntity_Resolved/attributeContext/EInvoicePropertyTypeTableEntity_Resolved/BackingTable_EInvoicePropertyTypeTableRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "EInvoicePropertyTypeTableEntity_Resolved/hasAttributes/BackingTable_EInvoicePropertyTypeTableRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Custom",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "EInvoicePropertyTypeTableEntity_Resolved/attributeContext/EInvoicePropertyTypeTableEntity_Resolved/Custom",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "DescriptionLabel",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "EInvoicePropertyTypeTableEntity_Resolved/attributeContext/EInvoicePropertyTypeTableEntity_Resolved/DescriptionLabel",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "GroupDescriptionLabel",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "EInvoicePropertyTypeTableEntity_Resolved/attributeContext/EInvoicePropertyTypeTableEntity_Resolved/GroupDescriptionLabel",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Type",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "EInvoicePropertyTypeTableEntity_Resolved/attributeContext/EInvoicePropertyTypeTableEntity_Resolved/Type",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Sorting",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "EInvoicePropertyTypeTableEntity_Resolved/attributeContext/EInvoicePropertyTypeTableEntity_Resolved/Sorting",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_EInvoicePropertyTypeTableRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/EInvoice/Parameter/EInvoicePropertyTypeTable.cdm.json/EInvoicePropertyTypeTable",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "EInvoicePropertyTypeTableEntity_Resolved/attributeContext/EInvoicePropertyTypeTableEntity_Resolved/BackingTable_EInvoicePropertyTypeTableRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Electronic document property types",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

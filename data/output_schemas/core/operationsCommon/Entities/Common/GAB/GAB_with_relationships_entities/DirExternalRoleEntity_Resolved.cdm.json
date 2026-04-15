@@ -1,0 +1,188 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "DirExternalRoleEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "DirExternalRoleEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "DirExternalRoleEntity_Resolved",
+        "definition": "resolvedFrom/DirExternalRoleEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "DirExternalRoleEntity_Resolved/attributeContext/DirExternalRoleEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "DirExternalRoleEntity_Resolved/attributeContext/DirExternalRoleEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Role",
+            "parent": "DirExternalRoleEntity_Resolved/attributeContext/DirExternalRoleEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DirExternalRoleEntity/hasAttributes/Role",
+            "contents": [
+              "DirExternalRoleEntity_Resolved/hasAttributes/Role"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Type",
+            "parent": "DirExternalRoleEntity_Resolved/attributeContext/DirExternalRoleEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DirExternalRoleEntity/hasAttributes/Type",
+            "contents": [
+              "DirExternalRoleEntity_Resolved/hasAttributes/Type"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_DirExternalRoleRelationship",
+            "parent": "DirExternalRoleEntity_Resolved/attributeContext/DirExternalRoleEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DirExternalRoleEntity/hasAttributes/BackingTable_DirExternalRoleRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "DirExternalRole",
+                "parent": "DirExternalRoleEntity_Resolved/attributeContext/DirExternalRoleEntity_Resolved/BackingTable_DirExternalRoleRelationship",
+                "definition": "resolvedFrom/DirExternalRole",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "DirExternalRoleEntity_Resolved/attributeContext/DirExternalRoleEntity_Resolved/BackingTable_DirExternalRoleRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "DirExternalRoleEntity_Resolved/attributeContext/DirExternalRoleEntity_Resolved/BackingTable_DirExternalRoleRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "DirExternalRoleEntity_Resolved/attributeContext/DirExternalRoleEntity_Resolved/BackingTable_DirExternalRoleRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "DirExternalRoleEntity_Resolved/hasAttributes/BackingTable_DirExternalRoleRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Role",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DirExternalRoleEntity_Resolved/attributeContext/DirExternalRoleEntity_Resolved/Role",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Type",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DirExternalRoleEntity_Resolved/attributeContext/DirExternalRoleEntity_Resolved/Type",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_DirExternalRoleRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Common/GAB/Main/DirExternalRole.cdm.json/DirExternalRole",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "DirExternalRoleEntity_Resolved/attributeContext/DirExternalRoleEntity_Resolved/BackingTable_DirExternalRoleRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "External role",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

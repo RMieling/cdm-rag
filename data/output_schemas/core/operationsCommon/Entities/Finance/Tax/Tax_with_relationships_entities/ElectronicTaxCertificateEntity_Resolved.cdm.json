@@ -1,0 +1,301 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "ElectronicTaxCertificateEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "ElectronicTaxCertificateEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "ElectronicTaxCertificateEntity_Resolved",
+        "definition": "resolvedFrom/ElectronicTaxCertificateEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "ElectronicTaxCertificateEntity_Resolved/attributeContext/ElectronicTaxCertificateEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "ElectronicTaxCertificateEntity_Resolved/attributeContext/ElectronicTaxCertificateEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CertificatesReference",
+            "parent": "ElectronicTaxCertificateEntity_Resolved/attributeContext/ElectronicTaxCertificateEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/ElectronicTaxCertificateEntity/hasAttributes/CertificatesReference",
+            "contents": [
+              "ElectronicTaxCertificateEntity_Resolved/hasAttributes/CertificatesReference"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CertificateType",
+            "parent": "ElectronicTaxCertificateEntity_Resolved/attributeContext/ElectronicTaxCertificateEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/ElectronicTaxCertificateEntity/hasAttributes/CertificateType",
+            "contents": [
+              "ElectronicTaxCertificateEntity_Resolved/hasAttributes/CertificateType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "UserId",
+            "parent": "ElectronicTaxCertificateEntity_Resolved/attributeContext/ElectronicTaxCertificateEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/ElectronicTaxCertificateEntity/hasAttributes/UserId",
+            "contents": [
+              "ElectronicTaxCertificateEntity_Resolved/hasAttributes/UserId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Company",
+            "parent": "ElectronicTaxCertificateEntity_Resolved/attributeContext/ElectronicTaxCertificateEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/ElectronicTaxCertificateEntity/hasAttributes/Company",
+            "contents": [
+              "ElectronicTaxCertificateEntity_Resolved/hasAttributes/Company"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_TaxElectronicCertificatesTableRelationship",
+            "parent": "ElectronicTaxCertificateEntity_Resolved/attributeContext/ElectronicTaxCertificateEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/ElectronicTaxCertificateEntity/hasAttributes/BackingTable_TaxElectronicCertificatesTableRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "TaxElectronicCertificatesTable",
+                "parent": "ElectronicTaxCertificateEntity_Resolved/attributeContext/ElectronicTaxCertificateEntity_Resolved/BackingTable_TaxElectronicCertificatesTableRelationship",
+                "definition": "resolvedFrom/TaxElectronicCertificatesTable",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "ElectronicTaxCertificateEntity_Resolved/attributeContext/ElectronicTaxCertificateEntity_Resolved/BackingTable_TaxElectronicCertificatesTableRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "ElectronicTaxCertificateEntity_Resolved/attributeContext/ElectronicTaxCertificateEntity_Resolved/BackingTable_TaxElectronicCertificatesTableRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "ElectronicTaxCertificateEntity_Resolved/attributeContext/ElectronicTaxCertificateEntity_Resolved/BackingTable_TaxElectronicCertificatesTableRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "ElectronicTaxCertificateEntity_Resolved/hasAttributes/BackingTable_TaxElectronicCertificatesTableRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "ElectronicTaxCertificateEntity_Resolved/attributeContext/ElectronicTaxCertificateEntity_Resolved",
+            "definition": "resolvedFrom/ElectronicTaxCertificateEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "ElectronicTaxCertificateEntity_Resolved/attributeContext/ElectronicTaxCertificateEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "ElectronicTaxCertificateEntity_Resolved/attributeContext/ElectronicTaxCertificateEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "ElectronicTaxCertificateEntity_Resolved/attributeContext/ElectronicTaxCertificateEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "ElectronicTaxCertificateEntity_Resolved/attributeContext/ElectronicTaxCertificateEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "ElectronicTaxCertificateEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "CertificatesReference",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "ElectronicTaxCertificateEntity_Resolved/attributeContext/ElectronicTaxCertificateEntity_Resolved/CertificatesReference",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "CertificateType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "ElectronicTaxCertificateEntity_Resolved/attributeContext/ElectronicTaxCertificateEntity_Resolved/CertificateType",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "UserId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "ElectronicTaxCertificateEntity_Resolved/attributeContext/ElectronicTaxCertificateEntity_Resolved/UserId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Company",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "ElectronicTaxCertificateEntity_Resolved/attributeContext/ElectronicTaxCertificateEntity_Resolved/Company",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_TaxElectronicCertificatesTableRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Tax/Main/TaxElectronicCertificatesTable.cdm.json/TaxElectronicCertificatesTable",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "ElectronicTaxCertificateEntity_Resolved/attributeContext/ElectronicTaxCertificateEntity_Resolved/BackingTable_TaxElectronicCertificatesTableRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "ElectronicTaxCertificateEntity_Resolved/attributeContext/ElectronicTaxCertificateEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Electronic tax certificates",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

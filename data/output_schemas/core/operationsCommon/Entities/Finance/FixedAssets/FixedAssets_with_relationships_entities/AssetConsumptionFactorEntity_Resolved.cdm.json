@@ -1,0 +1,320 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "AssetConsumptionFactorEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "AssetConsumptionFactorEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "AssetConsumptionFactorEntity_Resolved",
+        "definition": "resolvedFrom/AssetConsumptionFactorEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "AssetConsumptionFactorEntity_Resolved/attributeContext/AssetConsumptionFactorEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "AssetConsumptionFactorEntity_Resolved/attributeContext/AssetConsumptionFactorEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Percentage",
+            "parent": "AssetConsumptionFactorEntity_Resolved/attributeContext/AssetConsumptionFactorEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetConsumptionFactorEntity/hasAttributes/Percentage",
+            "contents": [
+              "AssetConsumptionFactorEntity_Resolved/hasAttributes/Percentage"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Quantity",
+            "parent": "AssetConsumptionFactorEntity_Resolved/attributeContext/AssetConsumptionFactorEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetConsumptionFactorEntity/hasAttributes/Quantity",
+            "contents": [
+              "AssetConsumptionFactorEntity_Resolved/hasAttributes/Quantity"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "EndDate",
+            "parent": "AssetConsumptionFactorEntity_Resolved/attributeContext/AssetConsumptionFactorEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetConsumptionFactorEntity/hasAttributes/EndDate",
+            "contents": [
+              "AssetConsumptionFactorEntity_Resolved/hasAttributes/EndDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "AssetConsumptionFactorEntity_Resolved/attributeContext/AssetConsumptionFactorEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetConsumptionFactorEntity/hasAttributes/Description",
+            "contents": [
+              "AssetConsumptionFactorEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ConsumptionFactorId",
+            "parent": "AssetConsumptionFactorEntity_Resolved/attributeContext/AssetConsumptionFactorEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetConsumptionFactorEntity/hasAttributes/ConsumptionFactorId",
+            "contents": [
+              "AssetConsumptionFactorEntity_Resolved/hasAttributes/ConsumptionFactorId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_AssetConsumptionFactorRelationship",
+            "parent": "AssetConsumptionFactorEntity_Resolved/attributeContext/AssetConsumptionFactorEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetConsumptionFactorEntity/hasAttributes/BackingTable_AssetConsumptionFactorRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "AssetConsumptionFactor",
+                "parent": "AssetConsumptionFactorEntity_Resolved/attributeContext/AssetConsumptionFactorEntity_Resolved/BackingTable_AssetConsumptionFactorRelationship",
+                "definition": "resolvedFrom/AssetConsumptionFactor",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "AssetConsumptionFactorEntity_Resolved/attributeContext/AssetConsumptionFactorEntity_Resolved/BackingTable_AssetConsumptionFactorRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "AssetConsumptionFactorEntity_Resolved/attributeContext/AssetConsumptionFactorEntity_Resolved/BackingTable_AssetConsumptionFactorRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "AssetConsumptionFactorEntity_Resolved/attributeContext/AssetConsumptionFactorEntity_Resolved/BackingTable_AssetConsumptionFactorRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "AssetConsumptionFactorEntity_Resolved/hasAttributes/BackingTable_AssetConsumptionFactorRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "AssetConsumptionFactorEntity_Resolved/attributeContext/AssetConsumptionFactorEntity_Resolved",
+            "definition": "resolvedFrom/AssetConsumptionFactorEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "AssetConsumptionFactorEntity_Resolved/attributeContext/AssetConsumptionFactorEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "AssetConsumptionFactorEntity_Resolved/attributeContext/AssetConsumptionFactorEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "AssetConsumptionFactorEntity_Resolved/attributeContext/AssetConsumptionFactorEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "AssetConsumptionFactorEntity_Resolved/attributeContext/AssetConsumptionFactorEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "AssetConsumptionFactorEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Percentage",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AssetConsumptionFactorEntity_Resolved/attributeContext/AssetConsumptionFactorEntity_Resolved/Percentage",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Quantity",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AssetConsumptionFactorEntity_Resolved/attributeContext/AssetConsumptionFactorEntity_Resolved/Quantity",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "EndDate",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AssetConsumptionFactorEntity_Resolved/attributeContext/AssetConsumptionFactorEntity_Resolved/EndDate",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AssetConsumptionFactorEntity_Resolved/attributeContext/AssetConsumptionFactorEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ConsumptionFactorId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AssetConsumptionFactorEntity_Resolved/attributeContext/AssetConsumptionFactorEntity_Resolved/ConsumptionFactorId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_AssetConsumptionFactorRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/FixedAssets/Parameter/AssetConsumptionFactor.cdm.json/AssetConsumptionFactor",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "AssetConsumptionFactorEntity_Resolved/attributeContext/AssetConsumptionFactorEntity_Resolved/BackingTable_AssetConsumptionFactorRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "AssetConsumptionFactorEntity_Resolved/attributeContext/AssetConsumptionFactorEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Fixed asset consumption factors",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

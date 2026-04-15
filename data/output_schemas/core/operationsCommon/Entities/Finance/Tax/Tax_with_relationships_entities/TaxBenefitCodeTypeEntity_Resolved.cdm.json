@@ -1,0 +1,281 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "TaxBenefitCodeTypeEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TaxBenefitCodeTypeEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "TaxBenefitCodeTypeEntity_Resolved",
+        "definition": "resolvedFrom/TaxBenefitCodeTypeEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "TaxBenefitCodeTypeEntity_Resolved/attributeContext/TaxBenefitCodeTypeEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "TaxBenefitCodeTypeEntity_Resolved/attributeContext/TaxBenefitCodeTypeEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Type",
+            "parent": "TaxBenefitCodeTypeEntity_Resolved/attributeContext/TaxBenefitCodeTypeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxBenefitCodeTypeEntity/hasAttributes/Type",
+            "contents": [
+              "TaxBenefitCodeTypeEntity_Resolved/hasAttributes/Type"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "TaxBenefitCodeTypeEntity_Resolved/attributeContext/TaxBenefitCodeTypeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxBenefitCodeTypeEntity/hasAttributes/Description",
+            "contents": [
+              "TaxBenefitCodeTypeEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "TaxationCode",
+            "parent": "TaxBenefitCodeTypeEntity_Resolved/attributeContext/TaxBenefitCodeTypeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxBenefitCodeTypeEntity/hasAttributes/TaxationCode",
+            "contents": [
+              "TaxBenefitCodeTypeEntity_Resolved/hasAttributes/TaxationCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_TaxBenefitCodeType_BRRelationship",
+            "parent": "TaxBenefitCodeTypeEntity_Resolved/attributeContext/TaxBenefitCodeTypeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxBenefitCodeTypeEntity/hasAttributes/BackingTable_TaxBenefitCodeType_BRRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "TaxBenefitCodeType_BR",
+                "parent": "TaxBenefitCodeTypeEntity_Resolved/attributeContext/TaxBenefitCodeTypeEntity_Resolved/BackingTable_TaxBenefitCodeType_BRRelationship",
+                "definition": "resolvedFrom/TaxBenefitCodeType_BR",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxBenefitCodeTypeEntity_Resolved/attributeContext/TaxBenefitCodeTypeEntity_Resolved/BackingTable_TaxBenefitCodeType_BRRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxBenefitCodeTypeEntity_Resolved/attributeContext/TaxBenefitCodeTypeEntity_Resolved/BackingTable_TaxBenefitCodeType_BRRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxBenefitCodeTypeEntity_Resolved/attributeContext/TaxBenefitCodeTypeEntity_Resolved/BackingTable_TaxBenefitCodeType_BRRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxBenefitCodeTypeEntity_Resolved/hasAttributes/BackingTable_TaxBenefitCodeType_BRRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "TaxBenefitCodeTypeEntity_Resolved/attributeContext/TaxBenefitCodeTypeEntity_Resolved",
+            "definition": "resolvedFrom/TaxBenefitCodeTypeEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "TaxBenefitCodeTypeEntity_Resolved/attributeContext/TaxBenefitCodeTypeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxBenefitCodeTypeEntity_Resolved/attributeContext/TaxBenefitCodeTypeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxBenefitCodeTypeEntity_Resolved/attributeContext/TaxBenefitCodeTypeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxBenefitCodeTypeEntity_Resolved/attributeContext/TaxBenefitCodeTypeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxBenefitCodeTypeEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Type",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxBenefitCodeTypeEntity_Resolved/attributeContext/TaxBenefitCodeTypeEntity_Resolved/Type",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxBenefitCodeTypeEntity_Resolved/attributeContext/TaxBenefitCodeTypeEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "TaxationCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxBenefitCodeTypeEntity_Resolved/attributeContext/TaxBenefitCodeTypeEntity_Resolved/TaxationCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_TaxBenefitCodeType_BRRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Tax/Miscellaneous/TaxBenefitCodeType_BR.cdm.json/TaxBenefitCodeType_BR",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxBenefitCodeTypeEntity_Resolved/attributeContext/TaxBenefitCodeTypeEntity_Resolved/BackingTable_TaxBenefitCodeType_BRRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxBenefitCodeTypeEntity_Resolved/attributeContext/TaxBenefitCodeTypeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Types of tax benefit code",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

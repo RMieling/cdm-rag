@@ -1,0 +1,1550 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "CustomerRelationship.cdm.json",
+      "moniker": "resolvedFrom"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "CustomerRelationship_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "CustomerRelationship_Resolved",
+        "definition": "resolvedFrom/CustomerRelationship",
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CdmEntity",
+                "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/extends",
+                "definition": "resolvedFrom/CdmEntity"
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "attributesAddedAtThisScope",
+            "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved",
+            "definition": "resolvedFrom/CustomerRelationship/hasAttributes/attributesAddedAtThisScope",
+            "contents": [
+              {
+                "type": "attributeGroup",
+                "name": "attributesAddedAtThisScope",
+                "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope",
+                "definition": "resolvedFrom/CustomerRelationship/hasAttributes/attributesAddedAtThisScope",
+                "contents": [
+                  {
+                    "type": "attributeDefinition",
+                    "name": "versionNumber",
+                    "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/CustomerRelationship/hasAttributes/attributesAddedAtThisScope/members/versionNumber",
+                    "contents": [
+                      "CustomerRelationship_Resolved/hasAttributes/versionNumber"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "createdOn",
+                    "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/CustomerRelationship/hasAttributes/attributesAddedAtThisScope/members/createdOn",
+                    "contents": [
+                      "CustomerRelationship_Resolved/hasAttributes/createdOn"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "modifiedOn",
+                    "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/CustomerRelationship/hasAttributes/attributesAddedAtThisScope/members/modifiedOn",
+                    "contents": [
+                      "CustomerRelationship_Resolved/hasAttributes/modifiedOn"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "customerRoleId",
+                    "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/CustomerRelationship/hasAttributes/attributesAddedAtThisScope/members/customerRoleId",
+                    "contents": [
+                      "CustomerRelationship_Resolved/hasAttributes/customerRoleId"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "customerRelationshipId",
+                    "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/CustomerRelationship/hasAttributes/attributesAddedAtThisScope/members/customerRelationshipId",
+                    "contents": [
+                      "CustomerRelationship_Resolved/hasAttributes/customerRelationshipId"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "User_createdBy",
+                    "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/CustomerRelationship/hasAttributes/attributesAddedAtThisScope/members/User_createdBy",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "User",
+                        "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdBy",
+                        "definition": "resolvedFrom/User"
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdBy",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdBy/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdBy/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/CustomerRelationship/hasAttributes/attributesAddedAtThisScope/members/User_createdBy/resolutionGuidance/foreignKeyAttribute/createdBy",
+                                "contents": [
+                                  "CustomerRelationship_Resolved/hasAttributes/createdBy"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "ownerIdAttribute",
+                    "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/ownerIdAttribute",
+                    "contents": [
+                      {
+                        "type": "attributeGroup",
+                        "name": "ownerIdAttribute",
+                        "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute",
+                        "definition": "resolvedFrom/ownerIdAttribute",
+                        "contents": [
+                          {
+                            "type": "attributeDefinition",
+                            "name": "owner",
+                            "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute/ownerIdAttribute",
+                            "definition": "resolvedFrom/ownerIdAttribute/members/owner",
+                            "contents": [
+                              {
+                                "type": "entity",
+                                "name": "Owner",
+                                "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute/ownerIdAttribute/owner",
+                                "definition": "resolvedFrom/ownerIdAttribute/members/owner/entity/Owner",
+                                "contents": [
+                                  {
+                                    "type": "attributeDefinition",
+                                    "name": "userOption",
+                                    "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute/ownerIdAttribute/owner/Owner",
+                                    "definition": "resolvedFrom/ownerIdAttribute/members/owner/entity/Owner/hasAttributes/userOption",
+                                    "contents": [
+                                      {
+                                        "type": "entity",
+                                        "name": "User",
+                                        "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute/ownerIdAttribute/owner/Owner/userOption",
+                                        "definition": "resolvedFrom/User"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "type": "attributeDefinition",
+                                    "name": "teamOption",
+                                    "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute/ownerIdAttribute/owner/Owner",
+                                    "definition": "resolvedFrom/ownerIdAttribute/members/owner/entity/Owner/hasAttributes/teamOption",
+                                    "contents": [
+                                      {
+                                        "type": "entity",
+                                        "name": "Team",
+                                        "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute/ownerIdAttribute/owner/Owner/teamOption",
+                                        "definition": "resolvedFrom/Team"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "type": "generatedSet",
+                                "name": "_generatedAttributeSet",
+                                "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute/ownerIdAttribute/owner",
+                                "contents": [
+                                  {
+                                    "type": "generatedRound",
+                                    "name": "_generatedAttributeRound0",
+                                    "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute/ownerIdAttribute/owner/_generatedAttributeSet",
+                                    "contents": [
+                                      {
+                                        "type": "addedAttributeIdentity",
+                                        "name": "_foreignKey",
+                                        "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute/ownerIdAttribute/owner/_generatedAttributeSet/_generatedAttributeRound0",
+                                        "definition": "resolvedFrom/ownerIdAttribute/members/owner/resolutionGuidance/foreignKeyAttribute/ownerId",
+                                        "contents": [
+                                          "CustomerRelationship_Resolved/hasAttributes/ownerId"
+                                        ]
+                                      },
+                                      {
+                                        "type": "addedAttributeSelectedType",
+                                        "name": "_selectedEntityName",
+                                        "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute/ownerIdAttribute/owner/_generatedAttributeSet/_generatedAttributeRound0",
+                                        "definition": "resolvedFrom/ownerIdAttribute/members/owner/resolutionGuidance/selectedTypeAttribute/ownerIdType",
+                                        "contents": [
+                                          "CustomerRelationship_Resolved/hasAttributes/ownerIdType"
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "partner",
+                    "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/CustomerRelationship/hasAttributes/attributesAddedAtThisScope/members/partner",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "Customer",
+                        "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/partner",
+                        "definition": "resolvedFrom/CustomerRelationship/hasAttributes/attributesAddedAtThisScope/members/partner/entity/Customer",
+                        "contents": [
+                          {
+                            "type": "attributeDefinition",
+                            "name": "contactOption",
+                            "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/partner/Customer",
+                            "definition": "resolvedFrom/CustomerRelationship/hasAttributes/attributesAddedAtThisScope/members/partner/entity/Customer/hasAttributes/contactOption",
+                            "contents": [
+                              {
+                                "type": "entity",
+                                "name": "Contact",
+                                "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/partner/Customer/contactOption",
+                                "definition": "resolvedFrom/Contact",
+                                "appliedTraits": [
+                                  {
+                                    "traitReference": "means.entityState",
+                                    "arguments": [
+                                      "resolvedFrom/Contact/(resolvedAttributes)/stateCode"
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "type": "attributeDefinition",
+                            "name": "accountOption",
+                            "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/partner/Customer",
+                            "definition": "resolvedFrom/CustomerRelationship/hasAttributes/attributesAddedAtThisScope/members/partner/entity/Customer/hasAttributes/accountOption",
+                            "contents": [
+                              {
+                                "type": "entity",
+                                "name": "Account",
+                                "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/partner/Customer/accountOption",
+                                "definition": "resolvedFrom/Account",
+                                "appliedTraits": [
+                                  {
+                                    "traitReference": "means.entityState",
+                                    "arguments": [
+                                      "resolvedFrom/Account/(resolvedAttributes)/stateCode"
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/partner",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/partner/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/partner/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/CustomerRelationship/hasAttributes/attributesAddedAtThisScope/members/partner/resolutionGuidance/foreignKeyAttribute/id",
+                                "contents": [
+                                  "CustomerRelationship_Resolved/hasAttributes/partnerId"
+                                ]
+                              },
+                              {
+                                "type": "addedAttributeSelectedType",
+                                "name": "_selectedEntityName",
+                                "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/partner/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/CustomerRelationship/hasAttributes/attributesAddedAtThisScope/members/partner/resolutionGuidance/selectedTypeAttribute/idType",
+                                "contents": [
+                                  "CustomerRelationship_Resolved/hasAttributes/partnerIdType"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "BusinessUnit_owningBusinessUnit",
+                    "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/CustomerRelationship/hasAttributes/attributesAddedAtThisScope/members/BusinessUnit_owningBusinessUnit",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "BusinessUnit",
+                        "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/BusinessUnit_owningBusinessUnit",
+                        "definition": "resolvedFrom/BusinessUnit"
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/BusinessUnit_owningBusinessUnit",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/BusinessUnit_owningBusinessUnit/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/BusinessUnit_owningBusinessUnit/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/CustomerRelationship/hasAttributes/attributesAddedAtThisScope/members/BusinessUnit_owningBusinessUnit/resolutionGuidance/foreignKeyAttribute/owningBusinessUnit",
+                                "contents": [
+                                  "CustomerRelationship_Resolved/hasAttributes/owningBusinessUnit"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "converseRelationship",
+                    "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/CustomerRelationship/hasAttributes/attributesAddedAtThisScope/members/converseRelationship",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "CustomerRelationship",
+                        "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/converseRelationship",
+                        "definition": "resolvedFrom/CustomerRelationship"
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/converseRelationship",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/converseRelationship/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/converseRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/CustomerRelationship/hasAttributes/attributesAddedAtThisScope/members/converseRelationship/resolutionGuidance/foreignKeyAttribute/id",
+                                "contents": [
+                                  "CustomerRelationship_Resolved/hasAttributes/converseRelationshipId"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "partnerRoleId",
+                    "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/CustomerRelationship/hasAttributes/attributesAddedAtThisScope/members/partnerRoleId",
+                    "contents": [
+                      "CustomerRelationship_Resolved/hasAttributes/partnerRoleId"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "customerRoleDescription",
+                    "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/CustomerRelationship/hasAttributes/attributesAddedAtThisScope/members/customerRoleDescription",
+                    "contents": [
+                      "CustomerRelationship_Resolved/hasAttributes/customerRoleDescription"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "customerIdAttribute",
+                    "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/customerIdAttribute",
+                    "contents": [
+                      {
+                        "type": "attributeGroup",
+                        "name": "customerIdAttribute",
+                        "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/customerIdAttribute",
+                        "definition": "resolvedFrom/customerIdAttribute",
+                        "contents": [
+                          {
+                            "type": "attributeDefinition",
+                            "name": "customer",
+                            "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/customerIdAttribute/customerIdAttribute",
+                            "definition": "resolvedFrom/customerIdAttribute/members/customer",
+                            "contents": [
+                              {
+                                "type": "entity",
+                                "name": "Customer",
+                                "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/customerIdAttribute/customerIdAttribute/customer",
+                                "definition": "resolvedFrom/customerIdAttribute/members/customer/entity/Customer",
+                                "contents": [
+                                  {
+                                    "type": "attributeDefinition",
+                                    "name": "contactOption",
+                                    "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/customerIdAttribute/customerIdAttribute/customer/Customer",
+                                    "definition": "resolvedFrom/customerIdAttribute/members/customer/entity/Customer/hasAttributes/contactOption",
+                                    "contents": [
+                                      {
+                                        "type": "entity",
+                                        "name": "Contact",
+                                        "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/customerIdAttribute/customerIdAttribute/customer/Customer/contactOption",
+                                        "definition": "resolvedFrom/Contact",
+                                        "appliedTraits": [
+                                          {
+                                            "traitReference": "means.entityState",
+                                            "arguments": [
+                                              "resolvedFrom/Contact/(resolvedAttributes)/stateCode"
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "type": "attributeDefinition",
+                                    "name": "accountOption",
+                                    "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/customerIdAttribute/customerIdAttribute/customer/Customer",
+                                    "definition": "resolvedFrom/customerIdAttribute/members/customer/entity/Customer/hasAttributes/accountOption",
+                                    "contents": [
+                                      {
+                                        "type": "entity",
+                                        "name": "Account",
+                                        "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/customerIdAttribute/customerIdAttribute/customer/Customer/accountOption",
+                                        "definition": "resolvedFrom/Account",
+                                        "appliedTraits": [
+                                          {
+                                            "traitReference": "means.entityState",
+                                            "arguments": [
+                                              "resolvedFrom/Account/(resolvedAttributes)/stateCode"
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "type": "generatedSet",
+                                "name": "_generatedAttributeSet",
+                                "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/customerIdAttribute/customerIdAttribute/customer",
+                                "contents": [
+                                  {
+                                    "type": "generatedRound",
+                                    "name": "_generatedAttributeRound0",
+                                    "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/customerIdAttribute/customerIdAttribute/customer/_generatedAttributeSet",
+                                    "contents": [
+                                      {
+                                        "type": "addedAttributeIdentity",
+                                        "name": "_foreignKey",
+                                        "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/customerIdAttribute/customerIdAttribute/customer/_generatedAttributeSet/_generatedAttributeRound0",
+                                        "definition": "resolvedFrom/customerIdAttribute/members/customer/resolutionGuidance/foreignKeyAttribute/customerId",
+                                        "contents": [
+                                          "CustomerRelationship_Resolved/hasAttributes/customerId"
+                                        ]
+                                      },
+                                      {
+                                        "type": "addedAttributeSelectedType",
+                                        "name": "_selectedEntityName",
+                                        "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/customerIdAttribute/customerIdAttribute/customer/_generatedAttributeSet/_generatedAttributeRound0",
+                                        "definition": "resolvedFrom/customerIdAttribute/members/customer/resolutionGuidance/selectedTypeAttribute/customerIdType",
+                                        "contents": [
+                                          "CustomerRelationship_Resolved/hasAttributes/customerIdType"
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "User_modifiedBy",
+                    "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/CustomerRelationship/hasAttributes/attributesAddedAtThisScope/members/User_modifiedBy",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "User",
+                        "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedBy",
+                        "definition": "resolvedFrom/User"
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedBy",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedBy/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedBy/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/CustomerRelationship/hasAttributes/attributesAddedAtThisScope/members/User_modifiedBy/resolutionGuidance/foreignKeyAttribute/modifiedBy",
+                                "contents": [
+                                  "CustomerRelationship_Resolved/hasAttributes/modifiedBy"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "partnerRoleDescription",
+                    "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/CustomerRelationship/hasAttributes/attributesAddedAtThisScope/members/partnerRoleDescription",
+                    "contents": [
+                      "CustomerRelationship_Resolved/hasAttributes/partnerRoleDescription"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "User_owningUser",
+                    "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/CustomerRelationship/hasAttributes/attributesAddedAtThisScope/members/User_owningUser",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "User",
+                        "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_owningUser",
+                        "definition": "resolvedFrom/User"
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_owningUser",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_owningUser/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_owningUser/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/CustomerRelationship/hasAttributes/attributesAddedAtThisScope/members/User_owningUser/resolutionGuidance/foreignKeyAttribute/owningUser",
+                                "contents": [
+                                  "CustomerRelationship_Resolved/hasAttributes/owningUser"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "overriddenCreatedOn",
+                    "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/CustomerRelationship/hasAttributes/attributesAddedAtThisScope/members/overriddenCreatedOn",
+                    "contents": [
+                      "CustomerRelationship_Resolved/hasAttributes/overriddenCreatedOn"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "importSequenceNumber",
+                    "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/CustomerRelationship/hasAttributes/attributesAddedAtThisScope/members/importSequenceNumber",
+                    "contents": [
+                      "CustomerRelationship_Resolved/hasAttributes/importSequenceNumber"
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "User_createdOnBehalfBy",
+                    "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/CustomerRelationship/hasAttributes/attributesAddedAtThisScope/members/User_createdOnBehalfBy",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "User",
+                        "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdOnBehalfBy",
+                        "definition": "resolvedFrom/User"
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdOnBehalfBy",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdOnBehalfBy/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdOnBehalfBy/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/CustomerRelationship/hasAttributes/attributesAddedAtThisScope/members/User_createdOnBehalfBy/resolutionGuidance/foreignKeyAttribute/createdOnBehalfBy",
+                                "contents": [
+                                  "CustomerRelationship_Resolved/hasAttributes/createdOnBehalfBy"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "User_modifiedOnBehalfBy",
+                    "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/CustomerRelationship/hasAttributes/attributesAddedAtThisScope/members/User_modifiedOnBehalfBy",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "User",
+                        "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedOnBehalfBy",
+                        "definition": "resolvedFrom/User"
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedOnBehalfBy",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedOnBehalfBy/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedOnBehalfBy/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/CustomerRelationship/hasAttributes/attributesAddedAtThisScope/members/User_modifiedOnBehalfBy/resolutionGuidance/foreignKeyAttribute/modifiedOnBehalfBy",
+                                "contents": [
+                                  "CustomerRelationship_Resolved/hasAttributes/modifiedOnBehalfBy"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "attributeDefinition",
+                    "name": "Team_owningTeam",
+                    "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope",
+                    "definition": "resolvedFrom/CustomerRelationship/hasAttributes/attributesAddedAtThisScope/members/Team_owningTeam",
+                    "contents": [
+                      {
+                        "type": "entity",
+                        "name": "Team",
+                        "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/Team_owningTeam",
+                        "definition": "resolvedFrom/Team"
+                      },
+                      {
+                        "type": "generatedSet",
+                        "name": "_generatedAttributeSet",
+                        "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/Team_owningTeam",
+                        "contents": [
+                          {
+                            "type": "generatedRound",
+                            "name": "_generatedAttributeRound0",
+                            "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/Team_owningTeam/_generatedAttributeSet",
+                            "contents": [
+                              {
+                                "type": "addedAttributeIdentity",
+                                "name": "_foreignKey",
+                                "parent": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/Team_owningTeam/_generatedAttributeSet/_generatedAttributeRound0",
+                                "definition": "resolvedFrom/CustomerRelationship/hasAttributes/attributesAddedAtThisScope/members/Team_owningTeam/resolutionGuidance/foreignKeyAttribute/owningTeam",
+                                "contents": [
+                                  "CustomerRelationship_Resolved/hasAttributes/owningTeam"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "versionNumber",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            "is.dataFormat.big",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/versionNumber",
+          "isNullable": true,
+          "dataFormat": "Int64",
+          "sourceName": "versionnumber",
+          "sourceOrdering": 1
+        },
+        {
+          "name": "createdOn",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date",
+            "is.dataFormat.time",
+            "means.measurement.time",
+            "means.measurement.date.creation",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/createdOn",
+          "isNullable": true,
+          "dataFormat": "DateTime",
+          "sourceName": "createdon",
+          "sourceOrdering": 2,
+          "displayName": "Created On",
+          "description": "Shows the date and time when the customer relationship was created. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 options."
+        },
+        {
+          "name": "modifiedOn",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date",
+            "is.dataFormat.time",
+            "means.measurement.time",
+            "means.measurement.date.modify",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/modifiedOn",
+          "isNullable": true,
+          "dataFormat": "DateTime",
+          "sourceName": "modifiedon",
+          "sourceOrdering": 3,
+          "displayName": "Modified On",
+          "description": "Shows the date and time when the record was last updated. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 options."
+        },
+        {
+          "name": "customerRoleId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/customerRoleId",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "customerroleid",
+          "sourceOrdering": 4,
+          "displayName": "Role 1",
+          "description": "Choose the primary party's role or nature of the relationship the customer has with the second party. The field is read-only until both parties have been selected. Administrators can configure role values under Business Management in the Settings area."
+        },
+        {
+          "name": "customerRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            }
+          ],
+          "attributeContext": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/customerRelationshipId",
+          "isPrimaryKey": true,
+          "dataFormat": "Guid",
+          "sourceName": "customerrelationshipid",
+          "sourceOrdering": 5,
+          "displayName": "Customer Relationship",
+          "description": "Unique identifier of the customer relationship."
+        },
+        {
+          "name": "createdBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "User.cdm.json/User",
+                        "systemUserId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdBy/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "createdby",
+          "sourceOrdering": 7,
+          "displayName": "Created By",
+          "description": "Shows who created the record."
+        },
+        {
+          "name": "ownerId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            "is.CDS.standard",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "User.cdm.json/User",
+                        "systemUserId"
+                      ],
+                      [
+                        "Team.cdm.json/Team",
+                        "teamId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            },
+            "is.CDS.owner"
+          ],
+          "attributeContext": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute/ownerIdAttribute/owner/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid",
+          "sourceName": "ownerid",
+          "displayName": "Owner",
+          "description": "Owner Id"
+        },
+        {
+          "name": "ownerIdType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.entityName",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            },
+            "is.linkedEntity.name",
+            "is.CDS.owner"
+          ],
+          "attributeContext": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/ownerIdAttribute/ownerIdAttribute/owner/_generatedAttributeSet/_generatedAttributeRound0/_selectedEntityName",
+          "isReadOnly": true,
+          "dataFormat": "String",
+          "sourceName": "owneridtype",
+          "displayName": "Owner Type",
+          "description": "The type of owner, either User or Team."
+        },
+        {
+          "name": "partnerId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "systemrequired"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "Contact.cdm.json/Contact",
+                        "contactId"
+                      ],
+                      [
+                        "Account.cdm.json/Account",
+                        "accountId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            },
+            "is.CDS.customer"
+          ],
+          "attributeContext": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/partner/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid",
+          "sourceName": "partnerid",
+          "sourceOrdering": 9,
+          "displayName": "Party 2",
+          "description": "Select the secondary account or contact involved in the customer relationship."
+        },
+        {
+          "name": "partnerIdType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.entityName",
+            "is.linkedEntity.name",
+            "is.CDS.customer"
+          ],
+          "attributeContext": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/partner/_generatedAttributeSet/_generatedAttributeRound0/_selectedEntityName",
+          "isReadOnly": true,
+          "dataFormat": "String",
+          "sourceName": "partneridtype",
+          "displayName": "Partner Type",
+          "description": "The type of partner, either Account or Contact."
+        },
+        {
+          "name": "owningBusinessUnit",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "BusinessUnit.cdm.json/BusinessUnit",
+                        "businessUnitId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/BusinessUnit_owningBusinessUnit/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "owningbusinessunit",
+          "sourceOrdering": 10,
+          "displayName": "Owning Business Unit",
+          "description": "Unique identifier of the business unit that owns the customer relationship."
+        },
+        {
+          "name": "converseRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "CustomerRelationship.cdm.json/CustomerRelationship",
+                        "customerRelationshipId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/converseRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "converserelationshipid",
+          "sourceOrdering": 11,
+          "displayName": "Converse Relationship",
+          "description": "Unique identifier of the converse relationship of the customer relationship."
+        },
+        {
+          "name": "partnerRoleId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/partnerRoleId",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "partnerroleid",
+          "sourceOrdering": 12,
+          "displayName": "Role 2",
+          "description": "Choose the secondary party's role or nature of the relationship the customer has with the primary party. The field is read-only until both parties have been selected. Administrators can configure role values under Business Management in the Settings area."
+        },
+        {
+          "name": "customerRoleDescription",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/customerRoleDescription",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "customerroledescription",
+          "sourceOrdering": 13,
+          "displayName": "Description 1",
+          "description": "Type additional information about the primary party's role in the customer relationship, such as the length or quality of the relationship.",
+          "maximumLength": 2000
+        },
+        {
+          "name": "customerId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "Contact.cdm.json/Contact",
+                        "contactId"
+                      ],
+                      [
+                        "Account.cdm.json/Account",
+                        "accountId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            },
+            "is.CDS.customer"
+          ],
+          "attributeContext": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/customerIdAttribute/customerIdAttribute/customer/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "customerid",
+          "displayName": "Customer",
+          "description": "The customer account or contact to provide a quick link to additional customer details, such as account information, activities, and opportunities."
+        },
+        {
+          "name": "customerIdType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "means.entityName",
+            "is.linkedEntity.name",
+            "is.CDS.customer"
+          ],
+          "attributeContext": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/customerIdAttribute/customerIdAttribute/customer/_generatedAttributeSet/_generatedAttributeRound0/_selectedEntityName",
+          "isReadOnly": true,
+          "dataFormat": "String",
+          "sourceName": "customeridtype",
+          "displayName": "Customer Type",
+          "description": "The type of customer, either Account or Contact."
+        },
+        {
+          "name": "modifiedBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "User.cdm.json/User",
+                        "systemUserId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedBy/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "modifiedby",
+          "sourceOrdering": 15,
+          "displayName": "Modified By",
+          "description": "Shows who last updated the record."
+        },
+        {
+          "name": "partnerRoleDescription",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/partnerRoleDescription",
+          "isNullable": true,
+          "dataFormat": "String",
+          "sourceName": "partnerroledescription",
+          "sourceOrdering": 16,
+          "displayName": "Description 2",
+          "description": "Type additional information about the secondary party's role in the customer relationship, such as the length or quality of the relationship.",
+          "maximumLength": 2000
+        },
+        {
+          "name": "owningUser",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "User.cdm.json/User",
+                        "systemUserId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_owningUser/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "owninguser",
+          "sourceOrdering": 17,
+          "displayName": "Owning User",
+          "description": "Unique identifier of the user who owns the customer relationship."
+        },
+        {
+          "name": "overriddenCreatedOn",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date",
+            "is.dataFormat.time",
+            "means.measurement.time",
+            "means.measurement.date.creation",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/overriddenCreatedOn",
+          "isNullable": true,
+          "dataFormat": "DateTime",
+          "sourceName": "overriddencreatedon",
+          "sourceOrdering": 35,
+          "displayName": "Record Created On",
+          "description": "Date and time that the record was migrated."
+        },
+        {
+          "name": "importSequenceNumber",
+          "appliedTraits": [
+            "is.dataFormat.integer",
+            "is.dataFormat.signed",
+            "is.dataFormat.numeric",
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            }
+          ],
+          "attributeContext": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/importSequenceNumber",
+          "isNullable": true,
+          "dataFormat": "Int32",
+          "sourceName": "importsequencenumber",
+          "sourceOrdering": 36,
+          "displayName": "Import Sequence Number",
+          "description": "Unique identifier of the data import or data migration that created this record.",
+          "maximumValue": "2147483647",
+          "minimumValue": "-2147483648"
+        },
+        {
+          "name": "createdOnBehalfBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "User.cdm.json/User",
+                        "systemUserId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_createdOnBehalfBy/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "createdonbehalfby",
+          "sourceOrdering": 43,
+          "displayName": "Created By (Delegate)",
+          "description": "Shows who created the record on behalf of another user."
+        },
+        {
+          "name": "modifiedOnBehalfBy",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "User.cdm.json/User",
+                        "systemUserId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/User_modifiedOnBehalfBy/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "modifiedonbehalfby",
+          "sourceOrdering": 47,
+          "displayName": "Modified By (Delegate)",
+          "description": "Shows who created the record on behalf of another user."
+        },
+        {
+          "name": "owningTeam",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.CDS.lookup",
+              "arguments": [
+                "single"
+              ]
+            },
+            {
+              "traitReference": "is.requiredAtLevel",
+              "arguments": [
+                "none"
+              ]
+            },
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "Team.cdm.json/Team",
+                        "teamId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CustomerRelationship_Resolved/attributeContext/CustomerRelationship_Resolved/attributesAddedAtThisScope/attributesAddedAtThisScope/Team_owningTeam/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "isNullable": true,
+          "dataFormat": "Guid",
+          "sourceName": "owningteam",
+          "sourceOrdering": 51,
+          "displayName": "Owning Team",
+          "description": "Unique identifier of the team who owns the customer relationship."
+        }
+      ],
+      "sourceName": "CustomerRelationship",
+      "displayName": "Customer Relationship",
+      "description": "Relationship between a customer and a partner in which either can be an account or contact.",
+      "version": "1.3",
+      "cdmSchemas": [
+        "/core/applicationCommon/CustomerRelationship.cdm.json/CustomerRelationship/hasAttributes/attributesAddedAtThisScope"
+      ]
+    }
+  ],
+  "documentVersion": "1.3"
+}

@@ -1,0 +1,263 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "CustEinvoiceIntegrationTypeEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "CustEinvoiceIntegrationTypeEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "CustEinvoiceIntegrationTypeEntity_Resolved",
+        "definition": "resolvedFrom/CustEinvoiceIntegrationTypeEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "CustEinvoiceIntegrationTypeEntity_Resolved/attributeContext/CustEinvoiceIntegrationTypeEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "CustEinvoiceIntegrationTypeEntity_Resolved/attributeContext/CustEinvoiceIntegrationTypeEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "CustEinvoiceIntegrationTypeEntity_Resolved/attributeContext/CustEinvoiceIntegrationTypeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustEinvoiceIntegrationTypeEntity/hasAttributes/Name",
+            "contents": [
+              "CustEinvoiceIntegrationTypeEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "TypeId",
+            "parent": "CustEinvoiceIntegrationTypeEntity_Resolved/attributeContext/CustEinvoiceIntegrationTypeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustEinvoiceIntegrationTypeEntity/hasAttributes/TypeId",
+            "contents": [
+              "CustEinvoiceIntegrationTypeEntity_Resolved/hasAttributes/TypeId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_CustEinvoiceIntegrationTypeTableRelationship",
+            "parent": "CustEinvoiceIntegrationTypeEntity_Resolved/attributeContext/CustEinvoiceIntegrationTypeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustEinvoiceIntegrationTypeEntity/hasAttributes/BackingTable_CustEinvoiceIntegrationTypeTableRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CustEinvoiceIntegrationTypeTable",
+                "parent": "CustEinvoiceIntegrationTypeEntity_Resolved/attributeContext/CustEinvoiceIntegrationTypeEntity_Resolved/BackingTable_CustEinvoiceIntegrationTypeTableRelationship",
+                "definition": "resolvedFrom/CustEinvoiceIntegrationTypeTable",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CustEinvoiceIntegrationTypeEntity_Resolved/attributeContext/CustEinvoiceIntegrationTypeEntity_Resolved/BackingTable_CustEinvoiceIntegrationTypeTableRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CustEinvoiceIntegrationTypeEntity_Resolved/attributeContext/CustEinvoiceIntegrationTypeEntity_Resolved/BackingTable_CustEinvoiceIntegrationTypeTableRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CustEinvoiceIntegrationTypeEntity_Resolved/attributeContext/CustEinvoiceIntegrationTypeEntity_Resolved/BackingTable_CustEinvoiceIntegrationTypeTableRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CustEinvoiceIntegrationTypeEntity_Resolved/hasAttributes/BackingTable_CustEinvoiceIntegrationTypeTableRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "CustEinvoiceIntegrationTypeEntity_Resolved/attributeContext/CustEinvoiceIntegrationTypeEntity_Resolved",
+            "definition": "resolvedFrom/CustEinvoiceIntegrationTypeEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "CustEinvoiceIntegrationTypeEntity_Resolved/attributeContext/CustEinvoiceIntegrationTypeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CustEinvoiceIntegrationTypeEntity_Resolved/attributeContext/CustEinvoiceIntegrationTypeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CustEinvoiceIntegrationTypeEntity_Resolved/attributeContext/CustEinvoiceIntegrationTypeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CustEinvoiceIntegrationTypeEntity_Resolved/attributeContext/CustEinvoiceIntegrationTypeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CustEinvoiceIntegrationTypeEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustEinvoiceIntegrationTypeEntity_Resolved/attributeContext/CustEinvoiceIntegrationTypeEntity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Name"
+        },
+        {
+          "name": "TypeId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustEinvoiceIntegrationTypeEntity_Resolved/attributeContext/CustEinvoiceIntegrationTypeEntity_Resolved/TypeId",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Type"
+        },
+        {
+          "name": "BackingTable_CustEinvoiceIntegrationTypeTableRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/AccountsReceivable/Group/CustEinvoiceIntegrationTypeTable.cdm.json/CustEinvoiceIntegrationTypeTable",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CustEinvoiceIntegrationTypeEntity_Resolved/attributeContext/CustEinvoiceIntegrationTypeEntity_Resolved/BackingTable_CustEinvoiceIntegrationTypeTableRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CustEinvoiceIntegrationTypeEntity_Resolved/attributeContext/CustEinvoiceIntegrationTypeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Integration type",
+      "version": "1.1.1"
+    }
+  ],
+  "documentVersion": "1.1.1"
+}

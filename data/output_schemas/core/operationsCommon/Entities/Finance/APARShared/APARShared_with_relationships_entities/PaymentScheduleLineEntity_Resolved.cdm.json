@@ -1,0 +1,409 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "PaymentScheduleLineEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "PaymentScheduleLineEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "PaymentScheduleLineEntity_Resolved",
+        "definition": "resolvedFrom/PaymentScheduleLineEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "PaymentScheduleLineEntity_Resolved/attributeContext/PaymentScheduleLineEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "PaymentScheduleLineEntity_Resolved/attributeContext/PaymentScheduleLineEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "LineNumber",
+            "parent": "PaymentScheduleLineEntity_Resolved/attributeContext/PaymentScheduleLineEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/PaymentScheduleLineEntity/hasAttributes/LineNumber",
+            "contents": [
+              "PaymentScheduleLineEntity_Resolved/hasAttributes/LineNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "IsShippingLine",
+            "parent": "PaymentScheduleLineEntity_Resolved/attributeContext/PaymentScheduleLineEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/PaymentScheduleLineEntity/hasAttributes/IsShippingLine",
+            "contents": [
+              "PaymentScheduleLineEntity_Resolved/hasAttributes/IsShippingLine"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "PaymentScheduleName",
+            "parent": "PaymentScheduleLineEntity_Resolved/attributeContext/PaymentScheduleLineEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/PaymentScheduleLineEntity/hasAttributes/PaymentScheduleName",
+            "contents": [
+              "PaymentScheduleLineEntity_Resolved/hasAttributes/PaymentScheduleName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "PercentOrAmount",
+            "parent": "PaymentScheduleLineEntity_Resolved/attributeContext/PaymentScheduleLineEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/PaymentScheduleLineEntity/hasAttributes/PercentOrAmount",
+            "contents": [
+              "PaymentScheduleLineEntity_Resolved/hasAttributes/PercentOrAmount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "PeriodsAfterDueDate",
+            "parent": "PaymentScheduleLineEntity_Resolved/attributeContext/PaymentScheduleLineEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/PaymentScheduleLineEntity/hasAttributes/PeriodsAfterDueDate",
+            "contents": [
+              "PaymentScheduleLineEntity_Resolved/hasAttributes/PeriodsAfterDueDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "PercentOrAmountValue",
+            "parent": "PaymentScheduleLineEntity_Resolved/attributeContext/PaymentScheduleLineEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/PaymentScheduleLineEntity/hasAttributes/PercentOrAmountValue",
+            "contents": [
+              "PaymentScheduleLineEntity_Resolved/hasAttributes/PercentOrAmountValue"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PaymentScheduleRelationship",
+            "parent": "PaymentScheduleLineEntity_Resolved/attributeContext/PaymentScheduleLineEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/PaymentScheduleLineEntity/hasAttributes/Relationship_PaymentScheduleRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "PaymentScheduleEntity",
+                "parent": "PaymentScheduleLineEntity_Resolved/attributeContext/PaymentScheduleLineEntity_Resolved/Relationship_PaymentScheduleRelationship",
+                "definition": "resolvedFrom/PaymentScheduleEntity",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "PaymentScheduleLineEntity_Resolved/attributeContext/PaymentScheduleLineEntity_Resolved/Relationship_PaymentScheduleRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "PaymentScheduleLineEntity_Resolved/attributeContext/PaymentScheduleLineEntity_Resolved/Relationship_PaymentScheduleRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "PaymentScheduleLineEntity_Resolved/attributeContext/PaymentScheduleLineEntity_Resolved/Relationship_PaymentScheduleRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "PaymentScheduleLineEntity_Resolved/hasAttributes/Relationship_PaymentScheduleRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_PaymSchedLineRelationship",
+            "parent": "PaymentScheduleLineEntity_Resolved/attributeContext/PaymentScheduleLineEntity_Resolved",
+            "definition": "resolvedFrom/PaymentScheduleLineEntity/hasAttributes/BackingTable_PaymSchedLineRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "PaymSchedLine",
+                "parent": "PaymentScheduleLineEntity_Resolved/attributeContext/PaymentScheduleLineEntity_Resolved/BackingTable_PaymSchedLineRelationship",
+                "definition": "resolvedFrom/PaymSchedLine",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "PaymentScheduleLineEntity_Resolved/attributeContext/PaymentScheduleLineEntity_Resolved/BackingTable_PaymSchedLineRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "PaymentScheduleLineEntity_Resolved/attributeContext/PaymentScheduleLineEntity_Resolved/BackingTable_PaymSchedLineRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "PaymentScheduleLineEntity_Resolved/attributeContext/PaymentScheduleLineEntity_Resolved/BackingTable_PaymSchedLineRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "PaymentScheduleLineEntity_Resolved/hasAttributes/BackingTable_PaymSchedLineRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "PaymentScheduleLineEntity_Resolved/attributeContext/PaymentScheduleLineEntity_Resolved",
+            "definition": "resolvedFrom/PaymentScheduleLineEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "PaymentScheduleLineEntity_Resolved/attributeContext/PaymentScheduleLineEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "PaymentScheduleLineEntity_Resolved/attributeContext/PaymentScheduleLineEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "PaymentScheduleLineEntity_Resolved/attributeContext/PaymentScheduleLineEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "PaymentScheduleLineEntity_Resolved/attributeContext/PaymentScheduleLineEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "PaymentScheduleLineEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "LineNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "PaymentScheduleLineEntity_Resolved/attributeContext/PaymentScheduleLineEntity_Resolved/LineNumber",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "IsShippingLine",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "PaymentScheduleLineEntity_Resolved/attributeContext/PaymentScheduleLineEntity_Resolved/IsShippingLine",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "PaymentScheduleName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "PaymentScheduleLineEntity_Resolved/attributeContext/PaymentScheduleLineEntity_Resolved/PaymentScheduleName",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "PercentOrAmount",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "PaymentScheduleLineEntity_Resolved/attributeContext/PaymentScheduleLineEntity_Resolved/PercentOrAmount",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "PeriodsAfterDueDate",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "PaymentScheduleLineEntity_Resolved/attributeContext/PaymentScheduleLineEntity_Resolved/PeriodsAfterDueDate",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "PercentOrAmountValue",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "PaymentScheduleLineEntity_Resolved/attributeContext/PaymentScheduleLineEntity_Resolved/PercentOrAmountValue",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Relationship_PaymentScheduleRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": []
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "PaymentScheduleLineEntity_Resolved/attributeContext/PaymentScheduleLineEntity_Resolved/Relationship_PaymentScheduleRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "BackingTable_PaymSchedLineRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Bank/Group/PaymSchedLine.cdm.json/PaymSchedLine",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "PaymentScheduleLineEntity_Resolved/attributeContext/PaymentScheduleLineEntity_Resolved/BackingTable_PaymSchedLineRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "PaymentScheduleLineEntity_Resolved/attributeContext/PaymentScheduleLineEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Payment schedule lines",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

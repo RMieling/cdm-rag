@@ -1,0 +1,320 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "CustCustomerExternalCodeEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "CustCustomerExternalCodeEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "CustCustomerExternalCodeEntity_Resolved",
+        "definition": "resolvedFrom/CustCustomerExternalCodeEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "CustCustomerExternalCodeEntity_Resolved/attributeContext/CustCustomerExternalCodeEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "CustCustomerExternalCodeEntity_Resolved/attributeContext/CustCustomerExternalCodeEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CustomerExternalCodeClassId",
+            "parent": "CustCustomerExternalCodeEntity_Resolved/attributeContext/CustCustomerExternalCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCustomerExternalCodeEntity/hasAttributes/CustomerExternalCodeClassId",
+            "contents": [
+              "CustCustomerExternalCodeEntity_Resolved/hasAttributes/CustomerExternalCodeClassId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CustomerAccountNumber",
+            "parent": "CustCustomerExternalCodeEntity_Resolved/attributeContext/CustCustomerExternalCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCustomerExternalCodeEntity/hasAttributes/CustomerAccountNumber",
+            "contents": [
+              "CustCustomerExternalCodeEntity_Resolved/hasAttributes/CustomerAccountNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ExternalCode",
+            "parent": "CustCustomerExternalCodeEntity_Resolved/attributeContext/CustCustomerExternalCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCustomerExternalCodeEntity/hasAttributes/ExternalCode",
+            "contents": [
+              "CustCustomerExternalCodeEntity_Resolved/hasAttributes/ExternalCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ExtCodeRelationTableId",
+            "parent": "CustCustomerExternalCodeEntity_Resolved/attributeContext/CustCustomerExternalCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCustomerExternalCodeEntity/hasAttributes/ExtCodeRelationTableId",
+            "contents": [
+              "CustCustomerExternalCodeEntity_Resolved/hasAttributes/ExtCodeRelationTableId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ExtCodeTableTableId",
+            "parent": "CustCustomerExternalCodeEntity_Resolved/attributeContext/CustCustomerExternalCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCustomerExternalCodeEntity/hasAttributes/ExtCodeTableTableId",
+            "contents": [
+              "CustCustomerExternalCodeEntity_Resolved/hasAttributes/ExtCodeTableTableId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_ExtCodeValueTableRelationship",
+            "parent": "CustCustomerExternalCodeEntity_Resolved/attributeContext/CustCustomerExternalCodeEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustCustomerExternalCodeEntity/hasAttributes/BackingTable_ExtCodeValueTableRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "ExtCodeValueTable",
+                "parent": "CustCustomerExternalCodeEntity_Resolved/attributeContext/CustCustomerExternalCodeEntity_Resolved/BackingTable_ExtCodeValueTableRelationship",
+                "definition": "resolvedFrom/ExtCodeValueTable",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CustCustomerExternalCodeEntity_Resolved/attributeContext/CustCustomerExternalCodeEntity_Resolved/BackingTable_ExtCodeValueTableRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CustCustomerExternalCodeEntity_Resolved/attributeContext/CustCustomerExternalCodeEntity_Resolved/BackingTable_ExtCodeValueTableRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CustCustomerExternalCodeEntity_Resolved/attributeContext/CustCustomerExternalCodeEntity_Resolved/BackingTable_ExtCodeValueTableRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CustCustomerExternalCodeEntity_Resolved/hasAttributes/BackingTable_ExtCodeValueTableRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "CustCustomerExternalCodeEntity_Resolved/attributeContext/CustCustomerExternalCodeEntity_Resolved",
+            "definition": "resolvedFrom/CustCustomerExternalCodeEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "CustCustomerExternalCodeEntity_Resolved/attributeContext/CustCustomerExternalCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CustCustomerExternalCodeEntity_Resolved/attributeContext/CustCustomerExternalCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CustCustomerExternalCodeEntity_Resolved/attributeContext/CustCustomerExternalCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CustCustomerExternalCodeEntity_Resolved/attributeContext/CustCustomerExternalCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CustCustomerExternalCodeEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "CustomerExternalCodeClassId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustCustomerExternalCodeEntity_Resolved/attributeContext/CustCustomerExternalCodeEntity_Resolved/CustomerExternalCodeClassId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "CustomerAccountNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustCustomerExternalCodeEntity_Resolved/attributeContext/CustCustomerExternalCodeEntity_Resolved/CustomerAccountNumber",
+          "dataFormat": "String"
+        },
+        {
+          "name": "ExternalCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustCustomerExternalCodeEntity_Resolved/attributeContext/CustCustomerExternalCodeEntity_Resolved/ExternalCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ExtCodeRelationTableId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustCustomerExternalCodeEntity_Resolved/attributeContext/CustCustomerExternalCodeEntity_Resolved/ExtCodeRelationTableId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ExtCodeTableTableId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustCustomerExternalCodeEntity_Resolved/attributeContext/CustCustomerExternalCodeEntity_Resolved/ExtCodeTableTableId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_ExtCodeValueTableRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/SupplyChain/ProcurementAndSourcing/Group/ExtCodeValueTable.cdm.json/ExtCodeValueTable",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CustCustomerExternalCodeEntity_Resolved/attributeContext/CustCustomerExternalCodeEntity_Resolved/BackingTable_ExtCodeValueTableRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CustCustomerExternalCodeEntity_Resolved/attributeContext/CustCustomerExternalCodeEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "External codes for customers",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

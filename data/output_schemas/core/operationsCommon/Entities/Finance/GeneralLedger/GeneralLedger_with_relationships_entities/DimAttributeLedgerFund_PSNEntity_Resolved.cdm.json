@@ -1,0 +1,261 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "DimAttributeLedgerFund_PSNEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "DimAttributeLedgerFund_PSNEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "DimAttributeLedgerFund_PSNEntity_Resolved",
+        "definition": "resolvedFrom/DimAttributeLedgerFund_PSNEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "DimAttributeLedgerFund_PSNEntity_Resolved/attributeContext/DimAttributeLedgerFund_PSNEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "DimAttributeLedgerFund_PSNEntity_Resolved/attributeContext/DimAttributeLedgerFund_PSNEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Value",
+            "parent": "DimAttributeLedgerFund_PSNEntity_Resolved/attributeContext/DimAttributeLedgerFund_PSNEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimAttributeLedgerFund_PSNEntity/hasAttributes/Value",
+            "contents": [
+              "DimAttributeLedgerFund_PSNEntity_Resolved/hasAttributes/Value"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "DimAttributeLedgerFund_PSNEntity_Resolved/attributeContext/DimAttributeLedgerFund_PSNEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimAttributeLedgerFund_PSNEntity/hasAttributes/Name",
+            "contents": [
+              "DimAttributeLedgerFund_PSNEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_LedgerFundRelationship",
+            "parent": "DimAttributeLedgerFund_PSNEntity_Resolved/attributeContext/DimAttributeLedgerFund_PSNEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimAttributeLedgerFund_PSNEntity/hasAttributes/BackingTable_LedgerFundRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "LedgerFund",
+                "parent": "DimAttributeLedgerFund_PSNEntity_Resolved/attributeContext/DimAttributeLedgerFund_PSNEntity_Resolved/BackingTable_LedgerFundRelationship",
+                "definition": "resolvedFrom/LedgerFund",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "DimAttributeLedgerFund_PSNEntity_Resolved/attributeContext/DimAttributeLedgerFund_PSNEntity_Resolved/BackingTable_LedgerFundRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "DimAttributeLedgerFund_PSNEntity_Resolved/attributeContext/DimAttributeLedgerFund_PSNEntity_Resolved/BackingTable_LedgerFundRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "DimAttributeLedgerFund_PSNEntity_Resolved/attributeContext/DimAttributeLedgerFund_PSNEntity_Resolved/BackingTable_LedgerFundRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "DimAttributeLedgerFund_PSNEntity_Resolved/hasAttributes/BackingTable_LedgerFundRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "DimAttributeLedgerFund_PSNEntity_Resolved/attributeContext/DimAttributeLedgerFund_PSNEntity_Resolved",
+            "definition": "resolvedFrom/DimAttributeLedgerFund_PSNEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "DimAttributeLedgerFund_PSNEntity_Resolved/attributeContext/DimAttributeLedgerFund_PSNEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "DimAttributeLedgerFund_PSNEntity_Resolved/attributeContext/DimAttributeLedgerFund_PSNEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "DimAttributeLedgerFund_PSNEntity_Resolved/attributeContext/DimAttributeLedgerFund_PSNEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "DimAttributeLedgerFund_PSNEntity_Resolved/attributeContext/DimAttributeLedgerFund_PSNEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "DimAttributeLedgerFund_PSNEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Value",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DimAttributeLedgerFund_PSNEntity_Resolved/attributeContext/DimAttributeLedgerFund_PSNEntity_Resolved/Value",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DimAttributeLedgerFund_PSNEntity_Resolved/attributeContext/DimAttributeLedgerFund_PSNEntity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_LedgerFundRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/LedgerFund.cdm.json/LedgerFund",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "DimAttributeLedgerFund_PSNEntity_Resolved/attributeContext/DimAttributeLedgerFund_PSNEntity_Resolved/BackingTable_LedgerFundRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "DimAttributeLedgerFund_PSNEntity_Resolved/attributeContext/DimAttributeLedgerFund_PSNEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Funds",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

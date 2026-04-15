@@ -1,0 +1,268 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "SharedCategoryEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "SharedCategoryEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "SharedCategoryEntity_Resolved",
+        "definition": "resolvedFrom/SharedCategoryEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "SharedCategoryEntity_Resolved/attributeContext/SharedCategoryEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "SharedCategoryEntity_Resolved/attributeContext/SharedCategoryEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CategoryId",
+            "parent": "SharedCategoryEntity_Resolved/attributeContext/SharedCategoryEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/SharedCategoryEntity/hasAttributes/CategoryId",
+            "contents": [
+              "SharedCategoryEntity_Resolved/hasAttributes/CategoryId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CategoryName",
+            "parent": "SharedCategoryEntity_Resolved/attributeContext/SharedCategoryEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/SharedCategoryEntity/hasAttributes/CategoryName",
+            "contents": [
+              "SharedCategoryEntity_Resolved/hasAttributes/CategoryName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ExpenseType",
+            "parent": "SharedCategoryEntity_Resolved/attributeContext/SharedCategoryEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/SharedCategoryEntity/hasAttributes/ExpenseType",
+            "contents": [
+              "SharedCategoryEntity_Resolved/hasAttributes/ExpenseType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "UseInProject",
+            "parent": "SharedCategoryEntity_Resolved/attributeContext/SharedCategoryEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/SharedCategoryEntity/hasAttributes/UseInProject",
+            "contents": [
+              "SharedCategoryEntity_Resolved/hasAttributes/UseInProject"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "UseInExpense",
+            "parent": "SharedCategoryEntity_Resolved/attributeContext/SharedCategoryEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/SharedCategoryEntity/hasAttributes/UseInExpense",
+            "contents": [
+              "SharedCategoryEntity_Resolved/hasAttributes/UseInExpense"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "UseInProduction",
+            "parent": "SharedCategoryEntity_Resolved/attributeContext/SharedCategoryEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/SharedCategoryEntity/hasAttributes/UseInProduction",
+            "contents": [
+              "SharedCategoryEntity_Resolved/hasAttributes/UseInProduction"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_SharedCategoryRelationship",
+            "parent": "SharedCategoryEntity_Resolved/attributeContext/SharedCategoryEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/SharedCategoryEntity/hasAttributes/BackingTable_SharedCategoryRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "SharedCategory",
+                "parent": "SharedCategoryEntity_Resolved/attributeContext/SharedCategoryEntity_Resolved/BackingTable_SharedCategoryRelationship",
+                "definition": "resolvedFrom/SharedCategory",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "SharedCategoryEntity_Resolved/attributeContext/SharedCategoryEntity_Resolved/BackingTable_SharedCategoryRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "SharedCategoryEntity_Resolved/attributeContext/SharedCategoryEntity_Resolved/BackingTable_SharedCategoryRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "SharedCategoryEntity_Resolved/attributeContext/SharedCategoryEntity_Resolved/BackingTable_SharedCategoryRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "SharedCategoryEntity_Resolved/hasAttributes/BackingTable_SharedCategoryRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "CategoryId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "SharedCategoryEntity_Resolved/attributeContext/SharedCategoryEntity_Resolved/CategoryId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "CategoryName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "SharedCategoryEntity_Resolved/attributeContext/SharedCategoryEntity_Resolved/CategoryName",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ExpenseType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "SharedCategoryEntity_Resolved/attributeContext/SharedCategoryEntity_Resolved/ExpenseType",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "UseInProject",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "SharedCategoryEntity_Resolved/attributeContext/SharedCategoryEntity_Resolved/UseInProject",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "UseInExpense",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "SharedCategoryEntity_Resolved/attributeContext/SharedCategoryEntity_Resolved/UseInExpense",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "UseInProduction",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "SharedCategoryEntity_Resolved/attributeContext/SharedCategoryEntity_Resolved/UseInProduction",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_SharedCategoryRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Common/EMPAShared/Reference/SharedCategory.cdm.json/SharedCategory",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "SharedCategoryEntity_Resolved/attributeContext/SharedCategoryEntity_Resolved/BackingTable_SharedCategoryRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Shared category",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

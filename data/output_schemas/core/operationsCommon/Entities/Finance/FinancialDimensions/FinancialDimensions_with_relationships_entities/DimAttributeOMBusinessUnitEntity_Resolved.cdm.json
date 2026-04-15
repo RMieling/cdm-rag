@@ -1,0 +1,188 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "DimAttributeOMBusinessUnitEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "DimAttributeOMBusinessUnitEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "DimAttributeOMBusinessUnitEntity_Resolved",
+        "definition": "resolvedFrom/DimAttributeOMBusinessUnitEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "DimAttributeOMBusinessUnitEntity_Resolved/attributeContext/DimAttributeOMBusinessUnitEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "DimAttributeOMBusinessUnitEntity_Resolved/attributeContext/DimAttributeOMBusinessUnitEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Value",
+            "parent": "DimAttributeOMBusinessUnitEntity_Resolved/attributeContext/DimAttributeOMBusinessUnitEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimAttributeOMBusinessUnitEntity/hasAttributes/Value",
+            "contents": [
+              "DimAttributeOMBusinessUnitEntity_Resolved/hasAttributes/Value"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "DimAttributeOMBusinessUnitEntity_Resolved/attributeContext/DimAttributeOMBusinessUnitEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimAttributeOMBusinessUnitEntity/hasAttributes/Name",
+            "contents": [
+              "DimAttributeOMBusinessUnitEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_OMOperatingUnitRelationship",
+            "parent": "DimAttributeOMBusinessUnitEntity_Resolved/attributeContext/DimAttributeOMBusinessUnitEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimAttributeOMBusinessUnitEntity/hasAttributes/BackingTable_OMOperatingUnitRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "OMOperatingUnit",
+                "parent": "DimAttributeOMBusinessUnitEntity_Resolved/attributeContext/DimAttributeOMBusinessUnitEntity_Resolved/BackingTable_OMOperatingUnitRelationship",
+                "definition": "resolvedFrom/OMOperatingUnit",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "DimAttributeOMBusinessUnitEntity_Resolved/attributeContext/DimAttributeOMBusinessUnitEntity_Resolved/BackingTable_OMOperatingUnitRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "DimAttributeOMBusinessUnitEntity_Resolved/attributeContext/DimAttributeOMBusinessUnitEntity_Resolved/BackingTable_OMOperatingUnitRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "DimAttributeOMBusinessUnitEntity_Resolved/attributeContext/DimAttributeOMBusinessUnitEntity_Resolved/BackingTable_OMOperatingUnitRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "DimAttributeOMBusinessUnitEntity_Resolved/hasAttributes/BackingTable_OMOperatingUnitRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Value",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DimAttributeOMBusinessUnitEntity_Resolved/attributeContext/DimAttributeOMBusinessUnitEntity_Resolved/Value",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DimAttributeOMBusinessUnitEntity_Resolved/attributeContext/DimAttributeOMBusinessUnitEntity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_OMOperatingUnitRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Common/GAB/Main/OMOperatingUnit.cdm.json/OMOperatingUnit",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "DimAttributeOMBusinessUnitEntity_Resolved/attributeContext/DimAttributeOMBusinessUnitEntity_Resolved/BackingTable_OMOperatingUnitRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Business units",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

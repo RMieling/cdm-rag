@@ -1,0 +1,248 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "BudgetPlanScenarioEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "BudgetPlanScenarioEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "BudgetPlanScenarioEntity_Resolved",
+        "definition": "resolvedFrom/BudgetPlanScenarioEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "BudgetPlanScenarioEntity_Resolved/attributeContext/BudgetPlanScenarioEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "BudgetPlanScenarioEntity_Resolved/attributeContext/BudgetPlanScenarioEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "BudgetPlanScenarioEntity_Resolved/attributeContext/BudgetPlanScenarioEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetPlanScenarioEntity/hasAttributes/Description",
+            "contents": [
+              "BudgetPlanScenarioEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "BudgetPlanScenarioEntity_Resolved/attributeContext/BudgetPlanScenarioEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetPlanScenarioEntity/hasAttributes/Name",
+            "contents": [
+              "BudgetPlanScenarioEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "UnitOfMeasureClass",
+            "parent": "BudgetPlanScenarioEntity_Resolved/attributeContext/BudgetPlanScenarioEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetPlanScenarioEntity/hasAttributes/UnitOfMeasureClass",
+            "contents": [
+              "BudgetPlanScenarioEntity_Resolved/hasAttributes/UnitOfMeasureClass"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "UnitOfMeasureId",
+            "parent": "BudgetPlanScenarioEntity_Resolved/attributeContext/BudgetPlanScenarioEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetPlanScenarioEntity/hasAttributes/UnitOfMeasureId",
+            "contents": [
+              "BudgetPlanScenarioEntity_Resolved/hasAttributes/UnitOfMeasureId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "UnitOfMeasureSymbol",
+            "parent": "BudgetPlanScenarioEntity_Resolved/attributeContext/BudgetPlanScenarioEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetPlanScenarioEntity/hasAttributes/UnitOfMeasureSymbol",
+            "contents": [
+              "BudgetPlanScenarioEntity_Resolved/hasAttributes/UnitOfMeasureSymbol"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_BudgetPlanScenarioRelationship",
+            "parent": "BudgetPlanScenarioEntity_Resolved/attributeContext/BudgetPlanScenarioEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetPlanScenarioEntity/hasAttributes/BackingTable_BudgetPlanScenarioRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "BudgetPlanScenario",
+                "parent": "BudgetPlanScenarioEntity_Resolved/attributeContext/BudgetPlanScenarioEntity_Resolved/BackingTable_BudgetPlanScenarioRelationship",
+                "definition": "resolvedFrom/BudgetPlanScenario",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "BudgetPlanScenarioEntity_Resolved/attributeContext/BudgetPlanScenarioEntity_Resolved/BackingTable_BudgetPlanScenarioRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "BudgetPlanScenarioEntity_Resolved/attributeContext/BudgetPlanScenarioEntity_Resolved/BackingTable_BudgetPlanScenarioRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "BudgetPlanScenarioEntity_Resolved/attributeContext/BudgetPlanScenarioEntity_Resolved/BackingTable_BudgetPlanScenarioRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "BudgetPlanScenarioEntity_Resolved/hasAttributes/BackingTable_BudgetPlanScenarioRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetPlanScenarioEntity_Resolved/attributeContext/BudgetPlanScenarioEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetPlanScenarioEntity_Resolved/attributeContext/BudgetPlanScenarioEntity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "UnitOfMeasureClass",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetPlanScenarioEntity_Resolved/attributeContext/BudgetPlanScenarioEntity_Resolved/UnitOfMeasureClass",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "UnitOfMeasureId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetPlanScenarioEntity_Resolved/attributeContext/BudgetPlanScenarioEntity_Resolved/UnitOfMeasureId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "UnitOfMeasureSymbol",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetPlanScenarioEntity_Resolved/attributeContext/BudgetPlanScenarioEntity_Resolved/UnitOfMeasureSymbol",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_BudgetPlanScenarioRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Budget/Group/BudgetPlanScenario.cdm.json/BudgetPlanScenario",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "BudgetPlanScenarioEntity_Resolved/attributeContext/BudgetPlanScenarioEntity_Resolved/BackingTable_BudgetPlanScenarioRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Budget plan scenarios",
+      "version": "1.1.1"
+    }
+  ],
+  "documentVersion": "1.1.1"
+}

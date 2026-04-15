@@ -1,0 +1,301 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "VendPaymentBIInvoice.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "VendPaymentBIInvoice_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "VendPaymentBIInvoice_Resolved",
+        "definition": "resolvedFrom/VendPaymentBIInvoice",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "VendPaymentBIInvoice_Resolved/attributeContext/VendPaymentBIInvoice_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "VendPaymentBIInvoice_Resolved/attributeContext/VendPaymentBIInvoice_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CashDisc",
+            "parent": "VendPaymentBIInvoice_Resolved/attributeContext/VendPaymentBIInvoice_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendPaymentBIInvoice/hasAttributes/CashDisc",
+            "contents": [
+              "VendPaymentBIInvoice_Resolved/hasAttributes/CashDisc"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "LedgerVoucher",
+            "parent": "VendPaymentBIInvoice_Resolved/attributeContext/VendPaymentBIInvoice_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendPaymentBIInvoice/hasAttributes/LedgerVoucher",
+            "contents": [
+              "VendPaymentBIInvoice_Resolved/hasAttributes/LedgerVoucher"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "InvoiceAccount",
+            "parent": "VendPaymentBIInvoice_Resolved/attributeContext/VendPaymentBIInvoice_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendPaymentBIInvoice/hasAttributes/InvoiceAccount",
+            "contents": [
+              "VendPaymentBIInvoice_Resolved/hasAttributes/InvoiceAccount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "InvoiceDate",
+            "parent": "VendPaymentBIInvoice_Resolved/attributeContext/VendPaymentBIInvoice_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendPaymentBIInvoice/hasAttributes/InvoiceDate",
+            "contents": [
+              "VendPaymentBIInvoice_Resolved/hasAttributes/InvoiceDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_VendInvoiceJourRelationship",
+            "parent": "VendPaymentBIInvoice_Resolved/attributeContext/VendPaymentBIInvoice_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/VendPaymentBIInvoice/hasAttributes/BackingTable_VendInvoiceJourRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "VendInvoiceJour",
+                "parent": "VendPaymentBIInvoice_Resolved/attributeContext/VendPaymentBIInvoice_Resolved/BackingTable_VendInvoiceJourRelationship",
+                "definition": "resolvedFrom/VendInvoiceJour",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "VendPaymentBIInvoice_Resolved/attributeContext/VendPaymentBIInvoice_Resolved/BackingTable_VendInvoiceJourRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "VendPaymentBIInvoice_Resolved/attributeContext/VendPaymentBIInvoice_Resolved/BackingTable_VendInvoiceJourRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "VendPaymentBIInvoice_Resolved/attributeContext/VendPaymentBIInvoice_Resolved/BackingTable_VendInvoiceJourRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "VendPaymentBIInvoice_Resolved/hasAttributes/BackingTable_VendInvoiceJourRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "VendPaymentBIInvoice_Resolved/attributeContext/VendPaymentBIInvoice_Resolved",
+            "definition": "resolvedFrom/VendPaymentBIInvoice/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "VendPaymentBIInvoice_Resolved/attributeContext/VendPaymentBIInvoice_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "VendPaymentBIInvoice_Resolved/attributeContext/VendPaymentBIInvoice_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "VendPaymentBIInvoice_Resolved/attributeContext/VendPaymentBIInvoice_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "VendPaymentBIInvoice_Resolved/attributeContext/VendPaymentBIInvoice_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "VendPaymentBIInvoice_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "CashDisc",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VendPaymentBIInvoice_Resolved/attributeContext/VendPaymentBIInvoice_Resolved/CashDisc",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "LedgerVoucher",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VendPaymentBIInvoice_Resolved/attributeContext/VendPaymentBIInvoice_Resolved/LedgerVoucher",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "InvoiceAccount",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VendPaymentBIInvoice_Resolved/attributeContext/VendPaymentBIInvoice_Resolved/InvoiceAccount",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "InvoiceDate",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "VendPaymentBIInvoice_Resolved/attributeContext/VendPaymentBIInvoice_Resolved/InvoiceDate",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_VendInvoiceJourRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/AccountsPayable/Transaction/VendInvoiceJour.cdm.json/VendInvoiceJour",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "VendPaymentBIInvoice_Resolved/attributeContext/VendPaymentBIInvoice_Resolved/BackingTable_VendInvoiceJourRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "VendPaymentBIInvoice_Resolved/attributeContext/VendPaymentBIInvoice_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Vendor invoices",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

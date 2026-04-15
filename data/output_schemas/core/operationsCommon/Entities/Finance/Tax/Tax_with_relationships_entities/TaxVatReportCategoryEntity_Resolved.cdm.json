@@ -1,0 +1,259 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "TaxVatReportCategoryEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TaxVatReportCategoryEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "TaxVatReportCategoryEntity_Resolved",
+        "definition": "resolvedFrom/TaxVatReportCategoryEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "TaxVatReportCategoryEntity_Resolved/attributeContext/TaxVatReportCategoryEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "TaxVatReportCategoryEntity_Resolved/attributeContext/TaxVatReportCategoryEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CategoryCodeID",
+            "parent": "TaxVatReportCategoryEntity_Resolved/attributeContext/TaxVatReportCategoryEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxVatReportCategoryEntity/hasAttributes/CategoryCodeID",
+            "contents": [
+              "TaxVatReportCategoryEntity_Resolved/hasAttributes/CategoryCodeID"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "TaxVatReportCategoryEntity_Resolved/attributeContext/TaxVatReportCategoryEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxVatReportCategoryEntity/hasAttributes/Description",
+            "contents": [
+              "TaxVatReportCategoryEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_TaxVatReportCategory_MXRelationship",
+            "parent": "TaxVatReportCategoryEntity_Resolved/attributeContext/TaxVatReportCategoryEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxVatReportCategoryEntity/hasAttributes/BackingTable_TaxVatReportCategory_MXRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "TaxVatReportCategory_MX",
+                "parent": "TaxVatReportCategoryEntity_Resolved/attributeContext/TaxVatReportCategoryEntity_Resolved/BackingTable_TaxVatReportCategory_MXRelationship",
+                "definition": "resolvedFrom/TaxVatReportCategory_MX",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxVatReportCategoryEntity_Resolved/attributeContext/TaxVatReportCategoryEntity_Resolved/BackingTable_TaxVatReportCategory_MXRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxVatReportCategoryEntity_Resolved/attributeContext/TaxVatReportCategoryEntity_Resolved/BackingTable_TaxVatReportCategory_MXRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxVatReportCategoryEntity_Resolved/attributeContext/TaxVatReportCategoryEntity_Resolved/BackingTable_TaxVatReportCategory_MXRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxVatReportCategoryEntity_Resolved/hasAttributes/BackingTable_TaxVatReportCategory_MXRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "TaxVatReportCategoryEntity_Resolved/attributeContext/TaxVatReportCategoryEntity_Resolved",
+            "definition": "resolvedFrom/TaxVatReportCategoryEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "TaxVatReportCategoryEntity_Resolved/attributeContext/TaxVatReportCategoryEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxVatReportCategoryEntity_Resolved/attributeContext/TaxVatReportCategoryEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxVatReportCategoryEntity_Resolved/attributeContext/TaxVatReportCategoryEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxVatReportCategoryEntity_Resolved/attributeContext/TaxVatReportCategoryEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxVatReportCategoryEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "CategoryCodeID",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxVatReportCategoryEntity_Resolved/attributeContext/TaxVatReportCategoryEntity_Resolved/CategoryCodeID",
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxVatReportCategoryEntity_Resolved/attributeContext/TaxVatReportCategoryEntity_Resolved/Description",
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_TaxVatReportCategory_MXRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Tax/Group/TaxVatReportCategory_MX.cdm.json/TaxVatReportCategory_MX",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxVatReportCategoryEntity_Resolved/attributeContext/TaxVatReportCategoryEntity_Resolved/BackingTable_TaxVatReportCategory_MXRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxVatReportCategoryEntity_Resolved/attributeContext/TaxVatReportCategoryEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Tax category codes",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

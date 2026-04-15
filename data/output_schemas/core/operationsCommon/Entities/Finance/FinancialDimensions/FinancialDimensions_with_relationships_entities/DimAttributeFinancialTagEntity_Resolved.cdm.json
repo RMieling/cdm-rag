@@ -1,0 +1,208 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "DimAttributeFinancialTagEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "DimAttributeFinancialTagEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "DimAttributeFinancialTagEntity_Resolved",
+        "definition": "resolvedFrom/DimAttributeFinancialTagEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "DimAttributeFinancialTagEntity_Resolved/attributeContext/DimAttributeFinancialTagEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "DimAttributeFinancialTagEntity_Resolved/attributeContext/DimAttributeFinancialTagEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Value",
+            "parent": "DimAttributeFinancialTagEntity_Resolved/attributeContext/DimAttributeFinancialTagEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimAttributeFinancialTagEntity/hasAttributes/Value",
+            "contents": [
+              "DimAttributeFinancialTagEntity_Resolved/hasAttributes/Value"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "DimAttributeFinancialTagEntity_Resolved/attributeContext/DimAttributeFinancialTagEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimAttributeFinancialTagEntity/hasAttributes/Name",
+            "contents": [
+              "DimAttributeFinancialTagEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DimensionName",
+            "parent": "DimAttributeFinancialTagEntity_Resolved/attributeContext/DimAttributeFinancialTagEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimAttributeFinancialTagEntity/hasAttributes/DimensionName",
+            "contents": [
+              "DimAttributeFinancialTagEntity_Resolved/hasAttributes/DimensionName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_DimensionFinancialTagRelationship",
+            "parent": "DimAttributeFinancialTagEntity_Resolved/attributeContext/DimAttributeFinancialTagEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimAttributeFinancialTagEntity/hasAttributes/BackingTable_DimensionFinancialTagRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "DimensionFinancialTag",
+                "parent": "DimAttributeFinancialTagEntity_Resolved/attributeContext/DimAttributeFinancialTagEntity_Resolved/BackingTable_DimensionFinancialTagRelationship",
+                "definition": "resolvedFrom/DimensionFinancialTag",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "DimAttributeFinancialTagEntity_Resolved/attributeContext/DimAttributeFinancialTagEntity_Resolved/BackingTable_DimensionFinancialTagRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "DimAttributeFinancialTagEntity_Resolved/attributeContext/DimAttributeFinancialTagEntity_Resolved/BackingTable_DimensionFinancialTagRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "DimAttributeFinancialTagEntity_Resolved/attributeContext/DimAttributeFinancialTagEntity_Resolved/BackingTable_DimensionFinancialTagRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "DimAttributeFinancialTagEntity_Resolved/hasAttributes/BackingTable_DimensionFinancialTagRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Value",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DimAttributeFinancialTagEntity_Resolved/attributeContext/DimAttributeFinancialTagEntity_Resolved/Value",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DimAttributeFinancialTagEntity_Resolved/attributeContext/DimAttributeFinancialTagEntity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "DimensionName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DimAttributeFinancialTagEntity_Resolved/attributeContext/DimAttributeFinancialTagEntity_Resolved/DimensionName",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_DimensionFinancialTagRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/FinancialDimensions/Main/DimensionFinancialTag.cdm.json/DimensionFinancialTag",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "DimAttributeFinancialTagEntity_Resolved/attributeContext/DimAttributeFinancialTagEntity_Resolved/BackingTable_DimensionFinancialTagRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Custom dimensions",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

@@ -1,0 +1,341 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "ElectronicTaxErrorMessageEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "ElectronicTaxErrorMessageEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "ElectronicTaxErrorMessageEntity_Resolved",
+        "definition": "resolvedFrom/ElectronicTaxErrorMessageEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "ElectronicTaxErrorMessageEntity_Resolved/attributeContext/ElectronicTaxErrorMessageEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "ElectronicTaxErrorMessageEntity_Resolved/attributeContext/ElectronicTaxErrorMessageEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ErrorId",
+            "parent": "ElectronicTaxErrorMessageEntity_Resolved/attributeContext/ElectronicTaxErrorMessageEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/ElectronicTaxErrorMessageEntity/hasAttributes/ErrorId",
+            "contents": [
+              "ElectronicTaxErrorMessageEntity_Resolved/hasAttributes/ErrorId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ErrorType",
+            "parent": "ElectronicTaxErrorMessageEntity_Resolved/attributeContext/ElectronicTaxErrorMessageEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/ElectronicTaxErrorMessageEntity/hasAttributes/ErrorType",
+            "contents": [
+              "ElectronicTaxErrorMessageEntity_Resolved/hasAttributes/ErrorType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DPErrorCode",
+            "parent": "ElectronicTaxErrorMessageEntity_Resolved/attributeContext/ElectronicTaxErrorMessageEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/ElectronicTaxErrorMessageEntity/hasAttributes/DPErrorCode",
+            "contents": [
+              "ElectronicTaxErrorMessageEntity_Resolved/hasAttributes/DPErrorCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ErrorCode",
+            "parent": "ElectronicTaxErrorMessageEntity_Resolved/attributeContext/ElectronicTaxErrorMessageEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/ElectronicTaxErrorMessageEntity/hasAttributes/ErrorCode",
+            "contents": [
+              "ElectronicTaxErrorMessageEntity_Resolved/hasAttributes/ErrorCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ErrorText",
+            "parent": "ElectronicTaxErrorMessageEntity_Resolved/attributeContext/ElectronicTaxErrorMessageEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/ElectronicTaxErrorMessageEntity/hasAttributes/ErrorText",
+            "contents": [
+              "ElectronicTaxErrorMessageEntity_Resolved/hasAttributes/ErrorText"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Company",
+            "parent": "ElectronicTaxErrorMessageEntity_Resolved/attributeContext/ElectronicTaxErrorMessageEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/ElectronicTaxErrorMessageEntity/hasAttributes/Company",
+            "contents": [
+              "ElectronicTaxErrorMessageEntity_Resolved/hasAttributes/Company"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_TaxEvatError_NLRelationship",
+            "parent": "ElectronicTaxErrorMessageEntity_Resolved/attributeContext/ElectronicTaxErrorMessageEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/ElectronicTaxErrorMessageEntity/hasAttributes/BackingTable_TaxEvatError_NLRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "TaxEvatError_NL",
+                "parent": "ElectronicTaxErrorMessageEntity_Resolved/attributeContext/ElectronicTaxErrorMessageEntity_Resolved/BackingTable_TaxEvatError_NLRelationship",
+                "definition": "resolvedFrom/TaxEvatError_NL",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "ElectronicTaxErrorMessageEntity_Resolved/attributeContext/ElectronicTaxErrorMessageEntity_Resolved/BackingTable_TaxEvatError_NLRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "ElectronicTaxErrorMessageEntity_Resolved/attributeContext/ElectronicTaxErrorMessageEntity_Resolved/BackingTable_TaxEvatError_NLRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "ElectronicTaxErrorMessageEntity_Resolved/attributeContext/ElectronicTaxErrorMessageEntity_Resolved/BackingTable_TaxEvatError_NLRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "ElectronicTaxErrorMessageEntity_Resolved/hasAttributes/BackingTable_TaxEvatError_NLRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "ElectronicTaxErrorMessageEntity_Resolved/attributeContext/ElectronicTaxErrorMessageEntity_Resolved",
+            "definition": "resolvedFrom/ElectronicTaxErrorMessageEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "ElectronicTaxErrorMessageEntity_Resolved/attributeContext/ElectronicTaxErrorMessageEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "ElectronicTaxErrorMessageEntity_Resolved/attributeContext/ElectronicTaxErrorMessageEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "ElectronicTaxErrorMessageEntity_Resolved/attributeContext/ElectronicTaxErrorMessageEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "ElectronicTaxErrorMessageEntity_Resolved/attributeContext/ElectronicTaxErrorMessageEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "ElectronicTaxErrorMessageEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "ErrorId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "ElectronicTaxErrorMessageEntity_Resolved/attributeContext/ElectronicTaxErrorMessageEntity_Resolved/ErrorId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ErrorType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "ElectronicTaxErrorMessageEntity_Resolved/attributeContext/ElectronicTaxErrorMessageEntity_Resolved/ErrorType",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "DPErrorCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "ElectronicTaxErrorMessageEntity_Resolved/attributeContext/ElectronicTaxErrorMessageEntity_Resolved/DPErrorCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ErrorCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "ElectronicTaxErrorMessageEntity_Resolved/attributeContext/ElectronicTaxErrorMessageEntity_Resolved/ErrorCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ErrorText",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "ElectronicTaxErrorMessageEntity_Resolved/attributeContext/ElectronicTaxErrorMessageEntity_Resolved/ErrorText",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Company",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "ElectronicTaxErrorMessageEntity_Resolved/attributeContext/ElectronicTaxErrorMessageEntity_Resolved/Company",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_TaxEvatError_NLRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Tax/Parameter/TaxEvatError_NL.cdm.json/TaxEvatError_NL",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "ElectronicTaxErrorMessageEntity_Resolved/attributeContext/ElectronicTaxErrorMessageEntity_Resolved/BackingTable_TaxEvatError_NLRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "ElectronicTaxErrorMessageEntity_Resolved/attributeContext/ElectronicTaxErrorMessageEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Electronic tax error messages",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

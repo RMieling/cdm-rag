@@ -1,0 +1,341 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "CashLedgerEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "CashLedgerEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "CashLedgerEntity_Resolved",
+        "definition": "resolvedFrom/CashLedgerEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "CashLedgerEntity_Resolved/attributeContext/CashLedgerEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "CashLedgerEntity_Resolved/attributeContext/CashLedgerEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "CashLedgerEntity_Resolved/attributeContext/CashLedgerEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CashLedgerEntity/hasAttributes/Description",
+            "contents": [
+              "CashLedgerEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CashPosting",
+            "parent": "CashLedgerEntity_Resolved/attributeContext/CashLedgerEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CashLedgerEntity/hasAttributes/CashPosting",
+            "contents": [
+              "CashLedgerEntity_Resolved/hasAttributes/CashPosting"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ValidFor",
+            "parent": "CashLedgerEntity_Resolved/attributeContext/CashLedgerEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CashLedgerEntity/hasAttributes/ValidFor",
+            "contents": [
+              "CashLedgerEntity_Resolved/hasAttributes/ValidFor"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Cash",
+            "parent": "CashLedgerEntity_Resolved/attributeContext/CashLedgerEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CashLedgerEntity/hasAttributes/Cash",
+            "contents": [
+              "CashLedgerEntity_Resolved/hasAttributes/Cash"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "MainAccountId",
+            "parent": "CashLedgerEntity_Resolved/attributeContext/CashLedgerEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CashLedgerEntity/hasAttributes/MainAccountId",
+            "contents": [
+              "CashLedgerEntity_Resolved/hasAttributes/MainAccountId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "MainAccountIdDisplayValue",
+            "parent": "CashLedgerEntity_Resolved/attributeContext/CashLedgerEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CashLedgerEntity/hasAttributes/MainAccountIdDisplayValue",
+            "contents": [
+              "CashLedgerEntity_Resolved/hasAttributes/MainAccountIdDisplayValue"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_RCashLedgerRelationship",
+            "parent": "CashLedgerEntity_Resolved/attributeContext/CashLedgerEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CashLedgerEntity/hasAttributes/BackingTable_RCashLedgerRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "RCashLedger",
+                "parent": "CashLedgerEntity_Resolved/attributeContext/CashLedgerEntity_Resolved/BackingTable_RCashLedgerRelationship",
+                "definition": "resolvedFrom/RCashLedger",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CashLedgerEntity_Resolved/attributeContext/CashLedgerEntity_Resolved/BackingTable_RCashLedgerRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CashLedgerEntity_Resolved/attributeContext/CashLedgerEntity_Resolved/BackingTable_RCashLedgerRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CashLedgerEntity_Resolved/attributeContext/CashLedgerEntity_Resolved/BackingTable_RCashLedgerRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CashLedgerEntity_Resolved/hasAttributes/BackingTable_RCashLedgerRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "CashLedgerEntity_Resolved/attributeContext/CashLedgerEntity_Resolved",
+            "definition": "resolvedFrom/CashLedgerEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "CashLedgerEntity_Resolved/attributeContext/CashLedgerEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CashLedgerEntity_Resolved/attributeContext/CashLedgerEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CashLedgerEntity_Resolved/attributeContext/CashLedgerEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CashLedgerEntity_Resolved/attributeContext/CashLedgerEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CashLedgerEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CashLedgerEntity_Resolved/attributeContext/CashLedgerEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "CashPosting",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CashLedgerEntity_Resolved/attributeContext/CashLedgerEntity_Resolved/CashPosting",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ValidFor",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CashLedgerEntity_Resolved/attributeContext/CashLedgerEntity_Resolved/ValidFor",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Cash",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CashLedgerEntity_Resolved/attributeContext/CashLedgerEntity_Resolved/Cash",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "MainAccountId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CashLedgerEntity_Resolved/attributeContext/CashLedgerEntity_Resolved/MainAccountId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "MainAccountIdDisplayValue",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CashLedgerEntity_Resolved/attributeContext/CashLedgerEntity_Resolved/MainAccountIdDisplayValue",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_RCashLedgerRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/RCash/Group/RCashLedger.cdm.json/RCashLedger",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CashLedgerEntity_Resolved/attributeContext/CashLedgerEntity_Resolved/BackingTable_RCashLedgerRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CashLedgerEntity_Resolved/attributeContext/CashLedgerEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Cash posting profiles",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

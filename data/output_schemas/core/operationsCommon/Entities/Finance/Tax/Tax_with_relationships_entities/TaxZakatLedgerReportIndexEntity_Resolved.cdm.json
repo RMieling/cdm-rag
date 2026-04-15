@@ -1,0 +1,281 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "TaxZakatLedgerReportIndexEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TaxZakatLedgerReportIndexEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "TaxZakatLedgerReportIndexEntity_Resolved",
+        "definition": "resolvedFrom/TaxZakatLedgerReportIndexEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "TaxZakatLedgerReportIndexEntity_Resolved/attributeContext/TaxZakatLedgerReportIndexEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "TaxZakatLedgerReportIndexEntity_Resolved/attributeContext/TaxZakatLedgerReportIndexEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ReportType",
+            "parent": "TaxZakatLedgerReportIndexEntity_Resolved/attributeContext/TaxZakatLedgerReportIndexEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxZakatLedgerReportIndexEntity/hasAttributes/ReportType",
+            "contents": [
+              "TaxZakatLedgerReportIndexEntity_Resolved/hasAttributes/ReportType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "TaxZakatLedgerReportIndexEntity_Resolved/attributeContext/TaxZakatLedgerReportIndexEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxZakatLedgerReportIndexEntity/hasAttributes/Description",
+            "contents": [
+              "TaxZakatLedgerReportIndexEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ReportActive",
+            "parent": "TaxZakatLedgerReportIndexEntity_Resolved/attributeContext/TaxZakatLedgerReportIndexEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxZakatLedgerReportIndexEntity/hasAttributes/ReportActive",
+            "contents": [
+              "TaxZakatLedgerReportIndexEntity_Resolved/hasAttributes/ReportActive"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_LedgerReportIndexZakat_SARelationship",
+            "parent": "TaxZakatLedgerReportIndexEntity_Resolved/attributeContext/TaxZakatLedgerReportIndexEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxZakatLedgerReportIndexEntity/hasAttributes/BackingTable_LedgerReportIndexZakat_SARelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "LedgerReportIndexZakat_SA",
+                "parent": "TaxZakatLedgerReportIndexEntity_Resolved/attributeContext/TaxZakatLedgerReportIndexEntity_Resolved/BackingTable_LedgerReportIndexZakat_SARelationship",
+                "definition": "resolvedFrom/LedgerReportIndexZakat_SA",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxZakatLedgerReportIndexEntity_Resolved/attributeContext/TaxZakatLedgerReportIndexEntity_Resolved/BackingTable_LedgerReportIndexZakat_SARelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxZakatLedgerReportIndexEntity_Resolved/attributeContext/TaxZakatLedgerReportIndexEntity_Resolved/BackingTable_LedgerReportIndexZakat_SARelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxZakatLedgerReportIndexEntity_Resolved/attributeContext/TaxZakatLedgerReportIndexEntity_Resolved/BackingTable_LedgerReportIndexZakat_SARelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxZakatLedgerReportIndexEntity_Resolved/hasAttributes/BackingTable_LedgerReportIndexZakat_SARelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "TaxZakatLedgerReportIndexEntity_Resolved/attributeContext/TaxZakatLedgerReportIndexEntity_Resolved",
+            "definition": "resolvedFrom/TaxZakatLedgerReportIndexEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "TaxZakatLedgerReportIndexEntity_Resolved/attributeContext/TaxZakatLedgerReportIndexEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxZakatLedgerReportIndexEntity_Resolved/attributeContext/TaxZakatLedgerReportIndexEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxZakatLedgerReportIndexEntity_Resolved/attributeContext/TaxZakatLedgerReportIndexEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxZakatLedgerReportIndexEntity_Resolved/attributeContext/TaxZakatLedgerReportIndexEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxZakatLedgerReportIndexEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "ReportType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxZakatLedgerReportIndexEntity_Resolved/attributeContext/TaxZakatLedgerReportIndexEntity_Resolved/ReportType",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxZakatLedgerReportIndexEntity_Resolved/attributeContext/TaxZakatLedgerReportIndexEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ReportActive",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxZakatLedgerReportIndexEntity_Resolved/attributeContext/TaxZakatLedgerReportIndexEntity_Resolved/ReportActive",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_LedgerReportIndexZakat_SARelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Group/LedgerReportIndexZakat_SA.cdm.json/LedgerReportIndexZakat_SA",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxZakatLedgerReportIndexEntity_Resolved/attributeContext/TaxZakatLedgerReportIndexEntity_Resolved/BackingTable_LedgerReportIndexZakat_SARelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxZakatLedgerReportIndexEntity_Resolved/attributeContext/TaxZakatLedgerReportIndexEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Zakat report names",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

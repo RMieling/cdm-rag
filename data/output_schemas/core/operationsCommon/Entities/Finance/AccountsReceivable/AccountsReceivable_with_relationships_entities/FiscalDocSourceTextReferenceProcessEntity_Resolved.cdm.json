@@ -1,0 +1,368 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "FiscalDocSourceTextReferenceProcessEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "FiscalDocSourceTextReferenceProcessEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "FiscalDocSourceTextReferenceProcessEntity_Resolved",
+        "definition": "resolvedFrom/FiscalDocSourceTextReferenceProcessEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "FiscalDocSourceTextReferenceProcessEntity_Resolved/attributeContext/FiscalDocSourceTextReferenceProcessEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "FiscalDocSourceTextReferenceProcessEntity_Resolved/attributeContext/FiscalDocSourceTextReferenceProcessEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "FiscalDocumentText",
+            "parent": "FiscalDocSourceTextReferenceProcessEntity_Resolved/attributeContext/FiscalDocSourceTextReferenceProcessEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/FiscalDocSourceTextReferenceProcessEntity/hasAttributes/FiscalDocumentText",
+            "contents": [
+              "FiscalDocSourceTextReferenceProcessEntity_Resolved/hasAttributes/FiscalDocumentText"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Agency",
+            "parent": "FiscalDocSourceTextReferenceProcessEntity_Resolved/attributeContext/FiscalDocSourceTextReferenceProcessEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/FiscalDocSourceTextReferenceProcessEntity/hasAttributes/Agency",
+            "contents": [
+              "FiscalDocSourceTextReferenceProcessEntity_Resolved/hasAttributes/Agency"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ReferenceProcessNumber",
+            "parent": "FiscalDocSourceTextReferenceProcessEntity_Resolved/attributeContext/FiscalDocSourceTextReferenceProcessEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/FiscalDocSourceTextReferenceProcessEntity/hasAttributes/ReferenceProcessNumber",
+            "contents": [
+              "FiscalDocSourceTextReferenceProcessEntity_Resolved/hasAttributes/ReferenceProcessNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ReferenceFiscalDocumentSourceText",
+            "parent": "FiscalDocSourceTextReferenceProcessEntity_Resolved/attributeContext/FiscalDocSourceTextReferenceProcessEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/FiscalDocSourceTextReferenceProcessEntity/hasAttributes/ReferenceFiscalDocumentSourceText",
+            "contents": [
+              "FiscalDocSourceTextReferenceProcessEntity_Resolved/hasAttributes/ReferenceFiscalDocumentSourceText"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_FiscalDocumentSourceTextEntityRelationship",
+            "parent": "FiscalDocSourceTextReferenceProcessEntity_Resolved/attributeContext/FiscalDocSourceTextReferenceProcessEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/FiscalDocSourceTextReferenceProcessEntity/hasAttributes/Relationship_FiscalDocumentSourceTextEntityRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "FiscalDocumentSourceTextEntity",
+                "parent": "FiscalDocSourceTextReferenceProcessEntity_Resolved/attributeContext/FiscalDocSourceTextReferenceProcessEntity_Resolved/Relationship_FiscalDocumentSourceTextEntityRelationship",
+                "definition": "resolvedFrom/FiscalDocumentSourceTextEntity",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "FiscalDocSourceTextReferenceProcessEntity_Resolved/attributeContext/FiscalDocSourceTextReferenceProcessEntity_Resolved/Relationship_FiscalDocumentSourceTextEntityRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "FiscalDocSourceTextReferenceProcessEntity_Resolved/attributeContext/FiscalDocSourceTextReferenceProcessEntity_Resolved/Relationship_FiscalDocumentSourceTextEntityRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "FiscalDocSourceTextReferenceProcessEntity_Resolved/attributeContext/FiscalDocSourceTextReferenceProcessEntity_Resolved/Relationship_FiscalDocumentSourceTextEntityRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "FiscalDocSourceTextReferenceProcessEntity_Resolved/hasAttributes/Relationship_FiscalDocumentSourceTextEntityRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_FiscalDocSourceTextReferenceProcess_BRRelationship",
+            "parent": "FiscalDocSourceTextReferenceProcessEntity_Resolved/attributeContext/FiscalDocSourceTextReferenceProcessEntity_Resolved",
+            "definition": "resolvedFrom/FiscalDocSourceTextReferenceProcessEntity/hasAttributes/BackingTable_FiscalDocSourceTextReferenceProcess_BRRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "FiscalDocSourceTextReferenceProcess_BR",
+                "parent": "FiscalDocSourceTextReferenceProcessEntity_Resolved/attributeContext/FiscalDocSourceTextReferenceProcessEntity_Resolved/BackingTable_FiscalDocSourceTextReferenceProcess_BRRelationship",
+                "definition": "resolvedFrom/FiscalDocSourceTextReferenceProcess_BR",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "FiscalDocSourceTextReferenceProcessEntity_Resolved/attributeContext/FiscalDocSourceTextReferenceProcessEntity_Resolved/BackingTable_FiscalDocSourceTextReferenceProcess_BRRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "FiscalDocSourceTextReferenceProcessEntity_Resolved/attributeContext/FiscalDocSourceTextReferenceProcessEntity_Resolved/BackingTable_FiscalDocSourceTextReferenceProcess_BRRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "FiscalDocSourceTextReferenceProcessEntity_Resolved/attributeContext/FiscalDocSourceTextReferenceProcessEntity_Resolved/BackingTable_FiscalDocSourceTextReferenceProcess_BRRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "FiscalDocSourceTextReferenceProcessEntity_Resolved/hasAttributes/BackingTable_FiscalDocSourceTextReferenceProcess_BRRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "FiscalDocSourceTextReferenceProcessEntity_Resolved/attributeContext/FiscalDocSourceTextReferenceProcessEntity_Resolved",
+            "definition": "resolvedFrom/FiscalDocSourceTextReferenceProcessEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "FiscalDocSourceTextReferenceProcessEntity_Resolved/attributeContext/FiscalDocSourceTextReferenceProcessEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "FiscalDocSourceTextReferenceProcessEntity_Resolved/attributeContext/FiscalDocSourceTextReferenceProcessEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "FiscalDocSourceTextReferenceProcessEntity_Resolved/attributeContext/FiscalDocSourceTextReferenceProcessEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "FiscalDocSourceTextReferenceProcessEntity_Resolved/attributeContext/FiscalDocSourceTextReferenceProcessEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "FiscalDocSourceTextReferenceProcessEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "FiscalDocumentText",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "FiscalDocSourceTextReferenceProcessEntity_Resolved/attributeContext/FiscalDocSourceTextReferenceProcessEntity_Resolved/FiscalDocumentText",
+          "dataFormat": "String"
+        },
+        {
+          "name": "Agency",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "FiscalDocSourceTextReferenceProcessEntity_Resolved/attributeContext/FiscalDocSourceTextReferenceProcessEntity_Resolved/Agency",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ReferenceProcessNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "FiscalDocSourceTextReferenceProcessEntity_Resolved/attributeContext/FiscalDocSourceTextReferenceProcessEntity_Resolved/ReferenceProcessNumber",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ReferenceFiscalDocumentSourceText",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "FiscalDocSourceTextReferenceProcessEntity_Resolved/attributeContext/FiscalDocSourceTextReferenceProcessEntity_Resolved/ReferenceFiscalDocumentSourceText",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Relationship_FiscalDocumentSourceTextEntityRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": []
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "FiscalDocSourceTextReferenceProcessEntity_Resolved/attributeContext/FiscalDocSourceTextReferenceProcessEntity_Resolved/Relationship_FiscalDocumentSourceTextEntityRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "BackingTable_FiscalDocSourceTextReferenceProcess_BRRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/FiscalBooksBrazil/Miscellaneous/FiscalDocSourceTextReferenceProcess_BR.cdm.json/FiscalDocSourceTextReferenceProcess_BR",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "FiscalDocSourceTextReferenceProcessEntity_Resolved/attributeContext/FiscalDocSourceTextReferenceProcessEntity_Resolved/BackingTable_FiscalDocSourceTextReferenceProcess_BRRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "FiscalDocSourceTextReferenceProcessEntity_Resolved/attributeContext/FiscalDocSourceTextReferenceProcessEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Process reference",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

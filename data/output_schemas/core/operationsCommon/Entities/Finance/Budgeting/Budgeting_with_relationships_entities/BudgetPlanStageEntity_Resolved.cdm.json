@@ -1,0 +1,188 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "BudgetPlanStageEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "BudgetPlanStageEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "BudgetPlanStageEntity_Resolved",
+        "definition": "resolvedFrom/BudgetPlanStageEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "BudgetPlanStageEntity_Resolved/attributeContext/BudgetPlanStageEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "BudgetPlanStageEntity_Resolved/attributeContext/BudgetPlanStageEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "BudgetPlanStageEntity_Resolved/attributeContext/BudgetPlanStageEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetPlanStageEntity/hasAttributes/Description",
+            "contents": [
+              "BudgetPlanStageEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "BudgetPlanStageEntity_Resolved/attributeContext/BudgetPlanStageEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetPlanStageEntity/hasAttributes/Name",
+            "contents": [
+              "BudgetPlanStageEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_BudgetPlanningStageRelationship",
+            "parent": "BudgetPlanStageEntity_Resolved/attributeContext/BudgetPlanStageEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetPlanStageEntity/hasAttributes/BackingTable_BudgetPlanningStageRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "BudgetPlanningStage",
+                "parent": "BudgetPlanStageEntity_Resolved/attributeContext/BudgetPlanStageEntity_Resolved/BackingTable_BudgetPlanningStageRelationship",
+                "definition": "resolvedFrom/BudgetPlanningStage",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "BudgetPlanStageEntity_Resolved/attributeContext/BudgetPlanStageEntity_Resolved/BackingTable_BudgetPlanningStageRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "BudgetPlanStageEntity_Resolved/attributeContext/BudgetPlanStageEntity_Resolved/BackingTable_BudgetPlanningStageRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "BudgetPlanStageEntity_Resolved/attributeContext/BudgetPlanStageEntity_Resolved/BackingTable_BudgetPlanningStageRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "BudgetPlanStageEntity_Resolved/hasAttributes/BackingTable_BudgetPlanningStageRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetPlanStageEntity_Resolved/attributeContext/BudgetPlanStageEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetPlanStageEntity_Resolved/attributeContext/BudgetPlanStageEntity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_BudgetPlanningStageRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Budget/Group/BudgetPlanningStage.cdm.json/BudgetPlanningStage",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "BudgetPlanStageEntity_Resolved/attributeContext/BudgetPlanStageEntity_Resolved/BackingTable_BudgetPlanningStageRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Budget plan stages",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

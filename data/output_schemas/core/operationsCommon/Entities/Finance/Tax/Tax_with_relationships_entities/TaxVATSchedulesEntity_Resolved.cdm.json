@@ -1,0 +1,261 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "TaxVATSchedulesEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TaxVATSchedulesEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "TaxVATSchedulesEntity_Resolved",
+        "definition": "resolvedFrom/TaxVATSchedulesEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "TaxVATSchedulesEntity_Resolved/attributeContext/TaxVATSchedulesEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "TaxVATSchedulesEntity_Resolved/attributeContext/TaxVATSchedulesEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "TaxVATSchedulesEntity_Resolved/attributeContext/TaxVATSchedulesEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxVATSchedulesEntity/hasAttributes/Description",
+            "contents": [
+              "TaxVATSchedulesEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Schedule",
+            "parent": "TaxVATSchedulesEntity_Resolved/attributeContext/TaxVATSchedulesEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxVATSchedulesEntity/hasAttributes/Schedule",
+            "contents": [
+              "TaxVATSchedulesEntity_Resolved/hasAttributes/Schedule"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_VATSchedule_INRelationship",
+            "parent": "TaxVATSchedulesEntity_Resolved/attributeContext/TaxVATSchedulesEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxVATSchedulesEntity/hasAttributes/BackingTable_VATSchedule_INRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "VATSchedule_IN",
+                "parent": "TaxVATSchedulesEntity_Resolved/attributeContext/TaxVATSchedulesEntity_Resolved/BackingTable_VATSchedule_INRelationship",
+                "definition": "resolvedFrom/VATSchedule_IN",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxVATSchedulesEntity_Resolved/attributeContext/TaxVATSchedulesEntity_Resolved/BackingTable_VATSchedule_INRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxVATSchedulesEntity_Resolved/attributeContext/TaxVATSchedulesEntity_Resolved/BackingTable_VATSchedule_INRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxVATSchedulesEntity_Resolved/attributeContext/TaxVATSchedulesEntity_Resolved/BackingTable_VATSchedule_INRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxVATSchedulesEntity_Resolved/hasAttributes/BackingTable_VATSchedule_INRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "TaxVATSchedulesEntity_Resolved/attributeContext/TaxVATSchedulesEntity_Resolved",
+            "definition": "resolvedFrom/TaxVATSchedulesEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "TaxVATSchedulesEntity_Resolved/attributeContext/TaxVATSchedulesEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxVATSchedulesEntity_Resolved/attributeContext/TaxVATSchedulesEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxVATSchedulesEntity_Resolved/attributeContext/TaxVATSchedulesEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxVATSchedulesEntity_Resolved/attributeContext/TaxVATSchedulesEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxVATSchedulesEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxVATSchedulesEntity_Resolved/attributeContext/TaxVATSchedulesEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Schedule",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxVATSchedulesEntity_Resolved/attributeContext/TaxVATSchedulesEntity_Resolved/Schedule",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_VATSchedule_INRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Tax/Parameter/VATSchedule_IN.cdm.json/VATSchedule_IN",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxVATSchedulesEntity_Resolved/attributeContext/TaxVATSchedulesEntity_Resolved/BackingTable_VATSchedule_INRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxVATSchedulesEntity_Resolved/attributeContext/TaxVATSchedulesEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "VAT schedule",
+      "version": "1.1.1"
+    }
+  ],
+  "documentVersion": "1.1.1"
+}

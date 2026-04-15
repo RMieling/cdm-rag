@@ -1,0 +1,210 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "BudgetControlConfigurationActivationEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "BudgetControlConfigurationActivationEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "BudgetControlConfigurationActivationEntity_Resolved",
+        "definition": "resolvedFrom/BudgetControlConfigurationActivationEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "BudgetControlConfigurationActivationEntity_Resolved/attributeContext/BudgetControlConfigurationActivationEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "BudgetControlConfigurationActivationEntity_Resolved/attributeContext/BudgetControlConfigurationActivationEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "LegalEntityId",
+            "parent": "BudgetControlConfigurationActivationEntity_Resolved/attributeContext/BudgetControlConfigurationActivationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetControlConfigurationActivationEntity/hasAttributes/LegalEntityId",
+            "contents": [
+              "BudgetControlConfigurationActivationEntity_Resolved/hasAttributes/LegalEntityId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ActivateDraft",
+            "parent": "BudgetControlConfigurationActivationEntity_Resolved/attributeContext/BudgetControlConfigurationActivationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetControlConfigurationActivationEntity/hasAttributes/ActivateDraft",
+            "contents": [
+              "BudgetControlConfigurationActivationEntity_Resolved/hasAttributes/ActivateDraft"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "TurnOnBudgetControl",
+            "parent": "BudgetControlConfigurationActivationEntity_Resolved/attributeContext/BudgetControlConfigurationActivationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetControlConfigurationActivationEntity/hasAttributes/TurnOnBudgetControl",
+            "contents": [
+              "BudgetControlConfigurationActivationEntity_Resolved/hasAttributes/TurnOnBudgetControl"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "BudgetControlConfigurationActivationEntity_Resolved/attributeContext/BudgetControlConfigurationActivationEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetControlConfigurationActivationEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "BudgetControlConfigurationActivationEntity_Resolved/attributeContext/BudgetControlConfigurationActivationEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "BudgetControlConfigurationActivationEntity_Resolved/attributeContext/BudgetControlConfigurationActivationEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "BudgetControlConfigurationActivationEntity_Resolved/attributeContext/BudgetControlConfigurationActivationEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "BudgetControlConfigurationActivationEntity_Resolved/attributeContext/BudgetControlConfigurationActivationEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "BudgetControlConfigurationActivationEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "LegalEntityId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetControlConfigurationActivationEntity_Resolved/attributeContext/BudgetControlConfigurationActivationEntity_Resolved/LegalEntityId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ActivateDraft",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetControlConfigurationActivationEntity_Resolved/attributeContext/BudgetControlConfigurationActivationEntity_Resolved/ActivateDraft",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Activate draft"
+        },
+        {
+          "name": "TurnOnBudgetControl",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetControlConfigurationActivationEntity_Resolved/attributeContext/BudgetControlConfigurationActivationEntity_Resolved/TurnOnBudgetControl",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Turn on budget control"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "BudgetControlConfigurationActivationEntity_Resolved/attributeContext/BudgetControlConfigurationActivationEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Budget control configuration activation",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

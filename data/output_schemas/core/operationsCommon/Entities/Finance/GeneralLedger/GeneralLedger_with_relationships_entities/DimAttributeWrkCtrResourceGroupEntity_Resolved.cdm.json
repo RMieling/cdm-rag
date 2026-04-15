@@ -1,0 +1,261 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "DimAttributeWrkCtrResourceGroupEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "DimAttributeWrkCtrResourceGroupEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "DimAttributeWrkCtrResourceGroupEntity_Resolved",
+        "definition": "resolvedFrom/DimAttributeWrkCtrResourceGroupEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "DimAttributeWrkCtrResourceGroupEntity_Resolved/attributeContext/DimAttributeWrkCtrResourceGroupEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "DimAttributeWrkCtrResourceGroupEntity_Resolved/attributeContext/DimAttributeWrkCtrResourceGroupEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Value",
+            "parent": "DimAttributeWrkCtrResourceGroupEntity_Resolved/attributeContext/DimAttributeWrkCtrResourceGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimAttributeWrkCtrResourceGroupEntity/hasAttributes/Value",
+            "contents": [
+              "DimAttributeWrkCtrResourceGroupEntity_Resolved/hasAttributes/Value"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "DimAttributeWrkCtrResourceGroupEntity_Resolved/attributeContext/DimAttributeWrkCtrResourceGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimAttributeWrkCtrResourceGroupEntity/hasAttributes/Name",
+            "contents": [
+              "DimAttributeWrkCtrResourceGroupEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_WrkCtrTableRelationship",
+            "parent": "DimAttributeWrkCtrResourceGroupEntity_Resolved/attributeContext/DimAttributeWrkCtrResourceGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/DimAttributeWrkCtrResourceGroupEntity/hasAttributes/BackingTable_WrkCtrTableRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "WrkCtrTable",
+                "parent": "DimAttributeWrkCtrResourceGroupEntity_Resolved/attributeContext/DimAttributeWrkCtrResourceGroupEntity_Resolved/BackingTable_WrkCtrTableRelationship",
+                "definition": "resolvedFrom/WrkCtrTable",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "DimAttributeWrkCtrResourceGroupEntity_Resolved/attributeContext/DimAttributeWrkCtrResourceGroupEntity_Resolved/BackingTable_WrkCtrTableRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "DimAttributeWrkCtrResourceGroupEntity_Resolved/attributeContext/DimAttributeWrkCtrResourceGroupEntity_Resolved/BackingTable_WrkCtrTableRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "DimAttributeWrkCtrResourceGroupEntity_Resolved/attributeContext/DimAttributeWrkCtrResourceGroupEntity_Resolved/BackingTable_WrkCtrTableRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "DimAttributeWrkCtrResourceGroupEntity_Resolved/hasAttributes/BackingTable_WrkCtrTableRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "DimAttributeWrkCtrResourceGroupEntity_Resolved/attributeContext/DimAttributeWrkCtrResourceGroupEntity_Resolved",
+            "definition": "resolvedFrom/DimAttributeWrkCtrResourceGroupEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "DimAttributeWrkCtrResourceGroupEntity_Resolved/attributeContext/DimAttributeWrkCtrResourceGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "DimAttributeWrkCtrResourceGroupEntity_Resolved/attributeContext/DimAttributeWrkCtrResourceGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "DimAttributeWrkCtrResourceGroupEntity_Resolved/attributeContext/DimAttributeWrkCtrResourceGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "DimAttributeWrkCtrResourceGroupEntity_Resolved/attributeContext/DimAttributeWrkCtrResourceGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "DimAttributeWrkCtrResourceGroupEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Value",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DimAttributeWrkCtrResourceGroupEntity_Resolved/attributeContext/DimAttributeWrkCtrResourceGroupEntity_Resolved/Value",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "DimAttributeWrkCtrResourceGroupEntity_Resolved/attributeContext/DimAttributeWrkCtrResourceGroupEntity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_WrkCtrTableRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/SupplyChain/SalesAndMarketing/Main/WrkCtrTable.cdm.json/WrkCtrTable",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "DimAttributeWrkCtrResourceGroupEntity_Resolved/attributeContext/DimAttributeWrkCtrResourceGroupEntity_Resolved/BackingTable_WrkCtrTableRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "DimAttributeWrkCtrResourceGroupEntity_Resolved/attributeContext/DimAttributeWrkCtrResourceGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Resource groups",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

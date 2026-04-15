@@ -1,0 +1,261 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "smmBusinessSegmentEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "smmBusinessSegmentEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "smmBusinessSegmentEntity_Resolved",
+        "definition": "resolvedFrom/smmBusinessSegmentEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "smmBusinessSegmentEntity_Resolved/attributeContext/smmBusinessSegmentEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "smmBusinessSegmentEntity_Resolved/attributeContext/smmBusinessSegmentEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "SegmentDescription",
+            "parent": "smmBusinessSegmentEntity_Resolved/attributeContext/smmBusinessSegmentEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/smmBusinessSegmentEntity/hasAttributes/SegmentDescription",
+            "contents": [
+              "smmBusinessSegmentEntity_Resolved/hasAttributes/SegmentDescription"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "SegmentCode",
+            "parent": "smmBusinessSegmentEntity_Resolved/attributeContext/smmBusinessSegmentEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/smmBusinessSegmentEntity/hasAttributes/SegmentCode",
+            "contents": [
+              "smmBusinessSegmentEntity_Resolved/hasAttributes/SegmentCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_smmBusRelSegmentGroupRelationship",
+            "parent": "smmBusinessSegmentEntity_Resolved/attributeContext/smmBusinessSegmentEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/smmBusinessSegmentEntity/hasAttributes/BackingTable_smmBusRelSegmentGroupRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "smmBusRelSegmentGroup",
+                "parent": "smmBusinessSegmentEntity_Resolved/attributeContext/smmBusinessSegmentEntity_Resolved/BackingTable_smmBusRelSegmentGroupRelationship",
+                "definition": "resolvedFrom/smmBusRelSegmentGroup",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "smmBusinessSegmentEntity_Resolved/attributeContext/smmBusinessSegmentEntity_Resolved/BackingTable_smmBusRelSegmentGroupRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "smmBusinessSegmentEntity_Resolved/attributeContext/smmBusinessSegmentEntity_Resolved/BackingTable_smmBusRelSegmentGroupRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "smmBusinessSegmentEntity_Resolved/attributeContext/smmBusinessSegmentEntity_Resolved/BackingTable_smmBusRelSegmentGroupRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "smmBusinessSegmentEntity_Resolved/hasAttributes/BackingTable_smmBusRelSegmentGroupRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "smmBusinessSegmentEntity_Resolved/attributeContext/smmBusinessSegmentEntity_Resolved",
+            "definition": "resolvedFrom/smmBusinessSegmentEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "smmBusinessSegmentEntity_Resolved/attributeContext/smmBusinessSegmentEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "smmBusinessSegmentEntity_Resolved/attributeContext/smmBusinessSegmentEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "smmBusinessSegmentEntity_Resolved/attributeContext/smmBusinessSegmentEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "smmBusinessSegmentEntity_Resolved/attributeContext/smmBusinessSegmentEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "smmBusinessSegmentEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "SegmentDescription",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "smmBusinessSegmentEntity_Resolved/attributeContext/smmBusinessSegmentEntity_Resolved/SegmentDescription",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "SegmentCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "smmBusinessSegmentEntity_Resolved/attributeContext/smmBusinessSegmentEntity_Resolved/SegmentCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_smmBusRelSegmentGroupRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/SupplyChain/SalesAndMarketing/Group/smmBusRelSegmentGroup.cdm.json/smmBusRelSegmentGroup",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "smmBusinessSegmentEntity_Resolved/attributeContext/smmBusinessSegmentEntity_Resolved/BackingTable_smmBusRelSegmentGroupRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "smmBusinessSegmentEntity_Resolved/attributeContext/smmBusinessSegmentEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Business segments",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

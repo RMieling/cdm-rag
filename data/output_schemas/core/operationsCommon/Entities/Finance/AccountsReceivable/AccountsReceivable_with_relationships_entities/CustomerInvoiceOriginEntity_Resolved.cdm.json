@@ -1,0 +1,302 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "CustomerInvoiceOriginEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "CustomerInvoiceOriginEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "CustomerInvoiceOriginEntity_Resolved",
+        "definition": "resolvedFrom/CustomerInvoiceOriginEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "CustomerInvoiceOriginEntity_Resolved/attributeContext/CustomerInvoiceOriginEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "CustomerInvoiceOriginEntity_Resolved/attributeContext/CustomerInvoiceOriginEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "OriginDescription",
+            "parent": "CustomerInvoiceOriginEntity_Resolved/attributeContext/CustomerInvoiceOriginEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustomerInvoiceOriginEntity/hasAttributes/OriginDescription",
+            "contents": [
+              "CustomerInvoiceOriginEntity_Resolved/hasAttributes/OriginDescription"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "OriginCode",
+            "parent": "CustomerInvoiceOriginEntity_Resolved/attributeContext/CustomerInvoiceOriginEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustomerInvoiceOriginEntity/hasAttributes/OriginCode",
+            "contents": [
+              "CustomerInvoiceOriginEntity_Resolved/hasAttributes/OriginCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "OriginType",
+            "parent": "CustomerInvoiceOriginEntity_Resolved/attributeContext/CustomerInvoiceOriginEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustomerInvoiceOriginEntity/hasAttributes/OriginType",
+            "contents": [
+              "CustomerInvoiceOriginEntity_Resolved/hasAttributes/OriginType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "IsOriginTypeAssigned",
+            "parent": "CustomerInvoiceOriginEntity_Resolved/attributeContext/CustomerInvoiceOriginEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustomerInvoiceOriginEntity/hasAttributes/IsOriginTypeAssigned",
+            "contents": [
+              "CustomerInvoiceOriginEntity_Resolved/hasAttributes/IsOriginTypeAssigned"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_CustomerInvoiceOriginRelationship",
+            "parent": "CustomerInvoiceOriginEntity_Resolved/attributeContext/CustomerInvoiceOriginEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustomerInvoiceOriginEntity/hasAttributes/BackingTable_CustomerInvoiceOriginRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CustomerInvoiceOrigin",
+                "parent": "CustomerInvoiceOriginEntity_Resolved/attributeContext/CustomerInvoiceOriginEntity_Resolved/BackingTable_CustomerInvoiceOriginRelationship",
+                "definition": "resolvedFrom/CustomerInvoiceOrigin",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CustomerInvoiceOriginEntity_Resolved/attributeContext/CustomerInvoiceOriginEntity_Resolved/BackingTable_CustomerInvoiceOriginRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CustomerInvoiceOriginEntity_Resolved/attributeContext/CustomerInvoiceOriginEntity_Resolved/BackingTable_CustomerInvoiceOriginRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CustomerInvoiceOriginEntity_Resolved/attributeContext/CustomerInvoiceOriginEntity_Resolved/BackingTable_CustomerInvoiceOriginRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CustomerInvoiceOriginEntity_Resolved/hasAttributes/BackingTable_CustomerInvoiceOriginRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "CustomerInvoiceOriginEntity_Resolved/attributeContext/CustomerInvoiceOriginEntity_Resolved",
+            "definition": "resolvedFrom/CustomerInvoiceOriginEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "CustomerInvoiceOriginEntity_Resolved/attributeContext/CustomerInvoiceOriginEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CustomerInvoiceOriginEntity_Resolved/attributeContext/CustomerInvoiceOriginEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CustomerInvoiceOriginEntity_Resolved/attributeContext/CustomerInvoiceOriginEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CustomerInvoiceOriginEntity_Resolved/attributeContext/CustomerInvoiceOriginEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CustomerInvoiceOriginEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "OriginDescription",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustomerInvoiceOriginEntity_Resolved/attributeContext/CustomerInvoiceOriginEntity_Resolved/OriginDescription",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "OriginCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustomerInvoiceOriginEntity_Resolved/attributeContext/CustomerInvoiceOriginEntity_Resolved/OriginCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "OriginType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustomerInvoiceOriginEntity_Resolved/attributeContext/CustomerInvoiceOriginEntity_Resolved/OriginType",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "IsOriginTypeAssigned",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustomerInvoiceOriginEntity_Resolved/attributeContext/CustomerInvoiceOriginEntity_Resolved/IsOriginTypeAssigned",
+          "isNullable": true,
+          "dataFormat": "String",
+          "displayName": "Origin type assignment"
+        },
+        {
+          "name": "BackingTable_CustomerInvoiceOriginRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/AccountsReceivable/Group/CustomerInvoiceOrigin.cdm.json/CustomerInvoiceOrigin",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CustomerInvoiceOriginEntity_Resolved/attributeContext/CustomerInvoiceOriginEntity_Resolved/BackingTable_CustomerInvoiceOriginRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CustomerInvoiceOriginEntity_Resolved/attributeContext/CustomerInvoiceOriginEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Customer invoice origin codes",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

@@ -1,0 +1,389 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "PSNLedgerInterestDistributionResultEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "PSNLedgerInterestDistributionResultEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "PSNLedgerInterestDistributionResultEntity_Resolved",
+        "definition": "resolvedFrom/PSNLedgerInterestDistributionResultEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "PSNLedgerInterestDistributionResultEntity_Resolved/attributeContext/PSNLedgerInterestDistributionResultEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "PSNLedgerInterestDistributionResultEntity_Resolved/attributeContext/PSNLedgerInterestDistributionResultEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "RuleId",
+            "parent": "PSNLedgerInterestDistributionResultEntity_Resolved/attributeContext/PSNLedgerInterestDistributionResultEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/PSNLedgerInterestDistributionResultEntity/hasAttributes/RuleId",
+            "contents": [
+              "PSNLedgerInterestDistributionResultEntity_Resolved/hasAttributes/RuleId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "AverageDailyBalance",
+            "parent": "PSNLedgerInterestDistributionResultEntity_Resolved/attributeContext/PSNLedgerInterestDistributionResultEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/PSNLedgerInterestDistributionResultEntity/hasAttributes/AverageDailyBalance",
+            "contents": [
+              "PSNLedgerInterestDistributionResultEntity_Resolved/hasAttributes/AverageDailyBalance"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "PercentOfTotal",
+            "parent": "PSNLedgerInterestDistributionResultEntity_Resolved/attributeContext/PSNLedgerInterestDistributionResultEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/PSNLedgerInterestDistributionResultEntity/hasAttributes/PercentOfTotal",
+            "contents": [
+              "PSNLedgerInterestDistributionResultEntity_Resolved/hasAttributes/PercentOfTotal"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "AllocatedInterest",
+            "parent": "PSNLedgerInterestDistributionResultEntity_Resolved/attributeContext/PSNLedgerInterestDistributionResultEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/PSNLedgerInterestDistributionResultEntity/hasAttributes/AllocatedInterest",
+            "contents": [
+              "PSNLedgerInterestDistributionResultEntity_Resolved/hasAttributes/AllocatedInterest"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "InterestDistributionRules",
+            "parent": "PSNLedgerInterestDistributionResultEntity_Resolved/attributeContext/PSNLedgerInterestDistributionResultEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/PSNLedgerInterestDistributionResultEntity/hasAttributes/InterestDistributionRules",
+            "contents": [
+              "PSNLedgerInterestDistributionResultEntity_Resolved/hasAttributes/InterestDistributionRules"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_LedgerInterestDistributionRuleRelationship",
+            "parent": "PSNLedgerInterestDistributionResultEntity_Resolved/attributeContext/PSNLedgerInterestDistributionResultEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/PSNLedgerInterestDistributionResultEntity/hasAttributes/Relationship_LedgerInterestDistributionRuleRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "PSNLedgerInterestDistributionRuleEntity",
+                "parent": "PSNLedgerInterestDistributionResultEntity_Resolved/attributeContext/PSNLedgerInterestDistributionResultEntity_Resolved/Relationship_LedgerInterestDistributionRuleRelationship",
+                "definition": "resolvedFrom/PSNLedgerInterestDistributionRuleEntity",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "PSNLedgerInterestDistributionResultEntity_Resolved/attributeContext/PSNLedgerInterestDistributionResultEntity_Resolved/Relationship_LedgerInterestDistributionRuleRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "PSNLedgerInterestDistributionResultEntity_Resolved/attributeContext/PSNLedgerInterestDistributionResultEntity_Resolved/Relationship_LedgerInterestDistributionRuleRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "PSNLedgerInterestDistributionResultEntity_Resolved/attributeContext/PSNLedgerInterestDistributionResultEntity_Resolved/Relationship_LedgerInterestDistributionRuleRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "PSNLedgerInterestDistributionResultEntity_Resolved/hasAttributes/Relationship_LedgerInterestDistributionRuleRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_PSNLedgerInterestDistributionResultsRelationship",
+            "parent": "PSNLedgerInterestDistributionResultEntity_Resolved/attributeContext/PSNLedgerInterestDistributionResultEntity_Resolved",
+            "definition": "resolvedFrom/PSNLedgerInterestDistributionResultEntity/hasAttributes/BackingTable_PSNLedgerInterestDistributionResultsRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "PSNLedgerInterestDistributionResults",
+                "parent": "PSNLedgerInterestDistributionResultEntity_Resolved/attributeContext/PSNLedgerInterestDistributionResultEntity_Resolved/BackingTable_PSNLedgerInterestDistributionResultsRelationship",
+                "definition": "resolvedFrom/PSNLedgerInterestDistributionResults",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "PSNLedgerInterestDistributionResultEntity_Resolved/attributeContext/PSNLedgerInterestDistributionResultEntity_Resolved/BackingTable_PSNLedgerInterestDistributionResultsRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "PSNLedgerInterestDistributionResultEntity_Resolved/attributeContext/PSNLedgerInterestDistributionResultEntity_Resolved/BackingTable_PSNLedgerInterestDistributionResultsRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "PSNLedgerInterestDistributionResultEntity_Resolved/attributeContext/PSNLedgerInterestDistributionResultEntity_Resolved/BackingTable_PSNLedgerInterestDistributionResultsRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "PSNLedgerInterestDistributionResultEntity_Resolved/hasAttributes/BackingTable_PSNLedgerInterestDistributionResultsRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "PSNLedgerInterestDistributionResultEntity_Resolved/attributeContext/PSNLedgerInterestDistributionResultEntity_Resolved",
+            "definition": "resolvedFrom/PSNLedgerInterestDistributionResultEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "PSNLedgerInterestDistributionResultEntity_Resolved/attributeContext/PSNLedgerInterestDistributionResultEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "PSNLedgerInterestDistributionResultEntity_Resolved/attributeContext/PSNLedgerInterestDistributionResultEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "PSNLedgerInterestDistributionResultEntity_Resolved/attributeContext/PSNLedgerInterestDistributionResultEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "PSNLedgerInterestDistributionResultEntity_Resolved/attributeContext/PSNLedgerInterestDistributionResultEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "PSNLedgerInterestDistributionResultEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "RuleId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "PSNLedgerInterestDistributionResultEntity_Resolved/attributeContext/PSNLedgerInterestDistributionResultEntity_Resolved/RuleId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "AverageDailyBalance",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "PSNLedgerInterestDistributionResultEntity_Resolved/attributeContext/PSNLedgerInterestDistributionResultEntity_Resolved/AverageDailyBalance",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "PercentOfTotal",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "PSNLedgerInterestDistributionResultEntity_Resolved/attributeContext/PSNLedgerInterestDistributionResultEntity_Resolved/PercentOfTotal",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "AllocatedInterest",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "PSNLedgerInterestDistributionResultEntity_Resolved/attributeContext/PSNLedgerInterestDistributionResultEntity_Resolved/AllocatedInterest",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "InterestDistributionRules",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "PSNLedgerInterestDistributionResultEntity_Resolved/attributeContext/PSNLedgerInterestDistributionResultEntity_Resolved/InterestDistributionRules",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Relationship_LedgerInterestDistributionRuleRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": []
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "PSNLedgerInterestDistributionResultEntity_Resolved/attributeContext/PSNLedgerInterestDistributionResultEntity_Resolved/Relationship_LedgerInterestDistributionRuleRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "BackingTable_PSNLedgerInterestDistributionResultsRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Miscellaneous/PSNLedgerInterestDistributionResults.cdm.json/PSNLedgerInterestDistributionResults",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "PSNLedgerInterestDistributionResultEntity_Resolved/attributeContext/PSNLedgerInterestDistributionResultEntity_Resolved/BackingTable_PSNLedgerInterestDistributionResultsRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "PSNLedgerInterestDistributionResultEntity_Resolved/attributeContext/PSNLedgerInterestDistributionResultEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Interest distribution results",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

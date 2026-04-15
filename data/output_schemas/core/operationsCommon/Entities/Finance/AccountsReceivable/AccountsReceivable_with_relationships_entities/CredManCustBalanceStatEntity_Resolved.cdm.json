@@ -1,0 +1,321 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "CredManCustBalanceStatEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "CredManCustBalanceStatEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "CredManCustBalanceStatEntity_Resolved",
+        "definition": "resolvedFrom/CredManCustBalanceStatEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "CredManCustBalanceStatEntity_Resolved/attributeContext/CredManCustBalanceStatEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "CredManCustBalanceStatEntity_Resolved/attributeContext/CredManCustBalanceStatEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Balance",
+            "parent": "CredManCustBalanceStatEntity_Resolved/attributeContext/CredManCustBalanceStatEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CredManCustBalanceStatEntity/hasAttributes/Balance",
+            "contents": [
+              "CredManCustBalanceStatEntity_Resolved/hasAttributes/Balance"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BalanceDate",
+            "parent": "CredManCustBalanceStatEntity_Resolved/attributeContext/CredManCustBalanceStatEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CredManCustBalanceStatEntity/hasAttributes/BalanceDate",
+            "contents": [
+              "CredManCustBalanceStatEntity_Resolved/hasAttributes/BalanceDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CreditLimit",
+            "parent": "CredManCustBalanceStatEntity_Resolved/attributeContext/CredManCustBalanceStatEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CredManCustBalanceStatEntity/hasAttributes/CreditLimit",
+            "contents": [
+              "CredManCustBalanceStatEntity_Resolved/hasAttributes/CreditLimit"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CustAccount",
+            "parent": "CredManCustBalanceStatEntity_Resolved/attributeContext/CredManCustBalanceStatEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CredManCustBalanceStatEntity/hasAttributes/CustAccount",
+            "contents": [
+              "CredManCustBalanceStatEntity_Resolved/hasAttributes/CustAccount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Exposure",
+            "parent": "CredManCustBalanceStatEntity_Resolved/attributeContext/CredManCustBalanceStatEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CredManCustBalanceStatEntity/hasAttributes/Exposure",
+            "contents": [
+              "CredManCustBalanceStatEntity_Resolved/hasAttributes/Exposure"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_CredManCustBalanceStatRelationship",
+            "parent": "CredManCustBalanceStatEntity_Resolved/attributeContext/CredManCustBalanceStatEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CredManCustBalanceStatEntity/hasAttributes/BackingTable_CredManCustBalanceStatRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CredManCustBalanceStat",
+                "parent": "CredManCustBalanceStatEntity_Resolved/attributeContext/CredManCustBalanceStatEntity_Resolved/BackingTable_CredManCustBalanceStatRelationship",
+                "definition": "resolvedFrom/CredManCustBalanceStat",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CredManCustBalanceStatEntity_Resolved/attributeContext/CredManCustBalanceStatEntity_Resolved/BackingTable_CredManCustBalanceStatRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CredManCustBalanceStatEntity_Resolved/attributeContext/CredManCustBalanceStatEntity_Resolved/BackingTable_CredManCustBalanceStatRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CredManCustBalanceStatEntity_Resolved/attributeContext/CredManCustBalanceStatEntity_Resolved/BackingTable_CredManCustBalanceStatRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CredManCustBalanceStatEntity_Resolved/hasAttributes/BackingTable_CredManCustBalanceStatRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "CredManCustBalanceStatEntity_Resolved/attributeContext/CredManCustBalanceStatEntity_Resolved",
+            "definition": "resolvedFrom/CredManCustBalanceStatEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "CredManCustBalanceStatEntity_Resolved/attributeContext/CredManCustBalanceStatEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CredManCustBalanceStatEntity_Resolved/attributeContext/CredManCustBalanceStatEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CredManCustBalanceStatEntity_Resolved/attributeContext/CredManCustBalanceStatEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CredManCustBalanceStatEntity_Resolved/attributeContext/CredManCustBalanceStatEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CredManCustBalanceStatEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Balance",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CredManCustBalanceStatEntity_Resolved/attributeContext/CredManCustBalanceStatEntity_Resolved/Balance",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BalanceDate",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CredManCustBalanceStatEntity_Resolved/attributeContext/CredManCustBalanceStatEntity_Resolved/BalanceDate",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "CreditLimit",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CredManCustBalanceStatEntity_Resolved/attributeContext/CredManCustBalanceStatEntity_Resolved/CreditLimit",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "CustAccount",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CredManCustBalanceStatEntity_Resolved/attributeContext/CredManCustBalanceStatEntity_Resolved/CustAccount",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Exposure",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CredManCustBalanceStatEntity_Resolved/attributeContext/CredManCustBalanceStatEntity_Resolved/Exposure",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_CredManCustBalanceStatRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/AccountsReceivable/WorksheetLine/CredManCustBalanceStat.cdm.json/CredManCustBalanceStat",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CredManCustBalanceStatEntity_Resolved/attributeContext/CredManCustBalanceStatEntity_Resolved/BackingTable_CredManCustBalanceStatRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CredManCustBalanceStatEntity_Resolved/attributeContext/CredManCustBalanceStatEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Customer balance statistics",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

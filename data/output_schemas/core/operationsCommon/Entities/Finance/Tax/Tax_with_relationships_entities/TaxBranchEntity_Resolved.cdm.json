@@ -1,0 +1,341 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "TaxBranchEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TaxBranchEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "TaxBranchEntity_Resolved",
+        "definition": "resolvedFrom/TaxBranchEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "TaxBranchEntity_Resolved/attributeContext/TaxBranchEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "TaxBranchEntity_Resolved/attributeContext/TaxBranchEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Code",
+            "parent": "TaxBranchEntity_Resolved/attributeContext/TaxBranchEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxBranchEntity/hasAttributes/Code",
+            "contents": [
+              "TaxBranchEntity_Resolved/hasAttributes/Code"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "HeadOffice",
+            "parent": "TaxBranchEntity_Resolved/attributeContext/TaxBranchEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxBranchEntity/hasAttributes/HeadOffice",
+            "contents": [
+              "TaxBranchEntity_Resolved/hasAttributes/HeadOffice"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "LogisticsLocation",
+            "parent": "TaxBranchEntity_Resolved/attributeContext/TaxBranchEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxBranchEntity/hasAttributes/LogisticsLocation",
+            "contents": [
+              "TaxBranchEntity_Resolved/hasAttributes/LogisticsLocation"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Name",
+            "parent": "TaxBranchEntity_Resolved/attributeContext/TaxBranchEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxBranchEntity/hasAttributes/Name",
+            "contents": [
+              "TaxBranchEntity_Resolved/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "LogisticsLocation_LocationId",
+            "parent": "TaxBranchEntity_Resolved/attributeContext/TaxBranchEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxBranchEntity/hasAttributes/LogisticsLocation_LocationId",
+            "contents": [
+              "TaxBranchEntity_Resolved/hasAttributes/LogisticsLocation_LocationId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Address",
+            "parent": "TaxBranchEntity_Resolved/attributeContext/TaxBranchEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxBranchEntity/hasAttributes/Address",
+            "contents": [
+              "TaxBranchEntity_Resolved/hasAttributes/Address"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_TaxBranchRelationship",
+            "parent": "TaxBranchEntity_Resolved/attributeContext/TaxBranchEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxBranchEntity/hasAttributes/BackingTable_TaxBranchRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "TaxBranch",
+                "parent": "TaxBranchEntity_Resolved/attributeContext/TaxBranchEntity_Resolved/BackingTable_TaxBranchRelationship",
+                "definition": "resolvedFrom/TaxBranch",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxBranchEntity_Resolved/attributeContext/TaxBranchEntity_Resolved/BackingTable_TaxBranchRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxBranchEntity_Resolved/attributeContext/TaxBranchEntity_Resolved/BackingTable_TaxBranchRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxBranchEntity_Resolved/attributeContext/TaxBranchEntity_Resolved/BackingTable_TaxBranchRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxBranchEntity_Resolved/hasAttributes/BackingTable_TaxBranchRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "TaxBranchEntity_Resolved/attributeContext/TaxBranchEntity_Resolved",
+            "definition": "resolvedFrom/TaxBranchEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "TaxBranchEntity_Resolved/attributeContext/TaxBranchEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxBranchEntity_Resolved/attributeContext/TaxBranchEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxBranchEntity_Resolved/attributeContext/TaxBranchEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxBranchEntity_Resolved/attributeContext/TaxBranchEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxBranchEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Code",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxBranchEntity_Resolved/attributeContext/TaxBranchEntity_Resolved/Code",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "HeadOffice",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxBranchEntity_Resolved/attributeContext/TaxBranchEntity_Resolved/HeadOffice",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "LogisticsLocation",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxBranchEntity_Resolved/attributeContext/TaxBranchEntity_Resolved/LogisticsLocation",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxBranchEntity_Resolved/attributeContext/TaxBranchEntity_Resolved/Name",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "LogisticsLocation_LocationId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxBranchEntity_Resolved/attributeContext/TaxBranchEntity_Resolved/LogisticsLocation_LocationId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Address",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxBranchEntity_Resolved/attributeContext/TaxBranchEntity_Resolved/Address",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_TaxBranchRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Tax/Main/TaxBranch.cdm.json/TaxBranch",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxBranchEntity_Resolved/attributeContext/TaxBranchEntity_Resolved/BackingTable_TaxBranchRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxBranchEntity_Resolved/attributeContext/TaxBranchEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Tax branch",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

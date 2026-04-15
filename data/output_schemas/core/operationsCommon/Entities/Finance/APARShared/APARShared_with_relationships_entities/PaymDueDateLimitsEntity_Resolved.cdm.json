@@ -1,0 +1,321 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "PaymDueDateLimitsEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "PaymDueDateLimitsEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "PaymDueDateLimitsEntity_Resolved",
+        "definition": "resolvedFrom/PaymDueDateLimitsEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "PaymDueDateLimitsEntity_Resolved/attributeContext/PaymDueDateLimitsEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "PaymDueDateLimitsEntity_Resolved/attributeContext/PaymDueDateLimitsEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DueDateLimit",
+            "parent": "PaymDueDateLimitsEntity_Resolved/attributeContext/PaymDueDateLimitsEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/PaymDueDateLimitsEntity/hasAttributes/DueDateLimit",
+            "contents": [
+              "PaymDueDateLimitsEntity_Resolved/hasAttributes/DueDateLimit"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "StartDate",
+            "parent": "PaymDueDateLimitsEntity_Resolved/attributeContext/PaymDueDateLimitsEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/PaymDueDateLimitsEntity/hasAttributes/StartDate",
+            "contents": [
+              "PaymDueDateLimitsEntity_Resolved/hasAttributes/StartDate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "PaymDueDateLimitsEntity_Resolved/attributeContext/PaymDueDateLimitsEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/PaymDueDateLimitsEntity/hasAttributes/Description",
+            "contents": [
+              "PaymDueDateLimitsEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "PeriodInterval",
+            "parent": "PaymDueDateLimitsEntity_Resolved/attributeContext/PaymDueDateLimitsEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/PaymDueDateLimitsEntity/hasAttributes/PeriodInterval",
+            "contents": [
+              "PaymDueDateLimitsEntity_Resolved/hasAttributes/PeriodInterval"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "NumberOfUnits",
+            "parent": "PaymDueDateLimitsEntity_Resolved/attributeContext/PaymDueDateLimitsEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/PaymDueDateLimitsEntity/hasAttributes/NumberOfUnits",
+            "contents": [
+              "PaymDueDateLimitsEntity_Resolved/hasAttributes/NumberOfUnits"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_PaymDueDateLimit_ESRelationship",
+            "parent": "PaymDueDateLimitsEntity_Resolved/attributeContext/PaymDueDateLimitsEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/PaymDueDateLimitsEntity/hasAttributes/BackingTable_PaymDueDateLimit_ESRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "PaymDueDateLimit_ES",
+                "parent": "PaymDueDateLimitsEntity_Resolved/attributeContext/PaymDueDateLimitsEntity_Resolved/BackingTable_PaymDueDateLimit_ESRelationship",
+                "definition": "resolvedFrom/PaymDueDateLimit_ES",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "PaymDueDateLimitsEntity_Resolved/attributeContext/PaymDueDateLimitsEntity_Resolved/BackingTable_PaymDueDateLimit_ESRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "PaymDueDateLimitsEntity_Resolved/attributeContext/PaymDueDateLimitsEntity_Resolved/BackingTable_PaymDueDateLimit_ESRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "PaymDueDateLimitsEntity_Resolved/attributeContext/PaymDueDateLimitsEntity_Resolved/BackingTable_PaymDueDateLimit_ESRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "PaymDueDateLimitsEntity_Resolved/hasAttributes/BackingTable_PaymDueDateLimit_ESRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "PaymDueDateLimitsEntity_Resolved/attributeContext/PaymDueDateLimitsEntity_Resolved",
+            "definition": "resolvedFrom/PaymDueDateLimitsEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "PaymDueDateLimitsEntity_Resolved/attributeContext/PaymDueDateLimitsEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "PaymDueDateLimitsEntity_Resolved/attributeContext/PaymDueDateLimitsEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "PaymDueDateLimitsEntity_Resolved/attributeContext/PaymDueDateLimitsEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "PaymDueDateLimitsEntity_Resolved/attributeContext/PaymDueDateLimitsEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "PaymDueDateLimitsEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "DueDateLimit",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "PaymDueDateLimitsEntity_Resolved/attributeContext/PaymDueDateLimitsEntity_Resolved/DueDateLimit",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "StartDate",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "PaymDueDateLimitsEntity_Resolved/attributeContext/PaymDueDateLimitsEntity_Resolved/StartDate",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "PaymDueDateLimitsEntity_Resolved/attributeContext/PaymDueDateLimitsEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "PeriodInterval",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "PaymDueDateLimitsEntity_Resolved/attributeContext/PaymDueDateLimitsEntity_Resolved/PeriodInterval",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "NumberOfUnits",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "PaymDueDateLimitsEntity_Resolved/attributeContext/PaymDueDateLimitsEntity_Resolved/NumberOfUnits",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_PaymDueDateLimit_ESRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Bank/Group/PaymDueDateLimit_ES.cdm.json/PaymDueDateLimit_ES",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "PaymDueDateLimitsEntity_Resolved/attributeContext/PaymDueDateLimitsEntity_Resolved/BackingTable_PaymDueDateLimit_ESRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "PaymDueDateLimitsEntity_Resolved/attributeContext/PaymDueDateLimitsEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Due date limits",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

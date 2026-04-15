@@ -1,0 +1,281 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "NaturalRresourcesTaxGroupEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "NaturalRresourcesTaxGroupEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "NaturalRresourcesTaxGroupEntity_Resolved",
+        "definition": "resolvedFrom/NaturalRresourcesTaxGroupEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "NaturalRresourcesTaxGroupEntity_Resolved/attributeContext/NaturalRresourcesTaxGroupEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "NaturalRresourcesTaxGroupEntity_Resolved/attributeContext/NaturalRresourcesTaxGroupEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "TaxGroupOnNaturalResources",
+            "parent": "NaturalRresourcesTaxGroupEntity_Resolved/attributeContext/NaturalRresourcesTaxGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/NaturalRresourcesTaxGroupEntity/hasAttributes/TaxGroupOnNaturalResources",
+            "contents": [
+              "NaturalRresourcesTaxGroupEntity_Resolved/hasAttributes/TaxGroupOnNaturalResources"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "NaturalRresourcesTaxGroupEntity_Resolved/attributeContext/NaturalRresourcesTaxGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/NaturalRresourcesTaxGroupEntity/hasAttributes/Description",
+            "contents": [
+              "NaturalRresourcesTaxGroupEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "TaxCode",
+            "parent": "NaturalRresourcesTaxGroupEntity_Resolved/attributeContext/NaturalRresourcesTaxGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/NaturalRresourcesTaxGroupEntity/hasAttributes/TaxCode",
+            "contents": [
+              "NaturalRresourcesTaxGroupEntity_Resolved/hasAttributes/TaxCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_LvNRTaxItemGroupHeadingRelationship",
+            "parent": "NaturalRresourcesTaxGroupEntity_Resolved/attributeContext/NaturalRresourcesTaxGroupEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/NaturalRresourcesTaxGroupEntity/hasAttributes/BackingTable_LvNRTaxItemGroupHeadingRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "LvNRTaxItemGroupHeading",
+                "parent": "NaturalRresourcesTaxGroupEntity_Resolved/attributeContext/NaturalRresourcesTaxGroupEntity_Resolved/BackingTable_LvNRTaxItemGroupHeadingRelationship",
+                "definition": "resolvedFrom/LvNRTaxItemGroupHeading",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "NaturalRresourcesTaxGroupEntity_Resolved/attributeContext/NaturalRresourcesTaxGroupEntity_Resolved/BackingTable_LvNRTaxItemGroupHeadingRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "NaturalRresourcesTaxGroupEntity_Resolved/attributeContext/NaturalRresourcesTaxGroupEntity_Resolved/BackingTable_LvNRTaxItemGroupHeadingRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "NaturalRresourcesTaxGroupEntity_Resolved/attributeContext/NaturalRresourcesTaxGroupEntity_Resolved/BackingTable_LvNRTaxItemGroupHeadingRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "NaturalRresourcesTaxGroupEntity_Resolved/hasAttributes/BackingTable_LvNRTaxItemGroupHeadingRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "NaturalRresourcesTaxGroupEntity_Resolved/attributeContext/NaturalRresourcesTaxGroupEntity_Resolved",
+            "definition": "resolvedFrom/NaturalRresourcesTaxGroupEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "NaturalRresourcesTaxGroupEntity_Resolved/attributeContext/NaturalRresourcesTaxGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "NaturalRresourcesTaxGroupEntity_Resolved/attributeContext/NaturalRresourcesTaxGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "NaturalRresourcesTaxGroupEntity_Resolved/attributeContext/NaturalRresourcesTaxGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "NaturalRresourcesTaxGroupEntity_Resolved/attributeContext/NaturalRresourcesTaxGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "NaturalRresourcesTaxGroupEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "TaxGroupOnNaturalResources",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "NaturalRresourcesTaxGroupEntity_Resolved/attributeContext/NaturalRresourcesTaxGroupEntity_Resolved/TaxGroupOnNaturalResources",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "NaturalRresourcesTaxGroupEntity_Resolved/attributeContext/NaturalRresourcesTaxGroupEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "TaxCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "NaturalRresourcesTaxGroupEntity_Resolved/attributeContext/NaturalRresourcesTaxGroupEntity_Resolved/TaxCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_LvNRTaxItemGroupHeadingRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Tax/Miscellaneous/LvNRTaxItemGroupHeading.cdm.json/LvNRTaxItemGroupHeading",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "NaturalRresourcesTaxGroupEntity_Resolved/attributeContext/NaturalRresourcesTaxGroupEntity_Resolved/BackingTable_LvNRTaxItemGroupHeadingRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "NaturalRresourcesTaxGroupEntity_Resolved/attributeContext/NaturalRresourcesTaxGroupEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Natural resources tax group",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

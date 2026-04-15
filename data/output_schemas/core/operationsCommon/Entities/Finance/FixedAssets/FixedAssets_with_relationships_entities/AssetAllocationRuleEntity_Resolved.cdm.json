@@ -1,0 +1,301 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "AssetAllocationRuleEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "AssetAllocationRuleEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "AssetAllocationRuleEntity_Resolved",
+        "definition": "resolvedFrom/AssetAllocationRuleEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "AssetAllocationRuleEntity_Resolved/attributeContext/AssetAllocationRuleEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "AssetAllocationRuleEntity_Resolved/attributeContext/AssetAllocationRuleEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Description",
+            "parent": "AssetAllocationRuleEntity_Resolved/attributeContext/AssetAllocationRuleEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetAllocationRuleEntity/hasAttributes/Description",
+            "contents": [
+              "AssetAllocationRuleEntity_Resolved/hasAttributes/Description"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DimensionAttribute",
+            "parent": "AssetAllocationRuleEntity_Resolved/attributeContext/AssetAllocationRuleEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetAllocationRuleEntity/hasAttributes/DimensionAttribute",
+            "contents": [
+              "AssetAllocationRuleEntity_Resolved/hasAttributes/DimensionAttribute"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "RuleId",
+            "parent": "AssetAllocationRuleEntity_Resolved/attributeContext/AssetAllocationRuleEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetAllocationRuleEntity/hasAttributes/RuleId",
+            "contents": [
+              "AssetAllocationRuleEntity_Resolved/hasAttributes/RuleId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DimensionName",
+            "parent": "AssetAllocationRuleEntity_Resolved/attributeContext/AssetAllocationRuleEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetAllocationRuleEntity/hasAttributes/DimensionName",
+            "contents": [
+              "AssetAllocationRuleEntity_Resolved/hasAttributes/DimensionName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_AssetAllocationRule_CNRelationship",
+            "parent": "AssetAllocationRuleEntity_Resolved/attributeContext/AssetAllocationRuleEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/AssetAllocationRuleEntity/hasAttributes/BackingTable_AssetAllocationRule_CNRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "AssetAllocationRule_CN",
+                "parent": "AssetAllocationRuleEntity_Resolved/attributeContext/AssetAllocationRuleEntity_Resolved/BackingTable_AssetAllocationRule_CNRelationship",
+                "definition": "resolvedFrom/AssetAllocationRule_CN",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "AssetAllocationRuleEntity_Resolved/attributeContext/AssetAllocationRuleEntity_Resolved/BackingTable_AssetAllocationRule_CNRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "AssetAllocationRuleEntity_Resolved/attributeContext/AssetAllocationRuleEntity_Resolved/BackingTable_AssetAllocationRule_CNRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "AssetAllocationRuleEntity_Resolved/attributeContext/AssetAllocationRuleEntity_Resolved/BackingTable_AssetAllocationRule_CNRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "AssetAllocationRuleEntity_Resolved/hasAttributes/BackingTable_AssetAllocationRule_CNRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "AssetAllocationRuleEntity_Resolved/attributeContext/AssetAllocationRuleEntity_Resolved",
+            "definition": "resolvedFrom/AssetAllocationRuleEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "AssetAllocationRuleEntity_Resolved/attributeContext/AssetAllocationRuleEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "AssetAllocationRuleEntity_Resolved/attributeContext/AssetAllocationRuleEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "AssetAllocationRuleEntity_Resolved/attributeContext/AssetAllocationRuleEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "AssetAllocationRuleEntity_Resolved/attributeContext/AssetAllocationRuleEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "AssetAllocationRuleEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Description",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AssetAllocationRuleEntity_Resolved/attributeContext/AssetAllocationRuleEntity_Resolved/Description",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "DimensionAttribute",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AssetAllocationRuleEntity_Resolved/attributeContext/AssetAllocationRuleEntity_Resolved/DimensionAttribute",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "RuleId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AssetAllocationRuleEntity_Resolved/attributeContext/AssetAllocationRuleEntity_Resolved/RuleId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "DimensionName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "AssetAllocationRuleEntity_Resolved/attributeContext/AssetAllocationRuleEntity_Resolved/DimensionName",
+          "dataFormat": "String",
+          "displayName": "Dimension name"
+        },
+        {
+          "name": "BackingTable_AssetAllocationRule_CNRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/FixedAssets/Reference/AssetAllocationRule_CN.cdm.json/AssetAllocationRule_CN",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "AssetAllocationRuleEntity_Resolved/attributeContext/AssetAllocationRuleEntity_Resolved/BackingTable_AssetAllocationRule_CNRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "AssetAllocationRuleEntity_Resolved/attributeContext/AssetAllocationRuleEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Fixed asset allocation rules",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

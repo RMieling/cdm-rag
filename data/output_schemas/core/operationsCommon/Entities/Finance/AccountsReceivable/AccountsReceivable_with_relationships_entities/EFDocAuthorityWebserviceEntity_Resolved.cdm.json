@@ -1,0 +1,247 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "EFDocAuthorityWebserviceEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "EFDocAuthorityWebserviceEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "EFDocAuthorityWebserviceEntity_Resolved",
+        "definition": "resolvedFrom/EFDocAuthorityWebserviceEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "EFDocAuthorityWebserviceEntity_Resolved/attributeContext/EFDocAuthorityWebserviceEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "EFDocAuthorityWebserviceEntity_Resolved/attributeContext/EFDocAuthorityWebserviceEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Authority",
+            "parent": "EFDocAuthorityWebserviceEntity_Resolved/attributeContext/EFDocAuthorityWebserviceEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EFDocAuthorityWebserviceEntity/hasAttributes/Authority",
+            "contents": [
+              "EFDocAuthorityWebserviceEntity_Resolved/hasAttributes/Authority"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "EnvironmentType",
+            "parent": "EFDocAuthorityWebserviceEntity_Resolved/attributeContext/EFDocAuthorityWebserviceEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EFDocAuthorityWebserviceEntity/hasAttributes/EnvironmentType",
+            "contents": [
+              "EFDocAuthorityWebserviceEntity_Resolved/hasAttributes/EnvironmentType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Url",
+            "parent": "EFDocAuthorityWebserviceEntity_Resolved/attributeContext/EFDocAuthorityWebserviceEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EFDocAuthorityWebserviceEntity/hasAttributes/Url",
+            "contents": [
+              "EFDocAuthorityWebserviceEntity_Resolved/hasAttributes/Url"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Version",
+            "parent": "EFDocAuthorityWebserviceEntity_Resolved/attributeContext/EFDocAuthorityWebserviceEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EFDocAuthorityWebserviceEntity/hasAttributes/Version",
+            "contents": [
+              "EFDocAuthorityWebserviceEntity_Resolved/hasAttributes/Version"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "WebServiceType",
+            "parent": "EFDocAuthorityWebserviceEntity_Resolved/attributeContext/EFDocAuthorityWebserviceEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EFDocAuthorityWebserviceEntity/hasAttributes/WebServiceType",
+            "contents": [
+              "EFDocAuthorityWebserviceEntity_Resolved/hasAttributes/WebServiceType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_EFDocWebServiceParameters_BRRelationship",
+            "parent": "EFDocAuthorityWebserviceEntity_Resolved/attributeContext/EFDocAuthorityWebserviceEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/EFDocAuthorityWebserviceEntity/hasAttributes/BackingTable_EFDocWebServiceParameters_BRRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "EFDocWebServiceParameters_BR",
+                "parent": "EFDocAuthorityWebserviceEntity_Resolved/attributeContext/EFDocAuthorityWebserviceEntity_Resolved/BackingTable_EFDocWebServiceParameters_BRRelationship",
+                "definition": "resolvedFrom/EFDocWebServiceParameters_BR",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "EFDocAuthorityWebserviceEntity_Resolved/attributeContext/EFDocAuthorityWebserviceEntity_Resolved/BackingTable_EFDocWebServiceParameters_BRRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "EFDocAuthorityWebserviceEntity_Resolved/attributeContext/EFDocAuthorityWebserviceEntity_Resolved/BackingTable_EFDocWebServiceParameters_BRRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "EFDocAuthorityWebserviceEntity_Resolved/attributeContext/EFDocAuthorityWebserviceEntity_Resolved/BackingTable_EFDocWebServiceParameters_BRRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "EFDocAuthorityWebserviceEntity_Resolved/hasAttributes/BackingTable_EFDocWebServiceParameters_BRRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Authority",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "EFDocAuthorityWebserviceEntity_Resolved/attributeContext/EFDocAuthorityWebserviceEntity_Resolved/Authority",
+          "dataFormat": "String"
+        },
+        {
+          "name": "EnvironmentType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "EFDocAuthorityWebserviceEntity_Resolved/attributeContext/EFDocAuthorityWebserviceEntity_Resolved/EnvironmentType",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Url",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "EFDocAuthorityWebserviceEntity_Resolved/attributeContext/EFDocAuthorityWebserviceEntity_Resolved/Url",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Version",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "EFDocAuthorityWebserviceEntity_Resolved/attributeContext/EFDocAuthorityWebserviceEntity_Resolved/Version",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "WebServiceType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "EFDocAuthorityWebserviceEntity_Resolved/attributeContext/EFDocAuthorityWebserviceEntity_Resolved/WebServiceType",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_EFDocWebServiceParameters_BRRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/FiscalBooksBrazil/Miscellaneous/EFDocWebServiceParameters_BR.cdm.json/EFDocWebServiceParameters_BR",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "EFDocAuthorityWebserviceEntity_Resolved/attributeContext/EFDocAuthorityWebserviceEntity_Resolved/BackingTable_EFDocWebServiceParameters_BRRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "NF-e web services configuration",
+      "version": "1.1.1"
+    }
+  ],
+  "documentVersion": "1.1.1"
+}

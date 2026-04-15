@@ -1,0 +1,226 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "BudgetPlanPriorityConstraintEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "BudgetPlanPriorityConstraintEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "BudgetPlanPriorityConstraintEntity_Resolved",
+        "definition": "resolvedFrom/BudgetPlanPriorityConstraintEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "BudgetPlanPriorityConstraintEntity_Resolved/attributeContext/BudgetPlanPriorityConstraintEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "BudgetPlanPriorityConstraintEntity_Resolved/attributeContext/BudgetPlanPriorityConstraintEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BudgetPlanningProcess",
+            "parent": "BudgetPlanPriorityConstraintEntity_Resolved/attributeContext/BudgetPlanPriorityConstraintEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetPlanPriorityConstraintEntity/hasAttributes/BudgetPlanningProcess",
+            "contents": [
+              "BudgetPlanPriorityConstraintEntity_Resolved/hasAttributes/BudgetPlanningProcess"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BudgetPlanPriority",
+            "parent": "BudgetPlanPriorityConstraintEntity_Resolved/attributeContext/BudgetPlanPriorityConstraintEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetPlanPriorityConstraintEntity/hasAttributes/BudgetPlanPriority",
+            "contents": [
+              "BudgetPlanPriorityConstraintEntity_Resolved/hasAttributes/BudgetPlanPriority"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Process",
+            "parent": "BudgetPlanPriorityConstraintEntity_Resolved/attributeContext/BudgetPlanPriorityConstraintEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetPlanPriorityConstraintEntity/hasAttributes/Process",
+            "contents": [
+              "BudgetPlanPriorityConstraintEntity_Resolved/hasAttributes/Process"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Priority",
+            "parent": "BudgetPlanPriorityConstraintEntity_Resolved/attributeContext/BudgetPlanPriorityConstraintEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetPlanPriorityConstraintEntity/hasAttributes/Priority",
+            "contents": [
+              "BudgetPlanPriorityConstraintEntity_Resolved/hasAttributes/Priority"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_BudgetPlanPriorityConstraintRelationship",
+            "parent": "BudgetPlanPriorityConstraintEntity_Resolved/attributeContext/BudgetPlanPriorityConstraintEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/BudgetPlanPriorityConstraintEntity/hasAttributes/BackingTable_BudgetPlanPriorityConstraintRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "BudgetPlanPriorityConstraint",
+                "parent": "BudgetPlanPriorityConstraintEntity_Resolved/attributeContext/BudgetPlanPriorityConstraintEntity_Resolved/BackingTable_BudgetPlanPriorityConstraintRelationship",
+                "definition": "resolvedFrom/BudgetPlanPriorityConstraint",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "BudgetPlanPriorityConstraintEntity_Resolved/attributeContext/BudgetPlanPriorityConstraintEntity_Resolved/BackingTable_BudgetPlanPriorityConstraintRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "BudgetPlanPriorityConstraintEntity_Resolved/attributeContext/BudgetPlanPriorityConstraintEntity_Resolved/BackingTable_BudgetPlanPriorityConstraintRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "BudgetPlanPriorityConstraintEntity_Resolved/attributeContext/BudgetPlanPriorityConstraintEntity_Resolved/BackingTable_BudgetPlanPriorityConstraintRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "BudgetPlanPriorityConstraintEntity_Resolved/hasAttributes/BackingTable_BudgetPlanPriorityConstraintRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "BudgetPlanningProcess",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetPlanPriorityConstraintEntity_Resolved/attributeContext/BudgetPlanPriorityConstraintEntity_Resolved/BudgetPlanningProcess",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BudgetPlanPriority",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetPlanPriorityConstraintEntity_Resolved/attributeContext/BudgetPlanPriorityConstraintEntity_Resolved/BudgetPlanPriority",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Process",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetPlanPriorityConstraintEntity_Resolved/attributeContext/BudgetPlanPriorityConstraintEntity_Resolved/Process",
+          "dataFormat": "String"
+        },
+        {
+          "name": "Priority",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "BudgetPlanPriorityConstraintEntity_Resolved/attributeContext/BudgetPlanPriorityConstraintEntity_Resolved/Priority",
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_BudgetPlanPriorityConstraintRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Budget/Group/BudgetPlanPriorityConstraint.cdm.json/BudgetPlanPriorityConstraint",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "BudgetPlanPriorityConstraintEntity_Resolved/attributeContext/BudgetPlanPriorityConstraintEntity_Resolved/BackingTable_BudgetPlanPriorityConstraintRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Budget plan priority constraint",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

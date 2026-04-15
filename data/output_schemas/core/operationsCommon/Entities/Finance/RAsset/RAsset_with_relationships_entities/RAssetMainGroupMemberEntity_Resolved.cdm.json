@@ -1,0 +1,301 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "RAssetMainGroupMemberEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "RAssetMainGroupMemberEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "RAssetMainGroupMemberEntity_Resolved",
+        "definition": "resolvedFrom/RAssetMainGroupMemberEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "RAssetMainGroupMemberEntity_Resolved/attributeContext/RAssetMainGroupMemberEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "RAssetMainGroupMemberEntity_Resolved/attributeContext/RAssetMainGroupMemberEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DepreciationGroup",
+            "parent": "RAssetMainGroupMemberEntity_Resolved/attributeContext/RAssetMainGroupMemberEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RAssetMainGroupMemberEntity/hasAttributes/DepreciationGroup",
+            "contents": [
+              "RAssetMainGroupMemberEntity_Resolved/hasAttributes/DepreciationGroup"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "FAGroup",
+            "parent": "RAssetMainGroupMemberEntity_Resolved/attributeContext/RAssetMainGroupMemberEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RAssetMainGroupMemberEntity/hasAttributes/FAGroup",
+            "contents": [
+              "RAssetMainGroupMemberEntity_Resolved/hasAttributes/FAGroup"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ValueModel",
+            "parent": "RAssetMainGroupMemberEntity_Resolved/attributeContext/RAssetMainGroupMemberEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RAssetMainGroupMemberEntity/hasAttributes/ValueModel",
+            "contents": [
+              "RAssetMainGroupMemberEntity_Resolved/hasAttributes/ValueModel"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ServiceLifeByRate",
+            "parent": "RAssetMainGroupMemberEntity_Resolved/attributeContext/RAssetMainGroupMemberEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RAssetMainGroupMemberEntity/hasAttributes/ServiceLifeByRate",
+            "contents": [
+              "RAssetMainGroupMemberEntity_Resolved/hasAttributes/ServiceLifeByRate"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_RAssetMainGroupMemberRelationship",
+            "parent": "RAssetMainGroupMemberEntity_Resolved/attributeContext/RAssetMainGroupMemberEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/RAssetMainGroupMemberEntity/hasAttributes/BackingTable_RAssetMainGroupMemberRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "RAssetMainGroupMember",
+                "parent": "RAssetMainGroupMemberEntity_Resolved/attributeContext/RAssetMainGroupMemberEntity_Resolved/BackingTable_RAssetMainGroupMemberRelationship",
+                "definition": "resolvedFrom/RAssetMainGroupMember",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "RAssetMainGroupMemberEntity_Resolved/attributeContext/RAssetMainGroupMemberEntity_Resolved/BackingTable_RAssetMainGroupMemberRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "RAssetMainGroupMemberEntity_Resolved/attributeContext/RAssetMainGroupMemberEntity_Resolved/BackingTable_RAssetMainGroupMemberRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "RAssetMainGroupMemberEntity_Resolved/attributeContext/RAssetMainGroupMemberEntity_Resolved/BackingTable_RAssetMainGroupMemberRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "RAssetMainGroupMemberEntity_Resolved/hasAttributes/BackingTable_RAssetMainGroupMemberRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "RAssetMainGroupMemberEntity_Resolved/attributeContext/RAssetMainGroupMemberEntity_Resolved",
+            "definition": "resolvedFrom/RAssetMainGroupMemberEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "RAssetMainGroupMemberEntity_Resolved/attributeContext/RAssetMainGroupMemberEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "RAssetMainGroupMemberEntity_Resolved/attributeContext/RAssetMainGroupMemberEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "RAssetMainGroupMemberEntity_Resolved/attributeContext/RAssetMainGroupMemberEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "RAssetMainGroupMemberEntity_Resolved/attributeContext/RAssetMainGroupMemberEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "RAssetMainGroupMemberEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "DepreciationGroup",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RAssetMainGroupMemberEntity_Resolved/attributeContext/RAssetMainGroupMemberEntity_Resolved/DepreciationGroup",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "FAGroup",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RAssetMainGroupMemberEntity_Resolved/attributeContext/RAssetMainGroupMemberEntity_Resolved/FAGroup",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ValueModel",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RAssetMainGroupMemberEntity_Resolved/attributeContext/RAssetMainGroupMemberEntity_Resolved/ValueModel",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ServiceLifeByRate",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "RAssetMainGroupMemberEntity_Resolved/attributeContext/RAssetMainGroupMemberEntity_Resolved/ServiceLifeByRate",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_RAssetMainGroupMemberRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/RAsset/Group/RAssetMainGroupMember.cdm.json/RAssetMainGroupMember",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "RAssetMainGroupMemberEntity_Resolved/attributeContext/RAssetMainGroupMemberEntity_Resolved/BackingTable_RAssetMainGroupMemberRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "RAssetMainGroupMemberEntity_Resolved/attributeContext/RAssetMainGroupMemberEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "FA group value models",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

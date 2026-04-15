@@ -1,0 +1,585 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "TaxGroupDataEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TaxGroupDataEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "TaxGroupDataEntity_Resolved",
+        "definition": "resolvedFrom/TaxGroupDataEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "TaxGroupDataEntity_Resolved/attributeContext/TaxGroupDataEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "TaxGroupDataEntity_Resolved/attributeContext/TaxGroupDataEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "TaxGroupId",
+            "parent": "TaxGroupDataEntity_Resolved/attributeContext/TaxGroupDataEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxGroupDataEntity/hasAttributes/TaxGroupId",
+            "contents": [
+              "TaxGroupDataEntity_Resolved/hasAttributes/TaxGroupId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "TaxCodeId",
+            "parent": "TaxGroupDataEntity_Resolved/attributeContext/TaxGroupDataEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxGroupDataEntity/hasAttributes/TaxCodeId",
+            "contents": [
+              "TaxGroupDataEntity_Resolved/hasAttributes/TaxCodeId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "TaxExemptCodeId",
+            "parent": "TaxGroupDataEntity_Resolved/attributeContext/TaxGroupDataEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxGroupDataEntity/hasAttributes/TaxExemptCodeId",
+            "contents": [
+              "TaxGroupDataEntity_Resolved/hasAttributes/TaxExemptCodeId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ExemptTax",
+            "parent": "TaxGroupDataEntity_Resolved/attributeContext/TaxGroupDataEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxGroupDataEntity/hasAttributes/ExemptTax",
+            "contents": [
+              "TaxGroupDataEntity_Resolved/hasAttributes/ExemptTax"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "UseTax",
+            "parent": "TaxGroupDataEntity_Resolved/attributeContext/TaxGroupDataEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxGroupDataEntity/hasAttributes/UseTax",
+            "contents": [
+              "TaxGroupDataEntity_Resolved/hasAttributes/UseTax"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BrazilianTaxationCode",
+            "parent": "TaxGroupDataEntity_Resolved/attributeContext/TaxGroupDataEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxGroupDataEntity/hasAttributes/BrazilianTaxationCode",
+            "contents": [
+              "TaxGroupDataEntity_Resolved/hasAttributes/BrazilianTaxationCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BrazilianTaxationCodeId",
+            "parent": "TaxGroupDataEntity_Resolved/attributeContext/TaxGroupDataEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxGroupDataEntity/hasAttributes/BrazilianTaxationCodeId",
+            "contents": [
+              "TaxGroupDataEntity_Resolved/hasAttributes/BrazilianTaxationCodeId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ReverseCharge",
+            "parent": "TaxGroupDataEntity_Resolved/attributeContext/TaxGroupDataEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxGroupDataEntity/hasAttributes/ReverseCharge",
+            "contents": [
+              "TaxGroupDataEntity_Resolved/hasAttributes/ReverseCharge"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_TaxGroupIdRelationship",
+            "parent": "TaxGroupDataEntity_Resolved/attributeContext/TaxGroupDataEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TaxGroupDataEntity/hasAttributes/Relationship_TaxGroupIdRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "TaxGroupEntity",
+                "parent": "TaxGroupDataEntity_Resolved/attributeContext/TaxGroupDataEntity_Resolved/Relationship_TaxGroupIdRelationship",
+                "definition": "resolvedFrom/TaxGroupEntity",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxGroupDataEntity_Resolved/attributeContext/TaxGroupDataEntity_Resolved/Relationship_TaxGroupIdRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxGroupDataEntity_Resolved/attributeContext/TaxGroupDataEntity_Resolved/Relationship_TaxGroupIdRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxGroupDataEntity_Resolved/attributeContext/TaxGroupDataEntity_Resolved/Relationship_TaxGroupIdRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxGroupDataEntity_Resolved/hasAttributes/Relationship_TaxGroupIdRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_TaxCodeIdRelationship",
+            "parent": "TaxGroupDataEntity_Resolved/attributeContext/TaxGroupDataEntity_Resolved",
+            "definition": "resolvedFrom/TaxGroupDataEntity/hasAttributes/Relationship_TaxCodeIdRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "TaxCodeEntity",
+                "parent": "TaxGroupDataEntity_Resolved/attributeContext/TaxGroupDataEntity_Resolved/Relationship_TaxCodeIdRelationship",
+                "definition": "resolvedFrom/TaxCodeEntity",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxGroupDataEntity_Resolved/attributeContext/TaxGroupDataEntity_Resolved/Relationship_TaxCodeIdRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxGroupDataEntity_Resolved/attributeContext/TaxGroupDataEntity_Resolved/Relationship_TaxCodeIdRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxGroupDataEntity_Resolved/attributeContext/TaxGroupDataEntity_Resolved/Relationship_TaxCodeIdRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxGroupDataEntity_Resolved/hasAttributes/Relationship_TaxCodeIdRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_TaxExemptCodeIdRelationship",
+            "parent": "TaxGroupDataEntity_Resolved/attributeContext/TaxGroupDataEntity_Resolved",
+            "definition": "resolvedFrom/TaxGroupDataEntity/hasAttributes/Relationship_TaxExemptCodeIdRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "TaxExemptCodeEntity",
+                "parent": "TaxGroupDataEntity_Resolved/attributeContext/TaxGroupDataEntity_Resolved/Relationship_TaxExemptCodeIdRelationship",
+                "definition": "resolvedFrom/TaxExemptCodeEntity",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxGroupDataEntity_Resolved/attributeContext/TaxGroupDataEntity_Resolved/Relationship_TaxExemptCodeIdRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxGroupDataEntity_Resolved/attributeContext/TaxGroupDataEntity_Resolved/Relationship_TaxExemptCodeIdRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxGroupDataEntity_Resolved/attributeContext/TaxGroupDataEntity_Resolved/Relationship_TaxExemptCodeIdRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxGroupDataEntity_Resolved/hasAttributes/Relationship_TaxExemptCodeIdRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_TaxGroupDataRelationship",
+            "parent": "TaxGroupDataEntity_Resolved/attributeContext/TaxGroupDataEntity_Resolved",
+            "definition": "resolvedFrom/TaxGroupDataEntity/hasAttributes/BackingTable_TaxGroupDataRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "TaxGroupData",
+                "parent": "TaxGroupDataEntity_Resolved/attributeContext/TaxGroupDataEntity_Resolved/BackingTable_TaxGroupDataRelationship",
+                "definition": "resolvedFrom/TaxGroupData",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxGroupDataEntity_Resolved/attributeContext/TaxGroupDataEntity_Resolved/BackingTable_TaxGroupDataRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxGroupDataEntity_Resolved/attributeContext/TaxGroupDataEntity_Resolved/BackingTable_TaxGroupDataRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxGroupDataEntity_Resolved/attributeContext/TaxGroupDataEntity_Resolved/BackingTable_TaxGroupDataRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxGroupDataEntity_Resolved/hasAttributes/BackingTable_TaxGroupDataRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "TaxGroupDataEntity_Resolved/attributeContext/TaxGroupDataEntity_Resolved",
+            "definition": "resolvedFrom/TaxGroupDataEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "TaxGroupDataEntity_Resolved/attributeContext/TaxGroupDataEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TaxGroupDataEntity_Resolved/attributeContext/TaxGroupDataEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TaxGroupDataEntity_Resolved/attributeContext/TaxGroupDataEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TaxGroupDataEntity_Resolved/attributeContext/TaxGroupDataEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TaxGroupDataEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "TaxGroupId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxGroupDataEntity_Resolved/attributeContext/TaxGroupDataEntity_Resolved/TaxGroupId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "TaxCodeId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxGroupDataEntity_Resolved/attributeContext/TaxGroupDataEntity_Resolved/TaxCodeId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "TaxExemptCodeId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxGroupDataEntity_Resolved/attributeContext/TaxGroupDataEntity_Resolved/TaxExemptCodeId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ExemptTax",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxGroupDataEntity_Resolved/attributeContext/TaxGroupDataEntity_Resolved/ExemptTax",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "UseTax",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxGroupDataEntity_Resolved/attributeContext/TaxGroupDataEntity_Resolved/UseTax",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BrazilianTaxationCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxGroupDataEntity_Resolved/attributeContext/TaxGroupDataEntity_Resolved/BrazilianTaxationCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BrazilianTaxationCodeId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxGroupDataEntity_Resolved/attributeContext/TaxGroupDataEntity_Resolved/BrazilianTaxationCodeId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ReverseCharge",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TaxGroupDataEntity_Resolved/attributeContext/TaxGroupDataEntity_Resolved/ReverseCharge",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Relationship_TaxGroupIdRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": []
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxGroupDataEntity_Resolved/attributeContext/TaxGroupDataEntity_Resolved/Relationship_TaxGroupIdRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_TaxCodeIdRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": []
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxGroupDataEntity_Resolved/attributeContext/TaxGroupDataEntity_Resolved/Relationship_TaxCodeIdRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_TaxExemptCodeIdRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": []
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxGroupDataEntity_Resolved/attributeContext/TaxGroupDataEntity_Resolved/Relationship_TaxExemptCodeIdRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "BackingTable_TaxGroupDataRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Tax/Group/TaxGroupData.cdm.json/TaxGroupData",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxGroupDataEntity_Resolved/attributeContext/TaxGroupDataEntity_Resolved/BackingTable_TaxGroupDataRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TaxGroupDataEntity_Resolved/attributeContext/TaxGroupDataEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Sales tax group details",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

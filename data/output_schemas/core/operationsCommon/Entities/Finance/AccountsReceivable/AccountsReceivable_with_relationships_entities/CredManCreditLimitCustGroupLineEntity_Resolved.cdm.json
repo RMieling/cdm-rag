@@ -1,0 +1,207 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "CredManCreditLimitCustGroupLineEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "CredManCreditLimitCustGroupLineEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "CredManCreditLimitCustGroupLineEntity_Resolved",
+        "definition": "resolvedFrom/CredManCreditLimitCustGroupLineEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "CredManCreditLimitCustGroupLineEntity_Resolved/attributeContext/CredManCreditLimitCustGroupLineEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "CredManCreditLimitCustGroupLineEntity_Resolved/attributeContext/CredManCreditLimitCustGroupLineEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Company",
+            "parent": "CredManCreditLimitCustGroupLineEntity_Resolved/attributeContext/CredManCreditLimitCustGroupLineEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CredManCreditLimitCustGroupLineEntity/hasAttributes/Company",
+            "contents": [
+              "CredManCreditLimitCustGroupLineEntity_Resolved/hasAttributes/Company"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CustAccount",
+            "parent": "CredManCreditLimitCustGroupLineEntity_Resolved/attributeContext/CredManCreditLimitCustGroupLineEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CredManCreditLimitCustGroupLineEntity/hasAttributes/CustAccount",
+            "contents": [
+              "CredManCreditLimitCustGroupLineEntity_Resolved/hasAttributes/CustAccount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CreditLimitId",
+            "parent": "CredManCreditLimitCustGroupLineEntity_Resolved/attributeContext/CredManCreditLimitCustGroupLineEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CredManCreditLimitCustGroupLineEntity/hasAttributes/CreditLimitId",
+            "contents": [
+              "CredManCreditLimitCustGroupLineEntity_Resolved/hasAttributes/CreditLimitId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_CredManCreditLimitCustGroupLineRelationship",
+            "parent": "CredManCreditLimitCustGroupLineEntity_Resolved/attributeContext/CredManCreditLimitCustGroupLineEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CredManCreditLimitCustGroupLineEntity/hasAttributes/BackingTable_CredManCreditLimitCustGroupLineRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CredManCreditLimitCustGroupLine",
+                "parent": "CredManCreditLimitCustGroupLineEntity_Resolved/attributeContext/CredManCreditLimitCustGroupLineEntity_Resolved/BackingTable_CredManCreditLimitCustGroupLineRelationship",
+                "definition": "resolvedFrom/CredManCreditLimitCustGroupLine",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CredManCreditLimitCustGroupLineEntity_Resolved/attributeContext/CredManCreditLimitCustGroupLineEntity_Resolved/BackingTable_CredManCreditLimitCustGroupLineRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CredManCreditLimitCustGroupLineEntity_Resolved/attributeContext/CredManCreditLimitCustGroupLineEntity_Resolved/BackingTable_CredManCreditLimitCustGroupLineRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CredManCreditLimitCustGroupLineEntity_Resolved/attributeContext/CredManCreditLimitCustGroupLineEntity_Resolved/BackingTable_CredManCreditLimitCustGroupLineRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CredManCreditLimitCustGroupLineEntity_Resolved/hasAttributes/BackingTable_CredManCreditLimitCustGroupLineRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "Company",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CredManCreditLimitCustGroupLineEntity_Resolved/attributeContext/CredManCreditLimitCustGroupLineEntity_Resolved/Company",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "CustAccount",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CredManCreditLimitCustGroupLineEntity_Resolved/attributeContext/CredManCreditLimitCustGroupLineEntity_Resolved/CustAccount",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "CreditLimitId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CredManCreditLimitCustGroupLineEntity_Resolved/attributeContext/CredManCreditLimitCustGroupLineEntity_Resolved/CreditLimitId",
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_CredManCreditLimitCustGroupLineRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/AccountsReceivable/Main/CredManCreditLimitCustGroupLine.cdm.json/CredManCreditLimitCustGroupLine",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CredManCreditLimitCustGroupLineEntity_Resolved/attributeContext/CredManCreditLimitCustGroupLineEntity_Resolved/BackingTable_CredManCreditLimitCustGroupLineRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Customer credit group lines",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

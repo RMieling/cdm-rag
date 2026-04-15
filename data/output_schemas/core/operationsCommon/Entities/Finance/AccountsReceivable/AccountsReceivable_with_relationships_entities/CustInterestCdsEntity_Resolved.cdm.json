@@ -1,0 +1,281 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "CustInterestCdsEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "CustInterestCdsEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "CustInterestCdsEntity_Resolved",
+        "definition": "resolvedFrom/CustInterestCdsEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "CustInterestCdsEntity_Resolved/attributeContext/CustInterestCdsEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "CustInterestCdsEntity_Resolved/attributeContext/CustInterestCdsEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "InterestType",
+            "parent": "CustInterestCdsEntity_Resolved/attributeContext/CustInterestCdsEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustInterestCdsEntity/hasAttributes/InterestType",
+            "contents": [
+              "CustInterestCdsEntity_Resolved/hasAttributes/InterestType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "InterestCode",
+            "parent": "CustInterestCdsEntity_Resolved/attributeContext/CustInterestCdsEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustInterestCdsEntity/hasAttributes/InterestCode",
+            "contents": [
+              "CustInterestCdsEntity_Resolved/hasAttributes/InterestCode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Txt",
+            "parent": "CustInterestCdsEntity_Resolved/attributeContext/CustInterestCdsEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustInterestCdsEntity/hasAttributes/Txt",
+            "contents": [
+              "CustInterestCdsEntity_Resolved/hasAttributes/Txt"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_CustInterestRelationship",
+            "parent": "CustInterestCdsEntity_Resolved/attributeContext/CustInterestCdsEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/CustInterestCdsEntity/hasAttributes/BackingTable_CustInterestRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CustInterest",
+                "parent": "CustInterestCdsEntity_Resolved/attributeContext/CustInterestCdsEntity_Resolved/BackingTable_CustInterestRelationship",
+                "definition": "resolvedFrom/CustInterest",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CustInterestCdsEntity_Resolved/attributeContext/CustInterestCdsEntity_Resolved/BackingTable_CustInterestRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CustInterestCdsEntity_Resolved/attributeContext/CustInterestCdsEntity_Resolved/BackingTable_CustInterestRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CustInterestCdsEntity_Resolved/attributeContext/CustInterestCdsEntity_Resolved/BackingTable_CustInterestRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CustInterestCdsEntity_Resolved/hasAttributes/BackingTable_CustInterestRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "CustInterestCdsEntity_Resolved/attributeContext/CustInterestCdsEntity_Resolved",
+            "definition": "resolvedFrom/CustInterestCdsEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "CustInterestCdsEntity_Resolved/attributeContext/CustInterestCdsEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "CustInterestCdsEntity_Resolved/attributeContext/CustInterestCdsEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "CustInterestCdsEntity_Resolved/attributeContext/CustInterestCdsEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "CustInterestCdsEntity_Resolved/attributeContext/CustInterestCdsEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "CustInterestCdsEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "InterestType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustInterestCdsEntity_Resolved/attributeContext/CustInterestCdsEntity_Resolved/InterestType",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "InterestCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustInterestCdsEntity_Resolved/attributeContext/CustInterestCdsEntity_Resolved/InterestCode",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "Txt",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "CustInterestCdsEntity_Resolved/attributeContext/CustInterestCdsEntity_Resolved/Txt",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_CustInterestRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/AccountsReceivable/Group/CustInterest.cdm.json/CustInterest",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CustInterestCdsEntity_Resolved/attributeContext/CustInterestCdsEntity_Resolved/BackingTable_CustInterestRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "CustInterestCdsEntity_Resolved/attributeContext/CustInterestCdsEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Customer interest codes for CDS integration",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}

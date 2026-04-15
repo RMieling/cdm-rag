@@ -1,0 +1,281 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "TrvAntiCorruptionLanguageTextEntity.cdm.json",
+      "moniker": "resolvedFrom"
+    },
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "TrvAntiCorruptionLanguageTextEntity_Resolved",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.application.releaseVersion",
+          "arguments": [
+            "10.0.13.0"
+          ]
+        },
+        {
+          "traitReference": "has.entitySchemaAbstractionLevel",
+          "arguments": [
+            {
+              "name": "level",
+              "value": "resolved"
+            }
+          ]
+        }
+      ],
+      "attributeContext": {
+        "type": "entity",
+        "name": "TrvAntiCorruptionLanguageTextEntity_Resolved",
+        "definition": "resolvedFrom/TrvAntiCorruptionLanguageTextEntity",
+        "appliedTraits": [
+          {
+            "traitReference": "is.application.releaseVersion",
+            "arguments": [
+              "10.0.13.0"
+            ]
+          }
+        ],
+        "contents": [
+          {
+            "type": "entityReferenceExtends",
+            "name": "extends",
+            "parent": "TrvAntiCorruptionLanguageTextEntity_Resolved/attributeContext/TrvAntiCorruptionLanguageTextEntity_Resolved",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "base_DataEntityView/DataEntityView",
+                "parent": "TrvAntiCorruptionLanguageTextEntity_Resolved/attributeContext/TrvAntiCorruptionLanguageTextEntity_Resolved/extends",
+                "definition": "resolvedFrom/base_DataEntityView/DataEntityView",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "LanguageId",
+            "parent": "TrvAntiCorruptionLanguageTextEntity_Resolved/attributeContext/TrvAntiCorruptionLanguageTextEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvAntiCorruptionLanguageTextEntity/hasAttributes/LanguageId",
+            "contents": [
+              "TrvAntiCorruptionLanguageTextEntity_Resolved/hasAttributes/LanguageId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "AttestationMessage",
+            "parent": "TrvAntiCorruptionLanguageTextEntity_Resolved/attributeContext/TrvAntiCorruptionLanguageTextEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvAntiCorruptionLanguageTextEntity/hasAttributes/AttestationMessage",
+            "contents": [
+              "TrvAntiCorruptionLanguageTextEntity_Resolved/hasAttributes/AttestationMessage"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ApproverMessage",
+            "parent": "TrvAntiCorruptionLanguageTextEntity_Resolved/attributeContext/TrvAntiCorruptionLanguageTextEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvAntiCorruptionLanguageTextEntity/hasAttributes/ApproverMessage",
+            "contents": [
+              "TrvAntiCorruptionLanguageTextEntity_Resolved/hasAttributes/ApproverMessage"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BackingTable_TrvAntiCorruptionLanguageTextRelationship",
+            "parent": "TrvAntiCorruptionLanguageTextEntity_Resolved/attributeContext/TrvAntiCorruptionLanguageTextEntity_Resolved",
+            "definition": "resolvedFrom/base_DataEntityView/TrvAntiCorruptionLanguageTextEntity/hasAttributes/BackingTable_TrvAntiCorruptionLanguageTextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "TrvAntiCorruptionLanguageText",
+                "parent": "TrvAntiCorruptionLanguageTextEntity_Resolved/attributeContext/TrvAntiCorruptionLanguageTextEntity_Resolved/BackingTable_TrvAntiCorruptionLanguageTextRelationship",
+                "definition": "resolvedFrom/TrvAntiCorruptionLanguageText",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TrvAntiCorruptionLanguageTextEntity_Resolved/attributeContext/TrvAntiCorruptionLanguageTextEntity_Resolved/BackingTable_TrvAntiCorruptionLanguageTextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TrvAntiCorruptionLanguageTextEntity_Resolved/attributeContext/TrvAntiCorruptionLanguageTextEntity_Resolved/BackingTable_TrvAntiCorruptionLanguageTextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TrvAntiCorruptionLanguageTextEntity_Resolved/attributeContext/TrvAntiCorruptionLanguageTextEntity_Resolved/BackingTable_TrvAntiCorruptionLanguageTextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TrvAntiCorruptionLanguageTextEntity_Resolved/hasAttributes/BackingTable_TrvAntiCorruptionLanguageTextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Relationship_PrimaryCompanyContextRelationship",
+            "parent": "TrvAntiCorruptionLanguageTextEntity_Resolved/attributeContext/TrvAntiCorruptionLanguageTextEntity_Resolved",
+            "definition": "resolvedFrom/TrvAntiCorruptionLanguageTextEntity/hasAttributes/Relationship_PrimaryCompanyContextRelationship",
+            "contents": [
+              {
+                "type": "entity",
+                "name": "CompanyInfo",
+                "parent": "TrvAntiCorruptionLanguageTextEntity_Resolved/attributeContext/TrvAntiCorruptionLanguageTextEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "definition": "resolvedFrom/CompanyInfo",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.application.releaseVersion",
+                    "arguments": [
+                      "10.0.13.0"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "generatedSet",
+                "name": "_generatedAttributeSet",
+                "parent": "TrvAntiCorruptionLanguageTextEntity_Resolved/attributeContext/TrvAntiCorruptionLanguageTextEntity_Resolved/Relationship_PrimaryCompanyContextRelationship",
+                "contents": [
+                  {
+                    "type": "generatedRound",
+                    "name": "_generatedAttributeRound0",
+                    "parent": "TrvAntiCorruptionLanguageTextEntity_Resolved/attributeContext/TrvAntiCorruptionLanguageTextEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet",
+                    "contents": [
+                      {
+                        "type": "addedAttributeIdentity",
+                        "name": "_foreignKey",
+                        "parent": "TrvAntiCorruptionLanguageTextEntity_Resolved/attributeContext/TrvAntiCorruptionLanguageTextEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0",
+                        "definition": "resolvedFrom/defaultArtifacts/hasAttributes/id",
+                        "contents": [
+                          "TrvAntiCorruptionLanguageTextEntity_Resolved/hasAttributes/Relationship_PrimaryCompanyContextRelationshipId"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "LanguageId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvAntiCorruptionLanguageTextEntity_Resolved/attributeContext/TrvAntiCorruptionLanguageTextEntity_Resolved/LanguageId",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "AttestationMessage",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvAntiCorruptionLanguageTextEntity_Resolved/attributeContext/TrvAntiCorruptionLanguageTextEntity_Resolved/AttestationMessage",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "ApproverMessage",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "TrvAntiCorruptionLanguageTextEntity_Resolved/attributeContext/TrvAntiCorruptionLanguageTextEntity_Resolved/ApproverMessage",
+          "isNullable": true,
+          "dataFormat": "String"
+        },
+        {
+          "name": "BackingTable_TrvAntiCorruptionLanguageTextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Expense/Reference/TrvAntiCorruptionLanguageText.cdm.json/TrvAntiCorruptionLanguageText",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TrvAntiCorruptionLanguageTextEntity_Resolved/attributeContext/TrvAntiCorruptionLanguageTextEntity_Resolved/BackingTable_TrvAntiCorruptionLanguageTextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "Relationship_PrimaryCompanyContextRelationshipId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId",
+            {
+              "traitReference": "is.linkedEntity.identifier",
+              "arguments": [
+                {
+                  "entityReference": {
+                    "entityShape": "entityGroupSet",
+                    "constantValues": [
+                      [
+                        "/core/operationsCommon/Tables/Finance/Ledger/Main/CompanyInfo.cdm.json/CompanyInfo",
+                        "RecId"
+                      ]
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "attributeContext": "TrvAntiCorruptionLanguageTextEntity_Resolved/attributeContext/TrvAntiCorruptionLanguageTextEntity_Resolved/Relationship_PrimaryCompanyContextRelationship/_generatedAttributeSet/_generatedAttributeRound0/_foreignKey",
+          "dataFormat": "Guid"
+        }
+      ],
+      "displayName": "Expense anticorruption translations",
+      "version": "1.2"
+    }
+  ],
+  "documentVersion": "1.2"
+}
