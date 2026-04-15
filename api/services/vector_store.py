@@ -33,6 +33,7 @@ class Neo4jGraphManager:
     def _ingest_entities(tx, resolved_entity: CdmEntityDefinition):
         """Translates a resolved CDM entity into Graph Nodes and Attributes."""
         entity_name = resolved_entity.entity_name.replace("_Resolved", "")
+        entity_description = resolved_entity.description
         doc = resolved_entity.in_document
 
         # Fixed string quotes inside the f-string for Python compatibility
@@ -47,9 +48,11 @@ class Neo4jGraphManager:
             """
             MERGE (e:Entity {path: $entity_path})
             SET e.name = $entity_name
+            SET e.description = $entity_description
         """,
             entity_path=entity_path,
             entity_name=entity_name,
+            entity_description=entity_description,
         )
 
         # 2. Merge Attributes

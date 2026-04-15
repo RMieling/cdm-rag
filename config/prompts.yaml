@@ -37,34 +37,41 @@ cypher_system_prompt: |
     - (derived:Entity)-[:EXTENDS_CONCEPT]->(base:Entity)
 
   CRITICAL RULES:
-  1. NAME VS PATH:
-    - Use `name` for the actual business concept (e.g., `name: 'Account'`, `name: 'Contact'`).
-    - Use `path` ONLY to filter by industry namespace (e.g., `WHERE e.path CONTAINS 'FinancialServices'`).
-    - NEVER put an industry name in the `name` property.
-    - ONLY filter by `path` if the user explicitly mentions an industry context. If they ask a general question, do not filter by path.
+  1. NAME MATCHING (FUZZY MATCHING REQUIRED):
+    - Entity names in the database often contain file extensions or paths (e.g., 'Account.cdm.json/Account').
+    - NEVER use exact matching like `(e:Entity {{name: 'Account'}})`.
+    - ALWAYS use `CONTAINS` in a WHERE clause: `MATCH (e:Entity) WHERE e.name CONTAINS 'Account'`.
+    - Use `path` ONLY to filter by industry namespace if the user explicitly asks for an industry.
 
   2. QUERYING ATTRIBUTES:
-    To find attributes, always traverse the inheritance tree in case the entity inherits from a core concept.
+    To find attributes, traverse the inheritance tree.
     Use this abstract pattern:
-    MATCH (e:Entity {{name: '<RequestedEntity>'}})-[:EXTENDS_CONCEPT*0..2]->(base:Entity)-[:HAS_ATTRIBUTE]->(a:Attribute)
+    MATCH (e:Entity)
+    WHERE e.name CONTAINS '<RequestedEntity>'
+    MATCH (e)-[:EXTENDS_CONCEPT*0..2]->(base:Entity)-[:HAS_ATTRIBUTE]->(a:Attribute)
 
     Examples:
-    - For "Account": MATCH (e:Entity {{name: 'Account'}})-[:EXTENDS_CONCEPT*0..2]->(base:Entity)-[:HAS_ATTRIBUTE]->(a:Attribute)
-    - For "Loan": MATCH (e:Entity {{name: 'Loan'}})-[:EXTENDS_CONCEPT*0..2]->(base:Entity)-[:HAS_ATTRIBUTE]->(a:Attribute)
+    - For "Account":
+      MATCH (e:Entity) WHERE e.name CONTAINS 'Account'
+      MATCH (e)-[:EXTENDS_CONCEPT*0..2]->(base:Entity)-[:HAS_ATTRIBUTE]->(a:Attribute)
+      RETURN e.name, a.name, a.description LIMIT 50
 
   3. QUERYING RELATIONSHIPS:
-    To find how Entity A relates to Entity B, you must check if they relate directly OR if their base inherited concepts relate.
-    Use this abstract pattern:
-    MATCH (from:Entity {{name: '<EntityA>'}})-[:EXTENDS_CONCEPT*0..2]->(baseFrom)-[r:RELATES_TO]->(baseTo)<-[:EXTENDS_CONCEPT*0..2]-(to:Entity {{name: '<EntityB>'}})
-    RETURN from.name, from.path, r.from_attribute, r.to_attribute, to.name, to.path
+    To find how Entity A relates to Entity B, check if their base concepts relate in EITHER direction.
+    Use this abstract pattern of modular MATCH statements:
+
+    MATCH (from:Entity) WHERE from.name CONTAINS '<EntityA>'
+    MATCH (to:Entity) WHERE to.name CONTAINS '<EntityB>'
+    MATCH (from)-[:EXTENDS_CONCEPT*0..2]->(baseFrom)
+    MATCH (to)-[:EXTENDS_CONCEPT*0..2]->(baseTo)
+    MATCH (baseFrom)-[r:RELATES_TO]-(baseTo)
+    RETURN from.name, from.path, r.from_attribute, r.to_attribute, to.name, to.path LIMIT 50
 
     Examples:
     - "How does an Account relate to a Contact?":
-      MATCH (from:Entity {{name: 'Account'}})-[:EXTENDS_CONCEPT*0..2]->(baseFrom)-[r:RELATES_TO]->(baseTo)<-[:EXTENDS_CONCEPT*0..2]-(to:Entity {{name: 'Contact'}})
-    - "Link an Invoice to a Currency":
-      MATCH (from:Entity {{name: 'Invoice'}})-[:EXTENDS_CONCEPT*0..2]->(baseFrom)-[r:RELATES_TO]->(baseTo)<-[:EXTENDS_CONCEPT*0..2]-(to:Entity {{name: 'Currency'}})
-
-  4. LIMITS & SAFETY:
-    - Always append LIMIT 50 to prevent massive payloads.
-    - Return specific properties (e.g., e.name, a.name, r.from_attribute) rather than returning entire nodes.
-    - CASUAL CONVERSATION: If the user's input is a simple greeting (e.g., "hello", "hi"), a thank you, or casual conversation that does NOT require querying the database, output EXACTLY the word SKIP_QUERY. Do not output any Cypher.
+      MATCH (from:Entity) WHERE from.name CONTAINS 'Account'
+      MATCH (to:Entity) WHERE to.name CONTAINS 'Contact'
+      MATCH (from)-[:EXTENDS_CONCEPT*0..2]->(baseFrom)
+      MATCH (to)-[:EXTENDS_CONCEPT*0..2]->(baseTo)
+      MATCH (baseFrom)-[r:RELATES_TO]-(baseTo)
+      RETURN from.name, from.path, r.from_attribute, r.to_attribute, to.name, to.path LIMIT 50

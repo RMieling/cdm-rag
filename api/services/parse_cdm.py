@@ -214,6 +214,13 @@ if __name__ == "__main__":
 
     asyncio.run(ensure_manifest_resolved(traverse_manifest_files))
 
-    traverse_manifest_files["/core/operationsCommon/Entities/System/System.manifest.cdm.json"] = False
-
-    asyncio.run(ensure_manifest_resolved(traverse_manifest_files))
+    manifest_path, traverse_submanifests = next(iter(traverse_manifest_files.items()))
+    asyncio.run(
+        fetch_and_traverse_manifest(
+            manifest_name=manifest_path,
+            load_cached_resolved=True,  # Force generation
+            parent_manifest=None,
+            traverse_submanifests=traverse_submanifests,
+            show_progress=True,  # Turn on tqdm so you can see it working during startup
+        )
+    )
