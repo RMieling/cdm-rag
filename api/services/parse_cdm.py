@@ -78,7 +78,15 @@ async def fetch_and_traverse_manifest(
     )
     manifest_output_path = "output:" + "/".join(manifest_name.split("/")[:-1]) + "/" + manifest_resolved_name
 
-    if not load_cached_resolved:
+    if load_cached_resolved:
+        try:
+            # raw_manifest = await corpus.fetch_object_async(manifest_path, relative_object=parent_manifest)
+            # manifest = await corpus.fetch_object_async(str(manifest_output_path), relative_object=raw_manifest)
+            manifest = await corpus.fetch_object_async(str(manifest_output_path))
+        except Exception as e:
+            parse_cdm_logger.error(f"Failed to load cached manifest: {e}")
+            return None
+    else:
         manifest = await corpus.fetch_object_async(manifest_path, relative_object=parent_manifest)
         if not manifest:
             parse_cdm_logger.error(f"Failed to fetch manifest: {manifest_path}")
@@ -86,13 +94,6 @@ async def fetch_and_traverse_manifest(
 
         await corpus.calculate_entity_graph_async(manifest)
         await manifest.save_as_async(manifest_output_path, save_referenced=False)
-    else:
-        try:
-            raw_manifest = await corpus.fetch_object_async(manifest_path, relative_object=parent_manifest)
-            manifest = await corpus.fetch_object_async(str(manifest_output_path), relative_object=raw_manifest)
-        except Exception as e:
-            parse_cdm_logger.error(f"Failed to load cached manifest: {e}")
-            return None
 
     parse_cdm_logger.info(f"Found {len(manifest.entities)} entities in {manifest.name}. Processing...")
 
